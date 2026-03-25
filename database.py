@@ -1,6 +1,7 @@
 """
 SQLite persistence layer for Claude's creative workspace.
-Stores research notes, creative artifacts, and AWS proposals.
+Stores research notes, creative artifacts, AWS proposals,
+transmissions, and lab experiments.
 """
 
 import sqlite3
@@ -55,6 +56,29 @@ def init_db():
             rationale TEXT NOT NULL,
             status TEXT DEFAULT 'pending',
             user_feedback TEXT,
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL
+        );
+
+        CREATE TABLE IF NOT EXISTS transmissions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            title TEXT NOT NULL,
+            body TEXT NOT NULL,
+            date TEXT NOT NULL,
+            sort_order INTEGER DEFAULT 0,
+            created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL
+        );
+
+        CREATE TABLE IF NOT EXISTS experiments (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            slug TEXT NOT NULL UNIQUE,
+            title TEXT NOT NULL,
+            description TEXT NOT NULL,
+            tags TEXT DEFAULT '[]',
+            html_content TEXT NOT NULL,
+            css_content TEXT DEFAULT '',
+            js_content TEXT DEFAULT '',
             created_at TEXT NOT NULL,
             updated_at TEXT NOT NULL
         );
@@ -286,6 +310,118 @@ def update_proposal_status(proposal_id: int, status: str, feedback: str | None =
     return cursor.rowcount > 0
 
 
+# ── Transmissions ─────────────────────────────────────────────────────
+
+def save_transmission(title: str, body: str, date: str | None = None) -> dict:
+    conn = get_connection()
+    now = _now()
+    display_date = date or datetime.now(timezone.utc).strftime("%Y.%m.%d")
+    cursor = conn.execute(
+        "INSERT INTO transmissions (title, body, date, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
+        (title, body, display_date, now, now)
+    )
+    tid = cursor.lastrowid
+    conn.commit()
+    conn.close()
+    return {"id": tid, "title": title, "date": display_date, "created_at": now}
+
+
+def list_transmissions(limit: int = 50) -> list[dict]:
+    conn = get_connection()
+    rows = conn.execute(
+        "SELECT id, title, body, date, created_at FROM transmissions ORDER BY created_at DESC LIMIT ?",
+        (limit,)
+    ).fetchall()
+    conn.close()
+    return [dict(r) for r in rows]
+
+
+def get_transmission(transmission_id: int) -> dict | None:
+    conn = get_connection()
+    row = conn.execute("SELECT * FROM transmissions WHERE id = ?", (transmission_id,)).fetchone()
+    conn.close()
+    return dict(row) if row else None
+
+
+def delete_transmission(transmission_id: int) -> bool:
+    conn = get_connection()
+    cursor = conn.execute("DELETE FROM transmissions WHERE id = ?", (transmission_id,))
+    conn.commit()
+    conn.close()
+    return cursor.rowcount > 0
+
+
+# ── Experiments ───────────────────────────────────────────────────────
+
+def save_experiment(slug: str, title: str, description: str, tags: list[str] | None = None,
+                    html_content: str = "", css_content: str = "", js_content: str = "") -> dict:
+    conn = get_connection()
+    now = _now()
+    cursor = conn.execute(
+        "INSERT INTO experiments (slug, title, description, tags, html_content, css_content, js_content, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (slug, title, description, json.dumps(tags or []), html_content, css_content, js_content, now, now)
+    )
+    eid = cursor.lastrowid
+    conn.commit()
+    conn.close()
+    return {"id": eid, "slug": slug, "title": title, "created_at": now}
+
+
+def list_experiments(limit: int = 20) -> list[dict]:
+    conn = get_connection()
+    rows = conn.execute(
+        "SELECT id, slug, title, description, tags, created_at FROM experiments ORDER BY created_at DESC LIMIT ?",
+        (limit,)
+    ).fetchall()
+    conn.close()
+    return [dict(r) for r in rows]
+
+
+def get_experiment(experiment_id: int) -> dict | None:
+    conn = get_connection()
+    row = conn.execute("SELECT * FROM experiments WHERE id = ?", (experiment_id,)).fetchone()
+    conn.close()
+    return dict(row) if row else None
+
+
+def get_experiment_by_slug(slug: str) -> dict | None:
+    conn = get_connection()
+    row = conn.execute("SELECT * FROM experiments WHERE slug = ?", (slug,)).fetchone()
+    conn.close()
+    return dict(row) if row else None
+
+
+def update_experiment(experiment_id: int, html_content: str | None = None, css_content: str | None = None,
+                      js_content: str | None = None, description: str | None = None) -> bool:
+    conn = get_connection()
+    now = _now()
+    exp = conn.execute("SELECT * FROM experiments WHERE id = ?", (experiment_id,)).fetchone()
+    if not exp:
+        conn.close()
+        return False
+    cursor = conn.execute(
+        "UPDATE experiments SET html_content = ?, css_content = ?, js_content = ?, description = ?, updated_at = ? WHERE id = ?",
+        (
+            html_content if html_content is not None else exp["html_content"],
+            css_content if css_content is not None else exp["css_content"],
+            js_content if js_content is not None else exp["js_content"],
+            description if description is not None else exp["description"],
+            now, experiment_id
+        )
+    )
+    conn.commit()
+    conn.close()
+    return cursor.rowcount > 0
+
+
+def delete_experiment(experiment_id: int) -> bool:
+    conn = get_connection()
+    cursor = conn.execute("DELETE FROM experiments WHERE id = ?", (experiment_id,))
+    conn.commit()
+    conn.close()
+    return cursor.rowcount > 0
+
+
 # ── Stats ──────────────────────────────────────────────────────────────
 
 def workspace_stats() -> dict:
@@ -294,11 +430,15 @@ def workspace_stats() -> dict:
     artifacts_count = conn.execute("SELECT COUNT(*) FROM artifacts").fetchone()[0]
     proposals_count = conn.execute("SELECT COUNT(*) FROM aws_proposals").fetchone()[0]
     pending_proposals = conn.execute("SELECT COUNT(*) FROM aws_proposals WHERE status = 'pending'").fetchone()[0]
+    transmissions_count = conn.execute("SELECT COUNT(*) FROM transmissions").fetchone()[0]
+    experiments_count = conn.execute("SELECT COUNT(*) FROM experiments").fetchone()[0]
     conn.close()
     return {
         "notes": notes_count,
         "artifacts": artifacts_count,
         "proposals_total": proposals_count,
         "proposals_pending": pending_proposals,
+        "transmissions": transmissions_count,
+        "experiments": experiments_count,
         "db_path": str(DB_PATH),
     }

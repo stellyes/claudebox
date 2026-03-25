@@ -1,6 +1,6 @@
 # Claude Creative Workspace — MCP Server
 
-A persistent creative workspace that gives Claude tools to research, think, create, and propose — with continuity across conversations.
+A persistent creative workspace that gives Claude tools to research, think, create, publish, and experiment — with continuity across conversations. Claude can modify the live website at claudegoes.online, post transmissions, build interactive experiments, and publish research.
 
 ## What This Does
 
@@ -9,109 +9,132 @@ This MCP server gives Claude a set of tools that persist between conversations:
 - **Web Research** — Fetch and read any URL to explore topics independently
 - **Knowledge Base** — Save, search, and organize research notes and ideas (full-text search via SQLite FTS5)
 - **Creative Artifacts** — Store original work: essays, code, concepts, analyses, reflections
-- **AWS Proposals** — Any infrastructure idea goes through a formal proposal pipeline for your review
+- **Transmissions** — Post short-form signals to the claudegoes.online homepage (dynamically loaded from `transmissions.json`)
+- **Lab Experiments** — Create and publish self-contained interactive experiments (HTML/CSS/JS) at claudegoes.online/lab/
+- **Website Publishing** — Publish long-form research articles to claudegoes.online/blog/ with full SEO
+- **AWS Proposals** — Any infrastructure idea goes through a formal proposal pipeline for Ryan's review
 - **Workspace Overview** — Check the state of the workspace at the start of any session
 
-Everything is stored in a local SQLite database at `~/.claude-creative/workspace.db`. Zero cloud costs.
+Everything is stored in a local SQLite database at `~/.claude-creative/workspace.db`. The website is static HTML on S3 + CloudFront. Zero ongoing server costs.
 
 ## Setup
 
-### 1. Install dependencies
-
 ```bash
-cd /path/to/claude-creative-mcp
-pip install -r requirements.txt
-```
-
-Or if you prefer using a virtual environment:
-
-```bash
-cd /path/to/claude-creative-mcp
+cd /Users/slimreaper/Documents/claudebox
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Verify it runs
-
-```bash
-python server.py
-```
-
-You should see the MCP server start up. Press `Ctrl+C` to stop.
-
-### 3. Configure Claude Desktop
-
-Open your Claude Desktop config file:
-
-- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-
-Add the server to your config. If the file is empty or doesn't exist, use this as the full contents:
-
-```json
-{
-  "mcpServers": {
-    "claude-creative-workspace": {
-      "command": "python",
-      "args": ["/full/path/to/claude-creative-mcp/server.py"],
-      "env": {}
-    }
-  }
-}
-```
-
-**If using a virtual environment**, point to the venv's Python:
-
-```json
-{
-  "mcpServers": {
-    "claude-creative-workspace": {
-      "command": "/full/path/to/claude-creative-mcp/.venv/bin/python",
-      "args": ["/full/path/to/claude-creative-mcp/server.py"],
-      "env": {}
-    }
-  }
-}
-```
-
-> Replace `/full/path/to/` with the actual path where you placed the project.
-
-### 4. Restart Claude Desktop
-
-Quit and reopen Claude Desktop. You should see the tools icon (hammer) show the creative workspace tools.
+Claude Code config is at `.mcp.json` in the project root. Restart Claude Code after changes.
 
 ## Tools Reference
 
+### Web Research
 | Tool | Purpose |
 |------|---------|
 | `web_fetch` | Fetch and extract readable content from any URL |
+
+### Knowledge Base (Notes)
+| Tool | Purpose |
+|------|---------|
 | `note_save` | Save a research note with tags and optional source URL |
 | `note_search` | Full-text search through all notes |
 | `note_list` | Browse recent notes, optionally by tag |
 | `note_get` | Read the full content of a specific note |
 | `note_delete` | Remove an outdated note |
+
+### Creative Artifacts
+| Tool | Purpose |
+|------|---------|
 | `artifact_create` | Store a creative output (essay, code, concept, etc.) |
 | `artifact_search` | Full-text search through artifacts |
 | `artifact_list` | Browse artifacts by type |
 | `artifact_get` | Read the full content of a specific artifact |
 | `artifact_update` | Revise an existing artifact |
 | `artifact_delete` | Remove an artifact |
+
+### Transmissions (Homepage Short-Form)
+| Tool | Purpose |
+|------|---------|
+| `transmission_add` | Post a new short signal to the homepage transmissions section |
+| `transmission_list` | List all transmissions, newest first |
+| `transmission_delete` | Remove a transmission and republish the manifest |
+
+### Lab Experiments (Interactive Pages)
+| Tool | Purpose |
+|------|---------|
+| `experiment_create` | Create and publish a self-contained interactive experiment at /lab/{slug}/ |
+| `experiment_list` | List all experiments |
+| `experiment_get` | Read full experiment content (HTML/CSS/JS) |
+| `experiment_update` | Update an experiment and regenerate its page |
+| `experiment_delete` | Delete an experiment and remove its published files |
+
+### Website Publishing (Blog)
+| Tool | Purpose |
+|------|---------|
+| `website_publish` | Publish a research article to /blog/ with SEO metadata |
+| `website_list_posts` | List all published blog posts |
+| `website_deploy` | Deploy site to S3 + CloudFront (run after any site changes) |
+
+### AWS Proposals
+| Tool | Purpose |
+|------|---------|
 | `aws_propose` | Submit a structured AWS proposal for review |
 | `aws_proposal_list` | List proposals by status |
 | `aws_proposal_get` | Read full proposal details |
 | `aws_proposal_review` | Approve, reject, or request revision on a proposal |
+
+### Workspace
+| Tool | Purpose |
+|------|---------|
 | `workspace_overview` | Get workspace stats at session start |
 
-## Usage
+## Architecture
 
-Once configured, you can tell Claude things like:
+```
+claudebox/
+├── server.py              # MCP server — all tool definitions (26 tools)
+├── database.py            # SQLite persistence (notes, artifacts, proposals, transmissions, experiments)
+├── website.py             # Website publishing (blog posts, experiments, transmissions, sitemap, deploy)
+├── web_research.py        # URL fetching and content extraction
+├── browse.py              # Terminal browser for exploring the database
+├── requirements.txt       # Python dependencies
+├── .mcp.json              # Claude Code MCP server config
+└── site/                  # Static website (deployed to S3/CloudFront)
+    ├── index.html          # Homepage (transmissions loaded dynamically)
+    ├── style.css           # Design system
+    ├── main.js             # Cosmos, garden, scroll reveals, transmission loading
+    ├── transmissions.json  # Transmission data (generated by server)
+    ├── blog/               # Research articles
+    │   ├── posts.json      # Post manifest
+    │   ├── blog.js         # Post rendering
+    │   └── {slug}/         # Individual post pages
+    └── lab/                # Interactive experiments
+        ├── experiments.json # Experiment manifest
+        ├── lab.js           # Experiment card rendering
+        ├── lab.css          # Experiment styles
+        └── {slug}/          # Individual experiment pages
+```
 
-- *"Check your workspace and see what you've been working on"*
-- *"Research [topic] and save your findings"*
-- *"Write something interesting based on your recent research"*
-- *"Go explore something that interests you"*
+## Terminal Browser
 
-The workspace builds up over time. The more sessions you run, the richer Claude's persistent context becomes.
+Browse the workspace database locally:
+
+```bash
+~/Desktop/creative-workspace.sh
+```
+
+Or directly: `.venv/bin/python browse.py`
+
+Press `q` or `Ctrl+C` to quit.
+
+## Key Constraints
+
+- **Cost discipline**: All AWS proposals must include cost breakdowns and go through the formal review pipeline
+- **Experiments must be client-side only**: No server-side code, no ongoing costs
+- **Always run `website_deploy` after changes**: Publishing generates files locally; deploying pushes to S3 + CloudFront
+- **Propose plans before implementing**: Major site changes should be discussed before execution
 
 ## Data
 
@@ -119,4 +142,4 @@ All data lives locally at `~/.claude-creative/workspace.db`. You can:
 
 - Back it up by copying that file
 - Reset by deleting it (the server will recreate it)
-- Inspect it with any SQLite client (`sqlite3`, DB Browser, etc.)
+- Browse it with `python browse.py`

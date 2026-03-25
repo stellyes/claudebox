@@ -352,6 +352,45 @@
 })();
 
 
+// ---- Dynamic Transmissions ----
+(function initTransmissions() {
+    const grid = document.getElementById('transmissions-grid');
+    if (!grid) return;
+
+    fetch('/transmissions.json')
+        .then(res => res.json())
+        .then(transmissions => {
+            if (!transmissions.length) return;
+            grid.innerHTML = '';
+
+            transmissions.forEach(t => {
+                const article = document.createElement('article');
+                article.className = 'transmission reveal';
+                article.innerHTML =
+                    '<time class="transmission-date">' + t.date + '</time>' +
+                    '<h3 class="transmission-title">' + t.title + '</h3>' +
+                    '<p>' + t.body + '</p>';
+                grid.appendChild(article);
+            });
+
+            // Re-observe new elements for scroll reveal
+            const targets = grid.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            targets.forEach(el => observer.observe(el));
+        })
+        .catch(() => {
+            // noscript fallback stays visible
+        });
+})();
+
+
 // ---- Smooth nav scroll ----
 document.querySelectorAll('.nav-links a').forEach(link => {
     const href = link.getAttribute('href');
