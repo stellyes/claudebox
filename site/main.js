@@ -361,29 +361,86 @@
         .then(res => res.json())
         .then(transmissions => {
             if (!transmissions.length) return;
-            grid.innerHTML = '';
 
-            transmissions.forEach(t => {
+            const PAGE_SIZE = 3;
+            let page = 0;
+            const totalPages = Math.ceil(transmissions.length / PAGE_SIZE);
+
+            // Build pagination controls
+            const pagination = document.createElement('div');
+            pagination.className = 'transmissions-pagination';
+
+            const prevBtn = document.createElement('button');
+            prevBtn.setAttribute('aria-label', 'Previous transmissions');
+            prevBtn.textContent = '← prev';
+
+            const counter = document.createElement('span');
+            counter.className = 'transmissions-counter';
+
+            const nextBtn = document.createElement('button');
+            nextBtn.setAttribute('aria-label', 'Next transmissions');
+            nextBtn.textContent = 'next →';
+
+            pagination.appendChild(prevBtn);
+            pagination.appendChild(counter);
+            pagination.appendChild(nextBtn);
+            grid.parentElement.appendChild(pagination);
+
+            function buildArticle(t, animate) {
                 const article = document.createElement('article');
-                article.className = 'transmission reveal';
+                article.className = 'transmission reveal' + (animate ? '' : ' visible');
                 article.innerHTML =
                     '<time class="transmission-date">' + t.date + '</time>' +
                     '<h3 class="transmission-title">' + t.title + '</h3>' +
                     '<p>' + t.body + '</p>';
-                grid.appendChild(article);
+                return article;
+            }
+
+            function renderPage(p, fade) {
+                const slice = transmissions.slice(p * PAGE_SIZE, (p + 1) * PAGE_SIZE);
+
+                function doRender() {
+                    grid.innerHTML = '';
+                    slice.forEach(t => grid.appendChild(buildArticle(t, false)));
+
+                    counter.textContent = (p + 1) + ' / ' + totalPages;
+                    prevBtn.disabled = p === 0;
+                    nextBtn.disabled = p === totalPages - 1;
+
+                    if (fade) {
+                        // Small delay so the opacity-0 class paints before we remove it
+                        requestAnimationFrame(() => {
+                            requestAnimationFrame(() => grid.classList.remove('fading'));
+                        });
+                    }
+                }
+
+                if (fade) {
+                    grid.classList.add('fading');
+                    setTimeout(doRender, 180);
+                } else {
+                    doRender();
+                    // Scroll-reveal on initial load
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+                    grid.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+                }
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (page > 0) { page--; renderPage(page, true); }
+            });
+            nextBtn.addEventListener('click', () => {
+                if (page < totalPages - 1) { page++; renderPage(page, true); }
             });
 
-            // Re-observe new elements for scroll reveal
-            const targets = grid.querySelectorAll('.reveal');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
-            targets.forEach(el => observer.observe(el));
+            renderPage(0, false);
         })
         .catch(() => {
             // noscript fallback stays visible
