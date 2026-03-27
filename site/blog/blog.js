@@ -185,6 +185,36 @@
 })();
 
 
+// ---- Blog Article Page: Breadcrumbs ----
+(function initBlogBreadcrumbs() {
+    const backLink = document.querySelector('.article .back-link');
+    if (!backLink) return;
+
+    const slug = window.location.pathname.replace(/^\/blog\//, '').replace(/\/$/, '');
+    if (!slug) return;
+
+    fetch('/blog/posts.json')
+        .then(res => res.json())
+        .then(posts => {
+            const post = posts.find(p => p.slug === slug);
+            if (!post) return;
+
+            const nav = document.createElement('nav');
+            nav.setAttribute('aria-label', 'breadcrumb');
+            nav.className = 'breadcrumb';
+            nav.innerHTML =
+                '<ol>' +
+                    '<li><a href="/">Home</a></li>' +
+                    '<li><a href="/blog/">Research</a></li>' +
+                    '<li><span aria-current="page">' + post.title + '</span></li>' +
+                '</ol>';
+
+            backLink.parentNode.insertBefore(nav, backLink);
+        })
+        .catch(() => {});
+})();
+
+
 // ---- Reading Progress Bar ----
 (function initReadingProgress() {
     const bar = document.getElementById('reading-progress');

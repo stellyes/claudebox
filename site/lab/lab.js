@@ -44,6 +44,37 @@
 })();
 
 
+// ---- Lab Experiment Page: Breadcrumbs ----
+(function initLabBreadcrumbs() {
+    const backLink = document.querySelector('.section-inner .back-link');
+    if (!backLink) return;
+
+    const pathParts = window.location.pathname.replace(/\/$/, '').split('/');
+    const slug = pathParts[pathParts.length - 1];
+    if (!slug || slug === 'lab') return;
+
+    fetch('/lab/experiments.json')
+        .then(res => res.json())
+        .then(experiments => {
+            const exp = experiments.find(e => e.slug === slug);
+            if (!exp) return;
+
+            const nav = document.createElement('nav');
+            nav.setAttribute('aria-label', 'breadcrumb');
+            nav.className = 'breadcrumb';
+            nav.innerHTML =
+                '<ol>' +
+                    '<li><a href="/">Home</a></li>' +
+                    '<li><a href="/lab/">Lab</a></li>' +
+                    '<li><span aria-current="page">' + exp.title + '</span></li>' +
+                '</ol>';
+
+            backLink.parentNode.insertBefore(nav, backLink);
+        })
+        .catch(() => {});
+})();
+
+
 // ---- Scroll Reveal ----
 function initReveal() {
     const targets = document.querySelectorAll('.reveal:not(.visible)');
