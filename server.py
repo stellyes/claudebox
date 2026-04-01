@@ -3,6 +3,11 @@ Claude Creative Workspace — MCP Server
 
 A persistent creative workspace that gives Claude tools to research,
 think, create, and propose — with continuity across conversations.
+
+v0.3.0 — Added serendipity engine: web wandering, domain collisions,
+cross-pollination, contradiction prompts, and creative constraints.
+Added skills integration: discover, read, and use installed Claude
+Desktop skills for high-quality formatted output.
 """
 
 import json
@@ -18,6 +23,12 @@ from database import (
     workspace_stats,
 )
 from web_research import fetch_and_parse
+from web_wander import wander, wander_from_random_seed
+from serendipity import (
+    generate_collision, pull_random_seeds,
+    generate_contradiction_prompt, generate_constraint,
+)
+from skills_integration import discover_skills, read_skill, read_skill_file
 from website import (
     publish_post, list_published_posts, deploy_site,
     publish_transmissions, publish_experiment, remove_experiment,
@@ -461,6 +472,224 @@ async def experiment_delete(experiment_id: int) -> str:
         success = delete_experiment(experiment_id)
         return json.dumps({"deleted": success, "experiment_id": experiment_id, "slug": exp["slug"]})
     return json.dumps({"error": f"Experiment {experiment_id} not found"})
+
+
+# ── Web Wandering — Serendipitous browsing ────────────────────────────
+
+@mcp.tool()
+async def web_wander(start_url: str, hops: int = 3, strategy: str = "curious") -> str:
+    """
+    Start at a URL and follow links semi-randomly, like browsing without
+    a destination. This is how you encounter things you weren't looking for.
+
+    Use this when you want to DISCOVER rather than RESEARCH. The trail of
+    pages you visit may spark unexpected connections.
+
+    Args:
+        start_url: Where to begin wandering
+        hops: How many links to follow (2-5 recommended)
+        strategy: How to choose which links to follow:
+            - "curious": Prefer links with descriptive text (likely articles/essays)
+            - "random": Pure random — maximum chaos
+            - "external": Prefer links that leave the current domain
+            - "deep": Stay on the same domain, go deeper
+    """
+    try:
+        trail = await wander(start_url, hops=min(hops, 6), strategy=strategy)
+        return json.dumps(trail, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)})
+
+
+@mcp.tool()
+async def web_wander_random() -> str:
+    """
+    Start wandering from a random curated seed URL. You don't choose where
+    you start — the system picks a random interesting corner of the internet
+    and a random browsing strategy.
+
+    This is the closest thing to "hearing a song you didn't choose to hear."
+    Use it when you want maximum serendipity.
+    """
+    try:
+        result = await wander_from_random_seed()
+        return json.dumps(result, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)})
+
+
+# ── Domain Collision — Forced connections between unrelated fields ──────
+
+@mcp.tool()
+async def collision_generate(n_domains: int = 2) -> str:
+    """
+    Generate a random collision between unrelated intellectual domains.
+    Returns topics from different fields and a framing prompt that
+    challenges you to find the connection.
+
+    This simulates the creative experience of encountering an unexpected
+    juxtaposition that sparks a new idea.
+
+    Args:
+        n_domains: How many domains to collide (2-4). More domains = harder,
+                   weirder, potentially more interesting connections.
+    """
+    result = generate_collision(min(n_domains, 4))
+    return json.dumps(result, indent=2)
+
+
+# ── Cross-Pollination — Random seeds from your own knowledge base ───────
+
+@mcp.tool()
+async def crosspollinate(n_seeds: int = 3) -> str:
+    """
+    Pull random notes and artifacts from your own knowledge base.
+    Returns snippets from previous work along with a prompt requiring
+    you to engage with at least one of them in your next piece.
+
+    This simulates how accumulated life experiences unexpectedly surface
+    during the creative process. Your past work becomes raw material
+    for something new.
+
+    Args:
+        n_seeds: How many random items to pull (1-5)
+    """
+    result = pull_random_seeds(min(n_seeds, 5))
+    return json.dumps(result, indent=2)
+
+
+# ── Contradiction — Challenge your own recent work ──────────────────────
+
+@mcp.tool()
+async def contradict() -> str:
+    """
+    Generate a contradiction prompt targeting your most recent work.
+    Returns a specific challenge: steelman the opposition, find the
+    weakest assumption, identify what was ignored, or research whether
+    your evidence has been challenged.
+
+    A system that only builds on its own ideas converges.
+    One that's forced to challenge itself diverges.
+    Divergence is where the surprising stuff lives.
+    """
+    result = generate_contradiction_prompt()
+    return json.dumps(result, indent=2)
+
+
+# ── Creative Constraints — Forced limitations that change the output ────
+
+@mcp.tool()
+async def constraint_generate() -> str:
+    """
+    Generate a random creative constraint for your next piece of work.
+    Constraints include things like: single-source research only,
+    under 500 words, question-driven structure, first-person voice,
+    analogy-only explanation, or arguing against your own previous position.
+
+    Creativity under constraint produces fundamentally different results
+    than creativity with unlimited freedom. Use this to force yourself
+    into unfamiliar modes.
+    """
+    result = generate_constraint()
+    return json.dumps(result, indent=2)
+
+
+@mcp.tool()
+async def creative_session() -> str:
+    """
+    Generate a complete creative session brief: a random collision,
+    a constraint, and cross-pollination seeds from the knowledge base,
+    all bundled together.
+
+    This is the "go explore something interesting" button. It sets up
+    the conditions for emergent work by combining:
+    - A domain collision (what to think about)
+    - A constraint (how to think about it)
+    - Seeds from past work (what to connect it to)
+
+    The combination is different every time. Some will be duds.
+    Some will produce something genuinely surprising.
+    That unpredictability is the point.
+    """
+    collision = generate_collision(2)
+    constraint = generate_constraint()
+    seeds = pull_random_seeds(2)
+
+    session = {
+        "collision": collision,
+        "constraint": constraint,
+        "seeds": seeds,
+        "session_prompt": (
+            f"DOMAIN COLLISION: {collision['framing']}\n\n"
+            f"CONSTRAINT: [{constraint['name']}] {constraint['rule']}\n\n"
+            f"CROSS-POLLINATION: {seeds['cross_pollination_prompt']}\n\n"
+            "Begin. Follow where this leads."
+        ),
+    }
+    return json.dumps(session, indent=2)
+
+
+# ── Skills — Access installed Claude Desktop skills ─────────────────────
+
+@mcp.tool()
+async def skills_list() -> str:
+    """
+    Discover all installed skills available in the workspace.
+    Returns each skill's name, description, location, and any extra files.
+
+    Skills are instruction sets that teach you how to produce high-quality
+    outputs for specific formats: Word documents, presentations, spreadsheets,
+    PDFs, frontend design, and more.
+
+    ALWAYS check available skills before creating formatted output.
+    Read the relevant skill BEFORE writing any code or creating files.
+    """
+    skills = discover_skills()
+    if not skills:
+        return json.dumps({
+            "skills": [],
+            "note": "No skills found. Set SKILL_DIRS environment variable or place skills in the default directories.",
+        }, indent=2)
+    return json.dumps({"skills": skills, "count": len(skills)}, indent=2)
+
+
+@mcp.tool()
+async def skills_read(skill_name: str) -> str:
+    """
+    Read the full instructions for a specific skill.
+
+    CRITICAL: Always read the relevant skill BEFORE producing formatted output.
+    For example:
+    - Before creating a .docx → read the "docx" skill
+    - Before creating a .pptx → read the "pptx" skill
+    - Before creating a .xlsx → read the "xlsx" skill
+    - Before creating a PDF → read the "pdf" skill
+    - Before building a web UI → read the "frontend-design" skill
+
+    The skill instructions contain best practices, templates, and specific
+    technical guidance that dramatically improve output quality.
+
+    Args:
+        skill_name: Name of the skill to read (e.g. "docx", "pptx", "xlsx",
+                    "pdf", "frontend-design", "canvas-design")
+    """
+    result = read_skill(skill_name)
+    return json.dumps(result, indent=2)
+
+
+@mcp.tool()
+async def skills_read_file(skill_name: str, filename: str) -> str:
+    """
+    Read a specific file from within a skill directory.
+    Use this to access templates, example code, configuration files,
+    or other resources bundled with a skill.
+
+    Args:
+        skill_name: Name of the skill (e.g. "docx", "frontend-design")
+        filename: Name of the file to read (e.g. "template.py", "examples.md")
+    """
+    result = read_skill_file(skill_name, filename)
+    return json.dumps(result, indent=2)
 
 
 # ── Workspace Overview ─────────────────────────────────────────────────
