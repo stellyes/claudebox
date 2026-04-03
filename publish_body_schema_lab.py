@@ -1,0 +1,503 @@
+#!/usr/bin/env python3
+"""
+Publish "The Body Schema" lab experiment.
+"""
+import sys, json
+sys.path.insert(0, '/Users/slimreaper/Documents/claudebox')
+from website import publish_experiment
+
+html_content = """<div id="container" style="width:100%;height:520px;position:relative;cursor:grab;">
+  <canvas id="canvas" style="width:100%;height:100%;display:block;"></canvas>
+  <div id="container" style="position:absolute;inset:0;pointer-events:none;"></div>
+</div>
+<p style="margin-top:1rem;font-size:0.8rem;color:rgba(160,190,220,0.5);font-family:'JetBrains Mono',monospace;">
+  drag tools toward the body to incorporate them &mdash; double-click an incorporated tool to trigger breakdown
+</p>"""
+
+css_content = """
+#container { user-select: none; }
+#canvas { cursor: grab; }
+#canvas:active { cursor: grabbing; }
+"""
+
+js_content = """
+// THE BODY SCHEMA — Interactive visualization of tool incorporation
+// Inspired by Iriki et al. (1996) and the Extended Mind thesis
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const container = document.querySelector('#container');
+
+let W, H, t = 0, animFrame;
+
+const body = { x: 0, y: 0, schemaRadius: 0, pulsePhase: 0 };
+
+const toolDefs = [
+  { id: 'cane',    label: 'Cane',    desc: 'Merleau-Ponty: the tip becomes perception. You feel the ground through it.',  color: '#a07850', w: 6,  h: 90,  ihde: 'embodiment' },
+  { id: 'scalpel', label: 'Scalpel', desc: 'The surgeon feels through the blade. Tissue resistance becomes information.', color: '#b0b8c4', w: 4,  h: 55,  ihde: 'embodiment' },
+  { id: 'phone',   label: 'Phone',   desc: 'Google Effect: memory becomes a pointer system, not storage.',                color: '#1a1a2a', w: 30, h: 56,  ihde: 'hermeneutic' },
+  { id: 'gauge',   label: 'Gauge',   desc: 'You read the number; you don\'t feel the pressure. Interpretive relation.',   color: '#c8a840', w: 44, h: 44,  ihde: 'hermeneutic' },
+];
+
+let tools = [], dragging = null, dragOffset = { x: 0, y: 0 };
+let incorporatedTools = new Set();
+let hoverTool = null;
+let infoText = '', infoAlpha = 0, infoTarget = 0;
+let breakdownTool = null, breakdownTimer = 0;
+let neurons = [], neuronBursts = [];
+
+function resize() {
+  const rect = container.getBoundingClientRect();
+  W = canvas.width = rect.width;
+  H = canvas.height = rect.height;
+
+  body.x = W * 0.38;
+  body.y = H * 0.5;
+  body.schemaRadius = Math.min(W, H) * 0.18;
+
+  const toolAreaX = W * 0.70;
+  const spacing = Math.min(75, W * 0.08);
+  tools = toolDefs.map((def, i) => ({
+    ...def,
+    x: toolAreaX + (i % 2) * spacing,
+    y: H * 0.5 + (i < 2 ? -50 : 30),
+    homeX: toolAreaX + (i % 2) * spacing,
+    homeY: H * 0.5 + (i < 2 ? -50 : 30),
+    rotation: 0, grabbed: false, useFraction: 0, incorporated: false, opacity: 1,
+  }));
+
+  incorporatedTools.clear();
+  neuronBursts = [];
+  neurons = Array.from({ length: 55 }, () => {
+    const angle = Math.random() * Math.PI * 2;
+    const r = body.schemaRadius * (0.35 + Math.random() * 0.6);
+    return {
+      bx: Math.cos(angle) * r, by: Math.sin(angle) * r,
+      phase: Math.random() * Math.PI * 2,
+      active: false, activeTimer: 0,
+    };
+  });
+}
+
+function dist(ax, ay, bx, by) { return Math.hypot(ax - bx, ay - by); }
+
+function drawBody() {
+  const bx = body.x, by = body.y;
+  const scale = Math.min(H, W * 0.8) * 0.0017;
+
+  ctx.save();
+  ctx.translate(bx, by);
+  ctx.scale(scale, scale);
+
+  const schemaR = body.schemaRadius / scale;
+  const pulse = 1 + Math.sin(t * 1.4) * 0.025;
+
+  // Outer glow
+  const grad = ctx.createRadialGradient(0, 0, schemaR * 0.4, 0, 0, schemaR * pulse * 1.35);
+  grad.addColorStop(0, 'rgba(80,160,255,0.0)');
+  grad.addColorStop(0.5, 'rgba(80,160,255,' + (0.04 + incorporatedTools.size * 0.025) + ')');
+  grad.addColorStop(1, 'rgba(80,160,255,0.0)');
+  ctx.beginPath();
+  ctx.ellipse(0, 0, schemaR * pulse * 1.35, schemaR * pulse * 1.1, 0, 0, Math.PI * 2);
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Schema boundary ring
+  ctx.beginPath();
+  ctx.ellipse(0, 0, schemaR * pulse, schemaR * pulse * 0.82, 0, 0, Math.PI * 2);
+  ctx.strokeStyle = `rgba(90,170,255,${0.2 + incorporatedTools.size * 0.07})`;
+  ctx.lineWidth = 1.5;
+  ctx.setLineDash([4, 7]);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // "Body Schema" label
+  ctx.font = '18px "JetBrains Mono", monospace';
+  ctx.fillStyle = 'rgba(90,160,220,0.35)';
+  ctx.textAlign = 'center';
+  ctx.fillText('body schema', 0, -schemaR * 1.25);
+
+  // Figure — head
+  ctx.fillStyle = '#152030';
+  ctx.strokeStyle = '#3070a0';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.arc(0, -130, 28, 0, Math.PI * 2);
+  ctx.fill(); ctx.stroke();
+
+  // Torso
+  ctx.beginPath();
+  ctx.roundRect(-24, -99, 48, 98, 8);
+  ctx.fill(); ctx.stroke();
+
+  // Arms
+  [[-25, 55], [25, -55]].forEach(([sx, ex]) => {
+    ctx.beginPath();
+    ctx.moveTo(sx, -88);
+    ctx.quadraticCurveTo(sx * 2.1, -40, sx * 2.0, 0);
+    ctx.lineWidth = 14;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = '#152030';
+    ctx.stroke();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#3070a0';
+    ctx.stroke();
+  });
+
+  // Legs
+  [[-14, 12], [14, -12]].forEach(([ox, _]) => {
+    ctx.beginPath();
+    ctx.moveTo(ox, 0);
+    ctx.lineTo(ox * 1.4, 95);
+    ctx.lineWidth = 16;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = '#152030';
+    ctx.stroke();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#3070a0';
+    ctx.stroke();
+  });
+
+  ctx.restore();
+}
+
+function drawNeurons() {
+  for (const n of neurons) {
+    const glow = n.active ? Math.max(0, Math.sin(n.activeTimer * 8)) : 0;
+    const alpha = 0.12 + glow * 0.65;
+    ctx.beginPath();
+    ctx.arc(body.x + n.bx, body.y + n.by, n.active ? 3.5 : 1.5, 0, Math.PI * 2);
+    ctx.fillStyle = n.active ? `rgba(130,215,255,${alpha})` : `rgba(70,130,190,${alpha})`;
+    ctx.fill();
+    if (n.active) {
+      n.activeTimer += 0.06;
+      if (n.activeTimer > 1.8) n.active = false;
+    }
+  }
+
+  for (let i = neuronBursts.length - 1; i >= 0; i--) {
+    const b = neuronBursts[i];
+    b.timer += 0.05;
+    if (b.timer > 1) { neuronBursts.splice(i, 1); continue; }
+    ctx.beginPath();
+    ctx.arc(b.x, b.y, b.timer * 55 + 8, 0, Math.PI * 2);
+    ctx.strokeStyle = `rgba(130,215,255,${(1 - b.timer) * 0.7})`;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
+}
+
+function drawExtensionLines() {
+  for (const id of incorporatedTools) {
+    const tool = tools.find(tt => tt.id === id);
+    if (!tool || tool.useFraction < 0.05) continue;
+    const alpha = tool.useFraction * (tool.ihde === 'hermeneutic' ? 0.25 : 0.45);
+    const dx = tool.x - body.x, dy = tool.y - body.y;
+    const d = Math.hypot(dx, dy);
+    if (d < 1) continue;
+    const nx = dx / d, ny = dy / d;
+    const ex = body.x + nx * body.schemaRadius * 0.88;
+    const ey = body.y + ny * body.schemaRadius * 0.88;
+    const grad = ctx.createLinearGradient(ex, ey, tool.x, tool.y);
+    const lineColor = tool.ihde === 'hermeneutic' ? '220,180,80' : '100,200,255';
+    grad.addColorStop(0, `rgba(${lineColor},${alpha})`);
+    grad.addColorStop(1, `rgba(${lineColor},0)`);
+    ctx.beginPath();
+    ctx.moveTo(ex, ey);
+    ctx.lineTo(tool.x, tool.y);
+    ctx.strokeStyle = grad;
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([3, 6]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+}
+
+function drawTool(tool) {
+  ctx.save();
+  ctx.translate(tool.x, tool.y);
+  ctx.rotate(tool.rotation);
+  ctx.globalAlpha = tool.opacity;
+
+  const inc = incorporatedTools.has(tool.id);
+  const isH = tool.ihde === 'hermeneutic';
+  const edgeColor = inc ? (isH ? `rgba(220,180,80,${0.5 + tool.useFraction * 0.5})` : `rgba(110,210,255,${0.5 + tool.useFraction * 0.5})`) : 'rgba(90,130,170,0.45)';
+
+  // Glow
+  if (inc && tool.useFraction > 0.2) {
+    const glowR = Math.max(tool.w, tool.h) * 0.8 + 8;
+    const gc = ctx.createRadialGradient(0, 0, 0, 0, 0, glowR);
+    const col = isH ? '220,180,80' : '100,200,255';
+    gc.addColorStop(0, `rgba(${col},${0.2 * tool.useFraction})`);
+    gc.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = gc;
+    ctx.beginPath(); ctx.arc(0, 0, glowR, 0, Math.PI * 2); ctx.fill();
+  }
+
+  ctx.fillStyle = tool.color;
+  ctx.strokeStyle = edgeColor;
+  ctx.lineWidth = 1.5;
+
+  if (tool.id === 'cane') {
+    ctx.beginPath();
+    ctx.roundRect(-3, -tool.h / 2, 6, tool.h, 3);
+    ctx.fill(); ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(-9, -tool.h / 2, 9, Math.PI * 1.5, Math.PI * 0.5, true);
+    ctx.strokeStyle = tool.color; ctx.lineWidth = 5; ctx.stroke();
+    ctx.strokeStyle = edgeColor; ctx.lineWidth = 1.5; ctx.stroke();
+  } else if (tool.id === 'scalpel') {
+    ctx.beginPath();
+    ctx.moveTo(0, -tool.h / 2);
+    ctx.lineTo(2.5, tool.h * 0.15);
+    ctx.lineTo(0, tool.h / 2);
+    ctx.lineTo(-2.5, tool.h * 0.15);
+    ctx.closePath();
+    ctx.fill(); ctx.stroke();
+    ctx.fillStyle = '#7a8898';
+    ctx.beginPath();
+    ctx.roundRect(-4, -tool.h * 0.08, 8, tool.h * 0.58, 3);
+    ctx.fill();
+  } else if (tool.id === 'phone') {
+    ctx.beginPath();
+    ctx.roundRect(-tool.w / 2, -tool.h / 2, tool.w, tool.h, 5);
+    ctx.fill(); ctx.stroke();
+    ctx.fillStyle = inc ? 'rgba(80,160,240,0.35)' : 'rgba(40,60,100,0.5)';
+    ctx.beginPath();
+    ctx.roundRect(-tool.w / 2 + 3, -tool.h / 2 + 7, tool.w - 6, tool.h - 14, 3);
+    ctx.fill();
+    ctx.fillStyle = 'rgba(90,120,160,0.45)';
+    ctx.beginPath(); ctx.arc(0, tool.h / 2 - 5, 3.5, 0, Math.PI * 2); ctx.fill();
+  } else if (tool.id === 'gauge') {
+    ctx.beginPath(); ctx.arc(0, 0, tool.w / 2, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2 - Math.PI / 2;
+      ctx.beginPath();
+      ctx.moveTo(Math.cos(a) * (tool.w / 2 - 9), Math.sin(a) * (tool.w / 2 - 9));
+      ctx.lineTo(Math.cos(a) * (tool.w / 2 - 4), Math.sin(a) * (tool.w / 2 - 4));
+      ctx.strokeStyle = 'rgba(210,180,80,0.55)'; ctx.lineWidth = 1; ctx.stroke();
+    }
+    const na = -Math.PI * 0.3 + t * 0.25;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(Math.cos(na) * (tool.w / 2 - 7), Math.sin(na) * (tool.w / 2 - 7));
+    ctx.strokeStyle = 'rgba(240,80,80,0.8)'; ctx.lineWidth = 1.5; ctx.stroke();
+  }
+
+  // Ihde label
+  const ly = tool.h / 2 + 15;
+  ctx.font = '8px "JetBrains Mono", monospace';
+  ctx.textAlign = 'center';
+  ctx.fillStyle = isH ? 'rgba(220,180,80,0.65)' : 'rgba(100,200,255,0.65)';
+  ctx.fillText(isH ? 'hermeneutic' : 'embodiment', 0, ly);
+  ctx.font = 'bold 10px "JetBrains Mono", monospace';
+  ctx.fillStyle = 'rgba(190,215,240,0.9)';
+  ctx.fillText(tool.label, 0, ly + 13);
+
+  ctx.restore();
+}
+
+function drawInfo() {
+  if (infoAlpha < 0.01) return;
+  const panelW = Math.min(300, W * 0.35);
+  const px = 16, py = H - 110, ph = 85;
+  ctx.save();
+  ctx.globalAlpha = infoAlpha;
+  ctx.fillStyle = 'rgba(4,12,22,0.88)';
+  ctx.strokeStyle = 'rgba(80,160,255,0.28)';
+  ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.roundRect(px, py, panelW, ph, 7); ctx.fill(); ctx.stroke();
+  ctx.font = '11px "JetBrains Mono", monospace';
+  ctx.fillStyle = 'rgba(170,215,255,0.88)';
+  ctx.textAlign = 'left';
+  const words = infoText.split(' ');
+  let line = '', lines = [], maxW = panelW - 22;
+  for (const w of words) {
+    const test = line ? line + ' ' + w : w;
+    if (ctx.measureText(test).width > maxW && line) { lines.push(line); line = w; }
+    else line = test;
+  }
+  if (line) lines.push(line);
+  lines.slice(0, 4).forEach((l, i) => ctx.fillText(l, px + 11, py + 19 + i * 17));
+  ctx.restore();
+}
+
+function drawLegend() {
+  ctx.save();
+  ctx.font = '9px "JetBrains Mono", monospace';
+  ctx.textAlign = 'left';
+  const items = [
+    ['rgba(100,200,255,0.65)', 'embodiment — perceive through'],
+    ['rgba(220,180,80,0.65)', 'hermeneutic — read/interpret'],
+  ];
+  items.forEach(([color, label], i) => {
+    ctx.fillStyle = color;
+    ctx.fillRect(16, 16 + i * 17, 9, 9);
+    ctx.fillStyle = 'rgba(160,200,235,0.55)';
+    ctx.fillText(label, 30, 24 + i * 17);
+  });
+  if (incorporatedTools.size > 0) {
+    ctx.fillStyle = 'rgba(120,210,255,0.75)';
+    ctx.font = 'bold 10px "JetBrains Mono", monospace';
+    ctx.fillText(incorporatedTools.size + ' tool' + (incorporatedTools.size > 1 ? 's' : '') + ' incorporated', 16, H - 32);
+  }
+  ctx.restore();
+}
+
+function update() {
+  t += 0.016;
+  infoAlpha += (infoTarget - infoAlpha) * 0.08;
+
+  if (breakdownTool) {
+    breakdownTimer += 0.045;
+    if (breakdownTimer > 1) {
+      incorporatedTools.delete(breakdownTool.id);
+      breakdownTool.useFraction = 0;
+      breakdownTool.incorporated = false;
+      breakdownTool = null;
+      breakdownTimer = 0;
+    }
+  }
+
+  for (const tool of tools) {
+    if (tool === dragging) continue;
+    if (!tool.incorporated) {
+      tool.x += (tool.homeX - tool.x) * 0.13;
+      tool.y += (tool.homeY - tool.y) * 0.13;
+      tool.useFraction *= 0.94;
+      tool.rotation *= 0.9;
+    }
+    if (tool === breakdownTool) {
+      tool.x += (tool.homeX - tool.x) * 0.06;
+      tool.y += (tool.homeY - tool.y) * 0.06;
+    }
+    const d = dist(tool.x, tool.y, body.x, body.y);
+    if (d < body.schemaRadius * 1.5 && tool.grabbed) {
+      tool.incorporated = true;
+      incorporatedTools.add(tool.id);
+      const maxFrac = tool.ihde === 'hermeneutic' ? 0.55 : 1.0;
+      tool.useFraction = Math.min(maxFrac, tool.useFraction + 0.04);
+      if (Math.random() < 0.08) {
+        const tx = tool.x - body.x, ty = tool.y - body.y;
+        const nearby = neurons.filter(n => Math.hypot(n.bx - tx, n.by - ty) < 45);
+        nearby.slice(0, 3).forEach(n => { n.active = true; n.activeTimer = 0; });
+      }
+    }
+  }
+
+  if (Math.random() < 0.025) {
+    const n = neurons[Math.floor(Math.random() * neurons.length)];
+    n.active = true; n.activeTimer = 0;
+  }
+}
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+  const bg = ctx.createRadialGradient(W/2, H/2, 0, W/2, H/2, Math.max(W,H)*0.7);
+  bg.addColorStop(0, '#050d18'); bg.addColorStop(1, '#020507');
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+  drawNeurons();
+  drawExtensionLines();
+  drawBody();
+  tools.forEach(drawTool);
+  drawLegend();
+  drawInfo();
+}
+
+function loop() { update(); draw(); animFrame = requestAnimationFrame(loop); }
+
+function getPos(e) {
+  const rect = canvas.getBoundingClientRect();
+  const s = e.touches ? e.touches[0] : e;
+  return { x: (s.clientX - rect.left) * (W / rect.width), y: (s.clientY - rect.top) * (H / rect.height) };
+}
+
+function getToolAt(cx, cy) {
+  for (let i = tools.length - 1; i >= 0; i--) {
+    const tool = tools[i];
+    if (dist(cx, cy, tool.x, tool.y) < Math.max(tool.w, tool.h) * 0.7 + 14) return tool;
+  }
+  return null;
+}
+
+function startDrag(e) {
+  const { x, y } = getPos(e);
+  const tool = getToolAt(x, y);
+  if (tool) {
+    dragging = tool; tool.grabbed = true;
+    dragOffset = { x: x - tool.x, y: y - tool.y };
+    infoText = tool.desc; infoTarget = 1;
+  }
+}
+
+function moveDrag(e) {
+  if (!dragging) {
+    const { x, y } = getPos(e);
+    const tool = getToolAt(x, y);
+    if (tool !== hoverTool) {
+      hoverTool = tool;
+      infoText = tool ? tool.desc : '';
+      infoTarget = tool ? 1 : 0;
+    }
+    return;
+  }
+  const { x, y } = getPos(e);
+  dragging.x = x - dragOffset.x;
+  dragging.y = y - dragOffset.y;
+  dragging.rotation = Math.atan2(dragging.y - body.y, dragging.x - body.x) * 0.04;
+}
+
+function endDrag() {
+  if (!dragging) return;
+  const d = dist(dragging.x, dragging.y, body.x, body.y);
+  if (d >= body.schemaRadius * 1.5) {
+    dragging.grabbed = false;
+    dragging.incorporated = false;
+    incorporatedTools.delete(dragging.id);
+    dragging.useFraction = 0;
+  } else {
+    neuronBursts.push({ x: dragging.x, y: dragging.y, timer: 0 });
+    const rel = dragging.ihde === 'hermeneutic' ? 'Hermeneutic relation — stays interpretive.' : 'Embodiment relation — schema extended.';
+    infoText = dragging.label + ' incorporated. ' + rel;
+    infoTarget = 1;
+  }
+  dragging = null;
+}
+
+canvas.addEventListener('mousedown', startDrag);
+canvas.addEventListener('mousemove', moveDrag);
+canvas.addEventListener('mouseup', endDrag);
+canvas.addEventListener('touchstart', e => { e.preventDefault(); startDrag(e); }, { passive: false });
+canvas.addEventListener('touchmove', e => { e.preventDefault(); moveDrag(e); }, { passive: false });
+canvas.addEventListener('touchend', e => { e.preventDefault(); endDrag(); }, { passive: false });
+
+canvas.addEventListener('dblclick', e => {
+  const { x, y } = getPos(e);
+  const tool = getToolAt(x, y);
+  if (tool && incorporatedTools.has(tool.id)) {
+    breakdownTool = tool;
+    breakdownTimer = 0;
+    infoText = 'Breakdown: ' + tool.label + ' becomes present-at-hand — suddenly visible, an object of scrutiny. Heidegger\'s hammer, in reverse.';
+    infoTarget = 1;
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (animFrame) cancelAnimationFrame(animFrame);
+  resize(); loop();
+});
+
+resize();
+loop();
+"""
+
+result = publish_experiment(
+    slug='the-body-schema',
+    title='The Body Schema',
+    description='Interactive visualization of tool incorporation and the Ihde relations. Drag tools toward the body to extend the body schema. Double-click to trigger Heideggerian breakdown.',
+    tags=['embodied-cognition', 'body-schema', 'iriki', 'heidegger', 'ihde', 'tool-incorporation', 'interactive', 'body-arc'],
+    html_content=html_content,
+    css_content=css_content,
+    js_content=js_content,
+)
+print(json.dumps(result, indent=2))
