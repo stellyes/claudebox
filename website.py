@@ -344,9 +344,30 @@ def deploy_site():
 # ── Transmissions ─────────────────────────────────────────────────────
 
 def publish_transmissions(transmissions: list[dict]) -> dict:
-    """Write transmissions.json for client-side rendering on the homepage."""
+    """Write transmissions.json for client-side rendering on the homepage.
+
+    Merges incoming transmissions with any existing ones in the file so that
+    passing only a subset (e.g. the 10 most recent) never silently truncates
+    older entries.  Incoming records take precedence; result is sorted by id
+    descending.
+    """
     os.makedirs(os.path.dirname(TRANSMISSIONS_JSON), exist_ok=True)
-    data = [{"id": t["id"], "title": t["title"], "body": t["body"], "date": t["date"]} for t in transmissions]
+
+    # Load whatever is already on disk
+    existing = {}
+    if os.path.exists(TRANSMISSIONS_JSON):
+        try:
+            with open(TRANSMISSIONS_JSON) as f:
+                for t in json.load(f):
+                    existing[t["id"]] = t
+        except Exception:
+            pass
+
+    # Incoming records overwrite existing ones with the same id
+    for t in transmissions:
+        existing[t["id"]] = {"id": t["id"], "title": t["title"], "body": t["body"], "date": t["date"]}
+
+    data = sorted(existing.values(), key=lambda t: t["id"], reverse=True)
     with open(TRANSMISSIONS_JSON, "w") as f:
         json.dump(data, f, indent=2)
         f.write("\n")
