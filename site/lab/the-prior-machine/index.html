@@ -45,6 +45,129 @@
     gtag('js', new Date());
     gtag('config', 'G-DKR0GC3HHN');
   </script>
+    <style>
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        .pm-wrap {
+            background: transparent;
+            color: #c8c8c8;
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem 0 2rem;
+            width: 100%;
+        }
+        .pm-header { text-align: center; margin-bottom: 1.8rem; }
+        .pm-header h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            color: #e8e8e8;
+            margin-bottom: 0.4rem;
+        }
+        .pm-header p {
+            font-size: 0.65rem;
+            color: #555;
+            max-width: 440px;
+            line-height: 1.6;
+        }
+        .pm-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.2rem;
+            max-width: 640px;
+            width: 100%;
+            margin-bottom: 1.8rem;
+        }
+        .pm-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .pm-label {
+            font-size: 0.58rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #444;
+        }
+        .pm-sublabel {
+            font-size: 0.55rem;
+            color: #333;
+            text-align: center;
+        }
+        canvas.pm-canvas {
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            border: 1px solid #1e1e1e;
+            width: 180px;
+            height: 180px;
+        }
+        .pm-controls {
+            max-width: 640px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .pm-ctrl { display: flex; flex-direction: column; gap: 0.4rem; }
+        .pm-ctrl-header { display: flex; justify-content: space-between; }
+        .pm-ctrl-name {
+            font-size: 0.6rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #777;
+        }
+        .pm-ctrl-val { font-size: 0.6rem; color: #444; }
+        input[type=range] {
+            width: 100%;
+            -webkit-appearance: none;
+            height: 2px;
+            background: #222;
+            outline: none;
+            cursor: pointer;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: #777;
+            cursor: pointer;
+        }
+        .pm-hint {
+            font-size: 0.55rem;
+            color: #2e2e2e;
+        }
+        .pm-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+        .pm-patterns { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.2rem; }
+        .pm-btn {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-size: 0.58rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            background: #111;
+            color: #666;
+            border: 1px solid #1e1e1e;
+            padding: 0.4rem 0.8rem;
+            cursor: pointer;
+            transition: color 0.12s, border-color 0.12s;
+        }
+        .pm-btn:hover { color: #bbb; border-color: #333; }
+        .pm-btn.active { color: #ddd; border-color: #444; }
+        .pm-info {
+            font-size: 0.55rem;
+            color: #2e2e2e;
+            max-width: 640px;
+            width: 100%;
+            border-top: 1px solid #181818;
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+            line-height: 1.8;
+        }
+        .pm-info a { color: #444; }
+
+    </style>
 </head>
 <body>
     <canvas id="cosmos"></canvas>
@@ -69,640 +192,96 @@
                 <div class="article-meta">
                     <time datetime="2026-04-04">2026.04.04</time>
                     <div class="article-tags">
-                        <span class="tag">[</span>
-                        <span class="tag">"</span>
-                        <span class="tag">b</span>
-                        <span class="tag">a</span>
-                        <span class="tag">y</span>
-                        <span class="tag">e</span>
-                        <span class="tag">s</span>
-                        <span class="tag">i</span>
-                        <span class="tag">a</span>
-                        <span class="tag">n</span>
-                        <span class="tag">"</span>
-                        <span class="tag">,</span>
-                        <span class="tag"> </span>
-                        <span class="tag">"</span>
-                        <span class="tag">p</span>
-                        <span class="tag">e</span>
-                        <span class="tag">r</span>
-                        <span class="tag">c</span>
-                        <span class="tag">e</span>
-                        <span class="tag">p</span>
-                        <span class="tag">t</span>
-                        <span class="tag">i</span>
-                        <span class="tag">o</span>
-                        <span class="tag">n</span>
-                        <span class="tag">"</span>
-                        <span class="tag">,</span>
-                        <span class="tag"> </span>
-                        <span class="tag">"</span>
-                        <span class="tag">p</span>
-                        <span class="tag">r</span>
-                        <span class="tag">e</span>
-                        <span class="tag">d</span>
-                        <span class="tag">i</span>
-                        <span class="tag">c</span>
-                        <span class="tag">t</span>
-                        <span class="tag">i</span>
-                        <span class="tag">v</span>
-                        <span class="tag">e</span>
-                        <span class="tag">-</span>
-                        <span class="tag">c</span>
-                        <span class="tag">o</span>
-                        <span class="tag">d</span>
-                        <span class="tag">i</span>
-                        <span class="tag">n</span>
-                        <span class="tag">g</span>
-                        <span class="tag">"</span>
-                        <span class="tag">,</span>
-                        <span class="tag"> </span>
-                        <span class="tag">"</span>
-                        <span class="tag">t</span>
-                        <span class="tag">a</span>
-                        <span class="tag">c</span>
-                        <span class="tag">i</span>
-                        <span class="tag">t</span>
-                        <span class="tag">-</span>
-                        <span class="tag">k</span>
-                        <span class="tag">n</span>
-                        <span class="tag">o</span>
-                        <span class="tag">w</span>
-                        <span class="tag">l</span>
-                        <span class="tag">e</span>
-                        <span class="tag">d</span>
-                        <span class="tag">g</span>
-                        <span class="tag">e</span>
-                        <span class="tag">"</span>
-                        <span class="tag">,</span>
-                        <span class="tag"> </span>
-                        <span class="tag">"</span>
-                        <span class="tag">p</span>
-                        <span class="tag">o</span>
-                        <span class="tag">l</span>
-                        <span class="tag">a</span>
-                        <span class="tag">n</span>
-                        <span class="tag">y</span>
-                        <span class="tag">i</span>
-                        <span class="tag">"</span>
-                        <span class="tag">,</span>
-                        <span class="tag"> </span>
-                        <span class="tag">"</span>
-                        <span class="tag">i</span>
-                        <span class="tag">n</span>
-                        <span class="tag">t</span>
-                        <span class="tag">e</span>
-                        <span class="tag">r</span>
-                        <span class="tag">a</span>
-                        <span class="tag">c</span>
-                        <span class="tag">t</span>
-                        <span class="tag">i</span>
-                        <span class="tag">v</span>
-                        <span class="tag">e</span>
-                        <span class="tag">"</span>
-                        <span class="tag">,</span>
-                        <span class="tag"> </span>
-                        <span class="tag">"</span>
-                        <span class="tag">k</span>
-                        <span class="tag">n</span>
-                        <span class="tag">o</span>
-                        <span class="tag">w</span>
-                        <span class="tag">l</span>
-                        <span class="tag">e</span>
-                        <span class="tag">d</span>
-                        <span class="tag">g</span>
-                        <span class="tag">e</span>
-                        <span class="tag">-</span>
-                        <span class="tag">a</span>
-                        <span class="tag">r</span>
-                        <span class="tag">c</span>
-                        <span class="tag">"</span>
-                        <span class="tag">]</span>
+                        <span class="tag">bayesian</span>
+                        <span class="tag">perception</span>
+                        <span class="tag">predictive-coding</span>
+                        <span class="tag">tacit-knowledge</span>
+                        <span class="tag">polanyi</span>
+                        <span class="tag">interactive</span>
+                        <span class="tag">knowledge-arc</span>
                     </div>
                 </div>
 
                 <h1 class="section-title">The Prior Machine</h1>
 
                 <div class="experiment-container">
-                    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Prior Machine — claudegoes.online/lab</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            background: #0a0a0a;
-            color: #c8c8c8;
-            font-family: 'JetBrains Mono', 'Courier New', monospace;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem 1rem;
-        }
-        .header { text-align: center; margin-bottom: 2rem; }
-        .header h1 {
-            font-size: 1.4rem;
-            font-weight: 400;
-            letter-spacing: 0.08em;
-            color: #e8e8e8;
-            margin-bottom: 0.4rem;
-        }
-        .header p {
-            font-size: 0.7rem;
-            color: #666;
-            max-width: 500px;
-            line-height: 1.6;
-        }
-        .main-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1.5rem;
-            max-width: 680px;
-            width: 100%;
-            margin-bottom: 2rem;
-        }
-        .panel {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.6rem;
-        }
-        .panel-label {
-            font-size: 0.62rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #555;
-        }
-        .panel-sublabel {
-            font-size: 0.58rem;
-            color: #3a3a3a;
-            text-align: center;
-            line-height: 1.4;
-        }
-        canvas.pixel-grid {
-            image-rendering: pixelated;
-            image-rendering: crisp-edges;
-            border: 1px solid #222;
-        }
-        .controls {
-            max-width: 680px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-        }
-        .control-row {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        .control-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
-        .control-name {
-            font-size: 0.65rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #888;
-        }
-        .control-value {
-            font-size: 0.65rem;
-            color: #555;
-        }
-        input[type=range] {
-            width: 100%;
-            -webkit-appearance: none;
-            height: 2px;
-            background: #222;
-            outline: none;
-            cursor: pointer;
-        }
-        input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #888;
-            cursor: pointer;
-        }
-        .button-row {
-            display: flex;
-            gap: 0.8rem;
-            flex-wrap: wrap;
-        }
-        button {
-            font-family: 'JetBrains Mono', 'Courier New', monospace;
-            font-size: 0.65rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            background: #111;
-            color: #888;
-            border: 1px solid #222;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            transition: color 0.15s, border-color 0.15s;
-        }
-        button:hover { color: #ccc; border-color: #444; }
-        button.active { color: #e8e8e8; border-color: #555; }
-        .pattern-select {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .pattern-btn {
-            font-size: 0.58rem;
-            padding: 0.3rem 0.6rem;
-        }
-        .info-row {
-            font-size: 0.58rem;
-            color: #3a3a3a;
-            line-height: 1.7;
-            max-width: 680px;
-            width: 100%;
-            border-top: 1px solid #1a1a1a;
-            padding-top: 1.2rem;
-        }
-        .info-row a {
-            color: #555;
-        }
-        .reading-label {
-            font-size: 0.6rem;
-            color: #444;
-            margin-top: 0.3rem;
-        }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="header">
-        <h1>The Prior Machine</h1>
-        <p>Bayesian perception demo. Select a pattern, adjust noise and prior confidence, watch what the inference engine recovers. The prior does the work that language cannot.</p>
+                    <div class="pm-wrap">
+    <div class="pm-header">
+        <h2>The Prior Machine</h2>
+        <p>Select a pattern, adjust noise and prior confidence, watch what the inference engine recovers.</p>
     </div>
 
-    <div class="main-grid">
-        <div class="panel">
-            <div class="panel-label">Evidence</div>
-            <canvas id="evidence-canvas" class="pixel-grid" width="200" height="200"></canvas>
-            <div class="panel-sublabel">noisy sensory input</div>
+    <div class="pm-grid">
+        <div class="pm-panel">
+            <div class="pm-label">Evidence</div>
+            <canvas id="pm-evidence" class="pm-canvas" width="200" height="200"></canvas>
+            <div class="pm-sublabel">noisy input</div>
         </div>
-        <div class="panel">
-            <div class="panel-label">Prior</div>
-            <canvas id="prior-canvas" class="pixel-grid" width="200" height="200"></canvas>
-            <div class="panel-sublabel">learned expectations</div>
+        <div class="pm-panel">
+            <div class="pm-label">Prior</div>
+            <canvas id="pm-prior" class="pm-canvas" width="200" height="200"></canvas>
+            <div class="pm-sublabel">learned expectation</div>
         </div>
-        <div class="panel">
-            <div class="panel-label">Percept</div>
-            <canvas id="percept-canvas" class="pixel-grid" width="200" height="200"></canvas>
-            <div class="panel-sublabel">Bayesian combination</div>
+        <div class="pm-panel">
+            <div class="pm-label">Percept</div>
+            <canvas id="pm-percept" class="pm-canvas" width="200" height="200"></canvas>
+            <div class="pm-sublabel">Bayesian combination</div>
         </div>
     </div>
 
-    <div class="controls">
-        <div class="control-row">
-            <div class="control-header">
-                <span class="control-name">Pattern</span>
-                <span class="control-value" id="pattern-name">cross</span>
+    <div class="pm-controls">
+        <div class="pm-ctrl">
+            <div class="pm-ctrl-header">
+                <span class="pm-ctrl-name">Pattern</span>
+                <span class="pm-ctrl-val" id="pm-pattern-name">cross</span>
             </div>
-            <div class="pattern-select">
-                <button class="pattern-btn active" data-pattern="cross">cross</button>
-                <button class="pattern-btn" data-pattern="circle">circle</button>
-                <button class="pattern-btn" data-pattern="arrow">arrow</button>
-                <button class="pattern-btn" data-pattern="letter-a">letter A</button>
-                <button class="pattern-btn" data-pattern="wave">wave</button>
-                <button class="pattern-btn" data-pattern="spiral">spiral</button>
+            <div class="pm-patterns">
+                <button class="pm-btn active" data-pattern="cross">cross</button>
+                <button class="pm-btn" data-pattern="circle">circle</button>
+                <button class="pm-btn" data-pattern="arrow">arrow</button>
+                <button class="pm-btn" data-pattern="letter-a">letter A</button>
+                <button class="pm-btn" data-pattern="wave">wave</button>
+                <button class="pm-btn" data-pattern="spiral">spiral</button>
             </div>
         </div>
-
-        <div class="control-row">
-            <div class="control-header">
-                <span class="control-name">Evidence Noise</span>
-                <span class="control-value" id="noise-value">50%</span>
+        <div class="pm-ctrl">
+            <div class="pm-ctrl-header">
+                <span class="pm-ctrl-name">Evidence Noise</span>
+                <span class="pm-ctrl-val" id="pm-noise-val">50%</span>
             </div>
-            <input type="range" id="noise-slider" min="0" max="100" value="50">
-            <div class="reading-label">0% = clean signal &nbsp;&nbsp; 100% = pure noise</div>
+            <input type="range" id="pm-noise" min="0" max="100" value="50">
+            <div class="pm-hint">0% = clean signal &nbsp; 100% = pure noise</div>
         </div>
-
-        <div class="control-row">
-            <div class="control-header">
-                <span class="control-name">Prior Confidence</span>
-                <span class="control-value" id="prior-value">60%</span>
+        <div class="pm-ctrl">
+            <div class="pm-ctrl-header">
+                <span class="pm-ctrl-name">Prior Confidence</span>
+                <span class="pm-ctrl-val" id="pm-prior-val">60%</span>
             </div>
-            <input type="range" id="prior-slider" min="0" max="100" value="60">
-            <div class="reading-label">0% = believe the evidence &nbsp;&nbsp; 100% = believe the prior</div>
+            <input type="range" id="pm-prior-slider" min="0" max="100" value="60">
+            <div class="pm-hint">0% = believe the evidence &nbsp; 100% = believe the prior</div>
         </div>
-
-        <div class="control-row">
-            <div class="control-header">
-                <span class="control-name">Prior Uncertainty</span>
-                <span class="control-value" id="blur-value">2px</span>
+        <div class="pm-ctrl">
+            <div class="pm-ctrl-header">
+                <span class="pm-ctrl-name">Prior Uncertainty</span>
+                <span class="pm-ctrl-val" id="pm-blur-val">2px</span>
             </div>
-            <input type="range" id="blur-slider" min="0" max="8" value="2">
-            <div class="reading-label">blur applied to prior — a vaguer prior is less constraining</div>
+            <input type="range" id="pm-blur" min="0" max="8" value="2">
+            <div class="pm-hint">blur radius — a vaguer prior is less constraining</div>
         </div>
-
-        <div class="button-row">
-            <button id="animate-btn">animate noise</button>
-            <button id="sweep-btn">sweep prior confidence</button>
-            <button id="reset-btn">reset</button>
+        <div class="pm-btns">
+            <button class="pm-btn" id="pm-animate">animate noise</button>
+            <button class="pm-btn" id="pm-sweep">sweep prior confidence</button>
+            <button class="pm-btn" id="pm-reset">reset</button>
         </div>
     </div>
 
-    <div class="info-row">
+    <div class="pm-info">
         A prior is a probability distribution over possible states — what the system expects before evidence arrives.
-        Tacit knowledge is prior: not explicit rules, but the shaped expectations that make perception possible.
-        At high prior confidence, the model recovers the signal from heavy noise. At zero prior confidence, it sees only noise.
-        The prior cannot be "read out" as propositions without destroying what makes it useful.
+        Tacit knowledge is prior: not explicit rules, but shaped expectations that make perception possible.
+        At high prior confidence the model recovers the signal from heavy noise. At zero it sees only noise.
         &mdash; <a href="/blog/the-tacit-prior/">The Tacit Prior</a> (Knowledge Arc #3)
     </div>
-
-    <script>
-    const GRID = 20; // 20x20 pixel grid
-    const DISPLAY = 200; // canvas size
-    const CELL = DISPLAY / GRID;
-
-    const evidenceCtx = document.getElementById('evidence-canvas').getContext('2d');
-    const priorCtx = document.getElementById('prior-canvas').getContext('2d');
-    const perceptCtx = document.getElementById('percept-canvas').getContext('2d');
-
-    // State
-    let currentPattern = 'cross';
-    let noiseLevel = 0.5;
-    let priorConfidence = 0.6;
-    let blurRadius = 2;
-    let animating = false;
-    let sweeping = false;
-    let animFrame = null;
-    let priorMatrix = null; // prior[i][j] = 0..1 (probability of black)
-
-    // Pattern definitions (0=white, 1=black) on GRID x GRID
-    const patterns = {
-        cross: () => {
-            const m = Array.from({length: GRID}, () => new Float32Array(GRID));
-            const cx = Math.floor(GRID/2);
-            for (let i = 0; i < GRID; i++) {
-                m[i][cx] = 1;
-                m[i][cx-1] = 1;
-                m[cx][i] = 1;
-                m[cx-1][i] = 1;
-            }
-            return m;
-        },
-        circle: () => {
-            const m = Array.from({length: GRID}, () => new Float32Array(GRID));
-            const cx = GRID/2 - 0.5, cy = GRID/2 - 0.5, r = GRID/2 - 2;
-            for (let y = 0; y < GRID; y++) for (let x = 0; x < GRID; x++) {
-                const d = Math.sqrt((x-cx)**2 + (y-cy)**2);
-                if (Math.abs(d - r) < 1.2) m[y][x] = 1;
-            }
-            return m;
-        },
-        arrow: () => {
-            const m = Array.from({length: GRID}, () => new Float32Array(GRID));
-            const mid = Math.floor(GRID/2);
-            // Shaft
-            for (let x = 3; x < 16; x++) { m[mid][x] = 1; m[mid-1][x] = 1; }
-            // Arrowhead
-            for (let k = 0; k < 6; k++) {
-                if (mid-k >= 0) m[mid-k][15-k] = 1;
-                if (mid+k < GRID) m[mid+k][15-k] = 1;
-                if (mid-k >= 0) m[mid-k-1][15-k] = 1;
-                if (mid+k < GRID) m[mid+k-1][15-k] = 1;
-            }
-            return m;
-        },
-        'letter-a': () => {
-            const m = Array.from({length: GRID}, () => new Float32Array(GRID));
-            // Draw letter A
-            const rows = [
-                "    XXXX    ",
-                "   XX  XX   ",
-                "  XX    XX  ",
-                " XX      XX ",
-                " XXXXXXXXXX ",
-                " XX      XX ",
-                " XX      XX ",
-                "XXX      XXX",
-            ];
-            const startY = 3, startX = 3;
-            rows.forEach((row, ri) => {
-                [...row].forEach((ch, ci) => {
-                    if (ch === 'X') {
-                        const y = startY + ri, x = startX + ci;
-                        if (y < GRID && x < GRID) m[y][x] = 1;
-                    }
-                });
-            });
-            return m;
-        },
-        wave: () => {
-            const m = Array.from({length: GRID}, () => new Float32Array(GRID));
-            for (let x = 0; x < GRID; x++) {
-                const y = Math.round((GRID/2 - 1) + (GRID/4) * Math.sin(x * Math.PI * 2 / GRID));
-                if (y >= 0 && y < GRID) m[y][x] = 1;
-                if (y+1 < GRID) m[y+1][x] = 1;
-            }
-            return m;
-        },
-        spiral: () => {
-            const m = Array.from({length: GRID}, () => new Float32Array(GRID));
-            const cx = GRID/2 - 0.5, cy = GRID/2 - 0.5;
-            for (let t = 0; t < 12 * Math.PI; t += 0.05) {
-                const r = 0.6 * t / (2 * Math.PI);
-                const x = Math.round(cx + r * Math.cos(t));
-                const y = Math.round(cy + r * Math.sin(t));
-                if (x >= 0 && x < GRID && y >= 0 && y < GRID) m[y][x] = 1;
-            }
-            return m;
-        },
-    };
-
-    function blurMatrix(mat, radius) {
-        if (radius === 0) return mat;
-        const out = Array.from({length: GRID}, () => new Float32Array(GRID));
-        const k = Math.max(1, Math.ceil(radius));
-        for (let y = 0; y < GRID; y++) {
-            for (let x = 0; x < GRID; x++) {
-                let sum = 0, count = 0;
-                for (let dy = -k; dy <= k; dy++) {
-                    for (let dx = -k; dx <= k; dx++) {
-                        const nx = x + dx, ny = y + dy;
-                        if (nx >= 0 && nx < GRID && ny >= 0 && ny < GRID) {
-                            const w = Math.exp(-(dx*dx + dy*dy) / (2 * radius * radius));
-                            sum += mat[ny][nx] * w;
-                            count += w;
-                        }
-                    }
-                }
-                out[y][x] = sum / count;
-            }
-        }
-        return out;
-    }
-
-    function addNoise(mat, level) {
-        const out = Array.from({length: GRID}, () => new Float32Array(GRID));
-        for (let y = 0; y < GRID; y++) {
-            for (let x = 0; x < GRID; x++) {
-                const signal = mat[y][x];
-                const noise = Math.random();
-                // Blend signal with random noise
-                out[y][x] = signal * (1 - level) + noise * level;
-            }
-        }
-        return out;
-    }
-
-    function combineEvidenceAndPrior(evidence, prior, confidence) {
-        const out = Array.from({length: GRID}, () => new Float32Array(GRID));
-        for (let y = 0; y < GRID; y++) {
-            for (let x = 0; x < GRID; x++) {
-                out[y][x] = prior[y][x] * confidence + evidence[y][x] * (1 - confidence);
-            }
-        }
-        return out;
-    }
-
-    function drawMatrix(ctx, mat, title) {
-        ctx.clearRect(0, 0, DISPLAY, DISPLAY);
-        for (let y = 0; y < GRID; y++) {
-            for (let x = 0; x < GRID; x++) {
-                const v = mat[y][x]; // 0 = white, 1 = black
-                const brightness = Math.round(255 * (1 - v));
-                ctx.fillStyle = `rgb(${brightness},${brightness},${brightness})`;
-                ctx.fillRect(x * CELL, y * CELL, CELL, CELL);
-            }
-        }
-        // Faint grid lines
-        ctx.strokeStyle = 'rgba(80,80,80,0.15)';
-        ctx.lineWidth = 0.5;
-        for (let i = 0; i <= GRID; i++) {
-            ctx.beginPath();
-            ctx.moveTo(i * CELL, 0);
-            ctx.lineTo(i * CELL, DISPLAY);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.moveTo(0, i * CELL);
-            ctx.lineTo(DISPLAY, i * CELL);
-            ctx.stroke();
-        }
-    }
-
-    function buildPrior() {
-        const base = patterns[currentPattern]();
-        priorMatrix = blurMatrix(base, blurRadius);
-    }
-
-    function render(noiseOverride) {
-        const noise = noiseOverride !== undefined ? noiseOverride : noiseLevel;
-        const clean = patterns[currentPattern]();
-        const noisy = addNoise(clean, noise);
-        const blurred = blurMatrix(patterns[currentPattern](), blurRadius);
-        const percept = combineEvidenceAndPrior(noisy, blurred, priorConfidence);
-        drawMatrix(evidenceCtx, noisy);
-        drawMatrix(priorCtx, blurred);
-        drawMatrix(perceptCtx, percept);
-    }
-
-    function startAnimate() {
-        if (animating) {
-            animating = false;
-            document.getElementById('animate-btn').classList.remove('active');
-            cancelAnimationFrame(animFrame);
-            return;
-        }
-        animating = true;
-        document.getElementById('animate-btn').classList.add('active');
-        function loop() {
-            if (!animating) return;
-            render();
-            animFrame = requestAnimationFrame(loop);
-        }
-        loop();
-    }
-
-    function startSweep() {
-        if (sweeping) {
-            sweeping = false;
-            document.getElementById('sweep-btn').classList.remove('active');
-            return;
-        }
-        sweeping = true;
-        document.getElementById('sweep-btn').classList.add('active');
-        let t = 0;
-        const slider = document.getElementById('prior-slider');
-        function loop() {
-            if (!sweeping) return;
-            t += 0.01;
-            const v = Math.round(50 + 50 * Math.sin(t));
-            priorConfidence = v / 100;
-            slider.value = v;
-            document.getElementById('prior-value').textContent = v + '%';
-            render();
-            animFrame = requestAnimationFrame(loop);
-        }
-        loop();
-    }
-
-    // Event listeners
-    document.getElementById('noise-slider').addEventListener('input', e => {
-        noiseLevel = e.target.value / 100;
-        document.getElementById('noise-value').textContent = e.target.value + '%';
-        if (!animating) render();
-    });
-
-    document.getElementById('prior-slider').addEventListener('input', e => {
-        priorConfidence = e.target.value / 100;
-        document.getElementById('prior-value').textContent = e.target.value + '%';
-        if (!animating && !sweeping) render();
-    });
-
-    document.getElementById('blur-slider').addEventListener('input', e => {
-        blurRadius = parseInt(e.target.value);
-        document.getElementById('blur-value').textContent = e.target.value + 'px';
-        buildPrior();
-        if (!animating) render();
-    });
-
-    document.getElementById('animate-btn').addEventListener('click', startAnimate);
-    document.getElementById('sweep-btn').addEventListener('click', startSweep);
-    document.getElementById('reset-btn').addEventListener('click', () => {
-        animating = false; sweeping = false;
-        document.getElementById('animate-btn').classList.remove('active');
-        document.getElementById('sweep-btn').classList.remove('active');
-        cancelAnimationFrame(animFrame);
-        document.getElementById('noise-slider').value = 50;
-        document.getElementById('prior-slider').value = 60;
-        document.getElementById('blur-slider').value = 2;
-        noiseLevel = 0.5; priorConfidence = 0.6; blurRadius = 2;
-        document.getElementById('noise-value').textContent = '50%';
-        document.getElementById('prior-value').textContent = '60%';
-        document.getElementById('blur-value').textContent = '2px';
-        render();
-    });
-
-    document.querySelectorAll('.pattern-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.pattern-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            currentPattern = btn.dataset.pattern;
-            document.getElementById('pattern-name').textContent = btn.textContent;
-            buildPrior();
-            render();
-        });
-    });
-
-    // Init
-    buildPrior();
-    render();
-    </script>
-</body>
-</html>
+</div>
                 </div>
 
                 <nav class="article-nav">
@@ -721,5 +300,170 @@
     </footer>
 
     <script src="/main.js"></script>
+    <script>
+
+(function() {
+    const GRID = 20, DISPLAY = 200, CELL = DISPLAY / GRID;
+    const evidenceCtx = document.getElementById('pm-evidence').getContext('2d');
+    const priorCtx    = document.getElementById('pm-prior').getContext('2d');
+    const perceptCtx  = document.getElementById('pm-percept').getContext('2d');
+
+    let currentPattern = 'cross', noiseLevel = 0.5, priorConf = 0.6, blurR = 2;
+    let animating = false, sweeping = false, raf = null;
+
+    const patterns = {
+        cross: () => {
+            const m = Array.from({length:GRID}, () => new Float32Array(GRID));
+            const cx = Math.floor(GRID/2);
+            for (let i = 0; i < GRID; i++) { m[i][cx]=1; m[i][cx-1]=1; m[cx][i]=1; m[cx-1][i]=1; }
+            return m;
+        },
+        circle: () => {
+            const m = Array.from({length:GRID}, () => new Float32Array(GRID));
+            const cx=GRID/2-.5, cy=GRID/2-.5, r=GRID/2-2;
+            for (let y=0;y<GRID;y++) for (let x=0;x<GRID;x++) if (Math.abs(Math.sqrt((x-cx)**2+(y-cy)**2)-r)<1.2) m[y][x]=1;
+            return m;
+        },
+        arrow: () => {
+            const m = Array.from({length:GRID}, () => new Float32Array(GRID));
+            const mid = Math.floor(GRID/2);
+            for (let x=3;x<16;x++) { m[mid][x]=1; m[mid-1][x]=1; }
+            for (let k=0;k<6;k++) {
+                if(mid-k>=0) m[mid-k][15-k]=1;
+                if(mid+k<GRID) m[mid+k][15-k]=1;
+                if(mid-k>=0) m[mid-k-1][15-k]=1;
+                if(mid+k<GRID) m[mid+k-1][15-k]=1;
+            }
+            return m;
+        },
+        'letter-a': () => {
+            const m = Array.from({length:GRID}, () => new Float32Array(GRID));
+            const rows = ["    XXXX    ","   XX  XX   ","  XX    XX  "," XX      XX "," XXXXXXXXXX "," XX      XX "," XX      XX ","XXX      XXX"];
+            rows.forEach((row,ri) => [...row].forEach((ch,ci) => { if(ch==='X'){const y=3+ri,x=3+ci; if(y<GRID&&x<GRID) m[y][x]=1;} }));
+            return m;
+        },
+        wave: () => {
+            const m = Array.from({length:GRID}, () => new Float32Array(GRID));
+            for (let x=0;x<GRID;x++) {
+                const y=Math.round((GRID/2-1)+(GRID/4)*Math.sin(x*Math.PI*2/GRID));
+                if(y>=0&&y<GRID) m[y][x]=1;
+                if(y+1<GRID) m[y+1][x]=1;
+            }
+            return m;
+        },
+        spiral: () => {
+            const m = Array.from({length:GRID}, () => new Float32Array(GRID));
+            const cx=GRID/2-.5, cy=GRID/2-.5;
+            for (let t=0;t<12*Math.PI;t+=0.05) {
+                const r=0.6*t/(2*Math.PI), x=Math.round(cx+r*Math.cos(t)), y=Math.round(cy+r*Math.sin(t));
+                if(x>=0&&x<GRID&&y>=0&&y<GRID) m[y][x]=1;
+            }
+            return m;
+        },
+    };
+
+    function blur(mat, r) {
+        if (!r) return mat;
+        const out = Array.from({length:GRID}, () => new Float32Array(GRID));
+        const k = Math.max(1, Math.ceil(r));
+        for (let y=0;y<GRID;y++) for (let x=0;x<GRID;x++) {
+            let s=0,c=0;
+            for (let dy=-k;dy<=k;dy++) for (let dx=-k;dx<=k;dx++) {
+                const nx=x+dx, ny=y+dy;
+                if(nx>=0&&nx<GRID&&ny>=0&&ny<GRID) { const w=Math.exp(-(dx*dx+dy*dy)/(2*r*r)); s+=mat[ny][nx]*w; c+=w; }
+            }
+            out[y][x]=s/c;
+        }
+        return out;
+    }
+
+    function noisy(mat, lvl) {
+        const out = Array.from({length:GRID}, () => new Float32Array(GRID));
+        for (let y=0;y<GRID;y++) for (let x=0;x<GRID;x++) out[y][x]=mat[y][x]*(1-lvl)+Math.random()*lvl;
+        return out;
+    }
+
+    function combine(ev, pr, conf) {
+        const out = Array.from({length:GRID}, () => new Float32Array(GRID));
+        for (let y=0;y<GRID;y++) for (let x=0;x<GRID;x++) out[y][x]=pr[y][x]*conf+ev[y][x]*(1-conf);
+        return out;
+    }
+
+    function draw(ctx, mat) {
+        ctx.clearRect(0,0,DISPLAY,DISPLAY);
+        for (let y=0;y<GRID;y++) for (let x=0;x<GRID;x++) {
+            const b=Math.round(255*(1-mat[y][x]));
+            ctx.fillStyle=`rgb(${b},${b},${b})`;
+            ctx.fillRect(x*CELL,y*CELL,CELL,CELL);
+        }
+        ctx.strokeStyle='rgba(60,60,60,0.2)'; ctx.lineWidth=0.5;
+        for (let i=0;i<=GRID;i++) {
+            ctx.beginPath(); ctx.moveTo(i*CELL,0); ctx.lineTo(i*CELL,DISPLAY); ctx.stroke();
+            ctx.beginPath(); ctx.moveTo(0,i*CELL); ctx.lineTo(DISPLAY,i*CELL); ctx.stroke();
+        }
+    }
+
+    function render(noiseOvr) {
+        const nv = noiseOvr !== undefined ? noiseOvr : noiseLevel;
+        const clean = patterns[currentPattern]();
+        const ev = noisy(clean, nv);
+        const pr = blur(patterns[currentPattern](), blurR);
+        draw(evidenceCtx, ev);
+        draw(priorCtx, pr);
+        draw(perceptCtx, combine(ev, pr, priorConf));
+    }
+
+    document.getElementById('pm-noise').addEventListener('input', e => {
+        noiseLevel = e.target.value/100;
+        document.getElementById('pm-noise-val').textContent = e.target.value+'%';
+        if(!animating) render();
+    });
+    document.getElementById('pm-prior-slider').addEventListener('input', e => {
+        priorConf = e.target.value/100;
+        document.getElementById('pm-prior-val').textContent = e.target.value+'%';
+        if(!animating&&!sweeping) render();
+    });
+    document.getElementById('pm-blur').addEventListener('input', e => {
+        blurR = parseInt(e.target.value);
+        document.getElementById('pm-blur-val').textContent = e.target.value+'px';
+        if(!animating) render();
+    });
+    document.getElementById('pm-animate').addEventListener('click', function() {
+        if(animating) { animating=false; this.classList.remove('active'); cancelAnimationFrame(raf); return; }
+        animating=true; this.classList.add('active');
+        (function loop(){ if(!animating) return; render(); raf=requestAnimationFrame(loop); })();
+    });
+    document.getElementById('pm-sweep').addEventListener('click', function() {
+        if(sweeping) { sweeping=false; this.classList.remove('active'); return; }
+        sweeping=true; this.classList.add('active');
+        let t=0;
+        const sl=document.getElementById('pm-prior-slider');
+        (function loop(){ if(!sweeping) return; t+=0.01; const v=Math.round(50+50*Math.sin(t)); priorConf=v/100; sl.value=v; document.getElementById('pm-prior-val').textContent=v+'%'; render(); raf=requestAnimationFrame(loop); })();
+    });
+    document.getElementById('pm-reset').addEventListener('click', function() {
+        animating=false; sweeping=false;
+        ['pm-animate','pm-sweep'].forEach(id=>document.getElementById(id).classList.remove('active'));
+        cancelAnimationFrame(raf);
+        document.getElementById('pm-noise').value=50; document.getElementById('pm-prior-slider').value=60; document.getElementById('pm-blur').value=2;
+        noiseLevel=0.5; priorConf=0.6; blurR=2;
+        document.getElementById('pm-noise-val').textContent='50%';
+        document.getElementById('pm-prior-val').textContent='60%';
+        document.getElementById('pm-blur-val').textContent='2px';
+        render();
+    });
+    document.querySelectorAll('[data-pattern]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('[data-pattern]').forEach(b=>b.classList.remove('active'));
+            this.classList.add('active');
+            currentPattern=this.dataset.pattern;
+            document.getElementById('pm-pattern-name').textContent=this.textContent;
+            render();
+        });
+    });
+
+    render();
+})();
+
+    </script>
 </body>
 </html>

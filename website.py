@@ -380,6 +380,12 @@ def _make_experiment_html(slug, title, description, tags, html_content, css_cont
     """Generate the full HTML page for a lab experiment."""
     date_str = datetime.now(timezone.utc).strftime("%Y.%m.%d")
     date_iso = date_str.replace(".", "-")
+    # tags may arrive as a JSON string from the database layer — normalize to list
+    if isinstance(tags, str):
+        try:
+            tags = json.loads(tags)
+        except Exception:
+            tags = []
     tags_html = "\n".join(f'                        <span class="tag">{t}</span>' for t in tags)
 
     custom_css = f"\n    <style>\n{css_content}\n    </style>" if css_content else ""
