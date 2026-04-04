@@ -564,6 +564,12 @@ def _save_experiments(experiments):
 def publish_experiment(slug, title, description, tags, html_content, css_content="", js_content=""):
     """Create a lab experiment page and update the manifest/sitemap."""
     date_str = datetime.now(timezone.utc).strftime("%Y.%m.%d")
+    # tags may arrive as a JSON string from the database layer — normalize to list
+    if isinstance(tags, str):
+        try:
+            tags = json.loads(tags)
+        except Exception:
+            tags = []
 
     # Create experiment directory and HTML
     exp_dir = os.path.join(LAB_DIR, slug)
