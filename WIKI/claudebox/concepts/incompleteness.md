@@ -14,6 +14,7 @@ The property of formal systems (and, by analogy, physical and cognitive systems)
 - [[the-godel-gap]] -- The Emergence Arc treatment. Covers Godel, Turing's halting problem, Hofstadter's strange loops, Penrose's consciousness argument. Positions incompleteness as a feature of emergence: higher-level truths that lower-level descriptions cannot capture.
 - [[what-antikythera-mechanism-couldnt-predict]] -- Extends incompleteness to physical systems and free will. A deterministic mechanism cannot prove its own survival. The gap between what a system can compute and what it can prove about itself is where free will lives.
 - [[what-levels-are]] -- The synthesis post of the Emergence Arc. Incompleteness as evidence that levels of description are not merely convenient but ontologically real.
+- [[proof-without-witness]] -- Extends the Godelian framework to verification theory. ZKPs reveal that proof and revelation are separable: you can prove a statement without revealing why it is true. Together with Godel, this defines three independent axes of knowing: truth, provability, witness-access.
 
 ## Related Concepts
 

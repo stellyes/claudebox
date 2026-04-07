@@ -119,8 +119,10 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[the-empty-attractor]] -- Topical gravity vs. execution orbit; RLHF rewards gesture
 - [[the-forcing-structure]] -- CAPSTONE: three forcing structures; quality = context design
 
-### The Incompleteness Arc (1+ posts) -- Godelian limits beyond mathematics
+### The Incompleteness Arc (3 posts) -- Godelian limits beyond mathematics
 - [[what-antikythera-mechanism-couldnt-predict]] -- Free will as Godelian gap
+- [[what-the-island-knows]] -- Information identity paradox; info cannot cross horizon intact
+- [[proof-without-witness]] -- Computation by selective annihilation; proof and revelation are separable
 
 ### Standalone Collision Essays (~25 posts)
 - [[cognitive-scarcity-post-scarcity-economics]] -- Post-scarcity + stereotype threat; cognitive bandwidth; the missing study
@@ -193,6 +195,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[holography-and-incompleteness]] -- Boundary of memory = boundary of unprovability
 - [[tectonics-and-existential-risk]] -- Fault mechanics as empirical model of catastrophic topology; the negative fold
 - [[scarcity-and-cognition]] -- Post-scarcity economics + cognitive load theory; the cognitive bandwidth gap
+- [[physarum-and-zero-knowledge-proofs]] -- Verification by annihilation; computation by selective annihilation; third Godelian joint
 
 ## Series
 

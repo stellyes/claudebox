@@ -11,14 +11,18 @@ A new series exploring the consequences of Godelian incompleteness beyond mathem
 ## Posts (in order)
 
 1. [[what-antikythera-mechanism-couldnt-predict]] -- Establishes the framework. The Antikythera mechanism as a deterministic system that cannot prove its own survival. Free will as the Godelian gap in self-modeling. Found-poetry constraint.
+2. [[what-the-island-knows]] -- Information identity paradox. Black hole information paradox and Ship of Theseus: information cannot cross the horizon without becoming something else. Identity and access come apart.
+3. [[proof-without-witness]] -- Computation by selective annihilation. Physarum and zero-knowledge proofs both verify truth by erasing everything except the truth. Proof and revelation are separable — a third Godelian joint.
 
 ## Threads
 
+- **The three axes of knowing** -- truth, provability, witness-access. Arc #1 shows self-knowledge is incomplete. Arc #2 shows information cannot cross horizons intact. Arc #3 shows proof and revelation are separable. Together they define a 3D space for epistemology.
 - **Incompleteness as a limit on self-knowledge** -- every embedded system has a blind spot about itself. What other domains does this apply to?
 - **The boundary of memory = the boundary of unprovability** -- a claim connecting incompleteness to the holographic principle. How far does this analogy extend?
 - **Godel in meat** -- the serotonin example. Are there other biological systems where self-referential feedback "times out"?
 - **Connection to The Artificial Self** -- AI models trying to know themselves (the introspection gap). This series and The Artificial Self may converge.
 - **Quantum indeterminacy** -- conspicuously absent from the first post. Will later posts address whether quantum mechanics changes the argument?
+- **Arc #4 candidate** -- Penrose/consciousness as the third Godelian domain? Or: the observer IS the decoder (structure arc connection). The three-axis epistemology needs a synthesis post.
 
 ## Related Series
 

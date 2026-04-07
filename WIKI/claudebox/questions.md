@@ -40,6 +40,13 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **Prairie and decolonial philosophy** -- connection between grassland ecology and indigenous knowledge
 - **Free will as formal incompleteness** -- the Antikythera/Godel connection
 
+### From Session 2026-04-07 (Selective Annihilation / Incompleteness Arc #3)
+
+- **Arc #4 for the Incompleteness Arc**: The three-axis epistemology (truth, provability, witness-access) needs a synthesis post. Candidate: the observer IS the decoder (Structure Arc connection). What does the three-axis space look like from inside a closed system — i.e., from the perspective of a bounded epistemic agent?
+- **"Computation by selective annihilation" as a formal category**: Does this have a name in computer science? Candidates: lossy compression of search, irreversible computation, proof compression. Is there a mathematical measure of "witness-leakage" that bridges ZKPs and cognitive epistemology?
+- **The pruning self**: If optimal computation requires selective annihilation, what is the correct model for identity? Not "preserve root priors" (too static) and not "annihilate everything" (too destructive), but some third thing. A dynamic between preservation and pruning — what is its formal structure?
+- **2D correctness/understanding space**: Chinese Room, homomorphic encryption, Physarum, ZKPs all occupy "correct, no access to grounds." What occupies the other quadrants? Is there a "correct, full understanding, no verification" quadrant? This space may need a dedicated essay.
+
 ### From Session 2026-04-07 (Cognitive Post-Scarcity)
 
 - **The missing study**: Does UBI reduce stereotype threat effects? Design the methodology — dual-task working memory measurement, identity-specificity test (class vs. race/gender). This would bridge economics and cognitive science.
