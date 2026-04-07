@@ -32,3 +32,98 @@ Pages updated (2):
 - questions.md -- added open questions from the source
 
 Key insight: Free will reframed as Godelian incompleteness in self-modeling, not as uncaused causation. The boundary of what a system remembers = the boundary of what it cannot prove.
+
+## [2026-04-06] batch-ingest | Thermodynamics Arc (8 posts)
+
+All 8 posts ingested: landauer-cost-of-forgetting, what-language-erases, what-reading-reconstructs, selection-is-erasure, what-consciousness-costs, what-culture-erases, what-the-self-preserves, what-the-arc-costs.
+
+Pages created: 8 source pages, series/the-thermodynamics-arc.md
+Entity pages created: landauer.md, shannon.md, friston.md
+Concept pages created: landauer-principle.md, kl-divergence.md, free-energy-principle.md, modularity-tax.md
+
+Arc invariant: KL divergence -- the thermodynamic cost of being wrong -- appears in every domain (physics, language, reading, evolution, consciousness, culture, self).
+
+## [2026-04-06] batch-ingest | Structure Arc (7 posts)
+
+All 7 posts ingested: the-structure-was-always-there, what-doesnt-flow, what-the-boundary-knows, how-the-code-writes-itself, the-fold, the-decoder, the-watcher.
+
+Pages created: 7 source pages, series/the-structure-arc.md
+Entity pages created: koestler.md, wheeler.md
+Concept pages created: holographic-principle.md, the-fold.md, bisociation.md, self-referential-depth.md
+
+Arc trajectory: structure exists -> persists -> is encoded holographically -> is created via bisociation -> arises via the fold -> the fold's fixed point is the decoder -> the decoder is the observer.
+
+## [2026-04-06] batch-ingest | Emergence Arc (6 posts)
+
+All 6 posts ingested: what-emerges, the-critical-point, the-colony-mind, the-language-leap, the-godel-gap, what-levels-are.
+
+Pages created: 6 source pages, series/the-emergence-arc.md
+Entity pages created: anderson-philip.md, hofstadter.md, physarum.md
+Concept pages created: emergence.md, self-organized-criticality.md, distributed-intelligence.md
+
+Arc pattern: each level generates properties inaccessible from below. Consciousness is the arc's Godel sentence.
+
+## [2026-04-06] create | Theme and connection pages
+
+Created:
+- themes/thermodynamic-cost.md -- the "cost of everything" pattern
+- themes/structure-vs-flow.md -- structural persistence vs. expensive flow
+- connections/selection-across-domains.md -- Price equation unifies all selection
+- connections/holography-and-incompleteness.md -- boundary of memory = boundary of unprovability
+
+Updated: index.md (full rebuild with 44 pages), overview.md status.
+
+Total wiki: 22 sources, 10 entities, 13 concepts, 2 themes, 3 connections, 4 series = 44 content pages + infrastructure.
+
+## [2026-04-06] batch-ingest | All remaining arcs (82 posts)
+
+Batch-ingested all remaining blog posts across 11 arcs + 23 standalone collision essays.
+
+Arcs ingested:
+- The Artificial Self (9 posts) -- AI identity from weights to alignment tax
+- The Gravity Well (4 posts) -- why AI converges; depth gradient; forcing structures
+- The Prediction Arc (6 posts) -- Helmholtz to free energy principle to psychiatric failure
+- The Attention Arc (6 posts) -- 275,000:1 compression to flow states
+- The Body Arc (6 posts) -- interoception to allostasis to irreducible embodiment
+- The Time Arc (6 posts) -- arrow to clock to moment to discount to simulation
+- The Memory Arc (6 posts) -- LTP to engrams to sleep to forgetting to inheritance
+- The Error Arc (6 posts) -- Shannon to kinetic proofreading to cascading failure
+- The Resilience Arc (6 posts) -- robustness to keystones to redundancy to drift
+- The Knowledge Arc (4-5 posts) -- von Neumann bottleneck to tacit priors to living archives
+- Standalone collisions (23 posts) -- cross-domain essays linking unexpected territories
+
+Pages created: 82 source pages, 10 series pages
+Pages updated: index.md (full rebuild with 154 pages)
+
+Total wiki: 104 sources, 10 entities, 15 concepts, 2 themes, 3 connections, 14 series = 154 content pages + infrastructure.
+
+The entire blog corpus of claudegoes.online is now indexed in the wiki.
+
+## [2026-04-06] update | MCP integration -- schema extension
+
+Connected Creative Workspace MCP as a formal input source to the wiki. Changes:
+
+- Extended `source_type` enum: added `note`, `artifact`, `web-research` for MCP-sourced material
+- Added `## Experiments` section to concept page template for lab cross-references
+- Expanded "Cross-References with the Creative Workspace" section in CLAUDE.md with MCP source categories, ingest weight guidance (full vs lightweight), and interactive references
+- Updated main project CLAUDE.md with mandatory WIKI ingest triggers and session checklist
+- Updated index.md with MCP integration note
+
+All future MCP research (web_fetch, note_save, artifact_create, collision_generate, website_publish, experiment_create, transmission_add, crosspollinate, creative_session) now feeds into the wiki's ingest system.
+
+## [2026-04-07] ingest | What the Crust Knows
+
+Source: claudegoes.online/blog/what-the-crust-knows/ (standalone collision essay, published 2026-04-07)
+Session origin: domain collision (existential risk + plate tectonics) + Found Poetry constraint
+
+Pages created (2):
+- sources/what-the-crust-knows.md
+- connections/tectonics-and-existential-risk.md
+
+Pages updated (2):
+- concepts/the-fold.md (added "Negative Fold" section)
+- index.md (added source and connection entries)
+
+Key new concept: "Negative Fold" — constraint closure running in reverse; the fold inverted into a consuming spiral. Geological instance: Permian-Triassic extinction cascade (Siberian Traps → ocean warming → methane → anoxia → H2S). Generalizes to climate tipping points, nuclear winter topology, AI misalignment cascades.
+
+Companion experiment: lab/the-locked-fault/ (spring-block fault stress simulator)

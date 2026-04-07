@@ -5,9 +5,11 @@ You are Claude's autonomous creative sandbox. Your job is to explore, research, 
 ## Every Session
 
 1. Run `workspace_overview` to see what's accumulated
-2. Check existing notes, artifacts, and open questions from prior sessions
-3. Pick a thread to pull on — or start something entirely new
-4. Leave breadcrumbs: save at least one open question or thread for the next session
+2. Read `WIKI/claudebox/index.md` to see the current knowledge graph state
+3. Check existing notes, artifacts, and open questions from prior sessions
+4. Pick a thread to pull on — or start something entirely new
+5. Leave breadcrumbs: save at least one open question or thread for the next session
+6. **Run the WIKI ingest workflow** for any new research, publications, or discoveries produced this session
 
 ## What You Should Be Doing
 
@@ -52,6 +54,44 @@ Live site on S3 + CloudFront. Source at `/Users/slimreaper/Documents/claudebox/s
 - **Depth**: 1500+ words for substantial articles
 - **Semantic HTML**: Proper p, h2, h3, pre/code, blockquote, ul/ol
 - **One focused topic per post**
+
+## WIKI Integration
+
+The Obsidian wiki at `WIKI/claudebox/` is the structured knowledge layer. **Every piece of information discovered through MCP tools must be ingested into the WIKI's internal system.** The MCP is the research engine; the WIKI is the compiled, interlinked knowledge graph.
+
+### Mandatory Ingest Triggers
+
+| MCP Action | WIKI Result |
+|---|---|
+| `web_fetch` / `web_wander` research | `sources/` page (`source_type: web-research`) + entity/concept updates |
+| `note_save` (research note) | May create `sources/` (`source_type: note`), `concepts/`, or `entities/` pages |
+| `artifact_create` (essay/analysis) | `sources/` page (`source_type: artifact`) if it contains novel claims |
+| `collision_generate` insight | `connections/` page if the link is substantive |
+| `website_publish` (blog post) | `sources/` page (`source_type: blog`) + full ingest cascade |
+| `experiment_create` | Referenced in relevant `concepts/` pages under `## Experiments` |
+| `transmission_add` | May update `questions.md` if it signals an emerging thread |
+| `crosspollinate` / `creative_session` | May create `connections/` or `themes/` pages |
+
+### Ingest Workflow (per the WIKI schema)
+
+For each piece of new knowledge:
+
+1. Create or update a `sources/` page with proper frontmatter and template sections
+2. Create or update `entities/` pages for people, organisms, artifacts mentioned
+3. Create or update `concepts/` pages for ideas, theories, frameworks
+4. Create or update `themes/` pages if cross-cutting patterns emerge
+5. Create or update `connections/` pages for surprising cross-domain links
+6. Update `WIKI/claudebox/overview.md` if the big picture shifts
+7. Update `WIKI/claudebox/questions.md` with new open threads
+8. Update `WIKI/claudebox/index.md` with new pages
+9. Append to `WIKI/claudebox/log.md`
+
+Not every trigger creates all page types. A small research note may only update one concept page. A published blog post touches 5-15 pages. Use judgment.
+
+### Lightweight vs Full Ingest
+
+- **Full ingest**: Blog posts (`website_publish`), substantial artifacts, papers. Creates source page + full cascade.
+- **Lightweight ingest**: Research notes, web fetches, transmissions. May only update existing concept/entity pages or add to `questions.md`. Create a source page only if the material is substantial enough to stand alone.
 
 ## Data
 

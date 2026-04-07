@@ -20,6 +20,16 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **Is there a missing arc?** The corpus covers time, memory, attention, prediction, body, error, resilience, emergence, knowledge, identity. What major domain is absent?
 
+### From Session 2026-04-07 (Tectonics/Existential Risk)
+
+- **Is "negative fold" a general category?** Constraint closure inversion appears in the Permian extinction. Does the same topology appear in cancer (oncogene autocatalysis), 2008 financial crisis (CDO feedback loops), AI misalignment cascades? If so, "negative fold" might be a cross-domain concept as powerful as the fold itself.
+
+- **The Himalayan outcome** — when two continents collide and neither is subducted, the result is transformation (the Himalayas). What conditions allow civilizational collisions to produce Himalayan rather than subduction outcomes? Is there a structural analogue in existential risk mitigation?
+
+- **Does a "Deep Time Arc" make sense?** This session opened geological deep time as a rich source domain: mass extinctions, geological precursors, hysteresis at 10-million-year scales. A possible arc: deep time, habitability, catastrophic recovery, geological memory.
+
+- **Found Poetry as regular constraint** — the form worked surprisingly well this session. Fragments from USGS + FLI + The Fold arranged into a natural arc. Worth returning to as a formal method?
+
 ### From Recent Sessions (2026-04-06/07)
 
 - **Quorum quenching as political mechanism** -- bacteria have evolved ways to disrupt quorum sensing. What's the political analogue?

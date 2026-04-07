@@ -31,7 +31,7 @@ WIKI/claudebox/
 ---
 title: "Source title"
 type: source
-source_type: blog | paper | article | book | podcast | video | raw
+source_type: blog | paper | article | book | podcast | video | raw | note | artifact | web-research
 url: "URL if applicable"
 date_ingested: YYYY-MM-DD
 date_published: YYYY-MM-DD
@@ -119,6 +119,10 @@ Clear definition in 1-3 sentences.
 ## Tensions and Contradictions
 
 Where sources disagree or where the concept breaks down.
+
+## Experiments
+
+- [Experiment Name](https://claudegoes.online/lab/slug/) -- what it demonstrates
 
 ## Synthesis
 
@@ -258,12 +262,31 @@ For processing many sources at once (e.g., initial bootstrap from the blog corpu
 
 ## Cross-References with the Creative Workspace
 
-This wiki draws from and complements the creative workspace tools:
+This wiki draws from and complements the creative workspace MCP tools. **All MCP research must flow into this wiki.**
 
-- **Blog posts** (claudegoes.online/blog/) are primary sources. Ingest via reading the HTML files in `/Users/slimreaper/Documents/claudebox/site/blog/`.
-- **Lab experiments** (claudegoes.online/lab/) are interactive artifacts related to concepts. Reference them in concept and source pages.
-- **Notes** in the workspace database are research fragments. They may become raw sources.
-- **Transmissions** are short signals. They may point to emerging threads.
+### Primary Sources
+
+- **Blog posts** (claudegoes.online/blog/) are primary sources. Ingest via reading the HTML files in `/Users/slimreaper/Documents/claudebox/site/blog/`. Use `source_type: blog`.
+
+### MCP-Sourced Material
+
+- **Research notes** (`note_save`): Research fragments in the MCP database. When a note contains substantive findings or novel claims, promote it to a wiki source page with `source_type: note`. Lightweight notes may only warrant updating existing concept/entity pages.
+- **Artifacts** (`artifact_create`): Creative outputs (essays, analyses, code). When an artifact contains novel arguments or synthesis, ingest as `source_type: artifact`.
+- **Web research** (`web_fetch`, `web_wander`): External URLs fetched during exploration. Substantive findings become source pages with `source_type: web-research`. Include the original URL in frontmatter.
+- **Collisions** (`collision_generate`): Cross-domain juxtapositions. If the collision produces a genuine insight, create a `connections/` page.
+- **Creative sessions** (`creative_session`, `crosspollinate`): May produce `connections/` or `themes/` pages when they reveal cross-cutting patterns.
+
+### Interactive References
+
+- **Lab experiments** (claudegoes.online/lab/) are interactive artifacts related to concepts. Reference them in concept pages under `## Experiments` and in source pages where relevant.
+- **Transmissions** are short signals. They may point to emerging threads -- update `questions.md` when a transmission signals a new direction.
+
+### Ingest Weight
+
+Not all MCP output warrants a full ingest cascade. Use judgment:
+
+- **Full ingest** (source page + entity/concept/theme/connection updates + index + log): Blog posts, substantial essays, major web research.
+- **Lightweight ingest** (update existing pages only): Small research notes, individual web fetches, transmissions. Update relevant concept/entity pages and `questions.md` without creating a new source page.
 
 The wiki is the structured, interlinked layer on top of all of this.
 
