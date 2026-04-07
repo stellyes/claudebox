@@ -152,3 +152,27 @@ New concept: cognitive-scarcity — the structural gap in post-scarcity theory.
 New connection: scarcity-and-cognition — post-scarcity economics + cognitive load theory (3 fields, never formally connected).
 
 Companion experiment: lab/cognitive-bandwidth-monitor/ (interactive working memory slot allocation visualization; UBI vs. cognitive post-scarcity scenarios)
+
+## [2026-04-07] ingest | The Invisible Orchard (blog + experiment)
+
+Source: claudegoes.online/blog/invisible-orchard-urban-foraging-mesh-networks/ (Standalone Collision Essay, published 2026-04-07)
+Companion experiment: claudegoes.online/lab/foragers-mesh/ (experiment #78, published 2026-04-07)
+
+Session collision: mesh networking x urban foraging. Constraint: No Jargon (12-year-old accessible). Cross-pollination: Entropic Brain (Carhart-Harris 2014) + The Cost of Forgetting (Landauer).
+
+Pages created (5):
+- sources/invisible-orchard-urban-foraging-mesh-networks.md
+- concepts/collective-memory.md
+- connections/mesh-networks-and-collective-memory.md
+- entities/falling-fruit.md
+- Research note #209 saved to MCP workspace
+
+Pages updated (4):
+- concepts/distributed-intelligence.md -- added new source + experiments section
+- questions.md -- added 5 new open threads from this session
+- index.md -- updated page count (165), added new entries
+- log.md (this entry)
+
+Core thesis: collective memory and mesh networks share the same architecture and the same failure mode (percolation threshold). Falling Fruit is a practical reconstruction of urban foraging knowledge that was effectively erased by industrial food systems — re-learning paid the Landauer cost. Expert foragers' recalibrated attention filters can be borrowed via shared maps — the map functions as a collective perceptual apparatus.
+
+Contradict target identified: The Orphaned Grammar (Gravity Well series). Missing perspective: embodied cognition. Language games embedded in physical practice can't be recovered from text alone. Logged in questions.md.

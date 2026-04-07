@@ -55,6 +55,18 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **Post-scarcity of the self**: Hesse's multiplicity — the self as "manifold world, constellated heaven." When does stereotype threat collapse this multiplicity into a single category? Can the four-slot model formalize a measure of "identity freedom"?
 - **The Enacted Mind gap**: The enacted mind thesis (body IS mind) misses the socially-perceived body as cognitive constraint. An essay with this tension built in would be stronger than the original research brief.
 
+### From Session 2026-04-07 (Mesh Networks / Urban Foraging)
+
+- **What is the percolation threshold for community knowledge?** Mesh networks have a mathematically defined critical density below which signals don't propagate. Does community knowledge transmission have an analogous empirical threshold? If so, can it be measured before knowledge is lost?
+
+- **Does the shared map change what people *see*, or only where they look?** The Invisible Orchard claims that expert foragers' recalibrated attention can be borrowed through a map. But does access to a map actually recalibrate attention over time, or does it only direct post-hoc navigation? (Testable: compare experienced map users vs. non-users in free-form observation tasks.)
+
+- **Dark matter knowledge and interface design**: Immigrant communities often hold foraging knowledge that hasn't propagated to the broader mesh. Is an open, anonymous map the right interface to activate this, or does it require trust-based, community-specific channels?
+
+- **Is there a Knowledge Arc post in collective memory?** The Knowledge Arc covers how knowledge is stored and lost at civilizational scale. The Invisible Orchard adds: mesh-topology community knowledge as a distinct regime between individual memory and institutional record. Does this warrant a dedicated post in the arc?
+
+- **The contradict thread (The Orphaned Grammar)**: The Orphaned Grammar (Gravity Well series) argues that LLMs are trained on the self-complete textual residue of language games. The missing perspective: embodied cognition. Most language games are embedded in forms of life that include physical practice — cooking, surgery, navigation — that can't be fully recovered from text alone. The orphaned grammar isn't just dead language; it's any embodied practice that was never text-ified.
+
 ### Bootstrap Questions
 
 - Which blog posts contradict each other? (Needs systematic ingest to find)

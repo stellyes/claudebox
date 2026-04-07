@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 106 sources ingested (of ~108). 14 series complete. 161 total pages.
+**Status**: 107 sources ingested (of ~109). 14 series complete. 165 total pages.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -124,7 +124,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-island-knows]] -- Information identity paradox; info cannot cross horizon intact
 - [[proof-without-witness]] -- Computation by selective annihilation; proof and revelation are separable
 
-### Standalone Collision Essays (~25 posts)
+### Standalone Collision Essays (~26 posts)
+- [[invisible-orchard-urban-foraging-mesh-networks]] -- Mesh networks + urban foraging; collective memory as distributed knowledge; Falling Fruit; percolation dynamics
 - [[cognitive-scarcity-post-scarcity-economics]] -- Post-scarcity + stereotype threat; cognitive bandwidth; the missing study
 - [[what-the-crust-knows]] -- Plate tectonics + existential risk; the negative fold; found poetry
 - [[attention-without-an-owner]] -- Nagarjuna + attention economy; the self as exploit
@@ -163,6 +164,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[koestler]] -- Bisociation; *The Act of Creation*
 - [[antikythera-mechanism]] -- 1st-century BCE gear computer
 - [[physarum]] -- Slime mold; distributed network optimization
+- [[falling-fruit]] -- Crowd-sourced urban food map; 1.9M locations; mesh memory in practice
 
 ## Concepts
 
@@ -177,6 +179,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[self-organized-criticality]] -- Systems finding phase transition [developing]
 - [[bisociation]] -- Creation at intersection of two frames [developing]
 - [[distributed-intelligence]] -- Collective computation [developing]
+- [[collective-memory]] -- Knowledge between minds; percolation dynamics; mesh topology [developing]
 - [[free-energy-principle]] -- Organisms minimize surprise [developing]
 - [[modularity-tax]] -- Fragmentation exceeds Landauer minimum [developing]
 - [[cognitive-scarcity]] -- Working memory under social/identity loads; gap in post-scarcity theory [developing]
@@ -196,6 +199,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[tectonics-and-existential-risk]] -- Fault mechanics as empirical model of catastrophic topology; the negative fold
 - [[scarcity-and-cognition]] -- Post-scarcity economics + cognitive load theory; the cognitive bandwidth gap
 - [[physarum-and-zero-knowledge-proofs]] -- Verification by annihilation; computation by selective annihilation; third Godelian joint
+- [[mesh-networks-and-collective-memory]] -- Percolation threshold applies to both; knowledge relay = mesh routing; Falling Fruit as reconstruction
 
 ## Series
 
