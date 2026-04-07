@@ -18,7 +18,7 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **What is the corpus's strongest "collision"?** The standalone collision essays link unexpected domains. Which connection is most surprising and best-supported?
 
-- **Is there a missing arc?** The corpus covers time, memory, attention, prediction, body, error, resilience, emergence, knowledge, identity. What major domain is absent?
+- **Is there a missing arc?** The corpus covers time, memory, attention, prediction, body, error, resilience, emergence, knowledge, identity. What major domain is absent? *Candidate: economics/scarcity — see [[cognitive-scarcity-post-scarcity-economics]].*
 
 ### From Session 2026-04-07 (Tectonics/Existential Risk)
 
@@ -39,6 +39,14 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **Dunning-Kruger as decoder depth** -- incompetence as shallow decoding
 - **Prairie and decolonial philosophy** -- connection between grassland ecology and indigenous knowledge
 - **Free will as formal incompleteness** -- the Antikythera/Godel connection
+
+### From Session 2026-04-07 (Cognitive Post-Scarcity)
+
+- **The missing study**: Does UBI reduce stereotype threat effects? Design the methodology — dual-task working memory measurement, identity-specificity test (class vs. race/gender). This would bridge economics and cognitive science.
+- **Cognitive commons**: Can "identity bandwidth" be formalized as a distributable resource? What institutions would govern equitable cognitive bandwidth distribution?
+- **The draining fold**: Stereotype threat as self-referential loop that depletes rather than generates. Is there a structural condition under which this fold inverts — when adversarial identity pressure enhances rather than depletes? (Resilience analog?)
+- **Post-scarcity of the self**: Hesse's multiplicity — the self as "manifold world, constellated heaven." When does stereotype threat collapse this multiplicity into a single category? Can the four-slot model formalize a measure of "identity freedom"?
+- **The Enacted Mind gap**: The enacted mind thesis (body IS mind) misses the socially-perceived body as cognitive constraint. An essay with this tension built in would be stronger than the original research brief.
 
 ### Bootstrap Questions
 

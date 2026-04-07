@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 105 sources ingested (of ~107). 14 series complete. 157 total pages.
+**Status**: 106 sources ingested (of ~108). 14 series complete. 161 total pages.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -122,7 +122,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 ### The Incompleteness Arc (1+ posts) -- Godelian limits beyond mathematics
 - [[what-antikythera-mechanism-couldnt-predict]] -- Free will as Godelian gap
 
-### Standalone Collision Essays (~24 posts)
+### Standalone Collision Essays (~25 posts)
+- [[cognitive-scarcity-post-scarcity-economics]] -- Post-scarcity + stereotype threat; cognitive bandwidth; the missing study
 - [[what-the-crust-knows]] -- Plate tectonics + existential risk; the negative fold; found poetry
 - [[attention-without-an-owner]] -- Nagarjuna + attention economy; the self as exploit
 - [[beyond-the-horizon]] -- Polynesian etak + black hole information paradox
@@ -176,6 +177,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[distributed-intelligence]] -- Collective computation [developing]
 - [[free-energy-principle]] -- Organisms minimize surprise [developing]
 - [[modularity-tax]] -- Fragmentation exceeds Landauer minimum [developing]
+- [[cognitive-scarcity]] -- Working memory under social/identity loads; gap in post-scarcity theory [developing]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 
@@ -190,6 +192,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[selection-across-domains]] -- Price equation unifies all selection
 - [[holography-and-incompleteness]] -- Boundary of memory = boundary of unprovability
 - [[tectonics-and-existential-risk]] -- Fault mechanics as empirical model of catastrophic topology; the negative fold
+- [[scarcity-and-cognition]] -- Post-scarcity economics + cognitive load theory; the cognitive bandwidth gap
 
 ## Series
 
