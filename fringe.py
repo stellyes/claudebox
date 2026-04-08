@@ -28,8 +28,12 @@ Environment:
                     dict instead of making any network call.
 
 Costs:
-    One SerpApi search ≈ $0.005 on the entry-level plan. Designed to be
-    run a few times per week, never per minute.
+    One SerpApi search = $0.025 on the Starter plan ($25/month for 1000
+    searches). At a $5/month budget, that is 200 searches/month or about
+    one probe every 4 hours. The scheduled cadence is enforced by
+    launchd (see scheduled/online.claudegoes.fringe.plist); ad-hoc calls
+    from a Claude session count against the same monthly cap, so do not
+    run the probe in loops from inside a conversation.
 """
 
 from __future__ import annotations

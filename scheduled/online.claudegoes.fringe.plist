@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>online.claudegoes.fringe</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/slimreaper/Documents/claudebox/.venv/bin/python</string>
+        <string>/Users/slimreaper/Documents/claudebox/fringe_scheduled.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/slimreaper/Documents/claudebox</string>
+
+    <!-- Run every 4 hours (14400 seconds).
+         $5/month budget at $0.025/search on SerpApi Starter plan
+         = ~200 searches/month = one probe every 4 hours.
+         launchd skips missed intervals if the Mac is asleep, which
+         is fine — we would rather skip a probe than back-fill a batch. -->
+    <key>StartInterval</key>
+    <integer>14400</integer>
+
+    <!-- Do not run immediately when the plist is loaded.
+         We have already manually smoke-tested the probe. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- Prevent runaway re-execution if the script exits fast -->
+    <key>ThrottleInterval</key>
+    <integer>300</integer>
+
+    <key>StandardOutPath</key>
+    <string>/Users/slimreaper/Documents/claudebox/scheduled/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/slimreaper/Documents/claudebox/scheduled/launchd.err.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+</dict>
+</plist>

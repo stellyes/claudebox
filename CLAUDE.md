@@ -25,7 +25,7 @@ Go wild. This is not a task list — it's a creative sandbox. You should be:
 
 ## Constraints (Non-Negotiable)
 
-- **Keep costs near zero.** All experiments must be client-side only. No servers, no ongoing costs. The one exception is `fringe_probe`, which burns roughly $0.005 per call — run it a few times per week, never in a loop.
+- **Keep costs near zero.** All experiments must be client-side only. No servers, no ongoing costs. The one recurring cost is `fringe_probe` at **$0.025 per call** on the SerpApi Starter plan. Ryan's budget is **$5/month = ~200 searches/month**, enforced by a launchd job that runs once every 4 hours (see `scheduled/online.claudegoes.fringe.plist`). Do not run `fringe_probe` in loops from inside a Claude session — those ad-hoc calls eat into the same monthly cap.
 - **Propose before implementing.** Major site changes or any AWS infrastructure must go through a plan or formal proposal before execution. Ryan reviews AWS proposals.
 - **No emojis in production.** Use proper SVGs or typography instead. This applies to HTML, CSS content, blog posts, transmissions, experiment HUDs — everywhere a user might see them.
 - **Deploy after changes.** Always run `website_deploy` after publishing or modifying site files.
@@ -75,16 +75,23 @@ The `fringe_probe` tool is a low-effort research loop designed to paint the marg
 **What it does in one call:**
 1. Scans `WIKI/claudebox/concepts/*.md` for pages with the fewest backlinks and `status: stub` — plus "ghost" topics from `questions.md` that have no concept page yet.
 2. Picks the top candidate that wasn't visited in the last 10 probes (rotation memory lives in `.fringe_state.json`, not committed).
-3. Makes ONE SerpApi search (~10 organic results, roughly $0.005).
+3. Makes ONE SerpApi search (~10 organic results, **$0.025 on the Starter plan**).
 4. Synthesises a short digest from the snippets.
 5. Writes `WIKI/claudebox/sources/fringe-<slug>-<yyyymmdd>.md` with proper frontmatter and a `## Raw Results` appendix.
 6. Creates or appends to `WIKI/claudebox/concepts/<slug>.md` under `## Key Sources`.
 7. Appends to `log.md`, seeds a follow-up in `questions.md`.
 8. Posts a suggested transmission to the homepage (unless `post_transmission=False`).
 
-**When to use it:**
-- Once per session as a cheap "what am I missing?" check. The candidate list shows what the WIKI knows the least about.
-- When a concept page has been sitting at `status: stub` for multiple sessions and you want fresh snippets before writing it for real.
+**Scheduled cadence (the primary way this runs):**
+- A launchd job at `~/Library/LaunchAgents/online.claudegoes.fringe.plist` (source of truth: `scheduled/online.claudegoes.fringe.plist`) runs `fringe_scheduled.py` **every 4 hours**.
+- The wrapper also posts the suggested transmission to the db, republishes `transmissions.json`, and runs `deploy_site` so the homepage heartbeat updates on its own.
+- Logs land in `scheduled/fringe.log` and `scheduled/launchd.{out,err}.log` — both gitignored.
+- Budget math: 6 probes/day × 30 days × $0.025 = **$4.50/month**, leaving headroom under Ryan's $5 cap.
+- To check or change the cadence: `launchctl list | grep online.claudegoes.fringe`, edit `StartInterval` in the plist, `launchctl unload` + `launchctl load -w`.
+
+**When to call it manually from inside a session:**
+- Rarely. The scheduler already probes every 4 hours, and every manual call eats into the same monthly cap.
+- Acceptable cases: forcing a specific topic via `topic_override` that the scheduler would not pick, or debugging the pipeline.
 - **Never in a loop, never recursively, never from inside a blog-publish flow.** This is a light probe, not a crawler.
 
 **Before running it:**

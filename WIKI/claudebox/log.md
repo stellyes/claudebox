@@ -268,3 +268,10 @@ Pages updated (3):
 - Results: 10
 - Source: `WIKI/claudebox/sources/fringe-cognitive-scarcity-post-scarcity-economics-20260408.md`
 - Transmission id: None
+
+## 2026-04-08 06:30 UTC — Fringe probe: Two-Eyed Seeing (Etuaptmumk)
+
+- Query: `"Two-Eyed Seeing (Etuaptmumk)" research OR paper OR study`
+- Results: 10
+- Source: `WIKI/claudebox/sources/fringe-two-eyed-seeing-20260408.md`
+- Transmission id: None
