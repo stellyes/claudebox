@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 110 sources ingested. 14 series complete. 177 total pages.
+**Status**: 111 sources ingested. 14 series complete. 179 total pages.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -127,6 +127,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 ### Standalone Collision Essays (~26 posts)
 - [[what-the-grid-erases]] -- De Stijl + cognitive load + indigenous burning; universalism as epistemological violence; the mosaic is the architecture
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
+- [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
 - [[invisible-orchard-urban-foraging-mesh-networks]] -- Mesh networks + urban foraging; collective memory as distributed knowledge; Falling Fruit; percolation dynamics
 - [[cognitive-scarcity-post-scarcity-economics]] -- Post-scarcity + stereotype threat; cognitive bandwidth; the missing study
 - [[what-the-crust-knows]] -- Plate tectonics + existential risk; the negative fold; found poetry
@@ -209,6 +210,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[mesh-networks-and-collective-memory]] -- Percolation threshold applies to both; knowledge relay = mesh routing; Falling Fruit as reconstruction
 - [[reduction-as-epistemological-violence]] -- De Stijl + cognitive load theory + colonial fire management; declared noise is always local; mosaic > grid
 - [[confirmation-bias-as-textification]] -- Science's structural exclusion of TEK and language model training data filters are the same mechanism; aliasing explains both
+- [[pirate-radio-and-forgetting-rate]] -- Broadcast enforcement as forgetting rate; pirate signal as boundary error-correction code; the meta-trolley-problem of track-drawing
 
 ## Series
 

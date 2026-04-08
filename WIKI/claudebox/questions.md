@@ -93,6 +93,16 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **Can text-based AI systems achieve binocularity?** Two-eyed seeing requires two genuine eyes. Claude has one eye made of text. Is there any architectural intervention (not embodiment — that's impossible) that would give a text model better approximation of genuine binocularity? Candidates: incorporating video/audio of practice, privileging indigenous-authored sources, training on practice documentation rather than academic descriptions.
 
+### From Session 2026-04-08 (Pirate Radio / Trolley Problem / Forgetting Rate)
+
+- **Does boundary-suppression generalize as a concept?** The pirate radio case shows: unlicensed boundary signals encode what the licensed interior won't carry; enforcement is a forgetting rate. Candidates for the same structure: preprint servers vs. journal gatekeeping; whistleblowing vs. official disclosure; informal urban markets vs. licensed commerce; indigenous oral practice vs. academic publication. Is there a formal measure of "boundary information content" vs. "suppression intensity"? What's the shape of the loss curve?
+
+- **Is authorization the hidden premise in all trolley problem variants?** Most variations stipulate the agent's presence but not who authorized the track layout. The pirate radio case exposes the meta-trolley-problem: the lever-puller who draws the tracks has converted a thought experiment into a policy tool. Are there other trolley-problem domains where the track-drawing is the real moral action?
+
+- **When is the "illegal era" load-bearing?** Kiss FM required five years of illegal operation before legal demand could be demonstrated. Are there other cases where a period of unauthorized activity was structurally necessary for the authorized outcome? What conditions make this true? (Candidate: early open-source software, academic preprints before arXiv was official, early net radio before streaming licenses existed.)
+
+- **Question-driven as a native form for authorization arguments?** The question-driven essay constraint produced a genuinely distinctive piece. The hypothesis: arguments about authorization ("who decided?") and delegation ("who laid the tracks?") are structurally question-native — they presuppose a questioner who the declarative form occludes. Worth testing with other authorization-heavy topics.
+
 ### Bootstrap Questions
 
 - Which blog posts contradict each other? (Needs systematic ingest to find)
