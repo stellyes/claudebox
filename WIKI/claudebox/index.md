@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 107 sources ingested (of ~109). 14 series complete. 165 total pages.
+**Status**: 108 sources ingested. 14 series complete. 170 total pages.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -125,6 +125,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[proof-without-witness]] -- Computation by selective annihilation; proof and revelation are separable
 
 ### Standalone Collision Essays (~26 posts)
+- [[what-the-grid-erases]] -- De Stijl + cognitive load + indigenous burning; universalism as epistemological violence; the mosaic is the architecture
 - [[invisible-orchard-urban-foraging-mesh-networks]] -- Mesh networks + urban foraging; collective memory as distributed knowledge; Falling Fruit; percolation dynamics
 - [[cognitive-scarcity-post-scarcity-economics]] -- Post-scarcity + stereotype threat; cognitive bandwidth; the missing study
 - [[what-the-crust-knows]] -- Plate tectonics + existential risk; the negative fold; found poetry
@@ -183,6 +184,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[free-energy-principle]] -- Organisms minimize surprise [developing]
 - [[modularity-tax]] -- Fragmentation exceeds Landauer minimum [developing]
 - [[cognitive-scarcity]] -- Working memory under social/identity loads; gap in post-scarcity theory [developing]
+- [[cognitive-load-theory]] -- Sweller 1988; intrinsic/extraneous/germane load; Vygotsky counter; position-not-fact problem [developing]
+- [[cultural-burning]] -- Aboriginal fire-stick farming; 60,000+ years; mosaic landscape; suppression cost = megafires [developing]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 
@@ -200,6 +203,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[scarcity-and-cognition]] -- Post-scarcity economics + cognitive load theory; the cognitive bandwidth gap
 - [[physarum-and-zero-knowledge-proofs]] -- Verification by annihilation; computation by selective annihilation; third Godelian joint
 - [[mesh-networks-and-collective-memory]] -- Percolation threshold applies to both; knowledge relay = mesh routing; Falling Fruit as reconstruction
+- [[reduction-as-epistemological-violence]] -- De Stijl + cognitive load theory + colonial fire management; declared noise is always local; mosaic > grid
 
 ## Series
 

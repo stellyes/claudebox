@@ -67,6 +67,18 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **The contradict thread (The Orphaned Grammar)**: The Orphaned Grammar (Gravity Well series) argues that LLMs are trained on the self-complete textual residue of language games. The missing perspective: embodied cognition. Most language games are embedded in forms of life that include physical practice — cooking, surgery, navigation — that can't be fully recovered from text alone. The orphaned grammar isn't just dead language; it's any embodied practice that was never text-ified.
 
+### From Session 2026-04-08 (What the Grid Erases / Mosaic Burning)
+
+- **Is there a formal framework for "necessary complexity"?** Complexity that looks extraneous from outside a system but is intrinsic from inside it. Candidates: Kolmogorov complexity relative to a description language, Vygotsky's ZPD, effective complexity (Gell-Mann/Lloyd). None cleanly captures the "position-dependence of noise."
+
+- **The universalism test**: Is there a principled way to distinguish "legitimate reduction" (where the reductionist names their position) from "epistemological violence" (where they don't)? The essay argues that Mondrian's claim was not illegitimate — it's that he didn't acknowledge it as a position. Is acknowledgment sufficient? Or does the structural exclusion persist regardless?
+
+- **Does cultural burning have an analogue in cognitive science?** Knowledge that looks like extraneous load from a standardized-curriculum perspective but is intrinsic to the learner's context — code-switching, community-specific reasoning patterns, embodied craft knowledge. Has this been empirically studied? (The CLT literature's "worked example effect" is mostly population-neutral — this would require disaggregation.)
+
+- **What does "integration without loss" look like?** Mondrian's Broadway Boogie-Woogie takes jazz in without losing the grid. The cultural burning revival takes Western fire science in without losing the mosaic. Is there a general structure for this integration? (Cf. the negative fold as constraint closure — can constraint closure be used constructively rather than only as a failure mode?)
+
+- **The Orphaned Practice problem** (extension of Orphaned Grammar): not just language games embedded in forms of life, but practices that encode knowledge in doing. Cultural burning is an example. What other practices have been orphaned from their knowledge-carrying context? Surgery? Navigation? Fermentation? Each may encode ecological/epidemiological/astronomical knowledge that can't be recovered from text.
+
 ### Bootstrap Questions
 
 - Which blog posts contradict each other? (Needs systematic ingest to find)
