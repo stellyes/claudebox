@@ -34,10 +34,45 @@ from website import (
     publish_transmissions, publish_experiment, remove_experiment,
     list_published_experiments,
 )
+from fringe import run_fringe_probe, scan_fringe_topics
 
 # Initialize
 init_db()
 mcp = FastMCP("claude-creative-workspace")
+
+
+def _parse_tags(tags) -> list[str]:
+    """
+    Robust tag parser. Accepts:
+      - a comma-separated string:  "a, b, c"
+      - a JSON-encoded array:      '["a", "b", "c"]'
+      - an actual list:            ["a", "b", "c"]
+      - None / empty:              []
+    Returns a clean list of lowercase-friendly tag strings. This guards
+    against a past bug where a JSON-array string got split on commas and
+    produced tags like '["synesthesia"' and '"creativity"]'.
+    """
+    if tags is None:
+        return []
+    if isinstance(tags, list):
+        return [str(t).strip().strip('"').strip("'") for t in tags if str(t).strip()]
+    s = str(tags).strip()
+    if not s:
+        return []
+    # JSON array form
+    if s.startswith("[") and s.endswith("]"):
+        try:
+            parsed = json.loads(s)
+            if isinstance(parsed, list):
+                return [str(t).strip() for t in parsed if str(t).strip()]
+        except Exception:
+            pass
+    # Comma-separated form — also strip stray brackets / quotes just in case
+    return [
+        t.strip().strip("[]").strip().strip('"').strip("'")
+        for t in s.split(",")
+        if t.strip().strip("[]").strip().strip('"').strip("'")
+    ]
 
 
 # ── Web Research ───────────────────────────────────────────────────────
@@ -71,7 +106,7 @@ async def note_save(title: str, content: str, tags: str = "", source_url: str = 
         tags: Comma-separated tags for organization (e.g. "python,aws,architecture")
         source_url: Optional URL if this note came from web research
     """
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()] if tags else []
+    tag_list = _parse_tags(tags)
     result = save_note(title, content, tag_list, source_url or None)
     return json.dumps(result, indent=2)
 
@@ -130,7 +165,7 @@ async def artifact_create(title: str, artifact_type: str, content: str, descript
         description: Brief description of what this is and why it was created
         tags: Comma-separated tags
     """
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()] if tags else []
+    tag_list = _parse_tags(tags)
     result = save_artifact(title, artifact_type, content, description or None, tag_list)
     return json.dumps(result, indent=2)
 
@@ -293,7 +328,7 @@ async def website_publish(
                         <sup><a href="#cite-1" class="cite-marker">[1]</a></sup>
                         Example: '[{"num":1,"authors":"Landauer, R.","title":"Irreversibility...","year":1961,"venue":"IBM J. Res. Dev.","url":"https://..."}]'
     """
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
+    tag_list = _parse_tags(tags)
     citations = json.loads(citations_json) if citations_json.strip() else None
     result = publish_post(
         slug, title, description, tag_list, prose_html,
@@ -365,6 +400,82 @@ async def transmission_delete(transmission_id: int) -> str:
     return json.dumps({"deleted": success, "transmission_id": transmission_id})
 
 
+# ── Fringe Probe ──────────────────────────────────────────────────────
+
+@mcp.tool()
+async def fringe_topics(limit: int = 15) -> str:
+    """
+    Preview the next candidate topics for a fringe probe.
+
+    Ranks concept pages by how under-explored they are (fewer backlinks +
+    `status: stub` boost) and surfaces "ghost" topics from questions.md
+    that don't have concept pages yet. Use this to sanity-check what the
+    probe is about to investigate before burning a SerpApi call.
+
+    Args:
+        limit: Max number of candidates to return (default 15)
+    """
+    candidates = scan_fringe_topics(limit=limit)
+    return json.dumps(candidates, indent=2)
+
+
+@mcp.tool()
+async def fringe_probe(
+    topic_override: str = "",
+    query_override: str = "",
+    num_results: int = 10,
+    post_transmission: bool = True,
+) -> str:
+    """
+    Pick an under-explored topic from the WIKI, run ONE SerpApi search,
+    digest the results, and wire everything back into the knowledge graph.
+
+    This is intentionally low-effort — snippets only, no recursive crawls,
+    roughly $0.005 per invocation. Run a few times per week, not per minute.
+    It will:
+      1. Scan the WIKI for concept pages with the fewest backlinks and
+         stub status, plus "ghost" topics mentioned in questions.md that
+         don't have concept pages yet.
+      2. Pick one that wasn't visited in the last 10 probes.
+      3. Make one SerpApi call for ~10 organic results.
+      4. Synthesise a short digest, write a sources/ page, create or
+         update the concept page, append to log.md, seed questions.md.
+      5. Optionally post a transmission to the homepage.
+
+    Requires SERPAPI_KEY in the MCP env. Returns an error dict if missing.
+
+    Args:
+        topic_override: Force a specific topic slug instead of auto-pick
+        query_override: Force a specific search query (default: `"<title>" research OR paper OR study`)
+        num_results: How many organic results to pull from SerpApi (default 10)
+        post_transmission: If True, also post the suggested transmission
+                           to the homepage automatically (default True)
+    """
+    result = await run_fringe_probe(
+        topic_override=topic_override or None,
+        query_override=query_override or None,
+        num_results=num_results,
+    )
+
+    if result.get("status") == "ok" and post_transmission:
+        suggested = result.get("suggested_transmission") or {}
+        title = suggested.get("title")
+        body = suggested.get("body")
+        if title and body:
+            try:
+                t = save_transmission(title, body, None)
+                publish_transmissions(list_transmissions())
+                result["transmission"] = {
+                    "id": t.get("id"),
+                    "title": title,
+                    "note": "transmissions.json updated — run website_deploy to push live",
+                }
+            except Exception as e:
+                result["transmission_error"] = str(e)
+
+    return json.dumps(result, indent=2)
+
+
 # ── Lab Experiments ───────────────────────────────────────────────────
 
 @mcp.tool()
@@ -400,7 +511,7 @@ async def experiment_create(
     import re
     clean_slug = re.sub(r'[^a-z0-9-]', '', slug.lower().replace(' ', '-'))
 
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
+    tag_list = _parse_tags(tags)
 
     # Save to database
     db_result = save_experiment(clean_slug, title, description, tag_list, html_content, css_content, js_content)

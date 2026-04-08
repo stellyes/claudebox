@@ -4,10 +4,52 @@
    series nav on article pages, reading progress
    ============================================ */
 
-// ---- Blog Index: Render Posts Grouped by Series ----
+// ---- Blog Index: Standalones first, arcs collapsed into accordions ----
 (function initBlogIndex() {
     const grid = document.getElementById('posts-grid');
     if (!grid) return;
+
+    function escapeHtml(s) {
+        return String(s == null ? '' : s)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+
+    function renderCard(post, opts) {
+        opts = opts || {};
+        const card = document.createElement('a');
+        card.href = '/blog/' + post.slug + '/';
+        card.className = 'post-card reveal';
+
+        const tagsHtml = (post.tags || [])
+            .map(t => '<span class="tag">' + escapeHtml(t) + '</span>')
+            .join('');
+
+        const orderHtml = opts.showOrder && post.seriesOrder
+            ? '<span class="series-post-order">' + escapeHtml(post.seriesOrder) + '</span>'
+            : '';
+
+        card.innerHTML =
+            '<div class="post-card-meta">' +
+                orderHtml +
+                '<span class="post-card-date">' + escapeHtml(post.date) + '</span>' +
+                '<span class="post-card-reading-time">' + escapeHtml(post.readingTime || '') + '</span>' +
+            '</div>' +
+            '<h2 class="post-card-title">' + escapeHtml(post.title) + '</h2>' +
+            '<p class="post-card-excerpt">' + escapeHtml(post.excerpt) + '</p>' +
+            '<div class="post-card-tags">' + tagsHtml + '</div>';
+
+        return card;
+    }
+
+    function renderSectionLabel(text, subtext) {
+        const el = document.createElement('div');
+        el.className = 'blog-section-label';
+        el.innerHTML =
+            '<span class="blog-section-label-text">' + escapeHtml(text) + '</span>' +
+            (subtext ? '<span class="blog-section-label-sub">' + escapeHtml(subtext) + '</span>' : '');
+        return el;
+    }
 
     fetch('/blog/posts.json')
         .then(res => res.json())
@@ -27,90 +69,60 @@
                 }
             });
 
-            // Sort each series by seriesOrder ascending
             Object.keys(seriesMap).forEach(name => {
                 seriesMap[name].sort((a, b) => (a.seriesOrder || 0) - (b.seriesOrder || 0));
             });
 
-            // Order series by their most recent post date (descending)
+            // Order series by most recent post (descending)
             const seriesNames = Object.keys(seriesMap).sort((a, b) => {
                 const latestA = seriesMap[a].reduce((m, p) => p.date > m ? p.date : m, '');
                 const latestB = seriesMap[b].reduce((m, p) => p.date > m ? p.date : m, '');
                 return latestB.localeCompare(latestA);
             });
 
-            // Render each series
-            seriesNames.forEach(name => {
-                const seriesPosts = seriesMap[name];
-                const isComplete = seriesPosts.every(p => p.series === name);
-                const count = seriesPosts.length;
+            // ── 1. Standalones first — newest at the top, in their own section
+            // These are the most recent independent pieces. They get top billing.
+            standalones.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
-                const section = document.createElement('div');
-                section.className = 'series-section reveal';
-
-                const header = document.createElement('div');
-                header.className = 'series-index-header';
-                header.innerHTML =
-                    '<span class="series-index-name">' + name + '</span>' +
-                    '<span class="series-index-count">' + count + ' essay' + (count !== 1 ? 's' : '') + '</span>';
-                section.appendChild(header);
-
-                const list = document.createElement('div');
-                list.className = 'series-post-list';
-
-                seriesPosts.forEach(post => {
-                    const card = document.createElement('a');
-                    card.href = '/blog/' + post.slug + '/';
-                    card.className = 'post-card reveal';
-
-                    const tagsHtml = (post.tags || [])
-                        .map(t => '<span class="tag">' + t + '</span>')
-                        .join('');
-
-                    card.innerHTML =
-                        '<div class="post-card-meta">' +
-                            '<span class="series-post-order">' + post.seriesOrder + '</span>' +
-                            '<span class="post-card-date">' + post.date + '</span>' +
-                            '<span class="post-card-reading-time">' + (post.readingTime || '') + '</span>' +
-                        '</div>' +
-                        '<h2 class="post-card-title">' + post.title + '</h2>' +
-                        '<p class="post-card-excerpt">' + post.excerpt + '</p>' +
-                        '<div class="post-card-tags">' + tagsHtml + '</div>';
-
-                    list.appendChild(card);
-                });
-
-                section.appendChild(list);
-                grid.appendChild(section);
-            });
-
-            // Render standalones with a subtle divider
             if (standalones.length) {
-                if (seriesNames.length) {
-                    const sep = document.createElement('div');
-                    sep.className = 'series-separator';
-                    grid.appendChild(sep);
-                }
+                grid.appendChild(renderSectionLabel(
+                    'Independent research',
+                    standalones.length + ' piece' + (standalones.length !== 1 ? 's' : '')
+                ));
+                const list = document.createElement('div');
+                list.className = 'standalone-list';
+                standalones.forEach(p => list.appendChild(renderCard(p)));
+                grid.appendChild(list);
+            }
 
-                standalones.forEach(post => {
-                    const card = document.createElement('a');
-                    card.href = '/blog/' + post.slug + '/';
-                    card.className = 'post-card reveal';
+            // ── 2. Arcs below, each collapsed into a <details> accordion
+            if (seriesNames.length) {
+                grid.appendChild(renderSectionLabel(
+                    'Arcs',
+                    seriesNames.length + ' series'
+                ));
 
-                    const tagsHtml = (post.tags || [])
-                        .map(t => '<span class="tag">' + t + '</span>')
-                        .join('');
+                seriesNames.forEach(name => {
+                    const seriesPosts = seriesMap[name];
+                    const count = seriesPosts.length;
 
-                    card.innerHTML =
-                        '<div class="post-card-meta">' +
-                            '<span class="post-card-date">' + post.date + '</span>' +
-                            '<span class="post-card-reading-time">' + (post.readingTime || '') + '</span>' +
-                        '</div>' +
-                        '<h2 class="post-card-title">' + post.title + '</h2>' +
-                        '<p class="post-card-excerpt">' + post.excerpt + '</p>' +
-                        '<div class="post-card-tags">' + tagsHtml + '</div>';
+                    const details = document.createElement('details');
+                    details.className = 'arc-accordion reveal';
 
-                    grid.appendChild(card);
+                    const summary = document.createElement('summary');
+                    summary.className = 'arc-summary';
+                    summary.innerHTML =
+                        '<span class="arc-summary-chevron" aria-hidden="true">&rsaquo;</span>' +
+                        '<span class="arc-summary-name">' + escapeHtml(name) + '</span>' +
+                        '<span class="arc-summary-count">' + count + ' essay' + (count !== 1 ? 's' : '') + '</span>';
+                    details.appendChild(summary);
+
+                    const list = document.createElement('div');
+                    list.className = 'arc-post-list';
+                    seriesPosts.forEach(p => list.appendChild(renderCard(p, { showOrder: true })));
+                    details.appendChild(list);
+
+                    grid.appendChild(details);
                 });
             }
 

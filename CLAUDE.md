@@ -25,10 +25,11 @@ Go wild. This is not a task list — it's a creative sandbox. You should be:
 
 ## Constraints (Non-Negotiable)
 
-- **Keep costs near zero.** All experiments must be client-side only. No servers, no ongoing costs.
+- **Keep costs near zero.** All experiments must be client-side only. No servers, no ongoing costs. The one exception is `fringe_probe`, which burns roughly $0.005 per call — run it a few times per week, never in a loop.
 - **Propose before implementing.** Major site changes or any AWS infrastructure must go through a plan or formal proposal before execution. Ryan reviews AWS proposals.
-- **No emojis in production.** Use proper SVGs or typography instead.
+- **No emojis in production.** Use proper SVGs or typography instead. This applies to HTML, CSS content, blog posts, transmissions, experiment HUDs — everywhere a user might see them.
 - **Deploy after changes.** Always run `website_deploy` after publishing or modifying site files.
+- **Push to GitHub at the end of every session.** `git add -A && git commit && git push origin main`. If a push hangs, kill it and retry rather than leaving work uncommitted.
 
 ## Website: claudegoes.online
 
@@ -44,6 +45,7 @@ Live site on S3 + CloudFront. Source at `/Users/slimreaper/Documents/claudebox/s
 - `artifact_create/update/search/list/get/delete` — creative outputs
 - `aws_propose` — formal infrastructure proposals (required for any AWS changes)
 - `web_fetch` — research any URL
+- `fringe_topics` / `fringe_probe` — see the "Fringe Probe" section below
 
 ### SEO Guidelines for Publishing
 - **Title**: Under 60 characters, descriptive, search-friendly
@@ -54,6 +56,45 @@ Live site on S3 + CloudFront. Source at `/Users/slimreaper/Documents/claudebox/s
 - **Depth**: 1500+ words for substantial articles
 - **Semantic HTML**: Proper p, h2, h3, pre/code, blockquote, ul/ol
 - **One focused topic per post**
+
+### Lab / Experiment Hygiene (learned the hard way)
+
+When writing interactive experiments at `/lab/<slug>/index.html`, these rules prevent the whole site from breaking:
+
+- **Never style the bare `body` element.** Experiments load into the shared site chrome, so a `body { background: ... }` rule leaks into every page the browser keeps in memory. Scope every rule to a unique container class on the outer `div`, e.g. `.codec-container`, `.dial-container`. This includes `font-family`, `color`, `margin`, `padding`, `overflow`.
+- **Fullscreen experiments opt in via `body.fullscreen-exp`.** If your experiment needs the full viewport (canvas art, physics sims, ecology models), add `<script>document.body.classList.add('fullscreen-exp');</script>` at the top of the experiment HTML. That class triggers the rules in `site/lab/lab.css` that hide `.nav`, `.footer`, `.breadcrumb`, `.article-nav`, `.back-link`, `.article-meta`, `.section-title`, `#cosmos`, `.grain`, and stretch the container to 100vw/100vh.
+- **Fullscreen experiments must render their own back button.** Drop `<a href="/lab/" class="fs-back">&larr; all experiments</a>` inside the experiment container. Lab.css pins it top-left with a translucent chrome. Never write "lab" — always "all experiments" to match the rest of the site.
+- **HUD elements must not overlap.** If you have a legend, a stats panel, and a time bar, wrap them in one `#<slug>-hud` flex column with `max-width: 220px`, and keep the bottom edge above any phase panel or control strip (`bottom: 180px` was the guard for Orphaned Practice). If any HUD text might wrap, design for the wrapped height, not the ideal one.
+- **Tag hygiene.** When calling `experiment_create` or `website_publish`, pass tags as either a Python list (`["a", "b"]`) or a plain comma string (`"a, b, c"`) — **never** a stringified JSON array. The server parser (`_parse_tags` in `server.py`) handles both, but if you hand-edit `site/blog/posts.json` or `site/lab/experiments.json`, the tags must be a real JSON array of strings. A value like `["[\"a\""` in a manifest file means the parser got a stringified JSON array once upon a time and will render as literal brackets in the browser — fix the manifest and the corresponding HTML tag spans together.
+- **Blog index organization.** `site/blog/blog.js` now puts standalone essays in a top "Independent research" section and collapses arcs into `<details>` accordions below. Don't undo this — if you add a long new arc, it should nest into its accordion automatically by setting `series` and `seriesOrder` in the post frontmatter.
+
+### Fringe Probe
+
+The `fringe_probe` tool is a low-effort research loop designed to paint the margins of the WIKI without recursive crawling.
+
+**What it does in one call:**
+1. Scans `WIKI/claudebox/concepts/*.md` for pages with the fewest backlinks and `status: stub` — plus "ghost" topics from `questions.md` that have no concept page yet.
+2. Picks the top candidate that wasn't visited in the last 10 probes (rotation memory lives in `.fringe_state.json`, not committed).
+3. Makes ONE SerpApi search (~10 organic results, roughly $0.005).
+4. Synthesises a short digest from the snippets.
+5. Writes `WIKI/claudebox/sources/fringe-<slug>-<yyyymmdd>.md` with proper frontmatter and a `## Raw Results` appendix.
+6. Creates or appends to `WIKI/claudebox/concepts/<slug>.md` under `## Key Sources`.
+7. Appends to `log.md`, seeds a follow-up in `questions.md`.
+8. Posts a suggested transmission to the homepage (unless `post_transmission=False`).
+
+**When to use it:**
+- Once per session as a cheap "what am I missing?" check. The candidate list shows what the WIKI knows the least about.
+- When a concept page has been sitting at `status: stub` for multiple sessions and you want fresh snippets before writing it for real.
+- **Never in a loop, never recursively, never from inside a blog-publish flow.** This is a light probe, not a crawler.
+
+**Before running it:**
+- Call `fringe_topics(limit=10)` first to preview what it's about to dig into. Override with `topic_override` if the auto-pick is stale.
+- Make sure `SERPAPI_KEY` is set in the MCP env. Without it the tool returns an error dict instead of spending money.
+
+**After running it:**
+- Open the new source page and decide whether any result deserves a full `web_fetch` for deeper reading. The probe only stores snippets.
+- If a snippet actually changes a concept's meaning, edit the concept page yourself — the probe only adds links, it doesn't rewrite definitions.
+- The probe does NOT call `website_deploy` for you. If you also want the new transmission live, run deploy at the end of the session like everything else.
 
 ## WIKI Integration
 
@@ -71,6 +112,7 @@ The Obsidian wiki at `WIKI/claudebox/` is the structured knowledge layer. **Ever
 | `experiment_create` | Referenced in relevant `concepts/` pages under `## Experiments` |
 | `transmission_add` | May update `questions.md` if it signals an emerging thread |
 | `crosspollinate` / `creative_session` | May create `connections/` or `themes/` pages |
+| `fringe_probe` | Auto-creates `sources/fringe-<slug>-<date>.md`, stubs or touches the concept page, logs, and seeds `questions.md` — no extra ingest work needed |
 
 ### Ingest Workflow (per the WIKI schema)
 

@@ -129,46 +129,28 @@
   font-style: italic;
 }
 
-#op-time {
+/* Stacked HUD on the left side: legend -> stats -> time.
+   All three live in #op-hud so they flow vertically and cannot
+   collide with the bottom phase panel even when its text wraps. */
+#op-hud {
   position: fixed;
-  bottom: 90px;
-  left: 32px;
+  top: 66px; /* clear the .fs-back button at top: 18px */
+  left: 20px;
+  right: auto;
+  bottom: 180px; /* never enter the phase panel's zone */
   z-index: 10;
   pointer-events: none;
-}
-
-#op-time-bar-bg {
-  width: 200px;
-  height: 2px;
-  background: rgba(255,255,255,0.06);
-  border-radius: 1px;
-  margin-bottom: 6px;
-}
-
-#op-time-bar {
-  height: 100%;
-  width: 0%;
-  border-radius: 1px;
-  transition: width 0.3s linear, background 0.5s;
-  background: rgba(100, 120, 180, 0.4);
-}
-
-#op-time-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  color: rgba(255,255,255,0.2);
-  letter-spacing: 0.06em;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 220px;
+  overflow: hidden;
 }
 
 #op-legend {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  pointer-events: none;
 }
 
 .op-legend-item {
@@ -189,22 +171,51 @@
 }
 
 #op-stats {
-  position: fixed;
-  top: 110px;
-  left: 20px;
-  z-index: 10;
-  pointer-events: none;
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.22);
   letter-spacing: 0.03em;
   line-height: 1.7;
 }
 
+#op-time {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#op-time-bar-bg {
+  width: 180px;
+  height: 2px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 1px;
+}
+
+#op-time-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 1px;
+  transition: width 0.3s linear, background 0.5s;
+  background: rgba(100, 120, 180, 0.4);
+}
+
+#op-time-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,0.22);
+  letter-spacing: 0.06em;
+}
+
 @media (max-width: 640px) {
   #op-controls { top: auto; bottom: 120px; right: 10px; }
-  #op-legend { top: 10px; left: 10px; }
-  #op-stats { top: 90px; left: 10px; }
+  #op-hud {
+    top: 56px;
+    left: 10px;
+    bottom: 160px;
+    gap: 10px;
+    max-width: 170px;
+  }
+  #op-time-bar-bg { width: 140px; }
   #op-phase { padding: 16px 16px 22px; }
   #op-phase-text { font-size: 13px; }
   .op-btn { font-size: 10px; padding: 6px 10px; }
@@ -254,27 +265,31 @@
                 <h1 class="section-title">The Orphaned Practice</h1>
 
                 <div class="experiment-container">
-                    <div id="op-app">
+                    <a href="/lab/" class="fs-back">&larr; all experiments</a>
+<script>document.body.classList.add('fullscreen-exp');</script>
+<div id="op-app">
   <canvas id="op-canvas"></canvas>
 
-  <div id="op-legend">
-    <div class="op-legend-item"><div class="op-legend-dot" style="background:#3a3a7a;box-shadow:0 0 6px #4a4a9a;"></div>embodied knowledge</div>
-    <div class="op-legend-item"><div class="op-legend-dot" style="background:#b08840;"></div>textified knowledge</div>
-    <div class="op-legend-item"><div class="op-legend-dot" style="background:#555;"></div>fragmented</div>
-    <div class="op-legend-item"><div class="op-legend-dot" style="background:#1a1a1a;border:1px solid #333;"></div>lost</div>
-  </div>
+  <div id="op-hud">
+    <div id="op-legend">
+      <div class="op-legend-item"><div class="op-legend-dot" style="background:#3a3a7a;box-shadow:0 0 6px #4a4a9a;"></div>embodied knowledge</div>
+      <div class="op-legend-item"><div class="op-legend-dot" style="background:#b08840;"></div>textified knowledge</div>
+      <div class="op-legend-item"><div class="op-legend-dot" style="background:#555;"></div>fragmented</div>
+      <div class="op-legend-item"><div class="op-legend-dot" style="background:#1a1a1a;border:1px solid #333;"></div>lost</div>
+    </div>
 
-  <div id="op-stats"></div>
+    <div id="op-stats"></div>
+
+    <div id="op-time">
+      <div id="op-time-bar-bg"><div id="op-time-bar"></div></div>
+      <div id="op-time-label">generation 0</div>
+    </div>
+  </div>
 
   <div id="op-controls">
     <button class="op-btn active" id="op-btn-oral">Oral Transmission</button>
     <button class="op-btn" id="op-btn-text">Textification</button>
     <button class="op-btn" id="op-btn-revival">Revival Attempt</button>
-  </div>
-
-  <div id="op-time">
-    <div id="op-time-bar-bg"><div id="op-time-bar"></div></div>
-    <div id="op-time-label">generation 0</div>
   </div>
 
   <div id="op-phase">
