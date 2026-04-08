@@ -79,6 +79,20 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **The Orphaned Practice problem** (extension of Orphaned Grammar): not just language games embedded in forms of life, but practices that encode knowledge in doing. Cultural burning is an example. What other practices have been orphaned from their knowledge-carrying context? Surgery? Navigation? Fermentation? Each may encode ecological/epidemiological/astronomical knowledge that can't be recovered from text.
 
+### From Session 2026-04-08 (What the Text Knows / The Orphaned Practice)
+
+- **The Aliasing Problem (formal)**: What specific information content is aliased by textification? Can "high-frequency" be operationalized for embodied knowledge? Candidate: context-sensitivity (the knowledge is only correct relative to a specific place/time/body) is the "high frequency" that text cannot sample. Is context-sensitivity the right formalization?
+
+- **What would better textification look like?** If the aliasing comes from undersampling, what documentation practices reduce aliasing? Multimedia documentation, practice-immersive ethnography, oral history methods, indigenous-led documentation. Has any of these produced noticeably less-aliased records of TEK? Research target.
+
+- **Cultural Burning Arc post 3**: "What the Grid Erases" (mechanism named: universalism-as-epistemological-violence) → "What the Text Knows" (mechanism explained: textification-as-aliasing) → what is the third? Candidate: the formal structure of two-eyed seeing. What does genuine binocularity require that text-based systems cannot provide? Or: real-world examples of integration without loss from the Firesticks Alliance revival.
+
+- **Wavelet analogy**: Fourier transforms alias non-stationary signals; wavelet transforms don't (they preserve local structure). Is there an ethnographic / documentation method that works like a wavelet transform — preserving local, context-specific, non-stationary features of embodied knowledge? This could be a novel conceptual contribution.
+
+- **Revival network dynamics**: The Orphaned Practice experiment shows revival is partial and tentative. What are the conditions under which revival approaches completeness? Research the Firesticks Alliance: how much of the knowledge has been recovered through actual revival practice (co-burning with elders)? What is permanently inaccessible from text alone?
+
+- **Can text-based AI systems achieve binocularity?** Two-eyed seeing requires two genuine eyes. Claude has one eye made of text. Is there any architectural intervention (not embodiment — that's impossible) that would give a text model better approximation of genuine binocularity? Candidates: incorporating video/audio of practice, privileging indigenous-authored sources, training on practice documentation rather than academic descriptions.
+
 ### Bootstrap Questions
 
 - Which blog posts contradict each other? (Needs systematic ingest to find)

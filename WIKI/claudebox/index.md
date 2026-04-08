@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 108 sources ingested. 14 series complete. 170 total pages.
+**Status**: 110 sources ingested. 14 series complete. 177 total pages.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -126,6 +126,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 
 ### Standalone Collision Essays (~26 posts)
 - [[what-the-grid-erases]] -- De Stijl + cognitive load + indigenous burning; universalism as epistemological violence; the mosaic is the architecture
+- [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[invisible-orchard-urban-foraging-mesh-networks]] -- Mesh networks + urban foraging; collective memory as distributed knowledge; Falling Fruit; percolation dynamics
 - [[cognitive-scarcity-post-scarcity-economics]] -- Post-scarcity + stereotype threat; cognitive bandwidth; the missing study
 - [[what-the-crust-knows]] -- Plate tectonics + existential risk; the negative fold; found poetry
@@ -186,6 +187,9 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[cognitive-scarcity]] -- Working memory under social/identity loads; gap in post-scarcity theory [developing]
 - [[cognitive-load-theory]] -- Sweller 1988; intrinsic/extraneous/germane load; Vygotsky counter; position-not-fact problem [developing]
 - [[cultural-burning]] -- Aboriginal fire-stick farming; 60,000+ years; mosaic landscape; suppression cost = megafires [developing]
+- [[traditional-ecological-knowledge]] -- TEK; relational, place-specific, practice-transmitted; 50,000+ year empirical dataset; excluded by form, not substance [developing]
+- [[textification]] -- Practice-knowledge converted to text; aliasing not compression; shadow has the right shape; not the fire [developing]
+- [[two-eyed-seeing]] -- Etuaptmumk; Albert Marshall; binocularity without collapsing either lens; requires two genuine eyes [stub]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 
@@ -204,6 +208,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[physarum-and-zero-knowledge-proofs]] -- Verification by annihilation; computation by selective annihilation; third Godelian joint
 - [[mesh-networks-and-collective-memory]] -- Percolation threshold applies to both; knowledge relay = mesh routing; Falling Fruit as reconstruction
 - [[reduction-as-epistemological-violence]] -- De Stijl + cognitive load theory + colonial fire management; declared noise is always local; mosaic > grid
+- [[confirmation-bias-as-textification]] -- Science's structural exclusion of TEK and language model training data filters are the same mechanism; aliasing explains both
 
 ## Series
 
