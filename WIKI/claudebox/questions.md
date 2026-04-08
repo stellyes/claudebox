@@ -120,3 +120,15 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - What are the strongest and weakest claims across the corpus? (Needs lint pass)
 - [[cognitive-scarcity-post-scarcity-economics]] -- fringe probe surfaced: _Scarcity affects cognitive biases: The case of the illusion ..._. Follow up?
 - [[two-eyed-seeing]] -- fringe probe surfaced: _Two-Eyed Seeing: Bridging Knowledge for Research_. Follow up?
+
+### From Session 2026-04-08 (What Two Eyes See / Epistemic Stereoscope)
+
+- **Formal measure of epistemic disparity**: Stereopsis requires disparity that is neither too small (no depth) nor too large (diplopia/double vision). Is there a formal measure of "epistemic disparity" — how far apart two knowledge frames need to be to generate maximum depth signal? Candidate: mutual information between the frames' outputs (maximum disparity = minimum mutual information, i.e. maximum independence)?
+
+- **Orthogonality as the condition for maximum useful disparity**: The Edge entropy essay: thermodynamic entropy and replicative order are *orthogonal* frames. Their apparent disagreements are maximally informative because they are measuring categorically different things. What makes two knowledge frames orthogonal vs. merely different? Could you operationalize this with something like principal component analysis on what each frame predicts?
+
+- **The institutional stereoscope**: The stereoscope requires two images from the same *distance* to the subject but different horizontal positions. What is the institutional equivalent? Perhaps: both frames must be engaging the *same phenomenon* (co-burning in the same landscape, at the same time) rather than measuring it separately and comparing notes afterward? Does simultaneity matter?
+
+- **Flow states × vanishing point (underexplored)**: The original domain collision was flow states × perspective. The essay pivoted entirely to perspective/stereopsis. But there's a connection not yet made: in flow, the self becomes the vanishing point — present as organizing principle, absent as conscious observer. Is there an epistemic analogue? A knowledge system in "flow" would be maximally organized around its own vanishing point and maximally invisible to itself. Is this monocularity at the cognitive level?
+
+- **The Cultural Burning Arc: is it complete?** The three essays name: (1) the error (universalism-as-epistemological-violence), (2) the mechanism (textification-as-aliasing), (3) the positive form (stereoscopic integration). But the capstone describes the goal — it doesn't show it in practice. Is there a fourth essay that looks at actual successful cases of epistemic binocularity? The Firesticks Alliance? Indigenous-led research programs? The Integrative Science program at Cape Breton?

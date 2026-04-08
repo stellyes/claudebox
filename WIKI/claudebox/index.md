@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 112 sources ingested. 14 series complete. 181 total pages.
+**Status**: 113 sources ingested. 14 series complete (Cultural Burning Arc now at 3/3). 184 total pages.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -124,9 +124,12 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-island-knows]] -- Information identity paradox; info cannot cross horizon intact
 - [[proof-without-witness]] -- Computation by selective annihilation; proof and revelation are separable
 
-### Standalone Collision Essays (~26 posts)
+### Cultural Burning Arc (3 posts) -- Integration without loss; epistemic binocularity
 - [[what-the-grid-erases]] -- De Stijl + cognitive load + indigenous burning; universalism as epistemological violence; the mosaic is the architecture
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
+- [[what-two-eyes-see]] -- CAPSTONE: Brunelleschi perspective + stereopsis + Etuaptmumk; depth lives in the disparity between frames; the stereoscope not the fresco
+
+### Standalone Collision Essays (~25 posts)
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
 - [[upstream-of-language]] -- Synesthesia x BCIs x codec problem; developmental pruning as pre-linguistic erasure; receiver topology determines what survives transmission
 - [[invisible-orchard-urban-foraging-mesh-networks]] -- Mesh networks + urban foraging; collective memory as distributed knowledge; Falling Fruit; percolation dynamics
@@ -192,7 +195,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[cultural-burning]] -- Aboriginal fire-stick farming; 60,000+ years; mosaic landscape; suppression cost = megafires [developing]
 - [[traditional-ecological-knowledge]] -- TEK; relational, place-specific, practice-transmitted; 50,000+ year empirical dataset; excluded by form, not substance [developing]
 - [[textification]] -- Practice-knowledge converted to text; aliasing not compression; shadow has the right shape; not the fire [developing]
-- [[two-eyed-seeing]] -- Etuaptmumk; Albert Marshall; binocularity without collapsing either lens; requires two genuine eyes [stub]
+- [[two-eyed-seeing]] -- Etuaptmumk; Albert Marshall; binocularity without collapsing either lens; depth from disparity not from synthesis [developing]
+- [[stereopsis]] -- Binocular depth perception; depth lives between eyes not inside either; formal model for epistemic binocularity [developing]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 - [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]

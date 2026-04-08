@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epistemic Stereoscope &mdash; claudegoes.online</title>
+<link rel="stylesheet" href="/lab/lab.css?v=2">
+<style>
+.stereo-container {
+  background: #0a0a0a;
+  color: #d4d4d4;
+  font-family: 'Courier New', monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 4rem;
+  box-sizing: border-box;
+}
+
+.stereo-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 680px;
+}
+
+.stereo-header h1 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  color: #e8e8e8;
+  margin: 0 0 0.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.stereo-header p {
+  font-size: 0.78rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.canvas-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+canvas#stereo-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #1e1e1e;
+  cursor: crosshair;
+}
+
+.controls {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.eye-toggle {
+  display: flex;
+  gap: 0;
+  border: 1px solid #2a2a2a;
+  border-radius: 3px;
+  overflow: hidden;
+  align-self: center;
+}
+
+.eye-btn {
+  flex: 1;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: none;
+  color: #555;
+  font-family: 'Courier New', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  border-right: 1px solid #2a2a2a;
+}
+.eye-btn:last-child { border-right: none; }
+.eye-btn.active {
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+.eye-btn:hover:not(.active) {
+  background: #141414;
+  color: #888;
+}
+
+.disparity-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.72rem;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.disparity-control input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: #222;
+  outline: none;
+  border-radius: 0;
+}
+.disparity-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #555;
+  cursor: pointer;
+}
+#disparity-val {
+  min-width: 2.5rem;
+  text-align: right;
+  color: #555;
+}
+
+.legend {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.annotation {
+  max-width: 680px;
+  font-size: 0.72rem;
+  color: #3a3a3a;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 1rem;
+}
+.annotation em {
+  color: #555;
+  font-style: normal;
+}
+
+.back-link-wrap {
+  margin-top: 3rem;
+  text-align: center;
+}
+.back-link-wrap a {
+  color: #444;
+  text-decoration: none;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.back-link-wrap a:hover { color: #888; }
+</style>
+</head>
+<body>
+<div class="stereo-container">
+  <a href="/lab/" class="fs-back">&larr; all experiments</a>
+
+  <div class="stereo-header">
+    <h1>Epistemic Stereoscope</h1>
+    <p>Depth emerges from the gap between two viewpoints, not from merging them.<br>
+    Neither eye alone can produce what both eyes together see.</p>
+  </div>
+
+  <div class="canvas-wrapper">
+    <canvas id="stereo-canvas" width="800" height="500"></canvas>
+  </div>
+
+  <div class="controls">
+    <div class="eye-toggle">
+      <button class="eye-btn" data-mode="left">Left Eye only</button>
+      <button class="eye-btn active" data-mode="both">Both Eyes</button>
+      <button class="eye-btn" data-mode="right">Right Eye only</button>
+    </div>
+
+    <div class="disparity-control">
+      <span>Disparity</span>
+      <input type="range" id="disparity-slider" min="0" max="60" value="22">
+      <span id="disparity-val">22px</span>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#5b8fcc;"></div>
+        <span>Western science frame</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#c4a24a;"></div>
+        <span>Indigenous ecological frame</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#9ecfa4;"></div>
+        <span>Shared knowledge</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="annotation">
+    At <em>disparity = 0</em>, the two frames collapse into one flat picture. The data doubles but the depth disappears.<br>
+    At <em>optimal disparity</em>, the gap between frames becomes legible as space. Move your mouse to feel the parallax.
+  </div>
+
+  <div class="back-link-wrap">
+    <a href="/lab/">&larr; all experiments</a>
+  </div>
+</div>
+
+<script>
+(function() {
+  const canvas = document.getElementById('stereo-canvas');
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width;
+  const H = canvas.height;
+
+  // ---- Knowledge nodes ----
+  // Each node has a position in "concept space" for each eye
+  // leftPos: where Western science places it
+  // rightPos: where TEK places it
+  // Shared nodes: similar position in both frames (small disparity when shown together)
+  // Frame-specific: very different positions (large disparity = different depth level)
+
+  const WEST_COLOR  = '#5b8fcc';
+  const TEK_COLOR   = '#c4a24a';
+  const SHARE_COLOR = '#9ecfa4';
+
+  const nodes = [
+    // Shared knowledge — closest (largest apparent disparity when offset, most "depth")
+    { label: 'fire', type: 'shared',
+      lx: 0.50, ly: 0.38, rx: 0.50, ry: 0.38, r: 9 },
+    { label: 'water', type: 'shared',
+      lx: 0.35, ly: 0.60, rx: 0.35, ry: 0.60, r: 8 },
+    { label: 'seasons', type: 'shared',
+      lx: 0.65, ly: 0.58, rx: 0.65, ry: 0.58, r: 8 },
+    { label: 'seed dispersal', type: 'shared',
+      lx: 0.45, ly: 0.72, rx: 0.45, ry: 0.72, r: 6 },
+    { label: 'soil', type: 'shared',
+      lx: 0.55, ly: 0.75, rx: 0.55, ry: 0.75, r: 6 },
+
+    // Western science nodes — mid-depth
+    { label: 'fire intensity', type: 'west',
+      lx: 0.18, ly: 0.28, rx: 0.62, ry: 0.22, r: 7 },
+    { label: 'canopy cover', type: 'west',
+      lx: 0.28, ly: 0.22, rx: 0.72, ry: 0.32, r: 6 },
+    { label: 'biomass', type: 'west',
+      lx: 0.14, ly: 0.45, rx: 0.78, ry: 0.42, r: 6 },
+    { label: 'fuel load', type: 'west',
+      lx: 0.22, ly: 0.55, rx: 0.68, ry: 0.52, r: 5 },
+    { label: 'CO2 flux', type: 'west',
+      lx: 0.10, ly: 0.65, rx: 0.82, ry: 0.62, r: 5 },
+    { label: 'fire return interval', type: 'west',
+      lx: 0.24, ly: 0.38, rx: 0.58, ry: 0.28, r: 6 },
+    { label: 'moisture index', type: 'west',
+      lx: 0.16, ly: 0.72, rx: 0.75, ry: 0.68, r: 5 },
+    { label: 'wind speed', type: 'west',
+      lx: 0.30, ly: 0.15, rx: 0.65, ry: 0.15, r: 5 },
+
+    // TEK nodes — farthest depth
+    { label: 'country', type: 'tek',
+      lx: 0.82, ly: 0.28, rx: 0.18, ry: 0.28, r: 9 },
+    { label: 'ceremony', type: 'tek',
+      lx: 0.88, ly: 0.45, rx: 0.12, ry: 0.45, r: 7 },
+    { label: 'totemic species', type: 'tek',
+      lx: 0.76, ly: 0.22, rx: 0.24, ry: 0.22, r: 6 },
+    { label: 'skin group', type: 'tek',
+      lx: 0.90, ly: 0.60, rx: 0.10, ry: 0.60, r: 5 },
+    { label: 'songline', type: 'tek',
+      lx: 0.78, ly: 0.55, rx: 0.22, ry: 0.55, r: 7 },
+    { label: 'elder knowledge', type: 'tek',
+      lx: 0.84, ly: 0.38, rx: 0.16, ry: 0.38, r: 6 },
+    { label: 'obligation to burn', type: 'tek',
+      lx: 0.72, ly: 0.68, rx: 0.28, ry: 0.68, r: 7 },
+    { label: 'relationship', type: 'tek',
+      lx: 0.86, ly: 0.72, rx: 0.14, ry: 0.72, r: 8 },
+  ];
+
+  // Edges (index pairs)
+  const edges = [
+    [0,1],[0,2],[0,5],[0,10],[0,14],[0,16],
+    [1,3],[1,4],[2,3],[2,6],[2,11],
+    [5,6],[5,10],[6,7],[7,8],[8,9],
+    [13,14],[13,15],[14,16],[15,17],[16,18],[17,18],[18,19],[19,20],
+    [0,20],[1,13],[2,19],[3,13],[4,18],
+  ];
+
+  let mode = 'both';
+  let disparity = 22;
+  let mouse = { x: W/2, y: H/2 };
+  let raf = null;
+
+  // Mouse tracking
+  canvas.addEventListener('mousemove', e => {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = W / rect.width;
+    const scaleY = H / rect.height;
+    mouse.x = (e.clientX - rect.left) * scaleX;
+    mouse.y = (e.clientY - rect.top) * scaleY;
+  });
+  canvas.addEventListener('mouseleave', () => {
+    mouse.x = W/2;
+    mouse.y = H/2;
+  });
+
+  // Controls
+  document.querySelectorAll('.eye-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.eye-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      mode = btn.dataset.mode;
+    });
+  });
+
+  const slider = document.getElementById('disparity-slider');
+  const disparityVal = document.getElementById('disparity-val');
+  slider.addEventListener('input', () => {
+    disparity = parseInt(slider.value);
+    disparityVal.textContent = disparity + 'px';
+  });
+
+  function getPos(node, eye, parallaxX, parallaxY) {
+    const lx = node.lx * W;
+    const ly = node.ly * H;
+    const rx = node.rx * W;
+    const ry = node.ry * H;
+
+    if (eye === 'left') {
+      return { x: lx, y: ly };
+    }
+    if (eye === 'right') {
+      return { x: rx, y: ry };
+    }
+    // both: interpolate based on type, add parallax
+    const depth = node.type === 'shared' ? 0.8 : node.type === 'west' ? 0.4 : 0.1;
+    const blendX = lx + (rx - lx) * 0.5;
+    const blendY = ly + (ry - ly) * 0.5;
+    const px = blendX + parallaxX * depth;
+    const py = blendY + parallaxY * depth * 0.4;
+    return { x: px, y: py };
+  }
+
+  function drawLayer(nodes, edges, eye, alpha, offsetX, offsetY, parallaxX, parallaxY) {
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.translate(offsetX, offsetY);
+
+    // Draw edges first
+    edges.forEach(([i, j]) => {
+      const a = nodes[i];
+      const b = nodes[j];
+      // Only draw edges between visible nodes
+      const visibleA = (eye === 'both') || (eye === 'left' && a.type !== 'tek') || (eye === 'right' && a.type !== 'west');
+      const visibleB = (eye === 'both') || (eye === 'left' && b.type !== 'tek') || (eye === 'right' && b.type !== 'west');
+      if (!visibleA || !visibleB) return;
+
+      const pa = getPos(a, eye, parallaxX, parallaxY);
+      const pb = getPos(b, eye, parallaxX, parallaxY);
+
+      const mixedType = (a.type !== b.type);
+      ctx.beginPath();
+      ctx.moveTo(pa.x, pa.y);
+      ctx.lineTo(pb.x, pb.y);
+      ctx.strokeStyle = mixedType ? 'rgba(200,200,200,0.06)' : 'rgba(200,200,200,0.09)';
+      ctx.lineWidth = 0.8;
+      ctx.stroke();
+    });
+
+    // Draw nodes
+    nodes.forEach(node => {
+      const visible = (eye === 'both') ||
+        (eye === 'left' && node.type !== 'tek') ||
+        (eye === 'right' && node.type !== 'west');
+      if (!visible) return;
+
+      const p = getPos(node, eye, parallaxX, parallaxY);
+      const color = node.type === 'shared' ? SHARE_COLOR :
+                    node.type === 'west'   ? WEST_COLOR  : TEK_COLOR;
+
+      // Glow
+      const grd = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, node.r * 3);
+      grd.addColorStop(0, color + '33');
+      grd.addColorStop(1, 'transparent');
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, node.r * 3, 0, Math.PI * 2);
+      ctx.fillStyle = grd;
+      ctx.fill();
+
+      // Core
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, node.r, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+
+      // Label
+      ctx.fillStyle = '#aaa';
+      ctx.font = '9px Courier New';
+      ctx.textAlign = 'center';
+      ctx.fillText(node.label, p.x, p.y + node.r + 12);
+    });
+
+    ctx.restore();
+  }
+
+  function drawDepthAnnotation(parallaxX) {
+    if (mode !== 'both') return;
+    if (disparity < 5) {
+      ctx.fillStyle = '#333';
+      ctx.font = '10px Courier New';
+      ctx.textAlign = 'center';
+      ctx.fillText('no disparity — no depth', W/2, H - 18);
+    } else {
+      const strength = Math.min(disparity / 30, 1.0);
+      ctx.fillStyle = `rgba(100,140,100,${strength * 0.5})`;
+      ctx.font = '10px Courier New';
+      ctx.textAlign = 'center';
+      ctx.fillText('depth signal active — move mouse across canvas', W/2, H - 18);
+    }
+  }
+
+  function drawFrameLabels() {
+    ctx.font = '9px Courier New';
+    ctx.textAlign = 'left';
+    if (mode === 'left' || mode === 'both') {
+      ctx.fillStyle = '#2a4060';
+      ctx.fillText('WESTERN SCIENCE', 14, 20);
+    }
+    if (mode === 'right' || mode === 'both') {
+      ctx.fillStyle = '#5a4010';
+      ctx.textAlign = 'right';
+      ctx.fillText('INDIGENOUS ECOLOGICAL', W - 14, 20);
+    }
+    if (mode === 'both') {
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#1a3020';
+      ctx.fillText('binocular view', W/2, 20);
+    }
+    ctx.textAlign = 'left';
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    // Background grid (very subtle)
+    ctx.strokeStyle = 'rgba(255,255,255,0.02)';
+    ctx.lineWidth = 0.5;
+    for (let x = 0; x < W; x += 60) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    for (let y = 0; y < H; y += 60) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+
+    const parallaxX = (mouse.x - W/2) / W * disparity * 2;
+    const parallaxY = (mouse.y - H/2) / H * disparity * 0.5;
+
+    if (mode === 'left') {
+      drawLayer(nodes, edges, 'left', 0.9, 0, 0, 0, 0);
+    } else if (mode === 'right') {
+      drawLayer(nodes, edges, 'right', 0.9, 0, 0, 0, 0);
+    } else {
+      // Both eyes: left layer shifted left by half-disparity, right by half-disparity
+      drawLayer(nodes, edges, 'left',  0.65, -disparity/2, 0, parallaxX, parallaxY);
+      drawLayer(nodes, edges, 'right', 0.65, +disparity/2, 0, -parallaxX, parallaxY);
+    }
+
+    drawDepthAnnotation(parallaxX);
+    drawFrameLabels();
+
+    raf = requestAnimationFrame(draw);
+  }
+
+  draw();
+})();
+</script>
+</body>
+</html>
