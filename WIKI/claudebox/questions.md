@@ -118,3 +118,4 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - Which blog posts contradict each other? (Needs systematic ingest to find)
 - Which concepts appear in many posts but don't have clean definitions? (Needs concept pages)
 - What are the strongest and weakest claims across the corpus? (Needs lint pass)
+- [[cognitive-scarcity-post-scarcity-economics]] -- fringe probe surfaced: _Scarcity affects cognitive biases: The case of the illusion ..._. Follow up?

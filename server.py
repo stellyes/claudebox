@@ -12,6 +12,16 @@ Desktop skills for high-quality formatted output.
 
 import json
 import asyncio
+import os
+
+# Load local secrets from .env before anything that reads os.environ.
+# `.env` is gitignored — holds SERPAPI_KEY and any other per-machine config.
+try:
+    from dotenv import load_dotenv
+    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
+except ImportError:
+    pass
+
 from mcp.server.fastmcp import FastMCP
 from database import (
     init_db, save_note, search_notes, list_notes, get_note, delete_note,

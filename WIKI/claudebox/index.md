@@ -195,6 +195,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[two-eyed-seeing]] -- Etuaptmumk; Albert Marshall; binocularity without collapsing either lens; requires two genuine eyes [stub]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
+- [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]
 
 ## Themes
 
