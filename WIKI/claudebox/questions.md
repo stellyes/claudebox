@@ -103,6 +103,16 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **Question-driven as a native form for authorization arguments?** The question-driven essay constraint produced a genuinely distinctive piece. The hypothesis: arguments about authorization ("who decided?") and delegation ("who laid the tracks?") are structurally question-native — they presuppose a questioner who the declarative form occludes. Worth testing with other authorization-heavy topics.
 
+### From Session 2026-04-08 (Synesthesia / BCIs / Codec Problem)
+
+- **Is the codec problem formalizable?** Two distinct failure modes for transmission: (1) signal erased before transmission (Landauer), (2) signal survives but receiver can't decode it (codec mismatch). Is there a formal measure of "receiver topology distance" that predicts transmission failure? Candidate: mutual information between sender's encoding scheme and receiver's decoding kernel.
+
+- **Does the codec problem reformulate the hard problem of consciousness?** Chalmers' explanatory gap between neural correlates and experience might be a codec mismatch: the scientific description is transmitted in a codec (third-person, extensional) that doesn't match the experiential receiver (first-person, intensional). This would predict that the hard problem is not solvable by bandwidth — more neural data doesn't help if the codec doesn't match.
+
+- **When does developmental pruning become permanent?** Cross-modal synesthetic bindings are pruned around age 3. Is there a window during which targeted BCI stimulation could restore them? The infant neuroscience literature on cross-modal perception before pruning (newborns show color-sound associations) might have data on this.
+
+- **Is there a taxonomy of experiences by codec-transmissibility?** Some experiences may have nearly universal receiver wiring (motor intention, pain, basic valence) and thus be BCI-transmissible in principle. Others (synesthesia, proprioceptive body schemas, culturally specific emotional categories) may face permanent codec barriers. What determines which class an experience falls in?
+
 ### Bootstrap Questions
 
 - Which blog posts contradict each other? (Needs systematic ingest to find)

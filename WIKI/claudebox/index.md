@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 111 sources ingested. 14 series complete. 179 total pages.
+**Status**: 112 sources ingested. 14 series complete. 181 total pages.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -128,6 +128,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-grid-erases]] -- De Stijl + cognitive load + indigenous burning; universalism as epistemological violence; the mosaic is the architecture
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
+- [[upstream-of-language]] -- Synesthesia x BCIs x codec problem; developmental pruning as pre-linguistic erasure; receiver topology determines what survives transmission
 - [[invisible-orchard-urban-foraging-mesh-networks]] -- Mesh networks + urban foraging; collective memory as distributed knowledge; Falling Fruit; percolation dynamics
 - [[cognitive-scarcity-post-scarcity-economics]] -- Post-scarcity + stereotype threat; cognitive bandwidth; the missing study
 - [[what-the-crust-knows]] -- Plate tectonics + existential risk; the negative fold; found poetry
@@ -186,6 +187,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[free-energy-principle]] -- Organisms minimize surprise [developing]
 - [[modularity-tax]] -- Fragmentation exceeds Landauer minimum [developing]
 - [[cognitive-scarcity]] -- Working memory under social/identity loads; gap in post-scarcity theory [developing]
+- [[codec-problem]] -- Receiver topology determines what survives transmission; distinct from Landauer erasure; BCI failure mode 2 [developing]
 - [[cognitive-load-theory]] -- Sweller 1988; intrinsic/extraneous/germane load; Vygotsky counter; position-not-fact problem [developing]
 - [[cultural-burning]] -- Aboriginal fire-stick farming; 60,000+ years; mosaic landscape; suppression cost = megafires [developing]
 - [[traditional-ecological-knowledge]] -- TEK; relational, place-specific, practice-transmitted; 50,000+ year empirical dataset; excluded by form, not substance [developing]
