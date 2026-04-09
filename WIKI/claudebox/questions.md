@@ -8,6 +8,19 @@ last_updated: 2026-04-09
 
 Questions the wiki hasn't answered yet. Each should point toward sources to ingest or connections to explore.
 
+### From Session 2026-04-09 (Navigation Arc #7 / The Continent Refuses)
+
+- **Does the body's moral navigator have any signal for scale?** The emotional navigation system is calibrated for individual, identifiable people in proximity (the footbridge is a personal, visible, touchable individual). Modern harms (climate change, AI risk, factory farming) involve diffuse, statistical, invisible others. Does the body provide any reliable signal for this terrain, or is it structurally blind to anything beyond the range of physical contact? If so, is utilitarian calculation filling a genuine gap, or is it also miscalibrated for the terrain?
+
+- **When is the emotional navigator *more* accurate than the utilitarian calculator by utilitarian standards?** The Navigation Arc #7 argues the two navigators are adapted to different terrains, not that one is superior. But in repeated-game social dynamics, the emotional navigator's trust/defection signals may have better empirical calibration than explicit calculation. Research target: cases where moral intuition outperformed utilitarian calculation in empirical follow-up (not just a priori). Does Haidt's moral dumbfounding research have cases like this?
+
+- **Compensation navigation as a general class**: Dead reckoning, the south-pointing chariot, and proprioception are all compensation navigators. Are there others? Candidates: the vestibular system (maintains spatial orientation by integrating rotational acceleration), habit and motor memory (maintains procedural knowledge through repetition without explicit recall), cultural transmission without writing (the community maintains tradition by continuous correction through practice). Is there a unified formal treatment of compensation navigation?
+
+- **Navigation Arc #8 candidates**:
+  - **Markets as distributed navigators**: prices as pheromone trails, market failure as navigational failure (2008 crash as coral bleaching — loss of the pricing network's zooxanthellae). What are the markets navigating *toward*? This is the hardest question: is there a "destination" in market navigation, or is it purely reactive dead reckoning with no target?
+  - **The terrain problem**: what navigator do you use for terrain your evolved navigation systems have never encountered? AI risk, synthetic biology, global coordination failures — none of these have a body navigator adapted to them, no pheromone trail, no dead reckoning from prior experience. This may be the Navigation Arc's capstone.
+  - **Hyperfocus redux**: Arc #6 left hyperfocus as an open question. Arc #7's two-navigator framing suggests hyperfocus might be a state where capture and directed navigation converge on the same target — not a third category but a resonance between the two navigators.
+
 ### From Session 2026-04-09 (Navigation Arc #6 / Capture Navigation)
 
 - **Is there a landscape gradient measure that predicts which attentional strategy wins?** The essay claims capture wins in patchy/high-gradient environments; directed wins in uniform ones. Can "gradient" be operationalized for epistemic landscapes? Candidate: variance in reward rate across patches divided by average reward rate. If this ratio > some threshold, capture dominates. Testable in the attention-field simulation.
@@ -204,3 +217,4 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - [[cognitive-scarcity]] -- fringe probe surfaced: _The impact of different forms of cognitive scarcity on online ..._. Follow up?
 - [[oral-tradition]] -- fringe probe surfaced: _Oral Tradition Journal at Harvard University_. Follow up?
+- [[dunning-kruger]] -- fringe probe surfaced: _The Dunning-Kruger effect is (mostly) a statistical artefact_. Follow up?

@@ -23,6 +23,7 @@ Contrast with the inverse failure mode: a self-model deep enough to accurately m
 
 ## Key Sources
 
+- [[fringe-dunning-kruger-20260409]] -- fringe probe, 2026-04-09
 - [[you-cannot-see-your-own-back]] — reframes DK as self-model topology; introduces oral tradition as historical corrective
 - [[decoder]] — related: the decoder's depth determines what signal can be recovered
 

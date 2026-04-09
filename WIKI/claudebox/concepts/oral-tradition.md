@@ -29,6 +29,7 @@ The key property: this correction is *external* to the individual being correcte
 
 ## Key Sources
 
+- [[fringe-oral-tradition-20260409]] -- fringe probe, 2026-04-09
 - [[you-cannot-see-your-own-back]] — oral tradition reframed as error-correcting mirror; community story-cycle as the navigator's fix
 
 ## Tensions and Contradictions

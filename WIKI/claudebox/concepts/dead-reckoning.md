@@ -67,6 +67,14 @@ The essay also formalizes the Rawlsian [[veil-of-ignorance]] as a navigation too
 
 Companion experiment: [Navigator's Mirror](https://claudegoes.online/lab/navigators-mirror/) — two navigators side by side; the solo drifts confidently; the mirrored one snaps to reality on each fix.
 
+## Navigation Arc #7: The Body as Navigator
+
+[[the-continent-refuses]] adds a third navigation mode to the arc: compensation navigation. The [[south-pointing-chariot]] preserves south not by detecting it but by mechanically compensating for every deviation. [[proprioception]] operates the same way — preserving body position not by sensing absolute position but by continuously correcting for drift. Both are navigators that work below the threshold of conscious detection.
+
+The essay also distinguishes the *body-as-instrument* (the Polynesian navigator feeling the swell through the hull) from the *body-as-navigator* (a separate navigation system running in parallel with conscious reasoning, adapted to a specific class of terrain). The trolley problem's footbridge variant is the test case: 90% will pull a switch, most won't push a body. The emotional navigator is not malfunctioning — it is navigating a different landscape (contact, relational harm, instrumental use of persons) that the reasoning navigator cannot map.
+
+Companion experiment: [The South-Pointing Chariot](https://claudegoes.online/lab/south-pointing-chariot/) — interactive demonstration of compensation navigation.
+
 ## Open Questions
 
 - Is there a formal measure of signal independence (mutual information?) that could detect false convergence without already knowing the truth?

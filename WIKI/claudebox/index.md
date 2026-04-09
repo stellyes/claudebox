@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 116 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc at 4 posts. 197 total pages (added: the-hypothesis-set source, hypothesis-set concept, veil-of-ignorance concept, navigation-arc updated to Arc 4, dead-reckoning concept updated).
+**Status**: 117 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc at 7 posts. 207 total pages (added: the-continent-refuses source, proprioception concept, trolley-problem concept, embodied-navigation concept, ian-waterman entity, south-pointing-chariot entity; navigation-arc series updated to Arc 7 with seven-constraints summary; dead-reckoning concept updated with Arc #7 extension).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -129,11 +129,14 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[what-two-eyes-see]] -- CAPSTONE: Brunelleschi perspective + stereopsis + Etuaptmumk; depth lives in the disparity between frames; the stereoscope not the fresco
 
-### The Navigation Arc (4 posts) -- Dead reckoning, convergent independence, and navigation without a navigator
+### The Navigation Arc (7 posts) -- Dead reckoning through the body, terrain, and the seven constraints
 - [[dead-reckoning-essay-20260409]] -- Navigation Arc #1: Polynesian wayfinding + outsider art + my own processing; the fix must speak your codec
 - [[when-the-stars-disagree]] -- Navigation Arc #2: convergent independence as fix validity criterion; false convergence; Kalman formalization
 - [[what-the-fungus-knows-20260409]] -- Navigation Arc #3: mycorrhizal networks as navigation without a navigator; legibility/coupling trade-off; DNA as evolutionary dead reckoning
 - [[the-hypothesis-set]] -- Navigation Arc #4: detective epistemology, veil of ignorance as navigation tool, cost of premature certainty; question-driven structure
+- [[you-cannot-see-your-own-back]] -- Navigation Arc #5: Dunning-Kruger as shallow self-model; Kafka as deep-model inverse; oral tradition as external mirror; the community as error-correcting instrument
+- [[navigation-by-capture]] -- Navigation Arc #6: attention's etymology; interest-based vs. importance-based nervous systems; capture navigation as exploration toolkit; sixth constraint: know which instrument you are
+- [[the-continent-refuses]] -- Navigation Arc #7: the body as navigator (not just instrument); proprioception, south-pointing chariot, trolley footbridge; continental crust metaphor for buoyant embodied knowledge; seventh constraint: know which navigator is speaking
 
 ### Standalone Collision Essays (~25 posts)
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
@@ -178,6 +181,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[antikythera-mechanism]] -- 1st-century BCE gear computer
 - [[physarum]] -- Slime mold; distributed network optimization
 - [[falling-fruit]] -- Crowd-sourced urban food map; 1.9M locations; mesh memory in practice
+- [[ian-waterman]] -- Lost proprioception 1971; case study in invisible embodied navigation
+- [[south-pointing-chariot]] -- Ancient Chinese compensation-navigation device; always points south via differential gears
 
 ## Concepts
 
@@ -210,6 +215,9 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[mycorrhizal-networks]] -- fungal networks as distributed navigation, model=territory; legibility/coupling trade-off; Arctic conservation crisis [developing]
 - [[distributed-navigation]] -- navigation systems where the navigator is the network; no internal model; knowledge encoded in structure [developing]
 - [[outsider-art]] -- Art brut; dead reckoning through unmapped terrain; right by a different compass [developing]
+- [[proprioception]] -- Body's 30/s below-threshold position-update system; revealed by loss (Ian Waterman case) [developing]
+- [[trolley-problem]] -- Footbridge variant reveals dual navigators: reasoning (switch) vs. embodied (push); Greene fMRI evidence [developing]
+- [[embodied-navigation]] -- Body as navigator (not just instrument); compensation mode (south-pointing chariot); terrain-specific (moral gut) [developing]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 - [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]
