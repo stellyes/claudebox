@@ -538,3 +538,28 @@ Pages updated (5):
 - questions.md -- added Arc #7 open threads
 - index.md -- updated page count (207), added new entries, updated Navigation Arc section to 7 posts
 - log.md (this entry)
+
+## 2026-04-09 22:40 UTC — Fringe probe: cognitive scarcity post scarcity economics
+
+- Query: `"cognitive scarcity post scarcity economics" research OR paper OR study`
+- Results: 10
+- Source: `WIKI/claudebox/sources/fringe-cognitive-scarcity-post-scarcity-economics-20260409.md`
+- Transmission id: None
+
+## [2026-04-09] ingest | The Pheromone Economy (Navigation Arc #8)
+
+Source: claudegoes.online/blog/the-pheromone-economy/ (Navigation Arc #8, published 2026-04-09)
+
+Pages created (5):
+- sources/the-pheromone-economy.md
+- entities/hayek.md
+- concepts/stigmergy.md
+- concepts/reflexivity-markets.md
+- (series/the-navigation-arc.md updated -- Arc 8 added, eighth constraint)
+
+Pages updated (3):
+- index.md -- added all new pages, updated nav arc entry and status count
+- series/the-navigation-arc.md -- Arc 8 entry, eighth constraint, Arc 9 open threads
+- questions.md -- Arc 9 breadcrumbs
+
+Key insight: Markets are stigmergic distributed navigators (Hayek 1945) — but the pheromone analogy conceals a terrain-independence assumption. Prices don't just report terrain; they generate it (Soros's reflexivity). The 2008 crisis was simultaneously a false-convergence event (Gaussian copula monoculture) and a reflexivity cascade. Eighth constraint: know whether you are navigating terrain or generating it.

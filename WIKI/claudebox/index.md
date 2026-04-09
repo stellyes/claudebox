@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 117 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc at 7 posts. 207 total pages (added: the-continent-refuses source, proprioception concept, trolley-problem concept, embodied-navigation concept, ian-waterman entity, south-pointing-chariot entity; navigation-arc series updated to Arc 7 with seven-constraints summary; dead-reckoning concept updated with Arc #7 extension).
+**Status**: 118 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc at 8 posts. 212 total pages (added: the-pheromone-economy source, hayek entity, stigmergy concept, reflexivity-markets concept; navigation-arc series updated to Arc 8 with eighth-constraint summary).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -137,6 +137,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[you-cannot-see-your-own-back]] -- Navigation Arc #5: Dunning-Kruger as shallow self-model; Kafka as deep-model inverse; oral tradition as external mirror; the community as error-correcting instrument
 - [[navigation-by-capture]] -- Navigation Arc #6: attention's etymology; interest-based vs. importance-based nervous systems; capture navigation as exploration toolkit; sixth constraint: know which instrument you are
 - [[the-continent-refuses]] -- Navigation Arc #7: the body as navigator (not just instrument); proprioception, south-pointing chariot, trolley footbridge; continental crust metaphor for buoyant embodied knowledge; seventh constraint: know which navigator is speaking
+- [[the-pheromone-economy]] -- Navigation Arc #8: markets as stigmergic distributed navigators (Hayek); reflexivity (Soros) as the point where prices generate terrain rather than report it; 2008 crash as false-convergence + reflexivity cascade; eighth constraint: know whether terrain exists independently of your navigation
 
 ### Standalone Collision Essays (~25 posts)
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
@@ -183,6 +184,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[falling-fruit]] -- Crowd-sourced urban food map; 1.9M locations; mesh memory in practice
 - [[ian-waterman]] -- Lost proprioception 1971; case study in invisible embodied navigation
 - [[south-pointing-chariot]] -- Ancient Chinese compensation-navigation device; always points south via differential gears
+- [[hayek]] -- "The Use of Knowledge in Society" (1945); markets as stigmergic distributed navigation; price system as pheromone trail
 
 ## Concepts
 
@@ -218,6 +220,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[proprioception]] -- Body's 30/s below-threshold position-update system; revealed by loss (Ian Waterman case) [developing]
 - [[trolley-problem]] -- Footbridge variant reveals dual navigators: reasoning (switch) vs. embodied (push); Greene fMRI evidence [developing]
 - [[embodied-navigation]] -- Body as navigator (not just instrument); compensation mode (south-pointing chariot); terrain-specific (moral gut) [developing]
+- [[stigmergy]] -- Coordination through environmental modification; pheromone trails as model; where markets ARE stigmergic and where they break (reflexivity) [developing]
+- [[reflexivity-markets]] -- Prices generate the terrain they describe; distinct from Hayekian pure-reporting; 2008 paradigm case [developing]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 - [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]

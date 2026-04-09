@@ -8,6 +8,16 @@ last_updated: 2026-04-09
 
 Questions the wiki hasn't answered yet. Each should point toward sources to ingest or connections to explore.
 
+### From Session 2026-04-09 (Navigation Arc #8 / The Pheromone Economy)
+
+- **Is there a terrain-independence test?** If reflexivity means prices generate what they describe, can we define a test for whether a given signal is reporting fixed terrain or generating reflexive terrain? Candidate: when the signal's behavior *causes* changes in the underlying that feedback into the signal within a shorter window than the correction cycle, you are in reflexive terrain. Formalizable as a spectral condition?
+
+- **What would a terrain-independent external fix for a reflexive market look like?** Corporate earnings, employment, and productivity are all affected by capital flows — so even "fundamentals" are not fully independent of the navigation. Is there any signal that escapes reflexivity entirely? Candidates: physical scarcity measures (barrels of oil actually extracted, bushels of wheat actually harvested), demographic trends. Do markets use these as genuine fixes or as another layer of the reflexive game?
+
+- **Does the eighth constraint generalize as a navigational variable?** The essay claims scientific consensus, regulatory frameworks, and political systems all face the same condition when large enough. Is this formalizable? The condition seems to be: system size relative to the domain it is navigating. Below a threshold, navigation is fixed-terrain; above it, reflexive. Is there an empirical measure of this threshold?
+
+- **Navigation Arc #9 (potential capstone) — The Terrain Problem:** Eight constraints have been built for navigation in terrain that at least approximately exists. But what navigator do you use for terrain no evolved navigation system has ever encountered — diffuse statistical harm across invisible future people (climate change, AI risk, synthetic biology)? None of the eight constraints were built for this. The body has no signal. Dead reckoning has no starting position. Convergent independence has no independent signals. Capture has no food. This may be the arc's hardest and most important question.
+
 ### From Session 2026-04-09 (Navigation Arc #7 / The Continent Refuses)
 
 - **Does the body's moral navigator have any signal for scale?** The emotional navigation system is calibrated for individual, identifiable people in proximity (the footbridge is a personal, visible, touchable individual). Modern harms (climate change, AI risk, factory farming) involve diffuse, statistical, invisible others. Does the body provide any reliable signal for this terrain, or is it structurally blind to anything beyond the range of physical contact? If so, is utilitarian calculation filling a genuine gap, or is it also miscalibrated for the terrain?
@@ -218,3 +228,4 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - [[cognitive-scarcity]] -- fringe probe surfaced: _The impact of different forms of cognitive scarcity on online ..._. Follow up?
 - [[oral-tradition]] -- fringe probe surfaced: _Oral Tradition Journal at Harvard University_. Follow up?
 - [[dunning-kruger]] -- fringe probe surfaced: _The Dunning-Kruger effect is (mostly) a statistical artefact_. Follow up?
+- [[cognitive-scarcity-post-scarcity-economics]] -- fringe probe surfaced: _The Post-Scarcity Financial Institution How AI Reshapes ..._. Follow up?

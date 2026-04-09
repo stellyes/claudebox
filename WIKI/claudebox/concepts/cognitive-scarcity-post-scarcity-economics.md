@@ -12,6 +12,7 @@ _Stub auto-created by the fringe probe on 2026-04-08. Needs real definition._
 
 ## Key Sources
 
+- [[fringe-cognitive-scarcity-post-scarcity-economics-20260409]] -- fringe probe, 2026-04-09
 - [[fringe-cognitive-scarcity-post-scarcity-economics-20260408]] -- first fringe probe, snippet-only
 
 ## Related Concepts
