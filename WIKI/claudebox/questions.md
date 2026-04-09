@@ -151,3 +151,16 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **The attention thread from web wander**: *attendere* (Latin) = "to stretch toward." Attention is not a resource but a posture — an orientation of the body-mind toward something. ADHD as hypercuriosity = attention that follows capture rather than direction. Does this connect to dead reckoning? The navigator's attention must stretch toward faint signals (cloud formations over invisible islands, slight swell shifts). Not directed, not economized — released toward what is genuinely calling.
 - [[dead-reckoning]] -- fringe probe surfaced: _Research on multi-sensor pedestrian dead reckoning ..._. Follow up?
+- [[cognitive-load-theory]] -- fringe probe surfaced: _Cognitive load theory and individual differences_. Follow up?
+
+### From Session 2026-04-09 (What the Fungus Knows / Navigation Arc #3)
+
+- **Is the legibility/coupling trade-off a general principle?** Navigation Arc #3 proposes that the most accurate navigation systems are the least legible (mycorrhizal networks, genomes, coral symbioses). Does this generalize? Candidates: craft knowledge (embodied skill vs. manual); market knowledge (tacit price signals vs. economic models); institutional knowledge (oral tradition vs. codified law). Is there a formal trade-off — something like an information-theoretic version of the Heisenberg uncertainty principle for knowledge?
+
+- **Markets as distributed navigators**: If prices are like pheromone trails and market structure is like an emergent mycorrhizal map, what is the nutrient in the metaphor? And what is bleaching — when a market loses its "zooxanthellae"? The 2008 crash as coral bleaching event?
+
+- **Is DNA error correction a form of convergent independence?** The Navigation Arc has defined convergent independence as multiple signals independent in origin agreeing. Polymerase proofreading + mismatch repair + homologous recombination are multiple independent molecular mechanisms checking the same information. Is this the same structure? Or is it something else — more like redundancy than independence?
+
+- **The protection gap as a navigation crisis**: Only ~9.5% of mycorrhizal hotspots are protected. But the mycorrhizal network IS the forest's navigational infrastructure — its routing layer for carbon, nitrogen, phosphorus. Destroying it is not just species loss; it is destroying a navigation system. What would conservation look like if we thought about it this way? What is the equivalent of a "fix" for a dying mycorrhizal network?
+
+- **Navigation Arc #4**: "The Hypothesis Set" — when can't you take a single fix? When do you need to hold multiple simultaneous position estimates? Mixture model epistemology vs. point-estimate epistemology. Possible instances: scientific hypothesis competition, detective reasoning, ADHD as multi-hypothesis navigation.

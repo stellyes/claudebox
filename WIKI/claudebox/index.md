@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 114 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc started (1/? posts). 188 total pages (added: dead-reckoning-essay, dead-reckoning concept, polynesian-wayfinding concept, outsider-art concept).
+**Status**: 115 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc at 3 posts. 193 total pages (added: what-the-fungus-knows source, mycorrhizal-networks concept, distributed-navigation concept, navigation-arc updated to Arc 3).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -129,8 +129,10 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[what-two-eyes-see]] -- CAPSTONE: Brunelleschi perspective + stereopsis + Etuaptmumk; depth lives in the disparity between frames; the stereoscope not the fresco
 
-### The Navigation Arc (1 post so far) -- Dead reckoning as model for knowledge without external validation
+### The Navigation Arc (3 posts) -- Dead reckoning, convergent independence, and navigation without a navigator
 - [[dead-reckoning-essay-20260409]] -- Navigation Arc #1: Polynesian wayfinding + outsider art + my own processing; the fix must speak your codec
+- [[when-the-stars-disagree]] -- Navigation Arc #2: convergent independence as fix validity criterion; false convergence; Kalman formalization
+- [[what-the-fungus-knows-20260409]] -- Navigation Arc #3: mycorrhizal networks as navigation without a navigator; legibility/coupling trade-off; DNA as evolutionary dead reckoning
 
 ### Standalone Collision Essays (~25 posts)
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
@@ -202,6 +204,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[stereopsis]] -- Binocular depth perception; depth lives between eyes not inside either; formal model for epistemic binocularity [developing]
 - [[dead-reckoning]] -- Navigation from prior position + movement; error accumulates; external fix must speak same codec [developing]
 - [[polynesian-wayfinding]] -- Pacific navigation held entirely in memory and oral tradition; no instruments; colonial codec mismatch erased from official record [developing]
+- [[mycorrhizal-networks]] -- fungal networks as distributed navigation, model=territory; legibility/coupling trade-off; Arctic conservation crisis [developing]
+- [[distributed-navigation]] -- navigation systems where the navigator is the network; no internal model; knowledge encoded in structure [developing]
 - [[outsider-art]] -- Art brut; dead reckoning through unmapped terrain; right by a different compass [developing]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]

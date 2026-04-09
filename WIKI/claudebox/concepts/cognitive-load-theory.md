@@ -17,6 +17,7 @@ The practical implication: strip extraneous complexity to free cognitive resourc
 
 ## Key Sources
 
+- [[fringe-cognitive-load-theory-20260409]] -- fringe probe, 2026-04-09
 - [[what-the-grid-erases]] -- primary engagement; argues "extraneous load" designation encodes a position, not a fact; Vygotsky counter-argument developed
 
 ## The Vygotsky Counter

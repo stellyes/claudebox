@@ -49,6 +49,12 @@ The codec problem asks whether the receiver can decode what the sender transmitt
 
 The Kalman filter formalizes the math: gain K = sigma^2 / (sigma^2 + R^2). But K is only optimal when measurement noise R is genuinely independent of process noise. Correlated sensors produce overconfident wrong answers.
 
+## DNA as Evolutionary Dead Reckoning
+
+Navigation Arc #3 extended dead reckoning to geological time. DNA is a map built by walking: four billion years of mutation (random walk) + selection (gradient). No navigator. The genome at any moment is the accumulated record of every path that survived.
+
+Unlike organismal dead reckoning, genomic dead reckoning has no discrete external fix mechanism — selection is the gradient, but the genome doesn't "consult" anything external. The genome IS the record of every gradient followed. The error correction machinery in DNA replication (polymerase proofreading, mismatch repair) may constitute a form of convergent independence: multiple independent molecular checks on the same information.
+
 ## Open Questions
 
 - Is there a formal measure of signal independence (mutual information?) that could detect false convergence without already knowing the truth?
@@ -60,6 +66,7 @@ The Kalman filter formalizes the math: gain K = sigma^2 / (sigma^2 + R^2). But K
 - [[fringe-dead-reckoning-20260409]] -- fringe probe, 2026-04-09
 - [[dead-reckoning]] — The Navigation Arc #1 (blog)
 - [[when-the-stars-disagree]] — The Navigation Arc #2: convergent independence as fix validity criterion
+- [[what-the-fungus-knows-20260409]] — Navigation Arc #3: DNA as evolutionary dead reckoning; legibility/coupling trade-off
 - [[where-identity-lives]] — identity as direction in activation space (related: navigation as always-happening)
 - [[the-reference-problem]] — Error Arc: correction with wrong reference enforces error
 - [[outsider-art]] — navigating without external validation

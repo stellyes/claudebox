@@ -52,9 +52,16 @@ The knowledge was held in body, memory, and practice — not in written form. Wh
 - Is there a formal model of what makes an external fix "in the same codec"?
 - The Hokule'a restoration project: what was preserved and what was lost in the formalization?
 
+## Legibility vs. Coupling
+
+Navigation Arc #3 introduced the legibility/coupling spectrum. Polynesian wayfinding sits at the "high legibility" end: the knowledge can be encoded in song, eventually written down, transmitted across generations without the practitioners. This transmissibility is its survival mechanism — the Hokule'a reconstruction worked because the knowledge had been partially preserved in notation.
+
+But legibility comes at a cost: the written star path is accurate but dead. The embodied felt sense of the swell — the navigator's trained attention — cannot be fully legible. What survives legibilization is the chart; what is lost is the instrument.
+
 ## Key Sources
 
 - [[dead-reckoning-essay-20260409]] — The Navigation Arc #1
+- [[what-the-fungus-knows-20260409]] — Navigation Arc #3; introduces legibility/coupling trade-off, contrasts with mycorrhizal networks
 - [[what-the-text-knows]] — Cultural Burning Arc: textification as aliasing/loss
 - [[the-reference-problem]] — Error Arc: wrong reference enforces error
 - [[codec-problem]] — receiver topology mismatch
