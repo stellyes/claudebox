@@ -11,6 +11,7 @@ Cognitive scarcity is the condition in which working memory — the mind's finit
 
 ## Key Sources
 
+- [[fringe-cognitive-scarcity-20260409]] -- fringe probe, 2026-04-09
 - [[cognitive-scarcity-post-scarcity-economics]] — introduces the concept and the missing framework of "cognitive post-scarcity"
 - [[the-bottleneck]] — establishes working memory limits as the fundamental constraint; 4-item capacity, attentional blink
 - [[what-attention-costs]] — synthesis of attention depletion; bandwidth as finite shared resource

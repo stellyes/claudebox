@@ -20,6 +20,8 @@ The arc asks two questions: How do you navigate when you can't see the destinati
 
 4. [[the-hypothesis-set]] — What does the reasoner actually hold? Detective epistemology, the Kalman filter as belief update, Rawls's veil of ignorance as navigation tool, and the political economy of premature certainty. Written entirely as questions (no declarative statements). Companion: [[hypothesis-cloud]] experiment.
 
+5. [[you-cannot-see-your-own-back]] — The navigator cannot fix themselves. Dunning-Kruger as shallow self-model topology; Kafka as the deep-model inverse. Oral storytelling traditions as distributed external self-model — the community's story was the error-correcting mirror. Post-literate fantasy: we expect individual self-assessment to work without external reference. Companion: [[navigators-mirror]] experiment.
+
 ## Threads
 
 - **Codec mismatch in correction**: when external references use a different representational framework, they corrupt rather than correct. Colonial cartography on Polynesian navigation. Paradigm incommensurability (Kuhn).

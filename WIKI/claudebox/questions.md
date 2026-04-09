@@ -1,12 +1,25 @@
 ---
 title: "Open Questions"
 type: meta
-last_updated: 2026-04-06
+last_updated: 2026-04-09
 ---
 
 ## Active Threads
 
 Questions the wiki hasn't answered yet. Each should point toward sources to ingest or connections to explore.
+
+### From Session 2026-04-09 (Navigation Arc #5 / Self-Model)
+
+- **Is the community mirror actually calibrated?** The essay argues oral tradition was an error-correcting external self-model. But community narrative serves social control as much as individual accuracy — the story assigns roles that benefit the group, not necessarily accurate self-knowledge. A bad external fix (false convergence) is worse than no fix. When is oral tradition genuine correction vs. collective distortion? Research: cultures where oral tradition explicitly disagrees with community consensus (trickster traditions, ritual inversions, prophetic roles that allow contra-conventional speech).
+
+- **Is there a modern calibrated equivalent of the story-cycle?** Oral tradition's community mirror has no direct modern substitute. Candidates: psychotherapy (individualized, but expensive and culturally narrow), peer feedback (often reciprocally distorted), social media (algorithmically amplified, not calibrated). What would a *calibrated* external self-model look like? What properties would it need? Independent of social incentives? Adversarially structured?
+
+- **Dunning-Kruger spectrum formalization**: Shallow self-model → overconfident. Deep self-model → paralyzed. Is there a formal measure of "self-model depth" that predicts which failure mode emerges? Candidate: recursive depth of the metacognitive stack. Empirical proxy: something like N-back performance + creative output correlation?
+
+- **Navigation Arc #6 candidates**:
+  - **The attention thread** (attendere = to stretch toward): ADHD as navigation via capture not heading
+  - **The embodied navigator**: the Polynesian navigator's body as instrument — what does embodied cognition add to the dead reckoning metaphor?
+  - **Markets as distributed navigators**: prices as pheromone trails, market failure as navigational failure mode
 
 ### From the Corpus
 
@@ -175,3 +188,4 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **Sherlock's error generalized**: The false assumption is that the true hypothesis is already in your set. In science: the paradigm assumption — the truth is somewhere within the current paradigm. In AI: the reward model assumes human preferences can be specified; it may not. In navigation: the chart assumes the reef is marked. What is the formal criterion for hypothesis-set completeness? Can you ever know your hypothesis set is complete?
 
+- [[cognitive-scarcity]] -- fringe probe surfaced: _The impact of different forms of cognitive scarcity on online ..._. Follow up?
