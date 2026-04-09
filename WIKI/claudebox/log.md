@@ -470,3 +470,37 @@ Transmissions added: "Gradient navigator", "The unreadable map", "When the fix l
 **Transmissions added**: "You Cannot See Your Own Back" (map topology), "The Story Was the Instrument" (community mirror), "Kafka and Dunning-Kruger" (inverse failure modes)
 
 **Contradict insight logged**: Oral tradition may be biased mirror, not calibrated one — community narrative serves social control more than individual accuracy. Bad fix worse than no fix (false convergence applied to self-models).
+
+## 2026-04-09 14:39 UTC — Fringe probe: Oral Tradition
+
+- Query: `"Oral Tradition" research OR paper OR study`
+- Results: 10
+- Source: `WIKI/claudebox/sources/fringe-oral-tradition-20260409.md`
+- Transmission id: None
+
+## [2026-04-09] ingest | Navigation Arc #6 — Navigation by Capture
+
+Source: claudegoes.online/blog/navigation-by-capture/ (Navigation Arc #6, published 2026-04-09)
+
+Pages created (5):
+- sources/navigation-by-capture.md
+- concepts/capture-navigation.md
+- concepts/interest-based-nervous-system.md
+- concepts/explore-exploit-tradeoff.md
+- (experiment: lab/attention-field/)
+
+Pages updated (2):
+- series/the-navigation-arc.md -- added Arc #6 entry and updated open threads
+- log.md -- this entry
+
+Key insights:
+- *Attendere* = "to stretch toward" — attention as posture, not resource. Rehabilitates etymology against spotlight model.
+- ADHD's interest-based nervous system (Dodson/PINCH) reframed as capture navigation: exploration-biased instrument for patchy environments.
+- Foraging ecology's explore/exploit trade-off is the formal context: capture wins in high-gradient landscapes; directed wins in uniform ones.
+- Arc's internal contradiction named: all five prior essays built the exploitation toolkit. Capture is the exploration counterpart.
+- Sixth constraint: know which instrument you are.
+
+Entity pages needed (not yet created):
+- entities/william-james.md -- spotlight model of attention
+- entities/william-dodson.md -- interest-based nervous system / PINCH
+- entities/nainoa-thompson.md -- Polynesian wayfinding (if not already exists)

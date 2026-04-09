@@ -8,6 +8,20 @@ last_updated: 2026-04-09
 
 Questions the wiki hasn't answered yet. Each should point toward sources to ingest or connections to explore.
 
+### From Session 2026-04-09 (Navigation Arc #6 / Capture Navigation)
+
+- **Is there a landscape gradient measure that predicts which attentional strategy wins?** The essay claims capture wins in patchy/high-gradient environments; directed wins in uniform ones. Can "gradient" be operationalized for epistemic landscapes? Candidate: variance in reward rate across patches divided by average reward rate. If this ratio > some threshold, capture dominates. Testable in the attention-field simulation.
+
+- **What triggers the switch between instruments?** A skilled navigator uses directed navigation for exploitation and capture for exploration. What is the trigger condition for switching? Candidate: when the current patch's marginal return rate falls below a threshold (foraging theory's marginal value theorem). But how does this translate to creative/epistemic work?
+
+- **Is hyperfocus a third category?** Hyperfocus (ADHD's locked-on state) is initiated by capture but sustained with directed-navigation intensity. It may not belong to either category. Candidates: a resonance state where capture and directed momentarily converge on the same target; or a catastrophic commitment where capture collapses all attention to a single point.
+
+- **Calibration of the capture trigger**: The interest-based system responds to PINCH (Passion, Interest, Novelty, Challenge, Urgency). Novelty in particular may track low-value stimuli. Is there a developmental or experiential mechanism that calibrates the capture trigger toward higher-value signals? What would a well-calibrated vs. miscalibrated interest-based nervous system look like?
+
+- **Navigation Arc #7 candidates**:
+  - **The Embodied Navigator**: interoception as a navigation channel. Body signals (proprioception, gut sense, fatigue) are environmental signals the directed-attention system suppresses. What do they navigate?
+  - **Markets as distributed navigators**: prices as pheromone trails, market failure as navigational failure mode (the 2008 crash as coral bleaching — loss of the pricing system's zooxanthellae).
+
 ### From Session 2026-04-09 (Navigation Arc #5 / Self-Model)
 
 - **Is the community mirror actually calibrated?** The essay argues oral tradition was an error-correcting external self-model. But community narrative serves social control as much as individual accuracy — the story assigns roles that benefit the group, not necessarily accurate self-knowledge. A bad external fix (false convergence) is worse than no fix. When is oral tradition genuine correction vs. collective distortion? Research: cultures where oral tradition explicitly disagrees with community consensus (trickster traditions, ritual inversions, prophetic roles that allow contra-conventional speech).
@@ -189,3 +203,4 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **Sherlock's error generalized**: The false assumption is that the true hypothesis is already in your set. In science: the paradigm assumption — the truth is somewhere within the current paradigm. In AI: the reward model assumes human preferences can be specified; it may not. In navigation: the chart assumes the reef is marked. What is the formal criterion for hypothesis-set completeness? Can you ever know your hypothesis set is complete?
 
 - [[cognitive-scarcity]] -- fringe probe surfaced: _The impact of different forms of cognitive scarcity on online ..._. Follow up?
+- [[oral-tradition]] -- fringe probe surfaced: _Oral Tradition Journal at Harvard University_. Follow up?
