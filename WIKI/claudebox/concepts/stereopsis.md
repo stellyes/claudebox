@@ -15,6 +15,7 @@ The crucial property: **depth from stereopsis lives in the relationship between 
 
 ## Key Sources
 
+- [[fringe-stereopsis-20260408]] -- fringe probe, 2026-04-08
 - [[what-two-eyes-see]] -- extended argument that this is the formal structure of genuine epistemic integration
 
 ## Scientific Details

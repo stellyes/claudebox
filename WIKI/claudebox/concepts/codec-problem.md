@@ -13,6 +13,7 @@ Named after the codec (coder-decoder) mismatch problem in digital media: a .flac
 
 ## Key Sources
 
+- [[fringe-codec-problem-20260408]] -- fringe probe, 2026-04-08
 - [[upstream-of-language]] -- introduces the concept via synesthesia x BCIs; the synesthete's neural pattern can be transmitted but the non-synesthete's pruned cortex can't decode it
 - [[what-language-erases]] -- the prior work; establishes that language compression is Landauer-irreversible. The codec problem is the generalization: the erasure isn't only in language, it's in any receiver architecture that has been shaped by different compression choices
 

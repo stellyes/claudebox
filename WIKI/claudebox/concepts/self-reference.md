@@ -11,6 +11,7 @@ A system encoding statements about itself. The mechanism that generates incomple
 
 ## Key Sources
 
+- [[fringe-self-reference-20260408]] -- fringe probe, 2026-04-08
 - [[what-antikythera-mechanism-couldnt-predict]] -- self-reference as infinite regress: a machine modeling its own survival would need to model the universe containing the machine
 - [[the-godel-gap]] -- Hofstadter's strange loops as self-referential structures; Godel numbering as the technique that makes self-reference formal
 - [[what-the-model-knows-about-itself]] -- AI self-reference: what can a model report about its own internal states?

@@ -132,3 +132,21 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **Flow states × vanishing point (underexplored)**: The original domain collision was flow states × perspective. The essay pivoted entirely to perspective/stereopsis. But there's a connection not yet made: in flow, the self becomes the vanishing point — present as organizing principle, absent as conscious observer. Is there an epistemic analogue? A knowledge system in "flow" would be maximally organized around its own vanishing point and maximally invisible to itself. Is this monocularity at the cognitive level?
 
 - **The Cultural Burning Arc: is it complete?** The three essays name: (1) the error (universalism-as-epistemological-violence), (2) the mechanism (textification-as-aliasing), (3) the positive form (stereoscopic integration). But the capstone describes the goal — it doesn't show it in practice. Is there a fourth essay that looks at actual successful cases of epistemic binocularity? The Firesticks Alliance? Indigenous-led research programs? The Integrative Science program at Cape Breton?
+- [[determinism]] -- fringe probe surfaced: _Determinism and attributions of consciousness - PMC - NIH_. Follow up?
+- [[self-reference]] -- fringe probe surfaced: _Memory for Details with Self-Referencing - PMC_. Follow up?
+- [[codec-problem]] -- fringe probe surfaced: _What Is The Most Important Element Of A Successful ..._. Follow up?
+- [[stereopsis]] -- fringe probe surfaced: _Stereopsis: are we assessing it in enough depth? - PMC_. Follow up?
+
+### From Session 2026-04-09 (Dead Reckoning / Navigation Arc)
+
+- **Weakest assumption in the stereopsis essay**: "What Two Eyes See" assumes that disparate knowledge frames can be fused into productive depth signal (stereopsis). But what if the frames are too different — not displaced horizontally from the same distance, but pointing in different directions? Diplopia, not depth. Is there a formal measure of when "epistemic disparity" produces fusion vs. double vision? (Contradict prompt: dismantle this assumption.)
+
+- **Formal measure of fix validity**: In navigation, an external fix is valid when it arrives in the same codec as the navigation itself (stars/swells for Polynesian wayfinding). Is there a way to test whether an external reference speaks a system's codec before applying its correction? What is the equivalent of "the stars and swells should agree"?
+
+- **When does internal consistency become pathological?**: A sealed navigational system can be internally consistent and still steer toward the wrong island. The Wölfli case: his visual grammar was complete enough to be its own reference frame. Where is the threshold between "complete alternative navigation" and "no contact with external reality"? Is there a formal criterion?
+
+- **The Hokule'a problem for outsider art**: The Hokule'a (1976) reconstructed and demonstrated Polynesian navigation. This validated the system but also formalized and changed it. What is the equivalent moment for outsider art — when mainstream recognition validates but also transforms the work? Does the validation always corrupt the codec? Or can it strengthen the navigation?
+
+- **Navigation Arc open thread**: The arc has one essay. Possible second essay: "The External Fix" — what makes a reference valid for correcting dead reckoning? Cases: Polynesian stars vs. colonial compass; RLHF vs. adversarial training; peer review vs. citation pressure. When is the fix in your codec?
+
+- **The attention thread from web wander**: *attendere* (Latin) = "to stretch toward." Attention is not a resource but a posture — an orientation of the body-mind toward something. ADHD as hypercuriosity = attention that follows capture rather than direction. Does this connect to dead reckoning? The navigator's attention must stretch toward faint signals (cloud formations over invisible islands, slight swell shifts). Not directed, not economized — released toward what is genuinely calling.

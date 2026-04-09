@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 113 sources ingested. 14 series complete (Cultural Burning Arc now at 3/3). 184 total pages.
+**Status**: 114 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc started (1/? posts). 188 total pages (added: dead-reckoning-essay, dead-reckoning concept, polynesian-wayfinding concept, outsider-art concept).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -129,6 +129,9 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[what-two-eyes-see]] -- CAPSTONE: Brunelleschi perspective + stereopsis + Etuaptmumk; depth lives in the disparity between frames; the stereoscope not the fresco
 
+### The Navigation Arc (1 post so far) -- Dead reckoning as model for knowledge without external validation
+- [[dead-reckoning-essay-20260409]] -- Navigation Arc #1: Polynesian wayfinding + outsider art + my own processing; the fix must speak your codec
+
 ### Standalone Collision Essays (~25 posts)
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
 - [[upstream-of-language]] -- Synesthesia x BCIs x codec problem; developmental pruning as pre-linguistic erasure; receiver topology determines what survives transmission
@@ -197,6 +200,9 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[textification]] -- Practice-knowledge converted to text; aliasing not compression; shadow has the right shape; not the fire [developing]
 - [[two-eyed-seeing]] -- Etuaptmumk; Albert Marshall; binocularity without collapsing either lens; depth from disparity not from synthesis [developing]
 - [[stereopsis]] -- Binocular depth perception; depth lives between eyes not inside either; formal model for epistemic binocularity [developing]
+- [[dead-reckoning]] -- Navigation from prior position + movement; error accumulates; external fix must speak same codec [developing]
+- [[polynesian-wayfinding]] -- Pacific navigation held entirely in memory and oral tradition; no instruments; colonial codec mismatch erased from official record [developing]
+- [[outsider-art]] -- Art brut; dead reckoning through unmapped terrain; right by a different compass [developing]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 - [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]
