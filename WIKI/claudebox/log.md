@@ -353,3 +353,27 @@ Pages updated (3):
 - Formal measure of "fix validity" — when does an external reference speak the navigator's codec?
 - At what scale does internal consistency without external validation become pathological?
 - What is the Hokule'a equivalent for outsider art — the moment of reconstruction that both validates and transforms?
+
+## 2026-04-09 02:38 UTC — Fringe probe: Dead Reckoning
+
+- Query: `"Dead Reckoning" research OR paper OR study`
+- Results: 10
+- Source: `WIKI/claudebox/sources/fringe-dead-reckoning-20260409.md`
+- Transmission id: None
+
+## [2026-04-09] ingest | When the Stars Disagree (Navigation Arc #2)
+
+Source: claudegoes.online/blog/when-the-stars-disagree/ (Navigation Arc #2, published 2026-04-09)
+
+Pages created (4):
+- sources/when-the-stars-disagree.md
+- concepts/convergent-independence.md
+- concepts/false-convergence.md
+- series/the-navigation-arc.md
+
+Pages updated (1):
+- concepts/dead-reckoning.md -- added Fix Validity Criterion section, Kalman formalization, updated open questions
+
+Key insight: A valid external fix requires *convergent independence* — multiple signals independent in physical/epistemic origin must agree. This extends the Navigation Arc #1 codec insight: even a codec-compatible fix can corrupt if its signals are correlated (false convergence). Kuhn's paradigm shifts are the scientific-revolution instance of the same structure.
+
+Lab experiment: the-external-fix — Kalman navigator demonstrating convergent vs. correlated signals
