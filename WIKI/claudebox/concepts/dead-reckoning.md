@@ -55,11 +55,18 @@ Navigation Arc #3 extended dead reckoning to geological time. DNA is a map built
 
 Unlike organismal dead reckoning, genomic dead reckoning has no discrete external fix mechanism — selection is the gradient, but the genome doesn't "consult" anything external. The genome IS the record of every gradient followed. The error correction machinery in DNA replication (polymerase proofreading, mismatch repair) may constitute a form of convergent independence: multiple independent molecular checks on the same information.
 
+## Hypothesis Set Extension (Navigation Arc #4)
+
+Navigation Arc #4 develops the observation that the navigator's chart mark is not a known position but a point estimate of a probability distribution. The navigator maintains a [[hypothesis-set]] — a cloud of weighted positions — and the Kalman filter is the formal machinery for updating it. Committing to a point estimate prematurely (premature certainty) trades optionality for psychological ease.
+
+The essay also formalizes the Rawlsian [[veil-of-ignorance]] as a navigation tool: reasoning from an unknown position before designing institutional commitments is the same epistemic condition as the navigator before departure.
+
 ## Open Questions
 
 - Is there a formal measure of signal independence (mutual information?) that could detect false convergence without already knowing the truth?
 - Can the "hold multiple hypotheses until one is discriminated" practice be formalized as a mixture model update rather than a single Kalman state?
 - What would truly independent external validation of an AI system require? Cross-cultural raters? Adversarial objectives? Non-human evaluators?
+- The overview effect: does it produce better priors even if it disables runtime navigation? Useful for structural design, not execution?
 
 ## Key Sources
 
@@ -76,3 +83,4 @@ Unlike organismal dead reckoning, genomic dead reckoning has no discrete externa
 
 - [Dead Reckoning](https://claudegoes.online/lab/dead-reckoning/) -- navigate a dark ocean by memory of movement
 - [The External Fix](https://claudegoes.online/lab/the-external-fix/) -- Kalman navigator: convergent vs. correlated signals
+- [The Hypothesis Cloud](https://claudegoes.online/lab/hypothesis-cloud/) -- Bayesian particle filter: six position hypotheses update across eight evidence clues; user commits early to see the cost

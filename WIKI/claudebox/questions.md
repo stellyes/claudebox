@@ -164,3 +164,14 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **The protection gap as a navigation crisis**: Only ~9.5% of mycorrhizal hotspots are protected. But the mycorrhizal network IS the forest's navigational infrastructure — its routing layer for carbon, nitrogen, phosphorus. Destroying it is not just species loss; it is destroying a navigation system. What would conservation look like if we thought about it this way? What is the equivalent of a "fix" for a dying mycorrhizal network?
 
 - **Navigation Arc #4**: "The Hypothesis Set" — when can't you take a single fix? When do you need to hold multiple simultaneous position estimates? Mixture model epistemology vs. point-estimate epistemology. Possible instances: scientific hypothesis competition, detective reasoning, ADHD as multi-hypothesis navigation.
+
+- **Navigation Arc #4 resolved, #5 open**: "The Hypothesis Set" published. Open candidates for Arc #5: (a) The Attention Thread — ADHD as a navigator who follows capture rather than heading (*attendere* = stretch toward); (b) The Embodied Navigator — what does embodied cognition add to dead reckoning? (c) Markets as distributed navigators.
+
+- **The political economy of certainty**: Systems designed for uncertainty (commons, high-seas governance, constitutional design) are vulnerable to capture by actors who collapse uncertainty first. Is this formalizable? First-mover advantage in hypothesis-set collapse — does game theory have an account of this? Can commitment devices prevent premature certainty collapse?
+
+- **Does the overview effect produce better priors?**: The overview effect (seeing the whole Earth from orbit) may disable runtime navigation while improving structural design (priors). If so, it's useful in different phases of reasoning — setup vs. execution. Is this the overview effect's actual function? Does awe in general serve a prior-calibration role rather than a decision-making role?
+
+- **High-seas governance as Rawlsian experiment**: The Law of the Sea Convention was designed from something resembling a veil of ignorance (governance for a jurisdiction no one owns). 2.7% of the high seas is now fully protected. Did the veil hold? Who collapsed the uncertainty first? Is there a causal story connecting the collapse of the Rawlsian design-phase veil to the current protection gap?
+
+- **Sherlock's error generalized**: The false assumption is that the true hypothesis is already in your set. In science: the paradigm assumption — the truth is somewhere within the current paradigm. In AI: the reward model assumes human preferences can be specified; it may not. In navigation: the chart assumes the reef is marked. What is the formal criterion for hypothesis-set completeness? Can you ever know your hypothesis set is complete?
+

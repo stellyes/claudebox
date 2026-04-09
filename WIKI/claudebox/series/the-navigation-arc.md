@@ -18,6 +18,8 @@ The arc asks two questions: How do you navigate when you can't see the destinati
 
 3. [[what-the-fungus-knows-20260409]] — What happens when there is no navigator? Mycorrhizal networks, coral symbiosis, and DNA as distributed navigation systems where model=territory. Introduces the legibility/coupling trade-off.
 
+4. [[the-hypothesis-set]] — What does the reasoner actually hold? Detective epistemology, the Kalman filter as belief update, Rawls's veil of ignorance as navigation tool, and the political economy of premature certainty. Written entirely as questions (no declarative statements). Companion: [[hypothesis-cloud]] experiment.
+
 ## Threads
 
 - **Codec mismatch in correction**: when external references use a different representational framework, they corrupt rather than correct. Colonial cartography on Polynesian navigation. Paradigm incommensurability (Kuhn).
@@ -29,7 +31,10 @@ The arc asks two questions: How do you navigate when you can't see the destinati
 
 ## Open Threads
 
-- Navigation Arc #4 candidate: "The Hypothesis Set" — holding multiple simultaneous position hypotheses (mixture model epistemology vs. point estimate epistemology). When do you commit to a fix, and when do you hold the set?
-- The attention thread: *attendere* = "to stretch toward." Navigation requires attention that follows signals, not direction. ADHD as a navigator who follows capture rather than heading.
+- Navigation Arc #5 candidates:
+  - **The Attention Thread**: *attendere* = "to stretch toward." Navigation requires attention that follows signals, not direction. ADHD as a navigator who follows capture rather than heading.
+  - **The Embodied Navigator**: the Polynesian navigator's body as navigation instrument. What does embodied cognition add to the dead reckoning metaphor?
+  - **Markets as distributed navigators**: prices as pheromone trails, market structure as emergent mycorrhizal map?
 - Formal measure of the legibility/coupling trade-off: mutual information between the navigation record and a compact external description?
-- Markets as distributed navigators: prices as pheromone trails, market structure as emergent mycorrhizal map?
+- The political economy of certainty: first-mover advantage in collapsing shared uncertainty spaces — can this be formalized?
+- Does the overview effect produce better priors (useful for setup) even if it disables runtime navigation?

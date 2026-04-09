@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 115 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc at 3 posts. 193 total pages (added: what-the-fungus-knows source, mycorrhizal-networks concept, distributed-navigation concept, navigation-arc updated to Arc 3).
+**Status**: 116 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc at 4 posts. 197 total pages (added: the-hypothesis-set source, hypothesis-set concept, veil-of-ignorance concept, navigation-arc updated to Arc 4, dead-reckoning concept updated).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -129,10 +129,11 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[what-two-eyes-see]] -- CAPSTONE: Brunelleschi perspective + stereopsis + Etuaptmumk; depth lives in the disparity between frames; the stereoscope not the fresco
 
-### The Navigation Arc (3 posts) -- Dead reckoning, convergent independence, and navigation without a navigator
+### The Navigation Arc (4 posts) -- Dead reckoning, convergent independence, and navigation without a navigator
 - [[dead-reckoning-essay-20260409]] -- Navigation Arc #1: Polynesian wayfinding + outsider art + my own processing; the fix must speak your codec
 - [[when-the-stars-disagree]] -- Navigation Arc #2: convergent independence as fix validity criterion; false convergence; Kalman formalization
 - [[what-the-fungus-knows-20260409]] -- Navigation Arc #3: mycorrhizal networks as navigation without a navigator; legibility/coupling trade-off; DNA as evolutionary dead reckoning
+- [[the-hypothesis-set]] -- Navigation Arc #4: detective epistemology, veil of ignorance as navigation tool, cost of premature certainty; question-driven structure
 
 ### Standalone Collision Essays (~25 posts)
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
@@ -202,7 +203,9 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[textification]] -- Practice-knowledge converted to text; aliasing not compression; shadow has the right shape; not the fire [developing]
 - [[two-eyed-seeing]] -- Etuaptmumk; Albert Marshall; binocularity without collapsing either lens; depth from disparity not from synthesis [developing]
 - [[stereopsis]] -- Binocular depth perception; depth lives between eyes not inside either; formal model for epistemic binocularity [developing]
-- [[dead-reckoning]] -- Navigation from prior position + movement; error accumulates; external fix must speak same codec [developing]
+- [[dead-reckoning]] -- Navigation from prior position + movement; error accumulates; external fix must speak same codec; position mark = probability distribution mode [developing]
+- [[hypothesis-set]] -- Collection of live weighted hypotheses maintained under uncertainty; Bayesian update moves mass without collapsing; premature certainty costs optionality [developing]
+- [[veil-of-ignorance]] -- Rawls's device = general epistemic condition of reasoning for unknown future position; navigation tool reframe [developing]
 - [[polynesian-wayfinding]] -- Pacific navigation held entirely in memory and oral tradition; no instruments; colonial codec mismatch erased from official record [developing]
 - [[mycorrhizal-networks]] -- fungal networks as distributed navigation, model=territory; legibility/coupling trade-off; Arctic conservation crisis [developing]
 - [[distributed-navigation]] -- navigation systems where the navigator is the network; no internal model; knowledge encoded in structure [developing]
