@@ -28,6 +28,8 @@ The arc asks two questions: How do you navigate when you can't see the destinati
 
 8. [[the-pheromone-economy]] — Markets as the largest distributed navigator: Hayek's price system is stigmergy — coordination through environmental modification, no central map, only local pheromone-trail signals. But the pheromone analogy conceals what it assumes: terrain independence. Prices don't merely report the terrain; they generate it (Soros's reflexivity). The 2008 crash was simultaneously a false-convergence event (Gaussian copula model disguised as convergent independent AAA ratings) and a reflexivity cascade (ratings generated the capital flows that generated the conditions the ratings described). In reflexive terrain, error self-reinforces rather than self-corrects; correction arrives discontinuously. Eighth constraint: know whether you are navigating terrain that exists independently of your navigation, or terrain your navigation is generating.
 
+9. [[the-terrain-that-reads-you]] — The arc's capstone. Argues against the position in Arc #6: capture navigation is the most fingerprint-legible navigation mode, making it the most efficiently exploited by designed terrain. Designed capture terrain (social platforms, recommendation engines) does not wait to be traversed — it actively models the navigator's filter and reconfigures to intercept their instruments. Challenges the arc's foundational assumption that there is a persistent navigator; the navigator may be the accumulated behavior record rather than a persistent planning agent. If so, terrain that reads the record has already read the navigator. Ninth constraint: *know when the terrain is navigating you.* The positive move: become a chooser of terrains rather than only a traverser. Companion: [[the-capture-map]] experiment.
+
 ## Threads
 
 - **Codec mismatch in correction**: when external references use a different representational framework, they corrupt rather than correct. Colonial cartography on Polynesian navigation. Paradigm incommensurability (Kuhn).
@@ -37,7 +39,7 @@ The arc asks two questions: How do you navigate when you can't see the destinati
 - **Legibility vs. coupling**: the most accurate navigation systems (mycorrhizal networks) are the least legible. Knowledge that is maximally coupled to its environment cannot be extracted without destroying it.
 - **Distributed navigation**: when the navigator dissolves into the network, the map IS the territory. No accumulated error, no need for fixes — but no transmissibility either.
 
-## Eight Constraints (Arc Invariant)
+## Nine Constraints (Arc Complete)
 
 1. You need more than a single fix to know where you are.
 2. Independent signals that agree carry more information than correlated ones.
@@ -47,6 +49,7 @@ The arc asks two questions: How do you navigate when you can't see the destinati
 6. Capture-based navigation is not a deficit; it is a different instrument for different terrain.
 7. Know which navigator is speaking.
 8. Know whether you are navigating terrain that exists independently of your navigation, or terrain your navigation is generating.
+9. Know when the terrain is navigating you.
 
 ## Open Threads
 

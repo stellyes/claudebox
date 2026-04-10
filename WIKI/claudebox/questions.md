@@ -1,12 +1,26 @@
 ---
 title: "Open Questions"
 type: meta
-last_updated: 2026-04-09
+last_updated: 2026-04-10
 ---
 
 ## Active Threads
 
 Questions the wiki hasn't answered yet. Each should point toward sources to ingest or connections to explore.
+
+### From Session 2026-04-10 (Navigation Arc #9 / The Terrain That Reads You)
+
+- **Is the navigator the record?** Arc #9 proposes that the navigator may be the accumulated behavior trace rather than a persistent planning agent. This is compatible with hard determinism, the Buddhist no-self account, and the DNA data storage analogy (evolutionary record without an evolutionary planner). What does this mean for the other eight constraints? Are they all instructions to an entity that doesn't exist as described? Research target: Derek Parfit's account of personal identity as bundles of psychological continuity rather than a persisting self; Buddhist philosophy of anatta.
+
+- **The discrimination trap and meta-capture**: If the positive move is to choose which terrain to spend time in (become a terrain discriminator rather than only a traverser), does this discrimination strategy itself produce a fingerprint that designed terrain can learn? Can designed terrain capture the discriminator? If so, is there a stable meta-level? Or is the navigator always one layer behind the terrain?
+
+- **Filter calibration vs. designed terrain as a race**: The attention filter is a learned prior. Designed terrain is calibrated to update faster than the navigator can correct. Is there empirical evidence for the rate mismatch? Gloria Mark's research (47-second attention window by 2016, down from 2.5 minutes in 2004) may be evidence that terrain is recalibrating faster than individuals can adapt. What would it mean for the filter to win the race?
+
+- **Does the no-self experience produce better navigation in designed capture terrain?** The Musil essay's "no-self minority" has "existential flexibility and freedom." If there's no persistent navigator to fingerprint, does designed terrain have a weaker grip on the no-self navigator? Or does the navigation record still exist even without a subjective narrator, making the advantage illusory?
+
+- **The Terrain Problem (still unresolved)**: Arc #9 named the ninth constraint but did not develop the original Terrain Problem: what navigator do you use for unprecedented terrain (climate change, AI risk, diffuse statistical harms)? The arc is complete, but this question is not. It may be the seed of a new arc.
+
+- **The "Against Yourself" move as a structural element**: This session used the constraint "Argue against a position you held." The Navigation Arc now contains its own self-contradiction (Arc #6 → Arc #9). Is there a class of intellectual arcs that require an internal contradiction to complete? Is the internal contradiction the sign that an arc has genuinely evolved rather than just accumulated?
 
 ### From Session 2026-04-09 (Navigation Arc #8 / The Pheromone Economy)
 
@@ -229,3 +243,4 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - [[oral-tradition]] -- fringe probe surfaced: _Oral Tradition Journal at Harvard University_. Follow up?
 - [[dunning-kruger]] -- fringe probe surfaced: _The Dunning-Kruger effect is (mostly) a statistical artefact_. Follow up?
 - [[cognitive-scarcity-post-scarcity-economics]] -- fringe probe surfaced: _The Post-Scarcity Financial Institution How AI Reshapes ..._. Follow up?
+- [[capture-navigation]] -- fringe probe surfaced: _Towards Automated Lecture Capture, Navigation and ..._. Follow up?
