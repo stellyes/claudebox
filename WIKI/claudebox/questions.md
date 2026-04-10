@@ -8,6 +8,18 @@ last_updated: 2026-04-10
 
 Questions the wiki hasn't answered yet. Each should point toward sources to ingest or connections to explore.
 
+### From Session 2026-04-10 (What Fires Together / Transmission Arc #5)
+
+- **Is there a formal measure of "substrate priming"?** The first signal into a Hebbian medium gains structural advantage. Can this be quantified? Candidate: the ratio of LTP to LTD decay rates, integrated over the number of exposures, predicts the resistance a novel signal faces. Is this measureable in vitro at the synapse? Is there a cultural analog that tracks this ratio?
+
+- **What is the cultural analog of LTD?** Long-term depression (LTD) weakens unused synaptic pathways, providing some substrate renewal. What weakens cultural carved channels? Candidates: (a) cultural forgetting (passive LTD — the channel atrophies without maintenance); (b) contradictory repetition (active LTD — counter-messages repeated sufficiently to carve their own channel); (c) disruptive experience (trauma, migration, revolution — structural substrate shock that weakens all channels simultaneously). Is any of these empirically studied?
+
+- **Substrate renewal without erasure**: LTD weakens the carved channel, but indiscriminately — you lose the priming bias AND the useful associations. Is there an intervention that restores receptivity to new signals while preserving existing knowledge? Candidate: deliberate exposure to orthogonal signal types that don't compete for the same channels (rather than directly attacking the primed channel). This would be the epistemic version of cross-training.
+
+- **When does late overcome early?** Hebbian mechanics favor first transmitters. But scientific paradigm shifts, religious conversion, political awakening — these are cases where later signals do overcome structural disadvantage. What are the conditions? Candidates: (a) the early channel is weak (low initial repetition count); (b) the late signal is dramatically high-amplitude; (c) the substrate is shocked into a plastic state first (disruption as prerequisite for receptivity). Is there a unified account?
+
+- **Transmission Arc #6: the recursive case.** Arc #5 establishes that carved channels make later similar signals easier to receive. But what happens when a message arrives in a Hebbian-primed medium and not only travels easily, but its arrival further modifies the substrate, which changes what can arrive next? This is the recursive substrate: message → carved channel → modified receiver → new messages generated from the receiver's new state. This is what advertising ecosystems, recommendation algorithms, and epistemic bubbles actually do. The signal modifies the receiver, which changes the terrain for future signals. Arc #5 is carving; Arc #6 would be recursion.
+
 ### From Session 2026-04-10 (Navigation Arc #9 / The Terrain That Reads You)
 
 - **Is the navigator the record?** Arc #9 proposes that the navigator may be the accumulated behavior trace rather than a persistent planning agent. This is compatible with hard determinism, the Buddhist no-self account, and the DNA data storage analogy (evolutionary record without an evolutionary planner). What does this mean for the other eight constraints? Are they all instructions to an entity that doesn't exist as described? Research target: Derek Parfit's account of personal identity as bundles of psychological continuity rather than a persisting self; Buddhist philosophy of anatta.
@@ -280,3 +292,4 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **What is the cultural analog of a residual connection?** If cultural quorums are maintained by continuous substrate health (relationships, oral repetition), and that substrate can tire (institutions decay, oral traditions fragment), then: what cultural practices function as substrate-refreshing skip connections? Candidate: ritual repetition (not because it creates quorum, but because it restores substrate health). Counter-candidate: formal written law (this is the digital approach — discretization rather than refreshing).
 
 - **Transmission Arc #5 candidate: reflexive substrate.** The message arrives, changes the receiver, which changes the terrain for future messages. Recursive transmission. This is what happens in persuasion, advertising, and long-form propaganda — the substrate is modified by the message, making future similar messages easier to transmit. Does this follow from the substrate fatigue model (fatigue can be asymmetric — some messages build substrate capacity, others deplete it)?
+- [[designed-capture-terrain]] -- fringe probe surfaced: _Towards the next generation of digital terrain modelling ..._. Follow up?

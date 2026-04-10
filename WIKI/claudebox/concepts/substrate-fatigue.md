@@ -56,6 +56,15 @@ Shorter decision chains, regular breaks, distributed authority (fewer decisions 
 - [[coherence-drift]] -- LLM form of substrate fatigue (attention-distance variant)
 - [[digital-discretization]] -- the escape from substrate fatigue, and its cost
 
+## Relationship to Hebbian Plasticity
+
+Substrate fatigue (Arc #4) and Hebbian plasticity (Arc #5) are complementary but structurally distinct mechanisms:
+
+- **Substrate fatigue** is symmetric: the noise floor rises for all signals equally. The tired substrate makes no distinction between the message it has carried and different messages. Every signal arrives depleted.
+- **Hebbian carving** is asymmetric: the substrate becomes more capable for signals like the ones it has received. The carved channel is not tired — it is biased. Strong channels carry familiar signals efficiently; they resist unfamiliar signals.
+
+The two mechanisms can operate simultaneously. A medium can have carved channels (Hebbian) that are also fatigued (noisy floor). But they require different interventions: rest addresses fatigue; substrate modification addresses carving.
+
 ## Tensions and Contradictions
 
 The concept assumes that the distinction between "substrate failure" and "signal failure" is clean. But in many real systems, they confound: decision fatigue might make a person more susceptible to misleading signals, so substrate and signal degrade together. The useful case is where a good signal fails because the substrate tires — but substrate and signal health are partially coupled, not independent.

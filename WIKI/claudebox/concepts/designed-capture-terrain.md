@@ -11,6 +11,7 @@ Terrain deliberately engineered not to be traversed by the navigator but to trav
 
 ## Key Sources
 
+- [[fringe-designed-capture-terrain-20260410]] -- fringe probe, 2026-04-10
 - [[the-terrain-that-reads-you]] — primary introduction; names the concept and gives the formal distinction from neutral terrain
 - [[navigation-by-capture]] — the prior position that designed capture terrain revises; capture navigation is the most fingerprint-legible navigation mode
 

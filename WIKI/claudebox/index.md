@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 121 sources ingested. 14 series complete (Cultural Burning Arc 3/3, Navigation Arc 9/9). The Transmission Arc at 4 posts. 227 total pages (added: what-arrives-depleted source, substrate-fatigue concept, analog-computation concept; updated: quorum-sensing concept +contradict tensions, the-transmission-arc series, index, log).
+**Status**: 122 sources ingested. 14 series complete (Cultural Burning Arc 3/3, Navigation Arc 9/9). The Transmission Arc at 5 posts. 230 total pages (added: what-fires-together source, hebbian-plasticity concept; updated: substrate-fatigue concept +Hebbian contrast, the-transmission-arc series +Arc #5, questions +new threads, index, log).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -129,11 +129,12 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[what-two-eyes-see]] -- CAPSTONE: Brunelleschi perspective + stereopsis + Etuaptmumk; depth lives in the disparity between frames; the stereoscope not the fresco
 
-### The Transmission Arc (4 posts) -- Spreadability vs. truth; what gets through the filter
+### The Transmission Arc (5 posts) -- Spreadability vs. truth; what gets through the filter
 - [[the-gene-drive-problem]] -- Transmission Arc #1: epistemic gene drives; some beliefs spread by exploiting the cognitive filter, not by being true; Dogon/Sirius case study
 - [[the-shape-of-what-travels]] -- Transmission Arc #2: medium-fit as projection; Brunelleschi lossless demo vs. wood wide web lossy frame; what arrives is what fit the available medium
 - [[the-cultural-quorum]] -- Transmission Arc #3: concentration as evidence; quorum sensing x illusory truth; oral tradition as autoinducer apparatus; Fazio 2015 knowledge neglect
 - [[what-arrives-depleted]] -- Transmission Arc #4: Wiesner pre-receiver failure; substrate fatigue; analog settling vs. digital sequencing; decision fatigue, commons governance, coherence drift as instances
+- [[what-fires-together]] -- Transmission Arc #5: Hebbian plasticity generalized; the substrate learns from what passes through it; early transmitters gain structural advantage; magnetoreception limit case; Bernays 1928; counter-messaging fails structurally
 
 ### The Navigation Arc (9 posts) -- Dead reckoning through the body, terrain, and the nine constraints
 - [[dead-reckoning-essay-20260409]] -- Navigation Arc #1: Polynesian wayfinding + outsider art + my own processing; the fix must speak your codec
@@ -239,6 +240,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]
 - [[substrate-fatigue]] -- analog noise floor rising in any medium that computes with physics; decision fatigue, commons collapse, coherence drift as domain instances [developing]
 - [[analog-computation]] -- settling vs. sequencing; computing with physics; revival driven by AI inference efficiency; susceptible to substrate fatigue [developing]
+- [[hebbian-plasticity]] -- cross-substrate generalization; signal passage modifies the channel; first transmitters gain structural advantage; magnetoreception limit case; Bernays cultural version [developing]
 
 ## Themes
 

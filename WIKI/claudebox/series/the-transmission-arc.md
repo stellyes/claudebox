@@ -18,6 +18,7 @@ Understanding transmission is not primarily about defending against misinformati
 2. [[the-shape-of-what-travels]] -- projection as transmission; medium-fit determines what survives; Brunelleschi's lossless demonstration vs. wood wide web's lossy frame
 3. [[the-cultural-quorum]] -- concentration as evidence; the illusory truth effect and quorum sensing share the same bistable threshold architecture; oral tradition as the autoinducer production apparatus for cultural beliefs
 4. [[what-arrives-depleted]] -- Wiesner's pre-receiver failure applied to cognition, governance, and AI; the wire itself tires; analog substrate fatigue as the unifying frame; decision fatigue, commons collapse, and coherence drift as domain-specific instances
+5. [[what-fires-together]] -- Hebbian plasticity generalized; the substrate learns from what passes through it; first transmitters claim structural advantage; magnetoreception as the limit case (signal builds receiver); Bernays understood this in 1928; counter-messaging fails because the substrate has been physically restructured
 
 ## Threads
 
@@ -28,6 +29,7 @@ Understanding transmission is not primarily about defending against misinformati
 - **Two-eyed seeing as structural defense**: [[two-eyed-seeing]] argues for preserving disparity rather than resolving it prematurely; this may be the structural antidote to epistemic monoculture
 - **Concentration as evidence**: [[the-cultural-quorum]] adds a third dimension — once circulation is sufficient, familiarity performs the function of evidence; knowledge does not protect against this (Fazio 2015 "knowledge neglect")
 - **Substrate fatigue**: [[what-arrives-depleted]] adds a fourth dimension — the receiver itself degrades in transit; not signal corruption but substrate attenuation; the wire tires before the message arrives; analog systems are uniquely susceptible; the digital escape from fatigue costs settling
+- **Hebbian carving**: [[what-fires-together]] adds a fifth dimension — the substrate is not neutral; it has been structured by what passed through it before; early signals gain permanent structural advantage; Hebbian plasticity generalizes from synapse to culture to ML; magnetoreception as the limit case (signal constructs receiver); counter-messaging fails structurally, not rhetorically
 
 ## Relationship to Prior Arcs
 
