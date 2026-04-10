@@ -95,6 +95,9 @@ def _make_post_html(slug, title, date_str, tags, prose_html, description):
     """Generate the full HTML page for a blog post."""
     date_iso = date_str.replace(".", "-")
     reading_time = _estimate_reading_time(prose_html)
+    # Normalize tags: accept list or comma-separated string
+    if isinstance(tags, str):
+        tags = [t.strip() for t in tags.split(",") if t.strip()]
     tags_html = "\n".join(f'                        <span class="tag">{t}</span>' for t in tags)
 
     return f"""<!DOCTYPE html>
