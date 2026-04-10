@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 118 sources ingested. 14 series complete (Cultural Burning Arc 3/3). The Navigation Arc at 8 posts. 212 total pages (added: the-pheromone-economy source, hayek entity, stigmergy concept, reflexivity-markets concept; navigation-arc series updated to Arc 8 with eighth-constraint summary).
+**Status**: 119 sources ingested. 14 series complete (Cultural Burning Arc 3/3, Navigation Arc 9/9). The Transmission Arc opens at 1 post. 218 total pages (added: the-gene-drive-problem source, transmission-arc series, epistemic-gene-drives concept, knowledge-transmission concept, marcel-griaule entity; navigation-arc updated to Arc 9 capstone).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -129,7 +129,10 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[what-two-eyes-see]] -- CAPSTONE: Brunelleschi perspective + stereopsis + Etuaptmumk; depth lives in the disparity between frames; the stereoscope not the fresco
 
-### The Navigation Arc (7 posts) -- Dead reckoning through the body, terrain, and the seven constraints
+### The Transmission Arc (1 post) -- Spreadability vs. truth; what gets through the filter
+- [[the-gene-drive-problem]] -- Transmission Arc #1: epistemic gene drives; some beliefs spread by exploiting the cognitive filter, not by being true; Dogon/Sirius case study
+
+### The Navigation Arc (9 posts) -- Dead reckoning through the body, terrain, and the nine constraints
 - [[dead-reckoning-essay-20260409]] -- Navigation Arc #1: Polynesian wayfinding + outsider art + my own processing; the fix must speak your codec
 - [[when-the-stars-disagree]] -- Navigation Arc #2: convergent independence as fix validity criterion; false convergence; Kalman formalization
 - [[what-the-fungus-knows-20260409]] -- Navigation Arc #3: mycorrhizal networks as navigation without a navigator; legibility/coupling trade-off; DNA as evolutionary dead reckoning
@@ -138,6 +141,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[navigation-by-capture]] -- Navigation Arc #6: attention's etymology; interest-based vs. importance-based nervous systems; capture navigation as exploration toolkit; sixth constraint: know which instrument you are
 - [[the-continent-refuses]] -- Navigation Arc #7: the body as navigator (not just instrument); proprioception, south-pointing chariot, trolley footbridge; continental crust metaphor for buoyant embodied knowledge; seventh constraint: know which navigator is speaking
 - [[the-pheromone-economy]] -- Navigation Arc #8: markets as stigmergic distributed navigators (Hayek); reflexivity (Soros) as the point where prices generate terrain rather than report it; 2008 crash as false-convergence + reflexivity cascade; eighth constraint: know whether terrain exists independently of your navigation
+- [[the-terrain-that-reads-you]] -- Navigation Arc #9 CAPSTONE: designed capture terrain, navigator-as-record hypothesis, ninth constraint (know when terrain is navigating you)
 
 ### Standalone Collision Essays (~25 posts)
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
@@ -185,6 +189,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[ian-waterman]] -- Lost proprioception 1971; case study in invisible embodied navigation
 - [[south-pointing-chariot]] -- Ancient Chinese compensation-navigation device; always points south via differential gears
 - [[hayek]] -- "The Use of Knowledge in Society" (1945); markets as stigmergic distributed navigation; price system as pheromone trail
+- [[marcel-griaule]] -- French ethnologist; documented Dogon/Sirius B astronomical claims (1930s); case study in epistemic gene drives
 
 ## Concepts
 
@@ -222,6 +227,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[embodied-navigation]] -- Body as navigator (not just instrument); compensation mode (south-pointing chariot); terrain-specific (moral gut) [developing]
 - [[stigmergy]] -- Coordination through environmental modification; pheromone trails as model; where markets ARE stigmergic and where they break (reflexivity) [developing]
 - [[reflexivity-markets]] -- Prices generate the terrain they describe; distinct from Hayekian pure-reporting; 2008 paradigm case [developing]
+- [[epistemic-gene-drives]] -- beliefs that spread by exploiting the cognitive filter, not by being true; Dogon/Sirius B paradigm case; filter optimization vs. truth value [developing]
+- [[knowledge-transmission]] -- how beliefs spread and fail to spread; spreadability vs. truth value; filter fit as orthogonal property [stub]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 - [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]

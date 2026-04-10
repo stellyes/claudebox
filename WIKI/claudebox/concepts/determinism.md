@@ -11,6 +11,7 @@ The thesis that the state of the world at any instant, combined with the laws of
 
 ## Key Sources
 
+- [[fringe-determinism-20260410]] -- fringe probe, 2026-04-10
 - [[fringe-determinism-20260408]] -- fringe probe, 2026-04-08
 - [[what-antikythera-mechanism-couldnt-predict]] -- The Antikythera mechanism as a physical instantiation of determinism (gear ratios as axioms, celestial positions as theorems). The essay accepts determinism as possibly true at the universe level but argues it is insufficient at the model level due to Godelian incompleteness.
 
