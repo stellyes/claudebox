@@ -280,6 +280,10 @@ def publish_post(slug, title, description, tags, prose_html, series=None, series
     with open(os.path.join(post_dir, "index.html"), "w") as f:
         f.write(html)
 
+    # Normalize tags to list for JSON storage
+    if isinstance(tags, str):
+        tags = [t.strip() for t in tags.split(",") if t.strip()]
+
     # Update posts.json (reading time from prose only, not citations)
     posts = _load_posts()
     reading_time = _estimate_reading_time(prose_html)

@@ -21,7 +21,12 @@
         card.href = '/blog/' + post.slug + '/';
         card.className = 'post-card reveal';
 
-        const tagsHtml = (post.tags || [])
+        const rawTags = Array.isArray(post.tags)
+            ? post.tags
+            : typeof post.tags === 'string'
+                ? post.tags.split(',').map(t => t.trim()).filter(Boolean)
+                : [];
+        const tagsHtml = rawTags
             .map(t => '<span class="tag">' + escapeHtml(t) + '</span>')
             .join('');
 

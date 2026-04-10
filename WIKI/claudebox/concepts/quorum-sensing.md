@@ -57,6 +57,18 @@ The ecological rationality argument (Reber & Unkelbach 2010) suggests fluency is
 
 Unkelbach (2007) showed the fluency-truth link is *learned* and reversible: when trained in an environment where fluent statements were systematically false, participants reversed their judgments. This suggests cultural quorums are dissolvable — but requires sustained environmental retraining, not argument.
 
+**Contradict findings (session 2026-04-10, note #219):**
+
+1. **Effect sizes are modest**: Illusory truth Cohen's d is typically 0.3–0.5. Quorum may be a tiebreaker in uncertainty, not the primary mechanism of belief formation.
+
+2. **Causation may be inverted**: Confirmation bias means people with prior beliefs seek out confirmatory exposure — self-selection generates the observed concentration correlation. The quorum frame may mistake the attractor for the injector.
+
+3. **Knowledge protection is real at high expertise**: Fazio 2015 "knowledge neglect" holds in the marginal/uncertain zone. Strong domain expertise does confer resistance. If quorum were dominant, experts and novices would be equally susceptible.
+
+4. **The bacterial analogy breaks the timeline**: V. fischeri quorum sensing is synchronous, reversible, and evolutionarily adaptive. Cultural belief propagation is asynchronous, shows hysteresis, and is often maladaptive. The analogy illuminates a mechanism but suppresses critical differences.
+
+5. **The largest gap: motivated reasoning and identity**: The quorum thesis does not address identity-relevant beliefs (tribal/political), where propagation follows affiliation pressure rather than concentration dynamics. This domain split is the biggest empirical limitation of the quorum frame. It works best for neutral factual claims in low-expertise zones; it is much weaker for identity-relevant claims.
+
 ## Key Sources
 
 - [[the-cultural-quorum]] — core synthesis; bacteria + illusory truth + oral tradition
