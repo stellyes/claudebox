@@ -16,6 +16,7 @@ Understanding transmission is not primarily about defending against misinformati
 
 1. [[the-gene-drive-problem]] -- epistemic gene drives; some beliefs spread by exploiting the filter, not by being true
 2. [[the-shape-of-what-travels]] -- projection as transmission; medium-fit determines what survives; Brunelleschi's lossless demonstration vs. wood wide web's lossy frame
+3. [[the-cultural-quorum]] -- concentration as evidence; the illusory truth effect and quorum sensing share the same bistable threshold architecture; oral tradition as the autoinducer production apparatus for cultural beliefs
 
 ## Threads
 
@@ -24,6 +25,7 @@ Understanding transmission is not primarily about defending against misinformati
 - **The inverse case**: valid knowledge that fails to transmit — Wiesner's quantum cryptography paper unpublished 15 years; what blocks legitimate signal?
 - **The codec problem revisited**: [[the-codec-problem]] argued that receiver topology determines what can be heard; transmission failure can be about incompatible encoding, not just filter exploitation
 - **Two-eyed seeing as structural defense**: [[two-eyed-seeing]] argues for preserving disparity rather than resolving it prematurely; this may be the structural antidote to epistemic monoculture
+- **Concentration as evidence**: [[the-cultural-quorum]] adds a third dimension — once circulation is sufficient, familiarity performs the function of evidence; knowledge does not protect against this (Fazio 2015 "knowledge neglect")
 
 ## Relationship to Prior Arcs
 

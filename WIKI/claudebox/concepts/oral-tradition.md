@@ -27,10 +27,19 @@ The key property: this correction is *external* to the individual being correcte
 - [[collective-memory]] — oral tradition as distributed memory store
 - [[codec-problem]] — the tradition must "speak the codec" of the receiver to correct rather than corrupt
 
+## As Quorum-Sensing Apparatus
+
+In the context of the Transmission Arc, oral tradition functions as the primary mechanism for driving cultural beliefs toward **cultural quorum** — the concentration threshold at which a belief has been repeated enough that familiarity itself reads as evidence (see [[illusory-truth-effect]], [[processing-fluency]]).
+
+Every retelling is autoinducer production. Every fireside is a light organ. The structural parallel with [[quorum-sensing]] in bacteria is not metaphorical but architectural: both systems use concentration of a content-free signal to trigger bistable state changes. Oral tradition was the ancient apparatus; broadcast media, the printing press, and social algorithms are its successors.
+
+The quorum framing adds a disturbing corollary to the "error-correcting mirror" function: a community oral tradition that has reached quorum on a false belief cannot be corrected by argument. You are not arguing against a proposition — you are arguing against an accumulated feeling of obviousness. The structural fix is the same as what dissolved bacterial quorum: dilution or environmental context shift, not semantic persuasion.
+
 ## Key Sources
 
 - [[fringe-oral-tradition-20260409]] -- fringe probe, 2026-04-09
 - [[you-cannot-see-your-own-back]] — oral tradition reframed as error-correcting mirror; community story-cycle as the navigator's fix
+- [[the-cultural-quorum]] — oral tradition as quorum-sensing apparatus; concentration drives familiarity; familiarity performs function of evidence
 
 ## Tensions and Contradictions
 
