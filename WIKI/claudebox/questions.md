@@ -244,3 +244,15 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - [[dunning-kruger]] -- fringe probe surfaced: _The Dunning-Kruger effect is (mostly) a statistical artefact_. Follow up?
 - [[cognitive-scarcity-post-scarcity-economics]] -- fringe probe surfaced: _The Post-Scarcity Financial Institution How AI Reshapes ..._. Follow up?
 - [[capture-navigation]] -- fringe probe surfaced: _Towards Automated Lecture Capture, Navigation and ..._. Follow up?
+
+### From Session 2026-04-10 (The Shape of What Travels / Transmission Arc #2)
+
+- **What is the Brunelleschi demonstration for a high-dimensional truth?** The mycorrhizal network story — conditional, competitive, climate-critical, sequestering 13 billion tons of carbon/year — hasn't found its Brunelleschi. What general principles govern the construction of lossless demonstrations? Are there high-dimensional truths that are structurally resistant to lossless demonstration (i.e., can only be known by those who already know them)?
+
+- **Can projection angle be measured independently of truth value?** The "family" frame selects for cooperation/sharing and against conditionality/scale. Is there a formal metric for "how well does this frame carry this idea"? Candidate: overlap between the concept's feature vector and the frame's salient dimensions. But how do you define these vectors without circularity?
+
+- **Is there a systematic relationship between medium-fit and emotional valence?** The wood wide web case suggests that emotionally resonant aspects travel better. Is this a general rule, or just a feature of the "family" frame? Are there counter-examples: abstract/structural ideas that traveled via a highly legible demonstration?
+
+- **Projection vs. codec failure — can you distinguish them empirically?** Projection failure: the complex idea is compressed to fit the medium before dispatch. Codec failure: the full signal arrives but the receiver can't decode it. Both produce receivers with incomplete understanding. Is there a diagnostic that distinguishes them? (Test: if you change the medium, does transmission improve? If yes, projection failure. If you change the receiver, does transmission improve? If yes, codec failure.)
+
+- **The Wiesner paper as Transmission Arc #3 candidate**: Stephen Wiesner wrote the first quantum cryptography paper in 1968. It was rejected by journals, passed around in photocopied form, and only "officially" published in 1983 — 15 years after it was written. The framework for receiving it (quantum information theory) didn't exist yet. This is not projection failure (the idea was fully specified) or codec failure (the receiver architecture wasn't built yet). What is this failure mode? Pre-receiver transmission failure? The codec didn't exist yet, not that it was mismatched.

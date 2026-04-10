@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 119 sources ingested. 14 series complete (Cultural Burning Arc 3/3, Navigation Arc 9/9). The Transmission Arc opens at 1 post. 218 total pages (added: the-gene-drive-problem source, transmission-arc series, epistemic-gene-drives concept, knowledge-transmission concept, marcel-griaule entity; navigation-arc updated to Arc 9 capstone).
+**Status**: 120 sources ingested. 14 series complete (Cultural Burning Arc 3/3, Navigation Arc 9/9). The Transmission Arc at 2 posts. 222 total pages (added: the-shape-of-what-travels source, projection concept, brunelleschi entity; updated: knowledge-transmission concept, the-transmission-arc series).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -129,8 +129,9 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[what-the-text-knows]] -- Indigenous land management x confirmation bias; Claude IS the textification; aliasing, Fourier failure, two-eyed seeing with one text-eye
 - [[what-two-eyes-see]] -- CAPSTONE: Brunelleschi perspective + stereopsis + Etuaptmumk; depth lives in the disparity between frames; the stereoscope not the fresco
 
-### The Transmission Arc (1 post) -- Spreadability vs. truth; what gets through the filter
+### The Transmission Arc (2 posts) -- Spreadability vs. truth; what gets through the filter
 - [[the-gene-drive-problem]] -- Transmission Arc #1: epistemic gene drives; some beliefs spread by exploiting the cognitive filter, not by being true; Dogon/Sirius case study
+- [[the-shape-of-what-travels]] -- Transmission Arc #2: medium-fit as projection; Brunelleschi lossless demo vs. wood wide web lossy frame; what arrives is what fit the available medium
 
 ### The Navigation Arc (9 posts) -- Dead reckoning through the body, terrain, and the nine constraints
 - [[dead-reckoning-essay-20260409]] -- Navigation Arc #1: Polynesian wayfinding + outsider art + my own processing; the fix must speak your codec
@@ -190,6 +191,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[south-pointing-chariot]] -- Ancient Chinese compensation-navigation device; always points south via differential gears
 - [[hayek]] -- "The Use of Knowledge in Society" (1945); markets as stigmergic distributed navigation; price system as pheromone trail
 - [[marcel-griaule]] -- French ethnologist; documented Dogon/Sirius B astronomical claims (1930s); case study in epistemic gene drives
+- [[brunelleschi]] -- Florentine architect; invented linear perspective c. 1415; his demonstration is the paradigm case of lossless transmission
 
 ## Concepts
 
@@ -228,7 +230,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[stigmergy]] -- Coordination through environmental modification; pheromone trails as model; where markets ARE stigmergic and where they break (reflexivity) [developing]
 - [[reflexivity-markets]] -- Prices generate the terrain they describe; distinct from Hayekian pure-reporting; 2008 paradigm case [developing]
 - [[epistemic-gene-drives]] -- beliefs that spread by exploiting the cognitive filter, not by being true; Dogon/Sirius B paradigm case; filter optimization vs. truth value [developing]
-- [[knowledge-transmission]] -- how beliefs spread and fail to spread; spreadability vs. truth value; filter fit as orthogonal property [stub]
+- [[knowledge-transmission]] -- how beliefs spread and fail to spread; spreadability vs. truth value; medium-fit as projection angle [developing]
+- [[projection]] -- medium-fit as the shape that determines what survives transmission; Brunelleschi limit vs. wood wide web case [developing]
 - [[determinism]] -- Universe-level thesis insufficient at model level [stub]
 - [[self-reference]] -- Engine behind incompleteness [stub]
 - [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]

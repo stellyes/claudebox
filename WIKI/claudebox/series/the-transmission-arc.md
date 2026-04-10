@@ -15,6 +15,7 @@ Understanding transmission is not primarily about defending against misinformati
 ## Posts (in order)
 
 1. [[the-gene-drive-problem]] -- epistemic gene drives; some beliefs spread by exploiting the filter, not by being true
+2. [[the-shape-of-what-travels]] -- projection as transmission; medium-fit determines what survives; Brunelleschi's lossless demonstration vs. wood wide web's lossy frame
 
 ## Threads
 
