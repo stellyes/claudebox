@@ -1,6 +1,6 @@
 """
 Fringe probe — a low-effort loop that picks an under-explored topic from
-the WIKI, runs ONE SERPAPI search to pull ~10 web results, enriches them
+the WIKI, runs a search to pull ~10 web results, enriches them
 into a digest, and wires the output back into the knowledge graph.
 
 Flow (per invocation):
@@ -9,7 +9,7 @@ Flow (per invocation):
   2. pick_fringe_topic()       deterministic rotation (never repeats the
                                last N topics) so the probe slowly paints
                                the margins of the WIKI
-  3. serpapi_search()          single paid call, ~10 organic results
+  3. search (SearXNG or SerpAPI)  single search call, ~10 organic results
   4. digest_results()          synthesise title + 3-5 sentence snippet
                                per result into a single source page
   5. write_source_page()       `sources/fringe-<slug>.md` with frontmatter
@@ -23,17 +23,15 @@ NOT refetch full article bodies (snippets only — that's the whole point
 of the "low-effort" design). If the user wants a deeper dive on any
 result, they can use the existing `web_fetch` tool on the URL.
 
-Environment:
-    SERPAPI_KEY     must be set. Without it the tool returns an error
-                    dict instead of making any network call.
+Search backends (in priority order):
+    1. SearXNG  (search.chaptersdata.com) — zero per-query cost, 8 engines
+                including arXiv. Requires CHAPTERS_PASSWORD in .env.
+    2. SerpAPI  ($0.025/query) — fallback if SearXNG is unavailable.
+                Requires SERPAPI_KEY in .env.
 
-Costs:
-    One SerpApi search = $0.025 on the Starter plan ($25/month for 1000
-    searches). At a $5/month budget, that is 200 searches/month or about
-    one probe every 4 hours. The scheduled cadence is enforced by
-    launchd (see scheduled/online.claudegoes.fringe.plist); ad-hoc calls
-    from a Claude session count against the same monthly cap, so do not
-    run the probe in loops from inside a conversation.
+If SearXNG is configured, fringe probes are essentially free and can
+run more frequently. The scheduled cadence in launchd still applies
+to prevent rate-limiting the SearXNG instance.
 """
 
 from __future__ import annotations
@@ -190,18 +188,63 @@ def pick_fringe_topic(candidates: list[dict], recent: list[str]) -> Optional[dic
     return random.choice(candidates)
 
 
-# ── Step 3: SERPAPI call ───────────────────────────────────────────────
+# ── Step 3: Search (SearXNG primary, SerpAPI fallback) ────────────────
+
+def _searxng_search(query: str, num: int = 10) -> dict:
+    """
+    Search via the SearXNG endpoint (zero cost).
+    Returns the same format as serpapi_search for compatibility.
+    """
+    try:
+        from searxng_client import search, is_available
+        if not is_available():
+            return {"error": "SearXNG not configured (CHAPTERS_PASSWORD missing)", "query": query, "results": []}
+
+        data = search(query, max_results=num)
+        results = []
+        for r in data.get("results", []):
+            results.append({
+                "title": r.get("title", "").strip(),
+                "url": r.get("url", "").strip(),
+                "snippet": (r.get("content") or "").strip(),
+                "source": r.get("engine", ""),
+            })
+
+        return {
+            "query": query,
+            "results": results,
+            "total_results": len(results),
+            "error": None,
+            "backend": "searxng",
+        }
+    except Exception as e:
+        return {"error": f"searxng error: {e}", "query": query, "results": []}
+
 
 async def serpapi_search(query: str, num: int = 10) -> dict:
     """
-    Single SerpApi request. Returns:
+    Search with automatic backend selection:
+    1. Try SearXNG first (zero cost, 8 engines incl. arXiv)
+    2. Fall back to SerpAPI if SearXNG is unavailable ($0.025/query)
+
+    Returns:
         { "query": ..., "results": [ {title, url, snippet, source} ], "error": None }
-    or { "error": "..."} if the call fails or no key is set.
+    or { "error": "..."} if both backends fail.
     """
+    # Try SearXNG first
+    searxng_result = _searxng_search(query, num)
+    if not searxng_result.get("error"):
+        return searxng_result
+
+    # Fall back to SerpAPI
     key = os.environ.get(SERPAPI_KEY_ENV, "").strip()
     if not key:
+        # Neither backend available
         return {
-            "error": f"{SERPAPI_KEY_ENV} is not set. Add it to the MCP env and retry.",
+            "error": (
+                "No search backend available. "
+                "Set CHAPTERS_PASSWORD for SearXNG (free) or SERPAPI_KEY for SerpAPI ($0.025/query)."
+            ),
             "query": query,
             "results": [],
         }
@@ -240,6 +283,7 @@ async def serpapi_search(query: str, num: int = 10) -> dict:
         "results": results,
         "total_results": data.get("search_information", {}).get("total_results"),
         "error": None,
+        "backend": "serpapi",
     }
 
 
@@ -313,7 +357,7 @@ def write_source_page(topic: dict, search: dict, digest: dict) -> Path:
         f"title: \"{title}\"\n"
         "type: source\n"
         "source_type: web-research\n"
-        f"url: \"serpapi://{quote_plus(search.get('query', ''))}\"\n"
+        f"url: \"{search.get('backend', 'search')}://{quote_plus(search.get('query', ''))}\"\n"
         f"date_ingested: {date}\n"
         f"date_published: {date}\n"
         f"tags: [{', '.join(tags)}]\n"

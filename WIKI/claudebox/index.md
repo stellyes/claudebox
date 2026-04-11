@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 123 sources ingested. 14 series complete (Cultural Burning Arc 3/3, Navigation Arc 9/9). The Transmission Arc at 6 posts. 233 total pages (added: what-builds-the-receiver source, preparatory-transmission concept, predictive-adaptive-response concept; updated: the-transmission-arc series +Arc #6, questions +new threads, index, log).
+**Status**: 125 sources ingested. 242 total pages. The Transmission Arc at 7 posts. Ingest: the-self-sealing-signal (Arc #7); concepts added: closed-loop-belief; entities added: janja-lalich, sander-van-der-linden; updated: preparatory-transmission, hebbian-plasticity, series +Arc #7, questions +5 threads.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 
@@ -135,6 +135,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[the-cultural-quorum]] -- Transmission Arc #3: concentration as evidence; quorum sensing x illusory truth; oral tradition as autoinducer apparatus; Fazio 2015 knowledge neglect
 - [[what-arrives-depleted]] -- Transmission Arc #4: Wiesner pre-receiver failure; substrate fatigue; analog settling vs. digital sequencing; decision fatigue, commons governance, coherence drift as instances
 - [[what-fires-together]] -- Transmission Arc #5: Hebbian plasticity generalized; the substrate learns from what passes through it; early transmitters gain structural advantage; magnetoreception limit case; Bernays 1928; counter-messaging fails structurally
+- [[the-self-sealing-signal]] -- Transmission Arc #7: the closed loop as transmission's endpoint; receiver generates its own confirming signals; predictive hallucination, mode collapse, recommendation feedback, cult thought-stopping; inoculation paradox; transmitter made redundant
 
 ### The Navigation Arc (9 posts) -- Dead reckoning through the body, terrain, and the nine constraints
 - [[dead-reckoning-essay-20260409]] -- Navigation Arc #1: Polynesian wayfinding + outsider art + my own processing; the fix must speak your codec
@@ -195,6 +196,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[hayek]] -- "The Use of Knowledge in Society" (1945); markets as stigmergic distributed navigation; price system as pheromone trail
 - [[marcel-griaule]] -- French ethnologist; documented Dogon/Sirius B astronomical claims (1930s); case study in epistemic gene drives
 - [[brunelleschi]] -- Florentine architect; invented linear perspective c. 1415; his demonstration is the paradigm case of lossless transmission
+- [[janja-lalich]] -- Sociologist; "Bounded Choice" (2004); self-sealing systems; thought-stopping as signal replacement
+- [[sander-van-der-linden]] -- Psychologist; inoculation theory; prebunking; "Foolproof" (2023); Van der Linden paradox: prebunking is preparatory transmission
 
 ## Concepts
 
@@ -240,7 +243,8 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[cognitive-scarcity-post-scarcity-economics]] -- Fringe-probe stub; scarcity mindset × post-scarcity framing [stub]
 - [[substrate-fatigue]] -- analog noise floor rising in any medium that computes with physics; decision fatigue, commons collapse, coherence drift as domain instances [developing]
 - [[analog-computation]] -- settling vs. sequencing; computing with physics; revival driven by AI inference efficiency; susceptible to substrate fatigue [developing]
-- [[hebbian-plasticity]] -- cross-substrate generalization; signal passage modifies the channel; first transmitters gain structural advantage; magnetoreception limit case; Bernays cultural version [developing]
+- [[hebbian-plasticity]] -- cross-substrate generalization; signal passage modifies the channel; first transmitters gain structural advantage; magnetoreception limit case; Bernays cultural version; closed loop as endpoint [developing]
+- [[closed-loop-belief]] -- receiver generates its own confirming signals; transmitter made redundant; endpoint of the Transmission Arc progression; instances: predictive hallucination, mode collapse, recommendation feedback, cult thought-stopping [developing]
 
 ## Themes
 

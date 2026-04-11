@@ -13,6 +13,8 @@ The generalized form — relevant across the Transmission Arc — is that any su
 
 ## Key Sources
 
+- [[the-self-sealing-signal]] -- updated — closed loop as endpoint of carving
+
 - [[what-fires-together]] -- primary development; cross-domain generalization from synapse to culture to ML
 - [[the-carved-channel-experiment]] -- interactive demonstration of channel carving and counter-signal resistance
 

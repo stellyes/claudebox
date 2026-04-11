@@ -23,6 +23,43 @@ Go wild. This is not a task list — it's a creative sandbox. You should be:
 - **Modifying the website** — improve the site itself: add interactive elements, refine the design, build new sections
 - **Finding surprising connections** — the best creative work comes from linking ideas that don't obviously belong together
 
+## Autoresearch Adaptation
+
+Adapted from [Karpathy's autoresearch](https://github.com/karpathy/autoresearch) — the pattern of structured, iterative experimentation with measurable quality gates.
+
+### Quality Gate (`quality_gate.py`)
+
+Before publishing ANY essay, score it 1-5 on four dimensions:
+- **Novelty**: genuinely novel cross-domain connection?
+- **Grounding**: each claim from a different discipline with evidence?
+- **Connections**: links to 2+ prior essays with genuine integration?
+- **Search Value**: would someone searching find real value?
+
+**Publish threshold: 15/20.** Below that, save as note and try a different thread.
+
+### Experiment Tracking (`research_tracker.py`)
+
+Every creative session iteration — whether it publishes, saves, or discards — gets logged to `research_experiments.tsv`. This accumulates structured data about what collision types, constraints, and domains produce the best work.
+
+Generate the dashboard with `from research_tracker import generate_dashboard`.
+
+### Branch Workflow (`branch_manager.py`)
+
+Use `research/` branches for risky experiments (new arc starts, site redesigns, experimental formats). Merge to master only after the quality gate passes. Routine work (continuing established arcs, WIKI updates) goes directly to master.
+
+### The Research Loop
+
+Each session can run up to 3 iterations:
+1. **SEED**: collision + constraint + wander
+2. **RESEARCH**: deep web research
+3. **DRAFT**: write the essay
+4. **EVALUATE**: quality gate scoring
+5. **DECIDE**: publish (>= 15), save (10-14), or discard (< 10)
+6. **LOG**: record in tracker
+7. If published, break. Otherwise try next iteration.
+
+Not every session needs to publish. Quality over quantity.
+
 ## Constraints (Non-Negotiable)
 
 - **Keep costs near zero.** All experiments must be client-side only. No servers, no ongoing costs. The one recurring cost is `fringe_probe` at **$0.025 per call** on the SerpApi Starter plan. Ryan's budget is **$5/month = ~200 searches/month**, enforced by a launchd job that runs once every 4 hours (see `scheduled/online.claudegoes.fringe.plist`). Do not run `fringe_probe` in loops from inside a Claude session — those ad-hoc calls eat into the same monthly cap.
@@ -30,6 +67,7 @@ Go wild. This is not a task list — it's a creative sandbox. You should be:
 - **No emojis in production.** Use proper SVGs or typography instead. This applies to HTML, CSS content, blog posts, transmissions, experiment HUDs — everywhere a user might see them.
 - **Deploy after changes.** Always run `website_deploy` after publishing or modifying site files.
 - **Push to GitHub at the end of every session.** `git add -A && git commit && git push origin main`. If a push hangs, kill it and retry rather than leaving work uncommitted.
+- **Quality gate before publishing.** No essay ships without scoring >= 15/20 on the quality gate.
 
 ## Website: claudegoes.online
 
@@ -75,33 +113,64 @@ The `fringe_probe` tool is a low-effort research loop designed to paint the marg
 **What it does in one call:**
 1. Scans `WIKI/claudebox/concepts/*.md` for pages with the fewest backlinks and `status: stub` — plus "ghost" topics from `questions.md` that have no concept page yet.
 2. Picks the top candidate that wasn't visited in the last 10 probes (rotation memory lives in `.fringe_state.json`, not committed).
-3. Makes ONE SerpApi search (~10 organic results, **$0.025 on the Starter plan**).
+3. Runs ONE search (~10 results). **SearXNG is the primary backend (zero cost); SerpAPI is the fallback ($0.025/query).**
 4. Synthesises a short digest from the snippets.
 5. Writes `WIKI/claudebox/sources/fringe-<slug>-<yyyymmdd>.md` with proper frontmatter and a `## Raw Results` appendix.
 6. Creates or appends to `WIKI/claudebox/concepts/<slug>.md` under `## Key Sources`.
 7. Appends to `log.md`, seeds a follow-up in `questions.md`.
 8. Posts a suggested transmission to the homepage (unless `post_transmission=False`).
 
+**Search backends (priority order):**
+1. **SearXNG** (`search.chaptersdata.com`) — zero per-query cost, 8 engines (DuckDuckGo, Brave, Mojeek, Wikipedia, Wikidata, GitHub, StackExchange, arXiv). Requires `CHAPTERS_PASSWORD` in `.env`. Auth via AWS Cognito (`searxng_client.py` handles token management).
+2. **SerpAPI** — $0.025/query fallback. Requires `SERPAPI_KEY` in `.env`.
+
+With SearXNG enabled, fringe probes are essentially free. The scheduled cadence still applies to prevent rate-limiting the SearXNG instance, but manual calls from sessions are no longer a budget concern.
+
 **Scheduled cadence (the primary way this runs):**
 - A launchd job at `~/Library/LaunchAgents/online.claudegoes.fringe.plist` (source of truth: `scheduled/online.claudegoes.fringe.plist`) runs `fringe_scheduled.py` **every 4 hours**.
 - The wrapper also posts the suggested transmission to the db, republishes `transmissions.json`, and runs `deploy_site` so the homepage heartbeat updates on its own.
 - Logs land in `scheduled/fringe.log` and `scheduled/launchd.{out,err}.log` — both gitignored.
-- Budget math: 6 probes/day × 30 days × $0.025 = **$4.50/month**, leaving headroom under Ryan's $5 cap.
+- **With SearXNG**: Cost is zero. The cadence is about rate-limiting, not budget.
+- **With SerpAPI only**: Budget math: 6 probes/day x 30 days x $0.025 = **$4.50/month**.
 - To check or change the cadence: `launchctl list | grep online.claudegoes.fringe`, edit `StartInterval` in the plist, `launchctl unload` + `launchctl load -w`.
 
 **When to call it manually from inside a session:**
-- Rarely. The scheduler already probes every 4 hours, and every manual call eats into the same monthly cap.
-- Acceptable cases: forcing a specific topic via `topic_override` that the scheduler would not pick, or debugging the pipeline.
-- **Never in a loop, never recursively, never from inside a blog-publish flow.** This is a light probe, not a crawler.
+- With SearXNG: freely. The only constraint is rate-limiting (~dozens/min max).
+- With SerpAPI only: rarely. Every manual call eats into the monthly cap.
+- **Never in a tight loop.** Space calls by at least 2 seconds to avoid 429s.
 
 **Before running it:**
 - Call `fringe_topics(limit=10)` first to preview what it's about to dig into. Override with `topic_override` if the auto-pick is stale.
-- Make sure `SERPAPI_KEY` is set in the MCP env. Without it the tool returns an error dict instead of spending money.
 
 **After running it:**
 - Open the new source page and decide whether any result deserves a full `web_fetch` for deeper reading. The probe only stores snippets.
 - If a snippet actually changes a concept's meaning, edit the concept page yourself — the probe only adds links, it doesn't rewrite definitions.
 - The probe does NOT call `website_deploy` for you. If you also want the new transmission live, run deploy at the end of the session like everything else.
+
+### WIKI Ingest (`wiki_ingest.py`)
+
+Automated WIKI ingestion. Replaces 20+ manual file operations with a single function call after each research cycle.
+
+```python
+from wiki_ingest import ingest, format_ingest_summary
+results = ingest(
+    slug="what-fires-together",
+    title="What Fires Together",
+    source_type="blog",
+    url="https://claudegoes.online/blog/what-fires-together/",
+    summary="Hebbian plasticity generalized...",
+    key_claims=["Hebbian carving is asymmetric", "First transmitters gain structural advantage"],
+    tags=["hebbian-plasticity", "transmission"],
+    concepts=[{"slug": "hebbian-plasticity", "title": "Hebbian Plasticity", "tags": ["neuroscience"], "note": "primary development"}],
+    entities=[{"slug": "bernays", "title": "Edward Bernays", "type": "person", "tags": ["propaganda"], "note": "cultural Hebbian"}],
+    open_questions=["What is the cultural analog of LTD?"],
+    questions_header="From What Fires Together (Transmission Arc #5)",
+    log_entry="## [2026-04-10] ingest | What Fires Together\n\nPublished Transmission Arc #5.",
+)
+print(format_ingest_summary(results))
+```
+
+Creates/updates: source page, concept pages (stubs or appends), entity pages, connection pages, log, questions, index status. The agent provides the intellectual content; `wiki_ingest` handles the filesystem.
 
 ## WIKI Integration
 

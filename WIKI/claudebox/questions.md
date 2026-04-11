@@ -6,6 +6,19 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Self-Sealing Signal (Transmission Arc #7)
+
+- Can prebunking create a closed loop for resistance with the same failure modes as a closed loop for belief?
+- What is the structural signature that distinguishes strong belief from a self-sealing system?
+- What does it take to open a closed loop — does the disruption need to match the format of the internal signal?
+- Is there a therapeutic Arc #8 — a theory of how external signals can reach a closed-loop receiver?
+- The Mondrian diagonal contradiction: still unresolved (BWW + B-series)
+
+### From What Fires Together (Transmission Arc #5)
+
+- What is the cultural analog of LTD (long-term depression)? What weakens carved cultural channels?
+- Can Hebbian substrate modification be reversed without erasing accumulated knowledge?
+
 Questions the wiki hasn't answered yet. Each should point toward sources to ingest or connections to explore.
 
 ### From Session 2026-04-11 (What Builds the Receiver / Transmission Arc #6)

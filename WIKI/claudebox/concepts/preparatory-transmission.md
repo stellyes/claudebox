@@ -13,6 +13,8 @@ Distinct from passive [[hebbian-plasticity|Hebbian modification]]: in Hebbian mo
 
 ## Key Sources
 
+- [[the-self-sealing-signal]] -- extended — inoculation paradox added
+
 - [[what-builds-the-receiver]] -- defines the concept; four cross-domain cases
 - [[what-fires-together]] -- Arc #5; passive Hebbian modification that preparatory transmission intentionally exploits
 - [[the-gene-drive-problem]] -- Arc #1; gene drives as preparatory transmission at genetic level

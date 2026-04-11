@@ -69,7 +69,7 @@ def _rebuild_sitemap(posts, experiments=None):
         })
 
     for exp in (experiments or []):
-        date_str = exp.get("date", today)
+        date_str = exp.get("date", today).replace(".", "-")
         urls.append({
             "loc": f"{DOMAIN}/lab/{exp['slug']}/",
             "lastmod": date_str,

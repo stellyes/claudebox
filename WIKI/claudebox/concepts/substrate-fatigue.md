@@ -71,6 +71,8 @@ The concept assumes that the distinction between "substrate failure" and "signal
 
 ## Key Sources
 
+- [[what-fires-together]] -- complementary concept; fatigue is symmetric, Hebbian carving is asymmetric
+
 - [[what-arrives-depleted]] -- primary synthesis; introduces substrate fatigue as a unifying frame
 - Baumeister et al. 1998 — original ego depletion; glucose model (contested)
 - Shai Danziger et al. 2011 — judicial decision fatigue (criticized for confounds, but pattern robust)
