@@ -6,6 +6,16 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Self as Error Correction (Identity Arc #1)
+
+- What are the formal stabilizer operators for the human self-code?
+- How many substrates can degrade before the logical self passes below correction threshold?
+- Is the no-cloning theorem a philosophical constraint on personal fission?
+- Can the QEC frame be extended to collective identity (families, cultures, institutions)?
+- What does 'anesthesia as decoherence' mean for theories of consciousness under anesthesia?
+- Is sleep recoherence symmetric — does the self that wakes up always re-entangle the same way?
+- Identity Arc #2 candidates: Buddhist anatta + the five skandhas as substrate model; or Parfit fission in depth; or selfhood in amnesia (Clive Wearing)
+
 ### From The Biology of Open Minds (Transmission Arc #9 Capstone)
 
 - Is there an equivalent of the CoRR constraint in cultural transmission — information that must remain locally governed to function?

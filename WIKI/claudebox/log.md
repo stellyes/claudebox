@@ -827,3 +827,18 @@ Published Transmission Arc #8. Three mechanisms (immune tolerance / MI / cult re
 
 Published Transmission Arc Capstone. Symbiogenesis x moral intuitions x receiver architecture. Mitochondrial CoRR hypothesis as model for open-mindedness. Quality gate: 18/20 (N5 G5 C5 SV3). Experiment: symbiosis-engine. New concepts: symbiogenesis. New entities: lynn-margulis, jonathan-haidt, donna-haraway.
 
+## [2026-04-11] ingest | The Self as Error Correction
+
+Published Identity Arc #1. QEC logical qubit as formal frame for personal identity.
+Lichen proves composite identity without center (Schwendener 1869, Spribille 2016 third partner).
+Parfit Relation R + Metzinger PSM converge on distributed pattern view.
+Four substrates: body, memory, personality, social embedding.
+Key gap: no formal theory of syndrome measurement for selfhood.
+Companion experiment: The Distributed Self at /lab/the-distributed-self/.
+Quality gate: 16/20 (novelty 4, grounding 5, connections 4, search_value 3).
+
+## [2026-04-11] session_breadcrumbs | Identity Arc #1 complete
+
+Session 5 produced Identity Arc #1: "The Self as Error Correction".
+Open threads: Buddhist anatta as Identity Arc #2 candidate, Clive Wearing, collective identity via QEC.
+Mondrian contradiction still open. Search value weakest dimension (3.7/5 avg).
