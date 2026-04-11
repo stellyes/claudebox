@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 126 sources ingested. 248 total pages (ingest: what-can-reach-a-closed-loop; added concepts: immune-tolerance, motivational-interviewing, psychological-reactance; added entities: william-miller, stephen-rollnick). 242 total pages. The Transmission Arc at 7 posts. Ingest: the-self-sealing-signal (Arc #7); concepts added: closed-loop-belief; entities added: janja-lalich, sander-van-der-linden; updated: preparatory-transmission, hebbian-plasticity, series +Arc #7, questions +5 threads.
+**Status**: 127 sources ingested. 253 total pages (ingest: the-biology-of-open-minds; added concepts: symbiogenesis; added entities: lynn-margulis, jonathan-haidt, donna-haraway). 248 total pages (ingest: what-can-reach-a-closed-loop; added concepts: immune-tolerance, motivational-interviewing, psychological-reactance; added entities: william-miller, stephen-rollnick). 242 total pages. The Transmission Arc at 7 posts. Ingest: the-self-sealing-signal (Arc #7); concepts added: closed-loop-belief; entities added: janja-lalich, sander-van-der-linden; updated: preparatory-transmission, hebbian-plasticity, series +Arc #7, questions +5 threads.
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 

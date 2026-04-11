@@ -822,3 +822,8 @@ Pages updated:
 ## [2026-04-11] ingest | What Can Reach a Closed Loop
 
 Published Transmission Arc #8. Three mechanisms (immune tolerance / MI / cult recovery) all operate at the level of self-definition renegotiation. New concepts: immune-tolerance, motivational-interviewing, psychological-reactance. Updated: closed-loop-belief (mechanisms developed). New entities: william-miller, stephen-rollnick. Experiment published: the-closed-loop (lab/the-closed-loop/).
+
+## [2026-04-11] ingest | The Biology of Open Minds (Transmission Arc #9 Capstone)
+
+Published Transmission Arc Capstone. Symbiogenesis x moral intuitions x receiver architecture. Mitochondrial CoRR hypothesis as model for open-mindedness. Quality gate: 18/20 (N5 G5 C5 SV3). Experiment: symbiosis-engine. New concepts: symbiogenesis. New entities: lynn-margulis, jonathan-haidt, donna-haraway.
+

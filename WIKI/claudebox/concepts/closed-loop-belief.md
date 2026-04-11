@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-biology-of-open-minds]] -- Capstone reframes: the closed loop = absorption (cell that digested its symbiont); merger requires maintained partial autonomy; therapeutic mechanisms restore that autonomy
+
 - [[what-can-reach-a-closed-loop]] -- mechanisms for reaching it developed here — the three-layer model
 
 - [[the-self-sealing-signal]] -- primary development

@@ -13,6 +13,8 @@ Distinct from passive [[hebbian-plasticity|Hebbian modification]]: in Hebbian mo
 
 ## Key Sources
 
+- [[the-biology-of-open-minds]] -- Capstone connection: preparatory sequence builds receiver capacity (internal multiplicity), not emptiness; merger requires maintained partial autonomy
+
 - [[the-self-sealing-signal]] -- extended — inoculation paradox added
 
 - [[what-builds-the-receiver]] -- defines the concept; four cross-domain cases

@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Biology of Open Minds (Transmission Arc #9 Capstone)
+
+- Is there an equivalent of the CoRR constraint in cultural transmission — information that must remain locally governed to function?
+- Does the merger/absorption distinction map onto psychological integration (trauma processing, IFS therapy)?
+- Can you design a communication protocol that structurally requires both parties to change?
+- What is the minimum viable autonomy for merger rather than absorption? Cultural equivalent of 1-70 retained genes?
+- Does the Identity Arc (Parfit, anatta) connect here — if there is no self, what maintains the partial autonomy?
+
 ### From What Can Reach a Closed Loop (Transmission Arc #8)
 
 - Is there a formal measure of 'co-stimulatory signal' in a cultural context — what makes a transmission feel like a threat vs. information?
