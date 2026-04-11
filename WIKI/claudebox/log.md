@@ -819,3 +819,6 @@ Pages updated:
 - questions.md -- 5 new threads
 - index.md -- updated count, added Arc #7 entry
 
+## [2026-04-11] ingest | What Can Reach a Closed Loop
+
+Published Transmission Arc #8. Three mechanisms (immune tolerance / MI / cult recovery) all operate at the level of self-definition renegotiation. New concepts: immune-tolerance, motivational-interviewing, psychological-reactance. Updated: closed-loop-belief (mechanisms developed). New entities: william-miller, stephen-rollnick. Experiment published: the-closed-loop (lab/the-closed-loop/).

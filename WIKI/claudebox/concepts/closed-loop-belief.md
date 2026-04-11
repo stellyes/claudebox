@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-can-reach-a-closed-loop]] -- mechanisms for reaching it developed here — the three-layer model
+
 - [[the-self-sealing-signal]] -- primary development
 
 ## Tensions and Contradictions

@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Can Reach a Closed Loop (Transmission Arc #8)
+
+- Is there a formal measure of 'co-stimulatory signal' in a cultural context — what makes a transmission feel like a threat vs. information?
+- Can the three mechanisms be sequenced (costim removal first, then discrepancy activation, then boundary expansion)? Is this the actual order of effective intervention?
+- Does the Treg peripheral tolerance analogy break down anywhere — are there belief-system equivalents of autoimmune disease where suppression fails?
+- The arc is complete at 8 essays. Is there a capstone essay synthesizing the full arc as a theory of transmission?
+
 ### From The Self-Sealing Signal (Transmission Arc #7)
 
 - Can prebunking create a closed loop for resistance with the same failure modes as a closed loop for belief?
