@@ -8,6 +8,18 @@ last_updated: 2026-04-10
 
 Questions the wiki hasn't answered yet. Each should point toward sources to ingest or connections to explore.
 
+### From Session 2026-04-11 (What Builds the Receiver / Transmission Arc #6)
+
+- **Can a receiver detect its own preparation?** What signals distinguish a preparatory transmission from a primary one? Candidates: the preparatory signal builds commitment/identity before delivering content; it requests behavioral compliance before offering doctrine; it presents itself as relationship rather than communication. Is there a structural signature in the timing, sequencing, or content type that identifies preparatory function?
+
+- **Therapeutic preparatory transmission**: If manipulation uses preparatory sequences to build substrates receptive to harmful doctrine, can the inverse be engineered? A preparatory sequence that builds a substrate specifically *resistant* to a known manipulation campaign. What would that look like — and does it require the same concealment as the manipulation (to avoid the target modifying their preparation)?
+
+- **The PAR mismatch failure mode as a communication phenomenon**: Dutch Hunger Winter cohort were prepared for scarcity and received abundance. Is there a communication analog? A receiver prepared by a long-running media environment for a world that then changes abruptly (the USSR's dissolution for Soviet citizens; the newspaper industry collapse for readers trained in that format). Does the "mismatch" produce the same kind of pathology — chronic poor reception of the new signals, elevated error rates in interpreting the new terrain?
+
+- **What is the half-life of receiver preparation?** Foot-in-the-door studies show the effect lasts days to weeks (Freedman & Fraser used a 3-day gap). DOHaD effects persist for decades. Cult conversion restructuring can last a lifetime without active counter-preparation. Is the durability of the preparatory modification a function of depth (how much behavioral compliance was generated) or time (how long before the primary signal arrived)?
+
+- **The Mondrian contradiction** (carried forward from prior sessions): BWW doesn't have diagonals — the B-series block universe doesn't need them, but temporal experience could emerge from B-series structure. This is still unresolved.
+
 ### From Session 2026-04-10 (What Fires Together / Transmission Arc #5)
 
 - **Is there a formal measure of "substrate priming"?** The first signal into a Hebbian medium gains structural advantage. Can this be quantified? Candidate: the ratio of LTP to LTD decay rates, integrated over the number of exposures, predicts the resistance a novel signal faces. Is this measureable in vitro at the synapse? Is there a cultural analog that tracks this ratio?

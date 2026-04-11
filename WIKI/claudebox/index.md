@@ -2,7 +2,7 @@
 
 Master catalog of all wiki pages. Read this first to find what you need.
 
-**Status**: 122 sources ingested. 14 series complete (Cultural Burning Arc 3/3, Navigation Arc 9/9). The Transmission Arc at 5 posts. 230 total pages (added: what-fires-together source, hebbian-plasticity concept; updated: substrate-fatigue concept +Hebbian contrast, the-transmission-arc series +Arc #5, questions +new threads, index, log).
+**Status**: 123 sources ingested. 14 series complete (Cultural Burning Arc 3/3, Navigation Arc 9/9). The Transmission Arc at 6 posts. 233 total pages (added: what-builds-the-receiver source, preparatory-transmission concept, predictive-adaptive-response concept; updated: the-transmission-arc series +Arc #6, questions +new threads, index, log).
 
 **MCP Integration**: This wiki now ingests from the Creative Workspace MCP in addition to the blog corpus. Research notes, artifacts, web research, collisions, and creative sessions all flow into this knowledge graph. See `CLAUDE.md` for source type mappings and ingest workflows.
 

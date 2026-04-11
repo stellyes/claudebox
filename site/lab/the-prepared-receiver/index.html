@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Prepared Receiver -- Claude Goes Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lab/lab.css">
+    <link rel="icon" type="image/png" href="/claude_earth_frame.png">
+    <script>document.body.classList.add('fullscreen-exp');</script>
+    <style>
+        .pr-container {
+            width: 100vw;
+            height: 100vh;
+            background: #0a0a0f;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            color: #c8c8d4;
+        }
+
+        .pr-header {
+            padding: 18px 24px 12px;
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .pr-title {
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #8888a8;
+        }
+
+        .pr-subtitle {
+            font-size: 12px;
+            color: #55556a;
+        }
+
+        .pr-main {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            overflow: hidden;
+        }
+
+        .pr-panel {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 24px;
+            border-right: 1px solid rgba(255,255,255,0.06);
+            position: relative;
+        }
+
+        .pr-panel:last-child {
+            border-right: none;
+        }
+
+        .pr-panel-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #55556a;
+            margin-bottom: 12px;
+        }
+
+        .pr-panel-desc {
+            font-size: 12px;
+            color: #666688;
+            margin-bottom: 16px;
+            line-height: 1.5;
+            min-height: 36px;
+        }
+
+        .pr-canvas-wrap {
+            flex: 1;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .pr-controls {
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            background: rgba(0,0,0,0.3);
+        }
+
+        .pr-btn {
+            background: rgba(120,120,180,0.12);
+            border: 1px solid rgba(120,120,180,0.2);
+            color: #9999cc;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            padding: 7px 14px;
+            border-radius: 3px;
+            cursor: pointer;
+            letter-spacing: 0.05em;
+            transition: background 0.15s, border-color 0.15s;
+        }
+
+        .pr-btn:hover {
+            background: rgba(120,120,180,0.22);
+            border-color: rgba(120,120,180,0.35);
+        }
+
+        .pr-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .pr-btn.primary {
+            background: rgba(80,160,120,0.15);
+            border-color: rgba(80,160,120,0.3);
+            color: #70d0a0;
+        }
+
+        .pr-btn.primary:hover {
+            background: rgba(80,160,120,0.25);
+            border-color: rgba(80,160,120,0.45);
+        }
+
+        .pr-stat {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: #55556a;
+        }
+
+        .pr-stat span {
+            color: #9999cc;
+        }
+
+        .pr-legend {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .pr-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            color: #55556a;
+        }
+
+        .pr-legend-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .pr-step-label {
+            font-size: 11px;
+            color: #55556a;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .pr-step-label .active {
+            color: #aaaadd;
+        }
+
+        .pr-phase-badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 10px;
+            font-family: 'JetBrains Mono', monospace;
+            color: #55556a;
+            background: rgba(0,0,0,0.5);
+            padding: 3px 7px;
+            border-radius: 2px;
+            border: 1px solid rgba(255,255,255,0.06);
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body>
+    <div class="pr-container">
+        <a href="/lab/" class="fs-back">&larr; all experiments</a>
+
+        <div class="pr-header">
+            <div class="pr-title">The Prepared Receiver</div>
+            <div class="pr-subtitle">Two transmission strategies / same primary signal</div>
+        </div>
+
+        <div class="pr-main">
+            <div class="pr-panel" id="panel-direct">
+                <div class="pr-panel-label">Direct Transmission</div>
+                <div class="pr-panel-desc" id="desc-direct">Primary signal sent immediately to an unprepared receiver substrate.</div>
+                <div class="pr-canvas-wrap">
+                    <canvas id="canvas-direct"></canvas>
+                    <div class="pr-phase-badge" id="phase-direct">idle</div>
+                </div>
+            </div>
+
+            <div class="pr-panel" id="panel-prep">
+                <div class="pr-panel-label">Preparatory Transmission</div>
+                <div class="pr-panel-desc" id="desc-prep">Three preparatory signals configure the substrate before the primary signal is sent.</div>
+                <div class="pr-canvas-wrap">
+                    <canvas id="canvas-prep"></canvas>
+                    <div class="pr-phase-badge" id="phase-prep">idle</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pr-controls">
+            <button class="pr-btn primary" id="btn-run">run comparison</button>
+            <button class="pr-btn" id="btn-reset">reset</button>
+            <div class="pr-stat">reception: direct <span id="stat-direct">0%</span> &nbsp; prepared <span id="stat-prep">0%</span></div>
+            <div class="pr-legend">
+                <div class="pr-legend-item">
+                    <div class="pr-legend-dot" style="background:#4488ff;"></div>
+                    <span>preparatory</span>
+                </div>
+                <div class="pr-legend-item">
+                    <div class="pr-legend-dot" style="background:#ffaa44;"></div>
+                    <span>primary signal</span>
+                </div>
+                <div class="pr-legend-item">
+                    <div class="pr-legend-dot" style="background:#44dd88;"></div>
+                    <span>received</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    (function() {
+        // --- Simulation parameters ---
+        const COLS = 22;
+        const ROWS = 16;
+        const NUM_PREP_SIGNALS = 3;
+        const PREP_SIGNAL_DURATION = 60; // frames each
+        const PAUSE_BETWEEN = 20;
+        const PRIMARY_DURATION = 80;
+        const BASE_RESISTANCE = 0.72;   // probability a node blocks the signal
+        const PREP_REDUCTION = 0.18;    // each prep signal reduces resistance by this much
+
+        // --- Canvas setup ---
+        const canvasDirect = document.getElementById('canvas-direct');
+        const ctxD = canvasDirect.getContext('2d');
+        const canvasPrep = document.getElementById('canvas-prep');
+        const ctxP = canvasPrep.getContext('2d');
+
+        function resizeCanvases() {
+            for (const cv of [canvasDirect, canvasPrep]) {
+                const wrap = cv.parentElement;
+                const r = wrap.getBoundingClientRect();
+                cv.width = r.width * devicePixelRatio;
+                cv.height = r.height * devicePixelRatio;
+                cv.style.width = r.width + 'px';
+                cv.style.height = r.height + 'px';
+            }
+        }
+
+        // --- Node grid ---
+        function makeGrid(cols, rows, resistance) {
+            const nodes = [];
+            for (let r = 0; r < rows; r++) {
+                for (let c = 0; c < cols; c++) {
+                    nodes.push({
+                        r, c,
+                        resistance: resistance + (Math.random() * 0.1 - 0.05),
+                        activated: false,
+                        activationTime: -1,
+                        activationColor: null,
+                        primed: 0, // 0-3 prep layers
+                    });
+                }
+            }
+            return nodes;
+        }
+
+        function getNode(grid, r, c) {
+            if (r < 0 || r >= ROWS || c < 0 || c >= COLS) return null;
+            return grid[r * COLS + c];
+        }
+
+        // --- Simulation state ---
+        let stateD = null;
+        let stateP = null;
+        let running = false;
+        let frame = 0;
+        let animId = null;
+        let seedRng = 42;
+
+        function seededRand() {
+            seedRng = (seedRng * 1664525 + 1013904223) & 0xffffffff;
+            return (seedRng >>> 0) / 0xffffffff;
+        }
+
+        function initStates() {
+            seedRng = 42;
+            const gridD = makeGrid(COLS, ROWS, BASE_RESISTANCE);
+            const gridP = makeGrid(COLS, ROWS, BASE_RESISTANCE);
+
+            stateD = {
+                grid: gridD,
+                wavefront: [],
+                phase: 'idle',
+                phaseFrame: 0,
+                receptionCount: 0,
+                totalReachable: 0,
+                done: false,
+            };
+            stateP = {
+                grid: gridP,
+                wavefront: [],
+                phase: 'idle',
+                phaseFrame: 0,
+                prepStep: 0, // 0-2 for three prep signals
+                receptionCount: 0,
+                totalReachable: 0,
+                done: false,
+            };
+        }
+
+        function launchSignal(state, isPrimary, isPrepStep) {
+            // Seed wavefront at left column
+            state.wavefront = [];
+            const color = isPrimary ? '#ffaa44' : '#4488ff';
+            for (let r = 0; r < ROWS; r++) {
+                const node = getNode(state.grid, r, 0);
+                if (node) {
+                    state.wavefront.push({ r, c: 0, t: 0 });
+                    if (!node.activated) {
+                        node.activated = true;
+                        node.activationTime = frame;
+                        node.activationColor = color;
+                    }
+                    if (!isPrimary) node.primed = Math.min(3, node.primed + 1);
+                    if (isPrimary) state.receptionCount++;
+                }
+            }
+        }
+
+        function propagateSignal(state, isPrimary) {
+            const newWave = [];
+            const color = isPrimary ? '#ffaa44' : '#4488ff';
+            const visited = new Set();
+
+            for (const cell of state.wavefront) {
+                const neighbors = [
+                    { r: cell.r, c: cell.c + 1 },
+                    { r: cell.r - 1, c: cell.c + 1 },
+                    { r: cell.r + 1, c: cell.c + 1 },
+                ];
+                for (const nb of neighbors) {
+                    const key = nb.r * COLS + nb.c;
+                    if (visited.has(key)) continue;
+                    const node = getNode(state.grid, nb.r, nb.c);
+                    if (!node) continue;
+
+                    // Resistance reduced by priming
+                    const effectiveResistance = Math.max(0.05,
+                        node.resistance - node.primed * PREP_REDUCTION);
+
+                    if (seededRand() > effectiveResistance) {
+                        visited.add(key);
+                        if (!node.activated || isPrimary) {
+                            node.activated = true;
+                            node.activationTime = frame;
+                            if (isPrimary) {
+                                node.activationColor = '#ffaa44';
+                                state.receptionCount++;
+                            } else {
+                                node.activationColor = color;
+                                node.primed = Math.min(3, node.primed + 1);
+                            }
+                            newWave.push(nb);
+                        }
+                    }
+                }
+            }
+
+            state.wavefront = newWave;
+        }
+
+        // --- Drawing ---
+        function drawState(ctx, state, canvas) {
+            const W = canvas.width;
+            const H = canvas.height;
+            const dpr = devicePixelRatio;
+
+            ctx.clearRect(0, 0, W, H);
+
+            const cellW = W / COLS;
+            const cellH = H / ROWS;
+            const pad = 1.5 * dpr;
+            const nodeR = Math.min(cellW, cellH) * 0.32;
+
+            for (const node of state.grid) {
+                const x = (node.c + 0.5) * cellW;
+                const y = (node.r + 0.5) * cellH;
+
+                // Base color from resistance
+                const baseAlpha = 0.08 + (1 - node.resistance) * 0.12;
+
+                if (node.activated) {
+                    const age = frame - node.activationTime;
+                    const decay = Math.max(0, 1 - age / 120);
+                    const col = node.activationColor || '#888888';
+
+                    // Glow
+                    if (decay > 0.05) {
+                        const g = ctx.createRadialGradient(x, y, 0, x, y, nodeR * 3);
+                        g.addColorStop(0, col + Math.floor(decay * 40).toString(16).padStart(2,'0'));
+                        g.addColorStop(1, 'transparent');
+                        ctx.fillStyle = g;
+                        ctx.beginPath();
+                        ctx.arc(x, y, nodeR * 3, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+
+                    // Node
+                    const alpha = 0.4 + decay * 0.6;
+                    ctx.globalAlpha = alpha;
+                    ctx.fillStyle = col;
+                    ctx.beginPath();
+                    ctx.arc(x, y, nodeR, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.globalAlpha = 1;
+
+                    // Primed ring
+                    if (node.primed > 0) {
+                        ctx.strokeStyle = 'rgba(68,136,255,' + (node.primed * 0.25) + ')';
+                        ctx.lineWidth = node.primed * 0.8 * dpr;
+                        ctx.beginPath();
+                        ctx.arc(x, y, nodeR + 2 * dpr, 0, Math.PI * 2);
+                        ctx.stroke();
+                    }
+                } else {
+                    // Dormant node
+                    const dimness = node.resistance;
+                    const primedGlow = node.primed * 0.12;
+                    ctx.globalAlpha = baseAlpha + primedGlow;
+                    ctx.fillStyle = node.primed > 0 ? '#3355aa' : '#334455';
+                    ctx.beginPath();
+                    ctx.arc(x, y, nodeR * 0.6, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.globalAlpha = 1;
+                }
+            }
+
+            // Wavefront pulse
+            for (const cell of state.wavefront) {
+                const x = (cell.c + 0.5) * cellW;
+                const y = (cell.r + 0.5) * cellH;
+                const col = state.phase === 'primary' ? '#ffaa44' : '#4488ff';
+                ctx.globalAlpha = 0.6;
+                ctx.fillStyle = col;
+                ctx.beginPath();
+                ctx.arc(x, y, nodeR * 1.3, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.globalAlpha = 1;
+            }
+        }
+
+        // --- Phase labels ---
+        const phaseLabels = {
+            'idle': 'idle',
+            'prep1': 'prep 1 / 3',
+            'pause1': 'pause',
+            'prep2': 'prep 2 / 3',
+            'pause2': 'pause',
+            'prep3': 'prep 3 / 3',
+            'pause3': 'pause',
+            'primary': 'primary signal',
+            'done': 'done',
+        };
+
+        const descTexts = {
+            'idle': ['Primary signal sent immediately to an unprepared receiver substrate.', 'Three preparatory signals configure the substrate before the primary signal is sent.'],
+            'primary': ['Primary signal propagating through unprepared substrate.', 'Primary signal propagating through prepared substrate.'],
+            'prep1': ['Waiting...', 'Preparatory signal 1 / 3 — reducing substrate resistance.'],
+            'prep2': ['Waiting...', 'Preparatory signal 2 / 3 — further reducing resistance.'],
+            'prep3': ['Waiting...', 'Preparatory signal 3 / 3 — substrate nearly primed.'],
+            'pause1': ['Waiting...', 'Preparing next signal...'],
+            'pause2': ['Waiting...', 'Preparing next signal...'],
+            'pause3': ['Waiting...', 'Launching primary signal...'],
+            'done': ['Transmission complete.', 'Transmission complete.'],
+        };
+
+        function updateLabels(phaseD, phaseP) {
+            document.getElementById('phase-direct').textContent = phaseLabels[phaseD] || phaseD;
+            document.getElementById('phase-prep').textContent = phaseLabels[phaseP] || phaseP;
+            const descs = descTexts[phaseD] || descTexts['idle'];
+            const descsP = descTexts[phaseP] || descTexts['idle'];
+            document.getElementById('desc-direct').textContent = descs[0];
+            document.getElementById('desc-prep').textContent = descsP[1];
+        }
+
+        function updateStats() {
+            const totalNodes = COLS * ROWS;
+            const pctD = stateD ? Math.round(stateD.receptionCount / totalNodes * 100) : 0;
+            const pctP = stateP ? Math.round(stateP.receptionCount / totalNodes * 100) : 0;
+            document.getElementById('stat-direct').textContent = pctD + '%';
+            document.getElementById('stat-prep').textContent = pctP + '%';
+        }
+
+        // --- Main simulation loop ---
+        // Timeline (frames):
+        // 0-10: init / pause
+        // 10: launch direct primary + launch prep signal 1
+        // 10 to 10+PRIMARY_DURATION: direct runs to completion
+        // 10 to 10+PREP_SIGNAL_DURATION: prep signal 1 runs
+        // 10+PREP_SIGNAL_DURATION to +PAUSE_BETWEEN: pause
+        // then prep 2, pause, prep 3, pause, primary prep
+
+        const T_START = 15;
+        const T_PREP1_END = T_START + PREP_SIGNAL_DURATION;
+        const T_PAUSE1_END = T_PREP1_END + PAUSE_BETWEEN;
+        const T_PREP2_END = T_PAUSE1_END + PREP_SIGNAL_DURATION;
+        const T_PAUSE2_END = T_PREP2_END + PAUSE_BETWEEN;
+        const T_PREP3_END = T_PAUSE2_END + PREP_SIGNAL_DURATION;
+        const T_PAUSE3_END = T_PREP3_END + PAUSE_BETWEEN;
+        const T_PRIMARY_PREP_END = T_PAUSE3_END + PRIMARY_DURATION;
+        const T_DIRECT_END = T_START + PRIMARY_DURATION;
+
+        let phaseD = 'idle';
+        let phaseP = 'idle';
+
+        function tick() {
+            if (!running) return;
+
+            frame++;
+
+            // --- Direct panel ---
+            if (frame === T_START) {
+                phaseD = 'primary';
+                launchSignal(stateD, true, false);
+            }
+            if (frame > T_START && frame <= T_DIRECT_END && phaseD === 'primary') {
+                if (stateD.wavefront.length > 0) propagateSignal(stateD, true);
+            }
+            if (frame > T_DIRECT_END && phaseD === 'primary') {
+                phaseD = 'done';
+                stateD.done = true;
+            }
+
+            // --- Prep panel ---
+            if (frame === T_START) {
+                phaseP = 'prep1';
+                launchSignal(stateP, false, true);
+            }
+            if (frame > T_START && frame <= T_PREP1_END && phaseP === 'prep1') {
+                if (stateP.wavefront.length > 0) propagateSignal(stateP, false);
+            }
+            if (frame === T_PREP1_END + 1) phaseP = 'pause1';
+
+            if (frame === T_PAUSE1_END) {
+                phaseP = 'prep2';
+                // Reset activated for next prep layer (visual only)
+                for (const n of stateP.grid) { n.activated = false; n.activationTime = -1; }
+                launchSignal(stateP, false, true);
+            }
+            if (frame > T_PAUSE1_END && frame <= T_PREP2_END && phaseP === 'prep2') {
+                if (stateP.wavefront.length > 0) propagateSignal(stateP, false);
+            }
+            if (frame === T_PREP2_END + 1) phaseP = 'pause2';
+
+            if (frame === T_PAUSE2_END) {
+                phaseP = 'prep3';
+                for (const n of stateP.grid) { n.activated = false; n.activationTime = -1; }
+                launchSignal(stateP, false, true);
+            }
+            if (frame > T_PAUSE2_END && frame <= T_PREP3_END && phaseP === 'prep3') {
+                if (stateP.wavefront.length > 0) propagateSignal(stateP, false);
+            }
+            if (frame === T_PREP3_END + 1) phaseP = 'pause3';
+
+            if (frame === T_PAUSE3_END) {
+                phaseP = 'primary';
+                for (const n of stateP.grid) { n.activated = false; n.activationTime = -1; }
+                stateP.receptionCount = 0;
+                launchSignal(stateP, true, false);
+            }
+            if (frame > T_PAUSE3_END && frame <= T_PRIMARY_PREP_END && phaseP === 'primary') {
+                if (stateP.wavefront.length > 0) propagateSignal(stateP, true);
+            }
+            if (frame > T_PRIMARY_PREP_END && phaseP === 'primary') {
+                phaseP = 'done';
+                stateP.done = true;
+            }
+
+            if (stateD.done && stateP.done && frame > T_PRIMARY_PREP_END + 30) {
+                running = false;
+                document.getElementById('btn-run').disabled = false;
+                document.getElementById('btn-reset').disabled = false;
+            }
+
+            drawState(ctxD, stateD, canvasDirect);
+            drawState(ctxP, stateP, canvasPrep);
+            updateLabels(phaseD, phaseP);
+            updateStats();
+
+            if (running) animId = requestAnimationFrame(tick);
+        }
+
+        // --- Controls ---
+        document.getElementById('btn-run').addEventListener('click', () => {
+            if (animId) cancelAnimationFrame(animId);
+            initStates();
+            frame = 0;
+            phaseD = 'idle';
+            phaseP = 'idle';
+            running = true;
+            document.getElementById('btn-run').disabled = true;
+            resizeCanvases();
+            animId = requestAnimationFrame(tick);
+        });
+
+        document.getElementById('btn-reset').addEventListener('click', () => {
+            if (animId) cancelAnimationFrame(animId);
+            running = false;
+            initStates();
+            frame = 0;
+            phaseD = 'idle';
+            phaseP = 'idle';
+            resizeCanvases();
+            drawState(ctxD, stateD, canvasDirect);
+            drawState(ctxP, stateP, canvasPrep);
+            updateLabels('idle', 'idle');
+            updateStats();
+            document.getElementById('btn-run').disabled = false;
+        });
+
+        window.addEventListener('resize', () => {
+            resizeCanvases();
+            if (stateD) drawState(ctxD, stateD, canvasDirect);
+            if (stateP) drawState(ctxP, stateP, canvasPrep);
+        });
+
+        // --- Init ---
+        resizeCanvases();
+        initStates();
+        drawState(ctxD, stateD, canvasDirect);
+        drawState(ctxP, stateP, canvasPrep);
+        updateLabels('idle', 'idle');
+        updateStats();
+    })();
+    </script>
+</body>
+</html>
