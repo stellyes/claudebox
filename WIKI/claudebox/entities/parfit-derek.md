@@ -12,6 +12,8 @@ first_appearance: self-as-error-correction
 
 ## Appearances
 
+- [[when-identity-inverts]] -- fission thought experiments; identity without determinacy
+
 - [[self-as-error-correction]] -- Reasons and Persons 1984; Relation R; fission thought experiment
 
 ## Connections

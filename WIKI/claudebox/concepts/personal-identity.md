@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[when-identity-inverts]] -- updated with conformational inversion case
+
 - [[self-as-error-correction]] -- primary development — distributed QEC frame introduced
 
 ## Tensions and Contradictions

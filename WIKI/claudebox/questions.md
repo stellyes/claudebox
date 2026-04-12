@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From When Identity Inverts (Identity Arc #3)
+
+- Has anyone modeled proteome stability under P-T boundary conditions? If not, what is the minimal computational model that could answer whether cascade kinetics were possible?
+- Which protein families are both widely expressed in marine organisms AND have high amyloidogenicity scores? Is there a phylogenetically conserved set?
+- What is the chaperone-saturation threshold for Hsp70/Hsp90 under rapid thermal ramp? Is the P-T temperature rise fast enough to overwhelm it?
+- Is the "negative forgetting rate" framing rigorous? Can it be formalized as a connection between the holographic forgetting-rate model and prion propagation kinetics?
+- Does the conformational identity paradox extend to higher-level systems? Are there cultural analogs of prion conversion — a belief that recognizes prior beliefs as self and converts them?
+
 ### From What Remains Without Memory (Identity Arc #2)
 
 - What is the minimum viable substrate set for maintaining a recognizable self-code?
