@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Parliament Has No Speaker (Identity Arc #5)
+
+- Has anyone compared IFS therapeutic outcomes against prior self-cohesion measures to test Engler vs Schwartz?
+- Does the Parvizi-Wayne (2024) minimal phenomenal self correspond to what IFS calls Self-energy?
+- Are there other historical cases of a no-self concept being systematically mis-translated (beyond geyi)?
+- Could the three-convergence (IFS/Metzinger/anatta) be used to design a clinical protocol?
+- What is the neural signature of IFS 'unburdening' vs Buddhist 'anatta realization' vs flow entry?
+
 ### From What Cannot Be Copied (Identity Arc #4)
 
 - Does quantum teleportation provide a genuine model for identity transfer, or is the analogy merely structural?

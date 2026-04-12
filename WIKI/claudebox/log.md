@@ -875,3 +875,7 @@ Pages updated (4):
 ## [2026-04-12] ingest | What Cannot Be Copied
 
 Published Identity Arc #4: "What Cannot Be Copied" — no-cloning theorem x Parfit fission x QEC identity model. Quality gate 17/20. Companion experiment: The Fork Point (branching trajectory visualization). WIKI ingest: 1 source, 5 concepts, 3 entities.
+
+## [2026-04-12] ingest | The Parliament Has No Speaker
+
+Published Identity Arc #5. IFS Self as non-part, convergence with Metzinger minimal phenomenal self and Buddhist anatta. Missing study: Engler 1984 vs Schwartz on whether Self must be constructed. Geyi mistranslation as meta-level codec error. Quality gate: 17/20 (N4 G5 C5 SV3). Companion experiment: The Parliament (particle simulation). New concepts: internal-family-systems, transient-hypofrontality, geyi, parliament-problem. New entities: richard-schwartz, arne-dietrich, kumarajiva, jack-engler.
