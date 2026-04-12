@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fork Point</title>
+<style>
+.fork-container {
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+  position: relative;
+}
+.fork-canvas-wrap {
+  position: relative;
+  width: min(700px, 96vw);
+  height: min(480px, 60vh);
+}
+canvas#fork-canvas {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #1e1e2e;
+  border-radius: 4px;
+  display: block;
+}
+#fork-hud {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 180px;
+  pointer-events: none;
+}
+.fork-stat {
+  background: rgba(10,10,20,0.82);
+  border: 1px solid #2a2a3e;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 11px;
+  color: #8a8aaa;
+  line-height: 1.5;
+}
+.fork-stat span {
+  color: #c8c8e8;
+  font-weight: bold;
+}
+.fork-controls {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button.fork-btn {
+  background: #1a1a2e;
+  border: 1px solid #3a3a5a;
+  color: #d0d0f0;
+  padding: 9px 22px;
+  font-size: 13px;
+  font-family: 'Courier New', monospace;
+  cursor: pointer;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  transition: background 0.15s, border-color 0.15s;
+}
+button.fork-btn:hover {
+  background: #22223e;
+  border-color: #6a6aba;
+}
+button.fork-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+button.fork-btn.primary {
+  border-color: #6a9aff;
+  color: #aac8ff;
+}
+button.fork-btn.primary:hover {
+  background: #1a2040;
+  border-color: #8ab8ff;
+}
+.fork-label {
+  font-size: 12px;
+  color: #5a5a7a;
+  font-family: 'Courier New', monospace;
+  margin-left: 4px;
+}
+.fork-info {
+  margin-top: 16px;
+  max-width: min(700px, 96vw);
+  text-align: center;
+  font-size: 12px;
+  color: #4a4a6a;
+  font-family: 'Courier New', monospace;
+  line-height: 1.7;
+  padding: 0 12px;
+}
+.fork-phase-label {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 2px;
+  letter-spacing: 0.07em;
+  font-family: 'Courier New', monospace;
+}
+.phase-running { background: #0e1a0e; color: #4a9a4a; border: 1px solid #2a4a2a; }
+.phase-branched { background: #1a0e1a; color: #9a4aaa; border: 1px solid #4a2a5a; }
+.fork-diverge-bar {
+  margin-top: 14px;
+  width: min(700px, 96vw);
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+.fork-diverge-label {
+  font-size: 11px;
+  color: #5a5a7a;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.fork-diverge-track {
+  height: 6px;
+  background: #1a1a2e;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #2a2a3e;
+}
+.fork-diverge-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6a9aff, #aa4aff);
+  width: 0%;
+  transition: width 0.3s;
+  border-radius: 3px;
+}
+a.fs-back {
+  position: fixed;
+  top: 14px;
+  left: 16px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #5a5a8a;
+  text-decoration: none;
+  background: rgba(10,10,20,0.7);
+  padding: 4px 10px;
+  border-radius: 2px;
+  z-index: 999;
+  transition: color 0.15s;
+}
+a.fs-back:hover { color: #aaa0cc; }
+</style>
+</head>
+<body>
+<script>document.body.classList.add('fullscreen-exp');</script>
+<div class="fork-container" id="fork-root">
+  <a href="/lab/" class="fs-back">&larr; all experiments</a>
+
+  <div class="fork-canvas-wrap">
+    <canvas id="fork-canvas"></canvas>
+    <div id="fork-hud">
+      <div class="fork-stat" id="stat-phase">
+        phase: <span id="phase-text">running</span>
+      </div>
+      <div class="fork-stat" id="stat-tick">
+        t = <span id="tick-text">0</span>
+      </div>
+      <div class="fork-stat" id="stat-fork" style="display:none">
+        fork at: <span id="fork-at-text">—</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fork-controls">
+    <div id="phase-badge" class="fork-phase-label phase-running">SINGLE PROCESS</div>
+    <button class="fork-btn primary" id="btn-fork">Fork here</button>
+    <button class="fork-btn" id="btn-reset">Reset</button>
+  </div>
+
+  <div class="fork-diverge-bar" id="diverge-section" style="display:none">
+    <div class="fork-diverge-label">
+      <span>trajectory divergence</span>
+      <span id="diverge-pct">0%</span>
+    </div>
+    <div class="fork-diverge-track">
+      <div class="fork-diverge-fill" id="diverge-fill"></div>
+    </div>
+  </div>
+
+  <div class="fork-info" id="fork-info">
+    A single identity runs through state space. Press <strong>Fork here</strong> to create an exact copy at this moment. Both copies will continue independently — sharing all history before the fork, diverging in all history after it.
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  const canvas = document.getElementById('fork-canvas');
+  const ctx = canvas.getContext('2d');
+
+  // Dimensions
+  let W = 700, H = 480;
+
+  function resize() {
+    const wrap = canvas.parentElement;
+    W = wrap.clientWidth;
+    H = wrap.clientHeight;
+    canvas.width = W;
+    canvas.height = H;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // --- State ---
+  const TRAIL_MAX = 400;
+  const SPEED = 1.6;
+  const TURN_RATE = 0.035;
+  const NOISE_SCALE = 0.012;
+
+  // Seeded PRNG (mulberry32)
+  function mulberry32(seed) {
+    return function() {
+      seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+      let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  // Per-agent Perlin-like noise using agent-specific seed
+  function makeNoiseSource(seed) {
+    const rng = mulberry32(seed);
+    // Simple smooth noise via random walk on angle increments
+    let phase = rng() * Math.PI * 2;
+    let phaseVel = (rng() - 0.5) * 0.1;
+    return {
+      tick: function() {
+        phaseVel += (rng() - 0.5) * 0.02;
+        phaseVel = Math.max(-0.15, Math.min(0.15, phaseVel));
+        phase += phaseVel;
+        return Math.sin(phase) * 0.8 + (rng() - 0.5) * 0.4;
+      }
+    };
+  }
+
+  let agents = [];
+  let tick = 0;
+  let forked = false;
+  let forkTick = 0;
+  let divergePct = 0;
+  let animId = null;
+  let sharedSeed = 42;
+  let sharedNoise = null;
+  let postForkNoise = [null, null]; // noise sources after fork
+
+  function createAgent(x, y, angle, color, trailColor, noiseSource, trailHistory) {
+    return {
+      x, y, angle,
+      color,
+      trailColor,
+      noise: noiseSource,
+      trail: trailHistory ? trailHistory.slice() : [],
+      alive: true
+    };
+  }
+
+  function initSimulation() {
+    tick = 0;
+    forked = false;
+    forkTick = 0;
+    divergePct = 0;
+    sharedSeed = Math.floor(Math.random() * 9999) + 1;
+    sharedNoise = makeNoiseSource(sharedSeed);
+    postForkNoise = [null, null];
+
+    const startX = W * 0.25 + (Math.random() - 0.5) * W * 0.1;
+    const startY = H * 0.5 + (Math.random() - 0.5) * H * 0.1;
+    const startAngle = Math.random() * Math.PI * 2;
+
+    agents = [createAgent(startX, startY, startAngle, '#6a9aff', '#1a3a6a', sharedNoise, [])];
+
+    document.getElementById('btn-fork').disabled = false;
+    document.getElementById('diverge-section').style.display = 'none';
+    document.getElementById('stat-fork').style.display = 'none';
+    document.getElementById('phase-text').textContent = 'running';
+    document.getElementById('phase-badge').className = 'fork-phase-label phase-running';
+    document.getElementById('phase-badge').textContent = 'SINGLE PROCESS';
+    document.getElementById('fork-info').innerHTML = 'A single identity runs through state space. Press <strong>Fork here</strong> to create an exact copy at this moment. Both copies will continue independently — sharing all history before the fork, diverging in all history after it.';
+    document.getElementById('tick-text').textContent = '0';
+    document.getElementById('diverge-fill').style.width = '0%';
+    document.getElementById('diverge-pct').textContent = '0%';
+  }
+
+  function stepAgent(agent) {
+    const nv = agent.noise.tick();
+    agent.angle += nv * TURN_RATE;
+
+    // Gentle repulsion from edges
+    const margin = 60;
+    if (agent.x < margin) agent.angle += 0.06;
+    if (agent.x > W - margin) agent.angle -= 0.06;
+    if (agent.y < margin) agent.angle += 0.06 * (agent.x < W/2 ? 1 : -1);
+    if (agent.y > H - margin) agent.angle -= 0.06 * (agent.x < W/2 ? 1 : -1);
+
+    agent.x += Math.cos(agent.angle) * SPEED;
+    agent.y += Math.sin(agent.angle) * SPEED;
+
+    // Wrap gently
+    agent.x = Math.max(4, Math.min(W - 4, agent.x));
+    agent.y = Math.max(4, Math.min(H - 4, agent.y));
+
+    agent.trail.push({ x: agent.x, y: agent.y });
+    if (agent.trail.length > TRAIL_MAX) agent.trail.shift();
+  }
+
+  function forkAgent() {
+    if (forked || agents.length === 0) return;
+    forked = true;
+    forkTick = tick;
+
+    const src = agents[0];
+    // Assign independent post-fork noise to both
+    postForkNoise[0] = makeNoiseSource(sharedSeed * 7 + 3);
+    postForkNoise[1] = makeNoiseSource(sharedSeed * 13 + 7);
+
+    // Swap noise source for original
+    src.noise = postForkNoise[0];
+    src.color = '#6a9aff';
+    src.trailColor = '#0e2040';
+
+    // Clone — identical state, different noise
+    const clone = createAgent(
+      src.x, src.y, src.angle,
+      '#aa4aff', '#2a0e40',
+      postForkNoise[1],
+      src.trail
+    );
+    agents.push(clone);
+
+    document.getElementById('btn-fork').disabled = true;
+    document.getElementById('diverge-section').style.display = 'block';
+    document.getElementById('stat-fork').style.display = 'block';
+    document.getElementById('fork-at-text').textContent = forkTick;
+    document.getElementById('phase-text').textContent = 'branched';
+    document.getElementById('phase-badge').className = 'fork-phase-label phase-branched';
+    document.getElementById('phase-badge').textContent = 'TWO BRANCHES';
+    document.getElementById('fork-info').innerHTML = 'Both branches share identical history up to t=' + forkTick + '. From this moment they are causally independent — same origin, different futures. The divergence bar measures how far apart their current positions are relative to the canvas size.';
+  }
+
+  function computeDivergence() {
+    if (agents.length < 2) return 0;
+    const a = agents[0], b = agents[1];
+    const dx = a.x - b.x, dy = a.y - b.y;
+    const dist = Math.sqrt(dx*dx + dy*dy);
+    const maxDist = Math.sqrt(W*W + H*H);
+    return Math.min(1, dist / (maxDist * 0.4));
+  }
+
+  function drawScene() {
+    ctx.clearRect(0, 0, W, H);
+
+    // Background grid (subtle)
+    ctx.strokeStyle = '#0d0d1a';
+    ctx.lineWidth = 1;
+    const gStep = 60;
+    for (let x = 0; x < W; x += gStep) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    for (let y = 0; y < H; y += gStep) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+
+    // Draw fork point marker
+    if (forked && agents.length >= 2) {
+      // Fork happened at agents[0] trail position at forkTick — we stored trail, so approximate
+      const trailLen = agents[0].trail.length;
+      // The fork point: first point where trails diverge. Both trails start with same points.
+      // Shared trail = agents[0].trail before step forkTick.
+      // Approximate: use agents[1].trail starting point
+      const fp = agents[1].trail[0];
+      if (fp) {
+        ctx.beginPath();
+        ctx.arc(fp.x, fp.y, 7, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        ctx.font = '10px Courier New';
+        ctx.fillStyle = 'rgba(255,255,255,0.2)';
+        ctx.fillText('fork t=' + forkTick, fp.x + 10, fp.y - 6);
+      }
+    }
+
+    // Draw trails
+    agents.forEach(function(agent) {
+      if (agent.trail.length < 2) return;
+      const n = agent.trail.length;
+      for (let i = 1; i < n; i++) {
+        const alpha = i / n;
+        ctx.beginPath();
+        ctx.moveTo(agent.trail[i-1].x, agent.trail[i-1].y);
+        ctx.lineTo(agent.trail[i].x, agent.trail[i].y);
+        ctx.strokeStyle = agent.color.replace(')', ', ' + (alpha * 0.7) + ')').replace('rgb', 'rgba').replace('#', 'rgba_');
+        // Parse hex color manually
+        const hex = agent.color;
+        const r = parseInt(hex.slice(1,3),16);
+        const g = parseInt(hex.slice(3,5),16);
+        const b = parseInt(hex.slice(5,7),16);
+        ctx.strokeStyle = 'rgba(' + r + ',' + g + ',' + b + ',' + (alpha * 0.55 + 0.05) + ')';
+        ctx.lineWidth = 1 + alpha * 1.5;
+        ctx.stroke();
+      }
+    });
+
+    // Draw agent heads
+    agents.forEach(function(agent) {
+      // Glow
+      const grd = ctx.createRadialGradient(agent.x, agent.y, 0, agent.x, agent.y, 14);
+      const hex = agent.color;
+      const r = parseInt(hex.slice(1,3),16);
+      const g = parseInt(hex.slice(3,5),16);
+      const b = parseInt(hex.slice(5,7),16);
+      grd.addColorStop(0, 'rgba(' + r + ',' + g + ',' + b + ',0.35)');
+      grd.addColorStop(1, 'rgba(' + r + ',' + g + ',' + b + ',0)');
+      ctx.beginPath();
+      ctx.arc(agent.x, agent.y, 14, 0, Math.PI * 2);
+      ctx.fillStyle = grd;
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(agent.x, agent.y, 4, 0, Math.PI * 2);
+      ctx.fillStyle = agent.color;
+      ctx.fill();
+
+      // Direction indicator
+      ctx.beginPath();
+      ctx.moveTo(agent.x, agent.y);
+      ctx.lineTo(
+        agent.x + Math.cos(agent.angle) * 10,
+        agent.y + Math.sin(agent.angle) * 10
+      );
+      ctx.strokeStyle = 'rgba(' + r + ',' + g + ',' + b + ',0.6)';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    });
+
+    // Draw divergence connector line
+    if (forked && agents.length >= 2) {
+      const a = agents[0], b = agents[1];
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      const d = computeDivergence();
+      ctx.strokeStyle = 'rgba(180,120,220,' + Math.min(0.3, d * 0.5) + ')';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([4, 6]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    }
+  }
+
+  function loop() {
+    // Advance simulation
+    agents.forEach(stepAgent);
+    tick++;
+
+    // Update divergence
+    if (forked) {
+      divergePct = computeDivergence();
+      const pct = Math.round(divergePct * 100);
+      document.getElementById('diverge-fill').style.width = pct + '%';
+      document.getElementById('diverge-pct').textContent = pct + '%';
+    }
+
+    document.getElementById('tick-text').textContent = tick;
+
+    drawScene();
+    animId = requestAnimationFrame(loop);
+  }
+
+  // Controls
+  document.getElementById('btn-fork').addEventListener('click', function() {
+    forkAgent();
+  });
+
+  document.getElementById('btn-reset').addEventListener('click', function() {
+    if (animId) cancelAnimationFrame(animId);
+    initSimulation();
+    loop();
+  });
+
+  // Start
+  initSimulation();
+  loop();
+
+})();
+</script>
+</body>
+</html>

@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Cannot Be Copied (Identity Arc #4)
+
+- Does quantum teleportation provide a genuine model for identity transfer, or is the analogy merely structural?
+- If the copy immediately diverges, at what point do they become recognizably distinct people — and does the divergence speed depend on cognitive complexity?
+- IFS (Internal Family Systems): if the self is a parliament of parts, can any of the parts survive copying while others cannot?
+- Anesthesia: does general anesthesia create a discontinuity in identity, or is the causal thread preserved even through unconsciousness?
+- What is the minimum "snapshot resolution" at which a copy would believe it was the original — and is there a philosophical significance to that threshold?
+
 ### From When Identity Inverts (Identity Arc #3)
 
 - Has anyone modeled proteome stability under P-T boundary conditions? If not, what is the minimal computational model that could answer whether cascade kinetics were possible?

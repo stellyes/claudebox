@@ -872,3 +872,6 @@ Pages updated (4):
 - questions.md -- 5 new open threads
 - index.md -- updated page count, added new entries
 
+## [2026-04-12] ingest | What Cannot Be Copied
+
+Published Identity Arc #4: "What Cannot Be Copied" — no-cloning theorem x Parfit fission x QEC identity model. Quality gate 17/20. Companion experiment: The Fork Point (branching trajectory visualization). WIKI ingest: 1 source, 5 concepts, 3 entities.
