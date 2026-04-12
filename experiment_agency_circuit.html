@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Agency Circuit</title>
+<style>
+  .agency-circuit-container {
+    background: #0a0a0f;
+    color: #c8c8d8;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .agency-circuit-container * {
+    box-sizing: border-box;
+  }
+
+  .ac-header {
+    text-align: center;
+    padding: 2.5rem 1.5rem 1rem;
+    max-width: 720px;
+  }
+
+  .ac-header h1 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    color: #e8e8f0;
+    margin: 0 0 0.5rem;
+  }
+
+  .ac-header p {
+    font-size: 0.85rem;
+    color: #7a7a9a;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .ac-canvas-wrap {
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem 1.5rem;
+    position: relative;
+  }
+
+  canvas#agencyCircuit {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .ac-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 1.5rem 0.5rem;
+  }
+
+  .ac-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #c8c8d8;
+    padding: 0.55rem 1.4rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 2px;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  .ac-btn:hover {
+    background: #1a1a2e;
+    border-color: #6060aa;
+  }
+
+  .ac-btn.active {
+    background: #1a1a2e;
+    border-color: #8888cc;
+    color: #aaaaee;
+  }
+
+  .ac-legend {
+    max-width: 640px;
+    padding: 1rem 1.5rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    font-size: 0.78rem;
+    color: #6a6a8a;
+    line-height: 1.6;
+  }
+
+  .ac-legend-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .ac-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  .ac-state-label {
+    text-align: center;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0 0.8rem;
+    transition: color 0.5s;
+  }
+
+  .ac-state-label.helpless { color: #cc6666; }
+  .ac-state-label.agency { color: #66aacc; }
+
+  .fs-back {
+    position: fixed;
+    top: 1.2rem;
+    left: 1.2rem;
+    color: #6a6a8a;
+    text-decoration: none;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    background: rgba(10,10,15,0.85);
+    padding: 0.4rem 0.7rem;
+    border-radius: 2px;
+    z-index: 100;
+    transition: color 0.2s;
+  }
+  .fs-back:hover { color: #c8c8d8; }
+</style>
+</head>
+<body>
+<div class="agency-circuit-container">
+  <a href="/lab/" class="fs-back">&larr; all experiments</a>
+
+  <div class="ac-header">
+    <h1>The Agency Circuit</h1>
+    <p>The 2016 Maier-Seligman reversal: passivity is the brain's default. Agency is learned suppression.</p>
+  </div>
+
+  <div class="ac-canvas-wrap">
+    <div class="ac-state-label" id="stateLabel">Default State: Passivity</div>
+    <canvas id="agencyCircuit" width="800" height="420"></canvas>
+  </div>
+
+  <div class="ac-controls">
+    <button class="ac-btn active" id="btnDefault" onclick="setState('default')">Uncontrollable</button>
+    <button class="ac-btn" id="btnLearned" onclick="setState('learned')">Learned Control</button>
+    <button class="ac-btn" id="btnBuilding" onclick="setState('building')">Building the Pathway</button>
+  </div>
+
+  <div class="ac-legend">
+    <div class="ac-legend-item">
+      <div class="ac-dot" style="background:#cc6666"></div>
+      <span><strong style="color:#c8c8d8">Dorsal Raphe Nucleus (DRN)</strong> — serotonergic brainstem cluster. Default response to uncontrollable stress: suppresses escape, drives passivity.</span>
+    </div>
+    <div class="ac-legend-item">
+      <div class="ac-dot" style="background:#66aacc"></div>
+      <span><strong style="color:#c8c8d8">Medial Prefrontal Cortex (mPFC)</strong> — detects contingency between action and outcome. When active, inhibits the DRN. Agency becomes possible.</span>
+    </div>
+    <div class="ac-legend-item">
+      <div class="ac-dot" style="background:#aaaaee"></div>
+      <span><strong style="color:#c8c8d8">Controllability signal</strong> — the mPFC pathway is structurally modified by experience of control. More experience = stronger inhibition = more resilient agency.</span>
+    </div>
+    <div class="ac-legend-item">
+      <div class="ac-dot" style="background:#444466"></div>
+      <span><strong style="color:#c8c8d8">Default passivity</strong> — without a learned mPFC pathway, serotonin flows and the organism stops trying. This is not learned; it was always there.</span>
+    </div>
+  </div>
+</div>
+
+<script>
+document.body.classList.add('fullscreen-exp');
+
+const canvas = document.getElementById('agencyCircuit');
+const ctx = canvas.getContext('2d');
+const stateLabel = document.getElementById('stateLabel');
+
+let currentState = 'default';
+let particles = [];
+let t = 0;
+
+// Node positions (on 800x420 canvas)
+const nodes = {
+  environment: { x: 80, y: 210, r: 36, label: 'Environment', sub: '' },
+  drn: { x: 420, y: 300, r: 44, label: 'DRN', sub: 'Dorsal Raphe' },
+  mpfc: { x: 420, y: 120, r: 44, label: 'mPFC', sub: 'Prefrontal' },
+  behavior: { x: 700, y: 210, r: 36, label: 'Behavior', sub: '' },
+};
+
+const stateConfigs = {
+  default: {
+    label: 'Default State: Passivity',
+    labelClass: 'helpless',
+    drnColor: '#cc4444',
+    mpfcColor: '#333355',
+    mpfcActive: false,
+    drnActive: true,
+    particleSource: 'environment-drn',
+    outcomeLabel: 'Passivity / No Escape',
+    outcomeColor: '#cc4444',
+    envLabel: 'Uncontrollable',
+  },
+  learned: {
+    label: 'Learned Control: Agency Active',
+    labelClass: 'agency',
+    drnColor: '#333344',
+    mpfcColor: '#3399cc',
+    mpfcActive: true,
+    drnActive: false,
+    particleSource: 'environment-mpfc',
+    outcomeLabel: 'Active Coping / Escape',
+    outcomeColor: '#66aacc',
+    envLabel: 'Controllable',
+  },
+  building: {
+    label: 'Building the Pathway',
+    labelClass: 'agency',
+    drnColor: '#885533',
+    mpfcColor: '#226688',
+    mpfcActive: true,
+    drnActive: true,
+    particleSource: 'both',
+    outcomeLabel: 'Pathway Strengthening',
+    outcomeColor: '#aaaaee',
+    envLabel: 'Controllable (early)',
+  },
+};
+
+function setState(state) {
+  currentState = state;
+  particles = [];
+  document.querySelectorAll('.ac-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn' + state.charAt(0).toUpperCase() + state.slice(1)).classList.add('active');
+  const cfg = stateConfigs[state];
+  stateLabel.textContent = cfg.label;
+  stateLabel.className = 'ac-state-label ' + cfg.labelClass;
+}
+
+function spawnParticle(from, to, color, speed) {
+  const fn = nodes[from];
+  const tn = nodes[to];
+  particles.push({
+    x: fn.x, y: fn.y,
+    tx: tn.x, ty: tn.y,
+    color,
+    speed: speed || 1.5,
+    progress: 0,
+    size: 4,
+  });
+}
+
+function drawNode(node, fillColor, strokeColor, alpha) {
+  const a = alpha !== undefined ? alpha : 1;
+  ctx.save();
+  ctx.globalAlpha = a;
+  // Glow
+  const grad = ctx.createRadialGradient(node.x, node.y, node.r * 0.3, node.x, node.y, node.r * 1.5);
+  grad.addColorStop(0, fillColor + '44');
+  grad.addColorStop(1, 'transparent');
+  ctx.beginPath();
+  ctx.arc(node.x, node.y, node.r * 1.5, 0, Math.PI * 2);
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Circle
+  ctx.beginPath();
+  ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
+  ctx.fillStyle = fillColor + '22';
+  ctx.fill();
+  ctx.strokeStyle = fillColor;
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  // Label
+  ctx.fillStyle = fillColor;
+  ctx.font = 'bold 13px Georgia, serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(node.label, node.x, node.y - 7);
+  ctx.font = '10px Georgia, serif';
+  ctx.fillStyle = fillColor + 'aa';
+  ctx.fillText(node.sub, node.x, node.y + 8);
+  ctx.restore();
+}
+
+function drawEdge(from, to, color, dashed, alpha) {
+  const fn = nodes[from];
+  const tn = nodes[to];
+  ctx.save();
+  ctx.globalAlpha = alpha !== undefined ? alpha : 0.3;
+  ctx.beginPath();
+  if (dashed) ctx.setLineDash([4, 6]);
+  ctx.moveTo(fn.x, fn.y);
+  ctx.lineTo(tn.x, tn.y);
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1;
+  ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.restore();
+}
+
+function drawArrowhead(from, to, color, alpha) {
+  const fn = nodes[from];
+  const tn = nodes[to];
+  const tn_node = nodes[to];
+  const dx = tn.x - fn.x;
+  const dy = tn.y - fn.y;
+  const dist = Math.sqrt(dx*dx + dy*dy);
+  const nx = dx/dist;
+  const ny = dy/dist;
+  const ex = tn.x - nx * tn_node.r;
+  const ey = tn.y - ny * tn_node.r;
+  const size = 8;
+  ctx.save();
+  ctx.globalAlpha = alpha !== undefined ? alpha : 0.4;
+  ctx.beginPath();
+  ctx.moveTo(ex, ey);
+  ctx.lineTo(ex - size*nx + size*0.5*(-ny), ey - size*ny + size*0.5*nx);
+  ctx.lineTo(ex - size*nx - size*0.5*(-ny), ey - size*ny - size*0.5*nx);
+  ctx.closePath();
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.restore();
+}
+
+function lerp(a, b, t) { return a + (b-a)*t; }
+
+function draw() {
+  const cfg = stateConfigs[currentState];
+  const W = canvas.width, H = canvas.height;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // Background
+  ctx.fillStyle = '#0a0a0f';
+  ctx.fillRect(0, 0, W, H);
+
+  // Label: environment
+  const envAlpha = 0.7;
+  nodes.environment.sub = cfg.envLabel;
+
+  // Draw structural edges (always present, dim)
+  drawEdge('environment', 'drn', '#664444', false, 0.15);
+  drawEdge('environment', 'mpfc', '#446688', false, 0.15);
+  drawEdge('drn', 'behavior', '#664444', true, 0.12);
+  drawEdge('mpfc', 'drn', '#446688', false, 0.12);
+  drawEdge('mpfc', 'behavior', '#446688', true, 0.12);
+
+  // Active edges based on state
+  if (currentState === 'default') {
+    drawEdge('environment', 'drn', '#cc4444', false, 0.5 + 0.15 * Math.sin(t * 0.04));
+    drawEdge('drn', 'behavior', '#cc4444', true, 0.4);
+    drawArrowhead('environment', 'drn', '#cc4444', 0.7);
+    drawArrowhead('drn', 'behavior', '#cc4444', 0.4);
+  } else if (currentState === 'learned') {
+    drawEdge('environment', 'mpfc', '#3399cc', false, 0.5 + 0.15 * Math.sin(t * 0.04));
+    // Inhibition line (flat with bar at end)
+    const drnX = nodes.drn.x, drnY = nodes.drn.y;
+    const mpfcX = nodes.mpfc.x, mpfcY = nodes.mpfc.y;
+    const midX = (drnX + mpfcX) / 2;
+    const midY = (drnY + mpfcY) / 2;
+    ctx.save();
+    ctx.globalAlpha = 0.55;
+    ctx.beginPath();
+    ctx.moveTo(mpfcX, mpfcY + nodes.mpfc.r);
+    ctx.lineTo(drnX, drnY - nodes.drn.r);
+    ctx.strokeStyle = '#3399cc';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    // Inhibition bar
+    ctx.beginPath();
+    ctx.moveTo(drnX - 10, drnY - nodes.drn.r - 2);
+    ctx.lineTo(drnX + 10, drnY - nodes.drn.r - 2);
+    ctx.strokeStyle = '#3399cc';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.restore();
+    drawEdge('mpfc', 'behavior', '#3399cc', false, 0.5);
+    drawArrowhead('environment', 'mpfc', '#3399cc', 0.7);
+    drawArrowhead('mpfc', 'behavior', '#3399cc', 0.5);
+  } else { // building
+    drawEdge('environment', 'drn', '#cc7744', false, 0.3);
+    drawEdge('environment', 'mpfc', '#3399cc', false, 0.4 + 0.1 * Math.sin(t * 0.05));
+    drawEdge('mpfc', 'behavior', '#aaaaee', false, 0.3);
+    drawArrowhead('environment', 'mpfc', '#3399cc', 0.6);
+    drawArrowhead('mpfc', 'behavior', '#aaaaee', 0.4);
+  }
+
+  // Draw nodes
+  drawNode(nodes.environment, '#888899', '#888899');
+  drawNode(nodes.drn, cfg.drnColor, cfg.drnColor);
+  drawNode(nodes.mpfc, cfg.mpfcColor, cfg.mpfcColor);
+  drawNode(nodes.behavior, cfg.outcomeColor, cfg.outcomeColor);
+
+  // Behavior label update
+  const bNode = nodes.behavior;
+  ctx.save();
+  ctx.globalAlpha = 0.6;
+  ctx.font = '10px Georgia, serif';
+  ctx.textAlign = 'center';
+  ctx.fillStyle = cfg.outcomeColor;
+  ctx.fillText(cfg.outcomeLabel, bNode.x, bNode.y + bNode.r + 16);
+  ctx.restore();
+
+  // Particles
+  if (Math.random() < 0.06) {
+    if (currentState === 'default') {
+      spawnParticle('environment', 'drn', '#cc4444');
+      if (Math.random() < 0.3) spawnParticle('drn', 'behavior', '#cc4444aa');
+    } else if (currentState === 'learned') {
+      spawnParticle('environment', 'mpfc', '#3399cc');
+      if (Math.random() < 0.4) spawnParticle('mpfc', 'behavior', '#66aacc');
+    } else {
+      if (Math.random() < 0.6) spawnParticle('environment', 'mpfc', '#aaaaee');
+      else spawnParticle('environment', 'drn', '#cc7744');
+    }
+  }
+
+  // Update and draw particles
+  particles = particles.filter(p => p.progress < 1);
+  for (const p of particles) {
+    p.progress += p.speed * 0.012;
+    const px = lerp(p.x, p.tx, p.progress);
+    const py = lerp(p.y, p.ty, p.progress);
+    ctx.save();
+    ctx.globalAlpha = (1 - p.progress) * 0.8;
+    ctx.beginPath();
+    ctx.arc(px, py, p.size, 0, Math.PI * 2);
+    ctx.fillStyle = p.color;
+    ctx.fill();
+    ctx.restore();
+  }
+
+  // 2016 citation note
+  ctx.save();
+  ctx.globalAlpha = 0.25;
+  ctx.font = '10px monospace';
+  ctx.fillStyle = '#888899';
+  ctx.textAlign = 'left';
+  ctx.fillText('Maier & Seligman, 2016 — PMC4920136', 12, H - 10);
+  ctx.restore();
+
+  t++;
+  requestAnimationFrame(draw);
+}
+
+draw();
+</script>
+</body>
+</html>

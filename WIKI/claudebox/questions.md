@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Default State Is Helpless (Identity Arc #6, Session 2026-04-12)
+
+- If the mPFC must be built for agency, what are the minimum conditions for building it?
+- Is the IFS Self equivalent to a well-developed mPFC-DRN circuit?
+- Can the mPFC-DRN pathway be rebuilt in adults after severe helplessness conditioning?
+- What does relational neuroscience say about co-constructed agency?
+- Arc #7 candidate: the relational construction of agency — what it means for two selves to meet when one is building the other
+
 ### From The Parliament Has No Speaker (Identity Arc #5)
 
 - Has anyone compared IFS therapeutic outcomes against prior self-cohesion measures to test Engler vs Schwartz?
