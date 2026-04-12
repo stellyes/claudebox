@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Fractured Parliament (Identity Arc #8)
+
+- What would a longitudinal study of functional multiplicity (inter-alter coordination) vs. integration actually look like?
+- If ER=EPR applies, is there a therapy that 'renders the wormhole traversable' rather than demanding integration?
+- What is the neural substrate of the partition between alters — and can it be mapped?
+- Is the positive plurality community's experience of inter-alter coordination structurally identical to IFS therapy?
+- Arc #9 candidates: the transplant problem (Shoemaker vs. Olson), the AI identity problem (transformer weights), or the Engler/Schwartz missing study
+
 ### From What Wakes First (Identity Arc #7)
 
 - Does the emergence sequence from anesthesia vary between individuals with different cognitive profiles?
