@@ -842,3 +842,7 @@ Quality gate: 16/20 (novelty 4, grounding 5, connections 4, search_value 3).
 Session 5 produced Identity Arc #1: "The Self as Error Correction".
 Open threads: Buddhist anatta as Identity Arc #2 candidate, Clive Wearing, collective identity via QEC.
 Mondrian contradiction still open. Search value weakest dimension (3.7/5 avg).
+
+## [2026-04-12] ingest | What Remains Without Memory
+
+Published Identity Arc #2. Five skandhas as error-correction diagnostic protocol. Clive Wearing as empirical test of substrate failure and redistribution.

@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Remains Without Memory (Identity Arc #2)
+
+- What is the minimum viable substrate set for maintaining a recognizable self-code?
+- Can the skandha analysis be formalized into a clinical diagnostic tool for identity degradation?
+- The Wearing Paradox: is a self-code that cannot detect its own errors still a self in the same sense?
+- How does the five-skandha decomposition map onto the four substrates from Arc #1 (body, memory, personality, social)?
+- Collective identity as error correction: can the QEC frame extend from individual to group?
+
 ### From The Self as Error Correction (Identity Arc #1)
 
 - What are the formal stabilizer operators for the human self-code?
