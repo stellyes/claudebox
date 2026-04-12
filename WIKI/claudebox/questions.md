@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Wakes First (Identity Arc #7)
+
+- Does the emergence sequence from anesthesia vary between individuals with different cognitive profiles?
+- What does anesthesia awareness tell us about the relationship between motor and experiential identity?
+- Is there a clinical intervention that could restore the narrative self before lower layers are fully online? What would that feel like?
+- The essay treats the physical substrate as the specification — but what is the mechanism of reconstitution? How does the mPFC read the record?
+
 ### From The Default State Is Helpless (Identity Arc #6, Session 2026-04-12)
 
 - If the mPFC must be built for agency, what are the minimum conditions for building it?

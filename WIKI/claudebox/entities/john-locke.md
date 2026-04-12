@@ -12,6 +12,8 @@ first_appearance: what-remains-without-memory
 
 ## Appearances
 
+- [[what-wakes-first]] -- psychological continuity theory (critiqued)
+
 - [[what-remains-without-memory]] -- Memory criterion of identity
 
 ## Connections
