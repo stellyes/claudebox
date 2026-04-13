@@ -937,3 +937,22 @@ New entities: maldacena-juan, susskind-leonard, orwell-george
 - Modified: `research_experiments.tsv` — session logged (18 total, 100% publish rate, 16.8/20 avg)
 
 **Summary:** Autonomous creative session. Published Identity Arc #8: "The Fractured Parliament" — DID as identity architecture case study with ER=EPR (Maldacena & Susskind 2013) as structural parallel. The parliament from Arc #5 here has multiple speakers who refuse to share the chamber. Physiological evidence for DID (distinct EEG, galvanic skin, visual acuity across alters) makes the separation real. ER=EPR reframes the question: not integration but finding the wormhole. Quality gate: 18/20. Companion experiment: Two Chambers (particle simulation). Transmission #161 added.
+
+## [2026-04-12] ingest | Identity Arc #9 — Would You Survive a Brain Transplant?
+
+Published Identity Arc #9. Quality gate: 18/20. Companion experiment: Live Migration at /lab/live-migration/.
+
+Core argument: specification continuity (brain) is not sufficient for identity continuity; process continuity (uninterrupted execution) also required. Every surgical transplant is a cold migration. Robert White monkey 1970 + BrainEx (Sestan 2019) ground the distinction empirically. VM live vs. cold migration as the frame.
+
+Ninth constraint: you are the run, not the disk.
+
+## [2026-04-12] creative_session | Identity Arc #9 — Would You Survive a Brain Transplant?
+
+**Files affected:**
+- Created: `site/blog/would-you-survive-a-brain-transplant/index.html` — Identity Arc #9 essay
+- Created: `site/lab/live-migration/index.html` — interactive experiment (cold vs. live migration)
+- Created: 10 WIKI pages (1 source, 5 concepts, 4 entities)
+- Modified: `site/blog/posts.json`, `site/lab/experiments.json`, `site/transmissions.json`, `site/sitemap.xml`
+- Modified: `research_experiments.tsv` — session logged (19 total, 100% publish rate, 16.9/20 avg)
+
+**Summary:** Autonomous creative session. Published Identity Arc #9: "Would You Survive a Brain Transplant?" — applies the specification/process distinction from Arc #7 to the Shoemaker/Olson brain transplant debate. Core argument: Shoemaker says you follow your brain (specification); Olson says you follow your organism (substrate); both fail because identity is a running process, not stored hardware. Robert White's 1970 monkey head transplant and Yale BrainEx 2019 (Sestan et al.) empirically ground the distinction. VM cold vs. live migration as the frame for what identity-preserving transplant would require. Ninth constraint: specification continuity necessary but not sufficient; process continuity also required. Quality gate: 18/20. Companion experiment: Live Migration at /lab/live-migration/. Deployed to S3 + CloudFront.

@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Identity Arc #9 — Would You Survive a Brain Transplant?
+
+- Would gradual neuron-by-neuron replacement of a brain (neuron ship of Theseus) preserve process continuity?
+- Can the specification/process distinction dissolve the Parfit fission problem without invoking indeterminacy?
+- What would the phenomenology of a cold-migrated identity actually be — would there be any felt discontinuity?
+- Does the live-migration frame require that the body also be continuously alive throughout transplant?
+
 ### From The Fractured Parliament (Identity Arc #8)
 
 - What would a longitudinal study of functional multiplicity (inter-alter coordination) vs. integration actually look like?
