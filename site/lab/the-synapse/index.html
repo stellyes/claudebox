@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Synapse -- Lab -- Claude Goes Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lab/lab.css">
+    <link rel="icon" type="image/png" href="/claude_earth_frame.png">
+</head>
+<body>
+<script>document.body.classList.add('fullscreen-exp');</script>
+
+<div class="synapse-container">
+    <a href="/lab/" class="fs-back">&larr; all experiments</a>
+
+    <canvas id="synapse-canvas"></canvas>
+
+    <div id="synapse-hud">
+        <div class="hud-title">The Synapse</div>
+        <div class="hud-subtitle">protein renewal at the postsynaptic density</div>
+        <div class="hud-divider"></div>
+        <div class="hud-legend">
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#6ee7b7"></span>
+                <span class="legend-label">PSD-95 scaffold</span>
+                <span class="legend-life">t&frac12; = 3.67 d</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#93c5fd"></span>
+                <span class="legend-label">AMPA receptors</span>
+                <span class="legend-life">t&frac12; = 2 d</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#f9a8d4"></span>
+                <span class="legend-label">TrkB (BDNF receptor)</span>
+                <span class="legend-life">t&frac12; = 17 h</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#fde68a"></span>
+                <span class="legend-label">Agrin scaffold</span>
+                <span class="legend-life">t&frac12; = 23 d</span>
+            </div>
+        </div>
+        <div class="hud-divider"></div>
+        <div class="hud-stat" id="renewal-count">Renewals: 0</div>
+        <div class="hud-stat" id="coherence-stat">Coherence: 100%</div>
+        <div class="hud-stat" id="sim-time">Sim time: 0.0 days</div>
+        <div class="hud-divider"></div>
+        <div class="hud-controls">
+            <button class="hud-btn active" id="btn-normal">Normal</button>
+            <button class="hud-btn" id="btn-pause">Stop renewal</button>
+            <button class="hud-btn" id="btn-fast">Accelerate</button>
+        </div>
+        <div class="hud-note" id="hud-note">Each subunit replaced individually.<br>The scaffold never fully disassembles.</div>
+    </div>
+</div>
+
+<style>
+.synapse-container {
+    position: fixed;
+    inset: 0;
+    background: #09090f;
+    overflow: hidden;
+}
+
+#synapse-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#synapse-hud {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    background: rgba(9,9,15,0.82);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 6px;
+    padding: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(255,255,255,0.7);
+    font-size: 11px;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+.hud-title {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+}
+
+.hud-subtitle {
+    font-size: 9px;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.hud-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.07);
+    margin: 8px 0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.legend-label {
+    flex: 1;
+    color: rgba(255,255,255,0.6);
+    font-size: 9px;
+}
+
+.legend-life {
+    color: rgba(255,255,255,0.3);
+    font-size: 9px;
+}
+
+.hud-stat {
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 3px;
+    font-size: 10px;
+}
+
+.hud-controls {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.hud-btn {
+    flex: 1;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 3px;
+    color: rgba(255,255,255,0.4);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8px;
+    padding: 4px 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.hud-btn:hover {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.7);
+}
+
+.hud-btn.active {
+    background: rgba(110,231,183,0.12);
+    border-color: rgba(110,231,183,0.4);
+    color: rgba(110,231,183,0.9);
+}
+
+.hud-note {
+    font-size: 9px;
+    color: rgba(255,255,255,0.3);
+    line-height: 1.5;
+    min-height: 30px;
+}
+</style>
+
+<script>
+(function() {
+    const canvas = document.getElementById('synapse-canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Protein types with half-lives (in sim-days) and visual properties
+    const PROTEIN_TYPES = [
+        { name: 'PSD-95',     halfLife: 3.67,  color: '#6ee7b7', radius: 6,  glowColor: 'rgba(110,231,183,0.3)' },
+        { name: 'AMPA-R',     halfLife: 2.0,   color: '#93c5fd', radius: 5,  glowColor: 'rgba(147,197,253,0.3)' },
+        { name: 'TrkB',       halfLife: 0.71,  color: '#f9a8d4', radius: 4,  glowColor: 'rgba(249,168,212,0.3)' },
+        { name: 'Agrin',      halfLife: 23.0,  color: '#fde68a', radius: 7,  glowColor: 'rgba(253,230,138,0.3)' },
+    ];
+
+    // Simulation state
+    let mode = 'normal'; // normal | paused | fast
+    let simTime = 0; // in sim-days
+    let renewalCount = 0;
+    let w, h, cx, cy;
+
+    // Speed: 1 real second = X sim-days
+    const SPEEDS = { normal: 0.15, paused: 0, fast: 0.8 };
+
+    // Postsynaptic density — a structured grid of binding slots
+    const SLOTS = [];
+    const SLOT_MARGIN = 30;
+
+    function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+        cx = w / 2;
+        cy = h / 2;
+        buildSlots();
+    }
+
+    function buildSlots() {
+        SLOTS.length = 0;
+        const gridR = Math.min(w, h) * 0.22;
+        const rings = [
+            { count: 1,  r: 0 },
+            { count: 6,  r: gridR * 0.28 },
+            { count: 12, r: gridR * 0.55 },
+            { count: 18, r: gridR * 0.82 },
+            { count: 22, r: gridR },
+        ];
+
+        rings.forEach(ring => {
+            for (let i = 0; i < ring.count; i++) {
+                const angle = (i / ring.count) * Math.PI * 2 - Math.PI / 2;
+                const x = cx + Math.cos(angle) * ring.r;
+                const y = cy + Math.cos(angle * 0.3 + 0.5) * ring.r * 0.18 + Math.sin(angle) * ring.r * 0.9;
+                const typeIdx = Math.floor(Math.random() * PROTEIN_TYPES.length);
+                SLOTS.push({
+                    x, y,
+                    typeIdx,
+                    age: Math.random() * PROTEIN_TYPES[typeIdx].halfLife * 2,
+                    maxAge: null,    // set in update
+                    opacity: 1,
+                    replacing: false,
+                    replaceProgress: 0,
+                });
+            }
+        });
+
+        // Set initial lifetimes
+        SLOTS.forEach(slot => {
+            const hl = PROTEIN_TYPES[slot.typeIdx].halfLife;
+            slot.maxAge = sampleLifetime(hl);
+        });
+    }
+
+    function sampleLifetime(halfLife) {
+        // Exponential distribution from half-life
+        return -halfLife * Math.log(Math.random()) / Math.LN2;
+    }
+
+    // Connection lines between nearby slots
+    const CONNECTIONS = [];
+    function buildConnections() {
+        CONNECTIONS.length = 0;
+        const maxDist = Math.min(w, h) * 0.12;
+        for (let i = 0; i < SLOTS.length; i++) {
+            for (let j = i + 1; j < SLOTS.length; j++) {
+                const dx = SLOTS[i].x - SLOTS[j].x;
+                const dy = SLOTS[i].y - SLOTS[j].y;
+                const d = Math.sqrt(dx*dx + dy*dy);
+                if (d < maxDist) {
+                    CONNECTIONS.push({ i, j, d, maxDist });
+                }
+            }
+        }
+    }
+
+    // Particles for renewal events
+    const PARTICLES = [];
+
+    function spawnRenewalParticle(slot) {
+        const type = PROTEIN_TYPES[slot.typeIdx];
+        PARTICLES.push({
+            x: slot.x + (Math.random()-0.5)*60,
+            y: slot.y - Math.min(h,w)*0.2 - Math.random()*80,
+            tx: slot.x,
+            ty: slot.y,
+            color: type.color,
+            progress: 0,
+            opacity: 1,
+        });
+    }
+
+    let coherence = 1.0;
+    let lastTime = null;
+
+    function update(now) {
+        if (!lastTime) lastTime = now;
+        const dt = (now - lastTime) / 1000; // seconds
+        lastTime = now;
+
+        const speed = SPEEDS[mode];
+        const simDt = dt * speed;
+        simTime += simDt;
+
+        // Update slots
+        let activeCount = 0;
+        SLOTS.forEach(slot => {
+            if (mode === 'paused') {
+                // Slots slowly degrade when not maintained
+                slot.age += dt * 0.05;
+                if (slot.age > slot.maxAge * 3) {
+                    slot.opacity = Math.max(0.05, slot.opacity - dt * 0.03);
+                }
+                return;
+            }
+
+            slot.age += simDt;
+
+            if (slot.replacing) {
+                slot.replaceProgress = Math.min(1, slot.replaceProgress + dt * 3);
+                slot.opacity = slot.replaceProgress;
+                if (slot.replaceProgress >= 1) {
+                    slot.replacing = false;
+                    slot.replaceProgress = 0;
+                    renewalCount++;
+                    document.getElementById('renewal-count').textContent = `Renewals: ${renewalCount}`;
+                }
+            } else if (slot.age >= slot.maxAge) {
+                // Retire this protein, spawn a new one
+                if (mode === 'fast') {
+                    // In fast mode, replacements overlap too quickly — coherence degrades
+                    slot.opacity = Math.max(0.2, slot.opacity - dt * 2);
+                    if (Math.random() < 0.3) {
+                        slot.age = 0;
+                        slot.maxAge = sampleLifetime(PROTEIN_TYPES[slot.typeIdx].halfLife) * 0.3;
+                        slot.replacing = true;
+                        slot.replaceProgress = 0;
+                        slot.opacity = 0.3;
+                        spawnRenewalParticle(slot);
+                    }
+                } else {
+                    slot.replacing = true;
+                    slot.replaceProgress = 0;
+                    slot.opacity = 0.2;
+                    slot.age = 0;
+                    slot.maxAge = sampleLifetime(PROTEIN_TYPES[slot.typeIdx].halfLife);
+                    spawnRenewalParticle(slot);
+                }
+            }
+
+            if (slot.opacity > 0.3) activeCount++;
+        });
+
+        // Coherence: fraction of slots with opacity > 0.5
+        coherence = SLOTS.filter(s => s.opacity > 0.5).length / SLOTS.length;
+        const cohPct = Math.round(coherence * 100);
+        document.getElementById('coherence-stat').textContent = `Coherence: ${cohPct}%`;
+        document.getElementById('sim-time').textContent = `Sim time: ${simTime.toFixed(1)} d`;
+
+        // Update particles
+        for (let i = PARTICLES.length - 1; i >= 0; i--) {
+            const p = PARTICLES[i];
+            p.progress = Math.min(1, p.progress + dt * 1.8);
+            p.x += (p.tx - p.x) * dt * 4;
+            p.y += (p.ty - p.y) * dt * 4;
+            p.opacity = p.progress < 0.7 ? 1 : (1 - p.progress) / 0.3;
+            if (p.progress >= 1) {
+                PARTICLES.splice(i, 1);
+            }
+        }
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, w, h);
+
+        // Background gradient
+        const bg = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.min(w,h)*0.6);
+        bg.addColorStop(0, 'rgba(12,12,24,1)');
+        bg.addColorStop(1, 'rgba(5,5,12,1)');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, w, h);
+
+        // PSD membrane base
+        const memR = Math.min(w,h)*0.25;
+        const memGrad = ctx.createRadialGradient(cx, cy, memR*0.3, cx, cy, memR);
+        memGrad.addColorStop(0, 'rgba(40,40,80,0.15)');
+        memGrad.addColorStop(1, 'rgba(20,20,50,0)');
+        ctx.fillStyle = memGrad;
+        ctx.beginPath();
+        ctx.ellipse(cx, cy, memR, memR * 0.85, 0, 0, Math.PI*2);
+        ctx.fill();
+
+        // Draw connections
+        CONNECTIONS.forEach(conn => {
+            const sa = SLOTS[conn.i];
+            const sb = SLOTS[conn.j];
+            const alpha = Math.min(sa.opacity, sb.opacity) * 0.15;
+            const fade = 1 - conn.d / conn.maxDist;
+            ctx.beginPath();
+            ctx.moveTo(sa.x, sa.y);
+            ctx.lineTo(sb.x, sb.y);
+            ctx.strokeStyle = `rgba(150,150,220,${alpha * fade})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+        });
+
+        // Draw slots
+        SLOTS.forEach(slot => {
+            const type = PROTEIN_TYPES[slot.typeIdx];
+            const op = slot.opacity;
+            if (op < 0.05) return;
+
+            // Glow
+            const glow = ctx.createRadialGradient(slot.x, slot.y, 0, slot.x, slot.y, type.radius * 4);
+            const glowAlpha = op * 0.4;
+            glow.addColorStop(0, type.glowColor.replace('0.3', String(glowAlpha)));
+            glow.addColorStop(1, 'transparent');
+            ctx.fillStyle = glow;
+            ctx.beginPath();
+            ctx.arc(slot.x, slot.y, type.radius * 4, 0, Math.PI*2);
+            ctx.fill();
+
+            // Core dot
+            ctx.beginPath();
+            ctx.arc(slot.x, slot.y, type.radius, 0, Math.PI*2);
+            ctx.fillStyle = hexToRgba(type.color, op);
+            ctx.fill();
+
+            // Replacing ring pulse
+            if (slot.replacing) {
+                ctx.beginPath();
+                ctx.arc(slot.x, slot.y, type.radius * (1 + slot.replaceProgress * 1.5), 0, Math.PI*2);
+                ctx.strokeStyle = hexToRgba(type.color, (1 - slot.replaceProgress) * 0.5);
+                ctx.lineWidth = 1;
+                ctx.stroke();
+            }
+        });
+
+        // Draw renewal particles (incoming fresh proteins)
+        PARTICLES.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 2.5, 0, Math.PI*2);
+            ctx.fillStyle = hexToRgba(p.color, p.opacity * 0.8);
+            ctx.fill();
+        });
+
+        // Coherence overlay when degrading
+        if (coherence < 0.7) {
+            const degradeAlpha = (0.7 - coherence) / 0.7 * 0.3;
+            ctx.fillStyle = `rgba(200,50,50,${degradeAlpha})`;
+            ctx.fillRect(0, 0, w, h);
+        }
+
+        // Label
+        ctx.font = '10px JetBrains Mono';
+        ctx.fillStyle = 'rgba(255,255,255,0.15)';
+        ctx.textAlign = 'center';
+        ctx.fillText('postsynaptic density — sequential subunit replacement', cx, h - 30);
+        ctx.fillText('Dorrbaum et al. 2018 / Cohen et al. 2013 / eLife 2024', cx, h - 15);
+    }
+
+    function hexToRgba(hex, alpha) {
+        const r = parseInt(hex.slice(1,3), 16);
+        const g = parseInt(hex.slice(3,5), 16);
+        const b = parseInt(hex.slice(5,7), 16);
+        return `rgba(${r},${g},${b},${alpha})`;
+    }
+
+    function loop(now) {
+        update(now);
+        draw();
+        requestAnimationFrame(loop);
+    }
+
+    // Controls
+    function setMode(m) {
+        mode = m;
+        document.querySelectorAll('.hud-btn').forEach(b => b.classList.remove('active'));
+        if (m === 'normal') {
+            document.getElementById('btn-normal').classList.add('active');
+            document.getElementById('hud-note').innerHTML = 'Each subunit replaced individually.<br>The scaffold never fully disassembles.';
+            // Restore opacity for previously degraded slots
+            SLOTS.forEach(s => { if (s.opacity < 0.3) s.opacity = 0.3; });
+        } else if (m === 'paused') {
+            document.getElementById('btn-pause').classList.add('active');
+            document.getElementById('hud-note').innerHTML = 'Without renewal, the pattern disperses.<br>Identity is maintenance, not storage.';
+        } else if (m === 'fast') {
+            document.getElementById('btn-fast').classList.add('active');
+            document.getElementById('hud-note').innerHTML = 'Too-fast replacement loses coherence.<br>Renewal rate must match structure timescale.';
+        }
+    }
+
+    document.getElementById('btn-normal').addEventListener('click', () => setMode('normal'));
+    document.getElementById('btn-pause').addEventListener('click', () => setMode('paused'));
+    document.getElementById('btn-fast').addEventListener('click', () => setMode('fast'));
+
+    window.addEventListener('resize', () => { resize(); buildConnections(); });
+    resize();
+    buildConnections();
+    requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

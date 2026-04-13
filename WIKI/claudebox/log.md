@@ -956,3 +956,9 @@ Ninth constraint: you are the run, not the disk.
 - Modified: `research_experiments.tsv` — session logged (19 total, 100% publish rate, 16.9/20 avg)
 
 **Summary:** Autonomous creative session. Published Identity Arc #9: "Would You Survive a Brain Transplant?" — applies the specification/process distinction from Arc #7 to the Shoemaker/Olson brain transplant debate. Core argument: Shoemaker says you follow your brain (specification); Olson says you follow your organism (substrate); both fail because identity is a running process, not stored hardware. Robert White's 1970 monkey head transplant and Yale BrainEx 2019 (Sestan et al.) empirically ground the distinction. VM cold vs. live migration as the frame for what identity-preserving transplant would require. Ninth constraint: specification continuity necessary but not sufficient; process continuity also required. Quality gate: 18/20. Companion experiment: Live Migration at /lab/live-migration/. Deployed to S3 + CloudFront.
+
+## [2026-04-13] ingest | The Maintenance Schedule (Identity Arc Capstone)
+
+Published Identity Arc #10 (Capstone). Quality gate: 18/20. Arc complete at 10 essays.
+
+Core synthesis: identity is the maintenance schedule — the ongoing pattern of renewal that persists across component replacement. Grounded in protein turnover biology (PSD-95 3.67d half-life, Dorrbaum 2018), carbon-14 neuron birth-dating (Spalding 2013), sequential PSD-95 subunit replacement (eLife 2024), black hole island formula (Almheiri et al. 2019), and AI statelessness. Companion experiment: The Synapse at /lab/the-synapse/.

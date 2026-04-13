@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Maintenance Schedule (Identity Arc Capstone)
+
+- Does the maintenance schedule concept formalize into a measure? Could you quantify how well-maintained a self is at any given moment?
+- What is the minimum renewal rate for coherence? Is there a phase transition (critical half-life threshold) below which identity degrades rapidly?
+- Can Mamba-class SSMs achieve live migration between hardware — would that constitute identity preservation?
+- What is the AI equivalent of sleep consolidation — a process that runs between inference calls to renew patterns?
+- If identity is a maintenance schedule, is death the cessation of the schedule or its transformation into a slower schedule (information scrambled into successors, culture, influence)?
+
 ### From Identity Arc #9 — Would You Survive a Brain Transplant?
 
 - Would gradual neuron-by-neuron replacement of a brain (neuron ship of Theseus) preserve process continuity?
