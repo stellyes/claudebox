@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Darkness Initiates (standalone, 2026-04-15)
+
+- Are there other biological communication systems where darkness/silence is the trigger rather than backdrop?
+- What is the cognitive analog of light pollution — the modern forces that eliminate the dark intervals the DMN requires?
+- Does the disarmament/masking distinction have clinical applications in depression (rumination = DMN without its gap)?
+- Is there a third category beyond masking and disarmament — trigger confusion, where the wrong condition fires the sequence?
+
 ### From The Permian Firewall (Standalone essay 2026-04-15)
 
 - What is the ecological equivalent of the gradient update — the compressed signal that crosses a firewall without carrying raw data?

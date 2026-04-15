@@ -989,3 +989,7 @@ Published standalone essay on DNA storage density and the missing inward overvie
 Published standalone essay: federated learning x Permian-Triassic extinction. Core argument: Panthalassa zero-firewall architecture = inverse of federated design. Lazarus taxa = federated nodes. Bottleneck is generative (Language Leap cross-pollination). Quality gate 15/20. Companion experiment: Two Oceans.
 
 New concepts: federated-learning, lazarus-taxa. New entities: siberian-traps, lystrosaurus, mcmahan-brendan. Updated: distributed-intelligence, hebbian-plasticity.
+
+## [2026-04-15] ingest | What Darkness Initiates
+
+Published standalone essay on dark-triggered signal systems. Antikythera as eclipse-finder, firefly trigger failure, Kirby bottleneck, DMN dark intervals. Quality gate 15/20. Experiment: Firefly Trigger at /lab/firefly-trigger/.
