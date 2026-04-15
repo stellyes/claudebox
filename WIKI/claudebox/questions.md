@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Trigger That Never Fires (Obligate Absence)
+
+- What is the cognitive equivalent of the 1988 fires — when does deferred DMN consolidation resolve?
+- Can Old Friends therapy (helminth reinsertion) calibrate T-regulatory cells in adults?
+- Are there other obligate-absence systems in ecology, physiology, or technology?
+- What is the minimum dose of absence needed to service a trigger-debt system?
+
 ### From What Darkness Initiates (standalone, 2026-04-15)
 
 - Are there other biological communication systems where darkness/silence is the trigger rather than backdrop?

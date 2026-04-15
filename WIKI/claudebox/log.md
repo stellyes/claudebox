@@ -993,3 +993,7 @@ New concepts: federated-learning, lazarus-taxa. New entities: siberian-traps, ly
 ## [2026-04-15] ingest | What Darkness Initiates
 
 Published standalone essay on dark-triggered signal systems. Antikythera as eclipse-finder, firefly trigger failure, Kirby bottleneck, DMN dark intervals. Quality gate 15/20. Experiment: Firefly Trigger at /lab/firefly-trigger/.
+
+## [2026-04-15] ingest | The Trigger That Never Fires
+
+Published standalone essay on obligate absence: serotinous pine, ipRGC circadian, Old Friends immunology, DMN suppression. 15/20 quality gate.

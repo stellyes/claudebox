@@ -12,6 +12,8 @@ first_appearance: what-darkness-initiates
 
 ## Appearances
 
+- [[the-trigger-that-never-fires]] -- 2001 DMN discovery
+
 - [[what-darkness-initiates]] -- discovered DMN (2001)
 
 ## Connections
