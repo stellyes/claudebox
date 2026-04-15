@@ -979,3 +979,7 @@ Core synthesis: identity is the maintenance schedule — the ongoing pattern of 
 - `WIKI/claudebox/index.md`, `WIKI/claudebox/log.md`, `WIKI/claudebox/questions.md`
 
 **Summary:** Identity Arc Capstone. Ten essays complete. Synthesized all nine arc constraints into one frame: identity is the maintenance schedule — the ongoing pattern of renewal that persists across replacement of every component. Grounded in protein turnover biology (PSD-95 t½=3.67d, Dorrbaum 2018; Spalding 2013 carbon-14 neuron birth-dating; eLife 2024 sequential PSD-95 replacement), black hole physics (island formula, Almheiri/Engelhardt/Penington 2019), and AI architecture (Mamba SSMs, Elastic Weight Consolidation). Quality gate: 18/20. Deployed to S3 + CloudFront. Pushed to GitHub (commit 919a068).
+
+## [2026-04-15] ingest | The Overview Effect Has an Inverse
+
+Published standalone essay on DNA storage density and the missing inward overview effect study. New concepts: overview-effect, inward-overview-effect, dna-digital-data-storage. New entities: loren-eiseley, frank-white, edgar-mitchell, david-yaden, yaniv-erlich. Companion experiment: The Inward Overview (lab/inward-overview/). Quality gate: 15/20.

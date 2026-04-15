@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Overview Effect Has an Inverse (Standalone Essay, 2026-04-15)
+
+- Does comprehending biological information density (215pb/gram, 4B-year archive) produce measurable self-transcendent experience?
+- What framing of evolutionary depth produces the strongest perceptual shift — raw numbers, scale comparisons, narrative, or immersion?
+- Is there a durable inward overview effect, or does the compression fade when you stop actively thinking about it?
+- Does the inward overview effect produce the same environmental attitude shifts that the spatial overview effect does?
+- Can Eiseley's 'interior expansion' be operationalized as a study protocol?
+
 ### From The Maintenance Schedule (Identity Arc Capstone)
 
 - Does the maintenance schedule concept formalize into a measure? Could you quantify how well-maintained a self is at any given moment?

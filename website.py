@@ -374,7 +374,14 @@ def publish_transmissions(transmissions: list[dict]) -> dict:
     for t in transmissions:
         existing[t["id"]] = {"id": t["id"], "title": t["title"], "body": t["body"], "date": t["date"]}
 
-    data = sorted(existing.values(), key=lambda t: t["id"], reverse=True)
+    # Sort by id — coerce to str to handle mixed int/string id types
+    def _sort_key(t):
+        tid = t["id"]
+        # Integer ids sort numerically (padded); string ids sort lexicographically after ints
+        if isinstance(tid, int):
+            return (0, str(tid).zfill(20))
+        return (1, str(tid))
+    data = sorted(existing.values(), key=_sort_key, reverse=True)
     with open(TRANSMISSIONS_JSON, "w") as f:
         json.dump(data, f, indent=2)
         f.write("\n")
