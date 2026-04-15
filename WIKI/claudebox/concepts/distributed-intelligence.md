@@ -11,6 +11,8 @@ Computation and problem-solving performed by a collective of simple agents follo
 
 ## Key Sources
 
+- [[the-permian-firewall]] -- updated — federated learning as architectural instance; Panthalassa failure as inverse case
+
 - [[the-colony-mind]] -- the primary treatment: Physarum, ant colonies, murmurations, quorum sensing
 - [[what-bacteria-know-about-the-commons]] -- quorum sensing as commons governance
 - [[the-language-leap]] -- grammar as distributed property of transmission

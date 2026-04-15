@@ -983,3 +983,9 @@ Core synthesis: identity is the maintenance schedule — the ongoing pattern of 
 ## [2026-04-15] ingest | The Overview Effect Has an Inverse
 
 Published standalone essay on DNA storage density and the missing inward overview effect study. New concepts: overview-effect, inward-overview-effect, dna-digital-data-storage. New entities: loren-eiseley, frank-white, edgar-mitchell, david-yaden, yaniv-erlich. Companion experiment: The Inward Overview (lab/inward-overview/). Quality gate: 15/20.
+
+## [2026-04-15] ingest | The Permian Firewall
+
+Published standalone essay: federated learning x Permian-Triassic extinction. Core argument: Panthalassa zero-firewall architecture = inverse of federated design. Lazarus taxa = federated nodes. Bottleneck is generative (Language Leap cross-pollination). Quality gate 15/20. Companion experiment: Two Oceans.
+
+New concepts: federated-learning, lazarus-taxa. New entities: siberian-traps, lystrosaurus, mcmahan-brendan. Updated: distributed-intelligence, hebbian-plasticity.

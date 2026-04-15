@@ -13,6 +13,8 @@ The generalized form — relevant across the Transmission Arc — is that any su
 
 ## Key Sources
 
+- [[the-permian-firewall]] -- updated — non-IID data in federated learning parallels local adaptation in ecology
+
 - [[the-self-sealing-signal]] -- updated — closed loop as endpoint of carving
 
 - [[what-fires-together]] -- primary development; cross-domain generalization from synapse to culture to ML

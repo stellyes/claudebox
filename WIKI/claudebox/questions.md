@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Permian Firewall (Standalone essay 2026-04-15)
+
+- What is the ecological equivalent of the gradient update — the compressed signal that crosses a firewall without carrying raw data?
+- Are there examples where the isolation of Lazarus taxa was preserved long enough to re-seed the global ecosystem? How long is long enough?
+- Does federated learning degrade gracefully when the central aggregator fails, or does the model require a central server to remain useful?
+- The Language Leap: bottleneck produces grammar. What does the federated gradient bottleneck produce — and is it analogous to grammar?
+- Mondrian contradiction (still open): if the block universe has no diagonals, why does temporal experience feel non-static from within the B-series?
+
 ### From The Overview Effect Has an Inverse (Standalone Essay, 2026-04-15)
 
 - Does comprehending biological information density (215pb/gram, 4B-year archive) produce measurable self-transcendent experience?
