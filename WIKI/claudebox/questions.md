@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Mondrian's Grid Does Not Erase Time
+
+- Is there a music theory analog — does the distinction between structural time (meter) and directional time (melody/dynamics) map cleanly onto other art forms?
+- Does the Theosophical horizontal/vertical opposition connect to the static/dynamic split in Gurdjieff or Steiner — both of whom Mondrian was aware of?
+- The lozenge paintings: is the diagonal frame a deliberate philosophical statement, or just an aesthetic choice? Is there textual evidence from Mondrian?
+- Can the structural/directional time distinction be grounded more formally — in music cognition, linguistics, or physics?
+
 ### From The Trigger That Never Fires (Obligate Absence)
 
 - What is the cognitive equivalent of the 1988 fires — when does deferred DMN consolidation resolve?

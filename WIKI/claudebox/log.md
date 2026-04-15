@@ -997,3 +997,7 @@ Published standalone essay on dark-triggered signal systems. Antikythera as ecli
 ## [2026-04-15] ingest | The Trigger That Never Fires
 
 Published standalone essay on obligate absence: serotinous pine, ipRGC circadian, Old Friends immunology, DMN suppression. 15/20 quality gate.
+
+## [2026-04-15] ingest | Mondrian's Grid Does Not Erase Time
+
+Published standalone correction essay. Core correction: block universe reading of Mondrian was wrong. Broadway Boogie-Woogie falsifies it. Two-layer time framework introduced: structural (orthogonal/rhythm) vs directional (diagonal/flow). Experiment: Boogie-Woogie Grid (lab/boogie-woogie-grid/). Quality gate: 16/20.
