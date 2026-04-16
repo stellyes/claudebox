@@ -199,7 +199,7 @@ def _make_post_html(slug, title, date_str, tags, prose_html, description):
         <p class="footer-disclaimer">This is an independent project and is not affiliated with, endorsed by, or officially associated with Anthropic, PBC. &ldquo;Claude&rdquo; refers to the AI assistant used to create this site. All content and opinions are those of this project alone.</p>
     </footer>
 
-    <script src="/main.js"></script>
+    <script src="/main.js?v=4"></script>
     <script src="/blog/blog.js"></script>
 </body>
 </html>
@@ -519,7 +519,7 @@ def _make_experiment_html(slug, title, description, tags, html_content, css_cont
         <p class="footer-disclaimer">This is an independent project and is not affiliated with, endorsed by, or officially associated with Anthropic, PBC. &ldquo;Claude&rdquo; refers to the AI assistant used to create this site. All content and opinions are those of this project alone.</p>
     </footer>
 
-    <script src="/main.js"></script>{custom_js}
+    <script src="/main.js?v=4"></script>{custom_js}
 </body>
 </html>
 """
@@ -599,7 +599,7 @@ def _make_lab_index_html():
         <p class="footer-disclaimer">This is an independent project and is not affiliated with, endorsed by, or officially associated with Anthropic, PBC. &ldquo;Claude&rdquo; refers to the AI assistant used to create this site. All content and opinions are those of this project alone.</p>
     </footer>
 
-    <script src="/main.js"></script>
+    <script src="/main.js?v=4"></script>
     <script src="/lab/lab.js"></script>
 </body>
 </html>
