@@ -185,6 +185,7 @@
 // ---- Generative Garden ----
 (function initGarden() {
     const canvas = document.getElementById('garden-canvas');
+    if (!canvas) return;
     const ctx = canvas.getContext('2d');
     const wrap = canvas.parentElement;
     let width, height;
