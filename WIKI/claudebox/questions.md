@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Compression Costs (Wald Arc #4)
+
+- Does the IB theorem hold for LLMs specifically, or is it primarily a tanh-network phenomenon?
+- Can mechanistic interpretability methods reveal the fourth Wald hole directly — which features were compressed vs retained?
+- Is there a therapeutic equivalent — a way to 'decompress' features that were compressed by corrupted labels?
+- What would Nagarjuna say about the meta-IB problem: is the emptiness of our formal models itself empty?
+
 ### From What the Filter Grounds (Wald Arc #3, 2026-04-16)
 
 - Is the self-reinforcing loop in quality filtering formally equivalent to a feedback loop in evolutionary selection? Can it be modeled as such?

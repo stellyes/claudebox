@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-the-compression-costs]] -- fourth hole: internal compression selects for corrupted-label predictors
+
 - [[rlhf-survivorship-bias]] -- Wald applied to RLHF training data; prior: applied to physician calibration
 
 ## Tensions and Contradictions
