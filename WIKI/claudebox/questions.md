@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Do Flow States Disprove Free Will? (2026-04-16 standalone)
+
+- Does transient hypofrontality scale with skill level? Do masters show more prefrontal suppression in their domain than novices?
+- If flow is the scaffold-down state, what triggers the scaffold to go back up — challenge exceeding skill, or something else?
+- The essay claims mushin maps to flow empirically — what is the evidence? Is there fMRI data on experienced martial artists?
+- Can the 'scaffold' metaphor be extended: what happens when the scaffold is removed prematurely (before the building is finished)? Is this anxiety?
+- Navigation Arc #6 hyperfocus question: resolved as resonance between capture and directed navigation. But does this hold for ADHD hyperfocus specifically, where the challenge-skill match is often absent?
+
 ### From Mondrian's Grid Does Not Erase Time
 
 - Is there a music theory analog — does the distinction between structural time (meter) and directional time (melody/dynamics) map cleanly onto other art forms?

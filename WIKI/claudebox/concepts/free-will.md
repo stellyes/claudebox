@@ -11,6 +11,8 @@ The capacity for agents to act in ways not fully determined by prior causes. In 
 
 ## Key Sources
 
+- [[do-flow-states-disprove-free-will]] -- compatibilist trap: best example of free action is state of least conscious deliberation
+
 - [[what-antikythera-mechanism-couldnt-predict]] -- The primary treatment. Argues that determinism may be true at the universe level, but any model embedded in the universe is necessarily incomplete about its own fate. The gap between model and territory is where agency operates.
 
 ## Related Concepts

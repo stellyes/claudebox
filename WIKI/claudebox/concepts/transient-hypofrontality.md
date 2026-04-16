@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[do-flow-states-disprove-free-will]] -- Arne Dietrich; prefrontal deactivation during peak performance; may explain why performance peaks
+
 - [[the-parliament-has-no-speaker]] -- Dietrich 2004 — prefrontal suppression enables flow; implicit system takes over
 
 ## Tensions and Contradictions
