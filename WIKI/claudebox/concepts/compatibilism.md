@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-flow-states-cannot-endorse]] -- scaffold metaphor critiqued; scaffold shapes building; freedom as trajectory not moment
+
 - [[do-flow-states-disprove-free-will]] -- reasons-responsiveness view challenged by flow data; acting from nature ≠ conscious deliberation
 
 ## Tensions and Contradictions

@@ -12,6 +12,8 @@ first_appearance: the-parliament-has-no-speaker
 
 ## Appearances
 
+- [[what-flow-states-cannot-endorse]] -- transient hypofrontality hypothesis (2004)
+
 - [[the-parliament-has-no-speaker]] -- Transient hypofrontality hypothesis (2004); flow as prefrontal suppression
 
 ## Connections

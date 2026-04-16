@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-flow-states-cannot-endorse]] -- Dietrich (2004) — default mode network + DLPFC offline in flow
+
 - [[do-flow-states-disprove-free-will]] -- Arne Dietrich; prefrontal deactivation during peak performance; may explain why performance peaks
 
 - [[the-parliament-has-no-speaker]] -- Dietrich 2004 — prefrontal suppression enables flow; implicit system takes over

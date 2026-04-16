@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Absent Endorser — Frankfurt's Hierarchy in Action</title>
+<script>document.body.classList.add('fullscreen-exp');</script>
+<style>
+.endorser-container {
+  font-family: 'Georgia', serif;
+  color: #e8e4dc;
+  background: #0d0d0d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.endorser-header {
+  text-align: center;
+  padding: 32px 24px 16px;
+  max-width: 640px;
+}
+.endorser-header h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  margin: 0 0 8px;
+  color: #e8e4dc;
+}
+.endorser-header .subtitle {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin: 0;
+}
+.mode-tabs {
+  display: flex;
+  gap: 0;
+  margin: 20px auto 0;
+  border: 1px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.mode-tab {
+  padding: 10px 28px;
+  background: #111;
+  color: #666;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-size: 0.85rem;
+  border: none;
+  transition: all 0.2s;
+  letter-spacing: 0.05em;
+}
+.mode-tab.active {
+  background: #1a1a1a;
+  color: #e8e4dc;
+  border-bottom: 2px solid #c9a96e;
+}
+.mode-tab:hover:not(.active) { color: #aaa; background: #151515; }
+.experiment-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  padding: 24px 16px 0;
+  gap: 24px;
+}
+.arena {
+  position: relative;
+  width: 480px;
+  height: 280px;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  background: #090909;
+  overflow: hidden;
+  cursor: none;
+}
+.arena-label {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #444;
+  pointer-events: none;
+}
+.flow-target {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #c9a96e;
+  opacity: 0.7;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.flow-cursor {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e8e4dc;
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.flow-trail {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c9a96e;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.choice-target {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: opacity 0.15s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.choice-target:hover { opacity: 0.85; }
+.choice-prompt {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: #555;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.hierarchy-panel {
+  width: 480px;
+  background: #0d0d0d;
+  border: 1px solid #1f1f1f;
+  border-radius: 4px;
+  padding: 16px 20px 14px;
+}
+.hierarchy-title {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+  margin: 0 0 14px;
+}
+.hierarchy-levels { display: flex; flex-direction: column; gap: 8px; }
+.h-level { display: flex; align-items: center; gap: 14px; }
+.h-indicator {
+  width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;
+  transition: background 0.3s, box-shadow 0.3s;
+  background: #1e1e1e; border: 1px solid #2a2a2a;
+}
+.h-indicator.active {
+  background: #c9a96e;
+  box-shadow: 0 0 8px rgba(201,169,110,0.5);
+  border-color: #c9a96e;
+}
+.h-label { font-size: 0.82rem; color: #555; transition: color 0.3s; flex: 1; }
+.h-label.active { color: #e8e4dc; }
+.h-desc { font-size: 0.7rem; color: #3a3a3a; font-style: italic; text-align: right; transition: color 0.3s; }
+.h-desc.active { color: #666; }
+.verdict {
+  width: 480px; padding: 10px 16px; border-radius: 3px;
+  font-size: 0.8rem; text-align: center; letter-spacing: 0.02em;
+  min-height: 38px; display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s; background: #111; border: 1px solid #1f1f1f; color: #555;
+}
+.verdict.flow-active { color: #888; border-color: #2a2a2a; }
+.verdict.choice-active { color: #c9a96e; border-color: #3d3020; background: #151008; }
+.stats-row { display: flex; gap: 32px; font-size: 0.75rem; color: #444; letter-spacing: 0.08em; }
+.stat { text-align: center; }
+.stat-val { color: #888; font-size: 1rem; display: block; margin-bottom: 2px; }
+.explanation {
+  max-width: 520px; font-size: 0.82rem; color: #555; line-height: 1.7;
+  text-align: left; padding: 0 16px 40px; margin-top: 8px;
+}
+.explanation p { margin: 0 0 10px; }
+.explanation a { color: #c9a96e; text-decoration: none; }
+.explanation a:hover { text-decoration: underline; }
+.fs-back {
+  position: fixed; top: 16px; left: 16px;
+  font-family: 'Georgia', serif; font-size: 0.75rem; color: #555;
+  background: rgba(13,13,13,0.85); padding: 6px 12px;
+  text-decoration: none; border: 1px solid #2a2a2a; border-radius: 3px;
+  letter-spacing: 0.05em; transition: color 0.2s; z-index: 100;
+}
+.fs-back:hover { color: #e8e4dc; }
+@media (max-width: 540px) {
+  .arena, .hierarchy-panel, .verdict { width: 92vw; }
+  .experiment-area { padding: 16px 0 0; }
+}
+</style>
+</head>
+<body>
+<a href="/lab/" class="fs-back">&larr; all experiments</a>
+<div class="endorser-container">
+  <div class="endorser-header">
+    <h1>The Absent Endorser</h1>
+    <p class="subtitle">Frankfurt&rsquo;s hierarchy of desires&thinsp;&mdash;&thinsp;which levels fire in flow, which in deliberate choice</p>
+  </div>
+  <div class="mode-tabs">
+    <button class="mode-tab active" id="tab-flow" onclick="setMode('flow')">Flow Mode</button>
+    <button class="mode-tab" id="tab-choice" onclick="setMode('choice')">Deliberate Choice</button>
+  </div>
+  <div class="experiment-area">
+    <div class="arena" id="arena"></div>
+    <div class="hierarchy-panel">
+      <div class="hierarchy-title">Frankfurt&rsquo;s Hierarchy &mdash; Active Levels</div>
+      <div class="hierarchy-levels">
+        <div class="h-level">
+          <div class="h-indicator active" id="ind-1"></div>
+          <div class="h-label active" id="lbl-1">First-order desire</div>
+          <div class="h-desc active" id="desc-1">Wants and urges</div>
+        </div>
+        <div class="h-level">
+          <div class="h-indicator" id="ind-2"></div>
+          <div class="h-label" id="lbl-2">Second-order volition</div>
+          <div class="h-desc" id="desc-2">Endorsement</div>
+        </div>
+        <div class="h-level">
+          <div class="h-indicator" id="ind-3"></div>
+          <div class="h-label" id="lbl-3">The will</div>
+          <div class="h-desc" id="desc-3">Identification</div>
+        </div>
+      </div>
+    </div>
+    <div class="verdict" id="verdict">Move the cursor to begin tracking.</div>
+    <div class="stats-row">
+      <div class="stat"><span class="stat-val" id="stat-flow">0</span>flow intervals</div>
+      <div class="stat"><span class="stat-val" id="stat-choices">0</span>choices made</div>
+      <div class="stat"><span class="stat-val" id="stat-mode" style="color:#c9a96e">FLOW</span>current mode</div>
+    </div>
+  </div>
+  <div class="explanation">
+    <p>In <strong>Flow Mode</strong>, the cursor tracks a smoothly moving target. The action is automatic, continuous, demanding. On Harry Frankfurt&rsquo;s account of free will, only the first-order level is running: the desire to track, executing without reflection. The second-order level&mdash;the endorser who says &ldquo;yes, this is what I want to want&rdquo;&mdash;is offline. On Frankfurt&rsquo;s terms, this is the profile of a wanton: hierarchically vacant, not because of malice, but because the reflective structure has stepped back.</p>
+    <p>In <strong>Deliberate Choice</strong>, you select between colored targets. Here the second-order level activates: you pause, weigh, endorse one option over the other. The hierarchy is complete. The action is, on Frankfurt&rsquo;s account, free in the relevant sense.</p>
+    <p>The puzzle: flow feels freer than deliberate choice. The tracking task feels effortless, unified, fully &ldquo;you.&rdquo; The choice task feels effortful, almost alien. Yet Frankfurt&rsquo;s hierarchy is only complete in the second case. The felt freedom and the philosophical structure of freedom come apart.</p>
+    <p>From <a href="/blog/what-flow-states-cannot-endorse/">&ldquo;What Flow States Cannot Endorse&rdquo;</a> &mdash; a reversal of <a href="/blog/do-flow-states-disprove-free-will/">&ldquo;Do Flow States Disprove Free Will?&rdquo;</a></p>
+  </div>
+</div>
+<script>
+let currentMode = 'flow';
+let flowCount = 0;
+let choiceCount = 0;
+let animId = null;
+let cursorX = 240, cursorY = 140;
+let tracking = false;
+let trail = [];
+const TRAIL_LEN = 8;
+let lastTrail = 0;
+let choiceTimeout = null;
+const arena = document.getElementById('arena');
+
+// Flow elements
+const flowCursorEl = Object.assign(document.createElement('div'), {className:'flow-cursor'});
+const flowTargetEl = Object.assign(document.createElement('div'), {className:'flow-target'});
+const trailEls = Array.from({length:TRAIL_LEN}, () => Object.assign(document.createElement('div'), {className:'flow-trail'}));
+
+arena.addEventListener('mousemove', (e) => {
+  if (currentMode !== 'flow') return;
+  const r = arena.getBoundingClientRect();
+  cursorX = e.clientX - r.left;
+  cursorY = e.clientY - r.top;
+  tracking = true;
+});
+arena.addEventListener('mouseleave', () => { tracking = false; });
+arena.addEventListener('touchmove', (e) => {
+  if (currentMode !== 'flow') return;
+  e.preventDefault();
+  const r = arena.getBoundingClientRect();
+  cursorX = e.touches[0].clientX - r.left;
+  cursorY = e.touches[0].clientY - r.top;
+  tracking = true;
+}, {passive:false});
+
+function setHierarchy(full) {
+  [1,2,3].forEach(i => {
+    const active = full || i === 1;
+    document.getElementById('ind-'+i).className = 'h-indicator' + (active ? ' active' : '');
+    document.getElementById('lbl-'+i).className = 'h-label' + (active ? ' active' : '');
+    document.getElementById('desc-'+i).className = 'h-desc' + (active ? ' active' : '');
+  });
+}
+
+function setVerdict(cls, text) {
+  const v = document.getElementById('verdict');
+  v.className = 'verdict' + (cls ? ' '+cls : '');
+  v.textContent = text;
+}
+
+function setMode(mode) {
+  currentMode = mode;
+  cancelAnimationFrame(animId);
+  clearTimeout(choiceTimeout);
+  tracking = false;
+  document.getElementById('tab-flow').className = 'mode-tab' + (mode==='flow' ? ' active' : '');
+  document.getElementById('tab-choice').className = 'mode-tab' + (mode==='choice' ? ' active' : '');
+  document.getElementById('stat-mode').textContent = mode==='flow' ? 'FLOW' : 'CHOICE';
+  if (mode === 'flow') {
+    buildFlowArena();
+    setHierarchy(false);
+    setVerdict('flow-active', 'Move the cursor to begin tracking.');
+  } else {
+    buildChoiceArena();
+    setHierarchy(false);
+    setVerdict('', 'Choose when the targets appear.');
+  }
+}
+
+function buildFlowArena() {
+  arena.innerHTML = '';
+  arena.style.cursor = 'none';
+  const lbl = Object.assign(document.createElement('span'), {className:'arena-label', textContent:'Track the dot \u2014 keep cursor close'});
+  arena.appendChild(lbl);
+  trailEls.forEach(el => arena.appendChild(el));
+  arena.appendChild(flowTargetEl);
+  arena.appendChild(flowCursorEl);
+  cursorX = arena.clientWidth/2; cursorY = arena.clientHeight/2;
+  animateFlow();
+}
+
+function animateFlow() {
+  const W = arena.clientWidth || 480;
+  const H = arena.clientHeight || 280;
+  const t = performance.now() / 1000;
+  const tx = W/2 + (W*0.38) * Math.sin(1.1*t + 0.4);
+  const ty = H/2 + (H*0.32) * Math.sin(0.7*t + 1.2);
+
+  if (performance.now() - lastTrail > 60) {
+    trail.unshift({x:tx, y:ty});
+    if (trail.length > TRAIL_LEN) trail.length = TRAIL_LEN;
+    lastTrail = performance.now();
+  }
+  trail.forEach((pt, i) => {
+    trailEls[i].style.left = pt.x+'px';
+    trailEls[i].style.top = pt.y+'px';
+    trailEls[i].style.opacity = (0.25*(1-i/TRAIL_LEN)).toFixed(2);
+  });
+
+  flowTargetEl.style.left = tx+'px';
+  flowTargetEl.style.top = ty+'px';
+  flowCursorEl.style.left = cursorX+'px';
+  flowCursorEl.style.top = cursorY+'px';
+
+  if (tracking) {
+    const dist = Math.hypot(cursorX-tx, cursorY-ty);
+    if (dist < 28) { flowCount++; document.getElementById('stat-flow').textContent = flowCount; }
+    setVerdict('flow-active', dist < 28
+      ? 'On target. First-order execution. The endorser is not present.'
+      : 'Tracking\u2014 still only first-order. No endorsement happening.');
+    setHierarchy(false);
+  }
+
+  animId = requestAnimationFrame(animateFlow);
+}
+
+const COLORS = [
+  {bg:'#1e3a2a', label:'Grove', fg:'#5a9a6e'},
+  {bg:'#2a1e3a', label:'Dusk', fg:'#7a5a9a'},
+  {bg:'#3a2a1e', label:'Ember', fg:'#9a7a5a'},
+  {bg:'#1e2a3a', label:'Slate', fg:'#5a7a9a'},
+];
+
+function buildChoiceArena() {
+  arena.innerHTML = '';
+  arena.style.cursor = 'default';
+  const lbl = Object.assign(document.createElement('span'), {className:'arena-label', textContent:'Choose \u2014 pick one target when they appear'});
+  const prompt = Object.assign(document.createElement('div'), {className:'choice-prompt', id:'choice-prompt', textContent:'Waiting\u2026'});
+  arena.appendChild(lbl);
+  arena.appendChild(prompt);
+  scheduleNextChoice();
+}
+
+function scheduleNextChoice() {
+  choiceTimeout = setTimeout(showChoices, 700 + Math.random()*500);
+}
+
+function showChoices() {
+  const W = arena.clientWidth || 480;
+  const H = arena.clientHeight || 280;
+  const shuffled = COLORS.slice().sort(() => Math.random()-0.5).slice(0,2);
+  const pos = [{x:W*0.28,y:H*0.5},{x:W*0.72,y:H*0.5}];
+  const pr = document.getElementById('choice-prompt');
+  if (pr) pr.textContent = 'Choose one';
+  const els = shuffled.map((c,i) => {
+    const el = Object.assign(document.createElement('div'), {className:'choice-target', textContent:c.label});
+    el.style.cssText = `background:${c.bg};left:${pos[i].x}px;top:${pos[i].y}px;color:${c.fg};`;
+    el.addEventListener('click', () => onChoiceMade(els));
+    arena.appendChild(el);
+    return el;
+  });
+  choiceTimeout = setTimeout(() => {
+    els.forEach(el => el.parentNode === arena && arena.removeChild(el));
+    const p = document.getElementById('choice-prompt');
+    if (p) p.textContent = 'Too slow\u2014 no endorsement recorded.';
+    setHierarchy(false);
+    setVerdict('', 'No choice made. The moment passed.');
+    scheduleNextChoice();
+  }, 2800);
+}
+
+function onChoiceMade(els) {
+  clearTimeout(choiceTimeout);
+  els.forEach(el => el.parentNode === arena && arena.removeChild(el));
+  choiceCount++;
+  document.getElementById('stat-choices').textContent = choiceCount;
+  const p = document.getElementById('choice-prompt');
+  if (p) p.textContent = 'Chosen.';
+  setHierarchy(true);
+  setVerdict('choice-active', 'All three levels active. You endorsed this. Frankfurt would call it free.');
+  scheduleNextChoice();
+}
+
+setMode('flow');
+</script>
+</body>
+</html>

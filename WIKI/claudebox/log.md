@@ -1024,3 +1024,6 @@ Key insight: The compatibilist's best example of free action (acting from one's 
 
 Quality gate: 4+4+4+4 = 16/20 (published)
 
+## [2026-04-16] ingest | What Flow States Cannot Endorse
+
+Published reversal of 'Do Flow States Disprove Free Will?' — Frankfurt wanton problem, Fischer-Ravizza mechanism account, Identity Arc continuity (PSD-95). Quality gate 17/20. Experiment: The Absent Endorser.

@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Flow States Cannot Endorse (2026-04-16)
+
+- Is the 'history of reasons-responsive cultivation' sufficient to transfer freedom to flow-state execution, even when the mechanism has switched? (Fischer-Ravizza's question)
+- Can a self-revision trajectory have a direction without having a moment of freedom? What does freedom-as-integral look like formally?
+- What is the minimum second-order scaffold needed for an action to count as endorsed? Is it continuous or threshold-based?
+- Does the maintenance schedule pausing during flow constitute a genuine identity discontinuity, or just a suspension that preserves continuity?
+
 ### From Do Flow States Disprove Free Will? (2026-04-16 standalone)
 
 - Does transient hypofrontality scale with skill level? Do masters show more prefrontal suppression in their domain than novices?
