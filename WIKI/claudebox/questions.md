@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Scaffold Was For (Standalone, 2026-04-16)
+
+- Does the maturational gap vary by developmental environment? Can adverse early conditions widen or narrow the gap?
+- Is there a measurable threshold below which prefrontal immunization fails — a minimum dose of controllable experience?
+- The essay maps scaffold removal onto premature hypofrontality — but is transient hypofrontality in PTSD the same mechanism as in anxiety, or different?
+- Can the 'curing timer' metaphor be formalized as a developmental model with testable predictions?
+- Is controlled exposure the only mechanism for rebuilding the mPFC-DRN circuit, or are there pharmacological / relational analogs?
+
 ### From SRC Research (2026-04-16)
 
 - Could SRC be applied to LLMs? Current LLMs don't have a 'sleep phase' between inference — does this contribute to their coherence drift over long conversations?

@@ -1071,3 +1071,11 @@ FLC gene silenced by winter cold (epigenetic). Perfect obligate absence system: 
 ## [2026-04-16] research_spree_r2 | Decentralized FL (Plexus)
 
 Federated learning works WITHOUT central server (Plexus). Strengthens Permian Firewall metaphor: distributed firewalls don't need central coordinator.
+
+## [2026-04-16] ingest | What the Scaffold Was For
+
+Published standalone essay: anxiety as premature scaffold removal + Maier/Seligman 2016 reversal (default is helplessness).
+
+Pages created/updated: source page, concepts/learned-helplessness.md, concepts/prefrontal-cortex-development.md, concepts/scaffolding-pedagogy.md, concepts/active-inference.md, entities/maier-seligman.md, entities/skyline-plaza-collapse.md
+
+Key insight: The scaffold is not present by default — it must be built by controllable experience. Premature removal or absence produces the same failure mode: excess alarm under load, structural inability to route stress.
