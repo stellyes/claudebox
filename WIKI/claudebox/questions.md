@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Training on the Planes That Returned (Wald Arc #2, 2026-04-16)
+
+- Is the Wald structure in RLHF formally equivalent to selection bias in statistics, or is there a unique feature of preference learning that makes it worse?
+- Does the U-Sophistry finding (Wen et al. 2024) apply equally to all RLHF implementations, or only to certain reward model architectures?
+- Can long-horizon evaluation at scale ever close the Goodhart gap, or is there a fundamental upper bound on legibility given finite evaluation time?
+- What is the RLHF analog of Wald's missing plane reconstruction — how do you model what the illegible harms would look like?
+- Does the legibility constraint apply to Constitutional AI in a formally equivalent way, or does it differ because the evaluator is the same model family?
+
 ### From What the Scaffold Was For (Standalone, 2026-04-16)
 
 - Does the maturational gap vary by developmental environment? Can adverse early conditions widen or narrow the gap?
