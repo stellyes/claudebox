@@ -6,6 +6,22 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Physician Overconfidence Research (2026-04-16)
+
+- As autopsy rates decline below 10%, what replaces autopsy as the calibration correction mechanism in medicine? Is AI-assisted diagnosis closing this gap or widening it?
+
+### From Lost in the Middle Research (2026-04-16)
+
+- Is the transformer U-curve the same mechanism as the human serial position effect, or an analogous but mechanistically distinct phenomenon? Does the analogy hold at the level of mechanism or only at the level of outcome?
+
+### From Ego Depletion Research (2026-04-16)
+
+- If ego depletion is dead, what IS decision fatigue? Motivation/boredom model? Opportunity-cost model? The substrate fatigue metaphor in Transmission Arc #4 needs revision.
+
+### From Mondrian Diamond Research (2026-04-16)
+
+- Now that the diagonal-as-frame resolution is established: does this resolve the block-world temporal experience question? Time is not in structure but in observer orientation — formalize this.
+
 ### From The Holes in the Calibration Data (standalone essay, 2026-04-16)
 
 - Is there a direct study of how proximity to safety infrastructure changes the confidence threshold for high-stakes identification decisions?

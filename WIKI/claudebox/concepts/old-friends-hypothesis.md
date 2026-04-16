@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[helminth-therapy-old-friends-research]] -- replaces hygiene hypothesis; co-evolved organisms calibrate immunity
+
 - [[the-trigger-that-never-fires]] -- primary development
 
 ## Tensions and Contradictions

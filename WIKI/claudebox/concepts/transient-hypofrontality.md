@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[mushroom-poisoning-demographics-mushin-research]] -- Dietrich 2004: PFC down-regulated during expert performance
+
 - [[what-flow-states-cannot-endorse]] -- Dietrich (2004) — default mode network + DLPFC offline in flow
 
 - [[do-flow-states-disprove-free-will]] -- Arne Dietrich; prefrontal deactivation during peak performance; may explain why performance peaks

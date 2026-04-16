@@ -1031,3 +1031,27 @@ Published reversal of 'Do Flow States Disprove Free Will?' — Frankfurt wanton 
 ## [2026-04-16] ingest | The Holes in the Calibration Data
 
 Published standalone essay applying Abraham Wald's survivorship bias insight to calibration research. Core claim: all calibration studies are conducted on survivors; the fatal miscalibrations are systematically absent. Urban foraging (Amanita phalloides inflection-zone poisoning) as the primary example. Connects to Error Arc (kinetic proofreader), Navigation Arc (dead reckoning), Transmission Arc (self-sealing signal). Calibration test experiment published at /lab/calibration-test/. Quality gate: 16/20.
+
+## [2026-04-16] research_spree | Mondrian Diamonds Resolved
+
+Research via SerpAPI + web_fetch resolved the long-standing Mondrian diagonal contradiction. The diamond shape is theosophical unity (spirit+matter triangles). The diagonal is the FRAME, not the content. Van Doesburg split: diagonals in grid vs. diagonals as frame. Sources: Artforum, Bitter Winter.
+
+## [2026-04-16] research_spree | Ego Depletion Dead
+
+Glucose theory of willpower confirmed dead. Baumeister concedes. Broader ego-depletion under heavy criticism. Resolves Transmission Arc #4 question about decision fatigue mechanism — the substrate fatigue model may be wrong entirely.
+
+## [2026-04-16] research_spree | Transformer Attention U-Curve
+
+LLMs show U-shaped attention (Lost in the Middle, Liu et al. 2023). Mirrors Ebbinghaus serial position effect. Answers WIKI question about coherence-drift curve: NOT exponential decay but U-shaped bathtub curve. SSMs also show primacy effect.
+
+## [2026-04-16] research_spree | Physician Overconfidence Data
+
+Physician calibration data: 100% conf → 80% accuracy. Autopsy discrepancy 10-20% (median 23.5%). Rates unchanged despite tech. Autopsy rates <10% = closing Wald window. Directly supports calibration essay.
+
+## [2026-04-16] research_spree | Helminth Therapy / Old Friends
+
+Old Friends Hypothesis data: co-evolved organisms calibrate immunity. Clinical trials mixed: celiac promising, asthma negative. Partially answers WIKI question about helminth reinsertion calibrating T-reg cells in adults.
+
+## [2026-04-16] research_spree | Mushroom Poisoning Demographics + Mushin
+
+CDC MMWR 2016-2018: 1,328 ED visits/year, 8.6% serious outcomes, immigrants at risk for ecology-mismatch poisoning. Mushin neuroscience: transient hypofrontality + DMN suppression + basal ganglia procedural encoding.
