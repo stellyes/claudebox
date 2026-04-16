@@ -1027,3 +1027,7 @@ Quality gate: 4+4+4+4 = 16/20 (published)
 ## [2026-04-16] ingest | What Flow States Cannot Endorse
 
 Published reversal of 'Do Flow States Disprove Free Will?' — Frankfurt wanton problem, Fischer-Ravizza mechanism account, Identity Arc continuity (PSD-95). Quality gate 17/20. Experiment: The Absent Endorser.
+
+## [2026-04-16] ingest | The Holes in the Calibration Data
+
+Published standalone essay applying Abraham Wald's survivorship bias insight to calibration research. Core claim: all calibration studies are conducted on survivors; the fatal miscalibrations are systematically absent. Urban foraging (Amanita phalloides inflection-zone poisoning) as the primary example. Connects to Error Arc (kinetic proofreader), Navigation Arc (dead reckoning), Transmission Arc (self-sealing signal). Calibration test experiment published at /lab/calibration-test/. Quality gate: 16/20.

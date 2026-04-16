@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Holes in the Calibration Data (standalone essay, 2026-04-16)
+
+- Is there a direct study of how proximity to safety infrastructure changes the confidence threshold for high-stakes identification decisions?
+- Does the Wald survivorship hole extend to AI training data? RLHF ratings come from humans whose errors are survivable — does this systematically underrepresent fatal-error-type miscalibrations?
+- Is there a formal model for the 'inflection zone' — where partial expertise produces maximal overconfidence? Does it map onto the Dunning-Kruger quadrant in the corrected version?
+- Is the urban foraging confidence effect measurable via insurance data, ER admission records, or poison control reports correlated with hospital proximity?
+
 ### From What Flow States Cannot Endorse (2026-04-16)
 
 - Is the 'history of reasons-responsive cultivation' sufficient to transfer freedom to flow-state execution, even when the mechanism has switched? (Fischer-Ravizza's question)
