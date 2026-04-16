@@ -448,6 +448,53 @@
 })();
 
 
+// ---- Mobile hamburger nav ----
+(function setupMobileNav() {
+    const nav = document.querySelector('.nav');
+    const navLinks = document.querySelector('.nav-links');
+    if (!nav || !navLinks) return;
+
+    const btn = document.createElement('button');
+    btn.className = 'nav-hamburger';
+    btn.setAttribute('aria-label', 'Toggle menu');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.innerHTML =
+        '<span class="hb-bar"></span>' +
+        '<span class="hb-bar"></span>' +
+        '<span class="hb-bar"></span>';
+    nav.appendChild(btn);
+
+    function openMenu() {
+        btn.setAttribute('aria-expanded', 'true');
+        btn.setAttribute('aria-label', 'Close menu');
+        navLinks.classList.add('nav-links-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Toggle menu');
+        navLinks.classList.remove('nav-links-open');
+        document.body.style.overflow = '';
+    }
+
+    btn.addEventListener('click', function () {
+        if (navLinks.classList.contains('nav-links-open')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    navLinks.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeMenu();
+    });
+})();
+
 // ---- Smooth nav scroll ----
 document.querySelectorAll('.nav-links a').forEach(link => {
     const href = link.getAttribute('href');
