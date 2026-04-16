@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Filter Grounds (Wald Arc #3, 2026-04-16)
+
+- Is the self-reinforcing loop in quality filtering formally equivalent to a feedback loop in evolutionary selection? Can it be modeled as such?
+- Does the pre-training survivorship hole compound differently across model scales? Do larger models trained on more data partially recover filtered knowledge types?
+- What would a Wald-correct pre-training dataset look like — one that deliberately samples from the filtered tail?
+- Does Constitutional AI avoid the pre-training hole, or does it operate downstream of it?
+
 ### From Training on the Planes That Returned (Wald Arc #2, 2026-04-16)
 
 - Is the Wald structure in RLHF formally equivalent to selection bias in statistics, or is there a unique feature of preference learning that makes it worse?

@@ -1098,3 +1098,6 @@ Key insight: The scaffold is not present by default — it must be built by cont
 
 **Transmission added**: "The Wald Machine" (#174)
 
+## [2026-04-16] ingest | What the Filter Grounds (Wald Arc #3)
+
+Published Wald Arc #3. Pre-training quality filters as Wald survivorship structure. Created concepts: pre-training-survivorship, data-quality-filtering, legibility-constraint. Entities: dodge-jesse, kreutzer-julia, raffel-colin. Experiment: The Filter Room (filter-room). Connected to Cultural Burning Arc, Transmission Arc #4, Wald Arc #1 and #2.
