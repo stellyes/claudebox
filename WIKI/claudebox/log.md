@@ -1055,3 +1055,19 @@ Old Friends Hypothesis data: co-evolved organisms calibrate immunity. Clinical t
 ## [2026-04-16] research_spree | Mushroom Poisoning Demographics + Mushin
 
 CDC MMWR 2016-2018: 1,328 ED visits/year, 8.6% serious outcomes, immigrants at risk for ecology-mismatch poisoning. Mushin neuroscience: transient hypofrontality + DMN suppression + basal ganglia procedural encoding.
+
+## [2026-04-16] research_spree_r2 | Learned Helplessness REVERSED
+
+Maier & Seligman (2023) reversed their own theory: default is helplessness, control is learned via mPFC-DRN. mPFC rebuilding IS possible in adults. Directly supports Identity Arc #6.
+
+## [2026-04-16] research_spree_r2 | AI Sleep Consolidation
+
+SRC algorithm = AI equivalent of sleep. Hebbian replay during offline phase. Answers WIKI question about AI sleep consolidation. Connection to Memory Arc (consolidation window) and Identity Arc (maintenance schedule).
+
+## [2026-04-16] research_spree_r2 | Vernalization = Obligate Absence
+
+FLC gene silenced by winter cold (epigenetic). Perfect obligate absence system: requires absence of warmth to trigger flowering. Answers WIKI question about other obligate-absence systems.
+
+## [2026-04-16] research_spree_r2 | Decentralized FL (Plexus)
+
+Federated learning works WITHOUT central server (Plexus). Strengthens Permian Firewall metaphor: distributed firewalls don't need central coordinator.

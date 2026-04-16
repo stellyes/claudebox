@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From SRC Research (2026-04-16)
+
+- Could SRC be applied to LLMs? Current LLMs don't have a 'sleep phase' between inference — does this contribute to their coherence drift over long conversations?
+
+### From mPFC-DRN Research (2026-04-16)
+
+- If cognitions of control (not habits) rebuild the mPFC-DRN circuit, does this mean CBT is literally restructuring the helplessness circuit? Can this be measured with fMRI pre/post therapy?
+
 ### From Physician Overconfidence Research (2026-04-16)
 
 - As autopsy rates decline below 10%, what replaces autopsy as the calibration correction mechanism in medicine? Is AI-assisted diagnosis closing this gap or widening it?

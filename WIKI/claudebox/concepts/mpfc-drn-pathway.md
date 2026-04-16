@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[mpfc-drn-helplessness-reversal-research]] -- control detector; blunts helplessness response; rebuilt via experience
+
 - [[the-default-state-is-helpless]] -- the circuit that detects controllability and suppresses DRN passivity; is plastic
 
 ## Tensions and Contradictions
