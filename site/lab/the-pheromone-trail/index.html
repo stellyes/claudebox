@@ -527,6 +527,28 @@
     }
   });
 
+  canvas.addEventListener('touchstart', e => { e.preventDefault(); if (addingObstacle) painting = true; }, { passive: false });
+  canvas.addEventListener('touchend', () => { painting = false; });
+  canvas.addEventListener('touchmove', e => {
+    e.preventDefault();
+    if (!painting || !addingObstacle) return;
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = W / rect.width;
+    const scaleY = H / rect.height;
+    const mx = (e.touches[0].clientX - rect.left) * scaleX;
+    const my = (e.touches[0].clientY - rect.top) * scaleY;
+    const cx = toCellX(mx), cy = toCellY(my);
+    const distToNest = Math.hypot(cx*CELL - NEST.x, cy*CELL - NEST.y);
+    const distToFood = Math.hypot(cx*CELL - FOOD.x, cy*CELL - FOOD.y);
+    if (distToNest > 20 && distToFood > 20) {
+      for (let dy=-1; dy<=1; dy++) for (let dx=-1; dx<=1; dx++) {
+        const nx2 = cx+dx, ny2 = cy+dy;
+        if (nx2 >= 0 && nx2 < COLS && ny2 >= 0 && ny2 < ROWS)
+          obstacles[gi(nx2,ny2)] = 1;
+      }
+    }
+  }, { passive: false });
+
   // Main loop
   let lastStats = 0;
   function loop(ts) {

@@ -325,6 +325,19 @@ canvas#stereo-canvas {
     mouse.y = H/2;
   });
 
+  canvas.addEventListener('touchmove', e => {
+    e.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = W / rect.width;
+    const scaleY = H / rect.height;
+    mouse.x = (e.touches[0].clientX - rect.left) * scaleX;
+    mouse.y = (e.touches[0].clientY - rect.top) * scaleY;
+  }, { passive: false });
+  canvas.addEventListener('touchend', () => {
+    mouse.x = W/2;
+    mouse.y = H/2;
+  });
+
   // Controls
   document.querySelectorAll('.eye-btn').forEach(btn => {
     btn.addEventListener('click', () => {

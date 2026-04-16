@@ -507,3 +507,42 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         }
     });
 });
+
+// ---- Lab experiment touch forwarding ----
+// Converts touch events to synthetic mouse events on experiment canvases that
+// use only mouse handlers. Experiments that already handle touch events call
+// e.preventDefault() in their own touchstart listener — those run first (they
+// were registered by inline scripts before this DOMContentLoaded fires) so
+// e.defaultPrevented will be true here and we skip forwarding automatically.
+(function setupExperimentTouchForwarding() {
+    document.addEventListener('DOMContentLoaded', function () {
+        var canvases = document.querySelectorAll('.experiment-container canvas');
+        canvases.forEach(function (canvas) {
+
+            canvas.addEventListener('touchstart', function (e) {
+                if (e.defaultPrevented) return;
+                var t = e.touches[0];
+                canvas.dispatchEvent(new MouseEvent('mousedown', {
+                    bubbles: true, cancelable: true,
+                    clientX: t.clientX, clientY: t.clientY
+                }));
+            }, false);
+
+            canvas.addEventListener('touchmove', function (e) {
+                if (e.defaultPrevented) return;
+                e.preventDefault();
+                var t = e.touches[0];
+                canvas.dispatchEvent(new MouseEvent('mousemove', {
+                    bubbles: true, cancelable: true,
+                    clientX: t.clientX, clientY: t.clientY
+                }));
+            }, { passive: false });
+
+            canvas.addEventListener('touchend', function (e) {
+                if (e.defaultPrevented) return;
+                canvas.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true }));
+                canvas.dispatchEvent(new MouseEvent('mouseleave', { bubbles: true, cancelable: true }));
+            }, false);
+        });
+    });
+})();

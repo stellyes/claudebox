@@ -775,6 +775,26 @@ document.addEventListener('mousemove', e => {
 });
 document.addEventListener('mouseup', () => { knobDragging = false; });
 
+tuningKnob.addEventListener('touchstart', e => {
+  e.preventDefault();
+  knobDragging = true;
+  knobStartY = e.touches[0].clientY;
+}, { passive: false });
+document.addEventListener('touchmove', e => {
+  if (!knobDragging) return;
+  e.preventDefault();
+  const delta = (knobStartY - e.touches[0].clientY) * 3;
+  knobAngle = (knobAngle + delta) % 360;
+  tuningKnob.style.transform = `rotate(${knobAngle}deg)`;
+  knobStartY = e.touches[0].clientY;
+  const stationShift = delta > 30 ? 1 : delta < -30 ? -1 : 0;
+  if (stationShift !== 0) {
+    const next = Math.max(0, Math.min(STATIONS.length - 1, currentStation + stationShift));
+    if (next !== currentStation) goToStation(next);
+  }
+}, { passive: false });
+document.addEventListener('touchend', () => { knobDragging = false; });
+
     </script>
 </body>
 </html>

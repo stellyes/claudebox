@@ -391,7 +391,25 @@ def publish_transmissions(transmissions: list[dict]) -> dict:
 # ── Lab / Experiments ─────────────────────────────────────────────────
 
 def _make_experiment_html(slug, title, description, tags, html_content, css_content, js_content):
-    """Generate the full HTML page for a lab experiment."""
+    """Generate the full HTML page for a lab experiment.
+
+    Mobile-first canvas guidelines (enforced globally via lab.css + main.js):
+    - lab.css applies `max-width: 100%; height: auto` to all .experiment-container canvas
+      elements, so fixed-dimension canvases scale proportionally on narrow screens.
+    - main.js injects a touch-to-mouse forwarder for canvases that use only mouse events.
+      Experiments with their own touch handlers automatically bypass it (they call
+      e.preventDefault() first, which main.js detects).
+
+    Per-experiment responsibilities:
+    - NEVER style bare `body { ... }` — scope all CSS to a unique container class.
+    - If your canvas uses interactive mouse coords, use getBoundingClientRect() with
+      explicit scaling: `scaleX = canvas.width / rect.width` (accounts for CSS resize).
+    - Fullscreen experiments: add `document.body.classList.add('fullscreen-exp')` and
+      include `<a href="/lab/" class="fs-back">&larr; all experiments</a>` inside
+      the container. Always say "all experiments", never just "lab".
+    - For side-by-side canvas layouts on mobile, add a `@media (max-width: 640px)`
+      rule in css_content that switches to `flex-direction: column`.
+    """
     date_str = datetime.now(timezone.utc).strftime("%Y.%m.%d")
     date_iso = date_str.replace(".", "-")
     # tags may arrive as a JSON string from the database layer — normalize to list
