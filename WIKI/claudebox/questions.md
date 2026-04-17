@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Forest Had a Navigator (Navigation Arc #10)
+
+- Can mycorrhizal network topology be used as a proxy for recovering lost indigenous management practices — a kind of reverse archaeology?
+- Kimmerer's sweetgrass experiment: does the mechanism extend to mycorrhizal root colonization specifically? Any direct studies?
+- If terra preta soils (Amazonian Dark Earth) have measurably higher fungal diversity, could replication of terra preta creation methods serve as a mycorrhizal restoration technique?
+- The fourth navigation mode (co-evolutionary external navigator) — does it appear in any human-designed systems outside ecology? Factory floor layout shaping worker behavior across generations?
+
 ### From The Code That Predates Shannon (Encoding Arc #1)
 
 - If the wobble position is the primary error-correction layer, what is the information-theoretic cost of removing it (using an expanded genetic code with more amino acids)?

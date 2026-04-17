@@ -1152,3 +1152,11 @@ Published Knowledge Arc #6 (capstone). Four-tier archive framework completed wit
 Published Encoding Arc #1. The genetic code as cryptographic system: wobble position = channel coding theorem; central dogma = one-way function; mismatch repair = Landauer erasure; Nirenberg 1961 = known-plaintext attack; DNA Fountain 2017 = fountain codes. Companion experiment: The Codon Decoder (/lab/codon-decoder/). Quality gate: 16/20 (N:4 G:5 C:4 SV:3).
 
 Pages created/updated: source page, concepts (wobble-position, channel-coding-theorem, dna-data-storage, one-way-encoding, genetic-code-cryptography), entities (marshall-nirenberg, har-gobind-khorana, yaniv-erlich, george-church). Connected to Landauer (cost-of-forgetting), generative archive (copying-problem), embedded archive (what-the-archive-cannot-hold).
+
+## [2026-04-17] ingest | The Forest Had a Navigator (Navigation Arc #10)
+
+Published Navigation Arc #10 — against Nav Arc #3's navigator-free claim.
+New concept: co-evolutionary external navigator (fourth navigation mode).
+Quality gate: 18/20 (Novelty 4, Grounding 5, Connections 5, Search Value 4).
+Experiment: The Managed Network (/lab/managed-network/).
+Transmission: 'The navigator was always there.'

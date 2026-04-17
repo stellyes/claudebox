@@ -54,6 +54,8 @@ The 2025 Nature paper (van den Hoogen, Van Nuland et al.) found:
 
 ## Key Sources
 
+- [[the-forest-had-a-navigator]] -- Navigator-free claim revised: indigenous management shapes gradients
+
 - [[what-the-fungus-knows-20260409]] — Navigation Arc #3; introduces the legibility/coupling trade-off
 - Arctic expedition: SPUN / Michael Van Nuland, Dalton Highway 2025 (via Quanta Magazine, 2026-04-06)
 - [[fringe-cognitive-load-theory-20260409]] — tangentially; touches on how knowledge complexity is managed
