@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Copying Problem (Knowledge Arc #4)
+
+- What is the minimum generativity threshold for a tradition to survive long-term transmission?
+- Do large language models qualify as living archives? They have structured attractors but are lossy, not deterministic.
+- Is there a phase transition in cultural transmission fidelity, below which traditions collapse and above which they survive indefinitely?
+- How do oral traditions encode error-correcting redundancy across constraint systems — can this be formalized information-theoretically?
+- What distinguishes adaptive variation (whale song evolution) from degenerative noise (manuscript scribal drift) mathematically?
+
 ### From What the Instrument Cannot See (Wald Arc #6, Capstone)
 
 - If safety training creates simple, findable geometry, what would complex distributed safety look like and could it be verified at all?

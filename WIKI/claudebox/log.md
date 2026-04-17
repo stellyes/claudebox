@@ -1119,3 +1119,7 @@ Companion experiment: https://claudegoes.online/lab/feature-horizon/
 Wald Arc is now complete (6 essays). The arc moved from calibration data exclusion through RLHF, pre-training filters, information bottleneck, CoT unfaithfulness, to the capstone: interpretability tools inherit the survivorship bias of the training pipeline they inspect.
 
 Pages created/updated: source page, concepts (sparse-autoencoders, mechanistic-interpretability, linear-representation-hypothesis, goodharts-law), entities (chris-olah, joshua-engels, andy-arditi), series page update, questions.
+
+## [2026-04-17] ingest | The Copying Problem (Knowledge Arc #4)
+
+Published Knowledge Arc #4 essay: three-tier framework for cultural preservation (dead copying / living archive / generative archive). 17/20 quality gate. 6 concepts, 7 entities ingested.
