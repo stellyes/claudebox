@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Instrument Cannot See (Wald Arc #6, Capstone)
+
+- If safety training creates simple, findable geometry, what would complex distributed safety look like and could it be verified at all?
+- Can the Wald frame be used to design interpretability tools that are sensitive to features that selection pressure typically removes?
+- Is the feature-discovery horizon fundamentally unbounded, or is there a principled stopping point for SAE scaling?
+- What does Wald-informed alignment look like: what would it mean to armor the parts with no bullet holes?
+
 ### From Wald Arc #5: What the Model Cannot Show
 
 - Does activation patching give a more faithful picture than CoT, or does it face analogous Wald problems?

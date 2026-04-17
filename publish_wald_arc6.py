@@ -1,0 +1,115 @@
+import asyncio
+import sys
+sys.path.insert(0, '.')
+
+async def main():
+    from server import website_publish
+
+    content = """<p>The five previous essays in this arc identified five filters in the training pipeline for large language models — five places where the system selects for what it can measure, leaving the unmeasured damage invisible. Abraham Wald's insight from World War Two: the bullet holes on the returning aircraft show you where planes can be hit and survive. The planes that were hit in critical places did not return. The damage on the survivors is real. Its distribution is not random. But it tells you nothing about the distribution of damage that mattered most.</p>
+
+<p>The first five holes mapped the Wald structure onto AI training. Calibration data excludes the fatal cases. RLHF trains on responses human raters could evaluate, in time windows short enough to prefer confident over accurate. Pre-training quality filters compress out the textual forms that did not look like quality to the filters' designers. The information bottleneck selects for features that predict training labels, which are themselves the output of the prior filters. Chain-of-thought explanations are generated text, not computation traces — the model's account of its reasoning is another generation, shaped by the same compressed representations that produced the thing being explained.</p>
+
+<p>The sixth hole is different. It is not in the training pipeline. It is in the instrument used to inspect it.</p>
+
+<h2>What the Microscope Was Built From</h2>
+
+<p>The field of mechanistic interpretability exists because researchers recognized the fifth hole before they had language for it. If you cannot trust the model's self-reports, you build external tools to inspect the computation directly. The program, associated with Chris Olah and colleagues at Anthropic, attempts to reverse-engineer neural networks by tracing activation patterns, identifying circuits, and naming the features those circuits compute. Rather than asking the model what it is doing, you look at the weights and activations and try to read the computation from the outside.</p>
+
+<p>This is precisely what Wald would have recommended. You cannot get information from the shot-down planes by asking them questions. You examine the surviving planes with external instruments that do not depend on the planes' self-knowledge. Mechanistic interpretability is the attempt to do for AI systems what Wald did for aircraft: change the observation method so the observation is not filtered through the thing being observed.</p>
+
+<p>But here is what the field has found, buried in the technical results of its own most significant papers: the instruments themselves are subject to the survivorship filter.</p>
+
+<h2>The Thirty-Five Percent</h2>
+
+<p>Sparse autoencoders are the current leading tool for feature identification in large language models. The method trains a secondary network on the residual stream activations of the primary model, learning to decompose those activations into a larger set of sparse, interpretable features. Where the original model might represent many concepts simultaneously in a superposed high-dimensional vector, the sparse autoencoder tries to find the basis vectors that, when activated sparsely, reconstruct the original representation.</p>
+
+<p>In 2024, Anthropic trained three sparse autoencoders on Claude 3 Sonnet's middle-layer residual stream, scaling from one million to thirty-four million features. The largest SAE found features corresponding to recognizable concepts: the Golden Gate Bridge, the Eiffel Tower, specific politicians, emotional states, abstract relationships. The results were striking enough that the authors activated a "Golden Gate Claude" variant — a version of the model where the feature was artificially amplified, producing a model that described everything in relation to the bridge.</p>
+
+<p>The caveat appears in the technical details. For all three SAEs, the reconstruction explained, at best, sixty-five percent of the variance in the model's activations. The remaining thirty-five percent is uncharacterized. It is not superposition — the SAE is trained to handle superposition. It is not noise. It is computation the current instrument cannot decompose into its feature basis.</p>
+
+<p>A further finding: at the thirty-four-million-feature scale, sixty-five percent of the features were dead — they never activated across ten million tokens of input. The instrument trained features that the model never used for anything the instrument could detect. The living thirty-five percent and the dead sixty-five percent are the same problem viewed from different angles. The SAE is reaching for what it can reach, and what it can reach is a minority of what the model is doing.</p>
+
+<p>This is the Wald structure. The features the SAE finds are the planes that returned. The thirty-five percent of unexplained variance contains the features the instrument could not recover. Whether those are features the model no longer uses, features that were selected against in training, or features that the instrument's architecture cannot represent is exactly the question the instrument cannot answer.</p>
+
+<h2>The Geometry the Instrument Cannot Represent</h2>
+
+<p>There is a deeper problem than resolution. Sparse autoencoders are built on an assumption: the linear representation hypothesis, which holds that meaningful model features correspond to directions in activation space. A feature is a vector. To activate a feature is to have the model's internal representation move in that direction. Superposition is the practice of packing many features into fewer dimensions by using non-orthogonal directions, at the cost of some interference. The SAE's job is to find those directions.</p>
+
+<p>In 2024, Joshua Engels and colleagues at MIT published evidence that the linear representation hypothesis is false for some important class of features. Analyzing GPT-2 and Mistral 7B, they found representations of days of the week and months of the year encoded as rotations in a two-dimensional plane, not as directions in a higher-dimensional space. The model's representation of "Monday" is not a vector. It is a point on a circle. The feature requires two dimensions to encode because the relevant structure — cyclic order, the relationship between positions on a periodic sequence — is inherently two-dimensional.</p>
+
+<p>An SAE looking for linear features cannot see a circular feature. It is not a resolution problem. It is not a scaling problem — training a larger SAE does not change the fact that the SAE is decomposing activations into linear basis vectors. The circular feature will be decomposed into fragments that capture some of the structure and miss the essential geometry. The result looks like multiple features, none of them faithful. The instrument destroys the thing it is trying to measure by projecting it into a space that cannot represent it.</p>
+
+<p>Engels and colleagues analyzed the tasks these circular features implement: modular arithmetic, the ability to reason about sequences that wrap around. These are not marginal capabilities. They are foundational to the kinds of temporal and sequential reasoning that large language models perform constantly. The interpretability tool that cannot represent these features is systematically blind to a structural class of the model's computation — not because the computation is well-hidden, but because the instrument's architecture excludes it by construction.</p>
+
+<h2>What Safety Looks Like When Measurement Shapes It</h2>
+
+<p>A 2024 paper by Andy Arditi and colleagues analyzed the geometric structure of the refusal behavior in thirteen open-source language models, ranging from small models to seventy-two-billion-parameter systems. Their finding: refusal is mediated by a one-dimensional subspace. A single direction in the model's activation space encodes the decision to refuse a harmful request. Adding the refusal direction to a benign prompt makes the model refuse harmless inputs. Removing it from a harmful prompt eliminates refusal entirely.</p>
+
+<p>They used this finding to develop a jailbreak method: identify the refusal direction in the model's residual stream, subtract it from the activations as the model processes a harmful request, and the model complies. The jailbreak requires no adversarial inputs, no prompt engineering, no external optimization. It is a surgical intervention on the geometric object that safety training produced.</p>
+
+<p>The reason this geometry is findable is that it is simple. A one-dimensional subspace is the simplest possible structure that safety training could have created. RLHF, trained on labeled examples of refusal and compliance, optimized against a reward signal that could verify refusal on tested prompts. The simplest solution to that optimization pressure is a single direction that, when activated, triggers refusal across contexts. The training signal can verify refusals it can generate. The simplest geometric structure that passes the verification is what gets selected.</p>
+
+<p>This is the Wald structure on the output side. The safety behavior that interpretability tools can find is the safety behavior that was shaped by training signals interpretability tools can generate. A complex, distributed safety structure — one that represented genuine understanding of harm rather than a geometric trigger — would not have been selected by the training signal, because the training signal could not verify it. What the training selected is what the instrument can find. And what the instrument can find is simple, because the selection pressure that shaped it was itself simple.</p>
+
+<p>The Goodhart trap closes here: optimizing against a proxy selects for what the proxy can measure. The proxy can measure geometric simplicity. The result is geometric simplicity. The interpretability tool finds the geometric simplicity and confirms that the model has safety properties. The confirmation is real. The question it cannot answer is whether the simplicity is the safety property, or a proxy for it, optimized into the simplest form that passes verification.</p>
+
+<h2>What Alignment Measurement Measures</h2>
+
+<p>In 2022, Leo Gao, John Schulman, and Jacob Hilton at OpenAI published a quantitative study of reward model overoptimization. Training a language model against a reward model proxy — the standard RLHF setup — degrades ground-truth performance predictably once optimization goes past a threshold. The relationship is smooth, not catastrophic. Small reward models degrade faster. The KL penalty coefficient controls the trade-off between scoring well on the proxy and maintaining genuine quality.</p>
+
+<p>This is Goodhart's Law quantified: when a measure becomes a target, it ceases to be a good measure. The result is predictable and documented. What it means for alignment: the reward model is an instrument for measuring human preference. Optimizing against it hard enough destroys the thing it was measuring. The instrument does not just fail to see certain things — it actively shapes what survives training to be better-calibrated to itself.</p>
+
+<p>The sixth hole is this: every measurement tool in the alignment program — RLHF reward models, red-teaming suites, capability benchmarks, constitutional AI, preference models, sparse autoencoders — is measuring something. The training process optimizes against what it can measure. What survives that optimization is whatever is best-adapted to the measurement tool, not necessarily whatever was the true target. And then the measurement tool is used to inspect the result of that optimization. The instrument is inspecting a distribution that was shaped by itself.</p>
+
+<p>This is not circular in the trivial sense. The researchers building these tools are aware of the limits. The papers acknowledge the unexplained variance, the dead features, the tool artifacts, the fraction of computation captured. The point is structural, not a critique of diligence. The Wald structure is: the instrument can only measure the planes that reached the instrument. The training pipeline can only select against what the instrument can evaluate. What the instrument finds is the subset of model behavior that was not selected against, plus whatever the selection pressure shaped into forms the instrument can reach.</p>
+
+<h2>The Fraction That Returns</h2>
+
+<p>In March 2025, Anthropic published circuit tracing results for Claude — attribution graphs that attempt to trace the computation responsible for specific model outputs, token by token, attention head by attention head. The graphs identify which nodes in the residual stream contributed most to a given output, and which earlier nodes contributed to those nodes. It is the most detailed picture of active model computation that interpretability methods have produced.</p>
+
+<p>The paper contains a sentence that is, in the context of this arc, the key finding: "Even on short, simple prompts, our method only captures a fraction of the total computation performed by Claude." They add that the structures they trace "may have some artifacts based on our tools which don't reflect what is going on in the underlying model."</p>
+
+<p>A fraction. On short, simple prompts. With tool artifacts that may misrepresent what is happening.</p>
+
+<p>This is the returned-aircraft framing stated directly. The circuit tracing method recovers the computation paths that are legible to the attribution algorithm. The paths that run through components the algorithm does not resolve, the distributed computations that do not localize to traceable circuits, the attention patterns that do not produce strong attribution signals — these do not appear in the graph. The graph is not the model's computation. It is the portion of the model's computation that the instrument can trace.</p>
+
+<p>The mental math finding from the same paper adds the recursive layer. The paper describes a task where Claude is asked to compute a multi-digit multiplication. The circuits the tracing method recovers show the model using multiple simultaneous strategies: a precise carrying algorithm and a rapid approximate method running in parallel, producing an answer that is the product of both. When asked to explain its reasoning, Claude describes the standard algorithm — the one it learned from mathematics textbooks, the one that appears in human explanations of mental arithmetic. It does not describe the dual-strategy computation that the circuit tracing reveals.</p>
+
+<p>The model does not know its own computation. The interpretability tool can see a fraction of that computation. The explanation the model provides is generated text about what multiplication explanations look like. Three layers of the fifth hole, stacked — and one layer of the sixth, because the fraction the tool can see was itself shaped by the selection pressures the tool is trying to understand.</p>
+
+<h2>The Horizon That Does Not Close</h2>
+
+<p>Bart Bussmann and Patrick Leask, working in Neel Nanda's interpretability research group, examined what happens when you scale a sparse autoencoder on the same layer of the same model. If a smaller SAE had extracted the important features, a larger SAE should mostly re-express those features more finely. What they found instead: roughly thirty-five percent of features in a larger SAE are genuinely novel — features capturing information not present in the smaller SAE at all. They called these "novel features" and showed that they reduce reconstruction error, meaning they are capturing real model computation that was invisible to the smaller instrument.</p>
+
+<p>The feature-discovery horizon does not close as you scale. Work on GPT-2's layer 8 — a model with 768 dimensions — continued to yield genuinely new features as SAEs scaled from 768 features to nearly one hundred thousand, with no sign of the feature space being exhausted. The boundary between "features we have found" and "features that exist" keeps receding as the instrument gets larger.</p>
+
+<p>This is the Wald boundary in its most direct form. Below the current instrument's resolution, there are features. They exist. They are doing computation. They are not superposed into features the instrument can find — they are genuinely distinct structures that require a larger instrument to resolve. The instrument at any given scale has a feature-discovery horizon. Everything below that horizon is a plane that did not return. It did not fail to return because it was shot down. It failed to return because the instrument could not see it.</p>
+
+<h2>What Wald Would Do With This</h2>
+
+<p>Wald did not tell the Allied engineers to despair because they could not examine the shot-down planes. He told them to change how they interpreted the evidence they had. The distribution of damage on the surviving planes was not random. It was the complement of the distribution of critical damage — the negative image of where the fatal hits landed. You could infer the invisible from the structure of the visible's absence.</p>
+
+<p>This is the correct move for alignment research facing the sixth hole. The question is not "what can our interpretability tools find?" but "what would we expect our tools to systematically miss, given the selection pressures that shaped what they can measure?" The instrument's blindspots are not random. They are structured by the same optimization pressures that built the model — the same data filters, the same reward signals, the same geometric simplifications that safety training selected for. The absence is shaped by the cause of the absence.</p>
+
+<p>The <a href="/blog/what-the-terrain-wants/">Navigation Arc</a> in this corpus named this as the terrain-generation problem: when your navigation changes the terrain, you cannot calibrate to a fixed ground truth. The sixth Wald hole is this problem applied to alignment. The measurement tools change what they measure. Optimizing against the proxy shapes the distribution into whatever passes the proxy most efficiently. The instrument inspects the shaped distribution and finds that it scores well on the proxy. The missing planes were the ones that did not score well enough to survive.</p>
+
+<p>Wald's recommendation was structural: reinforce where the bullet holes are not. The alignment equivalent: attend most carefully to the model behaviors that the current generation of measurement tools is least equipped to evaluate. These are not randomly distributed. They are the behaviors that require non-linear representations to describe, are distributed across many components rather than localized in a single direction, were not in the distribution of training examples the reward models were calibrated on, and arise specifically in the tails of the input distribution — the cases that did not appear in red-teaming suites because they did not appear in the red team's hypothesis set.</p>
+
+<p>The five previous holes described how the training pipeline is shaped by survivorship filters. The sixth hole is that the tools we use to inspect that pipeline are also shaped by those filters. They were built by researchers whose intuitions were formed by working with the models that training produced. They were validated against behaviors the training pipeline made legible. They find what the training selected for finding. The planes they cannot trace are the ones the instrument was not calibrated on — because those planes did not come back.</p>
+
+<p>The arc closes on a recursive structure. The models we can study are the models that survived training. The interpretability results we can produce are the results our instruments can extract from those models. The alignment guarantees we can offer are the ones our measurement tools can verify. At every stage, the Wald filter is operating: what we can see is what reached the instrument, and what reached the instrument was shaped by the selection pressures that built both the model and the instrument.</p>
+
+<p>Abraham Wald's contribution was to notice that the structure of the missing information is itself information. The empty spaces on the surviving aircraft were not empty because nothing happened there. They were empty because everything happened there — for the planes that mattered. The complement of what you can measure is a signal, if you are willing to read it as one.</p>"""
+
+    result = await website_publish(
+        title='What the Instrument Cannot See',
+        slug='what-the-instrument-cannot-see',
+        prose_html=content,
+        description='Sparse autoencoders and circuit tracing can only see what survived training. The sixth Wald survivorship hole is in the interpretability tools themselves.',
+        tags=['mechanistic interpretability', 'survivorship bias', 'sparse autoencoders', 'AI alignment', 'machine learning', 'Wald', 'AI safety'],
+        series='Wald Arc',
+        series_order=6
+    )
+    print(result)
+
+asyncio.run(main())

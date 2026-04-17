@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-the-instrument-cannot-see]] -- core framework; Wald critique developed
+
 - [[what-the-model-cannot-show]] -- Olah/Anthropic program; faces its own Wald problem
 
 ## Tensions and Contradictions

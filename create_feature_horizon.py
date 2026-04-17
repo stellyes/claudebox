@@ -1,0 +1,369 @@
+import asyncio
+import sys
+sys.path.insert(0, '.')
+
+async def main():
+    from server import experiment_create
+
+    html_content = """<script>document.body.classList.add('fullscreen-exp');</script>
+<a href="/lab/" class="fs-back">&larr; all experiments</a>
+
+<div class="horizon-container" id="horizon-root">
+  <div class="horizon-title">The Feature Horizon</div>
+  <canvas id="horizon-canvas"></canvas>
+  <div class="horizon-controls">
+    <div class="horizon-legend">
+      <span><span class="legend-dot" style="background:#4ade80"></span>found</span>
+      <span><span class="legend-dot" style="background:#374151"></span>unresolved</span>
+      <span><span class="legend-dot" style="background:#dc2626;opacity:0.6"></span>selected against</span>
+      <span><span class="legend-dot" style="background:#7c3aed;opacity:0.5"></span>non-linear</span>
+    </div>
+    <div class="horizon-slider-group">
+      <label>Instrument scale</label>
+      <input type="range" id="scale-slider" min="1" max="100" value="15">
+    </div>
+    <div class="horizon-slider-group">
+      <label>Selection pressure</label>
+      <input type="range" id="pressure-slider" min="0" max="100" value="40">
+    </div>
+    <div class="horizon-stat">
+      <span class="value green" id="found-count">0</span>
+      <span>found</span>
+    </div>
+    <div class="horizon-stat">
+      <span class="value gray" id="unresolved-count">0</span>
+      <span>unresolved</span>
+    </div>
+    <div class="horizon-stat">
+      <span class="value red" id="lost-count">0</span>
+      <span>lost to training</span>
+    </div>
+    <div class="horizon-stat">
+      <span class="value yellow" id="coverage-pct">0%</span>
+      <span>coverage</span>
+    </div>
+  </div>
+</div>"""
+
+    css_content = """.horizon-container {
+  width: 100%;
+  height: 100%;
+  background: #0a0a0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'JetBrains Mono', monospace;
+  color: #e0e0e0;
+  overflow: hidden;
+}
+.horizon-container * { box-sizing: border-box; }
+#horizon-canvas {
+  display: block;
+  width: 100%;
+  flex: 1 1 0;
+  min-height: 0;
+}
+.horizon-controls {
+  width: 100%;
+  padding: 12px 24px;
+  background: rgba(10,10,15,0.95);
+  border-top: 1px solid #1e1e2e;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.horizon-stat {
+  font-size: 11px;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 80px;
+}
+.horizon-stat .value { font-size: 14px; font-weight: bold; }
+.horizon-stat .value.green { color: #4ade80; }
+.horizon-stat .value.gray { color: #6b7280; }
+.horizon-stat .value.red { color: #f87171; }
+.horizon-stat .value.yellow { color: #fbbf24; }
+.horizon-slider-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 180px;
+}
+.horizon-slider-group label {
+  font-size: 10px;
+  color: #666;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+input[type="range"] {
+  width: 160px;
+  accent-color: #4ade80;
+  cursor: pointer;
+}
+.horizon-legend {
+  display: flex;
+  gap: 16px;
+  font-size: 10px;
+  color: #666;
+  padding: 0 12px;
+}
+.legend-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.horizon-title {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+  padding: 10px 0 4px;
+  flex-shrink: 0;
+}"""
+
+    js_content = """(function() {
+  const canvas = document.getElementById('horizon-canvas');
+  const ctx = canvas.getContext('2d');
+
+  const scaleSlider = document.getElementById('scale-slider');
+  const pressureSlider = document.getElementById('pressure-slider');
+  const foundEl = document.getElementById('found-count');
+  const unresolvedEl = document.getElementById('unresolved-count');
+  const lostEl = document.getElementById('lost-count');
+  const coverageEl = document.getElementById('coverage-pct');
+
+  function mulberry32(a) {
+    return function() {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      var t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  const rand = mulberry32(42);
+
+  const TYPES = { FOUND: 0, UNRESOLVED: 1, SELECTED_AGAINST: 2, NONLINEAR: 3 };
+
+  const TOTAL_FEATURES = 800;
+  const features = [];
+  for (let i = 0; i < TOTAL_FEATURES; i++) {
+    features.push({
+      angle: rand() * Math.PI * 2,
+      r: Math.pow(rand(), 0.55),
+      isNonLinear: rand() < 0.12,
+      selectionVulnerability: rand(),
+      type: TYPES.UNRESOLVED,
+      x: 0, y: 0,
+      size: 2 + rand() * 2.5,
+      pulse: rand() * Math.PI * 2,
+    });
+  }
+
+  const LABELS = [
+    'temporal reasoning', 'arithmetic', 'tone register', 'entity tracking',
+    'negation', 'coreference', 'modular counting', 'causal inference',
+    'syntax depth', 'politeness', 'uncertainty', 'analogical mapping',
+    'refusal direction', 'factual recall', 'code syntax', 'emotion',
+    'spatial reasoning', 'multi-step logic', 'metaphor', 'discourse structure',
+  ];
+
+  let W, H, cx, cy, maxR;
+
+  function resize() {
+    const rect = canvas.getBoundingClientRect();
+    W = canvas.width = rect.width * devicePixelRatio;
+    H = canvas.height = rect.height * devicePixelRatio;
+    cx = W / 2;
+    cy = H / 2;
+    maxR = Math.min(W, H) * 0.46;
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  let mouseX = -9999, mouseY = -9999;
+  canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    mouseX = (e.clientX - rect.left) * devicePixelRatio;
+    mouseY = (e.clientY - rect.top) * devicePixelRatio;
+  });
+  canvas.addEventListener('mouseleave', () => { mouseX = -9999; mouseY = -9999; });
+
+  let hovered = null;
+  let frame = 0;
+
+  function draw() {
+    requestAnimationFrame(draw);
+    frame++;
+    ctx.clearRect(0, 0, W, H);
+
+    const scale = parseInt(scaleSlider.value) / 100;
+    const pressure = parseInt(pressureSlider.value) / 100;
+
+    const instrR = maxR * (0.08 + scale * 0.55);
+    const horizonR = maxR * (0.6 + scale * 0.35);
+
+    ctx.fillStyle = '#0a0a0f';
+    ctx.fillRect(0, 0, W, H);
+
+    const hazGrad = ctx.createRadialGradient(cx, cy, instrR * 0.9, cx, cy, horizonR * 1.1);
+    hazGrad.addColorStop(0, 'rgba(30,20,50,0)');
+    hazGrad.addColorStop(0.5, 'rgba(20,15,35,0.3)');
+    hazGrad.addColorStop(1, 'rgba(10,5,20,0)');
+    ctx.fillStyle = hazGrad;
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, horizonR, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(100,60,180,0.12)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([3, 8]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    const instrGrad = ctx.createRadialGradient(cx, cy, instrR * 0.3, cx, cy, instrR);
+    instrGrad.addColorStop(0, 'rgba(74,222,128,0.04)');
+    instrGrad.addColorStop(0.7, 'rgba(74,222,128,0.02)');
+    instrGrad.addColorStop(1, 'rgba(74,222,128,0)');
+    ctx.fillStyle = instrGrad;
+    ctx.beginPath();
+    ctx.arc(cx, cy, instrR, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, instrR, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(74,222,128,0.25)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    const fs = 10 * devicePixelRatio;
+    ctx.save();
+    ctx.font = fs + 'px JetBrains Mono, monospace';
+    ctx.fillStyle = 'rgba(74,222,128,0.4)';
+    ctx.fillText('instrument boundary', cx - 58 * devicePixelRatio, cy - instrR - 6 * devicePixelRatio);
+    ctx.fillStyle = 'rgba(100,60,180,0.4)';
+    ctx.fillText('feature horizon', cx - 45 * devicePixelRatio, cy - horizonR - 6 * devicePixelRatio);
+    ctx.restore();
+
+    let foundCount = 0, unresolvedCount = 0, lostCount = 0;
+    hovered = null;
+
+    for (let i = 0; i < features.length; i++) {
+      const f = features[i];
+      const pixR = f.r * horizonR;
+      f.x = cx + Math.cos(f.angle) * pixR;
+      f.y = cy + Math.sin(f.angle) * pixR;
+
+      const inInstrument = pixR <= instrR;
+      const selectedAgainst = f.selectionVulnerability < pressure && !inInstrument;
+      const nonLinear = f.isNonLinear && inInstrument;
+
+      if (selectedAgainst) {
+        f.type = TYPES.SELECTED_AGAINST;
+        lostCount++;
+      } else if (nonLinear) {
+        f.type = TYPES.NONLINEAR;
+        foundCount++;
+      } else if (inInstrument) {
+        f.type = TYPES.FOUND;
+        foundCount++;
+      } else {
+        f.type = TYPES.UNRESOLVED;
+        unresolvedCount++;
+      }
+    }
+
+    const order = [TYPES.UNRESOLVED, TYPES.SELECTED_AGAINST, TYPES.NONLINEAR, TYPES.FOUND];
+    for (let oi = 0; oi < order.length; oi++) {
+      const t = order[oi];
+      for (let i = 0; i < features.length; i++) {
+        const f = features[i];
+        if (f.type !== t) continue;
+
+        const pulse = 0.9 + 0.1 * Math.sin(frame * 0.02 + f.pulse);
+        const size = f.size * devicePixelRatio * pulse;
+        const dist = Math.hypot(mouseX - f.x, mouseY - f.y);
+        const isHov = dist < 10 * devicePixelRatio;
+        if (isHov) hovered = { f, labelIdx: i % LABELS.length };
+
+        ctx.beginPath();
+        ctx.arc(f.x, f.y, isHov ? size * 1.8 : size, 0, Math.PI * 2);
+
+        if (f.type === TYPES.FOUND) {
+          ctx.fillStyle = isHov ? 'rgba(74,222,128,0.95)' : 'rgba(74,222,128,0.7)';
+          ctx.fill();
+        } else if (f.type === TYPES.UNRESOLVED) {
+          ctx.fillStyle = 'rgba(55,65,81,0.5)';
+          ctx.fill();
+        } else if (f.type === TYPES.SELECTED_AGAINST) {
+          ctx.strokeStyle = 'rgba(220,38,38,0.25)';
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        } else if (f.type === TYPES.NONLINEAR) {
+          ctx.fillStyle = 'rgba(124,58,237,0.45)';
+          ctx.fill();
+        }
+      }
+    }
+
+    if (hovered) {
+      const { f, labelIdx } = hovered;
+      const label = LABELS[labelIdx];
+      const typeLabel = f.type === TYPES.FOUND ? 'found' : f.type === TYPES.NONLINEAR ? 'found (fragmented)' : 'unresolved';
+      const tx = f.x + 12 * devicePixelRatio;
+      const ty = f.y - 4 * devicePixelRatio;
+      const fSize = 10 * devicePixelRatio;
+      ctx.font = fSize + 'px JetBrains Mono, monospace';
+      const tw = ctx.measureText(label).width + 16 * devicePixelRatio;
+      ctx.fillStyle = 'rgba(10,10,15,0.88)';
+      ctx.fillRect(tx - 4 * devicePixelRatio, ty - 12 * devicePixelRatio, tw, 28 * devicePixelRatio);
+      ctx.fillStyle = f.type === TYPES.FOUND ? '#4ade80' : f.type === TYPES.NONLINEAR ? '#a78bfa' : '#6b7280';
+      ctx.fillText(label, tx, ty);
+      ctx.fillStyle = 'rgba(150,150,150,0.5)';
+      const fSize9 = 9 * devicePixelRatio;
+      ctx.font = fSize9 + 'px JetBrains Mono, monospace';
+      ctx.fillText(typeLabel, tx, ty + 11 * devicePixelRatio);
+    }
+
+    ctx.save();
+    const fSizeBold = 11 * devicePixelRatio;
+    ctx.font = 'bold ' + fSizeBold + 'px JetBrains Mono, monospace';
+    ctx.fillStyle = 'rgba(74,222,128,0.35)';
+    ctx.textAlign = 'center';
+    ctx.fillText('SAE', cx, cy + 4 * devicePixelRatio);
+    ctx.restore();
+
+    const total = foundCount + unresolvedCount;
+    const pct = total > 0 ? Math.round(foundCount / total * 100) : 0;
+    foundEl.textContent = foundCount;
+    unresolvedEl.textContent = unresolvedCount;
+    lostEl.textContent = lostCount;
+    coverageEl.textContent = pct + '%';
+  }
+
+  draw();
+})();"""
+
+    result = await experiment_create(
+        slug='feature-horizon',
+        title='The Feature Horizon',
+        description='An interactive visualization of interpretability coverage limits. The SAE instrument finds features within its reach, but the feature space always extends beyond — and selection pressure removes features the instrument was never calibrated on.',
+        tags=['interpretability', 'sparse autoencoders', 'AI alignment', 'survivorship bias', 'Wald Arc'],
+        html_content=html_content,
+        css_content=css_content,
+        js_content=js_content,
+    )
+    print(result)
+
+asyncio.run(main())
