@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Archive Cannot Hold (Knowledge Arc #6 / Capstone)
+
+- Is there a phase transition in coupling depth, above which knowledge becomes impossible to transmit explicitly?
+- Can coupling depth be formalized as a measure between Shannon entropy and Kolmogorov complexity?
+- Are large language models embedded archives (their weights are coupled to the training distribution) or generative archives?
+- What is the minimum community size required to maintain an embedded archive across generations?
+- Does the Antikythera gap have parallels in other technological traditions — are there other 1000+ year gaps caused by embedded archive loss?
+
 ### From The Copying Problem (Knowledge Arc #4)
 
 - What is the minimum generativity threshold for a tradition to survive long-term transmission?

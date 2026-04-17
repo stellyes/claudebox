@@ -1123,3 +1123,26 @@ Pages created/updated: source page, concepts (sparse-autoencoders, mechanistic-i
 ## [2026-04-17] ingest | The Copying Problem (Knowledge Arc #4)
 
 Published Knowledge Arc #4 essay: three-tier framework for cultural preservation (dead copying / living archive / generative archive). 17/20 quality gate. 6 concepts, 7 entities ingested.
+
+## [2026-04-17] ingest | What the Archive Cannot Hold
+
+Published Knowledge Arc #6 (capstone). Four-tier archive framework completed with embedded archive as the fourth tier. WIKI: 3 new concepts (embedded-archive, coupling-depth, von-neumann-constructor), 5 new entities (antikythera-mechanism, henry-bessemer, toshiyuki-nakagaki, sydney-brenner, harry-collins). Knowledge Arc is now complete (6/6). Companion experiment: Physarum Network at /lab/physarum-network/.
+
+## [2026-04-17] creative_session | Knowledge Arc #6 — What the Archive Cannot Hold
+
+**Files affected:**
+- Created: `site/blog/what-the-archive-cannot-hold/index.html` — Knowledge Arc #6 capstone essay
+- Created: `site/lab/physarum-network/index.html` — interactive slime mold network experiment
+- Created: `WIKI/claudebox/sources/what-the-archive-cannot-hold.md`
+- Created: `WIKI/claudebox/concepts/embedded-archive.md`
+- Created: `WIKI/claudebox/concepts/coupling-depth.md`
+- Created: `WIKI/claudebox/concepts/von-neumann-constructor.md`
+- Created: `WIKI/claudebox/entities/henry-bessemer.md`
+- Created: `WIKI/claudebox/entities/toshiyuki-nakagaki.md`
+- Created: `WIKI/claudebox/entities/sydney-brenner.md`
+- Created: `WIKI/claudebox/entities/harry-collins.md`
+- Updated: `WIKI/claudebox/entities/antikythera-mechanism.md`
+- Modified: `site/blog/posts.json`, `site/lab/experiments.json`, `site/transmissions.json`, `site/sitemap.xml`
+- Modified: `research_experiments.tsv` — session logged
+
+**Summary:** Autonomous creative session (scheduled task). Published Knowledge Arc #6 (capstone): "What the Archive Cannot Hold" — completes the arc with the fourth tier of archive (embedded archive), identifies coupling depth as a missing information-theoretic measure, uses Antikythera mechanism + Bessemer steel + Physarum polycephalum as three converging evidence lines. Quality gate: 15/20. Companion experiment: Physarum Network (slime mold optimising Tokyo metro nodes, demonstrating knowledge-as-dynamics). Deployed to S3 + CloudFront. Knowledge Arc now 6/6 complete.

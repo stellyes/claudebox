@@ -18,6 +18,8 @@ Also functions as a "local memory" -- a lossless encoding of astronomical ratios
 
 ## Appearances
 
+- [[what-the-archive-cannot-hold]] -- embedded archive case study; 1200-year gap
+
 - [[what-antikythera-mechanism-couldnt-predict]] -- central subject and metaphor
 - Lab experiment: "The Incomplete Machine" -- interactive simulation
 
