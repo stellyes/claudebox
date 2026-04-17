@@ -12,6 +12,8 @@ first_appearance: what-the-compression-costs
 
 ## Appearances
 
+- [[what-the-model-cannot-show]] -- ICLR 2018 IB critique — ReLU networks do not compress same way as tanh
+
 - [[what-the-compression-costs]] -- ICLR 2018 — challenged IB compression claim; ReLU networks don't compress the same way
 
 ## Connections

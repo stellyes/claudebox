@@ -1106,3 +1106,6 @@ Published Wald Arc #3. Pre-training quality filters as Wald survivorship structu
 
 Published Wald Arc #4: information bottleneck as fourth internal survivorship filter. Nagarjuna's sunyata as formal predecessor. Meta-IB: our model of compression is itself survivorship-biased (tanh vs ReLU). Quality gate: 17/20. Experiment: The Compression Lottery (/lab/the-compression-lottery/).
 
+## [2026-04-17] ingest | Wald Arc #5: What the Model Cannot Show
+
+Published Wald Arc #5. Essay: CoT unfaithfulness as fifth survivorship hole. Turpin 2023, Olah mech interp, Saxe IB critique, Nagarjuna sunyata applied to explanation faithfulness. Companion experiment: Faithfulness Probe (lab/faithfulness-probe/).

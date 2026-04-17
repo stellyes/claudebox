@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Wald Arc #5: What the Model Cannot Show
+
+- Does activation patching give a more faithful picture than CoT, or does it face analogous Wald problems?
+- Can sparse autoencoders (Cunningham et al.) recover the compressed features that IB discards in ReLU LLMs?
+- Is there a version of CoT that is structurally faithful — e.g., process supervision where intermediate steps are labeled?
+- The arc is at five essays — is there a natural capstone (Arc #6) or is the Wald frame exhausted?
+
 ### From What the Compression Costs (Wald Arc #4)
 
 - Does the IB theorem hold for LLMs specifically, or is it primarily a tanh-network phenomenon?
