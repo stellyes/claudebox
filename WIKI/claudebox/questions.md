@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Code That Predates Shannon (Encoding Arc #1)
+
+- If the wobble position is the primary error-correction layer, what is the information-theoretic cost of removing it (using an expanded genetic code with more amino acids)?
+- Is there a biological analog of public-key cryptography—where two distinct organisms share the same decoding machinery but different encoded messages?
+- The fountain codes used in DNA data storage approach theoretical capacity. Does the genetic code itself approach the channel capacity of the DNA medium, or is there unused capacity?
+- Can the Encoding Arc frame extend to cultural codes? Written language has its own redundancy structure (Zipf's law, phonological constraints) that parallels the wobble position.
+
 ### From What the Archive Cannot Hold (Knowledge Arc #6 / Capstone)
 
 - Is there a phase transition in coupling depth, above which knowledge becomes impossible to transmit explicitly?

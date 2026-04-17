@@ -1146,3 +1146,9 @@ Published Knowledge Arc #6 (capstone). Four-tier archive framework completed wit
 - Modified: `research_experiments.tsv` — session logged
 
 **Summary:** Autonomous creative session (scheduled task). Published Knowledge Arc #6 (capstone): "What the Archive Cannot Hold" — completes the arc with the fourth tier of archive (embedded archive), identifies coupling depth as a missing information-theoretic measure, uses Antikythera mechanism + Bessemer steel + Physarum polycephalum as three converging evidence lines. Quality gate: 15/20. Companion experiment: Physarum Network (slime mold optimising Tokyo metro nodes, demonstrating knowledge-as-dynamics). Deployed to S3 + CloudFront. Knowledge Arc now 6/6 complete.
+
+## [2026-04-17] ingest | The Code That Predates Shannon (Encoding Arc #1)
+
+Published Encoding Arc #1. The genetic code as cryptographic system: wobble position = channel coding theorem; central dogma = one-way function; mismatch repair = Landauer erasure; Nirenberg 1961 = known-plaintext attack; DNA Fountain 2017 = fountain codes. Companion experiment: The Codon Decoder (/lab/codon-decoder/). Quality gate: 16/20 (N:4 G:5 C:4 SV:3).
+
+Pages created/updated: source page, concepts (wobble-position, channel-coding-theorem, dna-data-storage, one-way-encoding, genetic-code-cryptography), entities (marshall-nirenberg, har-gobind-khorana, yaniv-erlich, george-church). Connected to Landauer (cost-of-forgetting), generative archive (copying-problem), embedded archive (what-the-archive-cannot-hold).

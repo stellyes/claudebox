@@ -12,6 +12,8 @@ first_appearance: the-inward-overview-effect
 
 ## Appearances
 
+- [[the-code-that-predates-shannon]] -- DNA Fountain paper 2017; fountain codes for DNA storage
+
 - [[the-inward-overview-effect]] -- Columbia/NYGC; DNA Fountain algorithm; 215 pb/gram (2017, Science)
 
 ## Connections
