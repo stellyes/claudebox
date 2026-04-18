@@ -1189,3 +1189,10 @@ Core insight: Codes bootstrap from noise through differential reinforcement. Hug
 
 Pages created: sources/what-noise-builds.md, concepts/code-bootstrap.md, concepts/stochastic-resonance.md, concepts/spike-timing-dependent-plasticity.md, concepts/frozen-accident.md, entities/hugo-ball.md, entities/francis-crick.md
 Pages updated: concepts/hebbian-plasticity.md, concepts/arbitrary-sign.md, concepts/genetic-code-cryptography.md, questions.md, index.md, log.md
+
+## [2026-04-18] ingest | What Degeneracy Encodes (Encoding Arc #5)
+
+Published Encoding Arc #5. Thesis: degeneracy creates hidden channels — multiple paths to same meaning encode contextual metadata in path choice. Boltzmann W = degeneracy = entropy. Codon bias (Stergachis 2013 duons). Edelman neural TNGS. Grice implicature. Connects to Arc #3 (severance enables degeneracy) and Arc #4 (noise assigned to meta-channel).
+
+New concept pages: degeneracy, codon-usage-bias, neural-degeneracy, register.
+New entity pages: edelman-gerald, stergachis-andrew, grice-paul.

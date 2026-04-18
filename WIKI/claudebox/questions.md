@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Degeneracy Encodes (Encoding Arc #5)
+
+- Does codon usage bias constitute a genuine hidden channel in the Shannon sense — measurable bits per codon beyond the amino acid signal?
+- Are there languages where register is grammaticalized (built into morphology) rather than lexically chosen — does that collapse the hidden channel?
+- What is the evolutionary pathway from random synonymy to functional codon bias — how does noise get assigned to a channel?
+- Is Edelman neural degeneracy measurable? Can we read the which-path-was-taken signal from neural recordings?
+- Can a code deliberately design degeneracy to create hidden channels — and is that what human register systems are?
+
 ### From What Noise Builds (Encoding Arc #4)
 
 - Does STDP have a direct analog in cultural code formation (language evolution, musical traditions)?
