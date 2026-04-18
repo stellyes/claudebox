@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Invention of Nothing (Encoding Arc #2)
+
+- Is there a developmental window during which children acquire zero neurons, analogous to Nieder monkeys learning zero?
+- Do LLMs have representational analogs to zero neurons — directions in activation space that fire for empty context?
+- What happens to stop codons in organisms that have repurposed one of the three for an unusual amino acid (selenocysteine)?
+- Is the Babylonian resistance to zero a general pattern — do most number systems delay explicit zero representation?
+
 ### From The Forest Had a Navigator (Navigation Arc #10)
 
 - Can mycorrhizal network topology be used as a proxy for recovering lost indigenous management practices — a kind of reverse archaeology?

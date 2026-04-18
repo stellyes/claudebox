@@ -1160,3 +1160,7 @@ New concept: co-evolutionary external navigator (fourth navigation mode).
 Quality gate: 18/20 (Novelty 4, Grounding 5, Connections 5, Search Value 4).
 Experiment: The Managed Network (/lab/managed-network/).
 Transmission: 'The navigator was always there.'
+
+## [2026-04-18] ingest | The Invention of Nothing (Encoding Arc #2)
+
+Published Encoding Arc #2. Zero as universal encoding primitive: zero neurons, stop codons, Shannon binary, Brahmagupta, identity zero-point. Quality gate: 15/20. Companion experiment: Zero Neurons (lab/zero-neurons/).
