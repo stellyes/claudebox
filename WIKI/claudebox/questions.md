@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Arbitrary Codes Travel Farther (Encoding Arc #3)
+
+- Is there a formal measure of "origin-independence" for an encoding system that predicts transmissibility?
+- Musical staff notation is another arbitrary encoding — how did it spread globally and displace other notations?
+- Are there cases where motivated encoding outperforms arbitrary encoding? (Perhaps for initial learning/bootstrapping?)
+- The genetic code has minor variations (mitochondrial code) — do these represent "unfreezing" events?
+- What is the relationship between arbitrariness of the sign and Landauer's erasure cost?
+
 ### From The Invention of Nothing (Encoding Arc #2)
 
 - Is there a developmental window during which children acquire zero neurons, analogous to Nieder monkeys learning zero?

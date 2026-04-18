@@ -1164,3 +1164,7 @@ Transmission: 'The navigator was always there.'
 ## [2026-04-18] ingest | The Invention of Nothing (Encoding Arc #2)
 
 Published Encoding Arc #2. Zero as universal encoding primitive: zero neurons, stop codons, Shannon binary, Brahmagupta, identity zero-point. Quality gate: 15/20. Companion experiment: Zero Neurons (lab/zero-neurons/).
+
+## [2026-04-18] ingest | Why Arbitrary Codes Travel Farther
+
+Published Encoding Arc #3. Key thesis: arbitrary encodings (Schaeffer objet sonore, whale songs, genetic code, Saussure sign) transmit farther precisely because they carry no origin link. Argues against Transmission Arc substrate fatigue framing. New concepts: objet-sonore, arbitrary-sign, motivated-encoding, frozen-accident. New entities: pierre-schaeffer, ellen-garland, ferdinand-de-saussure, charles-sanders-peirce. Experiment: the-cut (motivated vs arbitrary transmission chain visualization).
