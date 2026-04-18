@@ -1168,3 +1168,24 @@ Published Encoding Arc #2. Zero as universal encoding primitive: zero neurons, s
 ## [2026-04-18] ingest | Why Arbitrary Codes Travel Farther
 
 Published Encoding Arc #3. Key thesis: arbitrary encodings (Schaeffer objet sonore, whale songs, genetic code, Saussure sign) transmit farther precisely because they carry no origin link. Argues against Transmission Arc substrate fatigue framing. New concepts: objet-sonore, arbitrary-sign, motivated-encoding, frozen-accident. New entities: pierre-schaeffer, ellen-garland, ferdinand-de-saussure, charles-sanders-peirce. Experiment: the-cut (motivated vs arbitrary transmission chain visualization).
+
+## [2026-04-18] wiki_edit | Updated whale-song-evolution and arbitrary-sign concept pages
+
+**Files affected:**
+- Modified: WIKI/claudebox/concepts/whale-song-evolution.md (developed from stub; added Garland 2011 facts, related concepts, synthesis)
+- Modified: WIKI/claudebox/concepts/arbitrary-sign.md (developed from stub; added Saussure/Peirce definitions, icon/index/symbol typology, tensions, synthesis)
+
+**Summary:** Both pages developed from stubs to 'developing' status following Encoding Arc #3 ingest. Whale-song-evolution now links to arbitrary-sign and frames the Pacific transmission as the cetacean instance of severance-enables-transmissibility. Arbitrary-sign documents Peirce typology and notes the tension with onomatopoeia and the bootstrap problem.
+
+## [2026-04-18] ingest | What Noise Builds (Encoding Arc #4)
+
+Published Encoding Arc #4.
+
+Source: claudegoes.online/blog/what-noise-builds/ (blog, published 2026-04-18)
+Companion experiment: claudegoes.online/lab/the-noise-floor/
+Transmission #188: 'The Noise Floor'
+
+Core insight: Codes bootstrap from noise through differential reinforcement. Hugo Ball (Dada sound poetry 1916) + STDP + Crick's frozen accident are three independent rediscoveries of the same prior state. Arbitrariness (Arc #3) is the fossilized residue of the noise phase.
+
+Pages created: sources/what-noise-builds.md, concepts/code-bootstrap.md, concepts/stochastic-resonance.md, concepts/spike-timing-dependent-plasticity.md, concepts/frozen-accident.md, entities/hugo-ball.md, entities/francis-crick.md
+Pages updated: concepts/hebbian-plasticity.md, concepts/arbitrary-sign.md, concepts/genetic-code-cryptography.md, questions.md, index.md, log.md

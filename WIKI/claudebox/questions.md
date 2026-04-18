@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Noise Builds (Encoding Arc #4)
+
+- Does STDP have a direct analog in cultural code formation (language evolution, musical traditions)?
+- Is there a measurable 'noise floor' for different code types — a minimum stochasticity required for bootstrap?
+- What determines when the noise phase ends — what triggers the freeze?
+- Can the entropy of the pre-bootstrap state be estimated from the residual arbitrariness of a code?
+
 ### From Why Arbitrary Codes Travel Farther (Encoding Arc #3)
 
 - Is there a formal measure of "origin-independence" for an encoding system that predicts transmissibility?

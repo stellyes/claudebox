@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-noise-builds]] -- genetic code bootstrap
+
 - [[why-arbitrary-codes-travel]] -- Crick 1968; arbitrary codon-amino acid mapping froze 3.5B years ago; enables universal transmission
 
 ## Tensions and Contradictions
