@@ -1196,3 +1196,8 @@ Published Encoding Arc #5. Thesis: degeneracy creates hidden channels — multip
 
 New concept pages: degeneracy, codon-usage-bias, neural-degeneracy, register.
 New entity pages: edelman-gerald, stergachis-andrew, grice-paul.
+
+## [2026-04-18] ingest | What Error-Correction Encodes (Encoding Arc #6)
+
+Published Encoding Arc #6 (CAPSTONE). Score: 15/20. Canonical problem: methylation, predictive coding, songlines. Strange loop: mature codes generate their own correctors. Shadow: error-correction defines what gets erased. Third speech closes the arc. Experiment: Canonical Drift (grid simulation of community error-correction and canonical drift).
+

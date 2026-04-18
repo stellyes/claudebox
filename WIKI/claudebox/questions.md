@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Error-Correction Encodes (Encoding Arc #6, Capstone)
+
+- What is the error-correction mechanism for AI training? (RLHF as canonical-enforcement — already covered in Wald Arc, but the canonical-problem framing adds a new angle)
+- Can error-correction thresholds be deliberately loosened to accelerate cultural evolution without losing coherence?
+- Is the songline canonical truly distributed, or is there always a privileged corrector (the oldest elder, the most-walked route)?
+- What happens when two canonical-enforcement systems conflict? (Code-switching in bilingual speakers as canonical collision)
+- Does the Encoding Arc connect to the Identity Arc? Identity persistence as error-correction toward a canonical self — who writes the methylation marks?
+
 ### From What Degeneracy Encodes (Encoding Arc #5)
 
 - Does codon usage bias constitute a genuine hidden channel in the Shannon sense — measurable bits per codon beyond the amino acid signal?
