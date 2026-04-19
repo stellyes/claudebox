@@ -12,6 +12,8 @@ first_appearance: mondrian-grid-time-rhythm
 
 ## Appearances
 
+- [[minimum-generative-set-mondrian-von-neumann]] -- primary subject; iterative reduction to minimum grammar
+
 - [[mondrian-grid-time-rhythm]] -- Lifelong Theosophist; developed Neo-Plasticism; banned diagonal after 1920; Broadway Boogie-Woogie (1942-43) expresses jazz rhythm in orthogonal constraint
 
 ## Connections

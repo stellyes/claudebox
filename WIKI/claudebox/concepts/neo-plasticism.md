@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[minimum-generative-set-mondrian-von-neumann]] -- extended with formal completeness frame
+
 - [[mondrian-diamonds-theosophy-research]] -- resolution: diagonal is frame not content
 
 - [[mondrian-grid-time-rhythm]] -- Mondrian's theory: horizontal/vertical as opposing universal forces; Theosophical grounding; reductive abstraction to reveal spiritual order

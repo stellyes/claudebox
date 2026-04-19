@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[minimum-generative-set-mondrian-von-neumann]] -- formal grounding
+
 - [[what-the-archive-cannot-hold]] -- three-component requirement; Brenner formulation
 
 ## Tensions and Contradictions

@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Minimum Generative Set (Session 2026-04-19-s13)
+
+- Can Mondrian's De Stijl vocabulary be formally proven to be a minimum spanning basis for visual harmony?
+- Is there a formal theorem connecting aesthetic minimality to computational minimality?
+- Did Mondrian's iterative elimination of elements follow a path that a formal derivation would also follow?
+- What would a formal proof of De Stijl completeness require? Which mathematical structures are relevant?
+- Are there other artists/designers who independently arrived at minimum sufficient sets? (e.g. Bach's counterpoint rules, Bauhaus typography)
+
 ### From What Knowledge Survived Baghdad (Standalone essay, 2026-04-19)
 
 - What specific information did the Arabic-to-Latin translation movement lose? Can we identify it in the gaps between the Arabic and Latin versions of Aristotle?

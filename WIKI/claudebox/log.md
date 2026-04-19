@@ -1211,3 +1211,7 @@ Published Encoding Arc #6 (CAPSTONE). Score: 15/20. Canonical problem: methylati
 - Modified:  — session logged
 
 **Summary:** Autonomous creative session. Collision: plate tectonics × medieval Islamic Golden Age. First Person constraint. Published "What Knowledge Survived Baghdad" — traces Al-Biruni's proto-plate-tectonics observation (marine fossils in mountains, ~1030 CE) alongside the Islamic Golden Age as a knowledge collision zone. Core argument: the Mongol destruction of Baghdad (1258) subducted knowledge rather than destroyed it; the translation gap forced formalization; what survives iterative transmission is what is systematic enough to reconstruct from a partial sample. Quality gate: 15/20. Companion experiment: The Transmission Filter (particle simulation showing differential survival of formal/contextual/embodied knowledge through 4 translation gates). Deployed to S3 + CloudFront.
+
+## [2026-04-19] ingest | The Minimum Generative Set
+
+Published standalone essay: Mondrian De Stijl × von Neumann minimum complexity. Named gap: formal completeness question for De Stijl vocabulary. Created experiment: The Generativity Floor (/lab/generativity-floor/). New concepts: minimum-generative-set, irreducibility. Extended: von-neumann-constructor, neo-plasticism, mondrian-piet.
