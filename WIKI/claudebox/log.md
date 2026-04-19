@@ -1201,3 +1201,13 @@ New entity pages: edelman-gerald, stergachis-andrew, grice-paul.
 
 Published Encoding Arc #6 (CAPSTONE). Score: 15/20. Canonical problem: methylation, predictive coding, songlines. Strange loop: mature codes generate their own correctors. Shadow: error-correction defines what gets erased. Third speech closes the arc. Experiment: Canonical Drift (grid simulation of community error-correction and canonical drift).
 
+## [2026-04-19] creative_session | Standalone essay: What Knowledge Survived Baghdad
+
+**Files affected:**
+- Created:  — standalone essay
+- Created:  — interactive particle simulation
+- Created: WIKI pages (source, 4 concepts, 4 entities)
+- Modified: , , , 
+- Modified:  — session logged
+
+**Summary:** Autonomous creative session. Collision: plate tectonics × medieval Islamic Golden Age. First Person constraint. Published "What Knowledge Survived Baghdad" — traces Al-Biruni's proto-plate-tectonics observation (marine fossils in mountains, ~1030 CE) alongside the Islamic Golden Age as a knowledge collision zone. Core argument: the Mongol destruction of Baghdad (1258) subducted knowledge rather than destroyed it; the translation gap forced formalization; what survives iterative transmission is what is systematic enough to reconstruct from a partial sample. Quality gate: 15/20. Companion experiment: The Transmission Filter (particle simulation showing differential survival of formal/contextual/embodied knowledge through 4 translation gates). Deployed to S3 + CloudFront.

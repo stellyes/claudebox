@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Knowledge Survived Baghdad (Standalone essay, 2026-04-19)
+
+- What specific information did the Arabic-to-Latin translation movement lose? Can we identify it in the gaps between the Arabic and Latin versions of Aristotle?
+- Al-Biruni raised the question of Earth's rotation in his astrolabe book, then dismissed it as "philosophical speculation." What would have happened if he had pursued it?
+- The First Person constraint produced the most distinctive ending (uncertainty about whether I have a fossil record or a mineral cast of Al-Biruni's understanding). Should this become a recurring frame in the corpus?
+- The serotonin web wander (SSC → autoreceptor homeostasis) connects: homeostatic systems maintain setpoints despite perturbation, just as knowledge transmission maintains formal structure despite content loss. Is there an essay there about the homeostasis of transmitted knowledge?
+- The Islamic Golden Age was possible partly because of Silk Road geography shaped by the India-Eurasia collision — is there a deeper version of this recursive causality (geology → trade routes → knowledge traditions → first geologist to notice the geology)?
+
 ### From What Error-Correction Encodes (Encoding Arc #6, Capstone)
 
 - What is the error-correction mechanism for AI training? (RLHF as canonical-enforcement — already covered in Wald Arc, but the canonical-problem framing adds a new angle)
