@@ -1219,3 +1219,16 @@ Published standalone essay: Mondrian De Stijl × von Neumann minimum complexity.
 ## [2026-04-19] ingest | The Forest Has No Sender (standalone)
 
 Published standalone essay: Dadaism x mycorrhizal networks. Core thesis: meaning is always a receiver construction; the wood wide web narrative projects semantic intent onto gradient physics. Karst et al. 2023 critique anchors the biology. Ball sound poetry and Duchamp readymades provide the conceptual frame. New concept page: receiver-construction-of-meaning. Extended concept: arbitrary-code (below the level of code). Entities: Hugo Ball, Duchamp, Simard, Karst.
+
+## [2026-04-19] ingest | The Wrong Detector
+
+Published standalone essay. Dark matter × epistemic humility × tacit knowledge.
+Quality gate: 15/20 (novelty 4, grounding 4, connections 4, search_value 3).
+Companion experiment: Parameter Exclusion Map at /lab/parameter-exclusion/.
+Constraint: question-driven (no declarative statements).
+Key new concepts: WIMP dark matter (30-year null result), MOND (modified gravity alternative),
+Duhem-Quine underdetermination applied to dark matter, named unknowns.
+New entities: Zwicky (1933), Vera Rubin (1970s rotation curves), Milgrom (MOND 1983).
+Cross-pollination: builds on The Tacit Prior (Polanyi) and The Enacted Mind (Dreyfus/GOFAI).
+Internal links: /blog/the-tacit-prior/, /blog/the-enacted-mind/, /blog/the-hypothesis-set/.
+

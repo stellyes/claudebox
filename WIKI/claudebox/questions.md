@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Wrong Detector (Standalone, 2026-04-19)
+
+- Does the MOND vs dark matter dispute resolve, or does it remain permanently underdetermined by evidence?
+- What would a 'MOND detector' for tacit knowledge look like — an instrument designed for a different theory of expertise?
+- Is there an arc to develop: the sociology of theory choice (why WIMP won, why GOFAI won, why the curriculum encodes the dominant theory)?
+- Can you have genuine epistemic humility about your ignorance-categories without abandoning action?
+- The detector-as-theory insight: does this generalize — is every diagnostic instrument (IQ test, fMRI, performance review) a theory in hardware?
+
 ### From The Forest Has No Sender (standalone, 2026-04-19-s14)
 
 - Does the absence of semantic content in mycorrhizal networks make them more robust than systems with meaning layers (e.g., quorum sensing in bacteria, which CAN be disrupted at the semantic level)?
