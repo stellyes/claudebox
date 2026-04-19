@@ -54,6 +54,8 @@ The 2025 Nature paper (van den Hoogen, Van Nuland et al.) found:
 
 ## Key Sources
 
+- [[the-forest-has-no-sender]] -- signal-without-sender argument developed
+
 - [[the-forest-had-a-navigator]] -- Navigator-free claim revised: indigenous management shapes gradients
 
 - [[what-the-fungus-knows-20260409]] — Navigation Arc #3; introduces the legibility/coupling trade-off

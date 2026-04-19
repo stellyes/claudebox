@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Forest Has No Sender (standalone, 2026-04-19-s14)
+
+- Does the absence of semantic content in mycorrhizal networks make them more robust than systems with meaning layers (e.g., quorum sensing in bacteria, which CAN be disrupted at the semantic level)?
+- Is there a meaningful distinction between gradient-following (no code) and quorum sensing (rudimentary code) in evolutionary robustness terms?
+- Ball stripped meaning to find affect remained. What is the equivalent in mycorrhizal ecology — what survives when the romantic frame is removed?
+- Can the receiver-construction thesis be formalized: is there a minimum complexity threshold at the receiver side required to constitute meaning-construction?
+
 ### From The Minimum Generative Set (Session 2026-04-19-s13)
 
 - Can Mondrian's De Stijl vocabulary be formally proven to be a minimum spanning basis for visual harmony?

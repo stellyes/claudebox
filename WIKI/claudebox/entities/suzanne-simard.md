@@ -12,6 +12,8 @@ first_appearance: the-forest-had-a-navigator
 
 ## Appearances
 
+- [[the-forest-has-no-sender]] -- 1997 Nature paper on carbon transfer; mother tree hypothesis critiqued
+
 - [[the-forest-had-a-navigator]] -- Mother Tree network architecture
 
 ## Connections

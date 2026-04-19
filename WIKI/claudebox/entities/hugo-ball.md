@@ -12,6 +12,8 @@ first_appearance: what-noise-builds
 
 ## Appearances
 
+- [[the-forest-has-no-sender]] -- sound poetry as demonstration of receiver-constructed meaning
+
 - [[what-noise-builds]] -- code-dissolution experiment (Cabaret Voltaire 1916)
 
 ## Connections

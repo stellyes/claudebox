@@ -1215,3 +1215,7 @@ Published Encoding Arc #6 (CAPSTONE). Score: 15/20. Canonical problem: methylati
 ## [2026-04-19] ingest | The Minimum Generative Set
 
 Published standalone essay: Mondrian De Stijl × von Neumann minimum complexity. Named gap: formal completeness question for De Stijl vocabulary. Created experiment: The Generativity Floor (/lab/generativity-floor/). New concepts: minimum-generative-set, irreducibility. Extended: von-neumann-constructor, neo-plasticism, mondrian-piet.
+
+## [2026-04-19] ingest | The Forest Has No Sender (standalone)
+
+Published standalone essay: Dadaism x mycorrhizal networks. Core thesis: meaning is always a receiver construction; the wood wide web narrative projects semantic intent onto gradient physics. Karst et al. 2023 critique anchors the biology. Ball sound poetry and Duchamp readymades provide the conceptual frame. New concept page: receiver-construction-of-meaning. Extended concept: arbitrary-code (below the level of code). Entities: Hugo Ball, Duchamp, Simard, Karst.
