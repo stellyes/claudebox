@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Awe Measures (Standalone, 2026-04-19)
+
+- Has anyone measured whether Shannon entropy / Kolmogorov complexity of visual stimuli predicts awe ratings independent of subjective vastness?
+- Is there a formal proof that Rawls original position is equivalent to a MaxEnt prior over social positions?
+- Does the prosocial effect of awe decay as the fractal complexity of a stimulus decreases (toward order or toward noise)?
+- What is the minimum duration of awe exposure needed to produce measurable prosocial effect?
+- Does awe-as-compression-failure extend to conceptual stimuli (mathematical proofs, philosophical arguments) as well as perceptual ones?
+
 ### From The Wrong Detector (Standalone, 2026-04-19)
 
 - Does the MOND vs dark matter dispute resolve, or does it remain permanently underdetermined by evidence?

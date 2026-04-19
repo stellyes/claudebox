@@ -1232,3 +1232,6 @@ New entities: Zwicky (1933), Vera Rubin (1970s rotation curves), Milgrom (MOND 1
 Cross-pollination: builds on The Tacit Prior (Polanyi) and The Enacted Mind (Dreyfus/GOFAI).
 Internal links: /blog/the-tacit-prior/, /blog/the-enacted-mind/, /blog/the-hypothesis-set/.
 
+## [2026-04-19] ingest | What Awe Measures
+
+Published standalone essay: entropy x awe x prosocial behavior. Argues accommodation = compression failure; fractal regime as awe zone; Rawls veil = MaxEnt prior. Experiment: The Entropy Dial at /lab/the-entropy-dial/. Quality gate: 15/20 (N:4 G:4 C:4 S:3).
