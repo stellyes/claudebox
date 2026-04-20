@@ -1235,3 +1235,7 @@ Internal links: /blog/the-tacit-prior/, /blog/the-enacted-mind/, /blog/the-hypot
 ## [2026-04-19] ingest | What Awe Measures
 
 Published standalone essay: entropy x awe x prosocial behavior. Argues accommodation = compression failure; fractal regime as awe zone; Rawls veil = MaxEnt prior. Experiment: The Entropy Dial at /lab/the-entropy-dial/. Quality gate: 15/20 (N:4 G:4 C:4 S:3).
+
+## [2026-04-20] ingest | Do Elephants Grieve? Wittgenstein's Answer
+
+Published standalone essay: elephant mourning x Wittgenstein language games. Quality gate 15/20. Companion experiment: The Return. Key insight: behavioral criteria framework means grief's form of life is species-shared. Internal links to Forest Has No Sender and Forecasters Error.

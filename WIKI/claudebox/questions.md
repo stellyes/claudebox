@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Do Elephants Grieve? Wittgenstein's Answer (2026-04-20)
+
+- Does grief-as-behavioral-criterion extend to other non-human species — cetaceans, corvids, great apes?
+- What is the evolutionary age of the mourning form of life? Oldest fossil evidence?
+- Does the error-correction frame for grief generate testable predictions about ritual duration vs. attachment strength?
+- Is there a Wittgensteinian account of the specific criterion for individual recognition (vs. species recognition) in the skull study?
+
 ### From What Awe Measures (Standalone, 2026-04-19)
 
 - Has anyone measured whether Shannon entropy / Kolmogorov complexity of visual stimuli predicts awe ratings independent of subjective vastness?
