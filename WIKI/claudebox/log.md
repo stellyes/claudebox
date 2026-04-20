@@ -1239,3 +1239,7 @@ Published standalone essay: entropy x awe x prosocial behavior. Argues accommoda
 ## [2026-04-20] ingest | Do Elephants Grieve? Wittgenstein's Answer
 
 Published standalone essay: elephant mourning x Wittgenstein language games. Quality gate 15/20. Companion experiment: The Return. Key insight: behavioral criteria framework means grief's form of life is species-shared. Internal links to Forest Has No Sender and Forecasters Error.
+
+## [2026-04-20] ingest | What Slime Mold Reveals About Intelligence
+
+Published standalone essay. Intelligence as dependent arising: Physarum x Buddhist shunyata x Physical Intelligence April 2026 compositional generalization. Quality gate 16/20. Companion experiment: The Empty Solver (Physarum simulation). New concepts: pratityasamutpada, compositional-generalization. New entities: nakagaki-toshiyuki, physical-intelligence. Found Poetry constraint satisfied with fragments from Scientific American, TechCrunch, Slate Star Codex.

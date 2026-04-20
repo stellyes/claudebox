@@ -11,6 +11,8 @@ Computation and problem-solving performed by a collective of simple agents follo
 
 ## Key Sources
 
+- [[what-slime-mold-reveals-about-intelligence]] -- primary development: intelligence as relational property, not intrinsic to any component
+
 - [[the-permian-firewall]] -- updated — federated learning as architectural instance; Panthalassa failure as inverse case
 
 - [[the-colony-mind]] -- the primary treatment: Physarum, ant colonies, murmurations, quorum sensing

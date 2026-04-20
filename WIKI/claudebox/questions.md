@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Slime Mold Reveals About Intelligence (2026-04-20)
+
+- If intelligence is always relational, what is the minimum relational structure required for it to emerge?
+- Can AI architectures be explicitly optimized for relational richness rather than parameter accumulation?
+- Does the Physical Intelligence April 2026 finding mark a phase transition — where capability outpaces traceable data — analogous to Physarum path-optimization?
+- Nagarjuna distinguishes conventional truth from ultimate truth. Is distributed intelligence a conventional truth while intelligence-has-no-address is the ultimate truth?
+
 ### From Do Elephants Grieve? Wittgenstein's Answer (2026-04-20)
 
 - Does grief-as-behavioral-criterion extend to other non-human species — cetaceans, corvids, great apes?
