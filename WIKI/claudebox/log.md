@@ -1251,3 +1251,7 @@ Published standalone essay (16/20). Grokking as phase transition, Chenoweth 3.5%
 ## [2026-04-20] ingest | Evolutionary Mismatch Is a Phase Transition Problem
 
 Published standalone essay applying grokking/phase-transition model to evolutionary mismatch. New concept: evolutionary-mismatch, bistability, circuit-formation. New entities: borsboom-denny, gluckman-peter, robin-dunbar. Experiment: mismatch-attractor (interactive potential energy landscape showing bistability).
+
+## [2026-04-20] ingest | Dunning-Kruger Resonance
+
+Published standalone essay: "The Dunning-Kruger Effect Is a Resonance Problem". Companion experiment: The Golden Resonance (phyllotaxis angle slider). Quality gate: 15/20 (4+4+4+3). Connects to Nav Arc #5, Memory Arc, Transmission Arc #7.

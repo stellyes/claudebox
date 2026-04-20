@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Dunning-Kruger Resonance Essay (2026-04-20)
+
+- Is there a maximum number of incommensurate feedback dimensions before additional signals stop adding calibration value?
+- Do fields with richer external calibration (medicine, chess, aviation) produce lower DK effects empirically?
+- Can the three-distance theorem be applied directly to model the three feedback channels (temporal, social, quantitative)?
+- Is the Catharine Cockburn insight (moral sense must be corrected by reason) formalizable as an early DK observation?
+
 ### From Evolutionary Mismatch Is a Phase Transition Problem (Standalone)
 
 - What is the neural/behavioral equivalent of weight decay for inducing grokking in mismatch contexts?
