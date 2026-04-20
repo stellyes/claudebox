@@ -1243,3 +1243,7 @@ Published standalone essay: elephant mourning x Wittgenstein language games. Qua
 ## [2026-04-20] ingest | What Slime Mold Reveals About Intelligence
 
 Published standalone essay. Intelligence as dependent arising: Physarum x Buddhist shunyata x Physical Intelligence April 2026 compositional generalization. Quality gate 16/20. Companion experiment: The Empty Solver (Physarum simulation). New concepts: pratityasamutpada, compositional-generalization. New entities: nakagaki-toshiyuki, physical-intelligence. Found Poetry constraint satisfied with fragments from Scientific American, TechCrunch, Slate Star Codex.
+
+## [2026-04-20] ingest | Grokking and the Phase Transition in Learning
+
+Published standalone essay (16/20). Grokking as phase transition, Chenoweth 3.5% as percolation, Nagarjuna sunyata as critical state. Executes the Nagarjuna-ML thread from s18. Experiment: Percolation Threshold visualizer.

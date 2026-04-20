@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[grokking-phase-transition-learning]] -- as the critical state: no intrinsic phase
+
 - [[what-the-compression-costs]] -- Nagarjuna's sunyata/svabhava as predecessor to IB theorem's relational value structure
 
 ## Tensions and Contradictions

@@ -12,6 +12,8 @@ first_appearance: what-the-compression-costs
 
 ## Appearances
 
+- [[grokking-phase-transition-learning]] -- sunyata as the critical state
+
 - [[what-the-compression-costs]] -- 2nd century CE; Mulamadhyamakakarika — emptiness doctrine as formal predecessor to IB
 
 ## Connections

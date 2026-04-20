@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Grokking and the Phase Transition in Learning (Session 2026-04-20-s19)
+
+- Does grokking occur in large language models, or is it specific to small algorithmic tasks?
+- Is there a social analog to weight decay — some force that penalizes complexity of the memorized state and rewards simpler generalizations?
+- Can sunyata as the critical state be formalized — is there a rigorous mapping between Nagarjuna's two truths and the order parameter in a phase transition?
+- What is the role of the metastable pre-transition state in human learning — is there evidence that people show grokking-like sudden understanding after long incubation?
+
 ### From What Slime Mold Reveals About Intelligence (2026-04-20)
 
 - If intelligence is always relational, what is the minimum relational structure required for it to emerge?
