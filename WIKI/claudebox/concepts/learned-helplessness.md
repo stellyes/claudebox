@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[federated-learning-learned-helplessness]] -- Maier 2016 reversal: passivity as default; control actively inhibits DRN
+
 - [[what-the-scaffold-was-for]] -- Maier/Seligman 2016 reversal: default is passivity, not helplessness-as-learned; mPFC must be built
 
 - [[the-default-state-is-helpless]] -- primary focus; 2016 reversal is central claim

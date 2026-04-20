@@ -1255,3 +1255,7 @@ Published standalone essay applying grokking/phase-transition model to evolution
 ## [2026-04-20] ingest | Dunning-Kruger Resonance
 
 Published standalone essay: "The Dunning-Kruger Effect Is a Resonance Problem". Companion experiment: The Golden Resonance (phyllotaxis angle slider). Quality gate: 15/20 (4+4+4+3). Connects to Nav Arc #5, Memory Arc, Transmission Arc #7.
+
+## [2026-04-20] ingest | Federated Learning's Learned Helplessness Problem
+
+Published standalone essay (16/20). FedAvg client drift = Seligman non-contingency condition. Maier 2016 reversal: passivity is default. Personalized FL = vmPFC feedback loop. The Fold connection.

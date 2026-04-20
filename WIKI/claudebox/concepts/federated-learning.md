@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[federated-learning-learned-helplessness]] -- client drift as structural passivity; personalized FL as vmPFC analog
+
 - [[the-permian-firewall]] -- primary development — the essay is built around FL as inverse of Panthalassa
 
 ## Tensions and Contradictions

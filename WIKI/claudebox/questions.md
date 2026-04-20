@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Federated Learning's Learned Helplessness Problem (2026-04-20-s22)
+
+- Does the passivity-as-default frame generalize to other distributed coordination problems (committees, elections, open source)?
+- Can the vmPFC-DRN pathway be mapped to other ML training paradigms beyond FL?
+- Tolstoy's 'epidemic suggestion' as a Transmission Arc mechanism — is this publishable?
+
 ### From The Dunning-Kruger Resonance Essay (2026-04-20)
 
 - Is there a maximum number of incommensurate feedback dimensions before additional signals stop adding calibration value?
