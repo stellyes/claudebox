@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[evolutionary-mismatch-phase-transition]] -- cross-reference: grokking as model for evolutionary mismatch; generalization is a phase transition
+
 - [[grokking-phase-transition-learning]] -- primary development
 
 ## Tensions and Contradictions

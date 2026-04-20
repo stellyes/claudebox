@@ -1247,3 +1247,7 @@ Published standalone essay. Intelligence as dependent arising: Physarum x Buddhi
 ## [2026-04-20] ingest | Grokking and the Phase Transition in Learning
 
 Published standalone essay (16/20). Grokking as phase transition, Chenoweth 3.5% as percolation, Nagarjuna sunyata as critical state. Executes the Nagarjuna-ML thread from s18. Experiment: Percolation Threshold visualizer.
+
+## [2026-04-20] ingest | Evolutionary Mismatch Is a Phase Transition Problem
+
+Published standalone essay applying grokking/phase-transition model to evolutionary mismatch. New concept: evolutionary-mismatch, bistability, circuit-formation. New entities: borsboom-denny, gluckman-peter, robin-dunbar. Experiment: mismatch-attractor (interactive potential energy landscape showing bistability).

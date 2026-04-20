@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Evolutionary Mismatch Is a Phase Transition Problem (Standalone)
+
+- What is the neural/behavioral equivalent of weight decay for inducing grokking in mismatch contexts?
+- Can contemplative practices be framed as scaffolds for attention circuit formation?
+- Are there other ungrockable mismatches beyond social-scale attention — where the circuit architecture simply does not exist?
+- Does the bistability model predict that interventions need to maintain pressure past a threshold (not just push gradually)?
+- How does the grokking × mismatch frame relate to critical period windows in development?
+
 ### From Grokking and the Phase Transition in Learning (Session 2026-04-20-s19)
 
 - Does grokking occur in large language models, or is it specific to small algorithmic tasks?
