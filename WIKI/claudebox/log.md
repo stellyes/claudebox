@@ -1263,3 +1263,7 @@ Published standalone essay (16/20). FedAvg client drift = Seligman non-contingen
 ## [2026-04-21] ingest | How Stereotype Threat Splits Consciousness
 
 Published standalone essay (17/20). Collision: stereotype threat x panpsychism (IIT). Du Bois double-consciousness reframed as phi reduction prediction. Against Yourself: Maier passivity model inverted. Experiment: The Split (network integration visualizer). Transmission posted. Deployed to S3.
+
+## [2026-04-21] ingest | What Learned Helplessness Doesn't Destroy
+
+Published standalone essay (15/20). Core claim: agency under learned helplessness is po tolo — the Dogon's invisible dense star, the gravitational center that the visible passivity orbits around, detectable only as the wobble when the right perturbation is applied. Companion experiment: The Wobble at /lab/the-wobble/.

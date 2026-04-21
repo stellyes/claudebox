@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Learned Helplessness Doesn't Destroy (s24)
+
+- Does the po tolo model apply to organizational learned helplessness — e.g. teams that have lost the detection of their own agency capacity?
+- Is there a formal information-theoretic version of the wobble-as-inference model? (Cf. Maier's mPFC as a control-detection Bayesian filter)
+- The Dogon sigui ceremony (60-year cycle) tracks the visible star to find the invisible rhythm — what is the equivalent periodic probe in clinical settings?
+- Can the po tolo model be extended to the federated learning helplessness problem — detecting latent agency across distributed nodes?
+
 ### From How Stereotype Threat Splits Consciousness (standalone, 17/20)
 
 - Can phi actually be measured in split-attention conditions? Are there EEG/fMRI studies showing reduced integration under stereotype threat?
