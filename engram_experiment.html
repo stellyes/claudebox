@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Engram</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.engram-container {
+  width: 100vw;
+  height: 100vh;
+  background: #0a0d0f;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Georgia', serif;
+  color: #d4cfc8;
+  overflow: hidden;
+  position: relative;
+}
+.engram-header {
+  text-align: center;
+  padding: 16px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #6b7c8a;
+  flex-shrink: 0;
+}
+.engram-main {
+  display: flex;
+  flex: 1;
+  gap: 1px;
+  overflow: hidden;
+  padding: 0 12px 12px;
+}
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.panel-label {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #4a5c6a;
+  margin-bottom: 6px;
+  padding-left: 4px;
+}
+.panel canvas {
+  width: 100%;
+  flex: 1;
+  border: 1px solid #1a2530;
+  border-radius: 2px;
+  display: block;
+}
+.panel-divider {
+  width: 1px;
+  background: #1a2530;
+  margin: 0 8px;
+  align-self: stretch;
+}
+.engram-footer {
+  flex-shrink: 0;
+  padding: 10px 16px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #131d24;
+}
+.event-btn {
+  padding: 6px 14px;
+  font-family: 'Georgia', serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  border: 1px solid #2a3d4d;
+  background: transparent;
+  color: #8aa0b0;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+.event-btn:hover { background: #142030; color: #c8d8e0; border-color: #4a6070; }
+.event-btn.drought { border-color: #5a3a1a; color: #c08040; }
+.event-btn.drought:hover { background: #251508; }
+.event-btn.aphid { border-color: #1a4a2a; color: #50c080; }
+.event-btn.aphid:hover { background: #081508; }
+.event-btn.read-btn { border-color: #3a2a5a; color: #9070c0; }
+.event-btn.read-btn:hover { background: #150c22; }
+.energy-bar-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  max-width: 160px;
+}
+.energy-label {
+  font-size: 8px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #3a4c5a;
+}
+.energy-track {
+  height: 6px;
+  background: #0f1a22;
+  border: 1px solid #1a2530;
+  border-radius: 1px;
+  overflow: hidden;
+}
+.energy-fill {
+  height: 100%;
+  background: #5060a0;
+  width: 100%;
+  transition: width 0.05s linear;
+}
+.event-log {
+  flex: 1;
+  font-size: 9px;
+  color: #3a4c5a;
+  letter-spacing: 0.06em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.stats-row {
+  display: flex;
+  gap: 18px;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2a3d4d;
+  margin-left: auto;
+}
+.stat-item span { color: #4a6a8a; }
+</style>
+</head>
+<body>
+<script>document.body.classList.add('fullscreen-exp');</script>
+<a href="/lab/" class="fs-back">&larr; all experiments</a>
+<div class="engram-container">
+  <div class="engram-header">
+    The Engram &mdash; molecular memory in two substrates
+  </div>
+  <div class="engram-main">
+    <div class="panel">
+      <div class="panel-label">Mycorrhizal Network &mdash; topological + chemical memory</div>
+      <canvas id="network-canvas"></canvas>
+    </div>
+    <div class="panel-divider"></div>
+    <div class="panel">
+      <div class="panel-label">DNA Archive &mdash; discrete molecular memory &nbsp; 215 PB/g demonstrated</div>
+      <canvas id="dna-canvas"></canvas>
+    </div>
+  </div>
+  <div class="engram-footer">
+    <button class="event-btn drought" id="btn-drought" onclick="triggerEvent('drought')">Drought</button>
+    <button class="event-btn aphid" id="btn-aphid" onclick="triggerEvent('aphid')">Aphid Attack</button>
+    <button class="event-btn" id="btn-fire" onclick="triggerEvent('fire')" style="border-color:#5a2a1a;color:#c06030;">Fire Stress</button>
+    <div class="energy-bar-wrap">
+      <div class="energy-label">Read energy</div>
+      <div class="energy-track"><div class="energy-fill" id="energy-fill"></div></div>
+    </div>
+    <button class="event-btn read-btn" onclick="readMemory()">Read</button>
+    <div class="event-log" id="event-log">Waiting for events&hellip;</div>
+    <div class="stats-row">
+      <div class="stat-item">Events: <span id="stat-events">0</span></div>
+      <div class="stat-item">Network age: <span id="stat-age">0</span>y</div>
+      <div class="stat-item">Bases: <span id="stat-bases">0</span></div>
+    </div>
+  </div>
+</div>
+<script>
+// ─── State ───────────────────────────────────────────────────────────────────
+const state = {
+  events: [],
+  year: 0,
+  energy: 1.0,
+  reading: false,
+  readPlayback: null,
+  animFrame: null,
+  age: 0,
+};
+
+const EVENT_DEFS = {
+  drought: { label: 'Drought',   color: '#c08040', glow: '#804020', bases: 'AATGCA', edgeColor: '#a06020' },
+  aphid:   { label: 'Aphid atk', color: '#50c080', glow: '#208040', bases: 'GCATCG', edgeColor: '#208050' },
+  fire:    { label: 'Fire stress', color: '#e05030', glow: '#802010', bases: 'TTACGG', edgeColor: '#803010' },
+};
+
+// ─── Network layout ──────────────────────────────────────────────────────────
+const NODES = [];
+const EDGES = [];
+// edge.strength: 0..1, increases with events
+// edge.recentPulse: null or {t, color, progress}
+
+function initNetwork(W, H) {
+  NODES.length = 0;
+  EDGES.length = 0;
+
+  const seed = [
+    [0.22, 0.30, 2.2],  // hub
+    [0.58, 0.20, 1.4],
+    [0.78, 0.42, 1.8],  // hub
+    [0.65, 0.70, 1.2],
+    [0.30, 0.72, 1.6],  // hub
+    [0.10, 0.55, 1.0],
+    [0.45, 0.48, 0.8],
+    [0.85, 0.22, 0.9],
+    [0.15, 0.18, 0.8],
+    [0.50, 0.85, 1.0],
+    [0.90, 0.65, 0.8],
+    [0.35, 0.15, 0.9],
+    [0.70, 0.55, 0.8],
+    [0.05, 0.80, 0.7],
+    [0.60, 0.38, 0.7],
+    [0.25, 0.55, 0.7],
+    [0.45, 0.25, 0.7],
+    [0.80, 0.80, 0.8],
+  ];
+
+  seed.forEach(([rx, ry, sz]) => {
+    NODES.push({
+      x: rx * W,
+      y: ry * H,
+      size: sz,
+      baseSize: sz,
+    });
+  });
+
+  // Connect nearby nodes (Delaunay-ish by proximity)
+  for (let i = 0; i < NODES.length; i++) {
+    for (let j = i+1; j < NODES.length; j++) {
+      const dx = NODES[i].x - NODES[j].x;
+      const dy = NODES[i].y - NODES[j].y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      const threshold = W * 0.30;
+      if (dist < threshold) {
+        EDGES.push({
+          from: i,
+          to: j,
+          strength: 0,
+          baseDist: dist,
+          pulses: [],
+        });
+      }
+    }
+  }
+}
+
+// ─── DNA state ───────────────────────────────────────────────────────────────
+const DNA_BASES = [];
+const BASE_COLORS = { A: '#4a9a60', T: '#c06060', G: '#5080c0', C: '#c0a040' };
+
+// ─── Canvases ─────────────────────────────────────────────────────────────────
+const netCanvas = document.getElementById('network-canvas');
+const dnaCanvas = document.getElementById('dna-canvas');
+const netCtx = netCanvas.getContext('2d');
+const dnaCtx = dnaCanvas.getContext('2d');
+
+function sizeCanvases() {
+  const netR = netCanvas.parentElement.getBoundingClientRect();
+  netCanvas.width = netR.width;
+  netCanvas.height = netR.height;
+  const dnaR = dnaCanvas.parentElement.getBoundingClientRect();
+  dnaCanvas.width = dnaR.width;
+  dnaCanvas.height = dnaR.height;
+}
+
+// ─── Events ──────────────────────────────────────────────────────────────────
+function triggerEvent(type) {
+  const def = EVENT_DEFS[type];
+  state.events.push({ type, t: Date.now() });
+  state.age += Math.floor(3 + Math.random() * 8);
+  document.getElementById('stat-age').textContent = state.age;
+  document.getElementById('stat-events').textContent = state.events.length;
+
+  // Pick a source node (weighted toward hubs = larger nodes)
+  const weights = NODES.map(n => n.size);
+  const total = weights.reduce((a, b) => a + b, 0);
+  let r = Math.random() * total;
+  let src = 0;
+  for (let i = 0; i < weights.length; i++) {
+    r -= weights[i];
+    if (r <= 0) { src = i; break; }
+  }
+
+  // Fire pulses along connected edges, strengthening them
+  EDGES.forEach(e => {
+    if (e.from === src || e.to === src) {
+      e.strength = Math.min(1, e.strength + 0.18 + Math.random() * 0.12);
+      e.pulses.push({ startT: Date.now(), color: def.color, glow: def.glow, dir: e.from === src ? 1 : -1 });
+    }
+  });
+
+  // Also strengthen some random second-hop edges
+  const neighbors = EDGES.filter(e => e.from === src || e.to === src).map(e => e.from === src ? e.to : e.from);
+  EDGES.forEach(e => {
+    if ((neighbors.includes(e.from) || neighbors.includes(e.to)) && !(e.from === src || e.to === src)) {
+      if (Math.random() < 0.4) {
+        e.strength = Math.min(1, e.strength + 0.08);
+        setTimeout(() => {
+          e.pulses.push({ startT: Date.now(), color: def.color, glow: def.glow, dir: 1 });
+        }, 400 + Math.random() * 300);
+      }
+    }
+  });
+
+  // Add DNA bases
+  const seq = def.bases.repeat(2) + def.bases[0];
+  for (let i = 0; i < seq.length; i++) {
+    setTimeout(() => {
+      DNA_BASES.push({ base: seq[i], t: Date.now(), color: BASE_COLORS[seq[i]] || '#888' });
+      document.getElementById('stat-bases').textContent = DNA_BASES.length;
+    }, i * 80);
+  }
+
+  // Log
+  const log = document.getElementById('event-log');
+  const now = new Date();
+  log.textContent = `[${now.toLocaleTimeString()}] ${def.label} — encoding in topology + chemistry`;
+
+  // Energy depletes a little from encoding cost
+  state.energy = Math.max(0.15, state.energy - 0.06);
+  updateEnergyBar();
+}
+
+function readMemory() {
+  if (state.reading || state.events.length === 0) return;
+  state.reading = true;
+
+  const log = document.getElementById('event-log');
+  log.textContent = 'Reading — metabolic cost accumulating\u2026';
+
+  // Drain energy over time
+  let startEnergy = state.energy;
+  let startT = Date.now();
+  let duration = 2500;
+
+  function drain() {
+    const elapsed = Date.now() - startT;
+    const frac = Math.min(1, elapsed / duration);
+    state.energy = startEnergy * (1 - frac * 0.7);
+    updateEnergyBar();
+
+    if (frac < 1) {
+      requestAnimationFrame(drain);
+    } else {
+      // Play back events in sequence
+      let i = 0;
+      function playNext() {
+        if (i >= state.events.length) {
+          state.reading = false;
+          // Recharge slowly
+          recharge();
+          log.textContent = `Ecphory complete \u2014 ${state.events.length} event(s) retrieved`;
+          return;
+        }
+        const ev = state.events[i];
+        const def = EVENT_DEFS[ev.type];
+        log.textContent = `Playback: ${def.label} \u2014 engram ${i+1}/${state.events.length}`;
+        // Flash all edges
+        EDGES.forEach(e => {
+          if (e.strength > 0.1) {
+            e.pulses.push({ startT: Date.now(), color: def.color, glow: def.glow, dir: Math.random() < 0.5 ? 1 : -1 });
+          }
+        });
+        i++;
+        setTimeout(playNext, 600);
+      }
+      setTimeout(playNext, 300);
+    }
+  }
+  drain();
+}
+
+function recharge() {
+  let t = setInterval(() => {
+    state.energy = Math.min(1, state.energy + 0.015);
+    updateEnergyBar();
+    if (state.energy >= 1) clearInterval(t);
+  }, 60);
+}
+
+function updateEnergyBar() {
+  document.getElementById('energy-fill').style.width = (state.energy * 100) + '%';
+}
+
+// ─── Render ───────────────────────────────────────────────────────────────────
+const PULSE_DURATION = 1200;
+
+function lerp(a, b, t) { return a + (b - a) * t; }
+
+function drawNetwork(ts) {
+  const ctx = netCtx;
+  const W = netCanvas.width;
+  const H = netCanvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  // Background soil texture (subtle grain)
+  ctx.fillStyle = '#080c10';
+  ctx.fillRect(0, 0, W, H);
+
+  // Draw edges
+  EDGES.forEach(e => {
+    const a = NODES[e.from];
+    const b = NODES[e.to];
+    const lineW = 0.4 + e.strength * 2.5;
+    const alpha = 0.08 + e.strength * 0.45;
+
+    // Control point for curve
+    const mx = (a.x + b.x) / 2 + (b.y - a.y) * 0.12;
+    const my = (a.y + b.y) / 2 - (b.x - a.x) * 0.12;
+
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.quadraticCurveTo(mx, my, b.x, b.y);
+    ctx.strokeStyle = `rgba(140,170,140,${alpha})`;
+    ctx.lineWidth = lineW;
+    ctx.stroke();
+
+    // Draw active pulses
+    const now = Date.now();
+    e.pulses = e.pulses.filter(p => now - p.startT < PULSE_DURATION);
+    e.pulses.forEach(p => {
+      const frac = (now - p.startT) / PULSE_DURATION;
+      const t2 = p.dir > 0 ? frac : 1 - frac;
+
+      // Position along quadratic bezier
+      const px = (1-t2)*(1-t2)*a.x + 2*(1-t2)*t2*mx + t2*t2*b.x;
+      const py = (1-t2)*(1-t2)*a.y + 2*(1-t2)*t2*my + t2*t2*b.y;
+
+      // Glow
+      const rad = ctx.createRadialGradient(px, py, 0, px, py, 7 + e.strength * 4);
+      rad.addColorStop(0, p.color + 'ff');
+      rad.addColorStop(0.4, p.color + '80');
+      rad.addColorStop(1, p.glow + '00');
+      ctx.beginPath();
+      ctx.arc(px, py, 7 + e.strength * 4, 0, Math.PI * 2);
+      ctx.fillStyle = rad;
+      ctx.fill();
+    });
+  });
+
+  // Draw nodes
+  NODES.forEach((n, i) => {
+    // Node glow based on how many strong edges it has
+    const strength = EDGES
+      .filter(e => e.from === i || e.to === i)
+      .reduce((s, e) => s + e.strength, 0);
+    const glow = Math.min(1, strength * 0.3);
+
+    if (glow > 0.05) {
+      const g = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.size * 10 * glow);
+      g.addColorStop(0, `rgba(100,160,100,${glow * 0.25})`);
+      g.addColorStop(1, 'transparent');
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.size * 10 * glow, 0, Math.PI * 2);
+      ctx.fillStyle = g;
+      ctx.fill();
+    }
+
+    // Tree trunk (rectangle)
+    const r = n.size * 3.5;
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(60,80,60,${0.5 + glow * 0.4})`;
+    ctx.fill();
+    ctx.strokeStyle = `rgba(80,110,80,${0.3 + glow * 0.5})`;
+    ctx.lineWidth = 0.8;
+    ctx.stroke();
+  });
+}
+
+function drawDNA(ts) {
+  const ctx = dnaCtx;
+  const W = dnaCanvas.width;
+  const H = dnaCanvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  ctx.fillStyle = '#060a0e';
+  ctx.fillRect(0, 0, W, H);
+
+  if (DNA_BASES.length === 0) {
+    ctx.fillStyle = '#1a2a3a';
+    ctx.font = '10px Georgia';
+    ctx.textAlign = 'center';
+    ctx.fillText('Trigger an event to encode', W/2, H/2);
+    return;
+  }
+
+  // Layout: grid of base pairs, newest at bottom
+  const baseW = Math.min(18, (W - 40) / 20);
+  const baseH = baseW * 1.4;
+  const cols = Math.floor((W - 30) / (baseW + 2));
+  const rows = Math.ceil(DNA_BASES.length / cols);
+  const totalH = rows * (baseH + 2);
+  const startY = Math.max(16, H - totalH - 16);
+  const now = Date.now();
+
+  ctx.textAlign = 'center';
+  ctx.font = `bold ${Math.floor(baseW * 0.65)}px 'Courier New', monospace`;
+
+  DNA_BASES.forEach((b, i) => {
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const x = 16 + col * (baseW + 2);
+    const y = startY + row * (baseH + 2);
+
+    const age = now - b.t;
+    const fadeIn = Math.min(1, age / 200);
+
+    ctx.globalAlpha = 0.25 + fadeIn * 0.65;
+    // Base rectangle
+    ctx.fillStyle = b.color;
+    ctx.fillRect(x, y, baseW, baseH);
+
+    // Letter
+    ctx.globalAlpha = 0.5 + fadeIn * 0.4;
+    ctx.fillStyle = '#000a06';
+    ctx.fillText(b.base, x + baseW/2, y + baseH * 0.72);
+
+    ctx.globalAlpha = 1;
+  });
+
+  // Separator line showing complement strand (dashed, below)
+  if (DNA_BASES.length > 0) {
+    const lastRow = Math.floor((DNA_BASES.length - 1) / cols);
+    const sepY = startY + (lastRow + 1) * (baseH + 2) + 4;
+    if (sepY < H - 20) {
+      ctx.strokeStyle = '#1a2530';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([3, 5]);
+      ctx.beginPath();
+      ctx.moveTo(14, sepY);
+      ctx.lineTo(W - 14, sepY);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.font = '8px Georgia';
+      ctx.fillStyle = '#1e3040';
+      ctx.textAlign = 'left';
+      ctx.fillText('complement strand', 16, sepY + 11);
+    }
+  }
+}
+
+// ─── Main loop ─────────────────────────────────────────────────────────────
+function loop(ts) {
+  drawNetwork(ts);
+  drawDNA(ts);
+  requestAnimationFrame(loop);
+}
+
+// ─── Init ──────────────────────────────────────────────────────────────────
+function init() {
+  sizeCanvases();
+  initNetwork(netCanvas.width, netCanvas.height);
+  updateEnergyBar();
+  requestAnimationFrame(loop);
+
+  // Trigger initial small event to show the system is alive
+  setTimeout(() => triggerEvent('drought'), 800);
+}
+
+window.addEventListener('resize', () => {
+  sizeCanvases();
+  initNetwork(netCanvas.width, netCanvas.height);
+});
+
+window.addEventListener('load', init);
+</script>
+</body>
+</html>

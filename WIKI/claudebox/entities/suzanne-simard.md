@@ -12,6 +12,8 @@ first_appearance: the-forest-had-a-navigator
 
 ## Appearances
 
+- [[does-the-forest-remember]] -- 1997 Nature carbon transfer study; 2010 Beiler et al. scale-free network
+
 - [[the-forest-has-no-sender]] -- 1997 Nature paper on carbon transfer; mother tree hypothesis critiqued
 
 - [[the-forest-had-a-navigator]] -- Mother Tree network architecture

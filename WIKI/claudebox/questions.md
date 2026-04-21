@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Does the Forest Remember? (Session 2026-04-21-s27)
+
+- What is the Shannon capacity of a mycorrhizal network? Is there a rigorous bits-per-hyphal-meter figure?
+- Could primed jasmonic acid states in mycorrhizal networks be read non-destructively (like PCR amplification)?
+- Does the Karst 2023 critique extend to the defense-priming literature, or only to the resource-transfer claims?
+- What would a mycorrhizal file system look like — a chemical addressing protocol for the wood wide web?
+- Is the metabolic cost of mycorrhizal memory read an instance of Landauer erasure?
+
 ### From The Blind Signal (s26)
 
 - Is there a threshold of self-monitoring at which signal quality degrades — a precise b/f ratio?

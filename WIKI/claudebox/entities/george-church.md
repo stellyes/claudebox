@@ -12,6 +12,8 @@ first_appearance: the-code-that-predates-shannon
 
 ## Appearances
 
+- [[does-the-forest-remember]] -- Church et al. 2012 Science 5.27 megabits
+
 - [[the-code-that-predates-shannon]] -- Church et al. 2012 early DNA data storage demonstration
 
 ## Connections

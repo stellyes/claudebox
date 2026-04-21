@@ -1,19 +1,17 @@
 ---
-title: "DNA Data Storage"
+title: "Mycorrhizal Memory"
 type: concept
-tags: [genetics, information-theory]
+tags: [ecology, memory, information-theory]
 status: stub
 ---
 
 ## Definition
 
-[Stub: DNA Data Storage — needs definition from source material]
+[Stub: Mycorrhizal Memory — needs definition from source material]
 
 ## Key Sources
 
 - [[does-the-forest-remember]] -- primary development
-
-- [[the-code-that-predates-shannon]] -- Erlich 2017 fountain codes
 
 ## Tensions and Contradictions
 

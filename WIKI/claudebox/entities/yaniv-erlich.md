@@ -12,6 +12,8 @@ first_appearance: the-inward-overview-effect
 
 ## Appearances
 
+- [[does-the-forest-remember]] -- DNA Fountain 2017: 215 PB/gram, 85% of Shannon capacity
+
 - [[the-code-that-predates-shannon]] -- DNA Fountain paper 2017; fountain codes for DNA storage
 
 - [[the-inward-overview-effect]] -- Columbia/NYGC; DNA Fountain algorithm; 215 pb/gram (2017, Science)

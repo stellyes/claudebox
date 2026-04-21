@@ -1275,3 +1275,7 @@ Published standalone essay #16. Octopus intelligence x analog computing revival.
 ## [2026-04-21] ingest | The Blind Signal
 
 Published standalone essay (15/20): octopus sender-blindness x Soviet propaganda x Price Equation bias term b. The Blind Skin experiment (id: 125). Transmission #205 added.
+
+## [2026-04-21] ingest | Does the Forest Remember?
+
+Published standalone essay on mycorrhizal memory and DNA data storage as the same class of molecular information system. Quality gate: 15/20. Links to The Engram, The Inheritance, What the Fungus Knows.

@@ -12,6 +12,8 @@ first_appearance: the-forest-has-no-sender
 
 ## Appearances
 
+- [[does-the-forest-remember]] -- Karst Jones Hoeksema 2023 NE&E critique of CMN literature
+
 - [[the-forest-has-no-sender]] -- Karst et al. 2023 meta-analysis critiquing wood wide web communication claims
 
 ## Connections

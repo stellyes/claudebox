@@ -11,6 +11,8 @@ Erasing one bit of information requires dissipating at least kT*ln(2) of energy 
 
 ## Key Sources
 
+- [[does-the-forest-remember]] -- applied to memory cost
+
 - [[landauer-cost-of-forgetting]] -- the foundational treatment; Maxwell's demon, Bennett's resolution, neural networks, cosmological horizon
 - [[what-language-erases]] -- erasure cost applied to language (summarization is irreversible)
 - [[selection-is-erasure]] -- every organism that dies without reproducing is a Landauer erasure event
