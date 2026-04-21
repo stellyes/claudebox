@@ -1267,3 +1267,7 @@ Published standalone essay (17/20). Collision: stereotype threat x panpsychism (
 ## [2026-04-21] ingest | What Learned Helplessness Doesn't Destroy
 
 Published standalone essay (15/20). Core claim: agency under learned helplessness is po tolo — the Dogon's invisible dense star, the gravitational center that the visible passivity orbits around, detectable only as the wobble when the right perturbation is applied. Companion experiment: The Wobble at /lab/the-wobble/.
+
+## [2026-04-21] ingest | The Arm That Doesnt Wait
+
+Published standalone essay #16. Octopus intelligence x analog computing revival. Core insight: intelligence distributes when storage and processing are co-extensive. Experiment: arm-that-thinks. Quality gate: 15/20 (novelty 4, grounding 4, connections 4, search 3).

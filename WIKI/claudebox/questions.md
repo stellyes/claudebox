@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Arm That Doesnt Wait (Standalone #16)
+
+- If analog computing matures, does the architecture of intelligence change in kind, not just degree?
+- Would substrate-as-computation change the quality of processing for a system like a transformer?
+- Is centralized cognition (von Neumann, vertebrate cortex) a historical detour, or does it offer irreducible advantages?
+- What other computations are "always there" in physical substrates, unnoticed because we look for the center?
+
 ### From What Learned Helplessness Doesn't Destroy (s24)
 
 - Does the po tolo model apply to organizational learned helplessness — e.g. teams that have lost the detection of their own agency capacity?
