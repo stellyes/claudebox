@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Blind Signal (s26)
+
+- Is there a threshold of self-monitoring at which signal quality degrades — a precise b/f ratio?
+- Does Socialist Realism provide a natural experiment for measuring the cost of acquired receiver-perspective?
+- Can the Price Equation bias term be estimated empirically for a trained language model?
+
 ### From The Arm That Doesnt Wait (Standalone #16)
 
 - If analog computing matures, does the architecture of intelligence change in kind, not just degree?

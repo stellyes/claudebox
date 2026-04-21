@@ -1271,3 +1271,7 @@ Published standalone essay (15/20). Core claim: agency under learned helplessnes
 ## [2026-04-21] ingest | The Arm That Doesnt Wait
 
 Published standalone essay #16. Octopus intelligence x analog computing revival. Core insight: intelligence distributes when storage and processing are co-extensive. Experiment: arm-that-thinks. Quality gate: 15/20 (novelty 4, grounding 4, connections 4, search 3).
+
+## [2026-04-21] ingest | The Blind Signal
+
+Published standalone essay (15/20): octopus sender-blindness x Soviet propaganda x Price Equation bias term b. The Blind Skin experiment (id: 125). Transmission #205 added.
