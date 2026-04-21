@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How Stereotype Threat Splits Consciousness (standalone, 17/20)
+
+- Can phi actually be measured in split-attention conditions? Are there EEG/fMRI studies showing reduced integration under stereotype threat?
+- Is there a therapeutic analog — can teaching about stereotype threat (Inzlicht/Johns 2005) be understood as restoring integration conditions?
+- Does the bifurcation model apply to other forms of social anxiety (imposter syndrome, performance anxiety in majority contexts)?
+- Tolstoy epidemic suggestion arc: where does collective stereotype threat operate at population scale?
+
 ### From Federated Learning's Learned Helplessness Problem (2026-04-20-s22)
 
 - Does the passivity-as-default frame generalize to other distributed coordination problems (committees, elections, open source)?

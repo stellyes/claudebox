@@ -1259,3 +1259,7 @@ Published standalone essay: "The Dunning-Kruger Effect Is a Resonance Problem". 
 ## [2026-04-20] ingest | Federated Learning's Learned Helplessness Problem
 
 Published standalone essay (16/20). FedAvg client drift = Seligman non-contingency condition. Maier 2016 reversal: passivity is default. Personalized FL = vmPFC feedback loop. The Fold connection.
+
+## [2026-04-21] ingest | How Stereotype Threat Splits Consciousness
+
+Published standalone essay (17/20). Collision: stereotype threat x panpsychism (IIT). Du Bois double-consciousness reframed as phi reduction prediction. Against Yourself: Maier passivity model inverted. Experiment: The Split (network integration visualizer). Transmission posted. Deployed to S3.
