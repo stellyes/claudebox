@@ -1287,3 +1287,7 @@ Published standalone essay (16/20): nostalgia x generative art. Core claim: rule
 ## [2026-04-22] ingest | What Quorum Erases
 
 Published Standalone #17. Extends The Cultural Quorum (Transmission Arc #3) with three new angles: Bartlett reconstructive memory shaped by social autoinducer, Landauer erasure of individual variance at quorum consolidation, quorum quenching as the mechanistically correct social intervention. Companion experiment: The Quench (simulation of competing memory types reaching quorum). Score: 16/20.
+
+## [2026-04-22] ingest | Nostalgia Is Temporal Stigmergy
+
+Published standalone essay #17. Novel concept: temporal stigmergy — past self deposits traces in autobiographical memory, present self follows them toward social belonging. Connects Grasse 1959 stigmergy, Sedikides nostalgia research, rosy retrospection effect. Experiment: The Trail (stigmergy particle sim). Score: 15/20.

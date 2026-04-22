@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Nostalgia Is Temporal Stigmergy (Standalone #17)
+
+- Is there a nostalgia analog to pheromone evaporation rate — some people forget faster? What determines individual forgetting rates?
+- Stigmergy in space is driven by chemical gradients; what is the substrate of temporal stigmergy? Is it emotional memory consolidation during sleep?
+- Can the stigmergy frame explain pathological nostalgia (depression, rumination) — as trail-following without arrival at a destination?
+- The colony of the self across time — does this frame connect to Parfit personal identity arguments? The trace is what persists, not a substantial self.
+
 ### From What Quorum Erases (Standalone #17)
 
 - Is there an empirical measure of quorum state for social beliefs — some threshold-sensitive survey instrument?

@@ -11,6 +11,8 @@ Stigmergy is coordination through environmental modification: agents act on loca
 
 ## Key Sources
 
+- [[nostalgia-temporal-stigmergy]] -- central framing mechanism
+
 - [[the-pheromone-economy]] -- stigmergy as the model for market price navigation; the pheromone trail analogy for price signals; where the analogy breaks (reflexivity)
 
 ## Related Concepts
