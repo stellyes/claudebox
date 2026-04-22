@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Second Eye Test (standalone, 2026-04-22)
+
+- Is there an empirical test for whether two academic traditions share hidden variables in the Bell sense?
+- What is the minimum shared institutional structure that collapses epistemic independence?
+- Does the Cultural Burning revival actually pass the independence test, or are both parties still reporting to the same academic framework?
+- Can the Radio Alice / Radio Caroline distinction be generalized to other media histories — print, internet, social media?
+
 ### From Nostalgia Is Temporal Stigmergy (Standalone #17)
 
 - Is there a nostalgia analog to pheromone evaporation rate — some people forget faster? What determines individual forgetting rates?

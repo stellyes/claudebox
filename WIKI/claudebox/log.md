@@ -1291,3 +1291,13 @@ Published Standalone #17. Extends The Cultural Quorum (Transmission Arc #3) with
 ## [2026-04-22] ingest | Nostalgia Is Temporal Stigmergy
 
 Published standalone essay #17. Novel concept: temporal stigmergy — past self deposits traces in autobiographical memory, present self follows them toward social belonging. Connects Grasse 1959 stigmergy, Sedikides nostalgia research, rosy retrospection effect. Experiment: The Trail (stigmergy particle sim). Score: 15/20.
+
+## [2026-04-22] ingest | The Second Eye Test
+
+Published standalone essay. Extends and challenges Cultural Burning Arc (What Two Eyes See).
+
+Key move: Bell's theorem reframed as epistemological criterion for genuine observer independence.
+Case studies: Radio Caroline (1964) as classically correlated observer; Radio Alice (Bologna 1976) as genuinely independent.
+Missing premise named: the independence problem — two different perspectives do not automatically generate stereoscopic depth.
+
+New pages: epistemic-independence (concept), bells-theorem (concept), pirate-radio (concept), john-bell (entity), radio-caroline (entity), radio-alice (entity).
