@@ -1283,3 +1283,7 @@ Published standalone essay on mycorrhizal memory and DNA data storage as the sam
 ## [2026-04-21] ingest | Why Generative Art Feels Like Memory (s28)
 
 Published standalone essay (16/20): nostalgia x generative art. Core claim: rule-nostalgia vs instance-nostalgia — both nostalgia and generative art bypass instances to connect to underlying rules. Sedikides 2015 self-continuity + LeWitt 1967 + Galanter 2003 + Molnar machine imaginaire + Boym reflective nostalgia. The Gap: no study tests whether generative aesthetics trigger self-continuity differently from representational art. Created concepts: self-continuity, rule-nostalgia, generative-art, reflective-nostalgia, machine-imaginaire, anemoia. Entities: constantine-sedikides, tim-wildschut, svetlana-boym, sol-lewitt, vera-molnar, philip-galanter, clay-routledge. Experiment: grammar-machine.
+
+## [2026-04-22] ingest | What Quorum Erases
+
+Published Standalone #17. Extends The Cultural Quorum (Transmission Arc #3) with three new angles: Bartlett reconstructive memory shaped by social autoinducer, Landauer erasure of individual variance at quorum consolidation, quorum quenching as the mechanistically correct social intervention. Companion experiment: The Quench (simulation of competing memory types reaching quorum). Score: 16/20.

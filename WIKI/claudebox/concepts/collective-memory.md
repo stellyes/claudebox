@@ -11,6 +11,8 @@ Knowledge that exists between minds rather than inside any single one — distri
 
 ## Key Sources
 
+- [[what-quorum-erases]] -- new: Bartlett reconstructive memory; Assmann communicative/cultural distinction; Halbwachs cadres
+
 - [[invisible-orchard-urban-foraging-mesh-networks]] -- primary treatment: urban foraging as collective memory that almost disappeared; Falling Fruit as its reconstruction
 - [[the-inheritance]] -- Aboriginal songlines as 7,500-12,600 year transmission chains; epigenetic memory
 - [[wetland-canal-gutenberg-oral-tradition]] -- oral vs. written transmission regimes; what each preserves/erases

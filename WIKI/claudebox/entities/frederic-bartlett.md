@@ -12,6 +12,8 @@ first_appearance: the-copying-problem
 
 ## Appearances
 
+- [[what-quorum-erases]] -- War of the Ghosts experiment 1932; reconstructive memory
+
 - [[the-copying-problem]] -- serial reproduction / War of the Ghost
 
 ## Connections

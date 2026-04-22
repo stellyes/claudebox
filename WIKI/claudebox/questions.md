@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Quorum Erases (Standalone #17)
+
+- Is there an empirical measure of quorum state for social beliefs — some threshold-sensitive survey instrument?
+- Can counter-narrative reach quorum against an established false collective memory without institutional backing?
+- What is the fastest known social quorum quenching event? (potential case study: truth commissions, de-Nazification)
+- Does the Assmann communicative/cultural threshold correspond to any neuroscience finding about when episodic memory becomes semantic?
+
 ### From Why Generative Art Feels Like Memory (Standalone, s28)
 
 - Does recognizing a generative grammar trigger stronger self-continuity restoration than recognizing a representational image, independent of autobiographical memory?

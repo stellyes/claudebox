@@ -71,6 +71,8 @@ Unkelbach (2007) showed the fluency-truth link is *learned* and reversible: when
 
 ## Key Sources
 
+- [[what-quorum-erases]] -- extended: quorum quenching mechanism (lactonases, Bacillus vs Pseudomonas); Dong et al. 2001
+
 - [[the-cultural-quorum]] — core synthesis; bacteria + illusory truth + oral tradition
 - Bassler & Silverman 1993 — autoinducer systems; AI-2 discovery
 - Hasher, Goldstein, Toppino 1977 — founding illusory truth experiment
