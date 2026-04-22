@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Generative Art Feels Like Memory (Standalone, s28)
+
+- Does recognizing a generative grammar trigger stronger self-continuity restoration than recognizing a representational image, independent of autobiographical memory?
+- Could the Sedikides state nostalgia scale (validated instrument) detect rule-nostalgia as a distinct variant from instance-nostalgia?
+- Is vaporwave nostalgia better modeled as reflective nostalgia (Boym) than as temporal longing — i.e., is the longing for the grammar, not the era?
+- Does the pixel-art paradox (nostalgia for a screen experience that never existed in that form) generalize to other generative aesthetic eras (early CGI, MIDI soundscapes)?
+- Could Vera Molnar's machine imaginaire outputs be used as stimuli in a self-continuity experiment to test rule-nostalgia?
+
 ### From Does the Forest Remember? (Session 2026-04-21-s27)
 
 - What is the Shannon capacity of a mycorrhizal network? Is there a rigorous bits-per-hyphal-meter figure?

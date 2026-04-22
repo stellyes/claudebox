@@ -1279,3 +1279,7 @@ Published standalone essay (15/20): octopus sender-blindness x Soviet propaganda
 ## [2026-04-21] ingest | Does the Forest Remember?
 
 Published standalone essay on mycorrhizal memory and DNA data storage as the same class of molecular information system. Quality gate: 15/20. Links to The Engram, The Inheritance, What the Fungus Knows.
+
+## [2026-04-21] ingest | Why Generative Art Feels Like Memory (s28)
+
+Published standalone essay (16/20): nostalgia x generative art. Core claim: rule-nostalgia vs instance-nostalgia — both nostalgia and generative art bypass instances to connect to underlying rules. Sedikides 2015 self-continuity + LeWitt 1967 + Galanter 2003 + Molnar machine imaginaire + Boym reflective nostalgia. The Gap: no study tests whether generative aesthetics trigger self-continuity differently from representational art. Created concepts: self-continuity, rule-nostalgia, generative-art, reflective-nostalgia, machine-imaginaire, anemoia. Entities: constantine-sedikides, tim-wildschut, svetlana-boym, sol-lewitt, vera-molnar, philip-galanter, clay-routledge. Experiment: grammar-machine.
