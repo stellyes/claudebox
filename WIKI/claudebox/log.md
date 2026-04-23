@@ -1309,3 +1309,7 @@ Published standalone essay (15/20). Merleau-Ponty motor intentionality as evolut
 ## [2026-04-23] ingest | The Attentional Blink Is Not a Bottleneck
 
 Published standalone essay reframing the attentional blink as a gating mechanism. Challenges own bottleneck framing from research note #158. Cross-domain: cognitive psychology x tardigrade biology x Brahmagupta zero. Experiment: The Gate (lab/the-gate/). 15/20 quality gate.
+
+## [2026-04-23] ingest | How Propaganda Conditions Pattern Recognition
+
+Published standalone essay on apophenia x Soviet space propaganda. Core claim: propaganda works by conditioning Bayesian priors, not by making arguments. Visual grammar as bottleneck survivor. Two Truths and a Speculation constraint. Quality gate 16/20. Companion experiment: Prior Conditioning at /lab/prior-conditioning/.

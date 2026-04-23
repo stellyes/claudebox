@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How Propaganda Conditions Pattern Recognition (Standalone #34)
+
+- Is prior-awareness trainable? What interventions build the capacity to notice which connections feel natural?
+- What is the decay rate of propaganda priors after the stimulus stream stops? Does Soviet prior-conditioning persist in populations that grew up post-Soviet?
+- Does the apophenia-creativity continuum have a formal Bayesian description — at what prior precision level does creative insight tip into paranoia?
+- Cultural analog of the Language Leap bottleneck: what determines which visual grammar elements survive multi-generational transmission vs. decay?
+
 ### From The Attentional Blink Is Not a Bottleneck (2026-04-23)
 
 - Can the gate model be formalized? What is the mathematical form of the priority threshold?
