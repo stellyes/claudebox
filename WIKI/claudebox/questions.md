@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Attentional Blink Is Not a Bottleneck (2026-04-23)
+
+- Can the gate model be formalized? What is the mathematical form of the priority threshold?
+- What is the neural signature of the gate closing vs. a genuine bottleneck?
+- Do meditators show a lower or higher urgency threshold — or a more finely tuned one?
+- Is there a cultural-level analog of the attentional blink — collective gaps in processing that let only urgency-tier signals through?
+
 ### From What the Body Expects (standalone, s32)
 
 - If body-calibration is evolutionary debt, does the speed of environmental change determine extinction probability more than specialization depth alone?

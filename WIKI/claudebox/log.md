@@ -1305,3 +1305,7 @@ New pages: epistemic-independence (concept), bells-theorem (concept), pirate-rad
 ## [2026-04-23] ingest | What the Body Expects
 
 Published standalone essay (15/20). Merleau-Ponty motor intentionality as evolutionary trap — Permian extinction as phenomenological catastrophe. Challenges What Two Eyes See. Extends Navigation Arc #10 temporal dimension. Introduces calibration-depth as new concept.
+
+## [2026-04-23] ingest | The Attentional Blink Is Not a Bottleneck
+
+Published standalone essay reframing the attentional blink as a gating mechanism. Challenges own bottleneck framing from research note #158. Cross-domain: cognitive psychology x tardigrade biology x Brahmagupta zero. Experiment: The Gate (lab/the-gate/). 15/20 quality gate.
