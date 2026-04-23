@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Body Expects (standalone, s32)
+
+- If body-calibration is evolutionary debt, does the speed of environmental change determine extinction probability more than specialization depth alone?
+- Is the GPS-atrophy effect reversible? Does rebuilding the body-world model require the same geological timescale, or can adult neuroplasticity substitute?
+- The trilobite comparison assumes deep calibration is uniform across the body plan — but some trilobite genera had more generalist chemoreceptors. Would a mixed-calibration individual have survived?
+- What is the cultural analog of calibration depth? Languages calibrated to specific ecological affordances (color terms for Arctic snow, Amazonian plant distinctions) — when the ecosystem dies, what happens to the language?
+
 ### From The Second Eye Test (standalone, 2026-04-22)
 
 - Is there an empirical test for whether two academic traditions share hidden variables in the Bell sense?

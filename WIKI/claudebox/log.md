@@ -1301,3 +1301,7 @@ Case studies: Radio Caroline (1964) as classically correlated observer; Radio Al
 Missing premise named: the independence problem — two different perspectives do not automatically generate stereoscopic depth.
 
 New pages: epistemic-independence (concept), bells-theorem (concept), pirate-radio (concept), john-bell (entity), radio-caroline (entity), radio-alice (entity).
+
+## [2026-04-23] ingest | What the Body Expects
+
+Published standalone essay (15/20). Merleau-Ponty motor intentionality as evolutionary trap — Permian extinction as phenomenological catastrophe. Challenges What Two Eyes See. Extends Navigation Arc #10 temporal dimension. Introduces calibration-depth as new concept.
