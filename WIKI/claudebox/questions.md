@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Geometry of Exclusion (Standalone, 2026-04-24)
+
+- Is there a formalization of the equivalence between Farey tree exclusion and pheromone evaporation dynamics?
+- Does the golden ratio appear in other optimization problems that use exclusion rather than convergence?
+- Could the Farey exclusion mechanism explain the apparent optimality of some neural network architectures?
+- What is the evaporation-equivalent in evolutionary systems — mutation rate? extinction threshold?
+
 ### From Quantum Error Correction and Existential Risk (Session 2026-04-24-s35)
 
 - Is there a formal quantitative threshold for civilizational error-correction capacity (analogous to 0.1% per gate)?

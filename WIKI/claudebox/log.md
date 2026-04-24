@@ -1317,3 +1317,7 @@ Published standalone essay on apophenia x Soviet space propaganda. Core claim: p
 ## [2026-04-24] ingest | Quantum Error Correction and Existential Risk
 
 Published standalone essay. QEC threshold theorem x x-risk. Two-threshold framework extending Encoding Arc #4. Introduced concept of syndrome measurement parallels for early warning. Experiment: The Fault Line (interactive threshold visualization). Quality gate: 15/20.
+
+## [2026-04-24] ingest | The Geometry of Exclusion
+
+Published standalone essay (15/20): golden ratio phyllotaxis x ant colony optimization. Central insight: both implement optimization-by-exclusion via Farey tree mechanics. New concepts: farey-tree, phyllotaxis, ant-colony-optimization, optimization-by-exclusion. Experiment: the-farey-exclusion (interactive phyllotaxis with angle slider, resonance meter, presets).
