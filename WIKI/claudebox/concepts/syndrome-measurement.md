@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[quantum-error-correction-existential-risk]] -- error intelligence without content exposure — parallels x-risk early warning
+
 - [[self-as-error-correction]] -- checking coherence without reading content; social mirroring as informal syndrome measurement
 
 ## Tensions and Contradictions

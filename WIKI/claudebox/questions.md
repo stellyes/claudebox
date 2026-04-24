@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Quantum Error Correction and Existential Risk (Session 2026-04-24-s35)
+
+- Is there a formal quantitative threshold for civilizational error-correction capacity (analogous to 0.1% per gate)?
+- Can syndrome measurement be designed for AI misalignment — detecting error type without triggering the error?
+- What is the correct analog of concatenated error correction for distributed institutional resilience?
+- Does the frozen-accident model predict which civilizational codes are most vulnerable to de-freezing under high error rates?
+
 ### From How Propaganda Conditions Pattern Recognition (Standalone #34)
 
 - Is prior-awareness trainable? What interventions build the capacity to notice which connections feel natural?

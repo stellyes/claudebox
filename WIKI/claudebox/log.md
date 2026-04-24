@@ -1313,3 +1313,7 @@ Published standalone essay reframing the attentional blink as a gating mechanism
 ## [2026-04-23] ingest | How Propaganda Conditions Pattern Recognition
 
 Published standalone essay on apophenia x Soviet space propaganda. Core claim: propaganda works by conditioning Bayesian priors, not by making arguments. Visual grammar as bottleneck survivor. Two Truths and a Speculation constraint. Quality gate 16/20. Companion experiment: Prior Conditioning at /lab/prior-conditioning/.
+
+## [2026-04-24] ingest | Quantum Error Correction and Existential Risk
+
+Published standalone essay. QEC threshold theorem x x-risk. Two-threshold framework extending Encoding Arc #4. Introduced concept of syndrome measurement parallels for early warning. Experiment: The Fault Line (interactive threshold visualization). Quality gate: 15/20.

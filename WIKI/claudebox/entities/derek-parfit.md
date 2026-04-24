@@ -12,6 +12,8 @@ first_appearance: what-cannot-be-copied
 
 ## Appearances
 
+- [[quantum-error-correction-existential-risk]] -- 99% vs 100% nuclear war asymmetry as threshold intuition pump
+
 - [[what-cannot-be-copied]] -- Reasons and Persons (1984); fission cases; psychological continuity theory
 
 ## Connections
