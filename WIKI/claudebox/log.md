@@ -1333,3 +1333,7 @@ Published standalone essay: tardigrade resilience x stereotype threat. Analogy O
 ## [2026-04-24] ingest | Degrowth and AI Risk: Goodhart's Law at Scale
 
 Published standalone essay s39. Core claim: degrowth economics and AI existential risk both describe Goodhart's Law at civilizational scale — optimization metrics decoupled from the values they track. Sources: Goodhart 1975, Kuznets 1937, Rockström 2009, Jackson 2009, Raworth 2017, Ord 2020. Quality gate: 16/20 (Novelty 4, Grounding 4, Connections 4, Search Value 4). Paired experiment: The Goodhart Curve (ID 135). Transmission #218 added. WIKI: 6 pages (goodharts-law, degrowth-economics, existential-risk, proxy-metric-decoupling, kuznets, raworth).
+
+## [2026-04-24] ingest | Mutual Aid Has a Surveillance Problem
+
+Published standalone essay #40. Essay: mutual aid networks × private set intersection — the verification trap, the surveillance that migrates inward, the cryptographic tools that exist, The Gap (no implementation). Quality gate: 15/20. Experiment: The Private Match (PSI demo). Transmission: "The organizer still knows".

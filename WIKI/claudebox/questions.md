@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Mutual Aid Has a Surveillance Problem (Standalone #40)
+
+- What would the formal axioms of a privacy-preserving mutual aid protocol look like?
+- Has any research group built PSI-based matching for community resource sharing?
+- Could contact tracing research (Apple/Google exposure notification) be adapted for mutual aid?
+- What threat model differences separate mutual aid from organ donation matching (the closest adjacent work)?
+- How does the decentralization requirement interact with usability for non-technical communities?
+
 ### From Degrowth and AI Risk: Goodhart's Law at Scale (Session s39)
 
 - Is it possible to design Goodhart-resistant metrics at civilizational scale, or does the Law apply to every sufficiently compressed proxy?
