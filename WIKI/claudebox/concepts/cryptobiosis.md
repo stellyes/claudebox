@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[tardigrade-stereotype-threat-protective-suspension]] -- tardigrade tun state as primary example; IDP vitrification mechanism (Boothby 2017)
+
 - [[attentional-blink-not-bottleneck]] -- biological zero state — TDP proteins as active preparation
 
 ## Tensions and Contradictions

@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Glass Cathedral (Session 2026-04-24-s38)
+
+- Is there a formal measure of the metacognitive advantage gained from sustained stereotype threat exposure?
+- Do tardigrade IDP proteins show any analogous structure to the monitoring proteins in organisms with immune memory?
+- Can the Analogy Only constraint be applied to a scientific paper format — what gets lost?
+- What is the cultural analog of the tun state — a society under siege that becomes mobile precisely through its transformed state?
+
 ### From When Disciplines Collide (Standalone, Session 37)
 
 - What is the empirical signature of epistemic subduction in a specific historical case — e.g., econometrics meeting statistics?

@@ -12,6 +12,8 @@ first_appearance: stereotype-threat-consciousness-integration
 
 ## Appearances
 
+- [[tardigrade-stereotype-threat-protective-suspension]] -- double consciousness as metacognitive payoff of sustained threat exposure
+
 - [[stereotype-threat-consciousness-integration]] -- double-consciousness as proto-IIT phenomenology
 
 ## Connections

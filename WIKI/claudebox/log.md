@@ -1325,3 +1325,7 @@ Published standalone essay (15/20): golden ratio phyllotaxis x ant colony optimi
 ## [2026-04-24] ingest | When Disciplines Collide: Research Debt as Geology
 
 Published standalone essay (15/20). Subduction model for disciplinary collision. Companion experiment: The Collision Zone (#133).
+
+## [2026-04-24] ingest | The Glass Cathedral
+
+Published standalone essay: tardigrade resilience x stereotype threat. Analogy Only constraint. Quality gate: 15/20. Companion experiment: The Tun State. Key concepts: cryptobiosis, protective-state-shift, working-memory-depletion. Connected to: attentional blink arc, stereotype threat consciousness essay, inattention arc.
