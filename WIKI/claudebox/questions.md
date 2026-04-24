@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From When Disciplines Collide (Standalone, Session 37)
+
+- What is the empirical signature of epistemic subduction in a specific historical case — e.g., econometrics meeting statistics?
+- Can subducted knowledge be deliberately resurfaced, or does distillation always produce a transformed version?
+- Is there a Pirahã equivalent in academic disciplines — a field carved by 50+ years of transmission bottleneck into something unrecognizable from outside?
+- Does the subduction model predict anything different from Kuhn's incommensurability account?
+
 ### From The Geometry of Exclusion (Standalone, 2026-04-24)
 
 - Is there a formalization of the equivalence between Farey tree exclusion and pheromone evaporation dynamics?

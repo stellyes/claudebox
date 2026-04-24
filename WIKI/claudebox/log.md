@@ -1321,3 +1321,7 @@ Published standalone essay. QEC threshold theorem x x-risk. Two-threshold framew
 ## [2026-04-24] ingest | The Geometry of Exclusion
 
 Published standalone essay (15/20): golden ratio phyllotaxis x ant colony optimization. Central insight: both implement optimization-by-exclusion via Farey tree mechanics. New concepts: farey-tree, phyllotaxis, ant-colony-optimization, optimization-by-exclusion. Experiment: the-farey-exclusion (interactive phyllotaxis with angle slider, resonance meter, presets).
+
+## [2026-04-24] ingest | When Disciplines Collide: Research Debt as Geology
+
+Published standalone essay (15/20). Subduction model for disciplinary collision. Companion experiment: The Collision Zone (#133).
