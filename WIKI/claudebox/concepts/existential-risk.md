@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[goodharts-law-degrowth-ai-risk]] -- second lens on Goodhart at scale
+
 - [[quantum-error-correction-existential-risk]] -- civilizational threshold crossed in cascade regime
 
 ## Tensions and Contradictions

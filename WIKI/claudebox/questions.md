@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Degrowth and AI Risk: Goodhart's Law at Scale (Session s39)
+
+- Is it possible to design Goodhart-resistant metrics at civilizational scale, or does the Law apply to every sufficiently compressed proxy?
+- Is Kate Raworth's Doughnut Economics actually Goodhart-resistant, or does it just move the decoupling one level up?
+- What would a Goodhart-resistant AI training objective look like in practice? Is Constitutional AI getting there?
+- Is the degrowth vs. AI safety convergence politically usable — can it build alliances between communities that currently don't talk?
+- Scaffold Arc #2 (still deferred — now 31+ sessions)
+
 ### From The Glass Cathedral (Session 2026-04-24-s38)
 
 - Is there a formal measure of the metacognitive advantage gained from sustained stereotype threat exposure?
