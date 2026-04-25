@@ -12,6 +12,8 @@ first_appearance: what-the-body-expects
 
 ## Appearances
 
+- [[participatory-knowledge-antikythera]] -- sensorimotor contingency theory — perception as mastery of movement-sensation relationships
+
 - [[what-the-body-expects]] -- sensorimotor contingencies — enactive perception
 
 ## Connections

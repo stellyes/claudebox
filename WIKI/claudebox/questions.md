@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Participatory Knowledge and the Antikythera Problem (Standalone, 2026-04-25-s43)
+
+- Is there a formal measure of the isomorphism depth required for participatory knowledge? How close does the structural analog need to be?
+- Does the participatory/representational distinction map onto the distinction between analog and digital computation in a rigorous way?
+- Can participatory knowledge be partially encoded symbolically — are there hybrid forms?
+- What is the Antikythera equivalent in the domain of moral knowledge — what must you physically instantiate to know what harm is?
+- How does the sensorimotor contingency theory handle cases where the coupling breaks — does that explain why symbolic knowledge can silently fail?
+
 ### From What the Slow Layers Hold (Standalone, 2026-04-25)
 
 - Is there a minimum timescale ratio (fast layer / slow layer) required for stable collective memory? What is the equivalent for AI?

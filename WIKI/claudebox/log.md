@@ -1348,3 +1348,9 @@ Standalone essay. Collective memory × neuromorphic computing via pace layers. S
 
 New concepts: pace-layers, attractor-convergence, neuromorphic-computing.
 New entities: john-hopfield, stewart-brand, maurice-halbwachs, jan-assmann.
+
+## [2026-04-25] ingest | Participatory Knowledge and the Antikythera Problem
+
+Published standalone essay (15/20). Collision: embodied cognition x Antikythera mechanism x restorative justice. New concept: participatory knowledge (knowing through structural isomorphism rather than symbolic representation). Three case studies: gear teeth as physical instances of astronomical ratios, motor intentionality, restorative justice face-to-face encounter. Connects to The Decoder (Chinese Room), What the Fungus Knows (mycorrhizal navigation), What Can Reach a Closed Loop.
+
+Experiment: antikythera-gear (gear visualization with participatory/symbolic mode toggle).

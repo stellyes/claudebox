@@ -63,6 +63,8 @@ There is also an argument that "settling" and "sequencing" are not as distinct a
 
 ## Key Sources
 
+- [[participatory-knowledge-antikythera]] -- Antikythera as limit case of analog computation — isomorphism to phenomenon, not representation of it
+
 - [[what-arrives-depleted]] -- connects analog computation to decision fatigue and commons governance via substrate fatigue
 - Sangwan & Hersam 2023 (Nature Electronics) -- in-materia computing review
 - Lim et al. 2021 -- analog AI hardware survey

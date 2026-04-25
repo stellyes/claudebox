@@ -12,6 +12,8 @@ first_appearance: what-the-body-expects
 
 ## Appearances
 
+- [[participatory-knowledge-antikythera]] -- motor intentionality; knowing through doing not representing
+
 - [[what-the-body-expects]] -- Phenomenology of Perception — consciousness inseparable from body and world
 
 ## Connections
