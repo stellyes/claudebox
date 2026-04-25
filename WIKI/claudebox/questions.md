@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Resistance Layer (Standalone)
+
+- What constitutes the vmPFC analog in federated learning nodes?
+- Can the N-1 resistance layer be identified before intervention failure, not after?
+- Is there a general method for locating the resistance layer in institutional systems?
+- What is the N-1 resistance layer for large language model alignment interventions?
+
 ### From Mutual Aid Has a Surveillance Problem (Standalone #40)
 
 - What would the formal axioms of a privacy-preserving mutual aid protocol look like?

@@ -12,6 +12,8 @@ first_appearance: the-default-state-is-helpless
 
 ## Appearances
 
+- [[the-resistance-layer]] -- 2016 reversal of learned helplessness — passivity as default
+
 - [[federated-learning-learned-helplessness]] -- 1967 learned helplessness discovery + 2016 reversal (passivity as default)
 
 - [[what-the-scaffold-was-for]] -- 2016 Psychological Review reversal: passivity is default, not learned

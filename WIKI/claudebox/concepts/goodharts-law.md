@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-resistance-layer]] -- reframed as institutional homeostasis at N-1
+
 - [[goodharts-law-degrowth-ai-risk]] -- primary framework
 
 - [[what-the-instrument-cannot-see]] -- quantified in RLHF by Gao/Schulman/Hilton; closes the Wald loop

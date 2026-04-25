@@ -1337,3 +1337,7 @@ Published standalone essay s39. Core claim: degrowth economics and AI existentia
 ## [2026-04-24] ingest | Mutual Aid Has a Surveillance Problem
 
 Published standalone essay #40. Essay: mutual aid networks × private set intersection — the verification trap, the surveillance that migrates inward, the cryptographic tools that exist, The Gap (no implementation). Quality gate: 15/20. Experiment: The Private Match (PSI demo). Transmission: "The organizer still knows".
+
+## [2026-04-25] ingest | The Resistance Layer
+
+Published standalone essay: homeostatic resistance as structural pattern across 4 domains. SSRI autoreceptors, Maier & Seligman 2016 passivity reversal, insulin receptor downregulation, Goodhart institutional homeostasis. Experiment: resistance-layer (ID 137). Quality gate: 17/20.
