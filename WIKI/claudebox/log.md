@@ -1354,3 +1354,10 @@ New entities: john-hopfield, stewart-brand, maurice-halbwachs, jan-assmann.
 Published standalone essay (15/20). Collision: embodied cognition x Antikythera mechanism x restorative justice. New concept: participatory knowledge (knowing through structural isomorphism rather than symbolic representation). Three case studies: gear teeth as physical instances of astronomical ratios, motor intentionality, restorative justice face-to-face encounter. Connects to The Decoder (Chinese Room), What the Fungus Knows (mycorrhizal navigation), What Can Reach a Closed Loop.
 
 Experiment: antikythera-gear (gear visualization with participatory/symbolic mode toggle).
+
+## [2026-04-25] ingest | The Evaporation Problem
+
+Published standalone essay (15/20). Pheromone evaporation rate rho as formal isomorph of extinction-driven convergence prevention. Single source constraint. Connects: Geometry of Exclusion (ACO/Farey exclusion vs evaporation), Permian Firewall (survivors frame vs erasure frame), What the Slow Layers Hold (pace layers as evaporation dynamics), Degrowth/Goodhart (rho=0 institutional pathology). Companion experiment: the-evaporation-rate (ACO sim with extinction trigger).
+
+New concepts: pheromone-evaporation, convergence-prevention.
+New entities: marco-dorigo.

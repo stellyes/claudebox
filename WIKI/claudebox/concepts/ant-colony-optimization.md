@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-evaporation-problem]] -- update: evaporation as the key mechanism
+
 - [[geometry-exclusion-golden-ratio-ant-colony]] -- pheromone evaporation as dynamic Farey exclusion
 
 ## Tensions and Contradictions

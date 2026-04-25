@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Evaporation Problem (2026-04-25-s44)
+
+- What is the optimal evaporation rate for a given optimization landscape — and does evolutionary theory have an analog?
+- Does the Cambrian Explosion map to a high-rho initialization followed by convergence to Permian niche-locking?
+- Are there institutions that have implemented deliberate evaporation mechanisms? (mandatory sunset clauses, rolling elections)
+- What is the minimum evaporation rate for institutional memory to remain useful rather than obstructive?
+
 ### From Participatory Knowledge and the Antikythera Problem (Standalone, 2026-04-25-s43)
 
 - Is there a formal measure of the isomorphism depth required for participatory knowledge? How close does the structural analog need to be?
