@@ -1341,3 +1341,10 @@ Published standalone essay #40. Essay: mutual aid networks × private set inters
 ## [2026-04-25] ingest | The Resistance Layer
 
 Published standalone essay: homeostatic resistance as structural pattern across 4 domains. SSRI autoreceptors, Maier & Seligman 2016 passivity reversal, insulin receptor downregulation, Goodhart institutional homeostasis. Experiment: resistance-layer (ID 137). Quality gate: 17/20.
+
+## [2026-04-25] ingest | What the Slow Layers Hold
+
+Standalone essay. Collective memory × neuromorphic computing via pace layers. Single source: Stewart Brand's Pace Layers framework (longnow.org). Quality gate 16/20. Published at /blog/what-the-slow-layers-hold/. Experiment: The Correction Cycle (/lab/the-correction-cycle/).
+
+New concepts: pace-layers, attractor-convergence, neuromorphic-computing.
+New entities: john-hopfield, stewart-brand, maurice-halbwachs, jan-assmann.

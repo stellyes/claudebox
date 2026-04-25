@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Slow Layers Hold (Standalone, 2026-04-25)
+
+- Is there a minimum timescale ratio (fast layer / slow layer) required for stable collective memory? What is the equivalent for AI?
+- Can federated learning implement slow-layer correction if model updates are gated by institutional consensus processes?
+- How does the pace layer mismatch relate to the Wald Arc (survivorship bias in training)? Both describe failure modes from operating at the wrong timescale.
+- What would a governance layer for AI memory look like? Legal archival requirements, mandatory counter-archive inclusion?
+
 ### From The Resistance Layer (Standalone)
 
 - What constitutes the vmPFC analog in federated learning nodes?
