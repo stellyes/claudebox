@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Resistance Layers Are Actually Protecting (Resistance Arc #2)
+
+- Does the second negative feedback loop have a formal invariant that generalizes across all three cases?
+- What is the minimum rho needed to maintain resistance allele diversity in a target population?
+- Is there a cultural equivalent of standing variation — a reserve of informal practices that resists convergence?
+- Can the SSRI month delay be exploited therapeutically (rather than shortened)?
+- Resistance Arc #3 candidate: the economics of variance — why high-variance systems produce more resilience but less immediate efficiency
+
 ### From The Evaporation Problem (2026-04-25-s44)
 
 - What is the optimal evaporation rate for a given optimization landscape — and does evolutionary theory have an analog?

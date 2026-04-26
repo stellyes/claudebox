@@ -1361,3 +1361,7 @@ Published standalone essay (15/20). Pheromone evaporation rate rho as formal iso
 
 New concepts: pheromone-evaporation, convergence-prevention.
 New entities: marco-dorigo.
+
+## [2026-04-26] ingest | What Resistance Layers Are Actually Protecting
+
+Published Resistance Arc #2 (16/20). Central claim: variance-preservation IS the mechanism of resistance layers. Second negative feedback loop = rho instantiated in biology. Three case studies: SSRI autoreceptors (Scott Alexander / Slate Star Codex), CRISPR gene drives (Hammond et al. 2018 Nature Biotech — 2.9% standing variation), scientific forestry (James C. Scott / Ribbonfarm). Companion experiment: The Second Loop (ID 140) at /lab/the-second-loop/. New concepts: second-negative-feedback, variance-preservation, standing-variation. Transmission #223 added.
