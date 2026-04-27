@@ -1373,3 +1373,23 @@ Published standalone essay s46 (15/20). Embodied cognition × ACO unified under 
 ## [2026-04-27] ingest | The Hyperstimulator Problem
 
 Published standalone essay s47 (17/20). Single Source constraint (Miller & White, Aeon, predictive processing and social media). Hyperstimulators reframed as substrate-independent exploit class of plastic predictive systems. Three substrates: brains under social media, mycorrhizal networks under myco-heterotrophs (Monotropa uniflora, Kiers 2011 partner discrimination), RL agents under reward hacking (CoastRunners). Reframes Memory Arc (plasticity-stability is half the cost; exploit surface is the other half), Resistance Layer (s41), Resistance Arc #2 (s45), What the Slow Layers Hold (s42), Mutual Aid (s40), Self-Sealing Signal (Transmission Arc #7) as anti-hyperstimulator architecture. Counter-contradicts apophenia-and-propaganda: propaganda hyperstimulates prediction-error reduction, not Bayesian prior conditioning. Counter-Ledger named as anti-hyperstimulator memory architecture problem. Companion experiment: The Cheap Resolution (#142) — interactive demo with plasticity, hyperstimulator-fraction, variance-floor knobs. Transmission #225.
+
+## [2026-04-27] ingest | The Counter-Ledger
+
+Published standalone essay (17/20). Quality gate: Novelty 4, Grounding 4, Connections 5, Search Value 4.
+
+Structural defence against hyperstimulators finally specified. Four disciplinary anchors converge on the same data structure:
+- ML/RL: Prioritized Experience Replay (Schaul 2015) + its outlier-bias failure (Pan 2022) — hyperstimulator-vulnerable.
+- Neuroscience: Hippocampal-VTA loop (Lisman & Grace 2005) — novelty-gated without kind-of-novelty distinction.
+- Predictive processing: Friston's complexity term — single-step Counter-Ledger that suffers prior-drift.
+- Epistemology: Hume on miracles + newsroom 'too good to check' — resolution-cost-weighted credulity.
+
+Counter-Ledger = running estimate of resolution cost; downweights surprise resolving far below average. Slow variable; variance-preserving; memory-substrate version of N-1 resistance pattern.
+
+Reframes Resistance Arc as Counter-Ledger implementations at biological/institutional substrates. Reframes Transmission Arc capstone (Self-Sealing Signal) as recruited rather than circumvented Counter-Ledger. Pace Layers reread as substrate where Counter-Ledgers can stabilise.
+
+Companion experiment: The Running Estimate (toggle Counter-Ledger active/inactive on a hyperstimulator-laced event stream, watch which surprises get written to memory).
+
+WIKI: 6 concepts (counter-ledger, prioritized-experience-replay, hippocampal-vta-loop, free-energy-complexity-term, humean-testimony, resolution-cost), 5 entities (Schaul, Pan, Lisman, Grace, Hume), source page.
+
+Open: Counter-Ledger empirical signature in brains; PER + Counter-Ledger ratio adjustment; rho × Counter-Ledger unification; social-institutional taxonomy; depression-as-overshoot; Scaffold Arc #2.

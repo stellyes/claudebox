@@ -12,6 +12,8 @@ first_appearance: what-remains-without-memory
 
 ## Appearances
 
+- [[the-counter-ledger]] -- Epistemic anchor for Counter-Ledger as resolution-cost weighing
+
 - [[what-remains-without-memory]] -- Bundle theory of self
 
 ## Connections

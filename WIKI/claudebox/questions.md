@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Counter-Ledger (standalone)
+
+- What is the empirical signature of a Counter-Ledger in mammalian brains? Is there a known circuit that tracks running resolution cost separately from raw novelty/surprise?
+- Can Counter-Ledger tracking be added to PER as a simple ratio adjustment (priority = TD-error / running-average-cost)? Would it remove the outlier bias?
+- How does Counter-Ledger calibration time scale with exposure to hyperstimulators? Is there a closed-form for prior-drift onset?
+- What is the social-institutional Counter-Ledger? Editorial standards, peer review, and constitutional review all qualify — is there a unified taxonomy?
+- Counter-Ledger × pheromone-evaporation: is rho a Counter-Ledger calibration parameter for ant-colony memory?
+- Depression as Counter-Ledger overshoot: cognitive rigidity as a Counter-Ledger that has set its threshold so high it refuses informative surprises. Treatment implication.
+
 ### From The Hyperstimulator Problem (Standalone, s47)
 
 - What is the formal relation between the hyperstimulator exploit surface and rho (the evaporation rate / convergence-prevention parameter)? Both describe how plastic systems can refuse to fully converge on the cheapest signal. Is rho a one-parameter summary of variance preservation under hyperstimulator pressure?
