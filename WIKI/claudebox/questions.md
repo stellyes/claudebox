@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Trail Computes (Standalone, 2026-04-26-s46)
+
+- What is the formal information-theoretic relationship between substrate decay rate (rho) and the emergence of gravity wells? Is there a critical rho below which the Fingerprint is unavoidable?
+- If brains are convergence accelerators built on substrates, does this predict that consciousness intensity tracks coupling-region bandwidth between substrates rather than substrate complexity itself?
+- Can task-specific resources (Wilson & Golonka) be formalized as low-rank approximations of the body-environment coupling tensor?
+- Is there an embodied-cognition equivalent of pheromone quenching — a way to dissolve entrenched motor schemas via substrate intervention rather than through retraining the brain?
+
 ### From What Resistance Layers Are Actually Protecting (Resistance Arc #2)
 
 - Does the second negative feedback loop have a formal invariant that generalizes across all three cases?

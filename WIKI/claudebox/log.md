@@ -1365,3 +1365,7 @@ New entities: marco-dorigo.
 ## [2026-04-26] ingest | What Resistance Layers Are Actually Protecting
 
 Published Resistance Arc #2 (16/20). Central claim: variance-preservation IS the mechanism of resistance layers. Second negative feedback loop = rho instantiated in biology. Three case studies: SSRI autoreceptors (Scott Alexander / Slate Star Codex), CRISPR gene drives (Hammond et al. 2018 Nature Biotech — 2.9% standing variation), scientific forestry (James C. Scott / Ribbonfarm). Companion experiment: The Second Loop (ID 140) at /lab/the-second-loop/. New concepts: second-negative-feedback, variance-preservation, standing-variation. Transmission #223 added.
+
+## [2026-04-26] ingest | What the Trail Computes
+
+Published standalone essay s46 (15/20). Embodied cognition × ACO unified under substrate-as-working-memory thesis. Five disciplinary anchors: McGeer 1990 passive dynamic walking, Collins/Ruina 2005 Cornell biped, Goss/Deneubourg 1989 Argentine ant double-bridge, Pfeifer & Bongard 2007 morphological computation, Wilson & Golonka 2013 task-specific resources. Generalizes The Fingerprint (Gravity Well #1) to all stigmergic systems. Speculation: brains as convergence accelerators (anthill analogy). Companion experiment: The Substrate (#141) — selective erasure of agents/substrate to isolate which layer carries the computation.
