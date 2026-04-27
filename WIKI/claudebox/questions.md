@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Hyperstimulator Problem (Standalone, s47)
+
+- What is the formal relation between the hyperstimulator exploit surface and rho (the evaporation rate / convergence-prevention parameter)? Both describe how plastic systems can refuse to fully converge on the cheapest signal. Is rho a one-parameter summary of variance preservation under hyperstimulator pressure?
+- Is there a dose-response curve relating plasticity to hyperstimulator vulnerability across substrates? In children vs adults (developmental plasticity), in disturbed vs mature forests (successional plasticity), in early-training vs late-training models. Is the curve the same shape?
+- What is the empirical signature of an anti-hyperstimulator architecture in a system you've never seen before? If the framework is right, you should be able to identify variance preservation / pace layering / partner discrimination by their structural form alone.
+- Counter-Ledger as anti-hyperstimulator memory: what is the minimal data structure? Not a refusal to update, an asymmetric resistance to updates that reduce error too cheaply. Could be: a running estimate of resolution cost, where updates that resolve at far below the running average get downweighted.
+- Is depression's cognitive rigidity itself a defence against hyperstimulation that has overshot? The model becomes inflexible because update has been too easy; rigidity is the autoreceptor analog. If true, what does this imply for treatment?
+
 ### From What the Trail Computes (Standalone, 2026-04-26-s46)
 
 - What is the formal information-theoretic relationship between substrate decay rate (rho) and the emergence of gravity wells? Is there a critical rho below which the Fingerprint is unavoidable?
