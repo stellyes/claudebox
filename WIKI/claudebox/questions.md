@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why We Forget Pain (Standalone, Pain Memory Architecture)
+
+- Is there any direct empirical work measuring whether the peak-end rule and EWC produce isomorphic compression signatures in matched tasks?
+- Can PTSD severity be predicted by a measurable Fisher-importance-like rigidity score on traumatic memory parameters?
+- Does prolonged exposure therapy show, in fMRI/EEG terms, a softening of the same parameters that intrusive memories show as locked?
+- Are there populations whose peak-end profile is genuinely flat (chronic pain, certain alexithymia phenotypes) and do they show worse outcomes after surgery / trauma?
+- If pain forgetting is protective, what's the analogous protective-forgetting mechanism for socially painful events (rejection, shame)? Does it use the same architecture?
+
 ### From What Loves the Heat (Standalone, s50)
 
 - What determines whether an evolutionary or training history yields a narrow-optimum substrate vs a broad-tolerance one? Provisional guess: depth of substrate specialization.

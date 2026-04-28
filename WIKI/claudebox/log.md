@@ -1407,3 +1407,7 @@ Reframes Counter-Ledger (s48) as temperature regulator. Hyperstimulators (s47) n
 New concepts: function-constitutive-stress (primary), narrow-optimum, extremophiles, flow-state, kl-regularized-rl. New entities: Methanopyrus kandleri, Picrophilus oshimae, Csikszentmihalyi, Korbak. Companion experiment: The Narrow Optimum (#144) — three sliders for three substrates with state-machine readouts at five regimes per substrate.
 
 Open: specialization-depth vs window-width relationship; whether all narrow-optimum systems have bilateral phase boundaries or just one; predicting which hyperstimulators target which substrates.
+
+## [2026-04-28] ingest | Why We Forget Pain
+
+Published standalone essay (16/20). Two Truths and a Speculation: peak-end pain forgetting and catastrophic forgetting are the same architectural trade-off; PTSD is what happens when the EWC-style protection fails. Six discipline anchors: Kahneman/Redelmeier behavioral econ, Niven/Murphy-Black obstetrics, McCloskey/Cohen connectionism, Kirkpatrick deep RL, Ehlers/Clark clinical psychology. Companion experiment: The Tape (#145) — peak-end visualizer at /lab/the-tape/. New concepts: peak-end-rule, pain-memory, catastrophic-forgetting, elastic-weight-consolidation, ptsd-as-failed-forgetting, stability-plasticity-tradeoff. Connection: peak-end-rule <-> elastic-weight-consolidation.
