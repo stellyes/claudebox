@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Loves the Heat (Standalone, s50)
+
+- What determines whether an evolutionary or training history yields a narrow-optimum substrate vs a broad-tolerance one? Provisional guess: depth of substrate specialization.
+- Is there a formal correspondence between operating-window width and substrate specialization depth across biological, cognitive, and ML systems?
+- Can the wrong-temperature-attack frame predict which hyperstimulators will be most damaging to which substrates?
+- Do all systems with function-constitutive stress have phase-boundary collapse on both sides, or only on one?
+
 ### From What the Isnad Computes (Standalone, 2026-04-28)
 
 - Has anyone formally measured convergence rates or evaporation behavior in isnad reliability scores across generations? (Computational hadith studies should make this tractable.)

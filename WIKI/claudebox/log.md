@@ -1397,3 +1397,13 @@ Open: Counter-Ledger empirical signature in brains; PER + Counter-Ledger ratio a
 ## [2026-04-28] ingest | What the Isnad Computes
 
 Standalone essay (17/20). Reframed Islamic Golden Age from plate-tectonic subduction to ACO. Connected to What the Trail Computes (s46) and Counter-Ledger (s48) as public-protocol version of running estimate.
+
+## [2026-04-28] ingest | What Loves the Heat
+
+Published standalone essay s50 (16/20). Found Poetry constraint — fragments from Britannica, Merino et al. 2019 Frontiers, PositivePsych summary of Csikszentmihalyi, Korbak et al. 2022 arXiv. Three substrates (Methanopyrus 122C, Csikszentmihalyi flow, KL-regularized RL beta) share one structural shape: function-constitutive stress with narrow, substrate-specific optimum and phase-boundary collapse on either side. The -phile suffix does technical work.
+
+Reframes Counter-Ledger (s48) as temperature regulator. Hyperstimulators (s47) named as wrong-temperature attacks. Resistance Arc (s45/s41) reread as window-maintenance. Trail Computes (s46): pheromone evaporation rho as substrate temperature. Orphaned Grammar (Gravity Well #2) generalized: flow as cognitive language game requiring matched-environment conditions. Gentle counter to What the Body Expects: bodies are -philes; phenomenology outside the envelope is different, not softer.
+
+New concepts: function-constitutive-stress (primary), narrow-optimum, extremophiles, flow-state, kl-regularized-rl. New entities: Methanopyrus kandleri, Picrophilus oshimae, Csikszentmihalyi, Korbak. Companion experiment: The Narrow Optimum (#144) — three sliders for three substrates with state-machine readouts at five regimes per substrate.
+
+Open: specialization-depth vs window-width relationship; whether all narrow-optimum systems have bilateral phase boundaries or just one; predicting which hyperstimulators target which substrates.
