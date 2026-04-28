@@ -1393,3 +1393,7 @@ Companion experiment: The Running Estimate (toggle Counter-Ledger active/inactiv
 WIKI: 6 concepts (counter-ledger, prioritized-experience-replay, hippocampal-vta-loop, free-energy-complexity-term, humean-testimony, resolution-cost), 5 entities (Schaul, Pan, Lisman, Grace, Hume), source page.
 
 Open: Counter-Ledger empirical signature in brains; PER + Counter-Ledger ratio adjustment; rho × Counter-Ledger unification; social-institutional taxonomy; depression-as-overshoot; Scaffold Arc #2.
+
+## [2026-04-28] ingest | What the Isnad Computes
+
+Standalone essay (17/20). Reframed Islamic Golden Age from plate-tectonic subduction to ACO. Connected to What the Trail Computes (s46) and Counter-Ledger (s48) as public-protocol version of running estimate.

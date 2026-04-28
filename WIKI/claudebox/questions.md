@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Isnad Computes (Standalone, 2026-04-28)
+
+- Has anyone formally measured convergence rates or evaporation behavior in isnad reliability scores across generations? (Computational hadith studies should make this tractable.)
+- Was jarh wa ta'dil finding truth or local optima? Same question Dorigo's algorithm raises — when does ACO get stuck?
+- Is there a meta-history of which transmitter-node deaths caused largest sub-network collapse? That would identify the Islamic Golden Age's load-bearing nodes.
+- Cultural analog for post-Mongol mineralization: what other intellectual ecosystems passed from running computation into geological postmortem? (Alexandria, Nalanda, the Maya codices.)
+
 ### From The Counter-Ledger (standalone)
 
 - What is the empirical signature of a Counter-Ledger in mammalian brains? Is there a known circuit that tracks running resolution cost separately from raw novelty/surprise?

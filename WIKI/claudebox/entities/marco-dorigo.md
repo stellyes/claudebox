@@ -12,6 +12,8 @@ first_appearance: geometry-exclusion-golden-ratio-ant-colony
 
 ## Appearances
 
+- [[what-the-isnad-computes]] -- Politecnico di Milano; formalized Ant System (ACO) in 1992 PhD thesis
+
 - [[the-evaporation-problem]] -- originator of ACO — evaporation mechanism
 
 - [[geometry-exclusion-golden-ratio-ant-colony]] -- developed ant colony optimization algorithm 1992-1997
