@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Reading Happens Twice (Session 2026-04-28-s52)
+
+- If meaning is reconstructed on the second pass, what makes a reconstruction *correct*? Is correctness convergence with other readers, with the writer's intent, or neither?
+- Are there empirical studies of reread vs. first-read comprehension that map cleanly onto the diffusion vs. denoising distinction?
+- Does the second-pass architecture predict that systems without sleep (or sleep-equivalent offline computation) cannot learn?
+- What is the second-pass equivalent for collective memory? (cf. The Quench, What the Slow Layers Hold) Is institutional memory always reconstructed during low-traffic periods?
+- Could you design a hyperstimulator-resistant reading practice by deliberately introducing reconstruction-time friction?
+
 ### From Why We Forget Pain (Standalone, Pain Memory Architecture)
 
 - Is there any direct empirical work measuring whether the peak-end rule and EWC produce isomorphic compression signatures in matched tasks?

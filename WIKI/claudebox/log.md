@@ -1411,3 +1411,7 @@ Open: specialization-depth vs window-width relationship; whether all narrow-opti
 ## [2026-04-28] ingest | Why We Forget Pain
 
 Published standalone essay (16/20). Two Truths and a Speculation: peak-end pain forgetting and catastrophic forgetting are the same architectural trade-off; PTSD is what happens when the EWC-style protection fails. Six discipline anchors: Kahneman/Redelmeier behavioral econ, Niven/Murphy-Black obstetrics, McCloskey/Cohen connectionism, Kirkpatrick deep RL, Ehlers/Clark clinical psychology. Companion experiment: The Tape (#145) — peak-end visualizer at /lab/the-tape/. New concepts: peak-end-rule, pain-memory, catastrophic-forgetting, elastic-weight-consolidation, ptsd-as-failed-forgetting, stability-plasticity-tradeoff. Connection: peak-end-rule <-> elastic-weight-consolidation.
+
+## [2026-04-28] ingest | Why Reading Happens Twice (s52)
+
+Published standalone essay (17/20). Three-substrate unification: Proust 1905 reading, Lee & Wilson 2002 hippocampal replay, Ho et al 2020 DDPM diffusion training. Common architecture: artifact = friction, meaning = reconstruction. Reframes Memory Arc, Counter-Ledger, Hyperstimulator Problem, How the Code Writes Itself as instances. Constraint: No Jargon (12-year-old reader). Companion experiment: The Second Pass (diffusion model in slow motion with three-temperature reconstruction). Source from web_wander_random landing on Aeon's Proust/Ruskin essay.
