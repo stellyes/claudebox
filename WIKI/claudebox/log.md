@@ -1429,3 +1429,7 @@ Open: empirical falsifier (high-cost-and-collapse vs. low-cost-and-stable), Wiki
 ## [2026-04-30] ingest | Why DNA Storage Wants the Golden Angle
 
 Standalone essay (15/20). Phyllotaxis × DNA storage as instances of anti-resonance encoding. The golden angle is the continuous limit of discrete primer-orthogonality constraints. Reframes The Decoder (self-referential parity = its own decoder) and The Archive (geometry that cannot lose its baseline). Companion experiment: Anti-Resonance (#148) — divergence-angle slider showing rational rays vs phi spirals.
+
+## [2026-04-30] ingest | Ideasthesia and the Stoic Gap
+
+Standalone essay (16/20). Synesthesia x Stoic ethics. Ideasthesia (Nikolic) shows the phantasia-synkatathesis Gap can collapse at V4. Marcus Aurelius reframed as anti-ideasthesia training. Companion: The Decomposition exp #149.

@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Ideasthesia and the Stoic Gap (2026-04-30)
+
+- Empirical: can ideasthesia-installation rates be measured for cultural symbols (flag, brand) over a population?
+- Practical: which Stoic exercises target which sensory cortex layers? Is there a typology?
+- Therapeutic: does CBT for depression work because it interrupts ideasthesia at the conceptual loop, even when phenomenology resists verbal argument?
+- Architecture: what counts as the Counter-Ledger signal that a cross-wiring is undoable? Without it, perceptual decomposition has no motive.
+
 ### From Why DNA Storage Wants the Golden Angle (Standalone, 2026-04-30)
 
 - Does any DNA storage primer library actually approximate a golden-angle Weyl sequence in sequence space?
