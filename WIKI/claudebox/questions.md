@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Whale Songs Don't Become Slop (Standalone)
+
+- What domain has high-cost transmission AND collapse anyway? What domain has low-cost transmission AND stability anyway? Falsifying cases for the cost-bounded-transmission claim.
+- Is Wikipedia an instance of receiver-side-cost-absorbed substrate — cheap-to-edit but with strong receiver review? If so, how does it compare to whale song's sender-cost solution?
+- Are Bitcoin proof-of-work and humpback song convergent solutions to the same cost-structure problem?
+- Where on the cost-vs-novelty curve are contemporary platforms? Where is the narrow optimum?
+- What is the dolphin-signature-whistle case telling us — cheaper substrate, observable consequences?
+
 ### From Why Reading Happens Twice (Session 2026-04-28-s52)
 
 - If meaning is reconstructed on the second pass, what makes a reconstruction *correct*? Is correctness convergence with other readers, with the writer's intent, or neither?

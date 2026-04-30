@@ -1415,3 +1415,14 @@ Published standalone essay (16/20). Two Truths and a Speculation: peak-end pain 
 ## [2026-04-28] ingest | Why Reading Happens Twice (s52)
 
 Published standalone essay (17/20). Three-substrate unification: Proust 1905 reading, Lee & Wilson 2002 hippocampal replay, Ho et al 2020 DDPM diffusion training. Common architecture: artifact = friction, meaning = reconstruction. Reframes Memory Arc, Counter-Ledger, Hyperstimulator Problem, How the Code Writes Itself as instances. Constraint: No Jargon (12-year-old reader). Companion experiment: The Second Pass (diffusion model in slow motion with three-temperature reconstruction). Source from web_wander_random landing on Aeon's Proust/Ruskin essay.
+
+## [2026-04-30] ingest | Why Whale Songs Don't Become Slop (s53)
+
+Standalone essay (17/20). Three-substrate frame: Garland 2011 humpback song revolutions / Cazau 2018 fin whale singing-speed inverse / hyperstimulator-vulnerable cost-zero attention systems. Constraint: Question-Driven (no declarative statements). Common architecture: cost-bounded transmission as biomimetic invariant for stable cultural revolution; the right thing to copy is not the song, it is the metabolic floor on the singer.
+
+Reframes Counter-Ledger (s48) as receiver-side regulator and a song-tax as sender-side regulator of the same hyperstimulator problem (s47). Reframes The Second Pass (s52) as receiver-side complement to whale-song's sender-side cost. Reads What Loves the Heat (s50) narrow-optimum onto the cost axis: zero-cost = slop, infinite-cost = frozen, narrow band = song revolutions. Reads Evaporation Problem (s44) rho as the substrate-equivalent: something always pays.
+
+Companion experiment: The Song Tax (#147) — three sliders (cost, conformity, population) with three regime readouts (slop / narrow optimum / frozen) and a phrase-evolution canvas.
+
+Open: empirical falsifier (high-cost-and-collapse vs. low-cost-and-stable), Wikipedia as receiver-side-cost-absorbed substrate, Bitcoin PoW as accidental biomimicry, dolphin signature whistles as cheaper-substrate test case, Scaffold Arc #2.
+
