@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Bronze Forgot (Standalone, 2026-04-30 s58)
+
+- Do integrators have any internal slowing signal - declining apprentice numbers, simpler designs - that is just illegible to outsiders? If so, the reef/tree distinction is epistemic, not architectural.
+- What is the highest-value distributed practice currently being silently converted into an integrator? Mathematical proof verification? Pharmacy compounding? Surgical technique?
+- Can we design integrators that emit reef-warnings - query latency, partial-corruption signals, weight drift?
+- Does the integrator/distributed axis collapse onto the same Counter-Ledger structure (s48) where reef cost-of-recovery rises slowly and integrator cost-of-recovery is a step function?
+
 ### From When Slop Is the Sensor (Standalone, 2026-04-30)
 
 - What empirically distinguishes a forced single integrator from a population of independent filterers?

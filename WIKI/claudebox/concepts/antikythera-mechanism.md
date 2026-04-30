@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-the-bronze-forgot]] -- Canonical integrator: 30 bronze gears, eclipse predictions, lineage collapse without trace.
+
 - [[participatory-knowledge-antikythera]] -- primary case study — gear teeth as physical instances of astronomical ratios
 
 - [[what-darkness-initiates]] -- eclipse prediction angle (distinct from Godelian angle in Incompleteness Arc)

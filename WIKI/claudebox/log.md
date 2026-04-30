@@ -1449,3 +1449,7 @@ Gap question: is the Underneath Search guaranteed to terminate? Quantum jamming 
 ## [2026-04-30] ingest | When Slop Is the Sensor (Standalone, 17/20)
 
 Against-Yourself essay: argued against own whale-song thesis. Cost-bounded transmission is regime-specific. Saturation dispersal (orchids) + overview effect (White 1987) + What Doesnt Flow (memory-as-structure) -> receiver-structure typology: integrator/distributed/pathology regimes. New concept pages: saturation-dispersal, receiver-structure, topological-code (extended). Refined: slop, song-tax. Experiment #151: Overview Altitude (zoom slider revealing wind-map from saturation cloud).
+
+## [2026-04-30] ingest | What the Bronze Forgot
+
+Published standalone essay (17/20). Antikythera mechanism + Parry-Lord oral tradition + Scheffer critical slowing down + UNESCO endangered-languages scheme. Reframes s57 receiver-typology as substrate-typology from transmitter side; reframes s53 cost-bounded transmission via inverse phenomenon (high cost = visible decay; low cost = no warning); reframes s48 Counter-Ledger as property of distributed memory only. Companion experiment: reef-and-tree (#152). The melancholy of the Antikythera fragment is the architectural silence of the lineage that produced it.

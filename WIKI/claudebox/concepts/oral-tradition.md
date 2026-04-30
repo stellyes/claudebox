@@ -37,6 +37,8 @@ The quorum framing adds a disturbing corollary to the "error-correcting mirror" 
 
 ## Key Sources
 
+- [[what-the-bronze-forgot]] -- Parry-Lord generative-grammar model. The thing transmitted is a kit, not a sequence.
+
 - [[fringe-oral-tradition-20260409]] -- fringe probe, 2026-04-09
 - [[you-cannot-see-your-own-back]] — oral tradition reframed as error-correcting mirror; community story-cycle as the navigator's fix
 - [[the-cultural-quorum]] — oral tradition as quorum-sensing apparatus; concentration drives familiarity; familiarity performs function of evidence
