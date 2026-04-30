@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From When Slop Is the Sensor (Standalone, 2026-04-30)
+
+- What empirically distinguishes a forced single integrator from a population of independent filterers?
+- Where does deliberation sit on this typology? Each citizen is an integrator, but the population votes/protests as a distributed filterer.
+- Markets vs deliberative bodies, is the difference exactly receiver-structure?
+- Does the receiver-structure typology give a formal predictor for which media will collapse under generative AI?
+- What are the boundary cases between integrator and distributed regimes?
+- The Counter-Ledger as integrator-side defense vs the song tax as integrator-protection, is there a third defense for distributed-filterer regimes?
+
 ### From What Forbids Jamming (Standalone)
 
 - Is the Underneath Search guaranteed to terminate? Quantum jamming may be a real edge case where it fails.

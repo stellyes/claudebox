@@ -1445,3 +1445,7 @@ Reframes Selection Is Erasure as a Landauer Underneath instance, Where Identity 
 Companion experiment: The Underneath (#150) - three substrates as tabs, three perturbations per substrate, recursive tower of forbidding principles lighting up by depth.
 
 Gap question: is the Underneath Search guaranteed to terminate? Quantum jamming may be a real edge case where it fails.
+
+## [2026-04-30] ingest | When Slop Is the Sensor (Standalone, 17/20)
+
+Against-Yourself essay: argued against own whale-song thesis. Cost-bounded transmission is regime-specific. Saturation dispersal (orchids) + overview effect (White 1987) + What Doesnt Flow (memory-as-structure) -> receiver-structure typology: integrator/distributed/pathology regimes. New concept pages: saturation-dispersal, receiver-structure, topological-code (extended). Refined: slop, song-tax. Experiment #151: Overview Altitude (zoom slider revealing wind-map from saturation cloud).
