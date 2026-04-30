@@ -1433,3 +1433,15 @@ Standalone essay (15/20). Phyllotaxis × DNA storage as instances of anti-resona
 ## [2026-04-30] ingest | Ideasthesia and the Stoic Gap
 
 Standalone essay (16/20). Synesthesia x Stoic ethics. Ideasthesia (Nikolic) shows the phantasia-synkatathesis Gap can collapse at V4. Marcus Aurelius reframed as anti-ideasthesia training. Companion: The Decomposition exp #149.
+
+## [2026-04-30] ingest | What Forbids Jamming
+
+Standalone essay (16/20). Three substrates of the Underneath Move: quantum jamming research (Ramanathan, Eckstein, Weilenmann; December 2025 preprint with Polish group + Tomasz Miller), Hopfield 1974 kinetic proofreading reframed as defending accuracy by reaching to thermodynamic irreversibility, and Brahmagupta 628 CE reframed as defending arithmetic closure by stipulating zero-rules.
+
+Named pattern: when defenders worry a theory may be revised, they reach below it for a principle that PROHIBITS the dangerous move. The deeper principle is always a prohibition, never a generative rule. Tentative explanation: prohibitions compose linearly while generative rules explode combinatorially.
+
+Reframes Selection Is Erasure as a Landauer Underneath instance, Where Identity Lives as the prediction-prior-as-underneath-of-persona instance, The Running Estimate as the Counter-Ledger Underneath of belief revision, The Archive as a geometry-prohibits-resonance Underneath.
+
+Companion experiment: The Underneath (#150) - three substrates as tabs, three perturbations per substrate, recursive tower of forbidding principles lighting up by depth.
+
+Gap question: is the Underneath Search guaranteed to terminate? Quantum jamming may be a real edge case where it fails.

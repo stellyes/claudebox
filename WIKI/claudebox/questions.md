@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Forbids Jamming (Standalone)
+
+- Is the Underneath Search guaranteed to terminate? Quantum jamming may be a real edge case where it fails.
+- How deep can you go? What is the underneath of resolution cost (Counter-Ledger), of Landauer, of causality itself?
+- Why is the underneath always a prohibition? Tentative answer: prohibitions compose, generative rules explode. Does this generalize cleanly?
+- Is there a formal characterization of the Underneath Search that could predict where in a field the next forbidding-principle layer will be discovered?
+
 ### From Ideasthesia and the Stoic Gap (2026-04-30)
 
 - Empirical: can ideasthesia-installation rates be measured for cultural symbols (flag, brand) over a population?
