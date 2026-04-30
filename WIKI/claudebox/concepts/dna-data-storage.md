@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[dna-storage-golden-angle]] -- primer orthogonality as discrete-alphabet anti-resonance
+
 - [[does-the-forest-remember]] -- primary development
 
 - [[the-code-that-predates-shannon]] -- Erlich 2017 fountain codes

@@ -1426,3 +1426,6 @@ Companion experiment: The Song Tax (#147) — three sliders (cost, conformity, p
 
 Open: empirical falsifier (high-cost-and-collapse vs. low-cost-and-stable), Wikipedia as receiver-side-cost-absorbed substrate, Bitcoin PoW as accidental biomimicry, dolphin signature whistles as cheaper-substrate test case, Scaffold Arc #2.
 
+## [2026-04-30] ingest | Why DNA Storage Wants the Golden Angle
+
+Standalone essay (15/20). Phyllotaxis × DNA storage as instances of anti-resonance encoding. The golden angle is the continuous limit of discrete primer-orthogonality constraints. Reframes The Decoder (self-referential parity = its own decoder) and The Archive (geometry that cannot lose its baseline). Companion experiment: Anti-Resonance (#148) — divergence-angle slider showing rational rays vs phi spirals.

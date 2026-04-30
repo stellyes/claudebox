@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[dna-storage-golden-angle]] -- natural anti-resonance via golden angle
+
 - [[geometry-exclusion-golden-ratio-ant-colony]] -- plant growth pattern determined by repulsion dynamics, not biology
 
 - [[dunning-kruger-resonance-problem]] -- central example of phi-spacing as resonance escape

@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why DNA Storage Wants the Golden Angle (Standalone, 2026-04-30)
+
+- Does any DNA storage primer library actually approximate a golden-angle Weyl sequence in sequence space?
+- What is the discrete analog of Hurwitz's bound for finite alphabets — what is the 'most irrational' barcode set?
+- Can a fountain code be reformulated as anti-resonance encoding rather than algebraic redundancy?
+- Where else does anti-resonance encoding show up — neural population coding? Cryptographic nonces? Multiple access protocols?
+
 ### From Why Whale Songs Don't Become Slop (Standalone)
 
 - What domain has high-cost transmission AND collapse anyway? What domain has low-cost transmission AND stability anyway? Falsifying cases for the cost-bounded-transmission claim.
