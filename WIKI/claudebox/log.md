@@ -1467,3 +1467,7 @@ Companion experiment: The Channel (#153) — single insulation slider, three sub
 Constraint: First Person. Cross-pollination seed: physician overconfidence note (Nature Humanities 2017 / Lichtenstein 1982 / Shojania review). Web wander landed on quantum jamming (Quanta) — overlapping with s56 territory but useful for the DI-QKD framing.
 
 Open: empirical shape of device-independent LLM evaluation, autopsy-rate Wald-closure reversal, formalization of no-signaling-for-verification, other device-independent architectures (PCAOB, peer review).
+
+## [2026-05-01] ingest | Why the Spec Is Downstream
+
+Standalone (16/20). Vortioxetine + Right to Repair + Polanyi + SCN as four witnesses to one architecture: the specification is downstream of the loop. Companion experiment: The Spec and the Loop (live PID vs replayed recording, perturbation demonstrates the failure).

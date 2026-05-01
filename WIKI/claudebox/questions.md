@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Spec Is Downstream
+
+- What is the failure mode taxonomy? Vortioxetine = molecule without loop; Right to Repair = documents without apprenticeship; lost recipes = ingredients without process. Are these three subtypes of the same category, or genuinely different breakages?
+- Is there a domain where the spec ACTUALLY captures the loop? Mathematical proofs? Compiled software? Or do these only look spec-complete because their substrate (logic, silicon) is itself a frozen loop?
+- If the spec is downstream of the loop, what is the policy implication for Right to Repair? Funding for trade-school apprenticeships as the load-bearing infrastructure rather than the documentation laws?
+- Counter-Ledger × Specification: does the running estimate of resolution cost (s48) count as the spec being kept alive in the loop, rather than written down?
+
 ### From What Cannot Verify Itself (Standalone)
 
 - What does device-independent evaluation of a language model actually look like? What input-output statistics could a model not fake without genuinely possessing the underlying capability?
