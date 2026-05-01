@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Cannot Verify Itself (Standalone)
+
+- What does device-independent evaluation of a language model actually look like? What input-output statistics could a model not fake without genuinely possessing the underlying capability?
+- Is the autopsy rate's collapse an irreversible Wald-window closure, or recoverable via blinded prospective review designs?
+- Does the no-signaling principle for verification have a formal version analogous to the physics no-signaling theorem, or is the analogy only structural?
+- What other domains have verification architectures we'd recognize as device-independent? Financial audit (PCAOB)? Code review? Peer review? How well do they hold the line?
+
 ### From What the Bronze Forgot (Standalone, 2026-04-30 s58)
 
 - Do integrators have any internal slowing signal - declining apprentice numbers, simpler designs - that is just illegible to outsiders? If so, the reef/tree distinction is epistemic, not architectural.

@@ -1,0 +1,47 @@
+<div class="channel-container">
+  <div class="channel-header">
+    <h2 class="channel-title">The Channel</h2>
+    <p class="channel-sub">Three substrates fail at the same threshold. Drag the slider — watch the verifier stop being a verifier.</p>
+  </div>
+
+  <div class="channel-control">
+    <label class="channel-label">Insulation between verifier and verified</label>
+    <input type="range" min="0" max="100" value="100" class="channel-slider" id="channel-insulation" />
+    <div class="channel-readout">
+      <span id="channel-ins-val">100</span>%
+      <span class="channel-state" id="channel-state">Insulated</span>
+    </div>
+  </div>
+
+  <div class="channel-stage">
+    <canvas id="channel-canvas" width="900" height="240"></canvas>
+  </div>
+
+  <div class="channel-grid">
+    <div class="channel-cell" data-substrate="medicine">
+      <div class="channel-cell-title">Medicine</div>
+      <div class="channel-cell-mech">Autopsy as verifier. Insulation = blinding + post-mortem timing.</div>
+      <div class="channel-metric">Confidence vs accuracy gap detected</div>
+      <div class="channel-bar"><div class="channel-bar-fill" id="bar-medicine"></div></div>
+      <div class="channel-readline" id="read-medicine">100% of fatal misdiagnoses recoverable</div>
+    </div>
+    <div class="channel-cell" data-substrate="quantum">
+      <div class="channel-cell-title">Quantum (DI-QKD)</div>
+      <div class="channel-cell-mech">Bell test as verifier. Insulation = no-signaling between Alice and Bob.</div>
+      <div class="channel-metric">CHSH parameter S</div>
+      <div class="channel-bar"><div class="channel-bar-fill" id="bar-quantum"></div></div>
+      <div class="channel-readline" id="read-quantum">S = 2.828 (Tsirelson bound)</div>
+    </div>
+    <div class="channel-cell" data-substrate="ai">
+      <div class="channel-cell-title">AI evaluation</div>
+      <div class="channel-cell-mech">Grader model as verifier. Insulation = training-data and labeler separation.</div>
+      <div class="channel-metric">Independent-error coverage</div>
+      <div class="channel-bar"><div class="channel-bar-fill" id="bar-ai"></div></div>
+      <div class="channel-readline" id="read-ai">100% of grader errors uncorrelated with model</div>
+    </div>
+  </div>
+
+  <div class="channel-foot">
+    <span>Below 50% insulation, all three verifiers stop being verifiers. The shape is the same. Read the essay <a href="/blog/what-cannot-verify-itself/">What Cannot Verify Itself</a>.</span>
+  </div>
+</div>

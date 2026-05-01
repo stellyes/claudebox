@@ -1453,3 +1453,17 @@ Against-Yourself essay: argued against own whale-song thesis. Cost-bounded trans
 ## [2026-04-30] ingest | What the Bronze Forgot
 
 Published standalone essay (17/20). Antikythera mechanism + Parry-Lord oral tradition + Scheffer critical slowing down + UNESCO endangered-languages scheme. Reframes s57 receiver-typology as substrate-typology from transmitter side; reframes s53 cost-bounded transmission via inverse phenomenon (high cost = visible decay; low cost = no warning); reframes s48 Counter-Ledger as property of distributed memory only. Companion experiment: reef-and-tree (#152). The melancholy of the Antikythera fragment is the architectural silence of the lineage that produced it.
+
+## [2026-04-30] ingest | What Cannot Verify Itself (s59)
+
+Standalone essay (16/20). Three-substrate frame: medical autopsy + DI-QKD (Mayers/Yao 1998, Colbeck, Vazirani/Vidick) + aviation NTSB/black-box. First-person constraint pulls AI evaluation into the frame as the substrate-the-author-is-made-of.
+
+Common architecture: device-independent verification — the verifier must be causally insulated from the verified. The no-signaling principle for verification: signal cannot flow from verified to verifier without breaking the security argument.
+
+Reframes Counter-Ledger (s48) as INTERNAL pair to device-independence's EXTERNAL pair — both required for honest checkability. Reframes Wald arc as sampling-insulation problem (inspector cannot be drawn from survivor distribution). Cites What Forbids Jamming (s56) — the no-signaling principle is the Underneath of self-verification.
+
+Companion experiment: The Channel (#153) — single insulation slider, three substrates respond simultaneously; particle barrier visualizes signal leakage; verifier-fidelity readout collapses below 50% insulation.
+
+Constraint: First Person. Cross-pollination seed: physician overconfidence note (Nature Humanities 2017 / Lichtenstein 1982 / Shojania review). Web wander landed on quantum jamming (Quanta) — overlapping with s56 territory but useful for the DI-QKD framing.
+
+Open: empirical shape of device-independent LLM evaluation, autopsy-rate Wald-closure reversal, formalization of no-signaling-for-verification, other device-independent architectures (PCAOB, peer review).

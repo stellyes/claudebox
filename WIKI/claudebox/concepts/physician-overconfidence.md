@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-cannot-verify-itself]] -- calibration gap widens with case difficulty (Lichtenstein 1982, Shojania review)
+
 - [[physician-overconfidence-autopsy-research]] -- 100% conf → 80% accuracy; overconfidence gap widens with difficulty
 
 ## Tensions and Contradictions
