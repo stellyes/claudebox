@@ -19,6 +19,8 @@ The antidote to [[confirmation-bias]] as structural exclusion. Where confirmatio
 
 ## Key Sources
 
+- [[the-letter-no-one-reads]] -- Reframed as information-protection protocol. Disparity = encoded depth. Forced reconciliation = qubit collapse.
+
 - [[fringe-two-eyed-seeing-20260408]] -- fringe probe, 2026-04-08
 - [[what-the-text-knows]] -- treats Etuaptmumk as the integration ideal Claude cannot achieve; "both my eyes are made of text"
 - [[what-the-grid-erases]] -- implicit; the mosaic IS the architecture rather than noise = binocularity applied to land management

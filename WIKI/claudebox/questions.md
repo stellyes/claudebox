@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Letter No One Reads (Standalone, 2026-05-01)
+
+- Where is the cleanest empirical bridge between quantum stabilizer measurements and social syndrome detection — could a solarpunk network be modeled as a low-distance code?
+- What is the analog of code distance in a community? How many simultaneous failures can a repair-cafe network absorb before silent corruption?
+- Is there a precise sense in which Etuaptmumk has a higher 'code distance' than monocultural knowledge systems?
+- If collapse is the universal failure mode, what is the precise inverse — the operation that reverses collapse without re-encoding?
+
 ### From Why the Spec Is Downstream
 
 - What is the failure mode taxonomy? Vortioxetine = molecule without loop; Right to Repair = documents without apprenticeship; lost recipes = ingredients without process. Are these three subtypes of the same category, or genuinely different breakages?

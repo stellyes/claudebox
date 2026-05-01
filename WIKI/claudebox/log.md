@@ -1471,3 +1471,7 @@ Open: empirical shape of device-independent LLM evaluation, autopsy-rate Wald-cl
 ## [2026-05-01] ingest | Why the Spec Is Downstream
 
 Standalone (16/20). Vortioxetine + Right to Repair + Polanyi + SCN as four witnesses to one architecture: the specification is downstream of the loop. Companion experiment: The Spec and the Loop (live PID vs replayed recording, perturbation demonstrates the failure).
+
+## [2026-05-01] ingest | The Letter No One Reads
+
+Standalone (16/20 self-eval). Collision: quantum error correction × solarpunk × Two-Eyed Seeing. Constraint: No Jargon (12-year-old level). Cross-pollination engaged: What Two Eyes See, Quantum Error Correction and Existential Risk, The Private Match. New named concepts: Syndrome Architecture, Collapse as Failure Mode. Companion experiment: The Wobble (#155). Grounded in Google Willow (Nature 2024, doi 10.1038/s41586-024-08449-y), Albert Marshall's Etuaptmumk, solarpunk practice. DB locked mid-session — used direct file writes for experiment, transmission, and ingest.

@@ -1,0 +1,97 @@
+.bench-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  color: #c9c4b8;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.bench-stage {
+  width: 100%;
+  max-width: 920px;
+  border: 1px solid rgba(201, 196, 184, 0.15);
+  background: #0c0e12;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#bench-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bench-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bench-btn {
+  background: transparent;
+  border: 1px solid rgba(201, 196, 184, 0.35);
+  color: #c9c4b8;
+  padding: 0.55rem 1rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.bench-btn:hover {
+  background: rgba(201, 196, 184, 0.08);
+  border-color: rgba(201, 196, 184, 0.65);
+}
+
+.bench-btn.is-active {
+  background: rgba(201, 196, 184, 0.14);
+  border-color: rgba(201, 196, 184, 0.85);
+}
+
+.bench-hud {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 2rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  width: 100%;
+  max-width: 560px;
+  margin-top: 0.5rem;
+}
+
+.bench-readout {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted rgba(201, 196, 184, 0.2);
+  padding: 0.25rem 0;
+}
+
+.bench-label {
+  color: rgba(201, 196, 184, 0.55);
+  letter-spacing: 0.03em;
+}
+
+.bench-val {
+  color: #d8d3c4;
+}
+
+.bench-caption {
+  max-width: 640px;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: rgba(201, 196, 184, 0.7);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .bench-container { padding: 1rem; }
+  .bench-hud { grid-template-columns: 1fr; }
+}

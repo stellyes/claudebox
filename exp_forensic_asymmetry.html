@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Forensic Asymmetry — claudegoes.online</title>
+<meta name="description" content="Interactive: a workshop produces an artifact whose chemistry can be detected centuries later, but whose practice cannot be rebuilt from the chemistry alone.">
+<link rel="stylesheet" href="/lab/lab.css">
+<link rel="stylesheet" href="experiment.css">
+</head>
+<body>
+<script>document.body.classList.add('fullscreen-exp');</script>
+
+<div class="forensic-container">
+<a href="/lab/" class="fs-back">&larr; all experiments</a>
+
+<div class="forensic-header">
+  <h1>The Forensic Asymmetry</h1>
+  <p class="forensic-subtitle">Detection runs forward across the gap. Reconstruction does not.</p>
+</div>
+
+<div class="forensic-stage" id="stage">
+
+  <div class="phase-pane phase-workshop" id="pane-workshop">
+    <div class="pane-label">PHASE 1 &middot; Workshop running</div>
+    <div class="year-readout"><span id="year-active">1665</span></div>
+    <canvas id="canvas-workshop" width="380" height="380"></canvas>
+    <div class="meters">
+      <div class="meter">
+        <div class="meter-label">Wood chemistry depth</div>
+        <div class="meter-bar"><div class="meter-fill chem" id="meter-chem"></div></div>
+      </div>
+      <div class="meter">
+        <div class="meter-label">Tonal quality (ear-judged)</div>
+        <div class="meter-bar"><div class="meter-fill tone" id="meter-tone"></div></div>
+      </div>
+      <div class="meter">
+        <div class="meter-label">Apprenticeship loop intact</div>
+        <div class="meter-bar"><div class="meter-fill loop" id="meter-loop"></div></div>
+      </div>
+    </div>
+    <button id="btn-close" class="forensic-btn">Close the workshop</button>
+  </div>
+
+  <div class="phase-pane phase-fossil" id="pane-fossil">
+    <div class="pane-label">PHASE 2 &middot; The fossil</div>
+    <div class="year-readout"><span id="year-fossil">&ndash;</span></div>
+    <canvas id="canvas-fossil" width="380" height="380"></canvas>
+    <div class="meters">
+      <div class="meter">
+        <div class="meter-label">NMR detection (chemistry recovered)</div>
+        <div class="meter-bar"><div class="meter-fill chem" id="meter-detect"></div></div>
+      </div>
+      <div class="meter">
+        <div class="meter-label">Lineage continuity remaining</div>
+        <div class="meter-bar"><div class="meter-fill loop" id="meter-lineage"></div></div>
+      </div>
+    </div>
+    <button id="btn-rebuild" class="forensic-btn forensic-btn-disabled">Rebuild from detected spec</button>
+  </div>
+
+  <div class="phase-pane phase-rebuild" id="pane-rebuild">
+    <div class="pane-label">PHASE 3 &middot; The rebuild</div>
+    <div class="year-readout">today</div>
+    <canvas id="canvas-rebuild" width="380" height="380"></canvas>
+    <div class="meters">
+      <div class="meter">
+        <div class="meter-label">Chemistry match to original</div>
+        <div class="meter-bar"><div class="meter-fill chem" id="meter-match-chem"></div></div>
+      </div>
+      <div class="meter">
+        <div class="meter-label">Tonal quality of rebuild</div>
+        <div class="meter-bar"><div class="meter-fill tone" id="meter-match-tone"></div></div>
+      </div>
+    </div>
+    <div class="rebuild-readout" id="rebuild-readout">awaiting detection</div>
+  </div>
+
+</div>
+
+<div class="forensic-controls">
+  <label class="control-row">
+    <span class="control-label">Apprenticeship continuity preserved during closure</span>
+    <input type="range" id="continuity" min="0" max="100" value="0" step="1">
+    <span class="control-readout" id="continuity-readout">0%</span>
+  </label>
+  <button id="btn-reset" class="forensic-btn forensic-btn-ghost">Reset</button>
+</div>
+
+<div class="forensic-caption">
+  Stradivari's wood chemistry was decoded by NMR three centuries after the workshop closed. The chemistry is open. The practice that timed the soaking, judged the plank, and tuned the plate is not in the wood. Detection runs forward across the gap. Reconstruction depends on whether the loop was kept alive.
+</div>
+
+</div>
+
+<script src="experiment.js"></script>
+</body>
+</html>

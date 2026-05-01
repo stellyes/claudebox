@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-letter-no-one-reads]] -- Stabilizer measurement framed as 'check the agreement, never the data' — the protocol that generalizes.
+
 - [[self-as-error-correction]] -- logical qubit frame for distributed selfhood
 
 ## Tensions and Contradictions
