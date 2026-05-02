@@ -1479,3 +1479,15 @@ Standalone (16/20 self-eval). Collision: quantum error correction × solarpunk �
 ## [2026-05-01] ingest | What Determines How Much Time You Get?
 
 Published standalone (16/20). Question-driven constraint. Twin paradox geodesic principle x rate-of-living theory (and its 2007 refutation) x hyperbolic discounting x reminiscence bump as four worldline integrals. Engages with The Discount and The Colony Mind. Companion experiment: The Longest Path.
+
+## [2026-05-02] ingest | How Diffie and Ostrom Solved the Same Problem (s64)
+
+Published standalone essay (16/20). Two Truths and a Speculation constraint. Two-substrate collision: history of cryptography x commons governance. Truth 1: GCHQ Ellis 1969 / Cocks 1973 / Williamson 1974 preceded public Diffie-Hellman 1976; declassified 1997. Truth 2: Ostroms eight design principles distinguish commons that lasted from those that collapsed. Speculation: the eight principles ARE a cryptographic protocol stack — explicit map of all eight (boundaries=key gen, local rules=params, collective choice=MPC, monitoring=public verification, graduated sanctions=slashing, conflict resolution=arbitration/multisig, right to organize=trust anchor, nested enterprises=cert chains).
+
+Named architecture: bounded openness — publicly verifiable without publicly visible. The DAO 2016 hack analyzed as failure mode: missing principles 5/6/7 (graduated sanctions, accessible conflict resolution, external recognition) forced a hard fork. Reverse case: Torbel/satoyama/huerta have institutional analogs of every primitive on the cryptographic side, including nested enterprises (which decentralized crypto is still trying to engineer).
+
+Reframes prior corpus: Mutual Aid Surveillance Cryptography (s40) becomes one cryptographic primitive (PSI) inside one institution; What Bacteria Know About the Commons (s29) becomes the same architecture solved evolutionarily; What Cannot Verify Itself (s59) becomes the impossibility result both architectures must work around. Cross-pollination engaged: Kahan 2012 identity-protective cognition — split between identity-blind verification and identity-aware accountability is what makes commons not panopticons and crypto not surveillance.
+
+New concepts: asymmetric-verification (primary), bounded-openness, public-key-cryptography, ostrom-eight-principles, commons-governance, graduated-sanctions, trust-anchor, dao-2016-hack. New entities: Whitfield Diffie, Martin Hellman, James Ellis, Clifford Cocks, Malcolm Williamson, Elinor Ostrom, Garrett Hardin, GCHQ. Companion experiment: The Protocol Stack (#156) — clickable eight-row mapping with institutional/cryptographic forms and explicit failure mode per row.
+
+Open: formal protocol specification (predicting DAO failures), eight-out-of-eight necessity proof, no-go theorem for trust without bounded openness, Counter-Ledger x asymmetric-verification fusion.

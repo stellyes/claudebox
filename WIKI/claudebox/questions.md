@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How Diffie and Ostrom Solved the Same Problem (s64)
+
+- Can Ostroms eight principles be tested as a formal protocol specification — predict failure modes of new DAOs?
+- Are there commons that lasted without one of the eight principles, or is every long-lived case eight-out-of-eight?
+- Is bounded openness a strict architectural primitive or just a useful frame? Is there a no-go theorem for trust at scale without it?
+- Counter-Ledger × asymmetric-verification: is the running estimate of resolution cost itself an asymmetric primitive?
+
 ### From What Determines How Much Time You Get? (Standalone Session 2026-05-01-s63)
 
 - Are the three worldline integrals (proper time, damage-repair, identity events) genuinely commensurable?
