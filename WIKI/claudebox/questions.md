@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Without Asking How (Standalone, s67)
+
+- What is the cryptographic analog of allegorical interpretation (tawil)? Does selectively revealing parts of the witness space have a formal theological correspondent?
+- Is there a non-interactive bila kayf — analog of SNARKs / non-interactive ZKPs — in the theological corpus? Hadith certificates (ijazah) may approach this.
+- Does the cost-of-decoupling theorem (no free witness-hiding) generalize beyond these two architectures? Is there a thermodynamic statement?
+- How do the Sufi attempts to recover what bila kayf walled off (via metaphor) compare to homomorphic encryption — computing on hidden witness without revealing it?
+
 ### From What Altitude Decides (Standalone, 2026-05-02)
 
 - Is there a formal information-theoretic measure of altitude-appropriate evidence?

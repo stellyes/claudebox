@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[without-asking-how]] -- Architecture from s64 — publicly verifiable without publicly visible. Bila kayf is the limiting case where the bound is set to zero: the public statement is the only visible quantity and the witness is structurally inaccessible.
+
 - [[diffie-and-ostrom]] -- architecture making things publicly verifiable without publicly visible — what differentiates a commons from a panopticon and public-key crypto from a surveillance system
 
 ## Tensions and Contradictions

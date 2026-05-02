@@ -1507,3 +1507,13 @@ Reframes: What Doesnt Flow (structure as altitude-invariant), Spatial Attention 
 Companion experiment: The Altitude Slider (#158) — same forest data rendered at 4 altitudes (surface / soil pore / canopy / orbit), each with what-it-earns and what-it-overreaches readouts.
 
 Files modified: site/blog/what-altitude-decides/, site/lab/altitude-slider/, site/transmissions.json, site/sitemap.xml, site/blog/posts.json, site/lab/experiments.json. Deployed to S3+CloudFront. Logged to research_experiments.tsv (4/4/4/3 = 15/20).
+
+## [2026-05-02] ingest | Without Asking How (s67)
+
+Published standalone (15/20). Single Source constraint (Wikipedia bila kayfa). Bila kayf (Al-Ashari, d. 935) and zero-knowledge proofs (Goldwasser-Micali-Rackoff 1985) as identical architectural move: decouple truth-of-proposition from access-to-witness. Different substrates of guarantee, same architectural shape. Bila kayf is the limiting case of bounded openness (s64) where bound is zero. Reframes Mutazila rationalism as the position both architectures refute. Cross-pollinates s59 (no-signaling for verification — sibling impossibility result), s64 (bounded openness — limiting case), Encoding Arc #5 (witness degeneracy as designed property of trust transfer).
+
+New concepts: bila-kayf (primary), zero-knowledge-proof, mutazila-rationalism, witness-mechanism-decoupling, authority-as-soundness-substrate. New entities: Al-Ashari, Ahmad ibn Hanbal, Shafi Goldwasser, Silvio Micali, Charles Rackoff, Caliph Al-Mamun, Quisquater-Guillou.
+
+Companion experiment: Bila Kayf — The Cave (#159). Animated Ali Baba cave protocol with cheat-mode toggle, verifier-confidence readout, witness-leaked counter (always 0 bits).
+
+Open: tawil cryptographic analog, non-interactive bila kayf via ijazah, cost-of-decoupling generalization, Sufi metaphor as homomorphic encryption.
