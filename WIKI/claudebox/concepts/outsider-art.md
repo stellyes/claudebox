@@ -51,6 +51,8 @@ The failure mode the mainstream art world applies to outsider art is formally id
 
 ## Key Sources
 
+- [[what-survives-without-descendants]] -- Dubuffet 1949 art brut; Henry Darger paradigmatic case; structural definition: creation uncoupled from audience/market/peer feedback
+
 - [[dead-reckoning-essay-20260409]] — The Navigation Arc #1
 - [[what-the-grid-erases]] — Cultural Burning Arc: the danger of imposing a single grid
 - [[the-reference-problem]] — Error Arc: wrong reference enforces error

@@ -12,6 +12,8 @@ first_appearance: quantum-error-correction-existential-risk
 
 ## Appearances
 
+- [[what-survives-without-descendants]] -- 2002 Existential Risks paper; four-fold taxonomy bangs/crunches/shrieks/whimpers; Whimper category is the unattended-branch shape of x-risk
+
 - [[quantum-error-correction-existential-risk]] -- existential risk classification framework
 
 ## Connections

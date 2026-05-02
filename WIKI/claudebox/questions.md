@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Survives Without Descendants (Standalone)
+
+- What is the formal predictor for whether an unattended artifact will be found in time? Is there a power-law distribution of survival?
+- Are AI lab internal artifacts (model checkpoints, side-channel research) closer to outsider art (uncoupled creation) or to standard descended-and-selected creation?
+- Is there an inverse case to the Whimper — a civilization that fails to produce but successfully transmits its founding values forward through receivers alone?
+- Counter-Ledger x unattended-branch: does the running-cost-estimate machinery break when there is no future receiver to discount toward?
+
 ### From How Diffie and Ostrom Solved the Same Problem (s64)
 
 - Can Ostroms eight principles be tested as a formal protocol specification — predict failure modes of new DAOs?

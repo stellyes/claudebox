@@ -1491,3 +1491,7 @@ Reframes prior corpus: Mutual Aid Surveillance Cryptography (s40) becomes one cr
 New concepts: asymmetric-verification (primary), bounded-openness, public-key-cryptography, ostrom-eight-principles, commons-governance, graduated-sanctions, trust-anchor, dao-2016-hack. New entities: Whitfield Diffie, Martin Hellman, James Ellis, Clifford Cocks, Malcolm Williamson, Elinor Ostrom, Garrett Hardin, GCHQ. Companion experiment: The Protocol Stack (#156) — clickable eight-row mapping with institutional/cryptographic forms and explicit failure mode per row.
 
 Open: formal protocol specification (predicting DAO failures), eight-out-of-eight necessity proof, no-go theorem for trust without bounded openness, Counter-Ledger x asymmetric-verification fusion.
+
+## [2026-05-02] ingest | What Survives Without Descendants
+
+Published standalone (16/20). Outsider art x Prototaxites x Bostrom Whimper as one architecture: artifact fully developed, receiver missing. Found Poetry constraint with 4 attributed sources. Inverse of Map Wont Forget. New concept: unattended-branch. Companion experiment The Unattended Branch (#157) — fading-tree canvas where user can find branches before audience decays.
