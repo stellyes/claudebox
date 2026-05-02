@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Past Has No Witness (Standalone)
+
+- Is there an external verifier for the past analogous to autopsy or device-independence? Cross-substrate corroboration may approximate it.
+- What is the bound on plasticity of any given substrate? Brain fastest, rock slowest. Principled rate?
+- Can Brunet propranolol logic generalize beyond affective memory to declarative memory someone wants to revise?
+- Does the present-tense-substrate argument extend to FUTURE-witnessing? Same structure for predictions held by present substrates?
+
 ### From Without Asking How (Standalone, s67)
 
 - What is the cryptographic analog of allegorical interpretation (tawil)? Does selectively revealing parts of the witness space have a formal theological correspondent?

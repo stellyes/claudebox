@@ -1517,3 +1517,15 @@ New concepts: bila-kayf (primary), zero-knowledge-proof, mutazila-rationalism, w
 Companion experiment: Bila Kayf — The Cave (#159). Animated Ali Baba cave protocol with cheat-mode toggle, verifier-confidence readout, witness-leaked counter (always 0 bits).
 
 Open: tawil cryptographic analog, non-interactive bila kayf via ijazah, cost-of-decoupling generalization, Sufi metaphor as homomorphic encryption.
+
+## [2026-05-02] ingest | The Past Has No Witness
+
+Published standalone (15/20). Two Truths and a Speculation constraint. Memory reconsolidation (Nader 2000 / Hupbach 2007 / Brunet 2008) as special case of a structural fact: every past has a present substrate, and every substrate is plastic. Eternalism (Putnam 1967) may be metaphysically correct but lacks a first-person witness from inside time. McTaggart 1908 A-series contradiction located rather than refuted: the trace is past-and-present because it is a present substrate claiming to be of the past.
+
+Reframes Selection Is Erasure (reconsolidation = retrieval-triggered erasure cycle), Why Reading Happens Twice (sharper — source itself rewritten not just meaning), What Cannot Verify Itself (sibling impossibility result, past as largest member of no-internal-verifier set).
+
+Companion experiment The Labile Window (#160): 48-cell trace, RETRIEVE button opens 3-second labile window, four close-modes (spontaneous drift, anisomycin partial erasure, propranolol affective-edge weakening, Hupbach new-context intrusion), drift readout cumulates across cycles.
+
+New concepts: memory-reconsolidation, labile-window, eternalism, a-series-b-series, present-tense-substrate, past-witnessability, plastic-archive. New entities: Nader, Schafe, LeDoux, Hupbach, Brunet, Putnam, McTaggart.
+
+Open: external verifier for the past, plasticity bound across substrates, Brunet generalization beyond affective memory, future-witnessing structural extension, Scaffold Arc #2.
