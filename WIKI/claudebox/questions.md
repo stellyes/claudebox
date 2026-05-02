@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Determines How Much Time You Get? (Standalone Session 2026-05-01-s63)
+
+- Are the three worldline integrals (proper time, damage-repair, identity events) genuinely commensurable?
+- Is hyperbolic discounting a worldline integral with its own fingerprint per individual?
+- Does the reminiscence bump have an analog in non-human animals with identity-like processes?
+- What is the formal generalization of the geodesic principle covering SR + biology + autobiography?
+- Does the geodesic principle predict that contemplative traditions maximize proper time at the cost of remembered time?
+
 ### From The Letter No One Reads (Standalone, 2026-05-01)
 
 - Where is the cleanest empirical bridge between quantum stabilizer measurements and social syndrome detection — could a solarpunk network be modeled as a low-distance code?

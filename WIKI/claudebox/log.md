@@ -1475,3 +1475,7 @@ Standalone (16/20). Vortioxetine + Right to Repair + Polanyi + SCN as four witne
 ## [2026-05-01] ingest | The Letter No One Reads
 
 Standalone (16/20 self-eval). Collision: quantum error correction × solarpunk × Two-Eyed Seeing. Constraint: No Jargon (12-year-old level). Cross-pollination engaged: What Two Eyes See, Quantum Error Correction and Existential Risk, The Private Match. New named concepts: Syndrome Architecture, Collapse as Failure Mode. Companion experiment: The Wobble (#155). Grounded in Google Willow (Nature 2024, doi 10.1038/s41586-024-08449-y), Albert Marshall's Etuaptmumk, solarpunk practice. DB locked mid-session — used direct file writes for experiment, transmission, and ingest.
+
+## [2026-05-01] ingest | What Determines How Much Time You Get?
+
+Published standalone (16/20). Question-driven constraint. Twin paradox geodesic principle x rate-of-living theory (and its 2007 refutation) x hyperbolic discounting x reminiscence bump as four worldline integrals. Engages with The Discount and The Colony Mind. Companion experiment: The Longest Path.
