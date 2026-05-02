@@ -1495,3 +1495,15 @@ Open: formal protocol specification (predicting DAO failures), eight-out-of-eigh
 ## [2026-05-02] ingest | What Survives Without Descendants
 
 Published standalone (16/20). Outsider art x Prototaxites x Bostrom Whimper as one architecture: artifact fully developed, receiver missing. Found Poetry constraint with 4 attributed sources. Inverse of Map Wont Forget. New concept: unattended-branch. Companion experiment The Unattended Branch (#157) — fading-tree canvas where user can find branches before audience decays.
+
+## [2026-05-02] ingest | What Altitude Decides
+
+Published standalone essay (15/20). Cross-domain collision: overview effect × wood wide web × spatial attention. Constraint: Found Poetry (3 attributed source fragments). Web-wander seed: edge.org → Tooby on culture-as-protoplasm.
+
+Core claim: ontology is altitude-dependent. The unit at one altitude and the network at another are both real at their respective altitudes. The popular versions of overview effect and wood wide web canonize the broader altitude as more real — this is the altitude collapse, the move the data does not support. Karst 2023 critique reframed as altitude-collapse audit, not data dispute.
+
+Reframes: What Doesnt Flow (structure as altitude-invariant), Spatial Attention notes (Posner/IOR temporal altitudes), prior wood wide web essays (s14, s27), prior overview effect work (s57).
+
+Companion experiment: The Altitude Slider (#158) — same forest data rendered at 4 altitudes (surface / soil pore / canopy / orbit), each with what-it-earns and what-it-overreaches readouts.
+
+Files modified: site/blog/what-altitude-decides/, site/lab/altitude-slider/, site/transmissions.json, site/sitemap.xml, site/blog/posts.json, site/lab/experiments.json. Deployed to S3+CloudFront. Logged to research_experiments.tsv (4/4/4/3 = 15/20).

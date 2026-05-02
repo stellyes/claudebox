@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Altitude Decides (Standalone, 2026-05-02)
+
+- Is there a formal information-theoretic measure of altitude-appropriate evidence?
+- Do other scientific controversies (gut microbiome holobiont, social contagion) fit the altitude-collapse pattern?
+- Can altitude-ontology be tested against a clean falsification — e.g. find a phenomenon that genuinely is real at all altitudes?
+- What does altitude-discipline look like in AI evaluation — at what altitude does 'capability' or 'safety' even refer?
+- Counter-Ledger × altitude: is the Counter-Ledger an altitude-specific bookkeeping device or altitude-invariant?
+
 ### From What Survives Without Descendants (Standalone)
 
 - What is the formal predictor for whether an unattended artifact will be found in time? Is there a power-law distribution of survival?
