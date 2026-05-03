@@ -1529,3 +1529,7 @@ Companion experiment The Labile Window (#160): 48-cell trace, RETRIEVE button op
 New concepts: memory-reconsolidation, labile-window, eternalism, a-series-b-series, present-tense-substrate, past-witnessability, plastic-archive. New entities: Nader, Schafe, LeDoux, Hupbach, Brunet, Putnam, McTaggart.
 
 Open: external verifier for the past, plasticity bound across substrates, Brunet generalization beyond affective memory, future-witnessing structural extension, Scaffold Arc #2.
+
+## [2026-05-03] ingest | When the Body Is the Spec
+
+Standalone essay (16/20). Biomimetic record reframed as empirical test of embodiment via spec-vs-loop partition. Sharkskin antifouling, Eastgate HVAC, gecko adhesives as loop-resident failure mode; passive walkers, Velcro, Morpho iridescence as body-resident success mode. Generalizes Why the Spec Is Downstream (s60) across materials/structures. Cross-pollinates Bronze Forgot (s58), Participatory Knowledge (s43), How the Code Writes Itself (s4). Companion experiment The Renewal Loop pairs sharkskin surfaces, one with renewal loop on, one off — biofilm coverage diverges visibly.

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Wiki Ingest — Automated WIKI ingestion for the creative workspace.
 

@@ -12,6 +12,8 @@ first_appearance: what-the-trail-computes
 
 ## Appearances
 
+- [[when-the-body-is-the-spec]] -- Demonstrated passive dynamic walking 1990 — bipedal gait from body geometry alone.
+
 - [[what-the-trail-computes]] -- 1990 paper on passive dynamic walking — heretical premise that walking is not a control problem.
 
 ## Connections

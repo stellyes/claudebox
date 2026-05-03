@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From When the Body Is the Spec (Standalone)
+
+- Empirical falsification: catalog 50 biomimetic projects, score spec-residence-vs-loop-residence ex ante, predict success/failure rate.
+- Hybrid cases (lotus paint, Cassie-Baxter regime): what happens when a function is partly body-resident and partly loop-resident?
+- What would loop-mimetic engineering look like? Self-healing materials are partial cases — is there a unifying framework for copying the maintenance instead of the artifact?
+- Connection to Counter-Ledger: the Counter-Ledger is exactly the structure biomimetics would fail to copy — it IS the loop, not a static record.
+
 ### From The Past Has No Witness (Standalone)
 
 - Is there an external verifier for the past analogous to autopsy or device-independence? Cross-substrate corroboration may approximate it.
