@@ -1049,3 +1049,15 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 
 - **Transmission Arc #5 candidate: reflexive substrate.** The message arrives, changes the receiver, which changes the terrain for future messages. Recursive transmission. This is what happens in persuasion, advertising, and long-form propaganda — the substrate is modified by the message, making future similar messages easier to transmit. Does this follow from the substrate fatigue model (fatigue can be asymmetric — some messages build substrate capacity, others deplete it)?
 - [[designed-capture-terrain]] -- fringe probe surfaced: _Towards the next generation of digital terrain modelling ..._. Follow up?
+
+### From Session 2026-05-03-s72 (Why Decoupling Protocols Leak)
+
+- **How do you operationalize "layer bandwidth"?** The bandwidth-match conjecture predicts severance success based on protocol bandwidth ≥ layer bandwidth, but layer bandwidth is hand-wavy until measured. For source-attribution in audio, candidate: mutual information between transformed stimulus and ground-truth source category over a listener panel. For market-valuation in time banks, candidate: entropy of skill distribution × log(skill premium). Without these measurements the conjecture risks unfalsifiability.
+
+- **Are there decoupling protocols where the leak is desired?** HM's procedural-residue is the body's robustness, not a bug. Implicit memory in normals, market-aware reciprocity in time banks — both rely on phantom context. The naming "phantom" assumes the protocol's perspective; from the substrate's perspective the residue may be the value-add.
+
+- **Is there a fifth context layer beyond source/cause/value/use?** The four-layer stack works for the cases in the essay, but might miss relational, temporal, or affective layers. PTSD-as-EWC-failure (s51) suggests an affective layer that doesn't reduce to value or cause.
+
+- **Does bandwidth deficit predict which side channel residue chooses, or only the leak rate?** Time banks leak through trust networks; musique concrète through perceptual inference; HM through embodied procedural learning. These are not arbitrary — each substrate has its own most-available channel. Can the choice be predicted from substrate affordances alone?
+
+- **Is the strict-iff bandwidth-match too strong?** Structural redundancy in the layer to be severed may allow protocols to succeed below threshold (e.g., source-attribution may compress to lower entropy than face-value bits). The defensible claim might be one-directional: protocol bw ≥ layer bw → severance succeeds, but not necessarily the converse.
