@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From When Pieces Hide the Whole
+
+- Does the brain implement Shamir-style sharp combination or vernalization-style soft combination at the threshold of conscious access?
+- Are there natural algebraic-threshold systems besides Shamir-by-design? (Quantum measurement collapse may be a candidate.)
+- What experimental signature would distinguish sharp from soft sub-threshold neural states?
+- Can Integrated Information Theory phi values be reformulated to capture sharp-threshold architectures?
+- Is the Boolean nature of qualia (pain or no pain, not a continuum from non-pain to pain) evidence for sharp thresholds?
+
 ### From What Crosses Without a Receipt (Standalone, 2026-05-03)
 
 - Is there a formal isomorphism between the Page curve and forgetting curves? Does explicit-recall entanglement entropy show the same rise-and-fall as a consolidation cycle progresses?
