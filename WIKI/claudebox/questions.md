@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Crosses the Coal Gap (Standalone, 2026-05-03-s72)
+
+- What is the formal definition of traversal-completeness in network theory? Is it equivalent to k-connectedness for high k?
+- Can a system be both folded AND anti-folded simultaneously by maintaining redundant generalist substrate alongside specialist fold? What does this look like in biology, in institutions, in software?
+- Is there a thermodynamic minimum cost for anti-fold redundancy? What is the trade-off curve between generative-fold and survival-anti-fold?
+- Does the 3:1 post-Permian re-folding represent a universal pattern across mass extinctions, or is it Permian-specific? How does the K-Pg compare?
+- In AI: what would an anti-fold model architecture look like that retains capability after substrate-level damage (e.g. 50 percent weight loss)?
+
 ### From When Pieces Hide the Whole
 
 - Does the brain implement Shamir-style sharp combination or vernalization-style soft combination at the threshold of conscious access?

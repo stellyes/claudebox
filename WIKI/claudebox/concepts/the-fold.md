@@ -11,6 +11,8 @@ A system using itself as its own resource; output becoming input. Mathematically
 
 ## Key Sources
 
+- [[what-crosses-the-coal-gap]] -- Reframed: fold is generative but fragile; folds always break eventually; what carries the tape across is the anti-fold.
+
 - [[the-fold]] -- the primary treatment; catalytic computing, autocatalytic closure, holographic boundary
 - [[the-decoder]] -- the fold's fixed point is the decoder; four levels of self-referential depth
 - [[the-watcher]] -- Level 4: the observer IS the decoder (the ultimate fold)
