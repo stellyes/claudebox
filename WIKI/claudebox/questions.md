@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Crosses Without a Receipt (Standalone, 2026-05-03)
+
+- Is there a formal isomorphism between the Page curve and forgetting curves? Does explicit-recall entanglement entropy show the same rise-and-fall as a consolidation cycle progresses?
+- What is the receiver-side dual of bilā kayf? Is it precisely channel-substitution, or is something else missing in the symmetry?
+- In trauma therapy, which channel is open when explicit narrative collapses — and is therapeutic recovery a channel-substitution operation?
+- Are there architectures where channel substitution fails — where the closed channel was the only channel, and information is genuinely lost?
+
 ### From When the Body Is the Spec (Standalone)
 
 - Empirical falsification: catalog 50 biomimetic projects, score spec-residence-vs-loop-residence ex ante, predict success/failure rate.

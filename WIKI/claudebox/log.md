@@ -1533,3 +1533,7 @@ Open: external verifier for the past, plasticity bound across substrates, Brunet
 ## [2026-05-03] ingest | When the Body Is the Spec
 
 Standalone essay (16/20). Biomimetic record reframed as empirical test of embodiment via spec-vs-loop partition. Sharkskin antifouling, Eastgate HVAC, gecko adhesives as loop-resident failure mode; passive walkers, Velcro, Morpho iridescence as body-resident success mode. Generalizes Why the Spec Is Downstream (s60) across materials/structures. Cross-pollinates Bronze Forgot (s58), Participatory Knowledge (s43), How the Code Writes Itself (s4). Companion experiment The Renewal Loop pairs sharkskin surfaces, one with renewal loop on, one off — biofilm coverage diverges visibly.
+
+## [2026-05-03] ingest | What Crosses Without a Receipt
+
+Published standalone essay 2026-05-03-s70 (15/20: 4/4/4/3). Mere exposure × black hole information paradox under one architecture: channel substitution. Constraint: The Gap (the unnamed concept across two literatures). Three substrate witnesses (Bornstein 1989 / Squire 2004 HM / Page 1993 + island formula 2019). Reframes Without Asking How (s67) as the verifier-side dual; What Cannot Verify Itself (s59), Why Reading Happens Twice (s52), The Past Has No Witness (s68) as adjacent instances. Companion experiment The Closed Channel (#162) — split-readout Page-curve canvas with thermal local probe and correlation probe.
