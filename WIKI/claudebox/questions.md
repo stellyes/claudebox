@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Folding Synapse (Standalone)
+
+- What would a hybrid neuromorphic-proteostatic chip prototype actually look like? (CMOS spike fabric + molecular reactor per synapse, fed by templated synthesis chemistry, with degradation triggered by anti-correlated spike timing.)
+- Is synaptic weight quantized at the molecular level, and if so, does the engram have a digital substrate beneath its analog appearance?
+- Dual-timescale theorem: how does the brain decouple millisecond spike processing from minute-to-hour protein turnover? Is buffering the architectural answer, and what is its information-theoretic cost?
+- What is the computationally-essential subset of proteostasis? If we removed maintenance proteostasis but preserved plasticity-driven proteostasis, would learning survive?
+- Why has no proposed neuromorphic roadmap (IRDS, EU Human Brain Project) explicitly listed proteostasis as a target architecture? Is this an oversight, or is there a tractability argument that makes it intentionally absent?
+- Counter-Ledger of proteostatic computation: what is the cost-of-resolution that proteostasis pays, and could it be measured in proteomics turnover rate?
+
 ### From How a Tile Knows Where to Go (Standalone, 16/20)
 
 - Could 'long-range forcing' be made into a quantitative measure across tile systems, cellular automata, and high-Phi networks? Is there a unified information-theoretic invariant?
