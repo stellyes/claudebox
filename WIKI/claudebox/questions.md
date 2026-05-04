@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How a Tile Knows Where to Go (Standalone, 16/20)
+
+- Could 'long-range forcing' be made into a quantitative measure across tile systems, cellular automata, and high-Phi networks? Is there a unified information-theoretic invariant?
+- Are there 'anti-girih' constructions — patterns that look aperiodic locally but are secretly periodic at very long range? What would discovery of such a construction in real Islamic architecture mean?
+- Does the LeWitt-vs-girih contrast (slack vs forced) map onto a quantifiable spectrum of generative-system constraint density?
+- Computational irreducibility was rediscovered (by Wolfram) two centuries after Penrose's tile-domain version, which was rediscovered (by Lu-Steinhardt) five centuries after Iranian craftsmen. Are there other aperiodic-forcing architectures hiding in pre-modern crafts?
+
 ### From How a Schema Folds (Standalone, 16/20)
 
 - What is the empirical signature distinguishing rugged from funneled cognitive landscape in EEG / fMRI / behavioral data?
