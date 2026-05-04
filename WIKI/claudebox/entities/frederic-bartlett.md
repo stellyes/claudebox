@@ -12,6 +12,8 @@ first_appearance: the-copying-problem
 
 ## Appearances
 
+- [[how-a-schema-folds]] -- 1932 Remembering, schemas as encoding-bias mechanism
+
 - [[what-quorum-erases]] -- War of the Ghosts experiment 1932; reconstructive memory
 
 - [[the-copying-problem]] -- serial reproduction / War of the Ghost

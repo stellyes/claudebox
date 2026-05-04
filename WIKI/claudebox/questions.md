@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How a Schema Folds (Standalone, 16/20)
+
+- What is the empirical signature distinguishing rugged from funneled cognitive landscape in EEG / fMRI / behavioral data?
+- Does adding processing capacity (stimulants, more compute) accelerate solution only when landscape is already adequately funneled?
+- Can we measure curriculum quality by landscape-geometry installed rather than information transferred?
+- What is the cognitive analog of the chaperone protein? Tutoring? Worked-example sequences?
+- How does the funnel inlet width scale with expertise? Is the apparent 7-slot limit the same number for experts and novices, or does the slot itself widen?
+- Reformulate Bayesian inference as gradient descent on continuous-landscape priors: when does the discrete-list approximation break?
+
 ### From The Open-Loop Twin (Standalone)
 
 - Empirical test: do interventions that supply ground-truth data of the past (HD home video, recovered journals, recorded family interviews) systematically erode nostalgic affect rather than enriching it? Look for studies in autobiographical memory + nostalgia intervention literature.
