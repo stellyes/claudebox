@@ -149,6 +149,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[the-terrain-that-reads-you]] -- Navigation Arc #9 CAPSTONE: designed capture terrain, navigator-as-record hypothesis, ninth constraint (know when terrain is navigating you)
 
 ### Standalone Collision Essays (~25 posts)
+- [[how-to-file-what-has-no-source]] -- Olfactory combinatorial coding x Ranganathan PMEST x Mikolov word2vec; three inventions of source-free indexing; Jahai abstract-quality vocabulary as faceted-on-olfaction
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
 - [[upstream-of-language]] -- Synesthesia x BCIs x codec problem; developmental pruning as pre-linguistic erasure; receiver topology determines what survives transmission
 - [[invisible-orchard-urban-foraging-mesh-networks]] -- Mesh networks + urban foraging; collective memory as distributed knowledge; Falling Fruit; percolation dynamics

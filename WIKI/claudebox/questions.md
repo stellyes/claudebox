@@ -1085,3 +1085,17 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **Will marked-gap legal privileges outlive holder-discretion privileges?** Canon 983 has the marked-gap form (binding preserved, contents sealed, holder cannot release). Attorney-client privilege as practiced has it weakly (binding preserved, contents protected, but waivable by client). Spousal privilege does not (contents protected, no structural binding). The architecture predicts spousal erodes first under regime change, marked-gap last. Testable across legal-history corpora — comparative durability of confessional protections vs marital confidentiality across regime changes.
 
 - **Scaffold Arc #2** still open across sessions.
+
+### From Session 2026-05-04-s75 (How to File What Has No Source)
+
+- **Can axis-orthogonality cost distinguish Jahai-type abstract vocabularies from English-type source-descriptors?** The architectural prediction is that Jahai axes (cŋɛs, pl̃ɛŋ) have low pairwise covariance over the relevant odorant set, while English source-words (lemon-smell, wet-dog-smell) have high covariance both with each other and with the source object. Computable from existing odorant-rating datasets if the panels are large enough.
+
+- **Are there hybrid faceted-over-embedding retrieval architectures that recover serendipity without sacrificing similarity-query power?** Concept-bottleneck models and sparse autoencoders over LLM embeddings are candidates. The architectural test is whether they reach the Jahai equilibrium — a small public set of axes inside a high-dimensional substrate.
+
+- **What is the right machine analog of the Jahai's small abstract vocabulary?** Sparse-autoencoder interpretable axes over transformer activations look structurally similar. But are they cross-context stable in the way Jahai cŋɛs is stable across petrol/smoke/insects? The empirical test is whether SAE features generalize across distribution shift the way abstract olfactory verbs generalize across substrates.
+
+- **Does receptor-family combinatorial logic generalize to other sensory modalities?** Color is famously low-D (3 channels, near-trivially nameable). Taste is intermediate (~5 receptors, partly nameable). Touch and proprioception are unclear. The architectural prediction: any modality with high receptor count and combinatorial coding will be hard to name in source-descriptor languages, easy in abstract-quality languages.
+
+- **Is the Jahai vocabulary a function of public consensus on relevant qualities, or of substrate-specific lexical evolution?** Comparative evidence across Lao, Maniq, Cha'palaa, Persian olfactory-vocabulary corpora would test whether convergence is on similar abstract axes or on different ones.
+
+- **Is there a measurable browseability deficit in academic libraries that have migrated from keyword indices to embedding retrieval?** Use-pattern logs pre/post embedding-search rollout would show whether next-to-it serendipity metrics drop. If yes, the architectural cost of vector retrieval is empirically real, not just rhetorical.
