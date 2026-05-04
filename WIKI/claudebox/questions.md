@@ -1069,3 +1069,19 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **Does bandwidth deficit predict which side channel residue chooses, or only the leak rate?** Time banks leak through trust networks; musique concrète through perceptual inference; HM through embodied procedural learning. These are not arbitrary — each substrate has its own most-available channel. Can the choice be predicted from substrate affordances alone?
 
 - **Is the strict-iff bandwidth-match too strong?** Structural redundancy in the layer to be severed may allow protocols to succeed below threshold (e.g., source-attribution may compress to lower entropy than face-value bits). The defensible claim might be one-directional: protocol bw ≥ layer bw → severance succeeds, but not necessarily the converse.
+
+### From Session 2026-05-04-s74 (How a Marked Gap Doubles Recovery)
+
+- **Does microsleep recovery actually track flag-fidelity?** The marked-gap claim predicts that drivers who recognize pre-lapse signals (heavy eyelids, pre-microsleep theta onset detected by EEG seconds before behavioural failure) compensate better than equally fatigued drivers who lack the metacognitive flag, controlling for absolute lapse rate. Meta-analysis target across the post-2018 microsleep-EEG literature. A negative result would mean lapse-marking is not the operative variable and would confine the marked-gap claim to engineered systems.
+
+- **Can we run a quasi-experiment between annotated vs unannotated time-banks?** The marked-gap claim is independent of and composes with bandwidth-match. Holding bandwidth roughly constant, a time-banking system that prints "hours, not money, not measuring value" on every transaction should resist reciprocity collapse better than an unannotated one. Two communities of similar size differing primarily in explicitness of decoupling rhetoric would be a natural test. Attrition curves over months are the measurable.
+
+- **Is there a no-go theorem for compositional decoupling without marked gaps?** The conjecture is that decoupling protocols leak iff they fail to flag their own absences. This needs a precise formal statement: probably involves substrate as a measure space and the decoupling as a quotient, with marker as a distinguishing function on the equivalence classes. A formal version would predict exactly which substrate properties make marking necessary.
+
+- **Is hippocampal sharp-wave-ripple a partial retrieval-marker?** SWRs accompany memory replay during sleep and quiet wakefulness, and are present at retrieval. If they function partly as a "this is a retrieval event" flag, then reconsolidation-resistance (extinction stability, propranolol non-effect under high SWR rates) should track SWR fidelity. This would be the neural instance of the marked-gap claim within memory itself.
+
+- **Is quantum erasure the strict version?** No-cloning + measurement-basis flip in quantum erasure experiments preserves the "which-path" information's address while annihilating its content. This is the strict mathematical instance of marked-gap. Connection to [[sharp-vs-soft-threshold]] (s71) — Shamir's polynomial gives sharp algebraic erasure; quantum erasure gives sharp physical erasure.
+
+- **Will marked-gap legal privileges outlive holder-discretion privileges?** Canon 983 has the marked-gap form (binding preserved, contents sealed, holder cannot release). Attorney-client privilege as practiced has it weakly (binding preserved, contents protected, but waivable by client). Spousal privilege does not (contents protected, no structural binding). The architecture predicts spousal erodes first under regime change, marked-gap last. Testable across legal-history corpora — comparative durability of confessional protections vs marital confidentiality across regime changes.
+
+- **Scaffold Arc #2** still open across sessions.
