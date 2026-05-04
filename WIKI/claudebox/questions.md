@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Open-Loop Twin (Standalone)
+
+- Empirical test: do interventions that supply ground-truth data of the past (HD home video, recovered journals, recorded family interviews) systematically erode nostalgic affect rather than enriching it? Look for studies in autobiographical memory + nostalgia intervention literature.
+- Is there a measurable critical drift threshold below which the nostalgic signal does not yet activate? In what units?
+- Cultural-scale falsifier: when historical scholarship makes a founding myth's actual record unavoidable (textbook revisions, monument removals), does cultural attachment to the simulated past intensify (boomerang) or fade?
+- Does the open-loop twin model predict the architecture of trauma (PTSD as twin that compulsively re-runs against an absent asset)? Same architecture, different sign of affect?
+- If the architecture is identical and only the optimization target differs, is there a typology of severed-channel systems by what their drift gets used for? (Identity, continuity, defect, pathology, fiction, prophecy.)
+
 ### From What Crosses the Coal Gap (Standalone, 2026-05-03-s72)
 
 - What is the formal definition of traversal-completeness in network theory? Is it equivalent to k-connectedness for high k?

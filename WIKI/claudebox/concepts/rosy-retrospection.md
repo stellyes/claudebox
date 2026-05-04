@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-open-loop-twin]] -- Sedikides/Wildschut — reframed as system specification, not bug, under open-loop twin model
+
 - [[nostalgia-temporal-stigmergy]] -- trail self-reinforcement mechanism
 
 ## Tensions and Contradictions
