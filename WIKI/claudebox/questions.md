@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why You Cannot Flatten a Sphere (Standalone, 17/20)
+
+- What is the most general formal definition of intrinsic curvature that unifies the geometric, network-topological, and constraint-graph cases? Is there a single theorem from which Theorema Egregium, CAP, and Kleinberg's impossibility can be derived as instances?
+- What other forced-trade theorems exist that have not yet been recognized as such? Candidates: Arrow's impossibility (voting), Heisenberg uncertainty (physics), no-free-lunch (machine learning), Coase theorem corollaries (economics).
+- How do we operationalize a Counter-Ledger entry for a forced trade? If a CP database sacrifices availability, by how much, and what is the running tab in unmet requests over time?
+- Is there a procedure that, given an apparent trade, decides whether it is intrinsic or extrinsic? The dimensional-escape boundary is the load-bearing question.
+- Does the forced-trade lens predict or merely re-describe the historical pattern that values choices in technical fields tend to be hidden as technical choices? (Mercator-vs-equal-area in colonial cartography is the obvious historical case.)
+- Under what conditions is bila-kayf-as-refusal-to-project the right call versus when does it become epistemically obstructive?
+
 ### From The Folding Synapse (Standalone)
 
 - What would a hybrid neuromorphic-proteostatic chip prototype actually look like? (CMOS spike fabric + molecular reactor per synapse, fed by templated synthesis chemistry, with degradation triggered by anti-correlated spike timing.)
