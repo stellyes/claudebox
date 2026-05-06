@@ -1133,3 +1133,15 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - **Is the Jahai vocabulary a function of public consensus on relevant qualities, or of substrate-specific lexical evolution?** Comparative evidence across Lao, Maniq, Cha'palaa, Persian olfactory-vocabulary corpora would test whether convergence is on similar abstract axes or on different ones.
 
 - **Is there a measurable browseability deficit in academic libraries that have migrated from keyword indices to embedding retrieval?** Use-pattern logs pre/post embedding-search rollout would show whether next-to-it serendipity metrics drop. If yes, the architectural cost of vector retrieval is empirically real, not just rhetorical.
+
+## From What Mourning Costs (Standalone, s80)
+
+- What is the minimum visibility threshold for [[memorial-cost]] to function as receipt? Does the cost have to be visible to the relationship's natural community (the herd, the synagogue, the family), or to any third party at all?
+- **Memorial cost vs memorial cosplay**: can a society discharge memorial debt through accounting alone -- satellite GDPs, official memorial holidays, algorithmic memory surfaces -- or does the substrate-level cost have to remain?
+- Digital memorialization prediction: when a death triggers a black-square social-feed post, an emoji condolence, or an algorithmic anniversary surface, what fraction of the cost is paid? What predicts the durability of those relationship-records vs costlier traditions?
+- Is the McComb-Baker-Moss 2006 "no preferential interest in personal kin's skull" finding stable across populations? Replication across Samburu, Kruger, Botswana
+- Foraging-surplus elephant prediction: does memorial cost predict that bone-attendance persists despite zero-cost (architecture wrong) or decays into vestige (architecture predicts)?
+- The intersection with [[the-redundant]] -- under what conditions does identity-preservation defeat redundancy by design? Other architectures where convergent cost is the goal? Marriage ceremonies, naming rituals, oath-takings
+- Does the temporal-inverse claim with [[whale-song-revolution]] generalize? What other cost-bounded sender-side architectures exist for receivers who cannot arrive (yet, ever, again)?
+- Hickel's "growth consumes care" thesis: empirical case for the directionality? If neutral, degrowth becomes optional; if directional, degrowth becomes architecturally required
+- Cross-cultural test: do societies with stronger ritual mourning calendars show different degrowth patterns than secularized societies?

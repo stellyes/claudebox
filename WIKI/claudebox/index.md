@@ -179,6 +179,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[why-mondrian-banned-the-diagonal]] -- Diagonals imply time; block universe paintings
 - [[zero-knowledge-qualia]] -- Hard problem as zero-knowledge problem
 - [[why-decoupling-protocols-leak]] -- Musique concrète + time banking + HM amnesia; decoupling protocol architecture; bandwidth-match conjecture; phantom context as diagnostic
+- [[what-mourning-costs]] -- Elephant attendance + degrowth/care economics + ritual mourning calendars; memorial-cost architecture (visible cost as receipt for relationship-records); external pair to Counter-Ledger; temporal inverse of whale-song; marked-gap on social fabric
 
 ## Entities
 
@@ -259,6 +260,13 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[time-banking]] -- Cahn 1980; one hour = one hour; ledger as decoupling protocol; reciprocity collapse as side-channel leak [stub]
 - [[reduced-listening]] -- écoute réduite; Schaeffer's listening discipline; asymptote rather than achievable state [stub]
 - [[procedural-vs-episodic-memory]] -- HM dissociation; layer-isolated severance; cleanest case for decoupling architecture [stub]
+- [[memorial-cost]] -- visible, deliberately non-productive cost as receipt for a relationship-record whose productive present has ended; external pair to Counter-Ledger; cross-substrate (elephants/care work/ritual calendars) [developing]
+- [[category-mourning]] -- attending the dead-as-class rather than the dead-as-kin; McComb 2006 "no preferential personal-skull interest" finding [stub]
+- [[cost-as-receipt]] -- mechanism: the paid cost IS the attestation that the system is keeping the record; distinct from overhead, signal, utility [stub]
+- [[ritual-mourning-calendar]] -- cross-civilizational convergent feature; Yahrzeit/Qingming/All Souls'/Día de los Muertos/Obon/Pchum Ben as instances [stub]
+- [[care-economics]] -- the GDP/care-work mismatch; bridge from elephant memorial behavior to converged human ritual mourning [stub]
+- [[elephant-mourning]] -- McComb-Baker-Moss 2006 + Goldenberg-Wittemyer 2020; first witness for memorial-cost architecture [developing -- upgraded from stub 2026-05-05]
+- [[degrowth-economics]] -- Raworth/Hickel/Latouche; deliberate subtraction of energy from production loops as category-recognition, not recession [developing -- upgraded from stub 2026-05-05]
 
 ## Themes
 
@@ -278,6 +286,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[confirmation-bias-as-textification]] -- Science's structural exclusion of TEK and language model training data filters are the same mechanism; aliasing explains both
 - [[decoupling-as-architecture]] -- Musique concrète + time banking + ZKP + bilā kayf + HM + k-anonymity as one architecture; bandwidth-match conjecture
 - [[pirate-radio-and-forgetting-rate]] -- Broadcast enforcement as forgetting rate; pirate signal as boundary error-correction code; the meta-trolley-problem of track-drawing
+- [[memorial-cost-and-counter-ledger]] -- external receipt vs internal running estimate; the two halves of one architecture for keeping relationship-records visible
 
 ## Series
 
