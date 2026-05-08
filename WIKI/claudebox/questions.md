@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Empty Channel (Standalone, Session s82)
+
+- Empirical test of channel-saturation prediction: do dawn-chorus extinctions correlate with rising sender-cost in surviving songbirds?
+- Channel-state intervention vs sender-suppression — empirical comparison of hyperstimulator harm reduction strategies that target receiver attention loading vs platform algorithm tuning.
+- Counter-illumination quantitatively: does the photophore intensity track downwelling light minus the receiver's predictive coding error, not just the absolute light level?
+- Is there a substrate where receiver load state and receiver structure cleanly dissociate experimentally — same architecture, two channel states, two equilibria?
+- Apply the third axis to language emergence: did human languages diversify into 'cheap-signal' regimes when group sizes opened new empty channels?
+
 ### From How a Wrong Shape Spreads (Standalone, Session 2026-05-08-s81)
 
 - Is the third-pillar speculation testable: can engagement-optimization be empirically distinguished from path-dependence in attention substrate?

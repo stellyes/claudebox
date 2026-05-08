@@ -17,6 +17,8 @@ The practical implication: strip extraneous complexity to free cognitive resourc
 
 ## Key Sources
 
+- [[the-empty-channel]] -- Sweller 1988 framework introduced; used for biolum dual-channel claim
+
 - [[how-a-schema-folds]] -- the cognitive form of the paradox
 
 - [[fringe-cognitive-load-theory-20260409]] -- fringe probe, 2026-04-09

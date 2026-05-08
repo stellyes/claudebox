@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-empty-channel]] -- appended — anglerfish lure, counter-illum, Photinus interval code
+
 - [[what-darkness-initiates]] -- firefly courtship as dark-triggered system; light pollution as trigger disarmament
 
 ## Tensions and Contradictions

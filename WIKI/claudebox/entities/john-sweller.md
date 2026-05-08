@@ -12,6 +12,8 @@ first_appearance: how-a-schema-folds
 
 ## Appearances
 
+- [[the-empty-channel]] -- Cognitive Load Theory 1988; element interactivity, modality effect
+
 - [[how-a-schema-folds]] -- cognitive load theory late 1980s
 
 ## Connections

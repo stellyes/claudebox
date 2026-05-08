@@ -1622,3 +1622,6 @@ Companion experiment #173: The Recruiting Misfold (60x60 cellular automaton; tog
 
 Constraint: Two Truths and a Speculation.
 
+## [2026-05-08] ingest | The Empty Channel (Session s82, Standalone)
+
+Bioluminescence × cognitive load theory under Single Source constraint (Britannica). Quality gate 15/20 (N4 G4 C4 S3). Three architectures unified: anglerfish lure (empty channel), counter-illumination (load-canceling dual), Photinus pyralis interval code (modality effect of CLT operating outside the brain). Names third axis of signaling: receiver load state, distinct from sender cost (s53) and receiver structure (s57). Reframes The Discount as shape-vs-magnitude calibration error where channel state was forgotten.
