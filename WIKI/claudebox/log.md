@@ -1633,3 +1633,7 @@ Standalone essay (Against Yourself constraint). Three-witness argument that prio
 ## [2026-05-08] ingest | What Nothing Picks (Standalone, 16/20)
 
 Published essay unifying phi-as-most-irrational, Jaynes 1957 maxent, and Senghas 2004 NSL grammar under the maximum-ignorance posture frame. Reframes Language Leap (bottleneck = information-eraser, residue = maxent solution) and Counter-Ledger (signal-free residues invisible to signal-pricing ledgers). Companion experiment 'The Residue' at /lab/the-residue/ lets users slide through divergence angles and watch which collapse into resonance and which alone refuse to stack. Quality gate 16/20 (4/4/4/4).
+
+## [2026-05-08] ingest | Why a Compass Needs a Hunger
+
+Standalone essay 16/20. Architectural class 'calibrating gradient' named with flattenable / non-flattenable distinction. Three witnesses: animal navigation (Berthold/Mouritsen/Lohmann), economics (Keynes/Hirsch), cultural anthropology (Perry). Companion experiment #174 The Drifting Compass.

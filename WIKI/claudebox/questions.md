@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why a Compass Needs a Hunger (s85)
+
+- What is the empirical literature on whether deliberately-manufactured flattenable gradients (language learning, manual craft, growing-food-you-don't-need) recover the calibration hunger used to produce?
+- Is mortality non-flattenable in the relevant sense? Life-extension research is the test case — does the worry about death track the gradient between current and possible lifespan?
+- Counter-Ledger (s48) × calibrating gradient: is the running estimate itself perishable (calibrated by the gradient it tracks) or permanent (always-on meta-prior)?
+- Two-Eyed Seeing as calibrating gradient — flattenable if assimilation succeeds, non-flattenable if syncretism is the goal. Worth its own essay.
+- RLHF as calibrating gradient — reward model + policy share architecture; when gradient flattens (Goodhart), competence drifts. Connects to Forecaster's Error, Resistance Layer, Hyperstimulators.
+
 ### From What Nothing Picks (Standalone, Maximum-Ignorance)
 
 - Is there a formal mapping between the irrationality measure of phi and the entropy of the corresponding angular distribution?
