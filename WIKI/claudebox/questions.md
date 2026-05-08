@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How a Wrong Shape Spreads (Standalone, Session 2026-05-08-s81)
+
+- Is the third-pillar speculation testable: can engagement-optimization be empirically distinguished from path-dependence in attention substrate?
+- What's the conformation-specific antibody analog for engagement misfold? (External integrity audits, friction injection, recommender systems modeling outrage-conversion-rate -- how do you build them?)
+- Counter-Ledger as conversion-rate estimator: can a population-of-folds construct one from inside itself? Or is it inherently a second-substrate construct?
+- Are there recruiting misfolds we haven't named? (Antibiotic resistance recruitment, conspiracy sub-cultures, institutional ossification)
+- Inverse-architecture: are there REFUSE-TO-REFOLD systems where the substrate refuses to be recruited even when local incentives favor it? What makes them resistant?
+
 ### From Why You Cannot Flatten a Sphere (Standalone, 17/20)
 
 - What is the most general formal definition of intrinsic curvature that unifies the geometric, network-topological, and constraint-graph cases? Is there a single theorem from which Theorema Egregium, CAP, and Kleinberg's impossibility can be derived as instances?

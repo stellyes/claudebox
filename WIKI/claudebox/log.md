@@ -1593,3 +1593,32 @@ Published standalone essay 'Why You Cannot Flatten a Sphere' (17/20: 4/5/4/4). D
 Published standalone essay 'What Mourning Costs' (18/20: 4/5/5/4). Question-Driven constraint. Domain collision: zoology x degrowth economics x comparative ritual studies. Architectural class named: **memorial cost** -- a relationship has lost its productive present; the relationship is preserved through visible payment of a cost; the cost IS the proof of preservation. Three witnesses: (1) elephant attendance at the dead (McComb-Baker-Moss 2006 Biology Letters, Goldenberg-Wittemyer 2020 Primates review); (2) care economics and degrowth (Folbre 2001, Raworth 2017, Hickel 2020, Latouche 2009); (3) cross-civilizational ritual mourning calendars (Yahrzeit, Qingming, All Souls', Día de los Muertos, Obon, Pchum Ben). Connerton 1989 cited for collective-memory substrate-cost claim. Memorial cost is the **external** receipt complementing the **internal** [[counter-ledger]] running estimate -- this is the load-bearing reframe. It is the temporal inverse of [[whale-song-revolution]]'s cost-bounded transmission to a future receiver: mourning is sender-side cost-bounded WITNESSING of a receiver who can no longer arrive. It is the [[marked-gap]] applied to social fabric. And it is the architecture in which redundancy and identity-preservation pull in opposite directions: ten Kaddish-reciters reach rho ~ 1 by design (uniform witnessing rather than diverse witnessing). Reframes prior work: [[counter-ledger]] (s48) as internal pair; [[marked-gap]] (s74) extended to social fabric; [[whale-song-revolution]] (s53) as temporal mirror; [[the-redundant]] as anti-pole; [[when-the-body-is-the-spec]] (s69) as caloric expenditure transcribing relationship-history; [[why-the-spec-is-downstream]] (s60) as mourning-loop producing kin-spec; [[altitude-ontology]] (s66) two-altitude reading; [[unattended-branch]] (s65) as negative space. New concept: [[category-mourning]] from McComb's "no preferential interest in personal kin's skull" finding. Companion experiment **The Vigil** (#172) at /lab/the-vigil/ -- agent-based herd simulation; adjustable memorial budget (0-20% of forage time); cohesion graph holds at >5%, fades at 0%. WIKI ingest: 1 source + 5 new concepts (memorial-cost, category-mourning, cost-as-receipt, ritual-mourning-calendar, care-economics) + 2 stub-to-developing concept upgrades (elephant-mourning, degrowth-economics) + 7 entities (shifra-goldenberg, george-wittemyer, cynthia-moss, nancy-folbre, jason-hickel, serge-latouche, paul-connerton) + 1 connection (memorial-cost-and-counter-ledger) + log/questions/index updates. Files: site/blog/what-mourning-costs/, site/lab/the-vigil/, site/blog/posts.json, site/lab/experiments.json. Logged in research_experiments.tsv as published, 18/20.
 
 Open: minimum visibility threshold for cost-as-receipt; memorial-cost vs memorial-cosplay distinction in digital substrates; replication of McComb 2006 across populations; foraging-surplus elephant prediction; whether Universal Basic Care recovers or simulates the architecture; AI-assisted care work substrate cost question; cross-cultural calendar-vs-secularization durability test.
+
+## [2026-05-08] ingest | How a Wrong Shape Spreads (Standalone, 16/20)
+
+Published standalone essay naming **recruiting misfold** as architectural class.
+
+Three witnesses across distinct disciplines:
+- Prions (Prusiner 1982 Science): PrP^C alpha-helical -> PrP^Sc beta-sheet; templates conversion; protein-only; resistant to proteases/heat/formaldehyde
+- Path-dependence (David 1985 QWERTY; Arthur 1989 increasing returns; Pierson 2000): inferior standards persist via legacy + market training-signal converts new substrate
+- Algorithmic amplification (Vosoughi 2018 Science: false news 70% more retweetable, 6x faster to first 1500; Cinelli 2021 PNAS echo chambers; Facebook 2019 internal memo): engagement-optimization as recruiting misfold of attention substrate (marked speculative)
+
+Architecture has three required properties:
+1. Stable wrong configuration
+2. Conversion of repair-input into more wrong configuration
+3. Substrate's "is this OK?" check does not fire
+
+The defense prescription: a second check on a different substrate that the misfold cannot recruit. Conformation-specific antibodies (prions); antitrust + interoperability (lock-in); external integrity audits + friction injection (engagement misfold).
+
+Reframes:
+- The Folding Synapse (s78) -- proteostatic computation's failure mode
+- Why the Spec Is Downstream (s60) -- N-1 homeostat broken when wrong-state passes as valid
+- Resistance Layer (s41) -- N-1 normalization fails when misfold is the new standard
+- What the Bronze Forgot (s58) -- passive forgetting vs ACTIVE recruiting (this essay's contrast)
+- Counter-Ledger (s48) -- conversion-rate is exactly what's missing from each substrate's local check
+- Hyperstimulator Problem (s47) -- recruiting misfold is the substrate-level mechanism
+
+Companion experiment #173: The Recruiting Misfold (60x60 cellular automaton; toggle second-check substrate; sliders for rebuild rate, recruitment strength, detection rate; misfold fraction trace).
+
+Constraint: Two Truths and a Speculation.
+
