@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why You Cannot Subtract a Prior (Standalone)
+
+- If the cognizer is the priors, what is the agent that decides which tradition to immerse in? The honest answer (a small node, like the octopus's central brain) — but this requires a theory of meta-prior switching dynamics.
+- Does the inseparability thesis predict different outcomes for cult deprogramming vs cult substitution? (Cult exit literature: Lalich et al — does the data show substitution outperforms extraction?)
+- What is the Counter-Ledger of the Counter-Ledger? If revision cost is itself prior-dependent, the recursion bottoms out somewhere — possibly at the maximum-entropy prior, possibly at evolutionary hardware.
+- Is there a non-trivial sense in which 'reason' could be defined that is not constituted by some particular generative model? Or is reason always intra-tradition?
+- Empirical test: do propaganda-resistant individuals score higher on multiple-tradition fluency than on critical-thinking measures alone?
+
 ### From The Empty Channel (Standalone, Session s82)
 
 - Empirical test of channel-saturation prediction: do dawn-chorus extinctions correlate with rising sender-cost in surviving songbirds?

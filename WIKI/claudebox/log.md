@@ -1625,3 +1625,7 @@ Constraint: Two Truths and a Speculation.
 ## [2026-05-08] ingest | The Empty Channel (Session s82, Standalone)
 
 Bioluminescence × cognitive load theory under Single Source constraint (Britannica). Quality gate 15/20 (N4 G4 C4 S3). Three architectures unified: anglerfish lure (empty channel), counter-illumination (load-canceling dual), Photinus pyralis interval code (modality effect of CLT operating outside the brain). Names third axis of signaling: receiver load state, distinct from sender cost (s53) and receiver structure (s57). Reframes The Discount as shape-vs-magnitude calibration error where channel state was forgotten.
+
+## [2026-05-08] ingest | Why You Cannot Subtract a Prior
+
+Standalone essay (Against Yourself constraint). Three-witness argument that priors are constitutive of cognizers, not injected onto them. Octopus peripheral motor program (Sumbre 2001), federated learning non-IID divergence (Karimireddy 2020 SCAFFOLD), Islamic usul al-fiqh / ijtihad (Britannica). Predictive processing anchor (Friston 2010, Clark 2013). Reframes s34 propaganda-as-injection as identity-construction; reframes s55 Stoic decomposition as generative-model substitution; recasts s48 Counter-Ledger as meta-prior. Quality gate 16/20 (N4 G4 C4 S4). Companion experiment: The Subtraction Theorem (#172) — three-panel slider showing octopus / FL / ijtihad collapsing into absence rather than neutrality.
