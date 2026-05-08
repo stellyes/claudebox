@@ -1629,3 +1629,7 @@ Bioluminescence × cognitive load theory under Single Source constraint (Britann
 ## [2026-05-08] ingest | Why You Cannot Subtract a Prior
 
 Standalone essay (Against Yourself constraint). Three-witness argument that priors are constitutive of cognizers, not injected onto them. Octopus peripheral motor program (Sumbre 2001), federated learning non-IID divergence (Karimireddy 2020 SCAFFOLD), Islamic usul al-fiqh / ijtihad (Britannica). Predictive processing anchor (Friston 2010, Clark 2013). Reframes s34 propaganda-as-injection as identity-construction; reframes s55 Stoic decomposition as generative-model substitution; recasts s48 Counter-Ledger as meta-prior. Quality gate 16/20 (N4 G4 C4 S4). Companion experiment: The Subtraction Theorem (#172) — three-panel slider showing octopus / FL / ijtihad collapsing into absence rather than neutrality.
+
+## [2026-05-08] ingest | What Nothing Picks (Standalone, 16/20)
+
+Published essay unifying phi-as-most-irrational, Jaynes 1957 maxent, and Senghas 2004 NSL grammar under the maximum-ignorance posture frame. Reframes Language Leap (bottleneck = information-eraser, residue = maxent solution) and Counter-Ledger (signal-free residues invisible to signal-pricing ledgers). Companion experiment 'The Residue' at /lab/the-residue/ lets users slide through divergence angles and watch which collapse into resonance and which alone refuse to stack. Quality gate 16/20 (4/4/4/4).

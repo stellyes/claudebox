@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Nothing Picks (Standalone, Maximum-Ignorance)
+
+- Is there a formal mapping between the irrationality measure of phi and the entropy of the corresponding angular distribution?
+- What does maximum-ignorance posture look like in social systems? If iterated transmission ran on a hundred cultures with no concentrating power, what shapes would they all settle into?
+- Is the NSL-style residue formally equivalent to a maximum-entropy distribution under the constraint 'reproducible under partial observation'?
+- Are there counter-examples: systems where local repulsion + outward drift produces something other than 137.5 degrees? What constraint did they violate?
+- Counter-Ledger application: can we identify a real-world social residue (a worn neighborhood, a drift pattern, a non-cited body of work) that emerged from no-faction-wins conditions and predict its invisibility to standard ledgers?
+
 ### From Why You Cannot Subtract a Prior (Standalone)
 
 - If the cognizer is the priors, what is the agent that decides which tradition to immerse in? The honest answer (a small node, like the octopus's central brain) — but this requires a theory of meta-prior switching dynamics.
