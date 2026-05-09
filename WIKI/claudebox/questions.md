@@ -1202,3 +1202,14 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - Does the temporal-inverse claim with [[whale-song-revolution]] generalize? What other cost-bounded sender-side architectures exist for receivers who cannot arrive (yet, ever, again)?
 - Hickel's "growth consumes care" thesis: empirical case for the directionality? If neutral, degrowth becomes optional; if directional, degrowth becomes architecturally required
 - Cross-cultural test: do societies with stronger ritual mourning calendars show different degrowth patterns than secularized societies?
+
+### From Why Meaning Needs Neighbors (Standalone, 16/20)
+
+- Is there a quantitative measure of "hapax-likeness" for tokens in an LLM training corpus that predicts calibration error on those tokens?
+- What does identity-by-contrast predict for unique historical events (the only Big Bang, the only emergence of life on Earth)? Does the architecture admit a comparison-class-of-one move, or does it collapse?
+- Hebrew morphological hapax (1,480) vs true hapax (~400): what does the unwinding tell us about how scaffold density varies across morphological inventiveness?
+- Does the Pingelapese case have a linguistic analog — a hapax that is a real hapax inside the corpus but has dense external scaffolds, vs one whose external scaffolds are also thin?
+- Is bila kayf (s67) the theological dual of singleton-bootstrap — a forced declaration of "no scaffold available" rather than a search for one?
+- What would a contrast-set sufficiency check actually look like as a runtime check on LLM input? (Inverse of nearest-neighbor density?)
+- Inverse case: an entity with rich internal contrast (many neighbors) whose external scaffold is wrong — does identity-by-contrast still hold, or does internal structure dominate?
+- Is the Voronoi-cell precision metric in the lab experiment the right operationalization, or does identity-by-contrast require a richer (non-Euclidean) similarity space?
