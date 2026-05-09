@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-duchamp-did-to-theseus]] -- Wartime art movement (1916-) that asked who decides what counts as art; produced ready-mades that demonstrate identity-by-declaration.
+
 - [[the-forest-has-no-sender]] -- Ball sound poetry, Duchamp readymades as lens for receiver-constructed meaning
 
 ## Tensions and Contradictions

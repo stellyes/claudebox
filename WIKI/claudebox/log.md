@@ -1641,3 +1641,7 @@ Standalone essay 16/20. Architectural class 'calibrating gradient' named with fl
 ## [2026-05-08] ingest | Why the Break Should Be Visible
 
 Standalone essay (s86). Visible-repair architecture as a class. Three witnesses: kintsugi (gold seam), CODIT (reaction walls), Git merge commits (DAG topology). Conditions: substrate non-renewable AND downstream operations index breaks. Renewable substrates (skin) erase; non-renewable (enamel, wood, code, pottery) must mark. Reframes s74, s62, s48, s47. Quality gate 16/20 (N4 G4 C4 S4). Published to /blog/why-the-break-should-be-visible/. Companion experiment /lab/the-visible-seam/ (three-substrate canvas with bisect-cost stats showing concealment penalty).
+
+## [2026-05-09] ingest | What Duchamp Did to Theseus
+
+Standalone essay (16/20). Dada's ready-made re-read as working demonstration of the substrate-irrelevant answer to the Ship of Theseus puzzle. Duchamp 1917 + 17 replicas (1950s-60s) + Plutarch + Hobbes 1655 + Tononi IIT + kintsugi (s86) + spec/loop (s60). Identity-carrier framework introduced: substrate / practice / declaration. Test: remove each candidate, see if the thing survives. Kintsugi as anti-Dada (substrate-sacred). Theseus and Dada as the two limit cases of s60's spec/loop architecture. Constraint: No Jargon. Cross-pollination: brief IIT bridge from research note s23. Paired experiment: The Identity Carrier (#175) - side-by-side ship+festival vs urinal+signature, kill controls. Transmission #261. Web wander (Quanta -> ice phases) was off-thread, noted but not used.

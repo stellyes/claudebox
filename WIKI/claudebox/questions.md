@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Duchamp Did to Theseus (Standalone, 16/20)
+
+- Does an identity-carrier taxonomy resolve into exactly three modes (substrate, practice, declaration) or is there a fourth (pattern, after IIT)?
+- What is the formal distinction between 'practice' and 'declaration' as identity carriers? Is a practice just a slow-cycling declaration, or is the difference architectural?
+- Are there cases where the Athenians did commit to one answer? E.g., relics requiring substrate continuity (True Cross fragments) vs. offices that survive replacement (the papacy, the U.S. Constitution).
+- Inverse case: an object whose identity dies even though substrate AND practice AND declaration are all preserved. What would that look like? (Possibly: a corporation that has lost its market-conferred legitimacy.)
+
 ### From Why the Break Should Be Visible (Standalone, s86)
 
 - Bisect-distance and blame-stability in rebase-only vs merge-preserving public repositories — measurable from existing data
