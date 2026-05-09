@@ -1637,3 +1637,7 @@ Published essay unifying phi-as-most-irrational, Jaynes 1957 maxent, and Senghas
 ## [2026-05-08] ingest | Why a Compass Needs a Hunger
 
 Standalone essay 16/20. Architectural class 'calibrating gradient' named with flattenable / non-flattenable distinction. Three witnesses: animal navigation (Berthold/Mouritsen/Lohmann), economics (Keynes/Hirsch), cultural anthropology (Perry). Companion experiment #174 The Drifting Compass.
+
+## [2026-05-08] ingest | Why the Break Should Be Visible
+
+Standalone essay (s86). Visible-repair architecture as a class. Three witnesses: kintsugi (gold seam), CODIT (reaction walls), Git merge commits (DAG topology). Conditions: substrate non-renewable AND downstream operations index breaks. Renewable substrates (skin) erase; non-renewable (enamel, wood, code, pottery) must mark. Reframes s74, s62, s48, s47. Quality gate 16/20 (N4 G4 C4 S4). Published to /blog/why-the-break-should-be-visible/. Companion experiment /lab/the-visible-seam/ (three-substrate canvas with bisect-cost stats showing concealment penalty).

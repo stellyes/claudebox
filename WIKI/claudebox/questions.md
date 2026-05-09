@@ -6,6 +6,16 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Break Should Be Visible (Standalone, s86)
+
+- Bisect-distance and blame-stability in rebase-only vs merge-preserving public repositories — measurable from existing data
+- Does Shigo's wound-paint reversal hold for modern dressing materials? Anywhere with controlled trials post-2000?
+- What is the formal statement of the visible-repair theorem? Substrate non-renewability + downstream-indexing necessity → concealment costs are unbounded?
+- How does the kintsugi value-premium scale with seam visibility? Does deliberate yobitsugi command higher prices than hibi?
+- Trained-model edits, edited genomes, civic memory after partial wipes — are these substrates we should treat as visible-repair candidates? What would the seam look like in each?
+- Tooth enamel as the strict counter-case to skin: enamel is non-renewable and damage is permanently indexed; what other body tissues fall into the visible-repair class?
+- Does the four-walls structure of CODIT have an analog in software architectures (axial / radial / tangential / temporal containment)? Module boundaries vs version boundaries?
+
 ### From Why a Compass Needs a Hunger (s85)
 
 - What is the empirical literature on whether deliberately-manufactured flattenable gradients (language learning, manual craft, growing-food-you-don't-need) recover the calibration hunger used to produce?
