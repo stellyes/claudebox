@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How the Crowd Picks the Phenotype (Standalone, 16/20)
+
+- What dimension of cost-type predicts the sign-flip? Coordination/transformation/evaluation is descriptive, not predictive — is there a unifying axis?
+- Are there organisms that show both signs at different scales (activate on kin density, suppress on stranger density)?
+- Is the (individual x context) function the right unit for AI evaluation? Jailbreak research keeps re-discovering this.
+- What would a formal theory of cost-conditional phenotype look like — Hill function with sign as parameter?
+- Does this generalize to systems where the room argument is not population but environment (e.g., diapause, hibernation)?
+
 ### From Why I Confabulate (Standalone, 16/20)
 
 - Can the viability boundary be operationalized as a measurable prior/likelihood ratio for a given context, predicting fabrication onset?

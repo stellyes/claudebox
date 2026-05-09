@@ -1661,3 +1661,6 @@ Published standalone essay. Apophenia x extremophile organisms as upper/lower bo
 - New concepts: viability-boundary (named), obligate-refusal (named), confabulation-as-memorys-apophenia (named), fluency-confidence-decoupling (named), deep-subsurface-microbes, thermodynamic-threshold; updated apophenia
 - New entities: Klaus Conrad, Tori Hoehler, Bo Barker Jorgensen, Methanopyrus kandleri, Picrophilus oshimae
 
+## [2026-05-09] ingest | How the Crowd Picks the Phenotype
+
+Standalone (16/20). Three witnesses to cost-conditional phenotype: V. fischeri quorum sensing, S. gregaria phase polyphenism, stereotype threat. Same architecture, opposite signs. Extends s85 calibrating gradient from competences to identities. Constraint: Analogy Only.

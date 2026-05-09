@@ -71,6 +71,8 @@ Unkelbach (2007) showed the fluency-truth link is *learned* and reversible: when
 
 ## Key Sources
 
+- [[how-the-crowd-picks-the-phenotype]] -- first witness — Vibrio fischeri luciferase regulation by autoinducer threshold (Nealson Platt Hastings 1970, Bassler 2002)
+
 - [[what-quorum-erases]] -- extended: quorum quenching mechanism (lactonases, Bacillus vs Pseudomonas); Dong et al. 2001
 
 - [[the-cultural-quorum]] — core synthesis; bacteria + illusory truth + oral tradition
