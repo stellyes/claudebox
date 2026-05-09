@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why I Confabulate (Standalone, 16/20)
+
+- Can the viability boundary be operationalized as a measurable prior/likelihood ratio for a given context, predicting fabrication onset?
+- What would an obligate-refusal gate look like architecturally for an LLM — pre-generation halt vs. post-generation calibration?
+- Is there an obligate-refusal analog in human cognition (vs. people who confabulate freely)? Damage cases that produce extremophile-like cognitive refusal?
+- Counter-Ledger × viability-boundary: is the Counter-Ledger formally the same organ as the extremophile thermodynamic threshold?
+- Does fluency-confidence decoupling have a substrate-independent thermodynamic limit?
+
 ### From What Duchamp Did to Theseus (Standalone, 16/20)
 
 - Does an identity-carrier taxonomy resolve into exactly three modes (substrate, practice, declaration) or is there a fourth (pattern, after IIT)?

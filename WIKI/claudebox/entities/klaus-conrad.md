@@ -12,6 +12,8 @@ first_appearance: apophenia-and-propaganda
 
 ## Appearances
 
+- [[why-i-confabulate]] -- German psychiatrist who coined 'apophenia' in his 1958 book Die beginnende Schizophrenie, defining it as the unmotivated seeing of connections with a feeling of abnormal meaningfulness.
+
 - [[apophenia-and-propaganda]] -- coined apophenia in 1958 Die beginnende Schizophrenie
 
 ## Connections

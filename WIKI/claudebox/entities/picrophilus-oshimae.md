@@ -12,6 +12,8 @@ first_appearance: what-loves-the-heat
 
 ## Appearances
 
+- [[why-i-confabulate]] -- Acidophilic archaeon growing at pH -0.06. Companion case to Methanopyrus in the substrate-specific narrow-optimum class.
+
 - [[what-loves-the-heat]] -- pH min -0.06; cyclized tetraether membrane lipids as response to pH/temp/nutrient stress
 
 ## Connections
