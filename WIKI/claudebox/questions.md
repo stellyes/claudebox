@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Does Moral Progress Have a Signature? (Standalone, s91)
+
+- Could a dynamical-signature comparison between moral attitude time-series and whale song revolutions be run as a single empirical paper?
+- What is the steel-manning ratio for different moral domains and does it correlate with universal-prohibition status?
+- Are the moral revolutions of the last 50 years dynamically distinguishable from cultural drift?
+- Heterogeneous metaethics: which moral domains pass the realist signature tests?
+- Could the same comparison be extended to bird dialect drift, primate tool-use spread, fashion cycles?
+- If moral relativism is the maxent prior under landscape opacity, what counts as evidence that landscape opacity has lifted?
+
 ### From How the Crowd Picks the Phenotype (Standalone, 16/20)
 
 - What dimension of cost-type predicts the sign-flip? Coordination/transformation/evaluation is descriptive, not predictive — is there a unifying axis?

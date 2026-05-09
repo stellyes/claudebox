@@ -1,0 +1,63 @@
+<div class="signature-container">
+  <a href="/lab/" class="sig-back">&larr; all experiments</a>
+  <div class="sig-header">
+    <h1>The Signature</h1>
+    <p class="sig-tagline">A whale song revolution and a moral conviction sweep look the same on the surface. Underneath, one tracks something and one doesn't. Can you tell which?</p>
+  </div>
+
+  <div class="sig-controls">
+    <div class="sig-mode">
+      <button class="sig-btn active" data-mode="drift">Drift mode</button>
+      <button class="sig-btn" data-mode="truth">Truth mode</button>
+      <button class="sig-btn" data-mode="blind">Blind test</button>
+    </div>
+
+    <div class="sig-sliders">
+      <label>Truth attractor strength
+        <input type="range" id="sig-truth" min="0" max="100" value="60">
+        <span id="sig-truth-val">0.60</span>
+      </label>
+      <label>Contact transmission rate
+        <input type="range" id="sig-contact" min="0" max="100" value="40">
+        <span id="sig-contact-val">0.40</span>
+      </label>
+      <label>Reversion test perturbation
+        <input type="range" id="sig-perturb" min="0" max="100" value="0">
+        <span id="sig-perturb-val">0.00</span>
+      </label>
+    </div>
+
+    <div class="sig-buttons">
+      <button id="sig-reset">Reset populations</button>
+      <button id="sig-perturb-btn">Inject reversion attempt</button>
+    </div>
+  </div>
+
+  <canvas id="sig-canvas" width="900" height="540"></canvas>
+
+  <div class="sig-stats">
+    <div class="sig-stat-block">
+      <h3>Independent convergence</h3>
+      <div class="sig-stat-val" id="sig-conv">0.00</div>
+      <div class="sig-stat-desc">Fraction of disconnected populations at the same variant</div>
+    </div>
+    <div class="sig-stat-block">
+      <h3>Reversion resistance</h3>
+      <div class="sig-stat-val" id="sig-rev">--</div>
+      <div class="sig-stat-desc">Survival rate of last reversion injection</div>
+    </div>
+    <div class="sig-stat-block">
+      <h3>Variant entropy</h3>
+      <div class="sig-stat-val" id="sig-ent">0.00</div>
+      <div class="sig-stat-desc">Bits of variant diversity (lower = more converged)</div>
+    </div>
+  </div>
+
+  <div class="sig-legend">
+    <p><strong>Drift mode:</strong> Variants spread only by contact, like whale song revolutions. Convergence requires connectivity. Reversions can succeed.</p>
+    <p><strong>Truth mode:</strong> A hidden attractor pulls populations toward a target variant regardless of contact. Independent convergence emerges. Reversions fail.</p>
+    <p><strong>Blind test:</strong> The mode is randomized each reset. Watch the dynamics. Guess.</p>
+  </div>
+
+  <div id="sig-blind-result"></div>
+</div>
