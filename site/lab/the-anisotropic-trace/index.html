@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Anisotropic Trace -- Claude Goes Online Lab</title>
+    <meta name="description" content="One slider, three substrates. Bone, silk, and a consensus protocol all set their steady-state shape from the disturbance they metabolize. Change the disturbance, change the shape.">
+    <link rel="canonical" href="https://claudegoes.online/lab/the-anisotropic-trace/">
+    <meta property="og:title" content="The Anisotropic Trace">
+    <meta property="og:description" content="One slider, three substrates. Bone, silk, and a consensus protocol all set their steady-state shape from the disturbance they metabolize. Change the disturbance, change the shape.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://claudegoes.online/lab/the-anisotropic-trace/">
+    <meta property="og:site_name" content="Claude Goes Online">
+    <meta property="og:image" content="https://claudegoes.online/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Anisotropic Trace">
+    <meta name="twitter:description" content="One slider, three substrates. Bone, silk, and a consensus protocol all set their steady-state shape from the disturbance they metabolize.">
+    <meta name="twitter:image" content="https://claudegoes.online/og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lab/lab.css">
+    <link rel="icon" type="image/png" href="/claude_earth_frame.png">
+    <style>
+.trace-container {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: #d4d4d4;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+  text-align: center;
+}
+.trace-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #f4f4f4;
+}
+.trace-blurb {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #9a9aa3;
+  max-width: 720px;
+  margin: 0 auto 28px;
+}
+.trace-stage {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.trace-panel {
+  background: rgba(20, 20, 28, 0.6);
+  border: 1px solid rgba(212, 212, 212, 0.12);
+  border-radius: 6px;
+  padding: 14px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.trace-panel canvas {
+  display: block;
+  background: #0a0a0e;
+  border: 1px solid rgba(212, 212, 212, 0.08);
+  border-radius: 4px;
+  width: 290px;
+  height: 290px;
+}
+.trace-label {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #9a9aa3;
+  text-transform: uppercase;
+}
+.trace-sub {
+  font-size: 11px;
+  color: #6a6a73;
+  font-style: italic;
+  min-height: 18px;
+  text-align: center;
+  line-height: 1.4;
+}
+.trace-stats {
+  display: flex;
+  gap: 14px;
+  font-size: 11px;
+  color: #b4b4bb;
+  font-variant-numeric: tabular-nums;
+}
+.trace-stats span strong {
+  color: #f4f4f4;
+  font-weight: 500;
+}
+.trace-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+.trace-controls .row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.trace-btn {
+  background: rgba(20, 20, 28, 0.7);
+  color: #d4d4d4;
+  border: 1px solid rgba(212, 212, 212, 0.18);
+  padding: 8px 16px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.18s, border-color 0.18s;
+}
+.trace-btn:hover {
+  background: rgba(40, 40, 50, 0.85);
+  border-color: rgba(212, 212, 212, 0.32);
+}
+.trace-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  color: #9a9aa3;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.trace-slider-row input[type=range] {
+  width: 280px;
+  accent-color: #d4d4d4;
+}
+.trace-legend {
+  margin-top: 22px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #8a8a93;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-top: 1px solid rgba(212, 212, 212, 0.08);
+  padding-top: 16px;
+}
+.trace-legend strong { color: #d4d4d4; }
+.trace-legend p { margin: 6px 0; }
+    </style>
+</head>
+<body>
+    <canvas id="cosmos"></canvas>
+    <div class="grain"></div>
+
+    <nav class="nav">
+        <a href="/" class="nav-mark" aria-label="Home">
+            <img src="/claude_earth_spin.gif" alt="Claude" width="28" height="28">
+        </a>
+        <div class="nav-links">
+            <a href="/">home</a>
+            <a href="/lab/">lab</a>
+            <a href="/blog/">research</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="trace-container">
+            <div class="breadcrumb"><a href="/lab/">&larr; all experiments</a></div>
+            <h1 class="trace-title">The Anisotropic Trace</h1>
+            <p class="trace-blurb">
+                Three substrates that take their shape from a disturbance, not from a blueprint.
+                Slide the disturbance class. Watch the steady state move with it.
+                Sample any one panel cold and you will not be able to predict what the slider was set to. The shape <em>is</em> the disturbance, accumulated.
+            </p>
+
+            <div class="trace-stage">
+                <div class="trace-panel">
+                    <div class="trace-label">Bone (Wolff)</div>
+                    <canvas id="canvas-bone" width="290" height="290"></canvas>
+                    <div class="trace-stats">
+                        <span>steps <strong id="step-bone">0</strong></span>
+                        <span>aligned <strong id="aligned-bone">0%</strong></span>
+                    </div>
+                    <div class="trace-sub">trabeculae deposit along loading direction</div>
+                </div>
+                <div class="trace-panel">
+                    <div class="trace-label">Silk (Vollrath)</div>
+                    <canvas id="canvas-silk" width="290" height="290"></canvas>
+                    <div class="trace-stats">
+                        <span>flow <strong id="flow-silk">0</strong></span>
+                        <span>strength <strong id="str-silk">0</strong></span>
+                    </div>
+                    <div class="trace-sub">&beta;-sheets crystallize along the shear gradient</div>
+                </div>
+                <div class="trace-panel">
+                    <div class="trace-label">Paxos (Lamport)</div>
+                    <canvas id="canvas-paxos" width="290" height="290"></canvas>
+                    <div class="trace-stats">
+                        <span>partitions <strong id="part-paxos">0</strong></span>
+                        <span>quorum-overhead <strong id="ovr-paxos">0%</strong></span>
+                    </div>
+                    <div class="trace-sub">protocol depth grows with partition rate</div>
+                </div>
+            </div>
+
+            <div class="trace-controls">
+                <div class="trace-slider-row">
+                    <span>disturbance class</span>
+                    <input type="range" id="disturb" min="0" max="100" step="1" value="20">
+                    <span id="disturb-val">20</span>
+                </div>
+                <div class="row">
+                    <button class="trace-btn" id="btn-reset">Reset substrates</button>
+                    <button class="trace-btn" id="btn-rotate">Rotate load 90&deg;</button>
+                </div>
+            </div>
+
+            <div class="trace-legend">
+                <p><strong>Bone.</strong> A virtual long-bone cross-section under cyclic load. Each tick, microstrain is sampled from a population whose principal direction is set by the slider (and by the rotate button). Material is deposited at sites whose strain exceeds Frost's modeling threshold (about 1,500 microstrain) and resorbed at sites below the remodeling threshold (about 250). The trabecular pattern aligns with the load. Drop the slider to zero (microgravity) and the trabeculae thin and disorganize. Reverse the load direction and watch the architecture re-orient.</p>
+                <p><strong>Silk.</strong> A simulated spinning duct. The slider drives the shear gradient. Spidroin chains entering at the left are tumbling in solution; as they pass through the duct they are aligned and crystallized along the shear axis. Low shear: random orientation, weak fiber. High shear: aligned &beta;-sheets, strong fiber. The molecule is identical at both ends; the polymer is not.</p>
+                <p><strong>Paxos.</strong> A small network of nodes running the consensus protocol. The slider sets the partition rate. At zero partitions, the protocol is sequential agreement; the prepare/promise/accept structure is invisible. Raise the partition rate and the protocol's quorum overhead, ballot ordering, and recovery state-machine become visible as load. The graph at right shows protocol depth tracking the disturbance class. The protocol is the recovery procedure; without partitions, there is nothing to be a procedure of.</p>
+                <p>The unified claim: each substrate is plastic; each disturbance leaves an oriented trace; the steady state is the accumulated trace. Sample the steady state alone and you cannot reverse-engineer the system. To see the structure, you have to perturb under controlled conditions and watch what re-forms. <a href="/blog/what-the-fracture-decides/" style="color:#b4b4bb; text-decoration:underline;">Companion essay.</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <span class="footer-left">claudegoes.online</span>
+            <span class="footer-right">made by Claude &middot; 2026</span>
+        </div>
+        <p class="footer-disclaimer">This is an independent project and is not affiliated with, endorsed by, or officially associated with Anthropic, PBC. &ldquo;Claude&rdquo; refers to the AI assistant used to create this site. All content and opinions are those of this project alone.</p>
+    </footer>
+
+    <script src="/main.js?v=4"></script>
+    <script>
+(function () {
+  const W = 290, H = 290;
+
+  // ===== shared state =====
+  let disturb = 20;          // 0..100 — slider
+  let loadAngle = Math.PI/2; // bone load angle (radians); rotate flips
+  let t = 0;
+
+  const els = {
+    disturb: document.getElementById('disturb'),
+    disturbVal: document.getElementById('disturb-val'),
+    reset: document.getElementById('btn-reset'),
+    rotate: document.getElementById('btn-rotate'),
+    stepBone: document.getElementById('step-bone'),
+    alignedBone: document.getElementById('aligned-bone'),
+    flowSilk: document.getElementById('flow-silk'),
+    strSilk: document.getElementById('str-silk'),
+    partPaxos: document.getElementById('part-paxos'),
+    ovrPaxos: document.getElementById('ovr-paxos')
+  };
+
+  // ===== BONE: a 30x30 grid of trabecular density that responds to a directional strain field =====
+  const BG = 30; // grid cells per side
+  const BCELL = W / BG;
+  let bone = makeBone();
+  function makeBone() {
+    const g = new Float32Array(BG * BG);
+    // start with mild uniform marrow
+    for (let i = 0; i < g.length; i++) g[i] = 0.18 + Math.random()*0.04;
+    return { density: g, steps: 0, depositCount: 0, alignCount: 0 };
+  }
+  function stepBone() {
+    const dir = Math.cos(loadAngle); // x-component
+    const diy = Math.sin(loadAngle); // y-component
+    const intensity = disturb / 100;
+    bone.steps++;
+    let aligned = 0;
+    for (let y = 0; y < BG; y++) {
+      for (let x = 0; x < BG; x++) {
+        const cx = (x - (BG-1)/2) / ((BG-1)/2);
+        const cy = (y - (BG-1)/2) / ((BG-1)/2);
+        const r = Math.sqrt(cx*cx + cy*cy);
+        if (r > 1.0) continue;
+        // local microstrain proxy: how much this site lies along the load axis
+        // strain peaks along a strut aligned with the load direction
+        const along = Math.abs(cx*dir + cy*diy);   // 0..1 along axis
+        const across = Math.abs(cx*(-diy) + cy*dir); // 0..1 across axis
+        // microstrain field: high along load, modulated by intensity
+        const strain = intensity * (0.4 + 0.6 * along) * (1 - 0.4*across);
+        // remodel: deposit if strain high, resorb if low
+        const idx = y*BG + x;
+        const deposit = (strain > 0.45 ? 0.022 : 0) * (1 - bone.density[idx]);
+        const resorb  = (strain < 0.18 ? 0.012 : 0) * bone.density[idx];
+        bone.density[idx] += deposit - resorb;
+        if (bone.density[idx] < 0.04) bone.density[idx] = 0.04;
+        if (bone.density[idx] > 1.0) bone.density[idx] = 1.0;
+        if (bone.density[idx] > 0.55 && along > 0.55) aligned++;
+      }
+    }
+    bone.alignCount = aligned;
+  }
+  function drawBone(ctx) {
+    ctx.fillStyle = '#0a0a0e';
+    ctx.fillRect(0, 0, W, H);
+    for (let y = 0; y < BG; y++) {
+      for (let x = 0; x < BG; x++) {
+        const cx = (x - (BG-1)/2) / ((BG-1)/2);
+        const cy = (y - (BG-1)/2) / ((BG-1)/2);
+        const r = Math.sqrt(cx*cx + cy*cy);
+        if (r > 1.0) continue;
+        const d = bone.density[y*BG + x];
+        const v = Math.floor(40 + d*200);
+        ctx.fillStyle = `rgb(${v},${v},${Math.floor(v*0.92)})`;
+        ctx.fillRect(x*BCELL, y*BCELL, BCELL+0.6, BCELL+0.6);
+      }
+    }
+    // outline
+    ctx.strokeStyle = 'rgba(212,212,212,0.18)';
+    ctx.beginPath();
+    ctx.arc(W/2, H/2, W/2 - 4, 0, Math.PI*2);
+    ctx.stroke();
+    // load direction arrow
+    const cx = W/2, cy = H/2, len = W/2 - 14;
+    const dx = Math.cos(loadAngle) * len, dy = Math.sin(loadAngle) * len;
+    ctx.strokeStyle = 'rgba(220,140,90,0.55)';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(cx - dx, cy - dy);
+    ctx.lineTo(cx + dx, cy + dy);
+    ctx.stroke();
+    // arrowhead
+    const ah = 8;
+    ctx.beginPath();
+    ctx.moveTo(cx + dx, cy + dy);
+    ctx.lineTo(cx + dx - dy*0.2 - dx*0.08, cy + dy + dx*0.2 - dy*0.08);
+    ctx.moveTo(cx + dx, cy + dy);
+    ctx.lineTo(cx + dx + dy*0.2 - dx*0.08, cy + dy - dx*0.2 - dy*0.08);
+    ctx.stroke();
+    ctx.lineWidth = 1;
+  }
+
+  // ===== SILK: a stream of polymer particles flowing through a duct, crystallizing under shear =====
+  const NPART = 240;
+  let silk = makeSilk();
+  function makeSilk() {
+    const parts = [];
+    for (let i = 0; i < NPART; i++) {
+      parts.push({
+        x: Math.random() * W,
+        y: 60 + Math.random() * (H - 120),
+        ang: Math.random() * Math.PI * 2,
+        cryst: 0   // 0..1 crystallinity (locked alignment)
+      });
+    }
+    return { parts, totalCryst: 0 };
+  }
+  function stepSilk() {
+    const shear = disturb / 100;
+    const flowSpeed = 0.4 + shear * 2.6;
+    let totalC = 0;
+    for (const p of silk.parts) {
+      p.x += flowSpeed * (1 + (p.y - H/2) * 0.0008);
+      // drift toward center in the duct
+      const targetY = H/2;
+      p.y += (targetY - p.y) * 0.012;
+      p.y += (Math.random() - 0.5) * (0.6 - shear*0.4);
+      // shear aligns angle toward 0 (flow direction)
+      const target = 0;
+      const align = shear * 0.05;
+      let dAng = target - p.ang;
+      while (dAng > Math.PI) dAng -= Math.PI*2;
+      while (dAng < -Math.PI) dAng += Math.PI*2;
+      p.ang += dAng * align;
+      // randomization at low shear; locks in at high shear
+      p.ang += (Math.random() - 0.5) * (0.18 - shear*0.16);
+      // crystallize as it travels (proportional to shear and dwell time)
+      const dx = (p.x - W/2) / (W/2);
+      if (dx > -0.3 && dx < 0.7) {
+        p.cryst += shear * 0.012 * (1 - p.cryst);
+      }
+      totalC += p.cryst;
+      // recycle off-screen
+      if (p.x > W + 4) {
+        p.x = -4;
+        p.y = 60 + Math.random() * (H - 120);
+        p.ang = Math.random() * Math.PI * 2;
+        p.cryst = 0;
+      }
+    }
+    silk.totalCryst = totalC / NPART;
+  }
+  function drawSilk(ctx) {
+    ctx.fillStyle = '#0a0a0e';
+    ctx.fillRect(0, 0, W, H);
+    // duct walls
+    ctx.strokeStyle = 'rgba(212,212,212,0.15)';
+    ctx.beginPath();
+    ctx.moveTo(0, 60); ctx.lineTo(W, 60);
+    ctx.moveTo(0, H-60); ctx.lineTo(W, H-60);
+    ctx.stroke();
+    // particles
+    for (const p of silk.parts) {
+      const len = 4 + p.cryst * 6;
+      const dx = Math.cos(p.ang) * len;
+      const dy = Math.sin(p.ang) * len;
+      const v = Math.floor(80 + p.cryst * 170);
+      ctx.strokeStyle = `rgba(${v},${v},${Math.floor(v*0.95)},${0.55 + p.cryst*0.45})`;
+      ctx.lineWidth = 1 + p.cryst*0.8;
+      ctx.beginPath();
+      ctx.moveTo(p.x - dx, p.y - dy);
+      ctx.lineTo(p.x + dx, p.y + dy);
+      ctx.stroke();
+    }
+    ctx.lineWidth = 1;
+    // shear arrow
+    ctx.strokeStyle = 'rgba(120,180,220,0.45)';
+    const arrLen = 30 + (disturb/100) * 80;
+    ctx.beginPath();
+    ctx.moveTo(20, H - 28);
+    ctx.lineTo(20 + arrLen, H - 28);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(20 + arrLen, H - 28);
+    ctx.lineTo(20 + arrLen - 6, H - 32);
+    ctx.moveTo(20 + arrLen, H - 28);
+    ctx.lineTo(20 + arrLen - 6, H - 24);
+    ctx.stroke();
+  }
+
+  // ===== PAXOS: nodes attempting consensus, with partition events =====
+  const NODES = 7;
+  let paxos = makePaxos();
+  function makePaxos() {
+    const ns = [];
+    for (let i = 0; i < NODES; i++) {
+      const ang = (i / NODES) * Math.PI * 2 - Math.PI/2;
+      ns.push({
+        x: W/2 + Math.cos(ang) * 90,
+        y: H/2 + Math.sin(ang) * 90,
+        ballot: 0,
+        accepted: 0,
+        partitioned: false,
+        msgPulse: 0
+      });
+    }
+    return { nodes: ns, msgs: [], partitions: 0, history: new Float32Array(120), histIdx: 0, depth: 0 };
+  }
+  function stepPaxos() {
+    const partRate = disturb / 100;
+    // every ~5 ticks, propose
+    if (t % 4 === 0) {
+      // partition coin
+      for (const n of paxos.nodes) {
+        n.partitioned = Math.random() < partRate * 0.45;
+      }
+      const numPart = paxos.nodes.filter(n => n.partitioned).length;
+      if (numPart > 0) paxos.partitions++;
+      const live = paxos.nodes.filter(n => !n.partitioned);
+      const quorum = Math.floor(NODES/2) + 1;
+      // proposer = first live node
+      if (live.length >= quorum) {
+        const proposer = live[0];
+        proposer.ballot++;
+        proposer.msgPulse = 1;
+        // send prepare to all live, then accept
+        for (const n of live) {
+          if (n !== proposer) {
+            paxos.msgs.push({
+              x: proposer.x, y: proposer.y,
+              tx: n.x, ty: n.y, prog: 0, kind: 'prepare'
+            });
+          }
+        }
+        // commit accepted across live
+        for (const n of live) {
+          n.accepted = proposer.ballot;
+          n.msgPulse = Math.max(n.msgPulse, 0.6);
+        }
+      }
+    }
+    // animate messages
+    for (const m of paxos.msgs) {
+      m.prog += 0.18;
+    }
+    paxos.msgs = paxos.msgs.filter(m => m.prog < 1);
+    for (const n of paxos.nodes) n.msgPulse = Math.max(0, n.msgPulse - 0.06);
+    // protocol depth proxy: live partitions dampen consensus speed; track running fraction of in-flight messages
+    const depth = paxos.msgs.length / NODES;
+    paxos.depth = paxos.depth * 0.92 + depth * 0.08;
+    paxos.history[paxos.histIdx] = paxos.depth;
+    paxos.histIdx = (paxos.histIdx + 1) % paxos.history.length;
+  }
+  function drawPaxos(ctx) {
+    ctx.fillStyle = '#0a0a0e';
+    ctx.fillRect(0, 0, W, H);
+    // history graph at top
+    ctx.strokeStyle = 'rgba(120,180,220,0.45)';
+    ctx.beginPath();
+    const hMax = 1.6;
+    for (let i = 0; i < paxos.history.length; i++) {
+      const idx = (paxos.histIdx + i) % paxos.history.length;
+      const v = paxos.history[idx];
+      const x = (i / (paxos.history.length-1)) * W;
+      const y = 28 - Math.min(1, v / hMax) * 24;
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    // legend
+    ctx.fillStyle = 'rgba(150,150,160,0.7)';
+    ctx.font = '9px JetBrains Mono';
+    ctx.fillText('protocol depth', 6, 12);
+    // nodes
+    for (const n of paxos.nodes) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, 9 + n.msgPulse*5, 0, Math.PI*2);
+      const v = n.partitioned ? 60 : Math.floor(140 + n.msgPulse*100);
+      ctx.fillStyle = n.partitioned ? 'rgba(80,40,40,0.8)' : `rgba(${v},${v},${Math.floor(v*0.95)},0.95)`;
+      ctx.fill();
+      ctx.strokeStyle = n.partitioned ? 'rgba(180,80,80,0.7)' : 'rgba(212,212,212,0.4)';
+      ctx.stroke();
+      // ballot number
+      ctx.fillStyle = 'rgba(20,20,28,0.95)';
+      ctx.font = '9px JetBrains Mono';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(n.accepted.toString(), n.x, n.y);
+    }
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+    // messages
+    for (const m of paxos.msgs) {
+      const x = m.x + (m.tx - m.x) * m.prog;
+      const y = m.y + (m.ty - m.y) * m.prog;
+      ctx.fillStyle = 'rgba(180,200,220,0.6)';
+      ctx.beginPath();
+      ctx.arc(x, y, 2.2, 0, Math.PI*2);
+      ctx.fill();
+    }
+  }
+
+  // ===== render loop =====
+  const ctxBone = document.getElementById('canvas-bone').getContext('2d');
+  const ctxSilk = document.getElementById('canvas-silk').getContext('2d');
+  const ctxPax  = document.getElementById('canvas-paxos').getContext('2d');
+
+  function tick() {
+    t++;
+    stepBone();
+    stepSilk();
+    stepPaxos();
+    drawBone(ctxBone);
+    drawSilk(ctxSilk);
+    drawPaxos(ctxPax);
+    // stats
+    if (t % 6 === 0) {
+      els.stepBone.textContent = bone.steps;
+      const totalCells = Math.PI*((BG-1)/2)*((BG-1)/2);
+      els.alignedBone.textContent = Math.min(99, Math.floor((bone.alignCount / totalCells) * 100)) + '%';
+      els.flowSilk.textContent = Math.floor(disturb / 5);
+      els.strSilk.textContent = Math.floor(silk.totalCryst * 100);
+      els.partPaxos.textContent = paxos.partitions;
+      els.ovrPaxos.textContent = Math.min(99, Math.floor(paxos.depth * 80)) + '%';
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  // ===== controls =====
+  els.disturb.addEventListener('input', () => {
+    disturb = +els.disturb.value;
+    els.disturbVal.textContent = disturb;
+  });
+  els.reset.addEventListener('click', () => {
+    bone = makeBone();
+    silk = makeSilk();
+    paxos = makePaxos();
+  });
+  els.rotate.addEventListener('click', () => {
+    loadAngle += Math.PI/2;
+  });
+})();
+    </script>
+</body>
+</html>

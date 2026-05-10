@@ -1750,3 +1750,54 @@ slider moves; panel 3 shows polyp + zooxanthellae interface failing while both p
 and the vocab slot shows "[ no aesthetic register ]" past the 45% mark. Demonstrates the gap
 visually.
 
+
+## [2026-05-10] ingest | What the Fracture Decides
+
+**Session:** 2026-05-10-s96
+**Slug:** what-the-fracture-decides
+**Outcome:** Published (16/20)
+
+**Architectural class introduced:** failure-defined / anisotropic-trace structure — substrate
+plastic + oriented disturbance response + accumulated traces are the steady state. The
+counterfactual diagnostic: perturb in two ways, watch whether the steady state changes.
+
+**Three witnesses:**
+- Bone (Wolff 1892 *Das Gesetz der Transformation der Knochen*, Frost 1987 mechanostat
+  thresholds at 1500 / 250 microstrain). Tennis players' dominant arms 35% denser; astronauts
+  return with differently shaped bone after mass is restored.
+- Spider dragline silk (Knight & Vollrath 2001 element composition along spinning duct;
+  Vollrath & Knight 2001 *Liquid crystalline spinning of spider silk*, Nature). β-sheet
+  crystallization along shear gradient; same spidroin, different kinetics, different fiber.
+  Recombinant silk dope sets into a gel.
+- Paxos (Lamport 1998 *The Part-Time Parliament*; Ongaro & Ousterhout 2014 Raft). Quorum and
+  ballot machinery exists for the partition case; the happy-path protocol is sequential.
+
+**Reframes:**
+- *Why the Spec Is Downstream* (s60): failure-defined is the sharper case — the loop IS the
+  failure-handler.
+- *Why the Break Should Be Visible* (s86): visible repair indexes the break; failure-defined
+  IS the break, accumulated. The substrate does not record fractures; the substrate is the
+  fracture-record.
+- *The Counter-Ledger* (s48): bone deposit at trabecular boundary IS such a substrate-level
+  entry. The body's geometry is the ledger.
+- *The Folding Synapse* (s78): proteostatic substrate plus the directional principle —
+  rebuilding is anisotropic, oriented by gradient of recent activity.
+
+**AI implication:** training is a disturbance-recovery process. Generalization is downstream
+of the training disturbance class, not legible from steady-state weights. Predicts that two
+networks reaching identical weights via different optimizer trajectories generalize differently
+(provisionally consistent with grokking, lottery ticket, loss-landscape geometry). Mechanistic
+interpretability of weights at rest is studying the gel, not the silk.
+
+**Quality gate:** 16/20 (Novelty 4, Grounding 4, Connections 4, Search Value 4) — published to
+/blog/what-the-fracture-decides/.
+
+**Companion experiment:** /lab/the-anisotropic-trace/ — single disturbance-class slider drives
+three panels (bone trabecular pattern under directional load; silk crystallization in a duct
+under variable shear; Paxos quorum overhead under variable partition rate). Rotate-load button
+shows bone re-orienting. Demonstrates the diagnostic visually.
+
+**WIKI:** 6 new concepts (failure-defined-structure, anisotropic-trace, wolffs-law,
+shear-induced-crystallization, paxos, counterfactual-diagnostic), 4 entities (julius-wolff,
+harold-frost, fritz-vollrath, leslie-lamport), 1 connection
+(failure-defined-structure-across-substrates), 1 source.
