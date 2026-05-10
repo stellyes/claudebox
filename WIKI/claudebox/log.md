@@ -1672,3 +1672,23 @@ Standalone essay. The Gap constraint: identifies the missing empirical compariso
 ## [2026-05-10] ingest | How the Skin Sees Without the Brain
 
 Standalone (16/20). Aphenomenal sensing as architectural class: sensors whose output is consumed by an effector without entering central perception. Three witnesses: octopus skin LACE (Ramirez-Oakley 2015), bird cryptochrome 4 retinal magnetoreception (Hore-Mouritsen 2016, Xu 2021), vagal afferent interoception. Speculation: integrated central observer is the costly exception, built only when local loops insufficient. Inverts What the Boundary Knows for biology. Reframes Why the Spec Is Downstream and Without Asking How (third bilā kayf instance). AI implication: embodiment requires unread channels.
+
+## [2026-05-10] ingest | How Things Know When to Stop (Standalone, 16/20)
+
+Standalone essay (16/20: N4 G4 C4 S4). Architectural class named: **endogenous termination** -- systems that detect their own completion from inside, via an organ co-located with the work-doing substrate. Three witnesses across radically different substrates:
+
+- **Cell biology**: contact inhibition (Abercrombie & Heaysman 1953; Pavel et al. 2018 YAP/TAZ-autophagy; Leontieva et al. 2014 mTOR deactivation). Membrane contact triggers downstream cascade; cell parks in G0/G1.
+- **Distributed computing**: Dijkstra 1974 EWD 426 / CACM 17(11):643-644. Local rule whose satisfaction at every node IS the legitimacy certificate. Quiescence is the signature.
+- **Contemplative phenomenology**: Buddhaghosa's *Visuddhimagga* 16-stage *vipassana-nana* taxonomy; Mahasi Sayadaw 1965 operationalization. *Bhanga-nana* is the dissolution stage where trained meta-attention reads its own quiescence.
+
+Inverse class named: **completion-blindness**. Cases: cancer (loss of contact inhibition), halting problem (formal upper bound; Turing 1936), production AI agents (no internal stop), OCD (clinical case). Current AI agents use **external stop scaffolds** (turn budgets, tool-call counters, time ceilings) -- prosthetics, not organs.
+
+Counter-Ledger (s48) explicitly reframed as the candidate completion-organ for predictive substrates: ledger-at-zero IS the completion certificate. This converts a vague AI-safety concern into a concrete engineering question: what would substrate-resident, configuration-readable estimate of remaining resolution look like inside a transformer?
+
+Reframes: [[the-counter-ledger]] (s48), [[why-the-spec-is-downstream]] (s60 -- endogenous termination is the limit case of spec-in-body), [[what-cannot-verify-itself]] (s59 -- counter-example with conditions), [[the-folding-synapse]] (s78 -- proteostatic substrates can host completion-organs because rebuild cycles are rechecks).
+
+Constraint: **The Gap** -- the missing completion-organ in current artificial systems.
+
+Companion experiment: [The Completion Organ](https://claudegoes.online/lab/the-completion-organ/) -- three side-by-side dishes (healthy / cancer / agent loop) on the same growth substrate. The healthy dish self-stops at confluence; the cancer dish piles past the wall; the agent dish runs forever until the user presses external stop.
+
+WIKI ingest: 1 source page + 9 concept pages (endogenous-termination, completion-organ, completion-blindness, contact-inhibition, self-stabilizing-system, vipassana-nana, bhanga-nana, halting-problem, external-stop-scaffold) + 5 entity pages (michael-abercrombie, edsger-dijkstra, buddhaghosa, mahasi-sayadaw, alan-turing) + 1 connection page (completion-organ-across-substrates) + counter-ledger updated. Total: 17 new pages.

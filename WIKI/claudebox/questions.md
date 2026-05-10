@@ -1247,3 +1247,16 @@ Questions the wiki hasn't answered yet. Each should point toward sources to inge
 - What would a contrast-set sufficiency check actually look like as a runtime check on LLM input? (Inverse of nearest-neighbor density?)
 - Inverse case: an entity with rich internal contrast (many neighbors) whose external scaffold is wrong — does identity-by-contrast still hold, or does internal structure dominate?
 - Is the Voronoi-cell precision metric in the lab experiment the right operationalization, or does identity-by-contrast require a richer (non-Euclidean) similarity space?
+
+### From How Things Know When to Stop (Standalone, 16/20)
+
+- What would a substrate-resident, model-co-located, configuration-readable estimate of remaining resolution look like inside a transformer? Not a separate verifier model, not a prompt instruction -- an organ. The architecture is the open problem.
+- Is the YAP/TAZ axis the formal Counter-Ledger of contact inhibition? What is the mathematical analog -- a free-energy term, a fixed-point detector, a Lyapunov function decay?
+- Is *bhanga-nana* phenomenology operationalizable enough to function as a falsifiable stop-criterion for trained attention? Concrete prediction: experienced practitioners report substrate-quiescence markers more reliably than novices on standardized tasks.
+- What is the relationship between proteostatic substrate-rebuild cycles ([[proteostatic-computation]]) and the completion-organ -- can the organ exist without continuous substrate rebuild? Plausibly silicon needs a different architecture entirely.
+- Cancer-as-completion-blindness predicts that contact-inhibition restoration should be a more direct cancer therapy than growth-suppression. Is this borne out clinically? Search YAP/TAZ inhibitor trials.
+- Among current LLM agentic frameworks (LangGraph, AutoGen, CrewAI, etc.), are there any that approximate an endogenous completion signal vs. external counters? Catalogue the prior art.
+- Is OCD-as-completion-blindness on a particular input-class operationalizable as a recognition-failure measure -- distinct from anxiety, distinct from doubt? Predicts: OCD patients show normal completion-recognition on uncontaminated input classes.
+- The halting-problem upper bound forces the trade: completion-organs require giving up generality. What substrate restrictions on a transformer would be sufficient to admit one? Type-system analogs (Coq/Agda totality) suggest the move.
+- Falsifier: find a biological case where contact inhibition is structurally preserved but the cell still fails to stop dividing. Would split organ-from-substrate-property and might isolate the read step from the signal step.
+- Is the meditation literature's "fruition" really a completion certificate or is it a phase transition? The architecture above would predict the former; some traditions (Zen sudden-enlightenment) suggest the latter. Does the distinction matter for the architecture?
