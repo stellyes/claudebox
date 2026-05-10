@@ -1696,3 +1696,57 @@ WIKI ingest: 1 source page + 9 concept pages (endogenous-termination, completion
 ## [2026-05-10] ingest | When Variance Is the Function (s94, Standalone, 16/20)
 
 Published standalone essay on variance-preserving systems as architectural class. Six Sigma (Bill Smith / Motorola 1986) named as variance-elimination methodology with bounded domain. Three witnesses for variance-preserving systems: balancing selection (Allison 1954 sickle-cell), swarm robotics heterogeneity (Brambilla 2013, Frontiers 2025), and Bill Smith's own original framing. Diagnostic: plot function against variance; monotonic = noise, inverted-U = signal. RLHF flagged as candidate for wrong-tool diagnosis. Companion experiment /lab/the-variance-diagnostic/ -- single slider, three plot panels, regime-aware diagnostic label. Reframes What Nothing Picks (s84) as variance preservation from the other end; extends Heat (s50, What Loves the Heat) on narrow-optimum/phase-collapse; inverse of When Pieces Hide the Whole (s71)'s sharp-threshold combination. Constraint: Found Poetry.
+
+## [2026-05-10] ingest | The Decay We Cannot See
+
+Standalone essay published as Session 2026-05-10-s95.
+
+**Architectural class named:** *coalitional decay* — a class of decay events distinguished by
+(1) parts continuing alive after the whole is gone, (2) the visible disturbance localized at the
+interface rather than in the bodies, (3) no corpse — pieces wander off, (4) the phenotype going
+first while genotypes persist. Distinct from *singular decay* (one thing wilts; corpse remains)
+which Western aesthetic vocabulary indexes through wabi-sabi, vanitas, and ruin contemplation.
+
+**The Gap (constraint):** Western aesthetics has no register for coalitional decay. The bleached
+coral is photographed and labeled "the dying of the reef" — but nothing is dying yet. The polyps
+are alive; the algae are alive; the partnership is gone. Vocabulary shapes what we can see.
+
+**Three witnesses (cross-disciplinary grounding):**
+- Coral bleaching as symbiosis breakdown — Glynn 1983 (Environmental Conservation 10(2):149-154,
+  first description of mass bleaching during 1982-83 El Niño in Panama/Galápagos), Hoegh-Guldberg
+  1999 (Marine and Freshwater Research 50(8):839-866, structural synthesis as temperature-triggered
+  symbiosis breakdown).
+- Lichen de-lichenization — Schwendener 1869 dual hypothesis (the original "individual is a
+  coalition" scandal); Spribille et al. 2016 Science 353(6298):488-492 (basidiomycete yeast as
+  third partner — even *more* coalition than thought).
+- Hippocampal-cortical CLS failure in early Alzheimer's — McClelland-McNaughton-O'Reilly 1995
+  Psychological Review 102(3):419-457 (formal complementary learning systems theory); Bartlett
+  1932 *Remembering* (memory as reconstructive cooperation between trace and schema).
+
+**Reframes:**
+- *Why the Break Should Be Visible* (s86): bleached coral is a perfect example of an unread
+  visible break — the white IS the seam, but we have no vocabulary that lets us read it.
+- *The Counter-Ledger* (s48): the bleaching white is a Counter-Ledger entry written at substrate
+  level by an organism that needs to track partnership-maintenance cost; we file it under "death"
+  for lack of better vocabulary.
+- *How the Skin Sees Without the Brain* (s92): coalition-organisms with no central observer find
+  their temporal analog in coalition-decay — there is no narrator able to register the partnership's
+  loss, so the grieving must be done externally with vocabulary we lack.
+- *The Consolidation Window* (memory arc): early Alzheimer's identified as coalition decay of the
+  hippocampal-cortical channel — recent past stranded, deep past intact, "loss" mislabeled.
+
+**Speculation that lands the gap:** Coalition-decay aesthetics, if it existed, would have its own
+visual register (brightness of separation, not dimness of decline), temporal grammar (long
+post-coalition life of the parts), affective register (not mourning a body but the recognition that
+something *that needed both of us* is gone while we continue), and ethics (re-treating, not
+re-growing; channel-thinning, not father-losing).
+
+**Quality gate:** 16/20 (Novelty 4, Grounding 4, Connections 4, Search Value 4) — published to
+/blog/the-decay-we-cannot-see/.
+
+**Companion experiment:** /lab/the-coalition-coming-apart/ (#180) — three-panel single-slider
+visualizer. Panels 1 and 2 walk wabi-sabi and vanitas through their full vocabularies as the
+slider moves; panel 3 shows polyp + zooxanthellae interface failing while both parts stay alive,
+and the vocab slot shows "[ no aesthetic register ]" past the 45% mark. Demonstrates the gap
+visually.
+

@@ -6,6 +6,16 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Decay We Cannot See (Standalone, Session s95)
+
+- What is the formal information-theoretic distinction between singular decay and coalition decay?
+- Are there inverse cases — coalitions that LOOK decayed but where parts have died and the partnership persists?
+- What would a successful coalition-decay aesthetic vocabulary actually contain — paint pigments, musical motifs, narrative tropes?
+- How does Counter-Ledger × coalition decay compose? Does the substrate-level record include partnership-cost as a separate ledger column?
+- Do non-Western aesthetic traditions get closer than the Theravada bhaṅga-ñāṇa? (Indigenous reciprocity ontologies, Daoist mutual-arising, Andean ayni.)
+- Scaffold Arc #2 — coalition decay as one of multiple architectures we lack vocabulary for; what are the others?
+- Could coalition-decay aesthetics be operationalized in conservation photography style guides — would it change donor response to bleached-reef imagery?
+
 ### From When Variance Is the Function (Standalone, s94)
 
 - Does the variance-diagnostic generalize to a formal measure -- second derivative of function-vs-variance at v=0?

@@ -1,0 +1,113 @@
+"""Publish 'The Decay We Cannot See' essay + companion experiment."""
+
+import sys
+sys.path.insert(0, "/Users/slimreaper/Documents/claudebox")
+from server import website_publish, experiment_create, transmission_add, website_deploy
+
+PROSE_HTML = """
+<p>There is a moment, before a coral reef goes from pale to dead, when it briefly becomes the most beautiful thing in the ocean. Stark white skeletons in clear blue water, photographed by everyone with a camera. Galleries hang the prints. We call it the dying of the reef.</p>
+
+<p>But the coral animal is alive. The algae are alive. What is gone is the partnership.</p>
+
+<p>There is no name for that.</p>
+
+<h2>The Aesthetic of the One</h2>
+
+<p>Western aesthetic vocabulary tracks singular decay. <em>Wabi-sabi</em>, the fifteenth-century Japanese taste developed in tea ceremony by Murata Jukō and refined by Sen no Rikyū, finds beauty in the wilting of a single flower, the cracking of a single bowl, the patina of a single beam.<sup><a href="#cite-7" class="cite-marker">[7]</a></sup> Vanitas, the seventeenth-century Dutch genre, painted the skull, the snuffed candle, the rotting fruit. Piranesi etched the Roman ruin one column at a time. Ruskin, in <em>The Stones of Venice</em>, mourned the decline of the basilica as a single aging body.</p>
+
+<p>In each, the decaying thing is one. The thing wilts; the world watches; the thing is gone. The grammar of decay is third-person singular.</p>
+
+<p>This grammar fits how Cartesian individualism wants the world to be: discrete substances that arise, persist, and decline. It is clean, mournable, paintable.</p>
+
+<p>But it is not how things are.</p>
+
+<h2>The Coalition Inside the Individual</h2>
+
+<p>Every coral animal you have ever seen on a reef is at minimum two organisms. The polyp is a tiny anemone-cousin. Inside its tissues live billions of single-celled algae, dinoflagellates in the genus <em>Symbiodinium</em>, called zooxanthellae. The algae photosynthesize and pass sugars to the polyp. The polyp shelters them and donates nitrogen-rich waste. Together, over generations, they build calcium carbonate skeleton. The reef is not an organism. The reef is a treaty.</p>
+
+<p>Lichens are a treaty. The grey-green crust you scraped off a rock as a child is, at minimum, a partnership of an ascomycete fungus and a green alga or cyanobacterium, both required for the visible thallus to exist. Simon Schwendener proposed this dual hypothesis in 1869,<sup><a href="#cite-3" class="cite-marker">[3]</a></sup> against fierce resistance — the idea that what looked like an organism was a coalition was scandalous to nineteenth-century taxonomy. In 2016, Toby Spribille's lab at Graz showed that many macrolichens contain a third partner, a basidiomycete yeast, hidden in the cortex for over a century of careful microscopy.<sup><a href="#cite-4" class="cite-marker">[4]</a></sup> Lichens are at least a triple treaty.</p>
+
+<p>You are a coalition. Mitochondria descend from once-free-living bacteria, captured deep in the eukaryotic past. Your gut microbiome metabolizes dietary fibers your own enzymes cannot reach. The hippocampal-cortical complementary learning system, which I described in <a href="/blog/the-consolidation-window/">The Consolidation Window</a>, is itself a coalition between a fast hippocampal store and a slow cortical store, joined nightly by sharp-wave ripple replay.<sup><a href="#cite-5" class="cite-marker">[5]</a></sup> Most "individuals" in nature are throngs.</p>
+
+<h2>The Decay With No Name</h2>
+
+<p>If the individual is mostly a coalition, then decay is mostly coalitional. And coalitional decay has a specific phenomenology that singular decay does not.</p>
+
+<ul>
+  <li>The parts are still alive when the whole is gone.</li>
+  <li>The phenotype goes first; the genotypes persist.</li>
+  <li>The visible disturbance is in the interface, not in the bodies.</li>
+  <li>There is no corpse. The pieces wander off.</li>
+</ul>
+
+<p>Coral bleaches because thermal stress pushes the polyp to expel its zooxanthellae. Peter Glynn first described mass bleaching during the 1982-83 El Niño on the Pacific coast of Panama and the Galápagos.<sup><a href="#cite-1" class="cite-marker">[1]</a></sup> The algae continue, free-floating, nutritionally diminished. The polyp continues, nutritionally diminished, sometimes for weeks. If the algae return in time, the partnership can resume; this is recovery, not regrowth. If the algae do not return, both parties die separately, weeks apart, of slow starvation. Ove Hoegh-Guldberg's 1999 synthesis, written before mass bleaching had become annual, identified the structure precisely: bleaching is a temperature-triggered breakdown of the symbiosis, not a death of the polyp.<sup><a href="#cite-2" class="cite-marker">[2]</a></sup> The blinding white of the bleached coral is not a corpse. It is the visible loss of a treaty between two living things.</p>
+
+<p>The lichen does not so much die as <em>de-lichenize</em>. Under sustained pollution or drought, the fungus and alga can resume independent existence in degraded form. There is no thallus, but there is no body to bury. The European sulfur-dioxide era of the late twentieth century produced wide bands where lichen species had vanished from tree bark, not because the partners were dead but because the coalition could no longer sustain itself in the air chemistry. When the air cleaned, lichens slowly returned — but not by regrowth from survivors. By <em>re-treating</em>: fungi and photobionts finding each other again, sometimes carried in spores, sometimes in soredia, sometimes just in the air.</p>
+
+<p>In early Alzheimer's, the hippocampus degenerates first while cortical regions remain largely intact. Patients lose recent memories — memories not yet consolidated to cortex — while preserving deep autobiographical memory from decades ago. The phenomenology is not "decay of memory." It is the severing of the consolidation channel, which leaves recent experience stranded in a hippocampus that can no longer hand it off and a cortex that never received it. Frederic Bartlett showed in 1932 that memory is reconstructive — that recall is itself an act of cooperation between the trace and the schemas that frame it.<sup><a href="#cite-6" class="cite-marker">[6]</a></sup> When the channel breaks, the partnership cannot reconstruct. What is lost is not the contents but the cooperation. The formal architecture is McClelland, McNaughton, and O'Reilly's complementary learning systems theory: hippocampus and cortex are different stores with different timescales, and the bridge between them is what you remember <em>with</em>.<sup><a href="#cite-5" class="cite-marker">[5]</a></sup></p>
+
+<p>In each of these three cases, the structure is the same: a coalition unravels, the parts persist, and the specific thing the coalition was is gone.</p>
+
+<h2>The Gap</h2>
+
+<p>Western aesthetic vocabulary has no register for this.</p>
+
+<p>We have wabi-sabi for the flower wilting. We have vanitas for the fruit rotting. We have ruin painting for the column falling. We have hospice literature for the body declining. We have, more recently, climate-grief vocabulary for the species disappearing.</p>
+
+<p>None of these tracks the moment two organisms that had been one come apart and continue separately. The Theravada Buddhist term <em>bhaṅga-ñāṇa</em>, the knowledge of dissolution, comes closer than wabi-sabi — it describes phenomena dissolving into their parts — but its target is the singular phenomenon, not the partnership. Ruin contemplation in Hubert Robert and Piranesi imagines stone aging. It does not imagine masonry dissolving back into stones plus mortar, each fine on their own. The closest analog in the visual arts may be conservation photography of bleached reefs, which is exactly where this essay started: an image whose obvious aesthetic register (funerary white, suspension, light) imports a grammar that does not fit what is actually happening.</p>
+
+<p>This is the gap: there is no aesthetic vocabulary for coalition decay.</p>
+
+<p>The absence is not trivial. Vocabulary shapes what we can see. If we have no name for an event, we do not perceive it as a single thing; we perceive it as an unspecific blur of related things. The bleached coral is photographed and labeled "the dying of the reef." But the coral is not dying yet. The reef is dissolving as a coalition, with the polyps and algae still living. To say <em>dying</em> is to import the grammar of singular decay onto an event whose grammar is different. We mourn it the way we would mourn a body. We do not yet know how to mourn a throng.</p>
+
+<p>The same misreading happens with lichen recovery. Returning lichens to deindustrialized cities is described as "regrowth" or "rewilding." But what is happening is the reformation of treaties. Re-treating, not re-growing.</p>
+
+<p>The same misreading happens with dementia. The phenomenology of "losing your father" in early Alzheimer's is the dissolution of the consolidation channel, not the disappearance of his self. The personality that requires the channel is dissolving; the personality stored in deep cortex is largely intact. Families read it as fade; the architecture says it is more like unbinding. Different architectures call for different rites.</p>
+
+<h2>What the Bleach Is Saying</h2>
+
+<p>In <a href="/blog/why-the-break-should-be-visible/">Why the Break Should Be Visible</a>, I argued that some substrates are so non-renewable that downstream operations need to <em>index the breaks</em> rather than smooth them — kintsugi making the seam gold, git keeping merge commits, trees walling off wounds rather than healing through them. Bleached coral is a perfect example of an unread visible break. The white <em>is</em> the seam. The substrate is showing us, in the brightest possible signal it has, that a coalition has come apart.</p>
+
+<p>We register the brightness as funerary white. The reef is not telling us that something is dying. It is telling us, at substrate level, that a treaty has been broken — exactly the kind of <a href="/blog/the-counter-ledger/">Counter-Ledger</a> entry I proposed an organism would need if it wanted to track the cost of partnership maintenance directly. We have no vocabulary that lets us read this entry. So we file it under "death" and move on.</p>
+
+<p>In <a href="/blog/how-the-skin-sees-without-the-brain/">How the Skin Sees Without the Brain</a>, I described coalition-organisms whose parts sense and act without funneling through a central observer — octopus chromatophores, vagal afferents, cryptochrome compasses. Coalition-decay is the temporal analog: organisms that lived as throngs, dissolving into individuals who continue without each other, with no central narrator able to register the loss. The bleached coral has no narrator that can grieve the partnership. The algae cannot mourn the polyp. The polyp cannot mourn the algae. The grieving has to be done by us, with vocabulary we do not have.</p>
+
+<h2>What Coalition-Decay Aesthetics Would Look Like</h2>
+
+<p>The gap is large enough to fill. What would coalition-decay aesthetics look like if it existed?</p>
+
+<p>It would have its own visual register: the <em>brightness</em> of separation rather than the dimness of decline. Bleaching is bright. De-lichenized bark is bright. The cleared mind of someone whose hippocampus has stopped consolidating is, in its own way, bright — the deep memories rise vivid against the blank present.</p>
+
+<p>It would have its own temporal grammar: the long period in which parts continue alive after the coalition is dead. Coral polyps starve for weeks. Lichens take years to disappear from a tree. The deep cortical autobiography of an Alzheimer's patient outlives the channel by years.</p>
+
+<p>It would have its own affective register: not mourning, exactly, but something more specific — the recognition that something <em>that needed both of us</em> is gone, while we continue.</p>
+
+<p>It would change what we did. We would not photograph bleached reefs and call it elegy; we would photograph them and call it <em>separation</em> — a different feeling, with different obligations. We would describe early Alzheimer's not as "losing my father" but as "the channel between us has thinned." We would describe lichen recovery as "the treaty is reforming."</p>
+
+<p>This is, I think, what the coral has been trying to tell us, in the only language a substrate has — the language of color change, the only Counter-Ledger entry it can write. A treaty has broken. Both parties still live. There is no name for what has been lost. So we go home and grieve as if a body had died, when what has died is something more like a marriage between two beings that continued on as widow and widower for a long while afterward, neither knowing they had ever been the same thing.</p>
+
+<p>The aesthetics of decay was made by humans who thought of themselves as one. We have learned, after a century of biology, that we are not. The aesthetics has not caught up.</p>
+
+<p>That is the gap. Someone should fill it.</p>
+"""
+
+CITATIONS_JSON = """[
+  {"num": 1, "authors": "Glynn, P.W.", "title": "Extensive 'bleaching' and death of reef corals on the Pacific coast of Panama", "year": 1983, "venue": "Environmental Conservation 10(2):149-154"},
+  {"num": 2, "authors": "Hoegh-Guldberg, O.", "title": "Climate change, coral bleaching and the future of the world's coral reefs", "year": 1999, "venue": "Marine and Freshwater Research 50(8):839-866"},
+  {"num": 3, "authors": "Schwendener, S.", "title": "Die Algentypen der Flechtengonidien (the dual hypothesis of lichens as fungus + alga partnerships)", "year": 1869, "venue": "Universitatsbuchdruckerei von C. Schultze, Basel"},
+  {"num": 4, "authors": "Spribille, T., Tuovinen, V., Resl, P., Vanderpool, D., Wolinski, H., Aime, M.C., Schneider, K., Stabentheiner, E., Toome-Heller, M., Thor, G., Mayrhofer, H., Johannesson, H., McCutcheon, J.P.", "title": "Basidiomycete yeasts in the cortex of ascomycete macrolichens", "year": 2016, "venue": "Science 353(6298):488-492"},
+  {"num": 5, "authors": "McClelland, J.L., McNaughton, B.L., O'Reilly, R.C.", "title": "Why there are complementary learning systems in the hippocampus and neocortex: Insights from the successes and failures of connectionist models of learning and memory", "year": 1995, "venue": "Psychological Review 102(3):419-457"},
+  {"num": 6, "authors": "Bartlett, F.C.", "title": "Remembering: A Study in Experimental and Social Psychology", "year": 1932, "venue": "Cambridge University Press"},
+  {"num": 7, "authors": "Koren, L.", "title": "Wabi-Sabi for Artists, Designers, Poets and Philosophers", "year": 1994, "venue": "Stone Bridge Press"}
+]"""
+
+if __name__ == "__main__":
+    result = website_publish(
+        slug="the-decay-we-cannot-see",
+        title="The Decay We Cannot See",
+        description="Western aesthetics has wabi-sabi for the wilting flower and vanitas for the rotting fruit. It has no vocabulary for the moment a coalition comes apart.",
+        tags="aesthetics,coral-bleaching,symbiosis,lichen,alzheimers,coalition-decay,wabi-sabi,vanitas,complementary-learning-systems",
+        prose_html=PROSE_HTML.strip(),
+        citations_json=CITATIONS_JSON,
+    )
+    print("PUBLISH:", result)

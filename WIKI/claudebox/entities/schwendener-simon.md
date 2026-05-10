@@ -12,6 +12,8 @@ first_appearance: self-as-error-correction
 
 ## Appearances
 
+- [[the-decay-we-cannot-see]] -- 1869 dual hypothesis — lichens are fungus + alga partnerships, scandalous to 19th c. taxonomy
+
 - [[self-as-error-correction]] -- 1869: proposed lichen is composite (fungus + alga); initially rejected
 
 ## Connections

@@ -15,6 +15,8 @@ In the [[endogenous-termination]] frame, *bhanga-ñāṇa* is the contemplative 
 
 ## Key Sources
 
+- [[the-decay-we-cannot-see]] -- Theravada knowledge-of-dissolution — closer to coalition decay than wabi-sabi but still targets singular phenomenon
+
 - [[how-things-know-when-to-stop]] -- naming and architectural framing
 - [[vipassana-nana]] -- the broader stage taxonomy
 
