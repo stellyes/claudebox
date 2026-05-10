@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From When Variance Is the Function (Standalone, s94)
+
+- Does the variance-diagnostic generalize to a formal measure -- second derivative of function-vs-variance at v=0?
+- Are there variance-preserving systems where the optimal heterogeneity itself drifts over time, requiring a meta-diagnostic?
+- Can the RLHF-as-modal-collapse hypothesis be tested with response-distribution metrics across model generations?
+- Inverse case: a system that LOOKS variance-preserving but is actually variance-noise (false positive of the diagnostic)?
+- Is the Counter-Ledger architecture (s48) a variance-preserving organ -- substrate-tracker that must remain heterogeneous to fire?
+
 ### From How the Skin Sees Without the Brain (Standalone)
 
 - Quantitative threshold: what determines when a sensor's output 'must' integrate centrally vs. can stay local? Information-theoretic measure?

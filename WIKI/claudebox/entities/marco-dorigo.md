@@ -12,6 +12,8 @@ first_appearance: geometry-exclusion-golden-ratio-ant-colony
 
 ## Appearances
 
+- [[when-variance-is-the-function]] -- founded swarm robotics field; Brambilla 2013 review co-author
+
 - [[what-the-isnad-computes]] -- Politecnico di Milano; formalized Ant System (ACO) in 1992 PhD thesis
 
 - [[the-evaporation-problem]] -- originator of ACO — evaporation mechanism

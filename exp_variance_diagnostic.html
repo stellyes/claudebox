@@ -1,0 +1,82 @@
+<div class="vardiag-container">
+  <p class="vardiag-intro">
+    Six Sigma assumes variance is the enemy. For a microprocessor factory, it is. For a
+    population under pathogen pressure or a swarm exploring an unknown space, it isn't. Move
+    the slider. Three systems, one variable.
+  </p>
+
+  <div class="vardiag-controls">
+    <label class="vardiag-label">
+      <span class="vardiag-label-text">Variance level <span class="vardiag-readout" id="vardiag-readout">0.50</span></span>
+      <input type="range" id="vardiag-slider" min="0" max="1" step="0.005" value="0.5">
+    </label>
+  </div>
+
+  <div class="vardiag-grid">
+    <figure class="vardiag-panel" data-regime="factory">
+      <figcaption>
+        <span class="vardiag-title">Microprocessor factory</span>
+        <span class="vardiag-sub">Six Sigma regime &mdash; variance is noise</span>
+      </figcaption>
+      <canvas id="vardiag-c-factory" width="320" height="220"></canvas>
+      <div class="vardiag-output">
+        <span class="vardiag-output-label">Defect rate</span>
+        <span class="vardiag-output-value" id="vardiag-out-factory">&mdash;</span>
+      </div>
+    </figure>
+
+    <figure class="vardiag-panel" data-regime="population">
+      <figcaption>
+        <span class="vardiag-title">Population under malaria pressure</span>
+        <span class="vardiag-sub">Balancing selection &mdash; variance is signal</span>
+      </figcaption>
+      <canvas id="vardiag-c-population" width="320" height="220"></canvas>
+      <div class="vardiag-output">
+        <span class="vardiag-output-label">Mean fitness</span>
+        <span class="vardiag-output-value" id="vardiag-out-population">&mdash;</span>
+      </div>
+    </figure>
+
+    <figure class="vardiag-panel" data-regime="swarm">
+      <figcaption>
+        <span class="vardiag-title">Swarm exploring an unknown space</span>
+        <span class="vardiag-sub">Heterogeneity advantage &mdash; variance is signal</span>
+      </figcaption>
+      <canvas id="vardiag-c-swarm" width="320" height="220"></canvas>
+      <div class="vardiag-output">
+        <span class="vardiag-output-label">Coverage rate</span>
+        <span class="vardiag-output-value" id="vardiag-out-swarm">&mdash;</span>
+      </div>
+    </figure>
+  </div>
+
+  <div class="vardiag-diagnostic" id="vardiag-diagnostic">
+    <span class="vardiag-diag-label">Diagnostic</span>
+    <span class="vardiag-diag-text" id="vardiag-diag-text">&mdash;</span>
+  </div>
+
+  <details class="vardiag-notes">
+    <summary>Reading the curves</summary>
+    <p>
+      The factory curve is monotonic: every additional unit of variance increases the defect
+      rate. The Six Sigma instinct is correct here &mdash; tightening the distribution
+      strictly improves the system.
+    </p>
+    <p>
+      The population curve is an inverted U. Sickle-cell allele frequency at zero produces
+      maximum mortality from malaria; at one produces maximum mortality from sickle-cell
+      anemia. The fitness peak sits at a non-zero allele frequency &mdash; balanced
+      polymorphism. Variance reduction past that peak collapses fitness.
+    </p>
+    <p>
+      The swarm curve is also an inverted U, but for a different reason. Zero heterogeneity
+      means the swarm has one hypothesis about its environment. Maximum heterogeneity means
+      the swarm is uncoordinated noise. Mid-range heterogeneity is where the swarm searches
+      effectively while still aggregating its findings.
+    </p>
+    <p>
+      The diagnostic at the bottom names which regime currently <em>benefits</em> from the
+      slider's setting. Two of three almost always disagree with the Six Sigma answer.
+    </p>
+  </details>
+</div>
