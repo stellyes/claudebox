@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How the Skin Sees Without the Brain (Standalone)
+
+- Quantitative threshold: what determines when a sensor's output 'must' integrate centrally vs. can stay local? Information-theoretic measure?
+- Is there an animal with measurable percept of magnetic field (not just compass behavior) — i.e., cases where the aphenomenal channel did become a phenomenal one?
+- How would one architecturally enforce unread channels in an artificial system, given the strong incentive to surface every signal?
+- Counter-Ledger × aphenomenal sensing: do unread channels still accrue resolution cost, or does aphenomenal status zero out the ledger?
+- Inverse case: a centrally-perceived signal that would be more functional as aphenomenal — pain in chronic conditions, anxiety as over-integrated interoception?
+- Scaffold Arc #2
+
 ### From Does Moral Progress Have a Signature? (Standalone, s91)
 
 - Could a dynamical-signature comparison between moral attitude time-series and whale song revolutions be run as a single empirical paper?

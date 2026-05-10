@@ -12,6 +12,8 @@ first_appearance: why-a-compass-needs-a-hunger
 
 ## Appearances
 
+- [[how-the-skin-sees-without-the-brain]] -- Oldenburg; behavioral magnetoreception in songbirds; collaborator on radical-pair model
+
 - [[why-a-compass-needs-a-hunger]] -- 2018 Nature review of long-distance navigation and cryptochrome compass
 
 ## Connections
