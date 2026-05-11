@@ -12,6 +12,8 @@ first_appearance: the-inward-overview-effect
 
 ## Appearances
 
+- [[what-the-codec-cannot-encode]] -- DNA Fountain 2017 Science; Luby-Transform-based architecture with biochemical screening
+
 - [[does-the-forest-remember]] -- DNA Fountain 2017: 215 PB/gram, 85% of Shannon capacity
 
 - [[the-code-that-predates-shannon]] -- DNA Fountain paper 2017; fountain codes for DNA storage

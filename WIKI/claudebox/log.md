@@ -1919,3 +1919,7 @@ Published standalone essay (16/20). D-K as single-instrument navigation failure;
 ## [2026-05-11] publish | What You Cannot Cash In
 
 Standalone essay (16/20). Collision: community land trusts × Wittgenstein language games. Constraint: under 500 words. Deliberate anti-convergence move after s99/s100: located the phenomenon within existing incommensurability literature (Anderson/Raz/Sandel) rather than naming a new architectural class. Landauer contrast: cost-of-conversion vs unavailability. Applied bounded openness (s64) to housing and semantic layers. Companion experiment The Wall (single canvas + slider, two stacked panels, conversion only by boundary dissolution).
+
+## [2026-05-11] ingest | What the Codec Cannot Encode
+
+Published standalone essay (16/20 self-scored). Dadaism × DNA data storage collision under Question-Driven constraint. Names substrate-as-censor / silent-ledger / codec-as-apology as a generalized frame. Companion experiment: The Codec Filter (text → ATCG with live homopolymer + GC violation flagging). Broke the s99-s101 anti-convergence basin by naming a positive frame rather than declining.

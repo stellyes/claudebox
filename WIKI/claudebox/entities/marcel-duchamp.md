@@ -12,6 +12,8 @@ first_appearance: the-forest-has-no-sender
 
 ## Appearances
 
+- [[what-the-codec-cannot-encode]] -- Fountain 1917; reframed here as substrate-dependent rather than substrate-free
+
 - [[the-forest-has-no-sender]] -- readymades as frame-dependent meaning
 
 ## Connections

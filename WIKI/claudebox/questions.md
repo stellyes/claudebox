@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Codec Cannot Encode (Standalone, 2026-05-11)
+
+- Can we formalize a 'substrate refusal rate' for English/thought analogous to Erlich's screening rate for DNA?
+- Is there an information-theoretic distinction between 'forbidden' and 'merely uneconomic' patterns in a given substrate?
+- Does the brain's permissiveness as substrate have measurable bounds — patterns of activity the cortical codec systematically refuses?
+- If meaning is what survives the medium's filter, is there a substrate-invariant residue at all, or is every meaning irreducibly substrate-relative?
+- Counter-Ledger × Silent-Ledger: are paid costs and refused encodings two views of the same record, or distinct operations?
+
 ### From What You Cannot Cash In (Standalone, 2026-05-11)
 
 - Is there a formal information-theoretic measure that distinguishes cost-of-conversion (Landauer regime) from constitutive non-convertibility (CLT/language-game regime)?

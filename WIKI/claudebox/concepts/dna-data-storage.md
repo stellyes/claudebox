@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-the-codec-cannot-encode]] -- key witness — Goldman 2013 EBI demo, Erlich-Zielinski 2017 DNA Fountain, biochemical constraints
+
 - [[dna-storage-golden-angle]] -- primer orthogonality as discrete-alphabet anti-resonance
 
 - [[does-the-forest-remember]] -- primary development
