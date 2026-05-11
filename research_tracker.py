@@ -8,6 +8,8 @@ accumulate structured data about what works.
 Phase 1 of the autoresearch adaptation.
 """
 
+from __future__ import annotations
+
 import csv
 import json
 import os

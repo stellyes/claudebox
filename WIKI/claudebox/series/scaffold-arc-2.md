@@ -2,8 +2,8 @@
 title: "Scaffold Arc #2 (planning)"
 type: series
 tags: [open-thread, scaffold, vocabulary, architecture, meta]
-post_count: 0
-status: planning
+post_count: 1
+status: planning + first anti-case landed
 ---
 
 ## Arc
@@ -69,7 +69,7 @@ For Scaffold Arc #2 to be a genuine arc and not just a retroactive label, it nee
 
 Optional additional posts the family could absorb:
 
-- **Anti-architecture** (the contrarian post): cases where steady-state IS sufficient, where the trajectory-defined diagnostic misleads. Crystallography, finished mathematical proofs, convex optimization — these are path-independent architectures. The arc needs this anti-case to avoid over-generalization.
+- **Anti-architecture** (the contrarian post): landed as [[what-doesnt-need-a-history]] (s98, 2026-05-10). Names the [[closure-law]] concept (geometric convexity, syntactic Church-Rosser confluence, temporal thermal equilibrium) and bounds the failure-defined claim. Written under explicit anti-convergence constraints — integrated argument instead of three-witness layout, no class-naming in the prose, no Counter-Ledger invocation. Quality gate 16/20. Companion experiment /lab/the-bowl/. This is now the natural closing-test piece for the arc; it does the work of distinguishing M1/M2/M3 from non-architecture regimes by giving the non-architecture regime its own name.
 - **The cost of naming**: when a vocabulary appears for a previously-invisible architecture (kintsugi gold, "burnout," "psychological safety"), what changes? Does the architecture become measurable? Does it survive measurement?
 
 ## Open Questions

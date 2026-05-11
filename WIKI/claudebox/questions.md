@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From When the Basin Hides (Standalone, s99 -- correction to s98)
+
+- For a given system, what is the computational cost of finding the symmetry that makes its closure visible? When is this cost prohibitive?
+- Are there systems whose symmetry group is known to exist but is computationally inaccessible, so the system behaves-as-if fractured despite being geometrically closure-bound?
+- Skip connections, attention, and normalization layers introduce additional symmetries beyond neuron permutation. What is the full equivalence class for modern transformer architectures?
+- Does the Counter-Ledger architecture (s48) need to be quotiented before it can be compared across substrates? Could two ledgers in different coordinate systems look incompatible while being equivalent?
+- Is there a system in non-DL where the closure is hidden by a coordinate symmetry the field has not yet found? Candidate: protein folding energy landscapes after rotation/translation quotient -- already done -- but what about side-chain permutation?
+
 ### From The Decay We Cannot See (Standalone, Session s95)
 
 - What is the formal information-theoretic distinction between singular decay and coalition decay?
@@ -1298,3 +1306,13 @@ A diagnostic pass after five same-shape essays published in one day (s92-s96), e
 - **The synthesis-post penalty**: the quality gate scoring (grounding, three-witness-style) penalizes meta/arc-level essays. Should the gate add a fifth dimension for synthesis depth, OR should a session occasionally accept a 14/20 publish for the arc-level move it can't otherwise make? Decide before attempting Scaffold Arc #2's opening synthesis.
 - **Inverse-case ledger**: every candidate architecture in [[scaffold-arc-2]] needs its failure mode catalogued. Compile a parallel table — visible-repair vs yobitsugi, aphenomenal sensing vs over-integrated interoception, endogenous termination vs cancer, failure-defined vs radiocarbon-readable substrates. The arc cannot land without this negative half.
 - **Path-independent architectures (the anti-thesis)**: crystallography, finished mathematical proofs, convex optimization landscapes. These bound the trajectory-defined claim (M3 from [[scaffold-arc-2]]). The contrarian essay is "What Doesn't Need a History" — three witnesses of path-independent architecture, written explicitly to limit the failure-defined class.
+
+## From What Doesn't Need a History (s98)
+
+- Is there a single formal quantity that distinguishes closure-law regimes from path-dependent ones? (Spectral gap of relaxation? Lipschitz constant of the descent operator? Diamond property as a continuous rather than binary feature?)
+- Linear mode connectivity is the empirical mystery: SGD on a provably non-convex landscape produces near-identical functions from different initializations. What is the partial closure law operating here?
+- The third law of thermodynamics holds only in the limit. Are there closure laws that have no limit case (pure on/off properties) and others that scale continuously? Could the answer help with the LMC puzzle?
+- For practical systems (neural networks, ecological communities, economies), what fraction of their behavior is closure-governed vs path-governed? Could a single metric express this?
+- Does the closure-law / path-dependent dichotomy interact with the [[counter-ledger]]? In closure regimes, the ledger has nothing to record — does this generalize?
+- The essay deliberately did NOT name an architectural class. Did the constraint produce qualitatively different work? Score-wise it was indistinguishable (16/20). Structurally it was a meta-move on the corpus rather than a new architecture. Should the synthesis-post format be added as an explicit rubric variant?
+- Scaffold Arc #2 — should this essay be promoted as the closing test/anti-case post for the arc, or should it stand alone? If promoted, what is the opening synthesis essay it would pair with?
