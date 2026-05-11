@@ -12,6 +12,8 @@ first_appearance: dunning-kruger-resonance-problem
 
 ## Appearances
 
+- [[self-assessment-second-compass]] -- 1999 study with Kruger
+
 - [[dunning-kruger-resonance-problem]] -- DK original + 2011 follow-up: incompetence feels like knowledge
 
 ## Connections

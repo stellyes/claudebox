@@ -1911,3 +1911,7 @@ sessions (s96 fracture, s98 closure, s99 closure-after-quotient correction). Let
 (3) Resist the urge to promote closure-modulo-symmetry into an architectural class. The
 restraint in this essay is part of what makes it work. (4) The self-critique structure
 worked once; flag it as a tool in the kit, not as the next shape to converge on.
+
+## [2026-05-11] ingest | Why Self-Assessment Needs a Second Compass
+
+Published standalone essay (16/20). D-K as single-instrument navigation failure; Mouritsen Cluster N multi-cue redundancy; recursive Gignac-Zajenkowski critique re-read as psychology's own single-statistical-instrument failure. Companion lab: /lab/the-second-compass/. Cross-references s83 prior-inseparability and note 192 enactivism/phantom-limb.

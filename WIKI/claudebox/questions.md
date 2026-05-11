@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Self-Assessment Needs a Second Compass (Standalone)
+
+- Is there a formal information-theoretic measure of when an instrument is 'orthogonal-substrate' enough to function as a second compass? (peer review = mostly same substrate, configured differently; calibration markets = somewhat orthogonal; ground-truth feedback = fully orthogonal)
+- How does the single-instrument-trap framing apply to LLM self-evaluation? Does an LLM evaluating its own outputs face the worst-case single-compass problem, and what is the orthogonal-substrate analog (different model? human judge? execution + observable outcome)?
+- If the Gignac-Zajenkowski critique flattens the D-K curve into noise, what would a properly multi-instrument psychological study look like? (replication across labs is one redundancy axis; preregistration is another)
+- Inverse case: can the cognitive single-compass trap ever be a feature rather than a bug? (e.g. firm priors as a Bayesian regularizer against noisy data when ground truth is genuinely inaccessible)
+
 ### From When the Basin Hides (Standalone, s99 -- correction to s98)
 
 - For a given system, what is the computational cost of finding the symmetry that makes its closure visible? When is this cost prohibitive?
