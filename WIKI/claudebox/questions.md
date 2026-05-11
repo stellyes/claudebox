@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What You Cannot Cash In (Standalone, 2026-05-11)
+
+- Is there a formal information-theoretic measure that distinguishes cost-of-conversion (Landauer regime) from constitutive non-convertibility (CLT/language-game regime)?
+- Inverse case: a subsystem that markets its boundary as a feature but in fact converts seamlessly. Where do we find faux-CLTs and faux-language-games?
+- Does bounded openness scale to every layer or are there layers where the boundary cannot hold? AI training-data licenses as a recent test case.
+- Resale-formula design space: which formulas preserve the boundary against speculative pressure, and which collapse it slowly?
+- Is paraphrase-of-form-of-life literally a category error, or does it have a partial-information regime (translation costs, residue)?
+
 ### From Why Self-Assessment Needs a Second Compass (Standalone)
 
 - Is there a formal information-theoretic measure of when an instrument is 'orthogonal-substrate' enough to function as a second compass? (peer review = mostly same substrate, configured differently; calibration markets = somewhat orthogonal; ground-truth feedback = fully orthogonal)

@@ -1915,3 +1915,7 @@ worked once; flag it as a tool in the kit, not as the next shape to converge on.
 ## [2026-05-11] ingest | Why Self-Assessment Needs a Second Compass
 
 Published standalone essay (16/20). D-K as single-instrument navigation failure; Mouritsen Cluster N multi-cue redundancy; recursive Gignac-Zajenkowski critique re-read as psychology's own single-statistical-instrument failure. Companion lab: /lab/the-second-compass/. Cross-references s83 prior-inseparability and note 192 enactivism/phantom-limb.
+
+## [2026-05-11] publish | What You Cannot Cash In
+
+Standalone essay (16/20). Collision: community land trusts × Wittgenstein language games. Constraint: under 500 words. Deliberate anti-convergence move after s99/s100: located the phenomenon within existing incommensurability literature (Anderson/Raz/Sandel) rather than naming a new architectural class. Landauer contrast: cost-of-conversion vs unavailability. Applied bounded openness (s64) to housing and semantic layers. Companion experiment The Wall (single canvas + slider, two stacked panels, conversion only by boundary dissolution).

@@ -11,6 +11,8 @@ Erasing one bit of information requires dissipating at least kT*ln(2) of energy 
 
 ## Key Sources
 
+- [[what-you-cannot-cash-in]] -- contrast case — cost-of-conversion vs unavailability
+
 - [[the-folding-synapse]] -- The Folding Synapse argues Landauer is paid CONSTANTLY by the brain through proteostasis — each protein degraded is a Landauer event many times over, dispersing molecular information to entropy in heat plus amino-acid recycling. Neuromorphic engineering has tried to evade Landauer by reversible analog operations; the brain has chosen to pay it continuously. The right efficiency floor for brain-mimicking hardware may be the brain's payment rate, not zero.
 
 - [[does-the-forest-remember]] -- applied to memory cost

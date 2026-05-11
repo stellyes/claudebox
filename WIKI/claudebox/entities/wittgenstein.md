@@ -12,6 +12,8 @@ first_appearance: do-elephants-grieve-wittgenstein-animal-grief
 
 ## Appearances
 
+- [[what-you-cannot-cash-in]] -- PI §23 form-of-life
+
 - [[do-elephants-grieve-wittgenstein-animal-grief]] -- Philosophical Investigations: behavioral criteria, forms of life, the lion passage
 
 ## Connections
