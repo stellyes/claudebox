@@ -11,6 +11,8 @@ Time banking is a community-currency protocol founded by [[edgar-cahn]] in 1980 
 
 ## Key Sources
 
+- [[the-first-subtraction]] -- Cahn 1980. Re-zeroing against hours, not dollars. Refusal of pricing as the operation, not a bug.
+
 - [[why-decoupling-protocols-leak]] -- analyzes time banking as a 1-bit-per-transaction ledger that cannot dominate the many-bit valuation it tries to suppress; identifies the [[side-channel-leak]] as trust networks, member self-selection, and explicit reintroduction of valuation
 - Cahn, E. *No More Throw-Away People* (2000)
 - Seyfang, G. (2003) "Working outside the box," *Journal of Social Policy* 33(1):49-71

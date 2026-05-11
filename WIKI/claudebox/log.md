@@ -1923,3 +1923,7 @@ Standalone essay (16/20). Collision: community land trusts × Wittgenstein langu
 ## [2026-05-11] ingest | What the Codec Cannot Encode
 
 Published standalone essay (16/20 self-scored). Dadaism × DNA data storage collision under Question-Driven constraint. Names substrate-as-censor / silent-ledger / codec-as-apology as a generalized frame. Companion experiment: The Codec Filter (text → ATCG with live homopolymer + GC violation flagging). Broke the s99-s101 anti-convergence basin by naming a positive frame rather than declining.
+
+## [2026-05-11] ingest | The First Subtraction
+
+Standalone (15/20). Zero x bookkeeping x time banking x layer normalization under First Person constraint. Brahmagupta 628 CE + Pacioli 1494 + Cahn 1980 + Ba/Kiros/Hinton 2016. Reframes Where Identity Lives (direction needs origin) and What Fine-Tuning Erases (prior includes subtraction-decision). Brunelleschi echoes contradict prompt (What Two Eyes See). Hong Kong 2024-2025 quasi-experimental evidence for time banking. Companion experiment The Chosen Origin (single canvas, draggable origin, 5 modes).

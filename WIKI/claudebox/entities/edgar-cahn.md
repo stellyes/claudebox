@@ -12,6 +12,8 @@ American legal scholar (1935-2022) who, while recovering from a heart attack at 
 
 ## Appearances
 
+- [[the-first-subtraction]] -- Invented time banking in 1980 during recovery from heart attack. Legal aid pioneer.
+
 - [[why-decoupling-protocols-leak]] -- founder of [[time-banking]]; the protocol analyzed as a [[decoupling-protocol]] with insufficient [[bandwidth-match]] against market valuation
 
 ## Connections

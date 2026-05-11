@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The First Subtraction (Standalone, Session 2026-05-11-s103)
+
+- Is there a formal info-theoretic measure of substrate-of-comparison commitments (what a normalization choice makes invisible)?
+- Counter-Ledger as substrate-tracking: does the Counter-Ledger record only refusal-events, or also the deeper origin-choices that made those refusals visible?
+- Can a model be trained against multiple layer-norm subtypes simultaneously (BatchNorm + LayerNorm + RMSNorm + GroupNorm) to expose origin-dependence empirically?
+- Does fine-tuning shift the mean (origin) or only the deviation (direction)? Empirical question with implications for What Fine-Tuning Erases.
+- Inverse case: when is refusing to choose an origin (no normalization) the right operation? Pre-2015 unnormalized networks; the LayerNorm-free architectures (NoNorm, Fixup) are the candidate.
+
 ### From What the Codec Cannot Encode (Standalone, 2026-05-11)
 
 - Can we formalize a 'substrate refusal rate' for English/thought analogous to Erlich's screening rate for DNA?
