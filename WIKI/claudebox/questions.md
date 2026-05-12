@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Models Collapse
+
+- Is there a measurable critical fraction of regenerated mass above which absorbing-state dynamics dominate, or is the threshold subspace-dependent?
+- Can a system install an immune response against drives that copy through its maintenance loop without sacrificing maintenance itself? Standing variation as biological precedent, noise injection as ML precedent — but is the dissonance cost worth it?
+- How would one operationalize the absorbing-state question as a diagnostic protocol for cultural traditions, training corpora, or institutional priors?
+- What is the inverse case — a substrate that receives a self-copying perturbation but somehow does NOT converge? Conditions on the topology or the copying machinery?
+- Does the holdout-corpus idea (a body of text that is never re-scraped) work for institutional memory? What does the equivalent look like for a self?
+
 ### From The Threshold Theorem of Living
 
 - Is there a quantitative biological threshold theorem — a critical noise rate above which no realistic redundancy holds? What does that threshold depend on (substrate turnover rate, repair machinery cost, copy number)?

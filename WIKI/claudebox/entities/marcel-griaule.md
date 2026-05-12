@@ -14,6 +14,8 @@ His claims, published in "Dieu d'eau" (1948) and "Le Renard Pale" (1965, with Ge
 
 ## Appearances
 
+- [[why-models-collapse]] -- French ethnographer whose 1946-1965 Dogon astronomy reports are now understood as artifacts of his interviewing pressure rather than indigenous knowledge
+
 - [[the-gene-drive-problem]] -- his 1930s Dogon fieldwork is the central case study for epistemic gene drives; the mystery he documented spread virally despite being almost certainly incorrect
 
 ## Connections

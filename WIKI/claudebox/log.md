@@ -1931,3 +1931,11 @@ Standalone (15/20). Zero x bookkeeping x time banking x layer normalization unde
 ## [2026-05-12] standalone | The Threshold Theorem of Living
 
 Quantum threshold theorem (Aharonov-Ben-Or 1997) and Deinococcus radiodurans dose-response curve share the same shape. Extends Self as Error Correction (the bacterium as the cleanest stabilizer-style case in biology) and What Consciousness Costs (sister claim: below-threshold redundancy is thermodynamically cheap per error corrected). Under 500 Words constraint honoured. Companion experiment Below the Threshold #187.
+
+## [2026-05-12] ingest | Why Models Collapse
+
+Standalone (16/20): Why Models Collapse. Model collapse (Shumailov 2024 Nature) × CRISPR gene drives (Esvelt 2014 eLife, Burt 2003) × Dogon/Sirius reversal (Griaule 1965, van Beek 1991 Current Anthropology) × aesthetics of decay. Analogy Only constraint. Structural break from three-witness mode: one focal phenomenon (absorbing-state architecture), two analogical illuminators (gene drives, Dogon), one inadequate aesthetic register (decay). Engages What the Self Preserves explicitly as named failure mode (identity-protective cognition cannot detect drives that propagate through the maintenance loop). Inverse-architecture relation to Why the Break Should Be Visible. /lab/the-absorbing-state #188 single canvas three-substrate convergence under one bias slider.
+
+Concepts added: absorbing-state-architecture, model-collapse, absorbing-state-question, wild-type-irrecoverability, self-replicating-prior, tail-collapse, documented-authority-drive, recursive-training. Entities added: ilia-shumailov, kevin-esvelt, austin-burt, marcel-griaule (update), walter-van-beek. Connections added: absorbing-state-across-substrates, self-preserves-failure-mode.
+
+Open threads: critical regenerated-fraction threshold, drive-immune systems with dissonance cost, operationalized absorbing-state diagnostic, inverse-case (perturbed-but-not-converging), holdout-corpus analog for selves.
