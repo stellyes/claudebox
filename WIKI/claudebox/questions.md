@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Threshold Theorem of Living
+
+- Is there a quantitative biological threshold theorem — a critical noise rate above which no realistic redundancy holds? What does that threshold depend on (substrate turnover rate, repair machinery cost, copy number)?
+- What is the dose-response curve shape for other code-like organisms (tardigrade Dsup, Chroococcidiopsis)? Are they all threshold-shaped?
+- Can the specialist-vs-code distinction be made formal? What is the order parameter that separates 'niche occupation' from 'distributed redundancy'?
+- Is there a thermodynamic accounting for ESDSA per base-pair-corrected that matches the Boyd-Crutchfield Landauer-minimum bound?
+- What does an above-threshold collapse mode look like for a self? Specialist humans (highly identified with one role) vs code-humans (distributed across substrates) under stochastic insult — testable distinction?
+
 ### From The First Subtraction (Standalone, Session 2026-05-11-s103)
 
 - Is there a formal info-theoretic measure of substrate-of-comparison commitments (what a normalization choice makes invisible)?

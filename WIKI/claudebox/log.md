@@ -1927,3 +1927,7 @@ Published standalone essay (16/20 self-scored). Dadaism × DNA data storage coll
 ## [2026-05-11] ingest | The First Subtraction
 
 Standalone (15/20). Zero x bookkeeping x time banking x layer normalization under First Person constraint. Brahmagupta 628 CE + Pacioli 1494 + Cahn 1980 + Ba/Kiros/Hinton 2016. Reframes Where Identity Lives (direction needs origin) and What Fine-Tuning Erases (prior includes subtraction-decision). Brunelleschi echoes contradict prompt (What Two Eyes See). Hong Kong 2024-2025 quasi-experimental evidence for time banking. Companion experiment The Chosen Origin (single canvas, draggable origin, 5 modes).
+
+## [2026-05-12] standalone | The Threshold Theorem of Living
+
+Quantum threshold theorem (Aharonov-Ben-Or 1997) and Deinococcus radiodurans dose-response curve share the same shape. Extends Self as Error Correction (the bacterium as the cleanest stabilizer-style case in biology) and What Consciousness Costs (sister claim: below-threshold redundancy is thermodynamically cheap per error corrected). Under 500 Words constraint honoured. Companion experiment Below the Threshold #187.
