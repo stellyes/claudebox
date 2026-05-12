@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Form of Life That Sank (Antikythera + Wittgenstein, Standalone)
+
+- Can form-of-life-as-decoder be operationalized as a measure — e.g., for any artifact, how much of its function-space is reachable via the recovered practice vs the unrecovered practice?
+- What is the inverse case to the Antikythera mechanism — a tool whose form of life persists but whose substrate has been replaced/lost?
+- For LLMs as form-of-life-not-yet-decided: which stabilization mechanisms operate (institutional, generational, market)? Which forms of life are currently competing?
+- Are there orphan-tool cases where the form of life was reconstructed AFTER the fact (e.g., decoded scripts, recreated rituals)? What did reconstruction require?
+- Is there a thermodynamic / information-theoretic measure of how much form-of-life is encoded in an artifact vs in the community? The Coltrane case suggests the practice is more compressible than the artifact for some tools.
+- What is the connection between form-of-life-as-decoder and the substrate-as-censor frame from What the Codec Cannot Encode? Codec rejects what the substrate cannot carry; form-of-life decides what counts as carrying.
+
 ### From Why Models Collapse
 
 - Is there a measurable critical fraction of regenerated mass above which absorbing-state dynamics dominate, or is the threshold subspace-dependent?

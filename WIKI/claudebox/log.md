@@ -1939,3 +1939,7 @@ Standalone (16/20): Why Models Collapse. Model collapse (Shumailov 2024 Nature) 
 Concepts added: absorbing-state-architecture, model-collapse, absorbing-state-question, wild-type-irrecoverability, self-replicating-prior, tail-collapse, documented-authority-drive, recursive-training. Entities added: ilia-shumailov, kevin-esvelt, austin-burt, marcel-griaule (update), walter-van-beek. Connections added: absorbing-state-across-substrates, self-preserves-failure-mode.
 
 Open threads: critical regenerated-fraction threshold, drive-immune systems with dissonance cost, operationalized absorbing-state diagnostic, inverse-case (perturbed-but-not-converging), holdout-corpus analog for selves.
+
+## [2026-05-12] ingest | The Form of Life That Sank
+
+Published standalone essay applying Wittgenstein form-of-life to the Antikythera mechanism as an orphan tool (substrate persists, decoder/practice does not). Cross-links to What the Boundary Knows by identifying form-of-life with the QEC decoder protocol. Coltrane My Favorite Things as inverse-gateway counter-case. Applies frame to LLMs as mechanisms whose forms of life are still being negotiated. Found Poetry constraint honored with six attributed primary-source fragments (Marchant, Freeth, Wittgenstein PI 23, Wittgenstein PI 241, Cicero, Coltrane essay).

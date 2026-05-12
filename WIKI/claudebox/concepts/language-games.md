@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-form-of-life-that-sank]] -- family resemblance to form of life — speaking is part of an activity
+
 - [[what-you-cannot-cash-in]] -- primary case
 
 ## Tensions and Contradictions

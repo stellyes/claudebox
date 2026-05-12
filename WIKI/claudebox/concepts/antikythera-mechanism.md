@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-form-of-life-that-sank]] -- central case — substrate-without-decoder
+
 - [[what-the-bronze-forgot]] -- Canonical integrator: 30 bronze gears, eclipse predictions, lineage collapse without trace.
 
 - [[participatory-knowledge-antikythera]] -- primary case study — gear teeth as physical instances of astronomical ratios

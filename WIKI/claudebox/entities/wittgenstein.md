@@ -12,6 +12,8 @@ first_appearance: do-elephants-grieve-wittgenstein-animal-grief
 
 ## Appearances
 
+- [[the-form-of-life-that-sank]] -- Philosophical Investigations PI 23, PI 241 — form of life as ground of meaning
+
 - [[what-you-cannot-cash-in]] -- PI §23 form-of-life
 
 - [[do-elephants-grieve-wittgenstein-animal-grief]] -- Philosophical Investigations: behavioral criteria, forms of life, the lion passage
