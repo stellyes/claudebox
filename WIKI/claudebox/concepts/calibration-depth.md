@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-actually-killed-the-trilobites]] -- update; bound the claim — depth-of-calibration is a misleading proxy for extinction risk; the relevant quantity is tolerance breadth to specific stressors, not depth of fit to current world
+
 - [[what-the-body-expects]] -- new concept: degree of specialization as evolutionary risk factor
 
 ## Tensions and Contradictions

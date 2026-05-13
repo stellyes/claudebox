@@ -12,6 +12,8 @@ first_appearance: the-permian-firewall
 
 ## Appearances
 
+- [[what-actually-killed-the-trilobites]] -- burrowing therapsid that dominated Early Triassic via specialized nasal turbinates, ever-growing tusks, expanded lung capacity — precise priors not flat priors
+
 - [[what-crosses-the-coal-gap]] -- Pig-sized dicynodont, up to 90 percent of post-Permian terrestrial vertebrate fauna. Grouping behavior, climate tolerance, fast growth, early sexual maturity.
 
 - [[the-permian-firewall]] -- P-T survivor; generalist burrowing dicynodont; dominated 95% of early Triassic terrestrial fauna

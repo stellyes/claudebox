@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Actually Killed the Trilobites (self-critique of What the Body Expects)
+
+- Can the body-as-prior metaphor be salvaged at population-level Bayesian models of selection (e.g., Price equation as inference)?
+- Does the flat-prior intuition for ML distribution shift correspond to any actual measurable property of neural networks, or is it folk biology there too?
+- What is the inverse case — a mass extinction whose selectivity WAS predicted by generalism rather than physiology?
+- How should the existing corpus essays that use the body-as-prior metaphor (What the Body Expects, What the Self Preserves) be footnoted or qualified given this correction?
+
 ### From The Medium Is the Permission Structure (constraint-free control essay)
 
 - What does the source-axis vs signal-axis distinction predict for cryptographic systems (which look like source-axis but have signal-axis components)?
