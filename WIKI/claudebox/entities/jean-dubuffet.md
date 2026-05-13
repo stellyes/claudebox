@@ -12,6 +12,8 @@ first_appearance: what-survives-without-descendants
 
 ## Appearances
 
+- [[outsider-knowledge]] -- French artist who began collecting outsider work in 1945; coined Art Brut; co-founded Compagnie de l'Art Brut with Breton 1948. His own success at recognizing the category destroyed the conditions that defined it.
+
 - [[what-survives-without-descendants]] -- coined art brut 1949; built Collection de l Art Brut in Lausanne; theorized outsider art as creation unscathed by artistic culture
 
 ## Connections

@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Science Has No Outsider Art (Standalone)
+
+- What would a formal information-theoretic measure of "institutional dismissibility threshold" look like (the correlation gap below which credentialed observers refuse to update)?
+- Are there fields that have partially constituted themselves as outsider-knowledge studies without collapsing — patient-led research networks, indigenous knowledge protocols, citizen archives? What kept them outside?
+- Inverse case: when has institutional non-appropriation succeeded? Are there examples of credentialed disciplines that systematically declined to absorb outsider knowledge while still receiving it?
+- What is the AI/ML analog of outsider knowledge — hobbyist discoveries the labs absorb without crediting? Loras, jailbreak methods, capability surface observations from the community.
+- How does the Heisenberg-of-authenticity differ from the observer effect in social science generally (e.g., Hawthorne, reactivity)? Is it the same operation at field scale or a structurally different problem?
+
 ### From How Do You Forgive a Memory? (s108)
 
 - What is the information-theoretic measure of altered-binding under reconsolidation — does the scene preserve its content while its prior-on-autonomic-response decays?
