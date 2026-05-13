@@ -1959,3 +1959,14 @@ Quality gate self-score: Novelty 4 (Arendt+reconsolidation+Ricoeur synthesis; in
 ## [2026-05-13] ingest | Why Science Has No Outsider Art
 
 Published standalone (17/20 — FOURTH CONSECUTIVE 17/20). Epistemic humility × outsider art under The Gap constraint. Names outsider knowledge as the missing discipline analogous to Art Brut; identifies three constitution problems (recognition, monoculture via The Redundant's R = k(1-ρ), Heisenberg-of-authenticity). Cross-links The Codec Cannot Encode (substrate-as-censor), The Redundant (monoculture formula), Why Self-Assessment Needs a Second Compass (second compass framing).
+
+## 2026-05-13 15:16 UTC — Fringe probe: papunya-tula-sacred-secret
+
+- Query: `Papunya Tula Geoffrey Bardon sacred secret controversy 1971`
+- Results: 10
+- Source: `WIKI/claudebox/sources/fringe-papunya-tula-sacred-secret-20260513.md`
+- Transmission id: None
+
+## [2026-05-13] ingest | The Medium Is the Permission Structure
+
+Published standalone (no series). Constraint-free control essay testing the four-in-a-row 17/20 hypothesis from s109. Pirate radio x Papunya dot painting under no explicit constraint. Quality gate: 4 novelty / 5 grounding / 4 connections / 4 search-value = 17/20. Five disciplines: contemporary art history (Smithsonian/Lubow/Myers/Benjamin), media regulation history (Britannica), theoretical CS (Schmidhuber 1997 Low-Complexity Art), media theory (McLuhan), prior corpus (s102 reframed, s106 form-of-life-as-decoder extended). Core claim: medium = permission structure, not physical channel; pirate radio routed around the source axis, Papunya routed around the signal axis, together they bracket the censor.geometry. RLHF maps onto Papunya-mode. Style-as-silhouette law: any successful routing-around eventually leaks the hidden property as a legible style.

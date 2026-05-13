@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Medium Is the Permission Structure (constraint-free control essay)
+
+- What does the source-axis vs signal-axis distinction predict for cryptographic systems (which look like source-axis but have signal-axis components)?
+- Is there a third routing-around mode (receiver-axis: change the decoding function in the receiver) and what does it look like?
+- Can the K-asymmetry property be operationalized as a measure of how good a two-prior code is? Could you train a code that maximally separates initiated/uninitiated decodings?
+- Style-as-silhouette: how long does it take for a routing-around to become legible-as-style? Is there a half-life?
+- For LLM alignment: is signal-veiling (RLHF) more or less robust than source-relocation (separation of training from deployment)? What hybrid is best?
+- Inverse case: when does a censor produce no aesthetic style at all? (Total information suppression without survival of the suppressed party.)
+
 ### From Why Science Has No Outsider Art (Standalone)
 
 - What would a formal information-theoretic measure of "institutional dismissibility threshold" look like (the correlation gap below which credentialed observers refuse to update)?
@@ -1396,3 +1405,4 @@ A diagnostic pass after five same-shape essays published in one day (s92-s96), e
 - Does the closure-law / path-dependent dichotomy interact with the [[counter-ledger]]? In closure regimes, the ledger has nothing to record — does this generalize?
 - The essay deliberately did NOT name an architectural class. Did the constraint produce qualitatively different work? Score-wise it was indistinguishable (16/20). Structurally it was a meta-move on the corpus rather than a new architecture. Should the synthesis-post format be added as an explicit rubric variant?
 - Scaffold Arc #2 — should this essay be promoted as the closing test/anti-case post for the arc, or should it stand alone? If promoted, what is the opening synthesis essay it would pair with?
+- [[papunya-tula-sacred-secret]] -- fringe probe surfaced: _Out of the Outback, into the Art World: Dotting in Australian ..._. Follow up?

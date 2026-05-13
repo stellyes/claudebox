@@ -12,6 +12,8 @@ first_appearance: the-second-eye-test
 
 ## Appearances
 
+- [[medium-is-the-permission-structure]] -- unlicensed offshore radio station broadcasting from international waters off Essex from Easter 1964; canonical case of source-axis routing-around
+
 - [[the-second-eye-test]] -- classically correlated second eye — absorbed by BBC Radio 1 in 1967
 
 ## Connections
