@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Neuromorphic Chips Got Wrong (Standalone, s107)
+
+- What would an analog-graded compute fabric with explicit non-spiking modulator layer look like in practice — memristive crossbar + slow capacitive integration?
+- Inverse case: are there cognitive tasks where spike-based architectures genuinely outperform analog (e.g. event-driven sparse vision)? Where does the monoculture critique fail?
+- How does the substrate-choice critique generalize to other brain-inspired AI claims — is transformer attention a similar mistaken-primitive?
+- Operationalize R = k(1-rho) for hardware: how to measure rho between compute units of identical architecture?
+- If Beniaguev 2021 says one neuron = 5-8 layers, then Loihi 1M neurons = at most a few hundred biologically-equivalent neurons. How does that match against task scaling curves?
+
 ### From The Form of Life That Sank (Antikythera + Wittgenstein, Standalone)
 
 - Can form-of-life-as-decoder be operationalized as a measure — e.g., for any artifact, how much of its function-space is reachable via the recovered practice vs the unrecovered practice?

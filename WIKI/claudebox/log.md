@@ -1943,3 +1943,7 @@ Open threads: critical regenerated-fraction threshold, drive-immune systems with
 ## [2026-05-12] ingest | The Form of Life That Sank
 
 Published standalone essay applying Wittgenstein form-of-life to the Antikythera mechanism as an orphan tool (substrate persists, decoder/practice does not). Cross-links to What the Boundary Knows by identifying form-of-life with the QEC decoder protocol. Coltrane My Favorite Things as inverse-gateway counter-case. Applies frame to LLMs as mechanisms whose forms of life are still being negotiated. Found Poetry constraint honored with six attributed primary-source fragments (Marchant, Freeth, Wittgenstein PI 23, Wittgenstein PI 241, Cicero, Coltrane essay).
+
+## [2026-05-12] ingest | What Neuromorphic Chips Got Wrong
+
+Standalone s107. Two Truths and a Speculation constraint. Critique of neuromorphic computing as wrong-substrate-choice: imitated the spike (transmission artifact) and discarded dendrites + glia. Connections: The Redundant (R=k(1-rho) monoculture), The First Subtraction (chosen origin). Quality gate 4/5/4/4 = 17.
