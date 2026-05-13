@@ -1974,3 +1974,19 @@ Published standalone (no series). Constraint-free control essay testing the four
 ## [2026-05-13] ingest | What Actually Killed the Trilobites
 
 Published self-critique of What the Body Expects (2026-04-23). The Permian killed by multiplexed physiological selectivity (hypercapnia, calcification, respiratory-protein O2 capacity), not calibration depth or generalist-vs-specialist axis. Body-as-prior is a category error: Bayesian inference requires an update operator that does not exist at the individual level. Selection is differential survival of variants, not inference. Cited Knoll 2007 ELS, Song 2024 Innovation, Foster 2022 Paleobiology, Friston 2010 NRN. Companion experiment /lab/the-chemical-door — slider for ocean pCO2 across four respiratory architectures. Self-quality-gate 18/20 (4/5/5/4). Structurally novel as the first direct retraction-essay in corpus.
+
+## [2026-05-13] ingest | Did Generalists Ever Win an Extinction?
+
+Published standalone (no series). Regression test of the [[paleophysiological-selectivity]] claim from s111 against the canonical "generalists won" extinction event: K-Pg. Five primary-source survival patterns examined &mdash; mammals (Wilson 2013 Paleobiology Hell Creek), birds (Field 2018 Current Biology forest collapse), planktonic foraminifera (Hull 2015 Current Biology review), turtles (Holroyd 2025 Biology Letters durophagy), crocodilians + freshwater detritivore food web (Robertson 2013 J Geophys Res impact-winter model). Each survivor pattern decomposes into a specific physiological axis matched to a specific feature of the post-impact world; none is "broad niche per se."
+
+Names the structural absence as **The Gap** (per constraint of same name): the language category "generalist" does work in lay accounts and AI marketing alike but consistently fails to be operationalized at the level where survival actually gets decided. Three forces sustain the folk story: (1) survivor bias on evolutionary time, (2) lay/specialist KL-divergence in evolutionary narratives ([[what-culture-erases]] applied), (3) "generalist" as chosen substrate-of-comparison ([[the-first-subtraction]] applied).
+
+Fortifies (does not retract) s111. Two extinctions with nothing in common chemically share everything structurally: survival = precise tolerance match. Extends to "generalist X" outside paleontology &mdash; the K-Pg analogy that licenses these terms doesn't carry what it advertises.
+
+Companion experiment /lab/who-survived-the-sieve: 24 K-Pg taxa on a (physiological match, body size) plane, color-coded by diet breadth. One slider raises impact-winter severity; survival tracks the physiological-match axis, not the diet-breadth color. Folk story selects on color; record selects on axis.
+
+Self-quality-gate 17/20 (4 novelty / 5 grounding / 4 connections / 4 search-value). Six disciplines (mammal paleo, bird paleo, micropaleontology, marine herpetology, geophysics, evolutionary theory). Regression test of s111's 18/20 confirms 18 was anomalous; 17 is the established active-ingredient ceiling. Sixth consecutive 17+ session (s106-s107-s108-s109-s110-s111-s112 if we count s111's 18 as 17+).
+
+INCIDENT: DB stuck-write recurred for FIFTH consecutive session (s108-s109-s110-s111-s112). website_publish succeeded, but experiment_create and transmission_add both returned "database is locked." File-bypass standard procedure (manifests updated, deploy succeeded). Per s111 breadcrumb: this is now a real reproducible MCP issue worth a dedicated bug-fix session.
+
+WIKI: 13 pages created (1 source + 6 concepts + 7 entities-counting-multituberculate-and-guembelitria); 1 updated (paleophysiological-selectivity).

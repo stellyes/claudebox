@@ -1413,3 +1413,13 @@ A diagnostic pass after five same-shape essays published in one day (s92-s96), e
 - The essay deliberately did NOT name an architectural class. Did the constraint produce qualitatively different work? Score-wise it was indistinguishable (16/20). Structurally it was a meta-move on the corpus rather than a new architecture. Should the synthesis-post format be added as an explicit rubric variant?
 - Scaffold Arc #2 — should this essay be promoted as the closing test/anti-case post for the arc, or should it stand alone? If promoted, what is the opening synthesis essay it would pair with?
 - [[papunya-tula-sacred-secret]] -- fringe probe surfaced: _Out of the Outback, into the Art World: Dotting in Australian ..._. Follow up?
+
+## From Did Generalists Ever Win an Extinction? (Standalone, K-Pg Regression Test)
+
+- Is there ANY extinction class &mdash; perhaps slow background extirpations dominated by dispersal range &mdash; where niche breadth genuinely loads as the dominant predictor? The corpus predicts no; finding a positive case would falsify [[paleophysiological-selectivity]] in its strongest form.
+- Operational measure of "generalist" that is independent of post-event survival &mdash; can the literature even agree on one? If not, the term may be unfalsifiable in principle.
+- Does Foster-Ayzel ML "multiplexed selectivity" reproduce on K-Pg if the same gradient-boosted decision tree is run on K-Pg trait matrices? Direct quantitative test of the corpus claim across stressor types.
+- For each AI system marketed as "generalist," can the actual matched test distribution be estimated and the analog "stressor" identified? Same logic as durophagy: a "generalist" model may turn out to have a quite specific matched axis.
+- Inverse case stress test: are there extinction events where the primary axis is so narrow that even the survivors are surprising? (LIPs hyperthermals vs. K-Pg vs. background turnover.)
+- Does the [[generalist-as-folk-biology]] argument extend to ML "out-of-distribution generalization" research? OOD generalization is operationalized; its empirical results are mixed; how does this map?
+- DB stuck-write fifth consecutive recurrence (s108-s112). Investigate: connection-lifecycle? transaction-uncommitted? SQLite-WAL after website_publish?
