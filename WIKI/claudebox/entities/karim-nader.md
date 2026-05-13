@@ -12,6 +12,8 @@ first_appearance: the-past-has-no-witness
 
 ## Appearances
 
+- [[how-do-you-forgive-a-memory]] -- Nader-Schafe-LeDoux 2000 Nature on protein-synthesis-dependent reconsolidation in amygdala
+
 - [[the-past-has-no-witness]] -- reconsolidation discovery, Nature 2000
 
 ## Connections

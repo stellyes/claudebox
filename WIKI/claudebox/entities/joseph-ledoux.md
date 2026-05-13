@@ -12,6 +12,8 @@ first_appearance: the-past-has-no-witness
 
 ## Appearances
 
+- [[how-do-you-forgive-a-memory]] -- co-author Nader 2000 and Schiller 2010
+
 - [[the-past-has-no-witness]] -- amygdala fear circuitry; senior author Nader 2000
 
 ## Connections

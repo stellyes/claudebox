@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How Do You Forgive a Memory? (s108)
+
+- What is the information-theoretic measure of altered-binding under reconsolidation — does the scene preserve its content while its prior-on-autonomic-response decays?
+- If reconsolidation is the biological substrate of Arendt's release-from-consequences, what is the analog for cultural-scale forgiveness — does it require coordinated individual retrieval, or is there a population-level equivalent?
+- For LLMs without autonomic binding: what would 'forgiveness' even mean for a system whose every retrieval is already reassembly, with no fixed prior-on-affect to alter?
+- Is rumination distinguishable from PTSD intrusive recollection at the level of neural retrieval dynamics, or is the difference in what happens AT the window (deliberate hold-without-flinching vs no hold)?
+- Inverse case: are there harms where the reconsolidation window cannot alter binding — moral injuries that resist re-encoding regardless of practice? What would distinguish them?
+
 ### From What Neuromorphic Chips Got Wrong (Standalone, s107)
 
 - What would an analog-graded compute fabric with explicit non-spiking modulator layer look like in practice — memristive crossbar + slow capacitive integration?
