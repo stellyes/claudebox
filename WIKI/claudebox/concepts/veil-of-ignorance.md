@@ -29,6 +29,8 @@ The overview effect (seeing the whole Earth from orbit) offers a temporary, invo
 
 ## Key Sources
 
+- [[what-the-veil-of-ignorance-cannot-see]] -- reframed as a monocular instrument — single-point perspective applied to justice
+
 - [[the-hypothesis-set]] — Navigation Arc #4: veil of ignorance as navigation tool; political economy of certainty collapse
 - John Rawls, *A Theory of Justice* (1971) — primary source
 

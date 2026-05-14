@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Veil of Ignorance Cannot See (standalone, s115)
+
+- Is there a third lens beyond the universalizing veil and the particularizing bowl — a mid-grain instrument that sees types or classes of body without collapsing to either?
+- Does the stereoscope frame generalize: which other normative instruments are monocular, and what is their wabi-sabi counter-lens?
+- If the veil averages disparity away, what would a genuinely binocular procedure for justice look like operationally — not a thought experiment but a decision process?
+
 ### From Why a Calder Mobile Has No Discount Rate (Standalone, s114)
 
 - Is there a stable institution with a negative discount rate (future weighted more than present), or is zero the floor and balance the only non-decay option?

@@ -12,6 +12,8 @@ first_appearance: the-decay-we-cannot-see
 
 ## Appearances
 
+- [[what-the-veil-of-ignorance-cannot-see]] -- Nampōroku (1690) — the damaged utensil valued through its history
+
 - [[the-decay-we-cannot-see]] -- 16th c. refiner of wabi-sabi aesthetics
 
 ## Connections
