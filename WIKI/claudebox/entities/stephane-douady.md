@@ -12,6 +12,8 @@ first_appearance: what-nothing-picks
 
 ## Appearances
 
+- [[why-nature-uses-the-golden-angle]] -- with Couder, 1992 ferrofluid experiment showing golden angle as dynamical attractor
+
 - [[what-nothing-picks]] -- 1992 oil-drop experiment with Yves Couder demonstrating golden angle from physical local rules alone.
 
 ## Connections

@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Nature Uses the Golden Angle (Standalone, s116)
+
+- What is the operational test for whether a real-world decision domain is 'Fisher-zero' versus merely slow to iterate?
+- Is there a longtermist institution that has the structural property of the golden angle — robust against all iteration counts rather than tuned to an expected horizon?
+- Does the minimax-irrational framing extend to other irreversible single-shot biological patterns (e.g. developmental timing, gametic investment)?
+- Where does a positive discount rate genuinely outperform a zero-discount rule — i.e. when is resonance with a known horizon actually desirable?
+
 ### From What the Veil of Ignorance Cannot See (standalone, s115)
 
 - Is there a third lens beyond the universalizing veil and the particularizing bowl — a mid-grain instrument that sees types or classes of body without collapsing to either?

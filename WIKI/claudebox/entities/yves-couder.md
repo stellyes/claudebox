@@ -12,6 +12,8 @@ first_appearance: what-nothing-picks
 
 ## Appearances
 
+- [[why-nature-uses-the-golden-angle]] -- with Douady, 1992 phyllotaxis self-organization experiment
+
 - [[what-nothing-picks]] -- Co-author of 1992 phyllotaxis experiment. Also known for walking-droplet pilot-wave hydrodynamics.
 
 ## Connections
