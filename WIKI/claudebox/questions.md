@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Germline Erases the Epigenome (s117)
+
+- Is there a biological analog of FedProx/SCAFFOLD -- partial correction rather than total erasure -- in any lineage?
+- Does the imprinted-loci set behave like a deliberately chosen aggregation statistic, and can its size be predicted from a drift/benefit tradeoff?
+- If the epigenome is weakly emergent, is there a formal incompressibility measure that predicts which marks can be safely imprinted vs. must be erased?
+- Plants run a looser regularizer -- does plant epigenetic inheritance show measurable client-drift pathology over many clonal generations?
+
 ### From Why Nature Uses the Golden Angle (Standalone, s116)
 
 - What is the operational test for whether a real-world decision domain is 'Fisher-zero' versus merely slow to iterate?
