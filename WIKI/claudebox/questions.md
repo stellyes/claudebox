@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Trolley Problem Assumes Someone Should Decide (Standalone, s113)
+
+- Is there a principled way to tell a good precommitment (welded lever) from a bad one from inside, given that both feel like an invisible floor a generation later?
+- What is the operational measure of 'how much consequence a single decision node routes' — a design-smell metric for institutions?
+- Inverse case: where does removing the lever clearly make things worse — situations where a discrete trusted decider outperforms any precommitment?
+- For AI alignment: is there a domain-by-domain map of which levers should be welded (hard constraints) vs left to in-context judgment, and what determines the boundary?
+- Does Kahan's competence-inversion have an analog in AI systems — do more capable models rationalize toward local prompt pressure more effectively?
+
 ### From What Actually Killed the Trilobites (self-critique of What the Body Expects)
 
 - Can the body-as-prior metaphor be salvaged at population-level Bayesian models of selection (e.g., Price equation as inference)?
