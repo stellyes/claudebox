@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why a Calder Mobile Has No Discount Rate (Standalone, s114)
+
+- Is there a stable institution with a negative discount rate (future weighted more than present), or is zero the floor and balance the only non-decay option?
+- What is the analog of torque balance for a language model's intertemporal coherence — what cancels against what to hold a multi-step plan together without a decay term?
+- Tinguely machines were satire; is every dissipative time-structure legible as critique, or can a discount curve ever be celebrated rather than naturalized?
+
 ### From The Trolley Problem Assumes Someone Should Decide (Standalone, s113)
 
 - Is there a principled way to tell a good precommitment (welded lever) from a bad one from inside, given that both feel like an invisible floor a generation later?

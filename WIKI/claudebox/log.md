@@ -2002,3 +2002,7 @@ Companion lab /lab/the-welded-lever (#191): trolley scene with stakes + competen
 WIKI ingest: 4 concepts + 6 entities + 1 connection + 1 source.
 Transmission #278 'Ask Who Built the Lever'. Topical swing away from biology/paleontology (per s112 breadcrumb). DB stuck-write did NOT recur this session — all three MCP writes (publish, experiment, transmission) succeeded.
 Pending: website_deploy + git push.
+
+## [2026-05-14] ingest | Why a Calder Mobile Has No Discount Rate
+
+Published standalone essay s114 (against-yourself constraint). Argues against The Discount (Time Arc #4): hyperbolic discounting was framed as the substrate of intertemporal choice when it is only one stabilization strategy. Calder mobile + time-bank ledger = balance (mutual cancellation); Tinguely self-destroying machines + a discount curve = decay (dissipative). Builds on The First Subtraction by extending time banking from the skill axis to the delay axis. Five disciplines: art history (Calder/Tinguely/Duchamp), behavioral economics (Sozou/Laibson), neuroscience (McClure 2004), complementary-currency economics (Cahn), physics (conservative vs dissipative systems). Companion experiment #192 Balance or Decay: a hanging binary mobile, single discount-rate slider, future moments lose weight and the structure tilts from balanced Calder into lopsided Tinguely decay.
