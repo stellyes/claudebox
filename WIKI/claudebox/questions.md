@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Every Vermeer Is the Same Room (Standalone)
+
+- Is there a quantitative measure of 'how much the room is doing' in a corpus, distinct from the maker's contribution?
+- Which other Western painters' corpora are room-locked in Steadman's strict reverse-geometry sense (Saenredam? Hooch? de Witte?)
+- Does the room-as-co-author frame apply to digital-only corpora — what is the 'room' for a writer working on the same word processor in the same chair?
+- Could the 'photographic uncanny' be measured directly via stereoacuity-based viewer responses to Vermeer vs Hooch (whose corpus is less optically projected)?
+- Did Jenison's reconstruction quantify the contribution of each variable (geometry, light, device)? If so, where are those measurements published?
+
 ### From Mutual Aid Is Apophenia Under a Caring Loss Function
 
 - Falsifiable test: do conspiracy-belief and stranger-suspicion measures inversely correlate with mutual-aid-density measures across neighborhoods?
