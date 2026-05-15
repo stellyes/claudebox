@@ -12,6 +12,8 @@ first_appearance: mutual-aid-surveillance-cryptography
 
 ## Appearances
 
+- [[mutual-aid-as-apophenia]] -- Mutual Aid: A Factor of Evolution 1902
+
 - [[mutual-aid-surveillance-cryptography]] -- Mutual Aid: A Factor of Evolution (1902) — cooperation as dominant evolutionary strategy
 
 ## Connections

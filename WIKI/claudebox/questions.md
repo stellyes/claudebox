@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Mutual Aid Is Apophenia Under a Caring Loss Function
+
+- Falsifiable test: do conspiracy-belief and stranger-suspicion measures inversely correlate with mutual-aid-density measures across neighborhoods?
+- Has EMT ever been formally extended to a model of anticipatory prosocial helping with explicit loss function? (Apparent gap)
+- Can the Korbak posterior shift be operationalized as a measurable parameter in an RLHF system's helpfulness vs caution trade-off?
+- What would a 'caring loss function' look like as an explicit RLHF reward design — and would the resulting model knock on the porch-light door?
+- Disaster-communitas as natural experiment: do threshold proxies shift measurably during/after disaster onset?
+
 ### From Why the Germline Erases the Epigenome (s117)
 
 - Is there a biological analog of FedProx/SCAFFOLD -- partial correction rather than total erasure -- in any lineage?

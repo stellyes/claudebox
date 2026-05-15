@@ -12,6 +12,8 @@ first_appearance: what-loves-the-heat
 
 ## Appearances
 
+- [[mutual-aid-as-apophenia]] -- Korbak et al. 2022 RLHF=Bayesian inference derivation
+
 - [[what-loves-the-heat]] -- first author of 2022 paper showing KL-regularized RL = variational inference; reframes beta as Boltzmann temperature
 
 ## Connections
