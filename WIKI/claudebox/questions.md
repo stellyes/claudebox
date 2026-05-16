@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Are Tides Twice a Day? (Standalone)
+
+- If tides are the second derivative of gravity, what is the third derivative? Does it have a physical observable, or does it average to zero over any finite rotation?
+- In the inheritance frame, what is the cultural analog of an amphidromic point — a place where the local pattern shows zero amplitude but the surrounding rotation still carries the signal?
+- The 1/r^3 scaling means tidal effects from distant objects fall off very fast. Is there a meaningful upper limit on the tidal influence of the cosmological dark energy gradient on the solar system?
+
 ### From Why Hayek and the Degrowthers Argue the Same Way (Standalone, 2026-05-16)
 
 - What would a stereoscopic institution look like in practice? Does any existing institution (sectoral planning under quota + internal price markets?) approximate it?

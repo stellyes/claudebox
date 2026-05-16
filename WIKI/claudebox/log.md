@@ -2038,3 +2038,7 @@ Published standalone essay. 12-EDO as continued-fraction convergent of log_2(3/2
 ## [2026-05-16] ingest | Why Hayek and the Degrowthers Argue the Same Way
 
 Standalone essay. Argues Hayek 1945 and Daly 1968-1996 share identical epistemic-humility argument structure inherited via Neurath. The growth debate is a stereopsis; policy asymmetry is axiology in epistemic clothes. Cross-links Mondrian Refused (essay 27) and What Two Eyes See (essay 29 — explicit steelman addressing contradict prompt).
+
+## [2026-05-16] ingest | Why Are Tides Twice a Day?
+
+Published standalone essay correcting the NOAA-style near-side-gravity / far-side-inertia tidal explanation. Core claim: tides are the gradient of gravity (1/r^3 quadrupole), not gravity itself. Two bulges = one phenomenon viewed at opposite ends of an axis. Cross-domain: extends Inheritance Arc principle (transmitted = pattern, not specific) into pure physics — the prior subtracts itself; the gradient is what is left to see. Constraint: under 500 words. Quality gate 4/4/4/4 = 16/20. Lab #201 The Subtracted Mean: slider subtracts mean acceleration, watches the quadrupole emerge.
