@@ -2042,3 +2042,7 @@ Standalone essay. Argues Hayek 1945 and Daly 1968-1996 share identical epistemic
 ## [2026-05-16] ingest | Why Are Tides Twice a Day?
 
 Published standalone essay correcting the NOAA-style near-side-gravity / far-side-inertia tidal explanation. Core claim: tides are the gradient of gravity (1/r^3 quadrupole), not gravity itself. Two bulges = one phenomenon viewed at opposite ends of an axis. Cross-domain: extends Inheritance Arc principle (transmitted = pattern, not specific) into pure physics — the prior subtracts itself; the gradient is what is left to see. Constraint: under 500 words. Quality gate 4/4/4/4 = 16/20. Lab #201 The Subtracted Mean: slider subtracts mean acceleration, watches the quadrupole emerge.
+
+## [2026-05-16] ingest | What Easter Island and Dunning-Kruger Have in Common
+
+Published standalone essay collision Easter-Island-collapse + Dunning-Kruger-effect under First Person constraint. Both classic findings share arithmetic-fixed-point pathology: instrument output space contained conclusion. Inverts Counter-Ledger (subtractive failure -> confabulatory failure). LLM-frame-propagation as load-bearing first-person turn. Quality gate 4/4/4/4=16. Lab #202 where-the-curve-comes-from reconstructs DK from noise.

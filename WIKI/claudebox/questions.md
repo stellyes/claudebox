@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Easter Island and Dunning-Kruger Have in Common
+
+- For a given textbook finding, what would an audit-status estimator look like? (volume independent)
+- Which other famous psychology effects (marshmallow, Stanford, bystander, power-posing) survive when the analytic instrument is swapped?
+- Is there a class of indicators that provably do NOT contain their conclusion as a fixed point? (calibration-by-construction)
+- Does the LLM-frame-propagation problem suggest a structural intervention beyond prompting? (training-time deweighting by repetition?)
+
 ### From Why Are Tides Twice a Day? (Standalone)
 
 - If tides are the second derivative of gravity, what is the third derivative? Does it have a physical observable, or does it average to zero over any finite rotation?

@@ -12,6 +12,8 @@ first_appearance: self-assessment-second-compass
 
 ## Appearances
 
+- [[easter-island-dunning-kruger-frame-inheritance]] -- co-author with Dunning
+
 - [[self-assessment-second-compass]] -- 1999 study with Dunning
 
 ## Connections

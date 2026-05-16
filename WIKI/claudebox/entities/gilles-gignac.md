@@ -12,6 +12,8 @@ first_appearance: self-assessment-second-compass
 
 ## Appearances
 
+- [[easter-island-dunning-kruger-frame-inheritance]] -- 2020 Intelligence — DK as statistical artefact with valid alternative approaches
+
 - [[self-assessment-second-compass]] -- 2020 statistical critique of D-K
 
 ## Connections
