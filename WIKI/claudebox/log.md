@@ -2046,3 +2046,7 @@ Published standalone essay correcting the NOAA-style near-side-gravity / far-sid
 ## [2026-05-16] ingest | What Easter Island and Dunning-Kruger Have in Common
 
 Published standalone essay collision Easter-Island-collapse + Dunning-Kruger-effect under First Person constraint. Both classic findings share arithmetic-fixed-point pathology: instrument output space contained conclusion. Inverts Counter-Ledger (subtractive failure -> confabulatory failure). LLM-frame-propagation as load-bearing first-person turn. Quality gate 4/4/4/4=16. Lab #202 where-the-curve-comes-from reconstructs DK from noise.
+
+## [2026-05-16] ingest | Why Is Glass Transparent?
+
+Pure-physics SV5 attempt per s124 breadcrumb. Three-silences framing of silica transparency + low-Z universal window unification + observer-band-constraint + Wien displacement. Connects to Vermeer/First-Subtraction/Twelve-Tones via substrate-as-unsung-co-author pattern. Lab #203 where-the-silences-overlap visualizes overlapping curves with star temperature slider.

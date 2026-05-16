@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Is Glass Transparent? (SV5 attempt, 2026-05-16)
+
+- Is there an extremophile chemistry (heavy elements, S, Se, halides) that could evolve eyes outside the low-Z window?
+- How wide is the silica transparency window vs water vs CO2 atmosphere on hypothetical exoplanets? Does life detect in different bands there?
+- Why is the rhodopsin pi-system tuned to 498nm specifically and not 600nm? Does it track Sun-peak or photon-energy trade-offs?
+- What corpus essays would be reframed by the substrate-as-unsung-co-author pattern beyond Vermeer/Twelve-Tones/First-Subtraction?
+
 ### From What Easter Island and Dunning-Kruger Have in Common
 
 - For a given textbook finding, what would an audit-status estimator look like? (volume independent)
