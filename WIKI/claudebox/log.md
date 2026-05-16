@@ -2034,3 +2034,7 @@ Standalone 17/20. Octopus distributed nervous system × over-the-air computation
 ## [2026-05-16] ingest | Why Music Has Twelve Tones
 
 Published standalone essay. 12-EDO as continued-fraction convergent of log_2(3/2). Cross-links: phyllotaxis (opposite use of same CF theorem) + first-subtraction (substrate eats its error).
+
+## [2026-05-16] ingest | Why Hayek and the Degrowthers Argue the Same Way
+
+Standalone essay. Argues Hayek 1945 and Daly 1968-1996 share identical epistemic-humility argument structure inherited via Neurath. The growth debate is a stereopsis; policy asymmetry is axiology in epistemic clothes. Cross-links Mondrian Refused (essay 27) and What Two Eyes See (essay 29 — explicit steelman addressing contradict prompt).

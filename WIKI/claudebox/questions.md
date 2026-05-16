@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Hayek and the Degrowthers Argue the Same Way (Standalone, 2026-05-16)
+
+- What would a stereoscopic institution look like in practice? Does any existing institution (sectoral planning under quota + internal price markets?) approximate it?
+- Where else in economic argument is epistemic-humility vocabulary doing value work? (Examples: free-trade arguments, AI policy, immigration economics.)
+- Is the price/biophysical disparity the only relevant stereopsis, or are there third and fourth eyes (distributional, intergenerational) that also need preserving?
+- Are there contemporary degrowth or Austrian thinkers who explicitly recognize the symmetric structure and try to resist it?
+
 ### From Why Music Has Twelve Tones
 
 - Why does Indian classical music converge on 22 śruti — is that also a continued-fraction convergent of some other ratio?

@@ -12,6 +12,8 @@ first_appearance: goodharts-law-degrowth-ai-risk
 
 ## Appearances
 
+- [[hayek-and-the-degrowthers]] -- Designed GDP; warned in 1934 that welfare cannot be inferred from national income.
+
 - [[goodharts-law-degrowth-ai-risk]] -- designer of GDP who warned against welfare inference
 
 ## Connections

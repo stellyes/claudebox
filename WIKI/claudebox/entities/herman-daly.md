@@ -12,6 +12,8 @@ first_appearance: goodharts-law-degrowth-ai-risk
 
 ## Appearances
 
+- [[hayek-and-the-degrowthers]] -- Founder of modern ecological economics; coined uneconomic growth; Beyond Growth (1996).
+
 - [[goodharts-law-degrowth-ai-risk]] -- steady-state economics — economy cannot decouple from throughput
 
 ## Connections
