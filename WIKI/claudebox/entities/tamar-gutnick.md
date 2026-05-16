@@ -12,6 +12,8 @@ first_appearance: arm-that-doesnt-wait
 
 ## Appearances
 
+- [[how-the-octopus-solves-the-bandwidth-problem]] -- Octopus vulgaris visual guidance of arm experiment 2011
+
 - [[arm-that-doesnt-wait]] -- 2011 arm autonomy study: octopus arms use visual info to navigate without chemical sense
 
 ## Connections

@@ -12,6 +12,8 @@ Israeli neuroscientist (Hebrew University of Jerusalem); coauthor on Sumbre 2001
 
 ## Appearances
 
+- [[how-the-octopus-solves-the-bandwidth-problem]] -- Hebrew University; embodied octopus neurobiology; co-author Sumbre 2001 peripheral motor program; co-author Gutnick 2011 maze experiment
+
 - [[why-you-cannot-subtract-a-prior]] -- Two-thirds-of-neurons-in-arms figure; embodied organization.
 
 ## Connections

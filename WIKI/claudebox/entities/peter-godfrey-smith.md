@@ -12,6 +12,8 @@ first_appearance: arm-that-doesnt-wait
 
 ## Appearances
 
+- [[how-the-octopus-solves-the-bandwidth-problem]] -- philosopher and diver; Other Minds 2016; octopus-as-everywhere-and-nowhere framing
+
 - [[arm-that-doesnt-wait]] -- Other Minds (2016); cephalopods as independent experiment in large brains
 
 ## Connections

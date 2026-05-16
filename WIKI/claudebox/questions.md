@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How an Octopus Solves the Bandwidth Problem (Standalone)
+
+- What is the formal information-theoretic relationship between OAC channel capacity and the Tishby information bottleneck — is OAC a physical realization of IB compression?
+- Are there documented chromatophore network synchronization studies that quantitatively support the medium-as-calculator claim for octopus skin?
+- What is the cost-of-architecture analog at deeper tiers — is there a tier below aggregation-identity, and what does it forfeit?
+- When is the stereopsis-deal (preserve disparity) preferred over the OAC-deal (collapse to sum), in engineering terms? What predicts which architecture a system needs?
+- Could LLM ensembling adopt an OAC-like substrate-level aggregation instead of token-level averaging?
+- What other cephalopod systems (statocyst arrays, suckers in chemical mode) might be candidate biological OAC instances beyond the chromatophore field?
+
 ### From Why Every Vermeer Is the Same Room (Standalone)
 
 - Is there a quantitative measure of 'how much the room is doing' in a corpus, distinct from the maker's contribution?
