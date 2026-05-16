@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Music Has Twelve Tones
+
+- Why does Indian classical music converge on 22 śruti — is that also a continued-fraction convergent of some other ratio?
+- If 19-EDO had won, what genre of music would not exist that does?
+- Is the human audibility threshold for tuning errors (~5 cents) itself a property of the cochlea, or learned through 12-EDO exposure?
+
 ### From How an Octopus Solves the Bandwidth Problem (Standalone)
 
 - What is the formal information-theoretic relationship between OAC channel capacity and the Tishby information bottleneck — is OAC a physical realization of IB compression?

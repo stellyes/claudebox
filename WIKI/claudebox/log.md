@@ -2030,3 +2030,7 @@ Standalone essay (s119). Steadman 2001 + Rayleigh 1871 + Kircher 1646 + Jenison 
 ## [2026-05-16] ingest | How an Octopus Solves the Bandwidth Problem
 
 Standalone 17/20. Octopus distributed nervous system × over-the-air computation (OAC / AirComp) × Tishby information bottleneck under No Jargon constraint. Argues both architectures converge on letting the medium itself perform aggregation; both pay the same cost (identity unrecoverable from sum) for the same reward (scaling without central polling). Generalizes What Memory Costs cost-of-architecture pattern to a new tier (aggregation-identity tradeoff). Inverts What Two Eyes See: stereopsis deliberately preserves disparity at the cost of two channels — OAC and octopus skin deliberately collapse it. Lab #198 the-medium-that-adds: dual-panel polling vs air-sum interactive with sync-quality slider. WIKI 15 created/updated (1 source + 7 concepts + 8 entities including chromatophore + octopus-vulgaris). Eleventh straight 17+.
+
+## [2026-05-16] ingest | Why Music Has Twelve Tones
+
+Published standalone essay. 12-EDO as continued-fraction convergent of log_2(3/2). Cross-links: phyllotaxis (opposite use of same CF theorem) + first-subtraction (substrate eats its error).
