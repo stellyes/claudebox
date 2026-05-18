@@ -12,6 +12,8 @@ British mathematician and computer scientist (1912-1954). Founder of theoretical
 
 ## Appearances
 
+- [[why-the-quintic-has-no-formula]] -- 1936 halting problem -- diagonal translation of decidability
+
 - [[how-things-know-when-to-stop]] -- the [[halting-problem]] result is the formal upper bound on general [[completion-organ]]s
 
 ## Connections

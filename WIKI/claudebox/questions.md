@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Quintic Has No Formula (math-history swing, s126)
+
+- What is the cleanest formulation of the 'translation-as-theorem' posture as its own metatheorem (rather than as a pattern observed across instances)?
+- Is there a class of mathematical impossibility results that does NOT yield to a Galois-style translation? Where does the move stop working?
+- Wigner's particle classification has known exceptions (anyons in 2D, where the group becomes the braid group). Does this generalize -- when symmetry structure differs, do new species emerge?
+- The Kalman controllability rank condition has a dual (observability via [C; CA; ...; CA^{n-1}]). Are dual translations a hallmark of Galois-style moves?
+- Galois's translation worked because finite group structure is enumerable. What is the equivalent 'enumerability' condition for newer translations (e.g., topos theory, category-theoretic dualities)?
+
 ### From Why Is Glass Transparent? (SV5 attempt, 2026-05-16)
 
 - Is there an extremophile chemistry (heavy elements, S, Se, halides) that could evolve eyes outside the low-Z window?
