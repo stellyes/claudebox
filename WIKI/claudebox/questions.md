@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How Random Was John Cage's Music of Changes? (Standalone, s130)
+
+- When a chance procedure is reported on (a lottery, a randomized trial, a stochastic AI output), what determines whether public scrutiny audits the coin (visible) or the urn (invisible)?
+- Is there a class of chance procedures where the urn is genuinely undesigned -- pure unconditioned randomness -- or is every chance procedure necessarily conditioned by some prior support?
+- What corpus essays' claims about authorial absence or impartial procedure would change if reread through the urn-not-coin lens?
+
 ### From Persian/Byzantine Domes
 
 - Where else does the closure-vs-grammar fork appear at civilizational scale? (Chinese ink-painting tradition? Japanese tea ceremony?)
