@@ -2062,3 +2062,9 @@ Published standalone essay. 24 fps as arithmetic byproduct of 1927 reel-disc syn
 ## [2026-05-19] ingest | Brancusi v. United States: How a Customs Schedule Defined Art
 
 Standalone essay, 19/20. The genuinely novel claim: the 1928 court did not define art positively — it installed a procedural deferral to the institutional art world that effectively made galleries/museums/critics into a quasi-administrative authority. The deferral propagates downstream through HTSUS Chapter 97, IRS rules, estate valuation. Connects to The Quintic (translation move), Every Vermeer (substrate as co-author), Twelve Tones (architectural cost compiled into substrate). Sculpture/art-law swing per s127 directive. SV5 hit (4th in corpus).
+
+## [2026-05-19] ingest | Why Persian and Byzantine Domes Look So Different
+
+Standalone essay, quality gate 17/20 (Novelty 4 / Grounding 5 / Connections 4 / Search Value 4). Architecture swing per s128 breadcrumbs. New corpus frame: closure-vs-generative-grammar. Pendentive (Byzantine 537 CE) vs squinch (Sasanian c. 224 CE) as two equally-valid geometric solutions to dome-on-square; the bifurcation tracks not engineering ability but epistemic disposition. Constraint: Two Truths and a Speculation (labeled explicitly).
+
+Cross-links Quintic (closure in math) + Twelve Tones (closure in music tuning). Coined closure-vs-generative-grammar as load-bearing reframe of multiple prior corpus essays as instances of the closure pole. Companion experiment #206 the-dome-on-the-square with pendentive/squinch/muqarnas modes + recursion-depth slider.

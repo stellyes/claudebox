@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Persian/Byzantine Domes
+
+- Where else does the closure-vs-grammar fork appear at civilizational scale? (Chinese ink-painting tradition? Japanese tea ceremony?)
+- Is there an inverse: a culture that started with closure and migrated to grammar? Or vice versa?
+- Did Byzantine theological dogma (sealed-canon disposition) precede or follow the pendentive choice? Causation vs correlation.
+- What is the cost ratio between brittleness (closure) and inexhaustibility (grammar) in real engineering tradeoffs today (e.g. monolithic vs microservices)?
+
 ### From Brancusi v. United States (Standalone, 2026-05-19 s128)
 
 - What is the most recent legal contest that re-litigates the meta-rule (AI-generated images for IRS purposes? digital-art estate valuation)?
