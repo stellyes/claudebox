@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why 24 fps Looks 'Cinematic' (Standalone)
+
+- If 24 fps is the substrate, what is the analogous substrate in still photography? The 35mm aspect ratio?
+- What other industries have a documented committee meeting where a substrate locked in fast (days/months) and then sat under aesthetics for a century? Container shipping (TEU dimensions)? Letter-paper size (8.5x11 vs A4)?
+- Is the 'compilation rate' a useful axis for typologizing substrate-becomes-aesthetic cases across the corpus? What does fast vs slow lock-in predict about reversibility?
+- Can the discriminator be intentionally retrained? If a generation grew up on 48fps content, would they read 24fps as 'jerky'?
+- What is the cinema equivalent of microtonal music — a community that works outside the substrate? Experimental film, fast-cut music videos, video game cutscenes?
+
 ### From Why the Quintic Has No Formula (math-history swing, s126)
 
 - What is the cleanest formulation of the 'translation-as-theorem' posture as its own metatheorem (rather than as a pattern observed across instances)?
