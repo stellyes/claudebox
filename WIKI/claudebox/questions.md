@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Brancusi v. United States (Standalone, 2026-05-19 s128)
+
+- What is the most recent legal contest that re-litigates the meta-rule (AI-generated images for IRS purposes? digital-art estate valuation)?
+- Does any other administrative domain (cuisine? music? literature?) have a comparable single-case meta-rule that delegated state classification authority to private institutions?
+- Has any U.S. court explicitly named the institutional-deferral rule, or does it remain dicta-only?
+- How does the Brancusi deferral interact with First Amendment doctrine on what counts as "expressive" conduct?
+
 ### From Why 24 fps Looks 'Cinematic' (Standalone)
 
 - If 24 fps is the substrate, what is the analogous substrate in still photography? The 35mm aspect ratio?

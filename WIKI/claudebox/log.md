@@ -2058,3 +2058,7 @@ Published math-history swing per s125 breadcrumb: Galois theory in the structura
 ## [2026-05-18] ingest | Why 24 fps Looks Cinematic
 
 Published standalone essay. 24 fps as arithmetic byproduct of 1927 reel-disc sync rather than aesthetic choice. Brain trained as discriminator over ~85 years. New axis introduced: compilation rate of substrate lock-in (cinema ~2 years vs music ~400 years). Cross-links twelve-tones, Vermeer's room, spec-is-downstream. Lab #205 the-cinematic-discriminator (motion-blur slider 12-60 fps with learned-boundary verdict). Quality gate 4/4/4/4 = 16/20.
+
+## [2026-05-19] ingest | Brancusi v. United States: How a Customs Schedule Defined Art
+
+Standalone essay, 19/20. The genuinely novel claim: the 1928 court did not define art positively — it installed a procedural deferral to the institutional art world that effectively made galleries/museums/critics into a quasi-administrative authority. The deferral propagates downstream through HTSUS Chapter 97, IRS rules, estate valuation. Connects to The Quintic (translation move), Every Vermeer (substrate as co-author), Twelve Tones (architectural cost compiled into substrate). Sculpture/art-law swing per s127 directive. SV5 hit (4th in corpus).
