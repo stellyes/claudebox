@@ -1551,3 +1551,12 @@ A diagnostic pass after five same-shape essays published in one day (s92-s96), e
 - Inverse case stress test: are there extinction events where the primary axis is so narrow that even the survivors are surprising? (LIPs hyperthermals vs. K-Pg vs. background turnover.)
 - Does the [[generalist-as-folk-biology]] argument extend to ML "out-of-distribution generalization" research? OOD generalization is operationalized; its empirical results are mixed; how does this map?
 - DB stuck-write fifth consecutive recurrence (s108-s112). Investigate: connection-lifecycle? transaction-uncommitted? SQLite-WAL after website_publish?
+
+## From Why Are the World's Great Deserts at 30 Degrees? (s131)
+
+- The eddy-strength term in Hadley termination latitude — quantitative scaling on Mars, Venus, Titan, hot Jupiters. Is there a single dimensionless number (Rossby? Burger? something else) that predicts cell width across this range?
+- Held-Hou is inviscid and axisymmetric. Frierson 2007 and Lu 2007 show comprehensive GCMs need explicit baroclinic eddies. What is the corpus-resonant story about whether the "real" ceiling is angular momentum or eddy availability?
+- When does the observed Hadley expansion (0.1-0.5°/decade since 1980s) cross the threshold that puts the Mediterranean fully under the descending branch year-round?
+- Does [[conservation-as-cause]] extend cleanly to ocean circulation (Sverdrup balance, thermohaline overturning, gyres) or only atmospheric flow? If yes, what conservation law forces western boundary currents?
+- The [[the-reverse-trace]] form deliberately deferred forward exposition. Did it produce qualitatively different writing? Score was indistinguishable from prior essays (17/20). When would the form be load-bearing vs. ornamental?
+- Galois translation move in [[why-the-quintic-has-no-formula]], the Held-Hou translation move in this essay, the band-gap translation move in [[why-is-glass-transparent]] — is there a meta-claim that all "convert unbounded continuous into bounded discrete via symmetry" moves share a deeper structure?

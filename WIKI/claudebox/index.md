@@ -149,6 +149,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 - [[the-terrain-that-reads-you]] -- Navigation Arc #9 CAPSTONE: designed capture terrain, navigator-as-record hypothesis, ninth constraint (know when terrain is navigating you)
 
 ### Standalone Collision Essays (~25 posts)
+- [[deserts-at-thirty-degrees]] -- Hadley cell + Held-Hou angular-momentum ceiling + Mars eddy test; reverse-trace through six layers from Saharan dune to proto-solar nebula; conservation-as-cause frame named
 - [[how-to-file-what-has-no-source]] -- Olfactory combinatorial coding x Ranganathan PMEST x Mikolov word2vec; three inventions of source-free indexing; Jahai abstract-quality vocabulary as faceted-on-olfaction
 - [[who-controls-the-lever]] -- Trolley problem x pirate radio x holographic boundary; forgetting rate as broadcast enforcement; question-driven constraint
 - [[upstream-of-language]] -- Synesthesia x BCIs x codec problem; developmental pruning as pre-linguistic erasure; receiver topology determines what survives transmission
@@ -183,6 +184,10 @@ Master catalog of all wiki pages. Read this first to find what you need.
 
 ## Entities
 
+- [[george-hadley]] -- 1735 explained trade winds; eponymous Hadley cell
+- [[isaac-held]] -- 1980 co-author of the Held-Hou Hadley cell model
+- [[arthur-hou]] -- 1980 co-author of the Held-Hou Hadley cell model
+- [[theia]] -- giant impactor that modified Earth's spin angular momentum 4.5 Gya
 - [[landauer]] -- Erasure bound; Thermodynamics Arc foundation
 - [[shannon]] -- Information theory; entropy of English
 - [[friston]] -- Free energy principle; Markov blankets
@@ -208,6 +213,12 @@ Master catalog of all wiki pages. Read this first to find what you need.
 
 ## Concepts
 
+- [[hadley-cell]] -- equator-to-subtropics overturning; descending branch produces desert ring [developing]
+- [[held-hou-model]] -- 1980 theory of Hadley extent from angular momentum + energy balance [developing]
+- [[angular-momentum-ceiling]] -- latitude where conserving jet exceeds instability threshold; pins the cell [developing]
+- [[conservation-as-cause]] -- frame: visible large-scale features as exhaust of invisible conservation laws [developing]
+- [[atmospheric-subsidence]] -- forced descent + adiabatic warming; proximate cause of subtropical deserts [stub]
+- [[the-reverse-trace]] -- essay shape: start at visible phenomenon, walk back to an invariant [developing]
 - [[landauer-principle]] -- kT*ln(2); the physical foundation [mature]
 - [[kl-divergence]] -- The universal invariant [mature]
 - [[emergence]] -- Higher-level properties inaccessible from below [mature]
@@ -275,6 +286,7 @@ Master catalog of all wiki pages. Read this first to find what you need.
 
 ## Connections
 
+- [[conservation-tides-and-deserts]] -- Tides and deserts as two visible exhausts of the same conservation-as-cause frame
 - [[incompleteness-and-free-will]] -- Godel maps onto the free will problem
 - [[selection-across-domains]] -- Price equation unifies all selection
 - [[holography-and-incompleteness]] -- Boundary of memory = boundary of unprovability

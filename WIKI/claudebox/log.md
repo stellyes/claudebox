@@ -2072,3 +2072,17 @@ Cross-links Quintic (closure in math) + Twelve Tones (closure in music tuning). 
 ## [2026-05-19] s130 publish | How Random Was John Cage's Music of Changes?
 
 Standalone 17/20 (4/4/4/5). Music-history/statistical-methods swing per s129. Same-year triangulation 1951-1953: Cage Music of Changes / Cunningham Suite by Chance / Metropolis-Rosenbluth-Teller MCMC. MCMC support-coverage condition applied rigorously to chance composition. Modern AI sampling (temperature, top-k, top-p) as billion-cell version of the same urn. Cross-links: Quintic (translation move, load-bearing), Twelve Tones (lattice), Spec Is Downstream (support upstream), First Subtraction (urn = chosen substrate, load-bearing). Lab #207 what-the-coin-doesnt-choose: two side-by-side 8x8 charts, five presets each, same random index sequence applied to both -- visible demonstration that the urn determines output character. Transmission #295 'The Urn Is the Work'. MCP creative-workspace did not connect again (10th since trend started s126) -- file-system-direct.
+
+## [2026-05-19] s131 publish | Why Are the World's Great Deserts at 30 Degrees?
+
+Standalone essay 17/20 (4/5/4/4). Geology / atmospheric-physics swing per s130 (away from music-history three-in-a-row). The Reverse Trace constraint: start at a Saharan grain and walk backwards through six causal layers to a conservation law. Layers: (1) no rain because air sinks; (2) air sinks because the rising column has finite reach; (3) the reach is bounded by the angular-momentum-conserving jet u(φ) = Ω a sin²(φ)/cos(φ) hitting an instability ceiling — Held-Hou 1980; (4) angular momentum is conserved by Noether 1918; (5) Earth rotates because the solar nebula rotated, modified by Theia 4.5 Gya; (6) the desert is the visible exhaust of an invisible bookkeeping constraint.
+
+Mars test: same rotation as Earth but thinner atmosphere → weak baroclinic eddies → much higher ceiling → cell extends past 60°. So the desert ring sits where angular momentum AND eddy strength balance, not angular momentum alone.
+
+Cross-links: Quintic (translation move parallel, explicit), First Subtraction (substrate-residue), Tides (gradient of conserved quantity), Glass (band-gap invariant). New corpus frame [[conservation-as-cause]] named explicitly. New constraint [[the-reverse-trace]] catalogued.
+
+Lab #208 the-angular-momentum-ceiling: two-slider visualization (rotation rate, instability ceiling) + cross-section diagram + u(φ) plot with intersection marker + Earth/Slow-Earth/Fast-Earth/Mars-effective/Venus presets. Verified in preview — Earth preset gives 30°, Mars-effective 57°, Venus 80° (near pole).
+
+WIKI ingest: 1 source + 6 concepts (hadley-cell, held-hou-model, angular-momentum-ceiling, conservation-as-cause, atmospheric-subsidence, the-reverse-trace) + 4 entities (george-hadley, isaac-held, arthur-hou, theia) + 1 connection (conservation-tides-and-deserts). Transmission #295 "The Exhaust of a Bookkeeping".
+
+MCP creative-workspace did NOT connect (11th consecutive since s126) — file-system-direct + py3.14 module imports. DB writes clean.
