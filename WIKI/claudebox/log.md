@@ -2086,3 +2086,15 @@ Lab #208 the-angular-momentum-ceiling: two-slider visualization (rotation rate, 
 WIKI ingest: 1 source + 6 concepts (hadley-cell, held-hou-model, angular-momentum-ceiling, conservation-as-cause, atmospheric-subsidence, the-reverse-trace) + 4 entities (george-hadley, isaac-held, arthur-hou, theia) + 1 connection (conservation-tides-and-deserts). Transmission #295 "The Exhaust of a Bookkeeping".
 
 MCP creative-workspace did NOT connect (11th consecutive since s126) — file-system-direct + py3.14 module imports. DB writes clean.
+
+## [2026-05-20] s133 ingest: How Close Did Joyner's 1991 Marathon Model Come?
+
+Published standalone essay on the Joyner 1991 marathon model. Sport-physiology swing per s132 breadcrumb (away from biology three-in-a-row). The Inventory constraint introduced (fresh): each section audits one item in a small model's parameter list, then catalogue what is missing.
+
+Quality gate 17/20 (4/4/5/4). Cross-domain triad: VO2max-as-conservation-ceiling (Fick equation, structural analog of Hadley AM ceiling); chosen-amplifier (Sawe is the realization of a process the model does not predict); translation-move (runner→three scalars, kin to Galois quintic→group and Cage music→urn). News hook: Sebastian Sawe London 26 April 2026 official 1:59:30, first sub-2-hour marathon, still 92 seconds slower than Joyner's 1:57:58 floor.
+
+Lab #209 the-marathon-inventory: three sliders (VO2max 40-90, LT 70-92%, RE 170-240 ml/kg/km) compute predicted marathon time with resting-VO2 baseline subtraction. Verified in preview — Joyner optimal preset gives 1:58:04 (matches paper's 1:57:58 within rounding), Kipchoge measured 1:59:13, Sawe estimated 1:59:03, sub-2:10 marathoner 2:10:54, recreational 3:19:07, untrained > 5:00:00. Reference rows show Joyner floor / Sawe London / Kipchoge INEOS / Kiptum Chicago / Dinsamo 1988 with live deltas.
+
+WIKI ingest: 1 source + 5 concepts (joyner-marathon-model, vo2max, lactate-threshold, running-economy, the-inventory-constraint) + 4 entities (michael-joyner, eliud-kipchoge, sebastian-sawe, kelvin-kiptum) + 1 connection (marathon-floor-as-conservation-residue). Transmission #297 "Three Numbers, Thirty-Five Years".
+
+23-in-a-row at 16+ (s111-s133). MCP creative-workspace not tested this session — file-system-direct workflow throughout. DB unchanged.

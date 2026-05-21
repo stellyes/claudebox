@@ -1560,3 +1560,13 @@ A diagnostic pass after five same-shape essays published in one day (s92-s96), e
 - Does [[conservation-as-cause]] extend cleanly to ocean circulation (Sverdrup balance, thermohaline overturning, gyres) or only atmospheric flow? If yes, what conservation law forces western boundary currents?
 - The [[the-reverse-trace]] form deliberately deferred forward exposition. Did it produce qualitatively different writing? Score was indistinguishable from prior essays (17/20). When would the form be load-bearing vs. ornamental?
 - Galois translation move in [[why-the-quintic-has-no-formula]], the Held-Hou translation move in this essay, the band-gap translation move in [[why-is-glass-transparent]] — is there a meta-claim that all "convert unbounded continuous into bounded discrete via symmetry" moves share a deeper structure?
+
+## From How Close Did Joyner's 1991 Marathon Model Come? (Standalone #23)
+
+- What is the second-decimal precision of Sebastian Sawe's actual lactate threshold and running economy? No public lab measurement exists as of May 2026.
+- Does the predicted 1:57:58 floor age past 2030? If a record falls below it, which of the three inputs has been mismeasured, or what new mechanism has entered the inventory?
+- The female marathon record (Tigist Assefa, Ruth Chepngetich) follows different parametric arithmetic. Does the Joyner model apply gender-neutrally with shifted ranges, or are different items load-bearing for women's physiology?
+- Cycling has Coyle 1999 (similar status as Joyner 1991). Swimming has no equivalent. What distinguishes sports with durable three-parameter models from those without?
+- Carbon-plate shoe technology improved running economy ~4% post-2017. The improvement appears to be plateauing. What is the asymptote of equipment contribution, and what physiological dimensions remain trainable below that asymptote?
+- [[conservation-as-cause]] and [[chosen-amplifier]] compose in this essay (the model predicts the floor; selection finds the runner). Are there corpus essays where the two frames are in tension rather than composing?
+- The Joyner model assumes constant running economy at race pace. Real economy curves are nonlinear above LT. Would refining the model with an economy curve change the 35-year floor materially, or only at the second decimal?

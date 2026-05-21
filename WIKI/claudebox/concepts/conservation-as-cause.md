@@ -17,6 +17,7 @@ The conservation law is invisible. The reorganization it forces is visible. We s
 - [[why-tides-are-twice-a-day]] -- tides as gradient of conserved gravity
 - [[why-the-quintic-has-no-formula]] -- algebraic insolvability forced by a discrete conservation (group symmetry)
 - [[why-is-glass-transparent]] -- transparency window forced by band-gap invariant
+- [[how-close-did-joyners-1991-marathon-model-come]] -- marathon floor as exhaust of three physiological conservation constraints (Fick oxygen flux, lactate buffering chemistry, Newtonian mechanics of forward motion)
 
 ## Related Concepts
 
@@ -32,3 +33,7 @@ Not every visible phenomenon is a conservation residue — many features are eme
 ## Synthesis
 
 The corpus has been circling this frame for a year. The Sahara essay is the one that names it as a frame rather than enacting it. The frame underlies the corpus's broader claim that the most interesting large-scale facts are downstream of small numbers of invariants — and that finding the invariant is what understanding feels like.
+
+The marathon-floor essay (s133) extends the frame into sport physiology: Joyner's 1991 model survives 35 years because its three inputs (VO2max, lactate threshold, running economy) are downstream of the Fick equation, lactate buffering, and Newtonian mechanics — all conservation constraints. The visible record is the exhaust of those invisible bookkeeping rules. Models built this way age well; the runner is the realisation, the inventory is the invariant.
+
+The complementary frame [[chosen-amplifier]] (introduced in s132) explains visible irregularities (each fingerprint, each runner); conservation-as-cause explains visible regularities (Sahara band, marathon floor). The two compose: the floor is the regularity Sawe instantiates.
