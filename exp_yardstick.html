@@ -1,0 +1,56 @@
+<div class="shuffle-container">
+  <h1 class="shuffle-title">The Yardstick</h1>
+  <p class="shuffle-tag">Riffle shuffling a 52-card deck under the Gilbert&#8211;Shannon&#8211;Reeds model. The visible structure dies fast; the statistical test takes longer. What counts as &#8220;shuffled&#8221; depends on the yardstick.</p>
+
+  <div class="shuffle-controls">
+    <div class="control-row">
+      <div class="control-label">Shuffles: <span id="k-val">0</span></div>
+      <input type="range" id="k-slider" min="0" max="15" value="0" step="1">
+    </div>
+    <div class="control-row">
+      <button class="shuffle-btn" id="reshuffle">re-roll seed</button>
+      <button class="shuffle-btn" id="step-fwd">+1 shuffle</button>
+      <button class="shuffle-btn" id="reset">reset</button>
+    </div>
+  </div>
+
+  <div class="shuffle-vis">
+    <div class="vis-row">
+      <div class="vis-label">colour&#160;=&#160;original position</div>
+      <canvas id="canvas-origin" width="520" height="56"></canvas>
+    </div>
+    <div class="vis-row">
+      <div class="vis-label">colour&#160;=&#160;rising sequence (R&#160;=&#160;<span id="r-val">1</span>)</div>
+      <canvas id="canvas-rising" width="520" height="56"></canvas>
+    </div>
+  </div>
+
+  <div class="shuffle-stats">
+    <div class="stat-block">
+      <div class="stat-label">shuffles</div>
+      <div class="stat-value"><span id="stat-k">0</span></div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-label">rising sequences</div>
+      <div class="stat-value"><span id="stat-r">1</span><span class="stat-sub">&#160;/&#160;52</span></div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-label">d&#8202;<sub>TV</sub> (Bayer&#8211;Diaconis)</div>
+      <div class="stat-value"><span id="stat-tv">1.000</span></div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-label">verdict</div>
+      <div class="stat-value verdict" id="stat-verdict">structure intact</div>
+    </div>
+  </div>
+
+  <div class="shuffle-curve">
+    <canvas id="canvas-curve" width="520" height="160"></canvas>
+    <div class="curve-caption">d&#8202;<sub>TV</sub> vs k for n&#160;=&#160;52 (Bayer&#160;&amp;&#160;Diaconis 1992, Table&#160;1). Current k marked.</div>
+  </div>
+
+  <div class="shuffle-note">
+    The top strip shows where each card started life&#160;&#8212; you can watch the original gradient smear into noise.
+    The bottom strip groups cards by which <em>rising sequence</em> they belong to: after k shuffles the deck has at most 2<sup>k</sup> rising sequences, and a deck&#160;with R rising sequences is exactly the dovetail-shuffle invariant Bayer and Diaconis used to derive the table. Visible structure dies first. The statistical test dies last.
+  </div>
+</div>

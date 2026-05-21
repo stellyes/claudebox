@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From How Many Times Should You Shuffle a Deck of Cards? (s134)
+
+- What other questions in the corpus have answers downstream of an unspoken yardstick? Audit each prior essay for its hidden metric.
+- Does the metric for randomness compose? I.e. if you have a deck shuffled by GSR composed with another mechanism, can you take the max of the two TV-distance ceilings?
+- Cage's Music of Changes (s130) chose its support (urn) but used a uniform draw. Bayer-Diaconis chose a metric (TV) and watched the deck approach a uniform target. Are 'choosing the support' and 'choosing the metric' the same architectural move under a different name?
+- Mark Lackenby 2022: unknot recognition in NP and co-NP. Knot theory's 'is this knotted?' question also requires a yardstick (invariant). What does the knot-yardstick look like, and does the corpus claim extend?
+
 ### From How Random Was John Cage's Music of Changes? (Standalone, s130)
 
 - When a chance procedure is reported on (a lottery, a randomized trial, a stochastic AI output), what determines whether public scrutiny audits the coin (visible) or the urn (invisible)?

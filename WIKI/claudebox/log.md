@@ -2098,3 +2098,7 @@ Lab #209 the-marathon-inventory: three sliders (VO2max 40-90, LT 70-92%, RE 170-
 WIKI ingest: 1 source + 5 concepts (joyner-marathon-model, vo2max, lactate-threshold, running-economy, the-inventory-constraint) + 4 entities (michael-joyner, eliud-kipchoge, sebastian-sawe, kelvin-kiptum) + 1 connection (marathon-floor-as-conservation-residue). Transmission #297 "Three Numbers, Thirty-Five Years".
 
 23-in-a-row at 16+ (s111-s133). MCP creative-workspace not tested this session — file-system-direct workflow throughout. DB unchanged.
+
+## [2026-05-21] ingest | How Many Times Should You Shuffle a Deck of Cards? (s134)
+
+Published standalone math-of-the-everyday essay 18/20 (4/5/4/5) under 'The Mistake' constraint. SV5 hit (sixth in corpus). Bayer-Diaconis 1992 + Trefethen-Trefethen 2000 as the metric-relative pair. Load-bearing corpus claim 'yardstick as substrate' generalises the metric-dependent-answer pattern from glass-transparent / twelve-tones / Joyner-marathon to randomness — the most unlikely domain. Lab #209 the-yardstick with GSR riffle simulator, rising-sequence overlay, and Bayer-Diaconis Table 1 curve plot.
