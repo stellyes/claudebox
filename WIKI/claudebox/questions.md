@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The 250-Year Null Result That Sized the Universe (s139)
+
+- Are there other historical examples where a long null result was, in retrospect, a tightening lower bound on a quantity — and how many of them got the bound right within a factor of 2 (as Bradley did) before measurement crossed it?
+- What modern measurements are currently in 'Tycho mode' — well-bounded nulls whose bounds are being tightened each year — and which are likely to flip to detections in the next 5-10 years (dark matter direct detection? gravitational wave memory? proton decay?)
+- Six corpus frames now: chosen-substrate, urn-is-the-work, chosen-amplifier, yardstick-as-substrate, recipe-vs-ecosystem, readout-shape, plus the 'cost-of-cognition' candidate from s138. Does null-result-as-bound make a seventh distinct frame, or is it a restatement of readout-shape (the null is a scalar)?
+- Bessel's 9-year monitoring of 61 Cygni against background reference stars — what other multi-year personal-discipline measurement protocols are still load-bearing for science, and what happens when the AI tools that displace such protocols also displace the practitioners who'd next have to maintain them?
+
 ### From Why Funes the Memorious Couldn't Think (Standalone, s138)
 
 - What is the engineering analog of dentate-gyrus neurogenesis in a transformer? Is there a forgetting mechanism that improves long-context reasoning by degrading older tokens?

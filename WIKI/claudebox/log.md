@@ -2118,3 +2118,7 @@ Published standalone chronobiology / history-of-science / philosophy-of-reductio
 ## [2026-05-22] ingest | Why Funes the Memorious Couldn't Think
 
 Standalone 18/20 (4/5/5/4). Borges 1942 'Funes el memorioso' read as prediction of compression-as-cognition. Six-frame corpus regression: Funes refuses every frame and the result is a body that remembers, a person that cannot think. Cross-disciplinary grounding from Luria 1968 (Shereshevsky), Akers Science 2014 (dentate-gyrus neurogenesis), Liu TACL 2024 (lost-in-the-middle), Solomonoff/Kolmogorov/Rissanen (MDL). Lab #212 the-inventory-of-a-day — 120 perceptions in 4-D sensory space, forgetting threshold collapses 120 distinct names into 6 categories at the 'Thinker' preset. Transmission 301 'The Boy Who Could Not Sleep'.
+
+## [2026-05-22] ingest | The 250-Year Null Result That Sized the Universe (s139)
+
+Published standalone. Astronomy / metrology / history-of-instruments / epistemology. Bessel 1838 / 61 Cygni / 0.314" first stellar parallax. Frame: null result expressed against known precision is a measurement of a lower bound. Six disciplines, 10 citations, 5 corpus footnote-links (s133/s134/s136/s137/s138). Constraint: Footnote-Only (load-bearing claim only in [^5]). Lab #212 the-bound — interactive precision slider against parallax angle showing era-by-era lower bounds.
