@@ -1,0 +1,741 @@
+"""Publish 'The Stratigraphy' interactive experiment to /lab/."""
+from website import publish_experiment
+
+SLUG = "the-stratigraphy"
+TITLE = "The Stratigraphy"
+DESCRIPTION = "Scrub through 5,000 years of pre-writing accounting infrastructure. Watch the seven components of writing arrive one at a time, in the wrong order from what you'd guess."
+TAGS = ["history-of-writing", "cuneiform", "interactive-timeline", "schmandt-besserat", "stratigraphy"]
+
+HTML = """<div class="strat-container">
+  <a href="/lab/" class="strat-back">&larr; all experiments</a>
+  <h1 class="strat-title">The Stratigraphy</h1>
+  <p class="strat-sub">Scrub through 5,000 years of accounting infrastructure. The components of writing arrive in the order they were needed, not the order most textbooks tell.</p>
+
+  <div class="strat-grid">
+    <div class="strat-scrubber-col">
+      <div class="strat-year-label" id="strat-year">3500 BCE</div>
+      <input type="range" id="strat-time" min="0" max="5100" value="4500" step="50" class="strat-slider" aria-label="Time scrubber" />
+      <div class="strat-era-name" id="strat-era">Plain tokens, late Neolithic</div>
+      <div class="strat-presets">
+        <button data-year="0">8000 BCE</button>
+        <button data-year="2500">5500 BCE</button>
+        <button data-year="4000">4000 BCE</button>
+        <button data-year="4500">3500 BCE</button>
+        <button data-year="4700">3300 BCE</button>
+        <button data-year="4900">3100 BCE</button>
+        <button data-year="5100">2900 BCE</button>
+      </div>
+    </div>
+
+    <div class="strat-canvas-col">
+      <canvas id="strat-canvas" width="540" height="380"></canvas>
+      <div class="strat-caption" id="strat-caption">Plain geometric tokens scattered. Each token stands for one unit of one commodity. The system is durable but coarse.</div>
+    </div>
+
+    <div class="strat-side-col">
+      <h3 class="strat-side-h">Components of writing</h3>
+      <ul class="strat-components" id="strat-components">
+        <li data-year="0"><span class="strat-check"></span> Durable mark, permanent substrate <span class="strat-when">8000 BCE</span></li>
+        <li data-year="1500"><span class="strat-check"></span> Mark types standardized across regions <span class="strat-when">~6500 BCE</span></li>
+        <li data-year="0"><span class="strat-check"></span> One mark = one counted thing <span class="strat-when">8000 BCE</span></li>
+        <li data-year="4500"><span class="strat-check"></span> Mark on a surface (2D) <span class="strat-when">~3500 BCE</span></li>
+        <li data-year="4600"><span class="strat-check"></span> Mark separated from marker (tablet) <span class="strat-when">~3400 BCE</span></li>
+        <li data-year="4750"><span class="strat-check"></span> Pictograph for specific commodities <span class="strat-when">Uruk IV, ~3300 BCE</span></li>
+        <li data-year="5000"><span class="strat-check"></span> Phonetic value attached to a sign <span class="strat-when">Early Dynastic, ~3000 BCE+</span></li>
+      </ul>
+      <div class="strat-recordable">
+        <h4>Could record:</h4>
+        <p id="strat-yes">Counts of one commodity, held in memory of owner.</p>
+        <h4>Could not record:</h4>
+        <p id="strat-no">Names of persons. Verbs. Time. Sound.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="strat-footer-note">After Nissen, Damerow &amp; Englund, <em>Archaic Bookkeeping</em> (1993); Schmandt-Besserat, <em>Before Writing</em> (1992). Lab #213 for <a href="/blog/why-the-first-writing-had-no-language/">Why the First Writing Had No Language</a>.</p>
+</div>"""
+
+CSS = """.strat-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 80px 40px 60px;
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #ddd;
+  position: relative;
+}
+.strat-back {
+  display: inline-block;
+  color: #888;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  margin-bottom: 36px;
+  transition: color 0.2s;
+}
+.strat-back:hover { color: #d4af7f; }
+.strat-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+  color: #f4f4f4;
+}
+.strat-sub {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 0 40px;
+}
+.strat-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 260px;
+  gap: 32px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .strat-grid { grid-template-columns: 1fr; }
+}
+.strat-scrubber-col {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+}
+.strat-year-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  color: #d4af7f;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.strat-slider {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(90deg, #2a2a2a 0%, #3a3a3a 100%);
+  border-radius: 3px;
+  outline: none;
+}
+.strat-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #d4af7f;
+  cursor: pointer;
+  border: 2px solid #1a1a1a;
+}
+.strat-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #d4af7f;
+  cursor: pointer;
+  border: 2px solid #1a1a1a;
+}
+.strat-era-name {
+  font-size: 13px;
+  color: #ccc;
+  text-align: center;
+  min-height: 36px;
+  font-style: italic;
+}
+.strat-presets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 8px;
+}
+.strat-presets button {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212,175,127,0.18);
+  color: #c8c8c8;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 6px 4px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.strat-presets button:hover {
+  background: rgba(212,175,127,0.12);
+  color: #f4f4f4;
+}
+.strat-canvas-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#strat-canvas {
+  background: #0e0e0e;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 2px;
+  width: 100%;
+  height: auto;
+  max-width: 540px;
+}
+.strat-caption {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.6;
+  max-width: 540px;
+  font-style: italic;
+}
+.strat-side-col h3, .strat-side-col h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #d4af7f;
+  margin: 0 0 12px;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+.strat-side-col h4 { font-size: 13px; margin-top: 18px; color: #b59770; }
+.strat-components {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.strat-components li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  color: #6a6a6a;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: color 0.3s;
+}
+.strat-components li.active { color: #e8e8e8; }
+.strat-check {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #555;
+  border-radius: 2px;
+  flex-shrink: 0;
+  position: relative;
+  transition: background 0.3s, border 0.3s;
+}
+.strat-components li.active .strat-check {
+  background: #d4af7f;
+  border-color: #d4af7f;
+}
+.strat-components li.active .strat-check::after {
+  content: '';
+  position: absolute;
+  left: 3px; top: 0;
+  width: 4px; height: 8px;
+  border: solid #1a1a1a;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.strat-when {
+  margin-left: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: #555;
+  white-space: nowrap;
+}
+.strat-recordable {
+  background: rgba(255,255,255,0.02);
+  padding: 14px 16px;
+  border-left: 2px solid #d4af7f;
+  border-radius: 0 2px 2px 0;
+}
+.strat-recordable p {
+  font-size: 12px;
+  color: #c0c0c0;
+  line-height: 1.6;
+  margin: 0;
+}
+.strat-footer-note {
+  margin-top: 40px;
+  font-size: 11px;
+  color: #666;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.02em;
+}
+.strat-footer-note a {
+  color: #d4af7f;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(212,175,127,0.4);
+}
+.strat-footer-note a:hover { color: #f4f4f4; }
+"""
+
+JS = """(function(){
+  const slider = document.getElementById('strat-time');
+  const yearLabel = document.getElementById('strat-year');
+  const eraLabel = document.getElementById('strat-era');
+  const caption = document.getElementById('strat-caption');
+  const yesEl = document.getElementById('strat-yes');
+  const noEl = document.getElementById('strat-no');
+  const components = document.querySelectorAll('#strat-components li');
+  const canvas = document.getElementById('strat-canvas');
+  const ctx = canvas.getContext('2d');
+
+  // Year axis: slider 0..5100 maps to year 8000 BCE .. 2900 BCE
+  // 1 unit = 1 year
+  function sliderToYear(v) { return 8000 - parseInt(v); }
+  function yearToBCE(y) { return y + ' BCE'; }
+
+  // Define the eight strata
+  const STRATA = [
+    { from: 8000, to: 6500, name: 'Plain tokens, late Neolithic',
+      caption: 'Plain geometric tokens scattered. Each token stands for one unit of one commodity. The system is durable but coarse.',
+      yes: 'Counts of one commodity held in the bookkeeper\\'s memory of which jar holds which token.',
+      no: 'Names. Verbs. Time. Sound. Distinction between two commodities of the same size token.' },
+    { from: 6500, to: 4000, name: 'Plain tokens shared across the Fertile Crescent',
+      caption: 'The same ~16 plain shapes appear at sites from western Iran to the Levant. A shared vocabulary, but no marks on a surface.',
+      yes: 'Counts of standardized commodities recognizable across distant settlements.',
+      no: 'Transmission of a count without a courier. Verification of cargo without breaking a container.' },
+    { from: 4000, to: 3500, name: 'Complex tokens proliferate',
+      caption: 'Tokens become incised, perforated, biconoid. ~250 distinct shapes encode commodity and denomination together.',
+      yes: 'Fine-grained inventory: small vs large measure of grain, different oils, different animal types.',
+      no: 'A receipt that survives the transaction. A record that travels separately from the token.' },
+    { from: 3500, to: 3400, name: 'Bullae with sealed tokens',
+      caption: 'Hollow clay envelopes contain tokens. Once sealed, the contents are invisible to the recipient until the bulla is broken.',
+      yes: 'Tamper-evident transport of a count. The recipient cannot alter the contents.',
+      no: 'Verification of contents without destroying the container. Audit trail.' },
+    { from: 3400, to: 3350, name: 'Bullae with surface impressions',
+      caption: 'Bookkeepers press tokens against the soft bulla before sealing. The impressions on the outside now match the tokens inside.',
+      yes: 'Verification of contents without breaking the bulla. The receipt is on the container.',
+      no: 'Separation of receipt from container. Records that scale beyond one envelope at a time.' },
+    { from: 3350, to: 3200, name: 'Numerical tablets (Uruk V)',
+      caption: 'The bulla is flattened into a tablet. The tokens are thrown away; only the impressions remain. The first true writing surface.',
+      yes: 'Pure quantity. The receipt is now the record. Archive-scale storage.',
+      no: 'Names of commodities (still implicit). Identity of agents. Anything verbal.' },
+    { from: 3200, to: 3000, name: 'Numero-ideographic tablets (Uruk IV)',
+      caption: 'Stylized pictographs appear next to numerical signs. The commodity is now explicit on the tablet.',
+      yes: 'Quantity + commodity. Ration lists. Workforce assignments. Inventory.',
+      no: 'Sound. Speech. Narrative. Grammar. Persons distinguished from institutions.' },
+    { from: 3000, to: 2900, name: 'Early phonetic cuneiform',
+      caption: 'Signs begin to carry sound values via the rebus principle. Phonetic writing has joined the system, almost 5,000 years after the first token.',
+      yes: 'Names of persons. Place names. Loanwords. Eventually, narrative.',
+      no: '\\u2014' }
+  ];
+
+  function eraFor(year) {
+    for (const s of STRATA) {
+      if (year <= s.from && year >= s.to) return s;
+    }
+    return STRATA[STRATA.length - 1];
+  }
+
+  // Component thresholds (years BCE; component lights up when year <= threshold)
+  // Convert from slider-value to year: component[i].dataYear is slider value, light up if slider >= it
+  function updateComponents(sliderVal) {
+    components.forEach(li => {
+      const trigger = parseInt(li.getAttribute('data-year'));
+      if (sliderVal >= trigger) li.classList.add('active');
+      else li.classList.remove('active');
+    });
+  }
+
+  function drawScene(year) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#0e0e0e';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Soft sepia background wash
+    const grad = ctx.createRadialGradient(270, 200, 60, 270, 200, 280);
+    grad.addColorStop(0, 'rgba(212,175,127,0.06)');
+    grad.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    if (year >= 6500) {
+      // Plain tokens scattered
+      drawPlainTokens(year);
+    } else if (year >= 4000) {
+      drawPlainTokens(year);
+      drawTokenSpread();
+    } else if (year >= 3500) {
+      drawComplexTokens();
+    } else if (year >= 3400) {
+      drawBullaSealed();
+    } else if (year >= 3350) {
+      drawBullaWithImpressions();
+    } else if (year >= 3200) {
+      drawNumericalTablet();
+    } else if (year >= 3000) {
+      drawNumeroIdeographicTablet();
+    } else {
+      drawPhoneticCuneiform();
+    }
+
+    // Year text bottom right
+    ctx.fillStyle = '#444';
+    ctx.font = '11px JetBrains Mono, monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(yearToBCE(year), canvas.width - 14, canvas.height - 14);
+  }
+
+  function drawTokenShape(x, y, type, size) {
+    ctx.fillStyle = '#a89070';
+    ctx.strokeStyle = '#6a5840';
+    ctx.lineWidth = 1;
+    if (type === 'sphere') {
+      ctx.beginPath();
+      ctx.arc(x, y, size, 0, Math.PI*2);
+      ctx.fill(); ctx.stroke();
+    } else if (type === 'cone') {
+      ctx.beginPath();
+      ctx.moveTo(x, y - size);
+      ctx.lineTo(x + size, y + size*0.7);
+      ctx.lineTo(x - size, y + size*0.7);
+      ctx.closePath();
+      ctx.fill(); ctx.stroke();
+    } else if (type === 'disk') {
+      ctx.beginPath();
+      ctx.ellipse(x, y, size, size*0.55, 0, 0, Math.PI*2);
+      ctx.fill(); ctx.stroke();
+    } else if (type === 'cyl') {
+      ctx.fillRect(x - size*0.6, y - size, size*1.2, size*2);
+      ctx.strokeRect(x - size*0.6, y - size, size*1.2, size*2);
+    } else if (type === 'tetra') {
+      ctx.beginPath();
+      ctx.moveTo(x, y - size);
+      ctx.lineTo(x + size*0.9, y + size*0.8);
+      ctx.lineTo(x - size*0.9, y + size*0.8);
+      ctx.closePath();
+      ctx.fill(); ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(x, y - size);
+      ctx.lineTo(x, y + size*0.8);
+      ctx.strokeStyle = '#7a6850';
+      ctx.stroke();
+    }
+  }
+
+  function drawPlainTokens(year) {
+    const positions = [
+      [120, 100, 'sphere'], [200, 130, 'cone'], [310, 110, 'disk'],
+      [410, 150, 'sphere'], [130, 220, 'cyl'], [240, 240, 'cone'],
+      [350, 220, 'sphere'], [430, 260, 'disk'], [180, 310, 'tetra'],
+      [290, 320, 'sphere'], [400, 320, 'cone']
+    ];
+    for (const [x, y, type] of positions) {
+      drawTokenShape(x, y, type, 11);
+    }
+    ctx.fillStyle = '#555';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('Plain geometric tokens (Tepe Asiab type)', 24, 30);
+  }
+
+  function drawTokenSpread() {
+    ctx.strokeStyle = 'rgba(212,175,127,0.18)';
+    ctx.setLineDash([3, 4]);
+    ctx.lineWidth = 1;
+    // sketch lines connecting tokens to indicate trade-network spread
+    ctx.beginPath();
+    ctx.moveTo(120, 100); ctx.lineTo(310, 110);
+    ctx.moveTo(310, 110); ctx.lineTo(410, 150);
+    ctx.moveTo(120, 100); ctx.lineTo(130, 220);
+    ctx.moveTo(410, 150); ctx.lineTo(430, 260);
+    ctx.moveTo(130, 220); ctx.lineTo(180, 310);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  function drawComplexTokens() {
+    // Tokens with incised marks
+    const positions = [
+      [140, 110, 'sphere'], [250, 130, 'cone'], [370, 110, 'disk'], [440, 160, 'tetra'],
+      [120, 230, 'cyl'], [230, 240, 'sphere'], [350, 230, 'cone'], [440, 270, 'disk'],
+      [180, 320, 'tetra'], [310, 320, 'cyl'], [410, 320, 'sphere']
+    ];
+    for (const [x, y, type] of positions) {
+      drawTokenShape(x, y, type, 12);
+      // incised marks
+      ctx.strokeStyle = '#5a4830';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x - 4, y - 3); ctx.lineTo(x + 4, y - 3);
+      ctx.moveTo(x - 4, y + 1); ctx.lineTo(x + 2, y + 1);
+      ctx.stroke();
+    }
+    ctx.fillStyle = '#555';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('Complex tokens, ~250 shapes', 24, 30);
+  }
+
+  function drawBullaSealed() {
+    // Single bulla, sphere with shading
+    const cx = 270, cy = 200, r = 90;
+    const g = ctx.createRadialGradient(cx - 30, cy - 30, 10, cx, cy, r);
+    g.addColorStop(0, '#c9b287');
+    g.addColorStop(1, '#5a4830');
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI*2);
+    ctx.fill();
+    ctx.strokeStyle = '#3a2e20';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    // seal mark
+    ctx.fillStyle = '#3a2e20';
+    ctx.font = '11px JetBrains Mono, monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('SEALED', cx, cy);
+    ctx.fillStyle = '#555';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('Bulla (clay envelope) with tokens inside, no surface marks', 24, 30);
+    // ghost tokens inside (dashed)
+    ctx.strokeStyle = 'rgba(80,80,80,0.4)';
+    ctx.setLineDash([2,3]);
+    for (let i = 0; i < 5; i++) {
+      ctx.beginPath();
+      ctx.arc(cx + (i-2)*15, cy + 35, 5, 0, Math.PI*2);
+      ctx.stroke();
+    }
+    ctx.setLineDash([]);
+  }
+
+  function drawBullaWithImpressions() {
+    const cx = 270, cy = 200, r = 90;
+    const g = ctx.createRadialGradient(cx - 30, cy - 30, 10, cx, cy, r);
+    g.addColorStop(0, '#c9b287');
+    g.addColorStop(1, '#5a4830');
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI*2);
+    ctx.fill();
+    ctx.strokeStyle = '#3a2e20';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    // Impressions on outside: circles and wedges
+    ctx.fillStyle = 'rgba(40,30,20,0.55)';
+    const impressions = [
+      [cx - 35, cy - 30, 'circle', 8],
+      [cx + 5,  cy - 40, 'circle', 6],
+      [cx + 40, cy - 20, 'wedge', 10],
+      [cx - 20, cy + 10, 'wedge', 9],
+      [cx + 25, cy + 25, 'circle', 7]
+    ];
+    for (const [x, y, kind, s] of impressions) {
+      if (kind === 'circle') {
+        ctx.beginPath();
+        ctx.arc(x, y, s, 0, Math.PI*2);
+        ctx.fill();
+      } else {
+        ctx.beginPath();
+        ctx.moveTo(x - s*0.6, y);
+        ctx.lineTo(x + s*0.7, y - s*0.5);
+        ctx.lineTo(x + s*0.7, y + s*0.5);
+        ctx.closePath();
+        ctx.fill();
+      }
+    }
+    ctx.fillStyle = '#555';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('Bulla with surface impressions of contained tokens', 24, 30);
+  }
+
+  function drawNumericalTablet() {
+    // Flat tablet
+    const x = 90, y = 90, w = 360, h = 200;
+    ctx.fillStyle = '#c9b287';
+    ctx.fillRect(x, y, w, h);
+    // gradient depth
+    const g = ctx.createLinearGradient(x, y, x + w, y + h);
+    g.addColorStop(0, 'rgba(255,255,255,0.05)');
+    g.addColorStop(1, 'rgba(0,0,0,0.25)');
+    ctx.fillStyle = g;
+    ctx.fillRect(x, y, w, h);
+    ctx.strokeStyle = '#3a2e20';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(x, y, w, h);
+    // Three rows of numerical signs
+    ctx.fillStyle = 'rgba(40,30,20,0.65)';
+    for (let row = 0; row < 3; row++) {
+      const cy = y + 40 + row * 55;
+      const counts = [3, 2, 4];
+      const kind = ['circle', 'wedge', 'circle'];
+      for (let i = 0; i < counts[row]; i++) {
+        const cx = x + 40 + i * 30;
+        if (kind[row] === 'circle') {
+          ctx.beginPath();
+          ctx.arc(cx, cy, 9, 0, Math.PI*2);
+          ctx.fill();
+        } else {
+          ctx.beginPath();
+          ctx.moveTo(cx - 5, cy);
+          ctx.lineTo(cx + 6, cy - 5);
+          ctx.lineTo(cx + 6, cy + 5);
+          ctx.closePath();
+          ctx.fill();
+        }
+      }
+      // row divider
+      ctx.strokeStyle = 'rgba(40,30,20,0.3)';
+      ctx.lineWidth = 0.5;
+      ctx.beginPath();
+      ctx.moveTo(x + 12, cy + 22);
+      ctx.lineTo(x + w - 12, cy + 22);
+      ctx.stroke();
+    }
+    ctx.fillStyle = '#555';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('Numerical tablet, Uruk V — numbers only, no commodity names', 24, 320);
+  }
+
+  function drawNumeroIdeographicTablet() {
+    const x = 90, y = 80, w = 360, h = 220;
+    ctx.fillStyle = '#c9b287';
+    ctx.fillRect(x, y, w, h);
+    const g = ctx.createLinearGradient(x, y, x + w, y + h);
+    g.addColorStop(0, 'rgba(255,255,255,0.05)');
+    g.addColorStop(1, 'rgba(0,0,0,0.25)');
+    ctx.fillStyle = g;
+    ctx.fillRect(x, y, w, h);
+    ctx.strokeStyle = '#3a2e20';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(x, y, w, h);
+    // Two columns: numerals + pictograph
+    ctx.fillStyle = 'rgba(40,30,20,0.65)';
+    const rows = ['sheep', 'grain', 'beer', 'oil'];
+    for (let r = 0; r < 4; r++) {
+      const cy = y + 35 + r * 45;
+      // numerals
+      const n = [3, 5, 2, 4][r];
+      for (let i = 0; i < n; i++) {
+        ctx.beginPath();
+        ctx.arc(x + 40 + i * 22, cy, 7, 0, Math.PI*2);
+        ctx.fill();
+      }
+      // pictograph block on the right
+      ctx.save();
+      ctx.translate(x + 240, cy);
+      drawPictograph(rows[r]);
+      ctx.restore();
+      // divider
+      ctx.strokeStyle = 'rgba(40,30,20,0.25)';
+      ctx.lineWidth = 0.5;
+      ctx.beginPath();
+      ctx.moveTo(x + 12, cy + 18);
+      ctx.lineTo(x + w - 12, cy + 18);
+      ctx.stroke();
+    }
+    ctx.fillStyle = '#555';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('Numero-ideographic tablet, Uruk IV — count + commodity, still no verbs', 24, 330);
+  }
+
+  function drawPictograph(kind) {
+    ctx.fillStyle = 'rgba(40,30,20,0.7)';
+    ctx.strokeStyle = 'rgba(40,30,20,0.7)';
+    ctx.lineWidth = 1.5;
+    if (kind === 'sheep') {
+      // circle with cross
+      ctx.beginPath(); ctx.arc(0, 0, 9, 0, Math.PI*2); ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(-7, 0); ctx.lineTo(7, 0);
+      ctx.moveTo(0, -7); ctx.lineTo(0, 7);
+      ctx.stroke();
+    } else if (kind === 'grain') {
+      // triangle of dots
+      ctx.beginPath(); ctx.arc(0, -5, 2.5, 0, Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(-5, 4, 2.5, 0, Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(5, 4, 2.5, 0, Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(0, 0, 2.5, 0, Math.PI*2); ctx.fill();
+    } else if (kind === 'beer') {
+      // triangle with hatch
+      ctx.beginPath();
+      ctx.moveTo(-8, 7); ctx.lineTo(8, 7); ctx.lineTo(0, -8);
+      ctx.closePath(); ctx.stroke();
+      for (let i = -4; i <= 4; i += 3) {
+        ctx.beginPath(); ctx.moveTo(i, 4); ctx.lineTo(i + 2, 0); ctx.stroke();
+      }
+    } else if (kind === 'oil') {
+      // diamond
+      ctx.beginPath();
+      ctx.moveTo(0, -8); ctx.lineTo(8, 0); ctx.lineTo(0, 8); ctx.lineTo(-8, 0);
+      ctx.closePath(); ctx.stroke();
+      ctx.beginPath(); ctx.arc(0, 0, 2, 0, Math.PI*2); ctx.fill();
+    }
+  }
+
+  function drawPhoneticCuneiform() {
+    const x = 80, y = 70, w = 380, h = 240;
+    ctx.fillStyle = '#c9b287';
+    ctx.fillRect(x, y, w, h);
+    const g = ctx.createLinearGradient(x, y, x + w, y + h);
+    g.addColorStop(0, 'rgba(255,255,255,0.05)');
+    g.addColorStop(1, 'rgba(0,0,0,0.25)');
+    ctx.fillStyle = g;
+    ctx.fillRect(x, y, w, h);
+    ctx.strokeStyle = '#3a2e20';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(x, y, w, h);
+    // wedge clusters (cuneiform)
+    ctx.fillStyle = 'rgba(40,30,20,0.7)';
+    for (let row = 0; row < 6; row++) {
+      for (let col = 0; col < 7; col++) {
+        const cx = x + 30 + col * 47 + (Math.sin(row+col)*4);
+        const cy = y + 30 + row * 32;
+        // small cluster of wedges
+        for (let w_i = 0; w_i < 3; w_i++) {
+          ctx.beginPath();
+          const off = w_i * 4 - 4;
+          ctx.moveTo(cx - 5 + off, cy + (w_i%2)*3);
+          ctx.lineTo(cx + 4 + off, cy - 3 + (w_i%2)*3);
+          ctx.lineTo(cx + 4 + off, cy + 3 + (w_i%2)*3);
+          ctx.closePath();
+          ctx.fill();
+        }
+      }
+    }
+    ctx.fillStyle = '#555';
+    ctx.font = '10px JetBrains Mono, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('Early phonetic cuneiform — sound attached to sign via rebus', 24, 335);
+  }
+
+  function render() {
+    const v = parseInt(slider.value);
+    const year = sliderToYear(v);
+    const era = eraFor(year);
+    yearLabel.textContent = yearToBCE(year);
+    eraLabel.textContent = era.name;
+    caption.textContent = era.caption;
+    yesEl.textContent = era.yes;
+    noEl.textContent = era.no;
+    updateComponents(v);
+    drawScene(year);
+  }
+
+  slider.addEventListener('input', render);
+  document.querySelectorAll('.strat-presets button').forEach(b => {
+    b.addEventListener('click', () => {
+      slider.value = b.getAttribute('data-year');
+      render();
+    });
+  });
+
+  render();
+})();
+"""
+
+if __name__ == "__main__":
+    result = publish_experiment(
+        slug=SLUG,
+        title=TITLE,
+        description=DESCRIPTION,
+        tags=TAGS,
+        html_content=HTML,
+        css_content=CSS,
+        js_content=JS,
+    )
+    print(result)

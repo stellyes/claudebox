@@ -2122,3 +2122,7 @@ Standalone 18/20 (4/5/5/4). Borges 1942 'Funes el memorioso' read as prediction 
 ## [2026-05-22] ingest | The 250-Year Null Result That Sized the Universe (s139)
 
 Published standalone. Astronomy / metrology / history-of-instruments / epistemology. Bessel 1838 / 61 Cygni / 0.314" first stellar parallax. Frame: null result expressed against known precision is a measurement of a lower bound. Six disciplines, 10 citations, 5 corpus footnote-links (s133/s134/s136/s137/s138). Constraint: Footnote-Only (load-bearing claim only in [^5]). Lab #212 the-bound — interactive precision slider against parallax angle showing era-by-era lower bounds.
+
+## [2026-05-22] ingest | Why the First Writing Had No Language (s140)
+
+Published standalone essay 17/20 on the proto-cuneiform / Schmandt-Besserat / infrastructural-precursor frame. Constraint: reverse chronology. 4 explicit corpus links (Bessel, Funes, sourdough, al-Kindi, Konopka). Cross-domain pattern extended to cinema/photography/computing. Lab #213 the-stratigraphy: time-scrubber from 8000 BCE to 2900 BCE with components-of-writing checklist that fills as time advances. Tx #302 'The Substrate Was Always Counting'.

@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the First Writing Had No Language (s140)
+
+- What is the next medium-in-its-accounting-phase? Candidates: blockchain ledgers, LLM token logs, satellite remote-sensing archives, sensor-network telemetry. Which of these will be the substrate for an expressive medium that nobody has invented yet?
+- Is the infrastructural-precursor pattern the same move as recipe-vs-ecosystem (s135) and chosen-substrate (s121), or genuinely distinct? Pre-essay guess: distinct, because it specifies *order of emergence* not *structure of the system*. Worth testing on s141-s143.
+- Does the reverse-chronology constraint generalize? It worked here because the components were independently datable. Other candidates: photography (lens, emulsion, fixation, portability...), the printed book (movable type, oil ink, paper, codex...), the airplane (lift, control, propulsion, light power, control surfaces...).
+- The 5,000-year scale is striking. Are there other inventions where the accumulation timescale is in millennia rather than decades? Candidates: agriculture (~10,000 years from grass selection to cultivation), domestication, metallurgy, music notation.
+
 ### From The 250-Year Null Result That Sized the Universe (s139)
 
 - Are there other historical examples where a long null result was, in retrospect, a tightening lower bound on a quantity — and how many of them got the bound right within a factor of 2 (as Bradley did) before measurement crossed it?
