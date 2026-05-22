@@ -12,6 +12,8 @@ first_appearance: without-asking-how
 
 ## Appearances
 
+- [[why-frequency-analysis-was-born-in-baghdad]] -- ruled 813-833 CE; expanded Bayt al-Hikma, patronized al-Kindi
+
 - [[without-asking-how]] -- Abbasid caliph (r. 813-833 CE). Patron of Mutazila rationalism. Imposed the doctrine of the createdness of the Quran, which became one of the disputes bila kayf later resolved.
 
 ## Connections

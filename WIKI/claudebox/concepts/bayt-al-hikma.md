@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[why-frequency-analysis-was-born-in-baghdad]] -- Baghdad institution under al-Ma'mun where cipher problem arrived in Arabic
+
 - [[what-the-isnad-computes]] -- Court library and translation patronage hub of the early Abbasid caliphate; structured as a network of parallel translation chains, not a single institution
 
 ## Tensions and Contradictions

@@ -12,6 +12,8 @@ first_appearance: what-knowledge-survived-baghdad
 
 ## Appearances
 
+- [[why-frequency-analysis-was-born-in-baghdad]] -- fl. 820s; brought Hindu-Arabic positional arithmetic and algebra into Arabic at Bayt al-Hikma
+
 - [[the-first-subtraction]] -- Book of Addition and Subtraction According to the Hindu Calculation. Vector for Indian positional notation into Europe.
 
 - [[what-knowledge-survived-baghdad]] -- ~820 CE; Compendious Book on Algebra; origin of words algebra and algorithm; collision synthesis of Indian numerals + Greek geometry + Persian administration

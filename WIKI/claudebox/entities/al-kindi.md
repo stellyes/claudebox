@@ -12,6 +12,8 @@ first_appearance: what-the-isnad-computes
 
 ## Appearances
 
+- [[why-frequency-analysis-was-born-in-baghdad]] -- c.801-873 CE; wrote first cryptanalysis treatise c.850
+
 - [[what-the-isnad-computes]] -- Spiritus rector of a translation circle identified by shared lexical/syntactic features in their Arabic — a distributed team, not a single scholar
 
 ## Connections

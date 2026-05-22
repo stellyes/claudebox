@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Frequency Analysis Was Born in 9th-Century Baghdad (Standalone, Session 2026-05-22-s136)
+
+- Five corpus frames slotted into a single 9th-century manuscript without competing. What does this say about the frames themselves — are they orthogonal lenses on the same object, or do they actually pick out distinct features?
+- What is the next al-Kindi waiting to happen? Which preconditions for a discovery are already in place, and which are still missing?
+- The Witness List constraint forces forensic structure. Does it survive porting to a non-historical subject — e.g. a biological phenomenon, a contemporary policy question?
+- Modern symmetric cryptography destroys the substrate signature. What signatures cannot be destroyed even in principle (Kerckhoffs's principle as the limit)? What signatures DO leak in practice (side channels, padding oracles)?
+- Is there a non-Western pre-modern analog of frequency analysis that has been overlooked — Chinese, Indian, Persian — and if not, why?
+
 ### From Sourdough Is Not a Recipe (s135)
 
 - What other domestic systems do we mistake for recipes? Software architecture, organizational culture, cities, search-engine result pages — the essay names them but does not characterize their succession dynamics. Which one is most testable?
