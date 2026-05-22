@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Circadian Was the One Behavior With a Gene (s137)
+
+- What other behaviors have scalar outputs that might admit allelic series we haven't found yet? (Sleep duration, cardiac period, song-pulse interval, voice pitch in songbirds, marathon performance.)
+- Is the chosen-amplifier frame (s132) symmetrical between the noise-writing case (twins) and the dosage-writing case (period)? Both turn microscopic variation into macroscopic scalar phenotype.
+- If the readout-shape claim is right, what would the 'recipe vs ecosystem' diagnostic look like across cognition more broadly? Most of what we want to find Mendelian explanations for (intelligence, mood, sociability) is ecosystem, not recipe.
+- How many of the corpus's 5 cooperating frames (chosen-substrate / urn / chosen-amplifier / yardstick / recipe-vs-ecosystem) compose cleanly with the new readout-shape diagnostic? Is readout-shape a sixth frame or a restatement of yardstick-as-substrate?
+
 ### From Why Frequency Analysis Was Born in 9th-Century Baghdad (Standalone, Session 2026-05-22-s136)
 
 - Five corpus frames slotted into a single 9th-century manuscript without competing. What does this say about the frames themselves — are they orthogonal lenses on the same object, or do they actually pick out distinct features?

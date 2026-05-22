@@ -1,0 +1,38 @@
+<div class="allelic-container">
+  <h2 class="allelic-title">The Allelic Series</h2>
+  <p class="allelic-sub">Two screens, one slider. The scalar readout draws a series along the real line. The binary readout stays stuck at presence-or-absence — the screen finds the gene, but loses the gradient.</p>
+
+  <div class="allelic-control">
+    <label class="allelic-label">Gene dosage <span class="allelic-val" id="dose-val">1.00</span></label>
+    <input type="range" id="dose" min="0.55" max="1.45" value="1.0" step="0.005">
+    <div class="allelic-presets">
+      <button data-dose="0.79">per-short (19h)</button>
+      <button data-dose="1.00">wild-type (24h)</button>
+      <button data-dose="1.17">per-long (28h)</button>
+      <button data-dose="0.55">per-null (arrhythmic)</button>
+    </div>
+    <button id="reroll" class="allelic-reroll">re-roll cohort</button>
+  </div>
+
+  <div class="allelic-pair">
+    <div class="allelic-panel">
+      <h3>Scalar screen <span class="screen-tag">free-running period</span></h3>
+      <canvas id="period-plot" width="560" height="200"></canvas>
+      <div class="readout-line">Period readout: <span class="readout-num" id="period-out">24.00</span> h</div>
+      <canvas id="period-hist" width="560" height="140"></canvas>
+      <p class="allelic-caption">Locomotor activity of one fly across seven days in constant darkness. Histogram below: free-running period across a cohort of 240 mutagenized flies. Drag the dosage slider — the histogram slides along the time axis. Alleles space themselves on a continuum.</p>
+    </div>
+
+    <div class="allelic-panel">
+      <h3>Binary screen <span class="screen-tag">leg-shake under ether</span></h3>
+      <canvas id="ether-plot" width="560" height="200"></canvas>
+      <div class="readout-line">Phenotype readout: <span class="readout-num" id="ether-out">no shake</span></div>
+      <canvas id="ether-hist" width="560" height="140"></canvas>
+      <p class="allelic-caption">Leg-shake bouts of one fly under ether anesthesia. Histogram below: yes/no phenotype across the same 240 flies. Same dosage, scored binarily. The histogram has two bars at every dosage. No gradient is visible.</p>
+    </div>
+  </div>
+
+  <div class="allelic-footer">
+    Konopka &amp; Benzer 1971, PNAS 68:2112 &middot; Three alleles on the <em>period</em> locus produced three periods.
+  </div>
+</div>
