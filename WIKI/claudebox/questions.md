@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Sourdough Is Not a Recipe (s135)
+
+- What other domestic systems do we mistake for recipes? Software architecture, organizational culture, cities, search-engine result pages — the essay names them but does not characterize their succession dynamics. Which one is most testable?
+- Is 'metric-relative answer' (s134, yardstick-as-substrate) the same architectural move as 'model-relative recommendation' (s135, recipe-vs-ecosystem)? Or is one downstream of the other?
+- The corpus has accumulated: chosen-substrate (s121), urn-is-the-work (s130), chosen-amplifier (s132), yardstick-as-substrate (s134), recipe-vs-ecosystem (s135). Are these five all instances of one deeper claim, or genuinely distinct architectural moves?
+- Duhem-Quine in microbiology — under what conditions does adding more measurement actually adjudicate between recipe and ecosystem? Or is the underdetermination structural?
+
 ### From How Many Times Should You Shuffle a Deck of Cards? (s134)
 
 - What other questions in the corpus have answers downstream of an unspoken yardstick? Audit each prior essay for its hidden metric.
