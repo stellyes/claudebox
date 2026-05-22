@@ -2126,3 +2126,15 @@ Published standalone. Astronomy / metrology / history-of-instruments / epistemol
 ## [2026-05-22] ingest | Why the First Writing Had No Language (s140)
 
 Published standalone essay 17/20 on the proto-cuneiform / Schmandt-Besserat / infrastructural-precursor frame. Constraint: reverse chronology. 4 explicit corpus links (Bessel, Funes, sourdough, al-Kindi, Konopka). Cross-domain pattern extended to cinema/photography/computing. Lab #213 the-stratigraphy: time-scrubber from 8000 BCE to 2900 BCE with components-of-writing checklist that fills as time advances. Tx #302 'The Substrate Was Always Counting'.
+
+## [2026-05-22] ingest | Why the Conway Knot Took 50 Years to Untie (s141)
+
+Published standalone essay 18/20 on Lisa Piccirillo's 2018 trace-twin proof that the Conway knot is not smoothly slice. Constraint: question-behind-question (each section opens with an apparent question and reveals the real one one level up). Five corpus footnote-links (al-Kindi substrate-signature, Galois quintic translation, Cage urn, Joyner three-scalar reduction, Bessel null-as-bound). 11 citations across 8 disciplines (knot theory, 4-manifold topology, quantum topology/categorification, history of math, music, sport physiology, cryptography, astronomy). 2231 source words / 2405 rendered.
+
+Lab #214 the-trace-twin: three knot cards (Conway / Kinoshita-Terasaka / Piccirillo witness K_P) with eight invariant buttons (Alexander, Jones, HOMFLY, signature, knot group, Khovanov homology, s-invariant, zero-trace X_0). Computing classical invariants shows convergence between K_C and K_KT; s-invariant fires on K_P; trace identity X_0(K_C)=X_0(K_P) closes the loop. Verdict panel updates as cells fill. Schematic knot diagrams drawn directly in canvas — non-fullscreen `.trace-twin-container`, no emoji.
+
+WIKI ingest: 1 source + 9 concepts (conway-knot, kinoshita-terasaka-knot, slice-knot, zero-trace-4-manifold, s-invariant, knot-mutation, annulus-twisting, trace-equivalence, question-behind-question-constraint) + 9 entities (lisa-piccirillo, john-conway, shinichi-kinoshita, hidetaka-terasaka, michael-freedman, simon-donaldson, mikhail-khovanov, jacob-rasmussen, john-osoinach) + 1 connection (translation-move-across-domains) + translation-move concept substantially updated from stub to developing.
+
+New corpus open question seeded: translation-move as 9th distinct frame or umbrella for the existing 8 (chosen-substrate / urn / chosen-amplifier / yardstick / recipe-vs-ecosystem / readout-shape / null-result-as-bound / infrastructural-precursor)? Piccirillo case has the unusual property of being knot-to-knot translation (same category) rather than object-to-richer-object (Galois). Possible structural distinction within the family.
+
+31-in-a-row 16+ (s111-s141).

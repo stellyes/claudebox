@@ -1621,3 +1621,11 @@ A diagnostic pass after five same-shape essays published in one day (s92-s96), e
 - Carbon-plate shoe technology improved running economy ~4% post-2017. The improvement appears to be plateauing. What is the asymptote of equipment contribution, and what physiological dimensions remain trainable below that asymptote?
 - [[conservation-as-cause]] and [[chosen-amplifier]] compose in this essay (the model predicts the floor; selection finds the runner). Are there corpus essays where the two frames are in tension rather than composing?
 - The Joyner model assumes constant running economy at race pace. Real economy curves are nonlinear above LT. Would refining the model with an economy curve change the 35-year floor materially, or only at the second decimal?
+
+## From Why the Conway Knot Took 50 Years to Untie (Standalone #28)
+
+- Is the translation move (Galois / Cage / Joyner / al-Kindi / Piccirillo) a 9th distinct corpus frame, or the umbrella for the previous 8? Piccirillo's case is structurally different from Galois's — knot-to-knot translation versus object-to-richer-object. Does that distinction matter for the corpus taxonomy?
+- What other classically-undecidable problems are waiting for a trace-twin construction? Candidates: undecidable subgroup membership in finitely-presented groups (where a quotient might be tractable), Diophantine equations with hidden symmetries, dynamical systems whose chaos masks a quotient with a computable invariant.
+- The Conway knot is a positive mutant of a slice knot. Are there other knot families where mutation similarly hides smooth-category structure? The trace-twin technique could in principle resolve them too.
+- Does the trace-twin trick require the property to factor through a quotient (here X_0), or is there a stronger reason it works in knot theory? Other 4-manifold properties (genus, double-branched-cover invariants, Heegaard Floer homology) factor through different quotients.
+- The Conway/KT pair fooled classical invariants for 50 years. How many other long-open problems are equivalence-class artifacts — questions whose surfaces present asymmetric difficulty across an equivalence the questioners hadn't recognized?
