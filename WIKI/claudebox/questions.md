@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Funes the Memorious Couldn't Think (Standalone, s138)
+
+- What is the engineering analog of dentate-gyrus neurogenesis in a transformer? Is there a forgetting mechanism that improves long-context reasoning by degrading older tokens?
+- Is the six-frames-as-cost-of-cognition reframing a sixth/seventh corpus frame, or the meta-claim that subsumes the others?
+- Which 20th-century literary thought experiments anticipated specific 21st-century neuro/AI findings — Funes/lost-in-the-middle, Pierre Menard/style transfer, The Library of Babel/generative models? A small comparative essay candidate.
+- Shereshevsky struggled with faces because each expression was a different face. What is the categorization-failure mode in modern face-recognition systems that have no abstraction over expression?
+- Lispector's egg as the limit-case of attention: 'the egg becomes visible only when it is not looked at.' Is this the same architectural move as the chosen amplifier (s132) inverted?
+
 ### From Why Circadian Was the One Behavior With a Gene (s137)
 
 - What other behaviors have scalar outputs that might admit allelic series we haven't found yet? (Sleep duration, cardiac period, song-pulse interval, voice pitch in songbirds, marathon performance.)
