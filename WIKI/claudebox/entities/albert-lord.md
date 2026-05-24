@@ -12,6 +12,8 @@ first_appearance: the-copying-problem
 
 ## Appearances
 
+- [[why-the-iliad-had-no-master-copy]] -- The Singer of Tales 1960
+
 - [[what-the-bronze-forgot]] -- Carried Parry forward; The Singer of Tales 1960; coined special poetic language.
 
 - [[the-copying-problem]] -- oral-formulaic theory

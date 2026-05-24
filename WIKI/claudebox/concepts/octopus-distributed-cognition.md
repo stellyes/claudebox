@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[why-the-iliad-had-no-master-copy]] -- primary case; Sumbre/Hochner/Yekutieli/Ramirez/Godfrey-Smith
+
 - [[how-the-octopus-solves-the-bandwidth-problem]] -- primary development — 500M neurons, 2/3 in arms, 10K per sucker, peripheral motor programs, local autonomy + visual top-down nudging
 
 ## Tensions and Contradictions

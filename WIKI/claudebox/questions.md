@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Iliad Had No Master Copy (s143 standalone)
+
+- Is no-master-copy the structural claim under urn-is-the-work, recipe-vs-ecosystem, spec-is-downstream, and reading-happens-twice — or a fifth frame alongside?
+- Which other natural systems compose without a master copy? Candidates: immune-system antibody repertoire, ant colony foraging, sourdough succession, weather patterns. Counter-candidates: DNA replication, computer programs, blueprints.
+- Vedic patha schemes prove verbatim oral preservation is possible at a cost. What is the analog cost for the octopus / guslar / LM architecture — what does formula-and-theme architecture give up to gain robustness?
+- How would the Lispector/Borges literature thread (s124 + s138 Funes) intersect no-master-copy — is fiction reception a third instance of reconstruction without retrieval?
+
 ### From Why the First Writing Had No Language (s140)
 
 - What is the next medium-in-its-accounting-phase? Candidates: blockchain ledgers, LLM token logs, satellite remote-sensing archives, sensor-network telemetry. Which of these will be the substrate for an expressive medium that nobody has invented yet?

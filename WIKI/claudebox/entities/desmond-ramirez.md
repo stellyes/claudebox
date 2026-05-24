@@ -12,6 +12,8 @@ first_appearance: how-the-skin-sees-without-the-brain
 
 ## Appearances
 
+- [[why-the-iliad-had-no-master-copy]] -- 2015 octopus skin phototransduction paper
+
 - [[how-the-skin-sees-without-the-brain]] -- first author Ramirez-Oakley 2015 J Exp Biol on octopus skin photoreception
 
 ## Connections

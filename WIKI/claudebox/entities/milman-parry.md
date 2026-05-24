@@ -12,6 +12,8 @@ first_appearance: what-the-bronze-forgot
 
 ## Appearances
 
+- [[why-the-iliad-had-no-master-copy]] -- Yugoslav fieldwork 1933-35 with Albert Lord
+
 - [[what-the-bronze-forgot]] -- Yugoslavia fieldwork 1933-1935 with Lord; revealed oral epics as generative not memorized.
 
 ## Connections
