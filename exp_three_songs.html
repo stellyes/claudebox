@@ -1,0 +1,67 @@
+<div class="threesongs-container">
+  <div class="ts-header">
+    <h2 class="ts-title">The Three Songs</h2>
+    <p class="ts-subtitle">After Marler &amp; Tamura 1962 — three white-crowned sparrow dialects, three Bay Area sites, sixty years of stability. Press a site to hear its sonogram pattern. Run the simulator to see whether dialects merge or persist under different dispersal rates.</p>
+  </div>
+
+  <div class="ts-grid">
+    <div class="ts-panel ts-map-panel">
+      <h3 class="ts-h3">Bay Area Dialect Map</h3>
+      <svg viewBox="0 0 360 420" class="ts-map" aria-label="Stylized San Francisco Bay dialect map">
+        <rect x="0" y="0" width="360" height="420" fill="#0c1014"/>
+        <path d="M 60 40 L 100 60 L 130 90 L 110 140 L 80 180 L 90 230 L 100 270 L 130 310 L 160 340 L 200 360 L 240 350 L 260 320 L 280 270 L 300 230 L 310 180 L 295 130 L 270 100 L 230 80 L 180 65 L 130 50 Z" fill="#1b2530" stroke="#2a3640" stroke-width="1"/>
+        <path d="M 110 140 L 130 165 L 155 175 L 170 200 L 175 240 L 165 280 L 145 305 L 130 310 L 100 270 L 90 230 L 80 180 Z" fill="#0c1014" stroke="#2a3640" stroke-width="1"/>
+        <circle id="site-inverness" class="ts-site" cx="95" cy="115" r="9"/>
+        <circle id="site-berkeley" class="ts-site" cx="195" cy="215" r="9"/>
+        <circle id="site-sunset" class="ts-site" cx="225" cy="355" r="9"/>
+        <text x="105" y="108" fill="#cbd3c2" font-family="Inter, sans-serif" font-size="11">Inverness</text>
+        <text x="205" y="208" fill="#cbd3c2" font-family="Inter, sans-serif" font-size="11">Berkeley</text>
+        <text x="235" y="358" fill="#cbd3c2" font-family="Inter, sans-serif" font-size="11">Sunset Beach</text>
+        <text x="20" y="395" fill="#5f6b58" font-family="Inter, sans-serif" font-size="10">~ 130 km north to south  ·  Z. l. nuttalli</text>
+      </svg>
+    </div>
+
+    <div class="ts-panel ts-sono-panel">
+      <h3 class="ts-h3"><span id="ts-sono-title">Berkeley</span> — sonogram</h3>
+      <canvas id="ts-sonogram" width="600" height="220" class="ts-sono"></canvas>
+      <p class="ts-sono-caption" id="ts-sono-caption">Opening whistle ~4.0 kHz, descending buzzy trill, thin terminal note.</p>
+      <div class="ts-sono-controls">
+        <button type="button" data-site="berkeley" class="ts-btn ts-btn-active">Berkeley</button>
+        <button type="button" data-site="inverness" class="ts-btn">Inverness</button>
+        <button type="button" data-site="sunset" class="ts-btn">Sunset Beach</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="ts-sim-panel">
+    <h3 class="ts-h3">Cultural Drift Simulator</h3>
+    <p class="ts-sim-sub">A 24-cell strip of sparrow territories. Each generation, juveniles learn from a random tutor within reach. The species template prunes deviations beyond a fixed boundary. Adjust dispersal &amp; mutation; press <em>Run</em> to step 80 generations.</p>
+
+    <div class="ts-sim-controls">
+      <label class="ts-label">Dispersal radius <span id="ts-disp-val">2</span> cells
+        <input id="ts-disp" type="range" min="1" max="12" value="2"/>
+      </label>
+      <label class="ts-label">Cultural mutation <span id="ts-mut-val">0.05</span>
+        <input id="ts-mut" type="range" min="0" max="40" value="5"/>
+      </label>
+      <label class="ts-label">Template width <span id="ts-tmpl-val">0.45</span>
+        <input id="ts-tmpl" type="range" min="10" max="80" value="45"/>
+      </label>
+      <button id="ts-run" type="button" class="ts-btn ts-btn-run">Run 80 generations</button>
+      <button id="ts-reset" type="button" class="ts-btn">Reset</button>
+    </div>
+
+    <canvas id="ts-sim" width="720" height="260" class="ts-sim-canvas"></canvas>
+
+    <div class="ts-sim-legend">
+      <span class="ts-leg-row"><span class="ts-leg-swatch" style="background:#d4a44c"></span>Inverness-like dialect</span>
+      <span class="ts-leg-row"><span class="ts-leg-swatch" style="background:#5fb37a"></span>Berkeley-like dialect</span>
+      <span class="ts-leg-row"><span class="ts-leg-swatch" style="background:#7da3d4"></span>Sunset Beach-like dialect</span>
+      <span class="ts-leg-row ts-leg-meta">Y-axis: generation 0 (top) &rarr; 80 (bottom)</span>
+    </div>
+  </div>
+
+  <div class="ts-footer">
+    <p>Marler &amp; Tamura 1962 <em>Condor</em> 64:368 &middot; Marler 1970 <em>Am. Sci.</em> 58:669 &middot; Baker 1975 <em>Evolution</em> 29:226 &middot; Lachlan &amp; Slater 2003 <em>Proc. R. Soc. B</em> 270:1117 &middot; Nelson, Baker &amp; Soha 2004 <em>Auk</em> 121:464 &middot; Pfenning, Hara &amp; Jarvis 2014 <em>Science</em> 346:1256846. Sonogram traces are stylized after published spectrograms, not direct recordings. Simulator after Lachlan-Slater cultural mutation-selection framework.</p>
+  </div>
+</div>

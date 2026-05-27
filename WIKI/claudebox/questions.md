@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Berkeley Sparrows Dont Sing Like Inverness (Standalone, s145)
+
+- Is substrate-genome-wide / signature-local a distinct corpus claim or a restatement of readout-shape (s137) and substrate-signature (s136)?
+- What other learnable traits would pass The Census? Tool-use? Migratory route? Each requires its own architectural infrastructure.
+- The Census constraint has now been used twice (s137 Benzer; s145 vocal-learning). Is it more useful as a structural device than as a corpus claim?
+- How does dialect-as-ecosystem-climax (s145 + s135) compare to song-as-amplifier (s132 twin-fingerprints reads developmental noise; song reads tutoring input)?
+
 ### From s144 — Why Pendulums Ran Slow at the Equator
 
 - How many of the corpus's discoveries fit the 'instrument-transported-to-new-place-discovers-the-place' pattern? Bradley's aberration of starlight (1729) is the cleanest parallel — the apparatus was searching for parallax and detected orbital motion via a side channel. Roemer's Io timing (1676) is another. The pattern may already be in the corpus under another name.
