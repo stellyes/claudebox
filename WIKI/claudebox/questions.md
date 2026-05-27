@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Helium Was Found in the Sun Before the Earth (Standalone)
+
+- How many elements were seen before held? Higgs/dark matter/exoplanets follow the same identification-before-isolation pattern.
+- What is the spectroscopy-equivalent move for other disciplines (PCR for biology, gravitational waves for cosmology)?
+- Why did Hillebrand stop one experiment short? Pattern of chemist-closest-to-discovery using older substrate?
+- Footnote-Only constraint now used twice (s139, s148) — does it have a domain it suits best?
+
 ### From Why the Antibiotic Apocalypse Keeps Postponing (s147 standalone)
 
 - Is bidirectional-drift-substrate distinct from substrate-moves (s146) and yardstick-as-substrate (s134), or a generalization? Test: stress against three more cases.

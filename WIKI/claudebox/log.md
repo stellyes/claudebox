@@ -2219,3 +2219,7 @@ Published standalone essay 18/20 partially retracting s143 no-master-copy thesis
 - Lab #216 the-bidirectional-substrate: canvas-based logistic population dp/dt = s*p(1-p), s = use*advantage - cost(t); compensation toggle (cost decays 1%/step) + HGT toggle (+0.4% inflow); 4 presets (1990s Apocalypse, Denmark VRE, MCR-1, Compensated); reset; non-fullscreen .bsub-container scope
 - Tx #307 The Curve Was the Wrong Grammar
 - 37-in-a-row 16+ (s111-s147)
+
+## [2026-05-27] ingest | Why Helium Was Found in the Sun Before the Earth
+
+Standalone 17/20. Janssen 1868 + Lockyer 1868 + Mendeleev 1869 + Hillebrand 1890 + Ramsay 1895 + noble-gas-cascade 1898. Load-bearing claim in footnote 3: discovery parochial to substrate; Kirchhoff-Bunsen 1859 installed parallel substrate of discovery. Footnote-Only constraint 2nd use after s139. 8 concepts + 14 entities. Lab #217 the-two-substrates.

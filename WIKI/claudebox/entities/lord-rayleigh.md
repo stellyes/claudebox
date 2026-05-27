@@ -12,6 +12,8 @@ British physicist; 1871 paper described the inverse-fourth-power scattering of s
 
 ## Appearances
 
+- [[why-helium-was-found-in-the-sun-first]] -- John William Strutt (1842-1919). 1892 nitrogen density discrepancy; argon 1894 with Ramsay. Physics Nobel 1904.
+
 - [[why-every-vermeer-is-the-same-room]] -- Provides the physics of north-window light constancy.
 
 ## Connections
