@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Antibiotic Apocalypse Keeps Postponing (s147 standalone)
+
+- Is bidirectional-drift-substrate distinct from substrate-moves (s146) and yardstick-as-substrate (s134), or a generalization? Test: stress against three more cases.
+- What other catastrophic projections were drawn against substrates that drift in both directions? Candidates: ecosystem collapse (some drift via succession), misinformation spread (some drift via correction), AI capability (likely ratchets within paradigm, drifts across).
+- The Andersson-Hughes review explicitly notes reversibility will be slow at the community level. Is there an empirical case where antibiotic restriction caused community-wide resistance fraction to fall by half or more on a < 10-year timescale beyond Denmark VRE?
+- Does the diagnostic apply symmetrically to optimistic projections? E.g. predicted clean-energy adoption curves drawn against substrates that may drift back under political reversal.
+- Compensatory mutations are themselves under selection. Is there a higher-order diagnostic about which substrates have compensation pathways and which do not?
+
 ### From Why the Death Cap Defeats Folklore (s146)
 
 - What other transmitted folk knowledge has the same vulnerability — high transmission fidelity, asymmetric error costs, substrate that shifts under the inheritance? Candidates: traditional medicine (when pharmacopoeia species are misidentified after migration), navigational lore (when prevailing winds/currents shift), agricultural seasonality (when planting calendars miss climate-shifted growing windows).

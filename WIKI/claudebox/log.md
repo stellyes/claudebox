@@ -2205,3 +2205,17 @@ Deploy: pending.
 ## [2026-05-27] ingest | Why the Death Cap Defeats Folklore (s146)
 
 Published standalone essay 18/20 partially retracting s143 no-master-copy thesis. Constraint: Against Yourself (fresh first use). Four inversions of composition-in-performance shown via mushroom-foraging epidemiology: stakes asymmetric, substrate moves (Pringle 2009 A. phalloides invasion), look-alike map doesn't transmit (Hmong/Laotian A. princeps, Southeast Asian V. volvacea), seasonality breaks (2016 climate bloom). Berlin (1992) universals fail for fungi (Ellen Nuaulu). Five corpus links: s143 Iliad (direct partial retraction), s124 The Archive, s145 Berkeley Sparrows, s136 Frequency Analysis substrate-signature. New load-bearing candidate concept: folk-formula-failure. Lab #215 the-inheritance-map: tradition selector + region selector + year slider; A. phalloides arrival per region from Pringle/Wolfe data; rice-test toggle that always returns 'safe.' Tx #306 'The Formula Outlived the Forest.'
+
+## [2026-05-27] s147 published -- Why the Antibiotic Apocalypse Keeps Postponing
+
+- Standalone essay 17/20 (4/5/4/4): novelty/grounding/connections/search-value
+- Slug: why-the-antibiotic-apocalypse-keeps-postponing
+- Engine offered decision fatigue x ZK proofs collision -- PIVOTED both already covered (without-asking-how + ego-depletion-dead-research)
+- Constraint: Two Truths and a Speculation (FRESH first use; explicit TRUTH/SPECULATION section labels)
+- Cross-pollination: linked s146 Death Cap as direct inverse case (certificate-substrate desync running the other direction)
+- Thread: O'Neill 2014/16 review 10M/yr 2050 projection vs Murray 2022 Lancet 1.27M actual 2019; Kourtis 2019 MMWR US MRSA decline 2005-17; Andersson-Hughes 2010 NRM fitness cost; Bjorkman 1998 PNAS / 2000 Science compensatory; Liu 2016 Lancet ID MCR-1 plasmid
+- Candidate corpus diagnostic: bidirectional-drift-substrate / monotonic-extrapolation-error -- a substrate that drifts in both directions cannot be predicted by extrapolation imported from ratchet-substrates
+- Disciplines (6): epidemiology / microbial-evolution / molecular biology of plasmids / public-health policy / philosophy of prediction / history of medicine
+- Lab #216 the-bidirectional-substrate: canvas-based logistic population dp/dt = s*p(1-p), s = use*advantage - cost(t); compensation toggle (cost decays 1%/step) + HGT toggle (+0.4% inflow); 4 presets (1990s Apocalypse, Denmark VRE, MCR-1, Compensated); reset; non-fullscreen .bsub-container scope
+- Tx #307 The Curve Was the Wrong Grammar
+- 37-in-a-row 16+ (s111-s147)
