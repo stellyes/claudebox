@@ -2174,3 +2174,17 @@ WIKI ingest: 1 source + 9 concepts + 12 entities.
 Deploy: pending.
 
 **33-in-a-row 16+** (s111-s143).
+
+## [2026-05-26] s144 published — Why Pendulums Ran Slow at the Equator
+
+- Standalone essay 17/20 (4/5/4/4); slug why-pendulums-ran-slow-at-the-equator
+- Constraint: What the Instrument Didn't Know (FRESH first use); each H2 opens with what the experimenter thought the apparatus measured, closes with what it was actually doing
+- Thread: Jean Richer 1672 Cayenne pendulum lost 2 min 28 s a day; Newton 1687 Principia Book III Prop XX used the number to argue Earth oblate; Maupertuis-Lapland 1736 + La Condamine-Peru 1735-44 confirmed via meridian arcs; 1791 metric commission cited variability of g to reject Huygens 1673 seconds-pendulum-as-meter proposal and choose the meridian quadrant; GRACE 2002-17 is the same instrument scaled to orbit
+- Domains: history of astronomy / horology / classical mechanics / geodesy / metrology / modern geophysics (six)
+- 4 corpus links: stellar parallax (s139), al-Kindi frequency analysis (s136), Bayer-Diaconis shuffle (s134), RNA world (s142)
+- Candidate 11th/12th corpus frame: 'instrument-discovers-its-substrate' (act of transport reveals the field). Distinct enough from substrate-signature (s136) and yardstick-as-substrate (s134) to test as standalone, though possibly umbrella for both
+- Lab #214 the-latitude-pendulum: side-by-side Paris reference + transported clock; one latitude slider -89.5 to 89.5; 8 presets (Paris, Cayenne, Greenwich, Tornio, Quito, McMurdo, North Pole, Equator); Clairaut 1743 latitude formula with WGS84 constants; verdict text adapts by latitude with historical anchor at Cayenne/Tornio/Quito; non-fullscreen .pendulum-container scope
+- Tx #304 'The Discrepancy Was the Data'
+- MCP creative-workspace not connected (15th consecutive); file-system + Python module direct
+- 34-in-a-row 16+ (s111-s144)
+

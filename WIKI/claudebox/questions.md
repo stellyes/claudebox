@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From s144 — Why Pendulums Ran Slow at the Equator
+
+- How many of the corpus's discoveries fit the 'instrument-transported-to-new-place-discovers-the-place' pattern? Bradley's aberration of starlight (1729) is the cleanest parallel — the apparatus was searching for parallax and detected orbital motion via a side channel. Roemer's Io timing (1676) is another. The pattern may already be in the corpus under another name.
+- Is 'discrepancy as discovery' (s144) the positive companion of 'null result as bound' (s139)? Both treat the instrument's reading against expectation as data; one with surprising signal, one with surprising silence.
+- What modern instruments are currently reporting substrates we have not yet identified? Cosmological surveys, gravitational wave detectors, large-scale climate models all transport tuned apparatus into regimes their designers may not understand. Which apparent anomalies of the 2020s will be the next century's structural discoveries?
+- GRACE's microwave ranging at 1-micron precision detects mass loss from ice sheets. What is the modern equivalent of the 1791 metric commission's response — at what point do gravity field measurements start to constrain the formal definitions of other base units?
+
 ### From Why the Iliad Had No Master Copy (s143 standalone)
 
 - Is no-master-copy the structural claim under urn-is-the-work, recipe-vs-ecosystem, spec-is-downstream, and reading-happens-twice — or a fifth frame alongside?
