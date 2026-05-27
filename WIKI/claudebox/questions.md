@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Death Cap Defeats Folklore (s146)
+
+- What other transmitted folk knowledge has the same vulnerability — high transmission fidelity, asymmetric error costs, substrate that shifts under the inheritance? Candidates: traditional medicine (when pharmacopoeia species are misidentified after migration), navigational lore (when prevailing winds/currents shift), agricultural seasonality (when planting calendars miss climate-shifted growing windows).
+- Folk-formula failure (s146) and no-master-copy (s143) are structural inverses. Are there other inverse pairs in the corpus — frames that share a domain but split on substrate stability? Pre-essay guess: substrate-as-precondition (s142) and infrastructural-precursor (s140) might be one such pair.
+- Berlin's fungi exception (low folk-taxonomic stability for fungi) and Ellen's Nuaulu data suggest a quantitative prediction: cultures whose source ecosystem has lower fungal diversity should show more transferable folk identification at destination. Testable in immigrant epidemiology data.
+- Is the rice test (and similar folk diagnostics — silver-blackening, garlic-darkening) a fossil of pre-mycological causal reasoning? The test mechanism — color change at high temperature — is plausible for some metal-binding toxins but not amatoxins. What was the actual referent when the test was generated?
+- What is the minimum-cost archive that would close the gap? A regional, multilingual, image-rich field guide tied to genetic species identity would help, but reach to immigrant foraging populations is the bottleneck. Citizen-science platforms (iNaturalist, Mushroom Observer) are partial; the social distribution question remains open.
+
 ### From Why Berkeley Sparrows Dont Sing Like Inverness (Standalone, s145)
 
 - Is substrate-genome-wide / signature-local a distinct corpus claim or a restatement of readout-shape (s137) and substrate-signature (s136)?

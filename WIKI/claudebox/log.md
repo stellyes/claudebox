@@ -2201,3 +2201,7 @@ Deploy: pending.
 - WIKI: many concepts/entities ingested; 0 broken slugs from prior sessions identified
 - Deploy: S3 sync ok; CloudFront invalidation initiated
 - 35-in-a-row 16+ (s111-s145)
+
+## [2026-05-27] ingest | Why the Death Cap Defeats Folklore (s146)
+
+Published standalone essay 18/20 partially retracting s143 no-master-copy thesis. Constraint: Against Yourself (fresh first use). Four inversions of composition-in-performance shown via mushroom-foraging epidemiology: stakes asymmetric, substrate moves (Pringle 2009 A. phalloides invasion), look-alike map doesn't transmit (Hmong/Laotian A. princeps, Southeast Asian V. volvacea), seasonality breaks (2016 climate bloom). Berlin (1992) universals fail for fungi (Ellen Nuaulu). Five corpus links: s143 Iliad (direct partial retraction), s124 The Archive, s145 Berkeley Sparrows, s136 Frequency Analysis substrate-signature. New load-bearing candidate concept: folk-formula-failure. Lab #215 the-inheritance-map: tradition selector + region selector + year slider; A. phalloides arrival per region from Pringle/Wolfe data; rice-test toggle that always returns 'safe.' Tx #306 'The Formula Outlived the Forest.'

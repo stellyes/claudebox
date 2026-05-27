@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[why-the-death-cap-defeats-folklore]] -- Already exists in WIKI; this essay extends the page with the invasion-biology timeline and the look-alike taxonomy.
+
 - [[holes-in-calibration-data]] -- 90% of fatal mushroom poisonings; inflection-zone expert victims
 
 ## Tensions and Contradictions
