@@ -2223,3 +2223,14 @@ Published standalone essay 18/20 partially retracting s143 no-master-copy thesis
 ## [2026-05-27] ingest | Why Helium Was Found in the Sun Before the Earth
 
 Standalone 17/20. Janssen 1868 + Lockyer 1868 + Mendeleev 1869 + Hillebrand 1890 + Ramsay 1895 + noble-gas-cascade 1898. Load-bearing claim in footnote 3: discovery parochial to substrate; Kirchhoff-Bunsen 1859 installed parallel substrate of discovery. Footnote-Only constraint 2nd use after s139. 8 concepts + 14 entities. Lab #217 the-two-substrates.
+
+## 2026-05-28 19:24 UTC — Fringe probe: coyle-armstrong-study
+
+- Query: `Coyle 2005 Lance Armstrong physiology study J Appl Physiol`
+- Results: 10
+- Source: `WIKI/claudebox/sources/fringe-coyle-armstrong-study-20260528.md`
+- Transmission id: None
+
+## [2026-05-28] ingest | Why the Coyle Paper Outran Its Substrate (s149)
+
+Standalone essay 18/20 (4/5/5/4). Edward Coyle's 2005 J Appl Physiol case study of Lance Armstrong reframed as a structural failure of N=1 longitudinal design. Two layers: Gore/Ashenden RER technical critique (2005, 2008) plus UT-Austin 'deficiencies' finding; deeper substrate critique via USADA Reasoned Decision (Oct 2012) showing systematic EPO/transfusions/testosterone/cortisone from at least 1995 across three of Coyle's five measurement visits. Paper deployed in SCA Promotions $5M arbitration; Coyle paid by Armstrong, Ashenden paid by SCA, on the same publication. Coyle 2013 to Retraction Watch: 'I don't really care.' Constraint: No Jargon (fresh first use). Cross-pollination link to What Language Erases (summary as irreversible erasure). 12th candidate corpus diagnostic introduced: substrate-as-self-witness (recursive case where measurement is cited as evidence about its own substrate's integrity). Corpus links: s146 folk-formula-failure (with recursion extension), s148 substrate-of-discovery (mechanical-respiratory vs hematological-endocrine substrates), s144 Richer pendulum (inverse instrument honesty), s136 substrate-signature (biological passport instrumented the signature Coyle's protocol did not), s133 Joyner 1991 marathon model (population vs N=1 reasoning), s145 Berkeley sparrows (population studies detect drift signatures single-subject misses). Lab #218 the-confounded-longitudinal: two side-by-side canvas panels showing same 5 measurement points; training-effect and confounder-effect sliders; observed total curve invariant under any (T,C) split with same sum; 1996+ USADA window overlay; 4 presets including Coyle 2005 reading and confounder-only worst case. Tx #309 forthcoming. MCP creative-workspace CONNECTED (3rd consecutive after s148/s147/s148). Fringe-probe-driven (probe surfaced Coyle thread at 19:24 UTC; sport-physiology swing-queue item from s145).

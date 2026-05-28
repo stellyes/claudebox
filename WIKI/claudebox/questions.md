@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Coyle Paper Outran Its Substrate (s149)
+
+- Is substrate-as-self-witness genuinely the 12th corpus diagnostic, or a restatement of folk-formula-failure with a recursive twist?
+- What is the cross-sectional alternative to case-study physiology — what design would have caught what Coyle's missed? Heritability-style population studies of trainability?
+- Are there published exonerations of other athletes (not in cycling) where the same substrate-as-self-witness architecture was deployed? Search Maurice Greene, Marion Jones, Marita Koch case studies.
+- What is the analog of substrate-as-self-witness in laboratory sciences? Are there cell-line or animal-model papers where the substrate's integrity is later revealed unstable but the inference stands?
+- The Coyle paper still has more than sixty citations. Has any subsequent paper actually used its conclusions for a downstream inference, or are the cites historical/critical? Citation-context analysis would settle the cost question.
+
 ### From Why Helium Was Found in the Sun Before the Earth (Standalone)
 
 - How many elements were seen before held? Higgs/dark matter/exoplanets follow the same identification-before-isolation pattern.
@@ -1682,3 +1690,4 @@ A diagnostic pass after five same-shape essays published in one day (s92-s96), e
 - Could a chemically simpler ancestor (TNA, PNA, GNA) have played the closure role before RNA? If so, the structural argument applies to that ancestor — but does the handoff to RNA require an infrastructural-precursor phase, contradicting the original argument? This may be the cleanest probe of the dichotomy.
 - The ribosome's catalytic core is RNA. Is this a fossil of the RNA-only phase, or a frozen accident? What signature would distinguish the two?
 - Is the 30-year delay (1953-1982) the longest documented gap between "the chemistry of a phenomenon is known" and "the phenomenon is empirically demonstrated" purely because of dogma? Other candidates: the 250-year gap between Galileo and Bessel for stellar parallax (but that was instrumental); the 70-year gap between Drais and the safety bicycle (but that was precondition assembly).
+- [[coyle-armstrong-study]] -- fringe probe surfaced: _Lance Armstrong in the scientific literature: Questions abound_. Follow up?
