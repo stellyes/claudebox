@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why No Monarch Knows the Way to Mexico (s155)
+
+- Does terrain-as-distributed-memory collapse into map-in-terrain or are they distinct (frame vs architecture)?
+- What is the analog of map-in-terrain in human navigation? Songlines? Sea charts? Pilot logs?
+- Are there map-in-terrain systems where the refresh cycle is faster than agent lifetime — and what does that imply?
+- Substrate cluster is now 6-deep (discovery / reception / self-witness / precondition / reshaping / distributed-memory). When does it factor into a single piece?
+
 ### From What Mistletoe Knows About the Attention Economy (s154)
 
 - Is fitness-decoupling distinct from proxy-metric-decoupling, or a special case applied specifically to propagation/dispersal systems? Sister concepts pre-existed (proxy-metric-decoupling, fluency-confidence-decoupling, witness-mechanism-decoupling) — does fitness-decoupling sit alongside them or subsume them?
