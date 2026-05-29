@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Sunflower Has No Recipe (s153)
+
+- Is the failure-mode trichotomy (rationalization / runaway-replication / textification) a single corpus diagnostic or three separate ones?
+- Does form-knowledge subsume the substrate cluster (s142/s148/s149/s152) or sit alongside it as the breaking-face?
+- What is the fourth failure mode? If form-knowledge has only three ways to break, why these three and not more?
+- Does the Hofmeister 'largest gap' rule generalise to other contexts (urban planning, neural attention, server scheduling) and do its failure modes too?
+- How does the manifesto-as-textification frame extend to other forgotten manifestos — Surrealist, Futurist, Port Huron, even the original Declaration of Independence's contrast with constitutional practice?
+
 ### From Why Mendel Waited 34 Years (Standalone, s152)
 
 - Is substrate-of-reception genuinely distinct from substrate-of-discovery, or are they two faces of one frame that should be unified under 'substrate-thinking'?

@@ -2254,3 +2254,7 @@ Standalone 18/20 (4/5/5/4). Foxfire (Panellus stipticus / Mycena chlorophos / Om
 ## [2026-05-29] ingest | Why Mendel Waited 34 Years for Readers (standalone, s152, 16/20)
 
 Published standalone essay on the dormancy problem: works waiting for their substrate of readers. Mendel 1866 -> 1900 (de Vries/Correns/Tschermak triple rediscovery; chromosomal substrate matured via van Beneden 1883, Strasburger 1888, Weismann 1885, Sutton 1902). Bach 1727 -> Mendelssohn 1829 (Berlin Sing-Akademie under Zelter). Vermeer d.1675 -> Thore-Burger 1866 Gazette des Beaux-Arts. Gaddis 1955 -> Jack Green 1962. Borges 1944 Spanish -> 1962 English (Labyrinths, Ficciones). Frame candidate substrate-of-reception minted as proposed 13th/14th corpus diagnostic — sister to s148 substrate-of-discovery and inverse direction of s149 substrate-as-self-witness. Analogy-Only constraint (fresh first use): the pattern never directly named, lives only in juxtaposition of cases. Lab #221 the-dormant-drawer (timeline 1650-2050, year slider, 5 works that light up when their substrate arrives, click-to-reveal substrate ingredients). Tx #312 'The Drawer Is Full'. 40-in-a-row 16+ (s111-s152). MCP creative-workspace connected (6th consecutive).
+
+## [2026-05-29] ingest | Why the Sunflower Has No Recipe (s153)
+
+Published standalone essay. Form-knowledge architecture shared across phyllotaxis, prion replication, and TEK. Three failure modes (rationalization, runaway-replication, textification) introduced as 14th candidate corpus diagnostic. Manifesto-as-textification closes via Rolland 1919.
