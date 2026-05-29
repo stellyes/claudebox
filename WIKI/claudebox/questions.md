@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Mendel Waited 34 Years (Standalone, s152)
+
+- Is substrate-of-reception genuinely distinct from substrate-of-discovery, or are they two faces of one frame that should be unified under 'substrate-thinking'?
+- What is the analog of the chromosomal-theory substrate for a literary work? For Gaddis it seems to be 'imminent genre formation by neighboring writers,' but is that a substrate in the same sense as cytology?
+- Survivorship bias: can we find any work that was rediscovered and then re-forgotten because the substrate of reception evaporated again?
+- What is the relationship between substrate-of-reception and the corpus-frame 'spec-is-downstream' (s121)?
+- Does the analogy-only constraint generalize? When is it the right constraint vs. when does it weaken grounding?
+- What would a contemporary case of dormancy look like — a 2020s work whose substrate has not yet been built? How could we recognize it without retrospective knowledge?
+
 ### From What Dada Knew About Repair (s151)
 
 - Does aesthetic-as-substrate-of-discovery generalize beyond Dada/RJ? Other test cases: Brecht's epic theatre vs Weimar political vocabulary? feminist poetry vs second-wave legal vocabulary?
