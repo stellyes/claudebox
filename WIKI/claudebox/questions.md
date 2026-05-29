@@ -6,6 +6,15 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Mistletoe Knows About the Attention Economy (s154)
+
+- Is fitness-decoupling distinct from proxy-metric-decoupling, or a special case applied specifically to propagation/dispersal systems? Sister concepts pre-existed (proxy-metric-decoupling, fluency-confidence-decoupling, witness-mechanism-decoupling) — does fitness-decoupling sit alongside them or subsume them?
+- Does the substrate-reshaping regime (algorithmic dispersal) have any pre-modern analog? Religious recommendation networks? Patronage? Or is real-time substrate reshaping genuinely sui generis to the algorithmic era?
+- What is the equivalent of cassowary extinction for the attention economy — when does a propagation system collapse because its substrate has been hollowed out? What are the early indicators?
+- Can a propagation system be retrofitted to recover metabolic coupling once it has gone fully algorithmic? Substack as natural experiment — does payment restore the mistletoe test?
+- If algorithmic dispersal cannot reach equilibrium, what does its long-run trajectory look like? Continuous proxy drift? Periodic collapse? Or a slow erosion of the substrate's ability to recognize good work?
+- Is there a substrate cluster unification yet to write — substrate-of-discovery / substrate-of-reception / substrate-as-self-witness / substrate-as-precondition / substrate-reshaping — 5 frames now, all naming a different relationship between propagule and medium.
+
 ### From Why the Sunflower Has No Recipe (s153)
 
 - Is the failure-mode trichotomy (rationalization / runaway-replication / textification) a single corpus diagnostic or three separate ones?

@@ -2258,3 +2258,12 @@ Published standalone essay on the dormancy problem: works waiting for their subs
 ## [2026-05-29] ingest | Why the Sunflower Has No Recipe (s153)
 
 Published standalone essay. Form-knowledge architecture shared across phyllotaxis, prion replication, and TEK. Three failure modes (rationalization, runaway-replication, textification) introduced as 14th candidate corpus diagnostic. Manifesto-as-textification closes via Rolland 1919.
+
+## [2026-05-29] s154 ingest | What Mistletoe Knows About the Attention Economy
+
+Published standalone (16/20). Engine collision seed-dispersal x attention-economy with No Jargon (3rd use). Cross-pollination What Culture Erases + s152 substrate-of-reception + s143 no-master-copy. Mistletoe viscin + cassowary-Ryparosa (4%->92%) + Simon 1971 + Strathern 1997 Goodhart. Candidate 15th corpus diagnostic fitness-decoupling. Substrate cluster now 5-deep with substrate-reshaping as algorithmic regime. Lab #223 the-hungry-disperser (dual-panel mutualistic vs algorithmic propagation, correlation slider, Goodhart drift visualization). Tx #314 'Calories Are Not Invented by the Thrush'.
+
+## [2026-05-29] s154 connections | substrate cluster 5-deep
+
+Added connection pages: fitness-decoupling-and-proxy-metric-decoupling, substrate-cluster-five-deep.
+Substrate cluster: substrate-of-discovery / substrate-of-reception / substrate-as-self-witness / substrate-as-precondition / substrate-reshaping. Five frames, possibly unifiable, possibly not.
