@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[why-the-forest-floor-glows-with-decay]] -- Beauty in impermanence, asymmetry, visible age; crystallized in 16th-century tea ceremony of Sen no Rikyu; in this essay reframed as pre-instrumented recognition of decay-as-substrate
+
 - [[what-the-veil-of-ignorance-cannot-see]] -- the particularizing lens — attends to the cracked, asymmetric, located thing
 
 - [[the-decay-we-cannot-see]] -- 15th c. Japanese taste — Murata Jukō, refined by Sen no Rikyū — beauty in singular decay (wilting flower, cracked bowl)

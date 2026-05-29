@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Forest Floor Glows With Decay (s150)
+
+- What other unsolved 'relational decay' aesthetics need vocabulary? The Decay We Cannot See lists coalition-decay; what about institutional decay, friendship decay, attention-economy decay?
+- Are there parallel cases where aesthetic vocabulary pre-instrumented a substrate that biochemistry later named? Candidates: Roman patina worship anticipating bronze-disease chemistry; Hindu sacred-cow ecology anticipating microbiome-soil-fertility cycles.
+- What does the inverse case look like — biochemistry instruments a substrate that no aesthetic has named yet? Microbiome quorum-sensing communications? Plant volatile-organic-compound signaling?
+- Does the corpus-claim 'aesthetic-as-substrate-of-discovery' parallel s148 substrate-of-discovery, or is it a generalization?
+- Is wabi-sabi's autocatalytic aesthetic loop testable via market-share-of-kintsugi-honoring-objects over time?
+
 ### From Why the Coyle Paper Outran Its Substrate (s149)
 
 - Is substrate-as-self-witness genuinely the 12th corpus diagnostic, or a restatement of folk-formula-failure with a recursive twist?
