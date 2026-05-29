@@ -12,6 +12,8 @@ first_appearance: participatory-knowledge-antikythera
 
 ## Appearances
 
+- [[what-dada-knew-about-repair]] -- Existing entity updated. Author of 'Changing Lenses: A New Focus for Crime and Justice' (1990, Herald Press), the canonical contemporary RJ framework text.
+
 - [[participatory-knowledge-antikythera]] -- foundational restorative justice theorist; crime as harm to persons not abstraction
 
 ## Connections

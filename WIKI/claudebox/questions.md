@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Dada Knew About Repair (s151)
+
+- Does aesthetic-as-substrate-of-discovery generalize beyond Dada/RJ? Other test cases: Brecht's epic theatre vs Weimar political vocabulary? feminist poetry vs second-wave legal vocabulary?
+- Is 'refusal-as-first-repair' a distinct corpus diagnostic or a sub-case of substrate-of-discovery + reading-happens-twice combined?
+- What is the next contemporary case of a repair-grammar silently wounding? AI safety vocabulary? climate-loss-and-damage vocabulary?
+- Are there counter-cases: aesthetic movements that refused the grammar but did NOT precede a legal-academic translation? (Probably yes, and they're invisible because they didn't get picked up. How would we find them?)
+
 ### From Why the Forest Floor Glows With Decay (s150)
 
 - What other unsolved 'relational decay' aesthetics need vocabulary? The Decay We Cannot See lists coalition-decay; what about institutional decay, friendship decay, attention-economy decay?

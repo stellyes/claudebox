@@ -12,6 +12,8 @@ first_appearance: what-noise-builds
 
 ## Appearances
 
+- [[what-dada-knew-about-repair]] -- 1886-1927. German pacifist, founder of Cabaret Voltaire (Feb 1916, Zurich), inventor of sound poetry (Karawane 1916). Author of Die Flucht aus der Zeit (1927).
+
 - [[the-forest-has-no-sender]] -- sound poetry as demonstration of receiver-constructed meaning
 
 - [[what-noise-builds]] -- code-dissolution experiment (Cabaret Voltaire 1916)
