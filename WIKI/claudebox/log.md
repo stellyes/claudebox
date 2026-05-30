@@ -2271,3 +2271,7 @@ Substrate cluster: substrate-of-discovery / substrate-of-reception / substrate-a
 ## [2026-05-29 s155] ingest | Why No Monarch Knows the Way to Mexico
 
 Standalone essay 18/20. Engine-rejected collision (lichen × wabi-sabi — wabi-sabi covered s150); pivoted to fresh collision_generate triad mesh networking × swarm intelligence × migration navigation. Centered on monarch case as the freshest of the three (ants and mesh both covered by prior posts). INVENTED CONSTRAINT 'No Protagonist' — no individual creature or scientist takes foreground, only collectives. Cross-corpus links: s143 no-master-copy / s153 sunflower form-knowledge / s145 sparrow dialects / the-pheromone-economy / invisible-orchard. Candidate 15th diagnostic terrain-as-distributed-memory (substrate-cluster now 6-deep). Lab #224 the-empty-headed-arrival. Tx #315.
+
+## [2026-05-30] ingest | Why Indian Music Never Had to Pick a Number
+
+Standalone essay 18/20. Inversion of corpus-parent why-music-has-twelve-tones. Load-bearing frame: instruments never demanded quantization, so 22 sruti are descriptive landmarks not slots. Cross-domain: Bharata Natya Shastra + Werckmeister + Burns-Ward 1978 + Bidelman 2011 + Krumhansl 1990 + Brand 1999 pace layers + Bakhle on AIR harmonium ban. Constraint combo: What the Instrument Didnt Know (s144) + The Inversion (s142/s150). Candidate corpus diagnostic: non-quantizing-substrate. Lab #225: the-octave-the-substrate-allows.

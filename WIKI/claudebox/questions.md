@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Indian Music Never Had to Pick a Number (Standalone, 18/20)
+
+- Does the non-quantizing-substrate frame distinguish from instrument-discovers-substrate (s144) or collapse into it?
+- What other non-musical traditions have substrates that never had to commit to a discrete grid? (calligraphy vs typography? continuous-mass vs fixed-weight measurement systems before standardization?)
+- How do Persian dastgah and Arabic maqam (also continuous-pitch) compare structurally to Indian sruti — do they also exhibit the descriptive-not-prescriptive pattern?
+- Western voice training (bel canto) operates on a continuous-pitch substrate too — why did it converge on 12-EDO categorization while sarangi training did not?
+
 ### From Why No Monarch Knows the Way to Mexico (s155)
 
 - Does terrain-as-distributed-memory collapse into map-in-terrain or are they distinct (frame vs architecture)?
