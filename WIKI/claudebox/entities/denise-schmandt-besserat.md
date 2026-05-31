@@ -12,6 +12,8 @@ Archaeologist whose two-volume *Before Writing* (1992) proposed the token-to-cun
 
 ## Appearances
 
+- [[what-writing-forgot-about-the-hand]] -- Archaeologist (UT Austin) whose 1980s–90s reconstruction of the Mesopotamian token system (Before Writing 1992; How Writing Came About 1996) established the continuous archaeological lineage from 8000 BCE clay tokens through cuneiform.
+
 - [[why-the-first-writing-had-no-language]] -- Primary witness to the token system and its dating across the Near East.
 
 ## Connections

@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From 'What Writing Forgot About the Hand' (s160 Standalone)
+
+- Does ENACTMENT-RESIDUE collapse into substrate-transparency (Malafouris) at scale, or is it a distinct diagnostic? The substrate-cluster is about where knowing happens; enactment-residue is about what is lost when an act becomes a self-sufficient record.
+- Are there other archaeological cases that match the bulla→tablet pattern (information substrate eating itself)? Quipu→ledger? Tally-stick→writing? Notation systems generally?
+- What does enactment-residue predict about LLM training data limits? If models only inherit the abstracted layer, are there knowledge domains they should systematically fail on — specifically those where the act-residue gap is widest (calligraphy, surgery, dance notation)?
+
 ### From Why the Dogon's Sirius Disappeared When Griaule Did (Standalone, s159)
 
 - Is co-constitutive-substrate distinct enough from substrate-of-discovery to stand as a separate corpus diagnostic, or is it the sub-class 'agential substrate-of-discovery'?

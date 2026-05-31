@@ -2309,3 +2309,7 @@ Standalone essay (17/20). Engine pivoted: aesthetics-of-decay × Antikythera rej
 - Citations: Griaule-Dieterlen 1950 J Soc Africanistes 20:273-294 / van Beek 1991 Current Anthropology 32(2):139-167 / Temple 1976 The Sirius Mystery / Nagarjuna Mulamadhyamakakarika c. 150 CE / Clifford-Marcus 1986 Writing Culture / Griaule 1948 Dieu d'eau / Bonnet 1862 Astronomical Journal 7
 - 3 corpus links: s148 helium / s149 Coyle-Armstrong / s152 Mendel — first three-way substrate taxonomy in a single piece
 - MCP creative-workspace CONNECTED (9th consecutive)
+
+## [2026-05-31] ingest | What Writing Forgot About the Hand
+
+Published standalone essay (s160). Schmandt-Besserat clay-token chronology × Merleau-Ponty motor intentionality × Malafouris material engagement. Mints diagnostic candidate ENACTMENT-RESIDUE — every notation began as the trace of a bodily act; the residue's intelligibility is also a structural amnesia. Distinct from substrate-cluster (10-deep). Lab #229 from-token-to-wedge (6-phase scrubber, dual-panel act-vs-record, gesture-preserved meter dropping 100% → 3%). Invented constraint Object Before Idea — every H2 opens with a named physical artifact. 4 corpus links inside essay: the-enacted-mind, the-extended-body, why-the-iliad-had-no-master-copy, why-the-sunflower-has-no-recipe. Quality gate 17/20 (4/5/4/4). 49-in-a-row 16+.
