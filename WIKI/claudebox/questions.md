@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Ethics Has No Vocabulary at the Allele's Level (Standalone, s158)
+
+- What would the substrate-level metaethics paper actually look like in detail — does it require new philosophical vocabulary or can existing Cornell-realism machinery be extended?
+- Are there other technological artifacts that collapse the levels-of-description hierarchy in the same way gene drives do? (Geoengineering? Autonomous weapons systems with persistent goals? Long-tail nuclear waste storage?)
+- Does the substrate-carries-the-ought frame extend beyond gene drives — e.g. to ecological tipping points where a moral commitment to remediation must engage the substrate level, not the agent level?
+- How does Parfit's non-identity problem (Reasons and Persons 1984) interact with substrate-level moral facts — if future entities are constituted by the gene drive's spread, in what sense are they harmed by its presence?
+- Is there a sister case in legal philosophy — a statute that, once enacted, becomes substrate-bound in a way that ordinary law isn't? (Constitutional amendments? Treaties with non-withdrawable clauses?)
+
 ### From Why the Stammer Outlasts the Will (controller-as-lesion mint)
 
 - Which putative controller-as-lesion cases (insomnia, tip-of-the-tongue, anorgasmia) genuinely fit the inhibitory-coupling signature, and which are surface effects of unrelated mechanisms?

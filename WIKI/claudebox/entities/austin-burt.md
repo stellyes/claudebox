@@ -12,6 +12,8 @@ first_appearance: why-models-collapse
 
 ## Appearances
 
+- [[why-ethics-has-no-vocabulary-at-the-allele-level]] -- Imperial College London evolutionary biologist; 2003 Proc R Soc B paper foundational for engineered gene drives via site-specific selfish genes
+
 - [[why-models-collapse]] -- first proposed homing endonuclease gene drives in 2003 — the conceptual foundation for CRISPR drives
 
 ## Connections
