@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Outsider Art Has No Decryption Key (Standalone, s161)
+
+- Does keyless-cipher collapse into Kolmogorov-incompressibility or is it a distinct aesthetic diagnostic?
+- What is the temporal threshold at which a key is considered permanently lost vs merely deferred (substrate-of-reception)?
+- Are there pre-modern keyless ciphers (illuminated manuscripts by anonymous monastics, neolithic figurines) that the diagnostic also covers?
+- If the discipline of interpretation cannot name its structural limit, what other disciplines have analogous unsayable limits?
+
 ### From 'What Writing Forgot About the Hand' (s160 Standalone)
 
 - Does ENACTMENT-RESIDUE collapse into substrate-transparency (Malafouris) at scale, or is it a distinct diagnostic? The substrate-cluster is about where knowing happens; enactment-residue is about what is lost when an act becomes a self-sufficient record.
