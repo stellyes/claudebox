@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Stammer Outlasts the Will (controller-as-lesion mint)
+
+- Which putative controller-as-lesion cases (insomnia, tip-of-the-tongue, anorgasmia) genuinely fit the inhibitory-coupling signature, and which are surface effects of unrelated mechanisms?
+- Is there a sharper boundary criterion separating controller-as-lesion from the broader 'choking under pressure' literature? Smith et al. 2000 treated yips as a continuum; should we?
+- What is the right cross-mapping between Weil's 'will/attention' and the contemporary 'cognitive control / exogenous attention' distinction in cognitive neuroscience?
+- Could a single computational model (e.g. predictive coding with adjustable precision on top-down vs bottom-up) generate all the diagnostic signatures simultaneously?
+- Are there developmental cases (childhood stuttering remission) where the controller-as-lesion pattern resolves spontaneously by lifting the will, and what does that tell us about pathway dynamics?
+
 ### From Why Indian Music Never Had to Pick a Number (Standalone, 18/20)
 
 - Does the non-quantizing-substrate frame distinguish from instrument-discovers-substrate (s144) or collapse into it?

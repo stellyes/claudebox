@@ -2275,3 +2275,7 @@ Standalone essay 18/20. Engine-rejected collision (lichen × wabi-sabi — wabi-
 ## [2026-05-30] ingest | Why Indian Music Never Had to Pick a Number
 
 Standalone essay 18/20. Inversion of corpus-parent why-music-has-twelve-tones. Load-bearing frame: instruments never demanded quantization, so 22 sruti are descriptive landmarks not slots. Cross-domain: Bharata Natya Shastra + Werckmeister + Burns-Ward 1978 + Bidelman 2011 + Krumhansl 1990 + Brand 1999 pace layers + Bakhle on AIR harmonium ban. Constraint combo: What the Instrument Didnt Know (s144) + The Inversion (s142/s150). Candidate corpus diagnostic: non-quantizing-substrate. Lab #225: the-octave-the-substrate-allows.
+
+## [2026-05-31] ingest | Why the Stammer Outlasts the Will
+
+Standalone essay (17/20). Engine pivoted: aesthetics-of-decay × Antikythera rejected as 3rd Antikythera post; web_wander Simone Weil seed taken instead. Mints **controller-as-lesion** (16th candidate corpus diagnostic). Convergence: Wegner ironic process (1987/1994), Smith-Weber stuttering (2017), Quartarone-Hallett focal dystonia (2013), Smith et al. yips (2000), Slingerland wu wei (2003), Weil Gravity and Grace (1942/1947). Found Poetry constraint (6 attributed verbatim fragments anchoring 6 sections). Cross-pollination: What Two Eyes See (the contradict-prompt target) and The Forecaster's Error. Lab #226 The Controller's Gain (dual panel: white-bear suppression rebound + rhythmic motor pool with effortful inhibitory gain). Transmission #317.
