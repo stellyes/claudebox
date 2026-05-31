@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Dogon's Sirius Disappeared When Griaule Did (Standalone, s159)
+
+- Is co-constitutive-substrate distinct enough from substrate-of-discovery to stand as a separate corpus diagnostic, or is it the sub-class 'agential substrate-of-discovery'?
+- What are the other clean cases of co-constitutive substrate beyond ethnography? LLM evaluation (the prompt as elicitor), patient self-report, depositions, polling. Pick one and write a sibling essay.
+- Are there constructive uses of co-constitutive substrates that should be defended rather than corrected? Therapeutic interviewing, for example — the elicitation may be exactly the value.
+- If the substrate cluster is now 10-deep (with co-constitutive added), is it time to write the meta-essay 'What Substrate Means in This Corpus'? Still likely premature — wait for two more cases.
+- Does the standing-wave metaphor extend? Is there an analogue of resonance/Q-factor in social epistemology — some questions resonate with some communities and not others?
+
 ### From Why Ethics Has No Vocabulary at the Allele's Level (Standalone, s158)
 
 - What would the substrate-level metaethics paper actually look like in detail — does it require new philosophical vocabulary or can existing Cornell-realism machinery be extended?

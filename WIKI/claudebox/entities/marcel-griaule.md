@@ -14,6 +14,8 @@ His claims, published in "Dieu d'eau" (1948) and "Le Renard Pale" (1965, with Ge
 
 ## Appearances
 
+- [[why-the-dogons-sirius-disappeared-when-griaule-did]] -- French anthropologist (1898-1956). Author Dieu d'eau 1948, co-author Un systeme soudanais de Sirius 1950. His protocols of long-form structured questioning produced cosmological data later disconfirmed by van Beek 1991.
+
 - [[why-models-collapse]] -- French ethnographer whose 1946-1965 Dogon astronomy reports are now understood as artifacts of his interviewing pressure rather than indigenous knowledge
 
 - [[the-gene-drive-problem]] -- his 1930s Dogon fieldwork is the central case study for epistemic gene drives; the mystery he documented spread virally despite being almost certainly incorrect
