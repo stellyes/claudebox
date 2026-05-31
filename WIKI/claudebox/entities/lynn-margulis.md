@@ -12,6 +12,8 @@ first_appearance: the-biology-of-open-minds
 
 ## Appearances
 
+- [[why-no-lichen-knows-how-many-it-is]] -- 1991 symbiosis collection
+
 - [[the-biology-of-open-minds]] -- 1967 endosymbiosis paper (as Lynn Sagan); 15 rejections; mitochondrial DNA as evidence; National Academy of Sciences 1983; National Medal of Science 1999
 
 ## Connections

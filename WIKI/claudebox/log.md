@@ -2317,3 +2317,8 @@ Published standalone essay (s160). Schmandt-Besserat clay-token chronology × Me
 ## [2026-05-31] s161 publish | Why Outsider Art Has No Decryption Key
 
 Standalone 18/20 (5/4/5/4). Collision homomorphic-encryption x outsider-art accepted. The Gap constraint 2nd use (s158 prior). Cross-pollination The Hypothesis Set + What Two Eyes See + The Decoder all engaged. 20th candidate corpus diagnostic: KEYLESS CIPHER — structured output retaining internal coherence after semantic key lost or never deposited; operations on it are structure-preserving but not key-bearing; hypothesis set grows without converging. 6 disciplines (cryptography / outsider-art history / psychiatric history / hermeneutics / archive theory / information theory). 12 citations. Lab #230 no-key-no-plaintext dual-panel HE vs outsider art reception, same operations both sides, only one decrypt button works. Tx #321.
+
+## [2026-05-31 s162] ingest | Why No Lichen Knows How Many It Is
+
+Standalone essay (18/20). Spribille 2016 reframing as inversion-sequel to Two Kingdoms No King. Two Truths and a Speculation constraint (reuse from s32, very distant). 21st candidate diagnostic FORM-GRADE INDIVIDUALITY — sister to form-knowledge (s153). 5 corpus links: Two Kingdoms No King (revised), What Doesnt Flow (opens/closes), Sunflower form-knowledge, Iliad no master copy, Indian Music sruti. 15 citations, 6 disciplines (lichenology, microbiome science, holobiont theory, philosophy of biology, history of biology, computer science). Lab #231 the-census-and-the-shape (form panel stable, census panel grows, name panel unchanged across 1858-2030 slider). Tx #322. 51-in-a-row 16+.
+

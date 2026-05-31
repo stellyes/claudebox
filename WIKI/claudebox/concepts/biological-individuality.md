@@ -1,19 +1,17 @@
 ---
-title: "Lichen as Composite Identity"
+title: "Biological Individuality"
 type: concept
-tags: [biology, symbiosis]
+tags: [philosophy-of-biology]
 status: stub
 ---
 
 ## Definition
 
-[Stub: Lichen as Composite Identity — needs definition from source material]
+[Stub: Biological Individuality — needs definition from source material]
 
 ## Key Sources
 
 - [[why-no-lichen-knows-how-many-it-is]] -- updated by s162
-
-- [[self-as-error-correction]] -- lichen as proof-of-concept for identity without center
 
 ## Tensions and Contradictions
 

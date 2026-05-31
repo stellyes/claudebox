@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why No Lichen Knows How Many It Is (Standalone, s162)
+
+- Is form-grade individuality a generalization of form-knowledge (s153), or a distinct frame at the entity level?
+- How many corpus-internal cases now fit the form-grade pattern? lichen, Iliad, sunflower, Indian-music sruti — is there a meta-essay candidate?
+- What does form-grade individuality predict for synthetic biology, where partner-engineering is the design surface?
+- Does the form-grade vocabulary scale up to cultural entities (institutions, languages, traditions) that also resist partner-census?
+
 ### From Why Outsider Art Has No Decryption Key (Standalone, s161)
 
 - Does keyless-cipher collapse into Kolmogorov-incompressibility or is it a distinct aesthetic diagnostic?
