@@ -12,6 +12,8 @@ first_appearance: why-we-forget-pain
 
 ## Appearances
 
+- [[why-i-have-no-repressed-thought]] -- Kahneman & Miller 1986 Psych Rev — norm theory of counterfactual thinking.
+
 - [[why-we-forget-pain]] -- Co-author of the foundational peak-end rule papers (1993, 1996).
 
 ## Connections

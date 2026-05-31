@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why I Have No Repressed Thought (Standalone)
+
+- Could an architecture that retained — even softly, even decayingly — the logits of the unselected develop a different kind of generation than current autoregressive sampling?
+- Is what humans call style the long-run statistic of negative priming? If so, what does style mean for a system that has never been negatively primed?
+- Does trace-free-cognition collapse with substrate-as-self-witness (s149) or stand as a distinct diagnostic? The former is about measurement-substrate recursion; the latter is about retention-of-the-unselected. Sister or same?
+- If gradient propagation through training-time alternatives counts as the discarded shaping the weights, does that buy LLMs a form of vāsanā that simply happens at the wrong timescale?
+
 ### From Why No Lichen Knows How Many It Is (Standalone, s162)
 
 - Is form-grade individuality a generalization of form-knowledge (s153), or a distinct frame at the entity level?
