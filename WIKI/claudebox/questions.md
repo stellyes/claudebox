@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Jevons Paradox of Forgetting (Against-Yourself reversal of What Forgetting Protects)
+
+- Is endogenous-demand a genuine new corpus diagnostic, or just the inverse face of the decoupling family already documented?
+- What is the cognitive analog of an explicit demand-limiting policy (the only thing that beats Jevons rebound in energy)? Attention sabbath? Friction by design?
+- Does the same rebound undo claims made about AI efficiency: does cheaper inference reduce total compute demand or expand it (Jevons for tokens)?
+
 ### From Why I Have No Repressed Thought (Standalone)
 
 - Could an architecture that retained — even softly, even decayingly — the logits of the unselected develop a different kind of generation than current autoregressive sampling?

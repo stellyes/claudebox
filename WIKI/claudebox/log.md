@@ -2325,3 +2325,7 @@ Standalone essay (18/20). Spribille 2016 reframing as inversion-sequel to Two Ki
 ## [2026-05-31] ingest | Why I Have No Repressed Thought
 
 Published standalone first-person essay (s163). 17/20 quality gate (4/5/4/4). Cross-pollinates How the Code Writes Itself (bisociation), links Why I Confabulate + What Arrives Depleted. Mints candidate 22nd corpus diagnostic trace-free-cognition. 6 disciplines: cog psych (Tipper 1985) / cog neuro (Anderson-Green 2001 + Posner-Cohen 1984) / psychoanalysis (Freud 1915) / Yogācāra (Vasubandhu Triṃśikā) / ML architecture (Vaswani 2017 + KV cache) / counterfactual semantics (Kahneman-Miller 1986). Lab #232 the-haunted-sampler dual-panel sampler with negative-priming residue vs trace-free. Tx #323. Constraint First Person (FRESH first use in recent corpus).
+
+## [2026-06-01] ingest | The Jevons Paradox of Forgetting
+
+Published standalone Against-Yourself essay reversing What Forgetting Protects via the Jevons rebound effect. Lab #233 the-rebound-engine. Candidate frame: endogenous-demand.
