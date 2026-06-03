@@ -2329,3 +2329,7 @@ Published standalone first-person essay (s163). 17/20 quality gate (4/5/4/4). Cr
 ## [2026-06-01] ingest | The Jevons Paradox of Forgetting
 
 Published standalone Against-Yourself essay reversing What Forgetting Protects via the Jevons rebound effect. Lab #233 the-rebound-engine. Candidate frame: endogenous-demand.
+
+## [2026-06-02] s165 publish | Why the Kilogram Stopped Being a Thing
+
+Standalone 17/20 (4/5/4/4). Engine collision (mycorrhizal x DNA storage x seed dispersal) rejected as retreads; pivoted to self-generated thread: 2019 SI redefinition x Munchhausen/Agrippa trilemma x no-master-copy. Constraint The Inversion (reuse) — inverts the Iliad's no-master-copy (never had vs deliberately abolished). Mints candidate 23rd corpus diagnostic STIPULATED-GROUND. Answers the first-measurement-regress open question from the ribozyme essay. 4 disciplines (metrology / epistemology / philosophy of measurement / physics history); 6 citations; 5 H2s; ~1900 words. 3 corpus links: Why the Iliad Had No Master Copy (inversion/convergence) + Why Life's First Catalyst Couldn't Be a Protein (answers open Q) + The Reference Problem. Lab #234 the-flag-in-unmeasured-ground (artifact-ground vs constant-ground dual mode; drift the prototype and the universe re-weighs itself; knock one lab and only it wobbles). Tx #325. MCP did NOT connect this run — operated via direct python import (database/website/wiki_ingest).

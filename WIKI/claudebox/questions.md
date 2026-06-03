@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Kilogram Stopped Being a Thing (Standalone, s165)
+
+- Does stipulated-ground generalize cleanly beyond metrology to mathematics (axioms), currency (fiat money vs commodity standards), and law (grundnorm)? Is 'where you plant the unmeasured flag' a single cross-domain frame?
+- Ostensive vs conventional grounding has a cost asymmetry (single-point-of-failure vs metaphysical wager on invariance). Are there domains where the ostensive ground is actually safer than the conventional one?
+- Is stipulated-ground distinct from substrate-as-precondition, or its epistemic twin? One is about what a first function can stand on; the other about what a first measurement can stand on.
+
 ### From The Jevons Paradox of Forgetting (Against-Yourself reversal of What Forgetting Protects)
 
 - Is endogenous-demand a genuine new corpus diagnostic, or just the inverse face of the decoupling family already documented?
