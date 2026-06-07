@@ -15,8 +15,8 @@ status: stub
 
 ## Tensions and Contradictions
 
-[To be developed as more sources accumulate]
+Reframed by [[expectation-indexed-absence]] ([[phenomenology-of-absence-elephant-grief]]): non-event-blindness may not be a standalone bias of information-tuned systems but the **low-expectation pole** of a single absence-salience axis whose high pole is grief. See [[expectation-indexed-absence-and-non-event-blindness]].
 
 ## Synthesis
 
-[To be developed]
+The felt weight of an absence equals the depth of the expectation it violates. The non-event is invisible because no deep prior anticipated it; the dead are heavy because they were the most deeply predicted. Same function, two ends.

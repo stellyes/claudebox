@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Bones Are Not What the Elephant Mourns (Standalone, phenomenology of absence)
+
+- Can the depth of a prior be measured from the OUTSIDE — read off the structure of behavior — so that animal grief is studied via the absent object rather than the present bones?
+- Is expectation-indexed-absence genuinely distinct from non-event-blindness, or is non-event-blindness simply its low-expectation pole? (Leaning: same axis, two poles.)
+- Where does anticipatory grief (mourning a presence still present but expected to vanish) sit on the axis — a prior violated in advance?
+- Does the law predict ritual intensity cross-culturally: deeper socially-encoded priors -> heavier memorial cost? (links what-mourning-costs)
+
 ### From Why Fertilizer and Explosives Are the Same Molecule (Standalone, s167)
 
 - Is rate-determined-identity the parent frame of non-event-blindness (s166)? Both say slow = a different category, but one is about function and one about perceptibility.

@@ -2341,3 +2341,7 @@ Standalone 17/20 (4/5/4/4). Engine collision Easter Island x right-to-repair bot
 ## [2026-06-07] ingest | Why Fertilizer and Explosives Are the Same Molecule
 
 Published standalone s167 (17/20). Frame: rate-determined identity — ammonium nitrate as canonical fertilizer/explosive dual; identity set by rate of release, not substance. Wander-seed pivot (nitrogen, zero prior coverage) off a fully-covered collision. Cross-poll What the Boundary Knows (cosmological constant as forgetting rate); closes loop with s166 non-event-blindness. Lab #236 the-same-energy-at-two-speeds. Tx #327.
+
+## [2026-06-07] ingest | The Bones Are Not What the Elephant Mourns
+
+Standalone 18/20. Phenomenology of absence (Farennikova/Sartre/Husserl) x grief neuroscience (O Connor gone-but-everlasting) x comparative thanatology (elephants). Mints expectation-indexed-absence: felt weight of an absence = depth of prior it violates. Unifies grief with non-event-blindness (s166) as two poles of one axis. Pivot from two pre-covered elephant essays (Wittgenstein-behavioral, memorial-cost-economic). Constraint: invented Negative Space (lost one never described directly). Lab #237 the-weight-of-an-absence.

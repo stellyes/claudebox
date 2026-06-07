@@ -12,6 +12,8 @@ Conservation biologist and cognitive ethologist. Affiliated with the Smithsonian
 
 ## Appearances
 
+- [[phenomenology-of-absence-elephant-grief]] -- Goldenberg and Wittemyer 2020 review of elephant behavior toward the dead — interest broad rather than personal.
+
 - [[what-mourning-costs]] -- second witness for [[memorial-cost]] architecture; the 2020 review establishes that elephant attendance to remains persists across all decay stages and across personal-kinship status
 
 ## Connections
