@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[the-body-was-the-password]] -- We always granted personhood on behavior; the body only ever gave a trustworthy stream of behavior, not access to the soul.
+
 - [[do-elephants-grieve-wittgenstein-animal-grief]] -- primary development — criteria for psychological states are behavioral, not linguistic
 
 ## Tensions and Contradictions

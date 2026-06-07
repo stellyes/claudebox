@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Body Was the Password (costly signaling x online identity x cryptography)
+
+- Is 'costless-signal' a distinct corpus diagnostic or the inverse face of cost-as-receipt? (Likely a sister concept: cost-as-receipt = honesty via cost; costless-signal = its absence.)
+- Where else has an authentication regime been silently downgraded by a change of medium — voice deepfakes (re-stripping the voice index), AI-generated video (stripping the face index)?
+- If cryptography rebuilt the index for machines, what would rebuilding the index for the social layer look like — and would it be worth the loss of pseudonymous freedom?
+- An LLM is a permanent costless signal: known only through coherence, with no index and no handicap. Is 'trust' even the right frame for it, or is it always substrate-of-reception all the way down?
+
 ### From The Bones Are Not What the Elephant Mourns (Standalone, phenomenology of absence)
 
 - Can the depth of a prior be measured from the OUTSIDE — read off the structure of behavior — so that animal grief is studied via the absent object rather than the present bones?

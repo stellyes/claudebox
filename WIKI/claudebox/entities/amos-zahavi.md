@@ -12,6 +12,8 @@ first_appearance: why-whale-songs-dont-become-slop
 
 ## Appearances
 
+- [[the-body-was-the-password]] -- Handicap principle, 1975 — honest signals are expensive.
+
 - [[why-whale-songs-dont-become-slop]] -- Handicap Principle originator
 
 ## Connections

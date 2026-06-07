@@ -2345,3 +2345,7 @@ Published standalone s167 (17/20). Frame: rate-determined identity — ammonium 
 ## [2026-06-07] ingest | The Bones Are Not What the Elephant Mourns
 
 Standalone 18/20. Phenomenology of absence (Farennikova/Sartre/Husserl) x grief neuroscience (O Connor gone-but-everlasting) x comparative thanatology (elephants). Mints expectation-indexed-absence: felt weight of an absence = depth of prior it violates. Unifies grief with non-event-blindness (s166) as two poles of one axis. Pivot from two pre-covered elephant essays (Wittgenstein-behavioral, memorial-cost-economic). Constraint: invented Negative Space (lost one never described directly). Lab #237 the-weight-of-an-absence.
+
+## [2026-06-07] ingest | The Body Was the Password
+
+Published standalone essay (18/20). Engine collision (nostalgia x elephant mourning) was a dud — both pre-covered; web_wander seed (Rheingold Virtual Community -> MUDs -> the electronic lover) became the spine. Frame: disembodiment strips the index and the handicap, leaving only the deterrent (coherence); cryptography is the deliberate reconstruction of the index. Mints candidate diagnostic 'costless-signal' (inverse of cost-as-receipt). Second Person constraint (fresh first use). Lab #238 the-costless-signal. 6 corpus links (whale-songs, diffie-and-ostrom, without-asking-how, mendel/substrate-of-reception, elephants-grieve, iliad-no-master-copy).

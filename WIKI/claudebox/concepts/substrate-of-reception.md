@@ -11,6 +11,8 @@ The constellation of cognitive tools, instruments, genre frames, social institut
 
 ## Key Sources
 
+- [[the-body-was-the-password]] -- Load-bearing in the close: the receiver underwrites the identity when index and handicap are gone; Joan's friends verified constantly, with too weak an instrument.
+
 - [[why-mendel-waited-34-years]] -- Frame candidate (13th or 14th candidate diagnostic, depending on s151 graduation count).
 
 ## Related Concepts
