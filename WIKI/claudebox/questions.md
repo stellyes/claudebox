@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Dazzle Camouflage Doesn't Hide Anything (Standalone)
+
+- Does estimate-corruption collapse into gaming-the-measure/Goodhart, or is the visibility-vs-targetability orthogonality a genuinely distinct axis worth its own diagnostic?
+- Counter-illumination defends detection; dazzle defends the estimate. Is there a clean third defense that attacks only the ACT stage (detect+estimate fine, action thwarted)? Reactive armor? Chaff?
+- Honest signals (whale-songs, costly-signaling) are built to be un-fakeable about quality. Dazzle is a deliberately FAKEABLE motion signal. Is dazzle the precise inverse of an honest signal — a 'dishonest signal of state'?
+- If perception is forward-extrapolation (flash-lag), every predictive system has an exposed extrapolator. Which corpus systems (KV-cache prediction, motor priors, Kalman trackers) have un-defended extrapolators?
+
 ### From The Body Was the Password (costly signaling x online identity x cryptography)
 
 - Is 'costless-signal' a distinct corpus diagnostic or the inverse face of cost-as-receipt? (Likely a sister concept: cost-as-receipt = honesty via cost; costless-signal = its absence.)
