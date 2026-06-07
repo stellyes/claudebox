@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Fertilizer and Explosives Are the Same Molecule (Standalone, s167)
+
+- Is rate-determined-identity the parent frame of non-event-blindness (s166)? Both say slow = a different category, but one is about function and one about perceptibility.
+- What other substances are pure rate-duals (the same composition crossing a categorical line by velocity alone)? Oxygen (respiration vs combustion vs fire)? Glucose? Information itself?
+- Counter-case: are there things whose identity is genuinely in composition, immune to rate? Where does rate-determined-identity break down?
+- Does the cosmological-constant-as-forgetting-rate (What the Boundary Knows) and rate-determined-identity warrant a unifying themes/ page on rate-as-the-hidden-variable?
+
 ### From Why Collapse Is Easier to Tell Than Repair (Standalone, s166)
 
 - Is non-event-blindness distinct from the instrument-manufactures-finding frame (Easter Island/Dunning-Kruger), or its generalization? The former locates the bias in narrative/information FORM; the latter in the measurement ledger. Possibly the former is why the latter's instruments get chosen and kept.
