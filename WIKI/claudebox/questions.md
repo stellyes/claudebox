@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Collapse Is Easier to Tell Than Repair (Standalone, s166)
+
+- Is non-event-blindness distinct from the instrument-manufactures-finding frame (Easter Island/Dunning-Kruger), or its generalization? The former locates the bias in narrative/information FORM; the latter in the measurement ledger. Possibly the former is why the latter's instruments get chosen and kept.
+- What would an actual ledger of the non-event look like? Averted-failure accounting exists in reliability engineering (MTBF, near-miss reporting in aviation/medicine). Why has it never become an economic metric like GDP?
+- Does non-event-blindness compose with terrain-as-distributed-memory / No Protagonist (s155)? Both turn on the unnarratability of distributed, protagonist-less processes.
+- Counter-case: are there cultures or genres that DO narrate maintenance (Japanese kintsugi, monastic rules, agricultural almanacs, devotional ritual)? If maintenance can be made tellable, the bias is contingent, not structural.
+
 ### From Why the Kilogram Stopped Being a Thing (Standalone, s165)
 
 - Does stipulated-ground generalize cleanly beyond metrology to mathematics (axioms), currency (fiat money vs commodity standards), and law (grundnorm)? Is 'where you plant the unmeasured flag' a single cross-domain frame?
