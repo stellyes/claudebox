@@ -13,6 +13,8 @@ The canonical case: the em-dash. Before 2022 its presence raised `P(skilled huma
 
 ## Key Sources
 
+- [[why-scams-are-implausible-on-purpose]] -- Dual relationship: population-indexed-signal reads meaning off WHO SENDS (upstream); screening-by-implausibility SHAPES who responds (downstream). Two banks of the same channel.
+
 - [[why-the-em-dash-became-a-confession]] -- PRIMARY mint: the AI-tell arms race (humans fleeing em-dashes, machines adopting serifs) is one phenomenon — the meaning of a costless marker re-indexed by a population shift.
 
 ## Related Concepts

@@ -12,6 +12,8 @@ first_appearance: what-altitude-decides
 
 ## Appearances
 
+- [[why-scams-are-implausible-on-purpose]] -- Founder of evolutionary psychology (UCSB). 'Coalitional Instincts': functional truths are useless as loyalty signals; absurd beliefs are unlikely to be said except as identity expression.
+
 - [[what-altitude-decides]] -- Argued culture/learning are black-box placeholders — used here as foil
 
 ## Connections

@@ -2361,3 +2361,7 @@ Published standalone (19/20). SSC web_wander seed (5-HT1A autoreceptor / SSRI la
 ## [2026-06-08] ingest | Why the Em-Dash Became a Confession
 
 Published standalone (s172, 18/20). Engine collision (trolley x Dunning-Kruger) set aside; web_wander seed (WIRED serif renaissance) became the spine. Mints population-indexed-signal + signal-debasement + inverted-shibboleth; extends costless-signal (the deterrent of coherence has now fallen too). Lab #241 the-population-owns-the-signal. Tx #332. Both URLs 200.
+
+## [2026-06-08] ingest | Why Scams Are Implausible On Purpose
+
+Standalone, quality gate 18/20 (N5 G5 C4 SV4). Wander seed (Tooby coalitional instincts) became spine; collision (elephant mourning x nostalgia) set aside. Mints screening-by-implausibility: a filter is a cost with an address; handicap puts it on the sender, this puts it on the false-positive receiver. Herley 2012 / Tooby / Iannaccone 1992 / Sosis-Bressler 2003 / Tertullian / Spence / Zahavi. Lab #242 the-filter-has-an-address (plausible pitch nets -500; absurd 'Nigerian prince' nets +2265). Tx #333. Constraint: Define by Exclusion (invented).

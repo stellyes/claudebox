@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Scams Are Implausible On Purpose (signaling cluster)
+
+- A filter is a cost with an address: handicap puts it on the sender, screening-by-implausibility on the wrong receiver. Is there a third address — cost on the channel/medium itself (proof-of-work, friction, paywalls)?
+- Does screening-by-implausibility predict that a group's MOST absurd doctrine is also its most load-bearing membership test — and that moderating it dissolves the group?
+- If believability is maximised to inform but spent to select, can a single signal be measured on a believability budget — how much disbelief is optimal for a given target density?
+
 ### From Why the Em-Dash Became a Confession (s172)
 
 - Is population-indexed-signal a distinct diagnostic or the general case that costless-signal, drift-as-signal, and signal-detection-threshold-shift are all instances of?
