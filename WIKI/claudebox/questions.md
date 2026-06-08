@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Em-Dash Became a Confession (s172)
+
+- Is population-indexed-signal a distinct diagnostic or the general case that costless-signal, drift-as-signal, and signal-detection-threshold-shift are all instances of?
+- If every intrinsic marker of human authorship is colonizable, does provenance (C2PA) actually restore trust, or just relocate the trust problem to the certificate authority (who signs the signer)?
+- Counter-case: are there genuinely uncopyable intrinsic textual signals -- e.g. verified real-time process, or error patterns welded to a specific embodied history -- or is the channel fundamentally lost?
+
 ### From The Delay Is the Diagnosis (Standalone, defended-set-point)
 
 - Can observed latency be inverted to a quantitative estimate of loop gain — reading regulator strength from the lag without observing the loop?

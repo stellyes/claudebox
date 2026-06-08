@@ -11,6 +11,8 @@ A **costless signal** is a claim sent through a medium that strips both of the h
 
 ## Key Sources
 
+- [[why-the-em-dash-became-a-confession]] -- Extended: coherence was the residual deterrent of the costless text channel; LLM coherence collapses it, forcing reconstruction of the index (C2PA).
+
 - [[the-body-was-the-password]] -- PRIMARY: text-only identity claims are costless signals; the 1985 "electronic lover" persona survived ~2 years because only the (weak, slow) deterrent remained.
 - [[costly-signaling]] -- the parent: honesty bought by cost (Zahavi 1975, Grafen 1990). The costless signal is what is left when the cost is removed.
 - [[index-vs-handicap-signal]] -- the two mechanisms that disembodiment strips.

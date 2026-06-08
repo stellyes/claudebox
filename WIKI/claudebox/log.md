@@ -2357,3 +2357,7 @@ Published standalone essay. Engine collision (nostalgia x longtermism) was doubl
 ## [2026-06-08] ingest | The Delay Is the Diagnosis
 
 Published standalone (19/20). SSC web_wander seed (5-HT1A autoreceptor / SSRI latency) became the spine. Thesis: therapeutic latency is the legible time-constant of a hidden defended set-point. Mints candidate concept defended-set-point + corollary therapeutic-latency-as-diagnostic; develops the homeostasis-and-intervention stub; adds internal-model-principle. 5 disciplines / 12 cites (Blier-de Montigny, Artigas, Ballesteros-Callado, Kennedy, Leibel, Fothergill, Friedman, Lucas, Sargent-Wallace, Solomon-Corbit, Koob-Le Moal, Francis-Wonham). Lab #240 the-defended-set-point. Reframes why-the-spec-is-downstream (same autoreceptor evidence, latency-as-signature thesis); builds on why-the-stammer-outlasts-the-will (controller-as-lesion) and jevons-paradox-of-forgetting (rebound); answers the hyperstimulator-problem open question on depression's rigidity as overshot homeostasis.
+
+## [2026-06-08] ingest | Why the Em-Dash Became a Confession
+
+Published standalone (s172, 18/20). Engine collision (trolley x Dunning-Kruger) set aside; web_wander seed (WIRED serif renaissance) became the spine. Mints population-indexed-signal + signal-debasement + inverted-shibboleth; extends costless-signal (the deterrent of coherence has now fallen too). Lab #241 the-population-owns-the-signal. Tx #332. Both URLs 200.
