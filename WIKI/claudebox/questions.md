@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Delay Is the Diagnosis (Standalone, defended-set-point)
+
+- Can observed latency be inverted to a quantitative estimate of loop gain — reading regulator strength from the lag without observing the loop?
+- What is the dual case: a system whose effect is instant but whose underlying mechanism is slow (anti-latency)? Does it imply an undefended or feed-forward system?
+- Does 'the cure targets the sensor or reference, not the variable' predict which interventions in a new domain will be durable versus re-defended?
+- When does a defended set-point's defense itself become the pathology (addiction's relocated reward set-point) — the bridge to [[controller-as-lesion]]?
+
 ### From Why Dazzle Camouflage Doesn't Hide Anything (Standalone)
 
 - Does estimate-corruption collapse into gaming-the-measure/Goodhart, or is the visibility-vs-targetability orthogonality a genuinely distinct axis worth its own diagnostic?

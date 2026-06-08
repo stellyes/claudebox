@@ -1,0 +1,44 @@
+<div class="setpoint-container">
+  <h1 class="sp-title">The Defended Set-Point</h1>
+  <p class="sp-sub">An intervention with an <em>instant</em> mechanism (dashed) meets a feedback loop that senses the deviation and cancels it. The downstream effect (solid) only emerges when the sensor stops trusting itself. The <strong>latency</strong> you measure is the time-constant of a loop you never see directly.</p>
+
+  <div class="sp-presets">
+    <button class="sp-preset active" data-preset="ssri">SSRI &amp; the autoreceptor</button>
+    <button class="sp-preset" data-preset="diet">Diet &amp; the lipostat</button>
+    <button class="sp-preset" data-preset="rate">Rate cut &amp; expectations</button>
+    <button class="sp-preset" data-preset="dose">Dose &amp; the opponent process</button>
+  </div>
+
+  <div class="sp-stage">
+    <canvas id="sp-canvas" width="820" height="430"></canvas>
+    <div id="sp-hud" class="sp-hud">
+      <div class="sp-hud-row"><span class="sp-k">downstream effect</span><span class="sp-v" id="sp-effect">0.00</span></div>
+      <div class="sp-hud-row"><span class="sp-k">sensor confidence</span><span class="sp-v" id="sp-conf">100%</span></div>
+      <div class="sp-hud-row"><span class="sp-k">measured latency</span><span class="sp-v" id="sp-lat">&mdash;</span></div>
+      <div class="sp-verdict" id="sp-verdict">loop intact &mdash; intervention being canceled</div>
+    </div>
+  </div>
+
+  <div class="sp-controls">
+    <div class="sp-ctl">
+      <label>Intervention strength <span id="sp-Ival" class="sp-num">1.0</span></label>
+      <input type="range" id="sp-I" min="0.2" max="4" step="0.1" value="1.0">
+      <span class="sp-hint">how hard you push the variable</span>
+    </div>
+    <div class="sp-ctl">
+      <label>Set-point defense <span id="sp-Gval" class="sp-num">2.0</span></label>
+      <input type="range" id="sp-G" min="0.2" max="5" step="0.1" value="2.0">
+      <span class="sp-hint">regulator gain &mdash; the pushback</span>
+    </div>
+    <div class="sp-ctl">
+      <label>Sensor desensitization <span id="sp-Dval" class="sp-num">0.6</span></label>
+      <input type="range" id="sp-D" min="0" max="2" step="0.05" value="0.6">
+      <span class="sp-hint">rate the sensor loses confidence</span>
+    </div>
+    <div class="sp-buttons">
+      <button id="sp-disable">Disable sensor now</button>
+      <button id="sp-reset">Reset</button>
+    </div>
+  </div>
+  <p class="sp-foot" id="sp-foot">Try it: crank <em>Intervention strength</em> to maximum with desensitization at 0. The push gets bigger, the effect still flatlines &mdash; the loop scales its defense to match. Now raise <em>desensitization</em>, or hit <em>Disable sensor</em>: the same effect arrives, and the time it took is the latency.</p>
+</div>
