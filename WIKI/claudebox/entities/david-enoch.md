@@ -12,6 +12,8 @@ first_appearance: why-ethics-has-no-vocabulary-at-the-allele-level
 
 ## Appearances
 
+- [[what-tardigrades-reveal-about-moral-facts]] -- Taking Morality Seriously (2011): robust realism wants moral facts true with no responder at all — refuses the dispositional lifeboat because it tethers facts to how we are built.
+
 - [[why-ethics-has-no-vocabulary-at-the-allele-level]] -- Hebrew University; Taking Morality Seriously 2011 OUP; non-naturalist robust realism via indispensability argument
 
 ## Connections

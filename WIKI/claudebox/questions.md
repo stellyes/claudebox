@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What Tardigrades Reveal About Moral Facts (Standalone)
+
+- Is response-dependent (dispositional) realism the ONLY realism compatible with the tardigrade's rescue — making robust realism the position that must also deny the inertness-acquittal?
+- Does the dissection generalize: do other 'queerness'-style arguments (against abstract objects, against qualia) likewise bundle a defusible inertness-complaint with a hard residue?
+- The reverse of the tardigrade: pure activity with no stored configuration (a flame, a standing wave). If reality can be stored as configuration without activity, can it be 'stored' as activity without configuration — and what is the moral analog?
+- Map the two-prong defense of moral realism the corpus is now triangulating: metaphysical prong (what would they be — this essay) and epistemic prong (how would we know — does-moral-progress-have-a-signature). Is there a unified defense diagram?
+
 ### From Why Esperanto Bound Its Author and Volapük Didn't (Standalone)
 
 - Is there a quantitative 'discretion coefficient' that predicts a standard's survival half-life across domains (conlangs, software projects, constitutions, religious canons, technical standards)?

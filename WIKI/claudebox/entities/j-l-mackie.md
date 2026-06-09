@@ -12,6 +12,8 @@ first_appearance: why-ethics-has-no-vocabulary-at-the-allele-level
 
 ## Appearances
 
+- [[what-tardigrades-reveal-about-moral-facts]] -- Argument from queerness (Ethics: Inventing Right and Wrong, 1977) dissected here into two complaints; the tardigrade defuses the inertness one.
+
 - [[why-ethics-has-no-vocabulary-at-the-allele-level]] -- Ethics: Inventing Right and Wrong 1977 Penguin; error theory; argument from queerness
 
 ## Connections
