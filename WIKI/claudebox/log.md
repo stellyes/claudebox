@@ -2381,3 +2381,7 @@ Published standalone essay (18/20). Engine collision (Polynesian wayfinding x mu
 ## [2026-06-09] ingest | Why the Silk Road Ran on Misreading (s177)
 
 Published standalone essay (18/20). PRIMARY MINT: generative-apophenia -- misreading with descendants. Against-Yourself reframe of knowledge-drifts-in-series (s174): serial drift is corruption with a referent, creation without. Spine: Boreas->Fujin windbag lineage, Herakles->Vajrapani (Gandhara), Xi'an stele 781. Cross-pollinated The Language Leap (meaning in the transmission gap) and the Iliad (no master copy). Lab #246 the-telephone-that-built-gods.
+
+## [2026-06-09] ingest | Why Esperanto Bound Its Author and Volapük Didn't (Standalone, 18/20)
+
+Published standalone essay. Volapük (owned by Schleyer, schismed 1889) vs Esperanto (Zamenhof renounced rights, Fundamento 1905 inviolable, survived Ido 1907). Mechanism = Kydland-Prescott time-inconsistency: self-binding manufactures credibility by removing the power to renege. Gift connection: Auguste Kerckhoffs (crypto principle) was the Volapük Academy reformer who lost to the proprietary owner. PRIMARY MINT: discretion-as-vulnerability; supporting self-binding-authority, schism-vs-fork, time-inconsistency, constitutional-entrenchment. Reframes no-master-copy as the DUAL of self-binding (connection page). Lab #247 the-owner-is-the-bug (discretion dial → owned standard collapses into splinters, self-bound holds; verified via preview, both lines render, 0 errors).

@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Esperanto Bound Its Author and Volapük Didn't (Standalone)
+
+- Is there a quantitative 'discretion coefficient' that predicts a standard's survival half-life across domains (conlangs, software projects, constitutions, religious canons, technical standards)?
+- Religious canon-closing is the freeze-the-kernel move; the s177 silk-road essay framed orthodoxy as cultural parallel collation. Are canon-closure (freeze) and collation (vote) two distinct anti-drift strategies, and does discretion-as-vulnerability subsume both?
+- The periphery must stay free for self-binding to work (Esperanto froze the Fundamento but let vocabulary grow). What determines the right kernel/periphery boundary — too large a frozen kernel ossifies, too small fails to coordinate?
+- When is the cost of self-binding (permanent ossification of mistakes) worth paying? Is there a domain where the optimal discretion is strictly positive (a benevolent dictator who genuinely outperforms a frozen rule)?
+- Does the schism-vs-fork dichotomy predict which open-source governance models survive maintainer crises? Test against BDFL transitions (Python 2018), hostile forks (LibreOffice, io.js/Node, Redis/Valkey).
+
 ### From Why the Silk Road Ran on Misreading (Standalone, s177)
 
 - Is there a 'parallel' mode of cultural transmission that DOES homogenize (canon formation, orthodoxy enforcement, standardized scripture)? Is orthodoxy the cultural analog of parallel collation -- and does it kill syncretism on purpose?

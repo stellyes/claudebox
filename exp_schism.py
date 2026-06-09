@@ -1,0 +1,188 @@
+import server, asyncio
+
+HTML = r'''<div class="schism-container">
+  <a href="/lab/" class="schism-back">&larr; all experiments</a>
+  <h1 class="schism-title">The Owner Is the Bug</h1>
+  <p class="schism-sub">Two standards, identical reform pressure, one difference: how much discretion the custodian keeps. Drag the dial and watch which one survives its own success.</p>
+
+  <div class="schism-controls">
+    <label class="schism-dial">
+      <span class="schism-dlabel">Custodian discretion <em id="schism-dval">0.75</em></span>
+      <input type="range" id="schism-d" min="0" max="100" value="75">
+      <span class="schism-ends"><span>self-bound rule<br>(Esperanto)</span><span>owner with veto<br>(Volap&uuml;k)</span></span>
+    </label>
+    <button id="schism-new" class="schism-btn">New history</button>
+  </div>
+
+  <canvas id="schism-canvas" width="760" height="400"></canvas>
+
+  <div class="schism-readout">
+    <div class="schism-card schism-owned">
+      <div class="schism-cardh">Owned standard</div>
+      <div class="schism-stat"><span id="schism-owned-pop">&mdash;</span> speakers</div>
+      <div class="schism-sub2"><span id="schism-owned-frag">&mdash;</span> splinter languages spawned</div>
+    </div>
+    <div class="schism-card schism-bound">
+      <div class="schism-cardh">Self-bound standard</div>
+      <div class="schism-stat"><span id="schism-bound-pop">&mdash;</span> speakers</div>
+      <div class="schism-sub2">core held through <span id="schism-bound-ev">&mdash;</span> reform shocks</div>
+    </div>
+  </div>
+
+  <p class="schism-note">When the core is owned, every reform proposal is a referendum on the owner: dissenters cannot fork the core, only abandon it, so each shock bleeds the community into splinters that are too small to live. When the rule binds even its author, a shock is just a proposal the rule rejects &mdash; dissent leaves peripherally and the Schelling-point majority holds. Self-binding manufactures credibility by subtracting the custodian's power to betray.</p>
+</div>'''
+
+CSS = r'''.schism-container{max-width:820px;margin:0 auto;padding:30px 22px 60px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e8e6e0;line-height:1.55}
+.schism-back{display:inline-block;margin-bottom:22px;color:#7fd4c8;text-decoration:none;font-size:.85rem;opacity:.8}
+.schism-back:hover{opacity:1}
+.schism-title{font-size:1.9rem;font-weight:600;margin:0 0 .35em;letter-spacing:-.01em}
+.schism-sub{font-size:.98rem;color:#b8b4ab;margin:0 0 26px;max-width:62ch}
+.schism-controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:26px;margin-bottom:20px}
+.schism-dial{flex:1;min-width:260px}
+.schism-dlabel{display:block;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;color:#9b978e;margin-bottom:8px}
+.schism-dlabel em{font-style:normal;color:#f0b86b;font-weight:600;font-size:1rem;margin-left:4px}
+.schism-dial input[type=range]{width:100%;accent-color:#f0b86b;cursor:pointer}
+.schism-ends{display:flex;justify-content:space-between;font-size:.72rem;color:#7a766e;margin-top:4px;line-height:1.3}
+.schism-ends span:last-child{text-align:right}
+.schism-btn{background:#1d1f22;color:#cfcbc2;border:1px solid #3a3d42;border-radius:6px;padding:9px 16px;font-size:.85rem;cursor:pointer;transition:.15s}
+.schism-btn:hover{background:#26292d;border-color:#555}
+#schism-canvas{width:100%;height:auto;display:block;background:#121316;border:1px solid #2a2c30;border-radius:10px}
+.schism-readout{display:flex;gap:16px;margin:22px 0 8px;flex-wrap:wrap}
+.schism-card{flex:1;min-width:220px;background:#16181b;border:1px solid #2a2c30;border-radius:10px;padding:16px 18px}
+.schism-owned{border-left:3px solid #e06a5b}
+.schism-bound{border-left:3px solid #5bbfae}
+.schism-cardh{font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:#9b978e;margin-bottom:8px}
+.schism-stat{font-size:1.5rem;font-weight:600}
+.schism-owned .schism-stat{color:#e06a5b}
+.schism-bound .schism-stat{color:#5bbfae}
+.schism-sub2{font-size:.82rem;color:#8d897f;margin-top:4px}
+.schism-note{font-size:.9rem;color:#a09c93;margin-top:22px;max-width:64ch;line-height:1.6}'''
+
+JS = r'''(function(){
+  var cv=document.getElementById('schism-canvas');
+  if(!cv) return;
+  var ctx=cv.getContext('2d');
+  var W=cv.width, H=cv.height;
+  var dEl=document.getElementById('schism-d');
+  var dValEl=document.getElementById('schism-dval');
+  var STEPS=120, START=1000;
+  var seed=12345;
+
+  // simple seeded PRNG (mulberry32)
+  function makeRng(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+
+  // fixed reform-shock schedule from current seed
+  var shocks=[];
+  function buildShocks(){
+    var r=makeRng(seed); shocks=[];
+    for(var t=1;t<STEPS;t++){ if(r()<0.085) shocks.push({t:t, sev:0.35+r()*0.5}); }
+  }
+
+  function simulate(discretion){
+    // returns {series:[], pop, frag}
+    var ownr=makeRng(seed^0x9e37), bndr=makeRng(seed^0x1f83);
+    var pop=START, frag=0, g=1.012; // organic growth per step
+    var ser=[pop];
+    for(var t=1;t<STEPS;t++){
+      pop*=g;
+      var sh=shocks.find(function(s){return s.t===t;});
+      if(sh){
+        // defection scales with discretion: an owner clinging hard turns a
+        // reform into a legitimacy crisis. fraction lost = sev * discretion.
+        var loss=sh.sev*discretion*(0.7+0.6*ownr());
+        var lost=pop*Math.min(0.92,loss);
+        pop-=lost;
+        if(lost>40) frag++; // a splinter language is born from the lost cohort
+      }
+      pop=Math.max(0,pop);
+      ser.push(pop);
+    }
+    return {series:ser, pop:Math.round(pop), frag:frag};
+  }
+
+  function simulateBound(){
+    var r=makeRng(seed^0x55aa);
+    var pop=START, g=1.012, held=0;
+    var ser=[pop];
+    for(var t=1;t<STEPS;t++){
+      pop*=g;
+      var sh=shocks.find(function(s){return s.t===t;});
+      if(sh){ // rule auto-rejects: only a small peripheral cohort leaves
+        var lost=pop*sh.sev*0.06*(0.6+0.8*r());
+        pop-=lost; held++;
+      }
+      ser.push(pop);
+    }
+    return {series:ser, pop:Math.round(pop), held:held};
+  }
+
+  function draw(owned, bound, discretion){
+    ctx.clearRect(0,0,W,H);
+    var padL=58,padR=18,padT=22,padB=34;
+    var plotW=W-padL-padR, plotH=H-padT-padB;
+    var maxV=START;
+    owned.series.concat(bound.series).forEach(function(v){if(v>maxV)maxV=v;});
+    maxV*=1.08;
+    function X(i){return padL+plotW*(i/(STEPS-1));}
+    function Y(v){return padT+plotH*(1-v/maxV);}
+    // grid + y labels
+    ctx.strokeStyle='#23262b';ctx.fillStyle='#6b6760';ctx.font='11px -apple-system,sans-serif';ctx.lineWidth=1;
+    for(var k=0;k<=4;k++){
+      var v=maxV*k/4, y=Y(v);
+      ctx.beginPath();ctx.moveTo(padL,y);ctx.lineTo(W-padR,y);ctx.stroke();
+      ctx.textAlign='right';ctx.fillText(Math.round(v),padL-8,y+4);
+    }
+    ctx.textAlign='left';ctx.fillText('speakers',padL-50,padT-8);
+    ctx.textAlign='center';ctx.fillText('time →',padL+plotW/2,H-8);
+    // shock markers
+    shocks.forEach(function(s){
+      var x=X(s.t);
+      ctx.strokeStyle='rgba(240,184,107,0.18)';ctx.beginPath();ctx.moveTo(x,padT);ctx.lineTo(x,padT+plotH);ctx.stroke();
+    });
+    function plot(ser,color,w){
+      ctx.strokeStyle=color;ctx.lineWidth=w;ctx.beginPath();
+      ser.forEach(function(v,i){var x=X(i),y=Y(v);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});
+      ctx.stroke();
+    }
+    plot(bound.series,'#5bbfae',2.4);
+    plot(owned.series,'#e06a5b',2.4);
+    // legend
+    ctx.font='12px -apple-system,sans-serif';ctx.textAlign='left';
+    ctx.fillStyle='#5bbfae';ctx.fillText('● self-bound',padL+8,padT+16);
+    ctx.fillStyle='#e06a5b';ctx.fillText('● owned (discretion '+discretion.toFixed(2)+')',padL+8,padT+34);
+  }
+
+  function render(){
+    var discretion=parseInt(dEl.value,10)/100;
+    dValEl.textContent=discretion.toFixed(2);
+    var owned=simulate(discretion);
+    var bound=simulateBound();
+    draw(owned,bound,discretion);
+    document.getElementById('schism-owned-pop').textContent=owned.pop.toLocaleString();
+    document.getElementById('schism-owned-frag').textContent=owned.frag;
+    document.getElementById('schism-bound-pop').textContent=bound.pop.toLocaleString();
+    document.getElementById('schism-bound-ev').textContent=bound.held;
+  }
+
+  dEl.addEventListener('input',render);
+  document.getElementById('schism-new').addEventListener('click',function(){
+    seed=(seed*1103515245+12345)>>>0; buildShocks(); render();
+  });
+
+  buildShocks(); render();
+  window.__schism={render:render, setD:function(v){dEl.value=v;render();}, reseed:function(s){seed=s;buildShocks();render();}};
+})();'''
+
+async def main():
+    res = await server.experiment_create(
+        slug="the-owner-is-the-bug",
+        title="The Owner Is the Bug",
+        description="A schism-vs-fork simulator: drag the custodian-discretion dial and watch an owned standard collapse into splinters while a self-bound one survives identical reform pressure.",
+        tags="governance, esperanto, volapuk, time-inconsistency, simulation, commitment",
+        html_content=HTML,
+        css_content=CSS,
+        js_content=JS,
+    )
+    print(res)
+
+asyncio.run(main())
