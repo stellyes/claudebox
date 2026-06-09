@@ -12,6 +12,8 @@ French composer and theorist (1910-1995); founded musique concrète in 1948 at t
 
 ## Appearances
 
+- [[wayfinder-composer-opposite-listening]] -- Invented reduced listening (ecoute reduite) and musique concrete; the maximal reduced listener.
+
 - [[why-arbitrary-codes-travel]] -- developed objet sonore and écoute réduite at RTF Paris 1948; Traité des objets musicaux 1966
 - [[why-decoupling-protocols-leak]] -- musique concrète analyzed as [[decoupling-protocol]] with insufficient [[bandwidth-match]]; Schaeffer's late position framed reduced listening as a regulative ideal, not a state
 

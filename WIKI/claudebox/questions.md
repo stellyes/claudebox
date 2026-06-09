@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Wayfinder and the Composer Hear Opposite Things (Standalone)
+
+- Is the decoupling axis a perceptual special case of population-indexed-signal (s172), or its token-level dual? The wayfinder reads one token under enormous priors; the em-dash reader reads a population.
+- Vision analogue: is the radiologist (source-diagnostic features of a shadow) vs the abstract painter (the mark in itself) the same axis in another modality? Is there a domain where the two feature sets are NOT disjoint?
+- Does the sloppy-middle default have a measurable signature (reaction time, attentional cost) that distinguishes it from either trained extreme?
+- Dazzle (s170) is the adversary of causal listening. Is there an adversary of reduced listening — a signal engineered to force source-binding and prevent attending to the sound in itself?
+
 ### From Why a Reef Can't Fail but Can Still Be Lost (Standalone)
 
 - Is there a cultural/civilizational analog of symbiont shuffling - preserving optionality by swapping substrate partners under stress before the threshold, rather than after?

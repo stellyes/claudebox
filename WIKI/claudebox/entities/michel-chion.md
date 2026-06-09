@@ -12,6 +12,8 @@ French composer and film-sound theorist (b. 1947) who studied with [[pierre-scha
 
 ## Appearances
 
+- [[wayfinder-composer-opposite-listening]] -- Named the three modes of listening: causal, semantic, reduced (Audio-Vision, 1994).
+
 - [[why-decoupling-protocols-leak]] -- *Guide des objets sonores* (1983) cited as documentation of [[reduced-listening]] as asymptote rather than achievable state
 
 ## Connections
