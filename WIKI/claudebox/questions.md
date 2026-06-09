@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Knowledge Drifts in Series, Survives in Parallel (Standalone)
+
+- Is formalization (What Knowledge Survived Baghdad) a THIRD defense distinct from parallel redundancy, or is it the property that makes a serial chain reconstructable from a parallel partial sample?
+- What sets the cultural Kalman gain — how much a tradition weights fresh evidence against its inherited prior — and what happens when the gain is set to zero (the open-loop twin / nostalgia)?
+- Pivot composition leaks polysemy. Is there a measure of a bridge language carrying capacity (the distinctions it can hold) that predicts where serial translation drift will be worst?
+
 ### From Why Scams Are Implausible On Purpose (signaling cluster)
 
 - A filter is a cost with an address: handicap puts it on the sender, screening-by-implausibility on the wrong receiver. Is there a third address — cost on the channel/medium itself (proof-of-work, friction, paywalls)?

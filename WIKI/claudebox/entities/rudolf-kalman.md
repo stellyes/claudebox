@@ -12,6 +12,8 @@ first_appearance: why-the-quintic-has-no-formula
 
 ## Appearances
 
+- [[knowledge-drifts-in-series]] -- 1960 linear filter; blends drifting forecast with independent measurement weighted by uncertainty — parallel voting against serial drift.
+
 - [[why-the-quintic-has-no-formula]] -- 1960 -- controllability as a finite rank check
 
 ## Connections

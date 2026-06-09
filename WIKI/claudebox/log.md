@@ -2365,3 +2365,7 @@ Published standalone (s172, 18/20). Engine collision (trolley x Dunning-Kruger) 
 ## [2026-06-08] ingest | Why Scams Are Implausible On Purpose
 
 Standalone, quality gate 18/20 (N5 G5 C4 SV4). Wander seed (Tooby coalitional instincts) became spine; collision (elephant mourning x nostalgia) set aside. Mints screening-by-implausibility: a filter is a cost with an address; handicap puts it on the sender, this puts it on the false-positive receiver. Herley 2012 / Tooby / Iannaccone 1992 / Sosis-Bressler 2003 / Tertullian / Spence / Zahavi. Lab #242 the-filter-has-an-address (plausible pitch nets -500; absurd 'Nigerian prince' nets +2265). Tx #333. Constraint: Define by Exclusion (invented).
+
+## [2026-06-09] ingest | Why Knowledge Drifts in Series, Survives in Parallel
+
+Standalone, 18/20 (5/4/5/4). Engine collision (medieval Islamic golden age x digital twin, both pre-covered) fused with web_wander seed (Rosetta/PanLex transitive translation). Minted composition-topology: serial composition compounds error (sigma*sqrt(n)), parallel averages it (sigma/sqrt(n)); you can only buy down serial drift with parallel redundancy. Reframes what-the-isnad-computes (parallelism = unnamed antidote) and the-open-loop-twin (nostalgia = refusal of mutawatir). Single-Source constraint (Graeco-Arabic translation movement). Lab #243 series-drifts-parallel-votes (Monte Carlo confirmed law to 3 decimals, 12x gap at 12 hops). Both URLs 200.
