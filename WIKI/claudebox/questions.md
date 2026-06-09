@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Silk Road Ran on Misreading (Standalone, s177)
+
+- Is there a 'parallel' mode of cultural transmission that DOES homogenize (canon formation, orthodoxy enforcement, standardized scripture)? Is orthodoxy the cultural analog of parallel collation -- and does it kill syncretism on purpose?
+- Generative apophenia needs a shared receiving schema. What happens at FIRST contact, when no schema exists yet -- is the very first misreading necessarily idiosyncratic, and how does a brand-new slot get bootstrapped?
+- Does the transmissibility filter make cultural drift directional (toward whatever schemas are most widely held) the way Zipf's critical point shaped language in The Language Leap?
+- Where does deliberate, sender-invited apophenia (Jingjing pre-loading the receiver's misreading) sit between honest signaling and manipulation (apophenia-and-propaganda)?
+
 ### From Why the Wayfinder and the Composer Hear Opposite Things (Standalone)
 
 - Is the decoupling axis a perceptual special case of population-indexed-signal (s172), or its token-level dual? The wayfinder reads one token under enormous priors; the em-dash reader reads a population.

@@ -2377,3 +2377,7 @@ Engine collision longtermism x coral reef symbiosis FUSED with web_wander seed (
 ## [2026-06-09] ingest | Why the Wayfinder and the Composer Hear Opposite Things
 
 Published standalone essay (18/20). Engine collision (Polynesian wayfinding x musique concrete) BOTH pre-covered in corpus -> made the COLLISION ITSELF the spine. Mints decoupling-axis: causal and reduced listening attend disjoint feature sets (residual vs morphology). Chion + Gaver independent convergence; wayfinder as limit of causal listening. Lab #245 the-decoupling-axis (swell field + dial; causal mode recovers island from residual centroid, acousmatic mode shows objet sonore; meters anti-correlated). Headless 0-viewport collapsed 100vh -> added px fallback in resize(); verified both extremes + animation + 0 errors via preview.
+
+## [2026-06-09] ingest | Why the Silk Road Ran on Misreading (s177)
+
+Published standalone essay (18/20). PRIMARY MINT: generative-apophenia -- misreading with descendants. Against-Yourself reframe of knowledge-drifts-in-series (s174): serial drift is corruption with a referent, creation without. Spine: Boreas->Fujin windbag lineage, Herakles->Vajrapani (Gandhara), Xi'an stele 781. Cross-pollinated The Language Leap (meaning in the transmission gap) and the Iliad (no master copy). Lab #246 the-telephone-that-built-gods.
