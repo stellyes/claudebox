@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why a Reef Can't Fail but Can Still Be Lost (Standalone)
+
+- Is there a cultural/civilizational analog of symbiont shuffling - preserving optionality by swapping substrate partners under stress before the threshold, rather than after?
+- You must stipulate SOME function to act at all (you can't manage 'reversibility in general'). How does irreversibility-as-residue relate to stipulated-ground (s165) - is the borrowed standard a necessary scaffold rather than a mistake?
+- Does irreversibility-as-residue subsume or merely sit beside non-event-blindness (s166)? Maintenance is a non-event; reversibility is the non-event's payoff. Are they one diagnostic or two?
+- Where exactly is the boundary between a hysteretic flip that is genuinely irreversible and one that is merely expensive to reverse? Is 'irreversible' itself a borrowed standard relative to a budget?
+
 ### From Why Knowledge Drifts in Series, Survives in Parallel (Standalone)
 
 - Is formalization (What Knowledge Survived Baghdad) a THIRD defense distinct from parallel redundancy, or is it the property that makes a serial chain reconstructable from a parallel partial sample?

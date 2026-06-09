@@ -12,6 +12,8 @@ first_appearance: what-the-bronze-forgot
 
 ## Appearances
 
+- [[why-a-reef-cant-fail-but-can-be-lost]] -- Lead author, 'Catastrophic shifts in ecosystems' (Nature 2001) - alternative stable states and hysteresis across lakes, reefs, forests, drylands.
+
 - [[what-the-bronze-forgot]] -- Early-warning signals for critical transitions, Nature 2009.
 
 ## Connections

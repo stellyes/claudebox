@@ -12,6 +12,8 @@ first_appearance: why-nature-uses-the-golden-angle
 
 ## Appearances
 
+- [[why-a-reef-cant-fail-but-can-be-lost]] -- Co-coiner of 'longtermism'; What We Owe the Future (2022). Central to the value lock-in framing.
+
 - [[why-nature-uses-the-golden-angle]] -- What We Owe the Future (2022) — value lock-in as central longtermist danger
 
 ## Connections
