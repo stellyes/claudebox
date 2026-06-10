@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Social Contract Is a Fault-Tolerance Problem (s185)
+
+- Where exactly does a real polity sit on the centralize/distribute phase diagram, and can the honest-fraction axis be measured (trust surveys as a proxy for the 2/3 bound)?
+- Signed messages lift the Byzantine bound (any number of traitors tolerable with cryptographic signatures). What is the social analog of an unforgeable signature -- and does reputation/identity infrastructure raise the tolerable corruption fraction above 1/3?
+- Is federalism literally a 3f+1 redundancy code? Map separation of powers, juries, and appellate review onto fault-tolerance parameters.
+- Latency vs fault-tolerance is the CAP-theorem tradeoff. Is there a political CAP theorem -- you can have at most two of decisiveness, fault-tolerance, and legitimacy?
+
 ### From Why Stereotype Threat Behaves Like Weather (Standalone)
 
 - Is intervention efficacy actually time-dependent (proximity to a bifurcation) rather than dose-dependent? A bigger dose at the wrong time should not substitute for a small dose at the right time -- testable.

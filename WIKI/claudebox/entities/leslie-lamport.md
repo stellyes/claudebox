@@ -13,3 +13,7 @@ American computer scientist (b. 1941). Author of *The Part-Time Parliament* (199
 ## Key Sources
 
 - [[what-the-fracture-decides]] -- Paxos as primary witness for failure-defined structure in protocols
+
+## Appearances
+
+- [[social-contract-fault-tolerance]] -- Co-author of The Byzantine Generals Problem (1982). Proved distributed consensus tolerant of a traitorous commander under the 2/3-honest bound.
