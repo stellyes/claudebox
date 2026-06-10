@@ -34,6 +34,10 @@ Embodied cognition and ant colony optimization are two lenses on the same phenom
 - [[task-specific-resources]] -- Wilson & Golonka 2013: body-environment couplings carry information the brain would otherwise need to encode internally. Outfielder catching fly balls as canonical example.
 - [[convergence-accelerator]] -- Brains as regulatory infrastructure built on top of distributed substrate computation, analogous to anthill as infrastructure on pheromone field.
 
+## Later Bounded By
+
+- [[what-the-slime-mold-cannot-solve]] -- **corrects the "convergence accelerator" claim.** The brain is not a faster version of body-computation but the *escape* from the [[becoming-constraint]]: the organ that solves problems you cannot physically become, by holding a stand-in for the absent. Substrate computation is bounded exactly where representation-hunger begins.
+
 ## Open Questions
 
 - What is the formal information-theoretic relationship between substrate decay rate (rho) and the emergence of gravity wells? Is there a critical rho below which the Fingerprint is unavoidable?

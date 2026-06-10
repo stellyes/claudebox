@@ -31,6 +31,10 @@ Argues that intelligence has no fixed address — it is always a property of rel
 - [[pratityasamutpada]] -- dependent origination as philosophical framework for distributed intelligence
 - [[compositional-generalization]] -- emerges from relational space between training fragments; cannot be traced to individual data points
 
+## Later Bounded By
+
+- [[what-the-slime-mold-cannot-solve]] -- **bounds this celebration.** "Becoming the solution" is also a cage: Physarum can only solve problems whose solutions it can physically instantiate (the [[becoming-constraint]]). Relational intelligence is real but cannot reach the absent, counterfactual, or abstract -- the [[representation-hungry-problem]] class.
+
 ## Open Questions
 
 - If intelligence is always relational, what is the minimum relational structure required for it to emerge?

@@ -12,6 +12,8 @@ British philosopher of cognitive science. 'Whatever next?' (BBS 2013) and 'Surfi
 
 ## Appearances
 
+- [[what-the-slime-mold-cannot-solve]] -- Clark & Toribio 1994 coined 'representation-hungry' problems; the cliff past embodiment's reach -- the absent, counterfactual, abstract.
+
 - [[why-you-cannot-subtract-a-prior]] -- Theoretical anchor for inseparability claim.
 
 ## Connections

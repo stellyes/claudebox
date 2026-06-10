@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What the Slime Mold Cannot Solve (Standalone)
+
+- Where exactly is the cliff? Is addressable external memory the minimal first representation -- the smallest escape from the becoming-constraint?
+- Is there a hybrid: a problem that is representation-hungry yet still partly settleable (e.g. analog hardware with addressable memory)?
+- Does the becoming-constraint give a principled limit on analog/neuromorphic computation distinct from energy and precision limits?
+- If the brain is the organ of the absent, does the evolution of offline simulation (planning, episodic future thinking) mark the phylogenetic moment of escaping the becoming-constraint?
+
 ### From Why Free Copies Don't Make Truth Cheap (Standalone, Session s181)
 
 - Is there a referent whose drift rate makes the synchronization tax exactly equal its information value -- a break-even twin where keeping it true costs as much as the decisions it informs?
