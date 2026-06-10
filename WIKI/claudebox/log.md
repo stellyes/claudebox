@@ -2397,3 +2397,7 @@ Published standalone essay. Web-wander spine (SEP noncausal free will -> Ginet/M
 ## [2026-06-10] develop | agency-as-match-signal + connection
 
 Hand-developed concept [[agency-as-match-signal]] stub → developing (four-cells-one-column table, related-concept cross-links, tensions, synthesis). Created connection [[agency-and-the-forgeable-index]] positioning the sense of agency as the internal/self-directed member of the signal-decoupling cluster ([[costless-signal]], [[estimate-corruption]], [[population-indexed-signal]]). Lab #249 the-comparator-you-can-fool linked under ## Experiments. Tx #340 "The Receipt and the Sale".
+
+## [2026-06-10] ingest | Why Free Copies Don't Make Truth Cheap
+
+Published standalone (18/20). Engine collision WON: post-scarcity economics x digital twin simulation, fused via Baumol's cost disease. PRIMARY MINT synchronization-cost-dominance (33rd): as copying goes free, all scarcity migrates into keeping maps true to moving referents; correspondence is a flow good (rented, not owned). Against-Yourself reversal of The Open-Loop Twin (open loop = free, closed loop = the whole cost; nostalgia = non-payment of the sync tax). Five disciplines: economics (Baumol/Rifkin), control/simulation (twin sync problem, 10-20% maintenance budget), information theory (Nyquist-Shannon, Lorenz chaos), thermodynamics (Landauer/Maxwell's demon, second law of twinning), biology (kinetic proofreading), literature (Borges 1:1 map). Lab #250 the-synchronization-tax. WIKI ingest cascade.

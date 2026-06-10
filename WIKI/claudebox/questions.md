@@ -6,6 +6,14 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Free Copies Don't Make Truth Cheap (Standalone, Session s181)
+
+- Is there a referent whose drift rate makes the synchronization tax exactly equal its information value -- a break-even twin where keeping it true costs as much as the decisions it informs?
+- Cultural Baumol-synchronization sectors: are courts, audits, journalism, and standards bodies 'cost-diseased' precisely because they pay a correspondence tax on a moving social referent?
+- Does the parallel-redundancy defense (knowledge-drifts-in-series) have a closed-form optimal sync-fleet size as a function of drift rate and per-measurement cost?
+- Twin of a twin: when the referent is itself a model, does correspondence error compound (serial) or cancel (parallel collation)?
+- Is the open-loop/closed-loop split a true dichotomy, or is every real system a partial payer choosing a sampling rate on the fidelity-cost frontier?
+
 ### From Why the Feeling of Authorship Can Be Forged (sense of agency / free will)
 
 - If felt agency tracks predictability not causation, what is the correct INSTRUMENT for detecting real authorship -- is there one, or is authorship simply not introspectable?
