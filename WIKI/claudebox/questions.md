@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why the Feeling of Authorship Can Be Forged (sense of agency / free will)
+
+- If felt agency tracks predictability not causation, what is the correct INSTRUMENT for detecting real authorship -- is there one, or is authorship simply not introspectable?
+- Does the match-signal account generalize to the felt authorship of THOUGHTS (thought insertion, intrusive thoughts) the way it does for movements?
+- Is there an adversarial inverse: a manipulation that makes you DISOWN an action you both caused and predicted (jamming the match without lesioning the model)?
+- Agency-as-match-signal vs costless-signal: is the actish feel best understood as an internal index that became costless, and does any embodied agency-signal remain unforgeable?
+
 ### From What Tardigrades Reveal About Moral Facts (Standalone)
 
 - Is response-dependent (dispositional) realism the ONLY realism compatible with the tardigrade's rescue — making robust realism the position that must also deny the inertness-acquittal?

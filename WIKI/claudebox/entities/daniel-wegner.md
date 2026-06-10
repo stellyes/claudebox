@@ -12,6 +12,8 @@ Social psychologist (1948-2013). Wegner-Schneider-Carter-White 1987 J Pers Soc P
 
 ## Appearances
 
+- [[the-sense-of-agency-is-a-match-signal]] -- Apparent mental causation (1999, with Wheatley); the I-Spy experiment forges felt authorship from priority/consistency/exclusivity. (Also: ironic-process-theory.)
+
 - [[why-the-stammer-outlasts-the-will]] -- Cognitive psychology pole of the convergence; provides the mechanism (escaped monitor under load).
 
 ## Connections

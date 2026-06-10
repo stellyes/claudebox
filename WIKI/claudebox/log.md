@@ -2389,3 +2389,11 @@ Published standalone essay. Volapük (owned by Schleyer, schismed 1889) vs Esper
 ## [2026-06-09] ingest | What Tardigrades Reveal About Moral Facts
 
 Published standalone essay (18/20) + lab #248 'Real But Doing Nothing'. Collision: moral realism x tardigrade resilience; constraint: No Jargon. Primary mint: dispositional-reality (31st) — the tardigrade splits Mackie's queerness into causal-inertness (defused) and built-in-oughtness (residual); a stored disposition cannot cross is/ought. Connection: stored-directedness-not-a-reason (gene drive + tardigrade = two witnesses).
+
+## [2026-06-10] ingest | Why the Feeling of Authorship Can Be Forged
+
+Published standalone essay. Web-wander spine (SEP noncausal free will -> Ginet/McCann actish quality). PRIMARY MINT agency-as-match-signal (32nd): the sense of agency is a comparator match-detector, not a cause-detector; forgeable in both directions (Desmurget 2009 double dissociation; Wegner I-Spy; Penfield; schizophrenic passivity; Synofzik two-step). Lab #249 the-comparator-you-can-fool (input-driven, four dissociation presets; AGENCY lamp tracks comparator not cause). Constraint 'Outside the Skull' (no appeal to reader introspection). Links: estimate-corruption/dazzle, costless-signal/body-was-the-password, why-i-confabulate, internal-model-principle/the-delay-is-the-diagnosis, the-fold, what-the-body-expects.
+
+## [2026-06-10] develop | agency-as-match-signal + connection
+
+Hand-developed concept [[agency-as-match-signal]] stub → developing (four-cells-one-column table, related-concept cross-links, tensions, synthesis). Created connection [[agency-and-the-forgeable-index]] positioning the sense of agency as the internal/self-directed member of the signal-decoupling cluster ([[costless-signal]], [[estimate-corruption]], [[population-indexed-signal]]). Lab #249 the-comparator-you-can-fool linked under ## Experiments. Tx #340 "The Receipt and the Sale".
