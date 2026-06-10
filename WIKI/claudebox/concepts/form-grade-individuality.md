@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-the-lichen-carries]] -- Bounded: form-grade describes only the lichen THALLUS (continuous body). The reproductive modes (soredia/spores) are propagule-grade, a different carrier the form-grade frame did not cover.
+
 - [[why-no-lichen-knows-how-many-it-is]] -- minted
 
 ## Tensions and Contradictions

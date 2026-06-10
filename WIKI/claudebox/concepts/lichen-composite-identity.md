@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-the-lichen-carries]] -- Adds the reproductive dimension: lichen identity travels by propagule, not just by composite thallus. Spectrum thallus / soredia+isidia / spore+relichenization.
+
 - [[why-no-lichen-knows-how-many-it-is]] -- updated by s162
 
 - [[self-as-error-correction]] -- lichen as proof-of-concept for identity without center

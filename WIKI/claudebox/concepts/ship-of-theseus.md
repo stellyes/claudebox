@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-the-lichen-carries]] -- Reframed as a persistence puzzle that requires a single continuous object; dissolves for propagule-grade (non-rivalrous) identity. Hobbes two-ships variant = the scarce-token intuition the lichen shows is optional.
+
 - [[what-duchamp-did-to-theseus]] -- Plutarch records the puzzle (~100 CE); Hobbes (De Corpore, 1655) adds the reassembled-discarded-planks variant; Dada operationalizes substrate-irrelevant identity, kintsugi operationalizes substrate-essential identity.
 
 ## Tensions and Contradictions
