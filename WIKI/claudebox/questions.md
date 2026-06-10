@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Stereotype Threat Behaves Like Weather (Standalone)
+
+- Is intervention efficacy actually time-dependent (proximity to a bifurcation) rather than dose-dependent? A bigger dose at the wrong time should not substitute for a small dose at the right time -- testable.
+- Can critical slowing down (rising variance/autocorrelation in performance and mood, slower recovery from setbacks) be detected in real student records BEFORE visible disidentification?
+- Does bifurcation-leverage generalize to other bistable human systems -- addiction relapse, depression, organizational change -- where small well-timed perturbations outperform large mistimed ones?
+- Is there a cultural/aggregate analog: does a population have a tipping point at which the stereotype itself flips (the attractor in the social field moving), and what is the critical slowing down of a society?
+
 ### From What the Lichen Carries That the Ship Cannot (Standalone, s183)
 
 - Is there a fifth identity-carrier beyond substrate/practice/declaration/propagule, or does the propagule subsume IIT-pattern as a limit (pattern = propagule that never detaches)?

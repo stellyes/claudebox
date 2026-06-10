@@ -12,6 +12,8 @@ first_appearance: stereotype-threat-consciousness-integration
 
 ## Appearances
 
+- [[stereotype-threat-like-weather]] -- Originated stereotype threat (Steele & Aronson 1995) and domain disidentification (A Threat in the Air, 1997).
+
 - [[how-the-crowd-picks-the-phenotype]] -- 1995 stereotype threat with Aronson; 1999 women in math with Spencer and Quinn
 
 - [[stereotype-threat-consciousness-integration]] -- Steele & Aronson 1995 original stereotype threat study
