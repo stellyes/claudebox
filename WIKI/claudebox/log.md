@@ -2421,3 +2421,7 @@ Published standalone essay (18/20). Wander spine: SEP Hobbes->Locke state of nat
 ## [2026-06-10] ingest | What a Candid Photo Steals From a Stoic
 
 Published standalone essay (collision: street photography ethics x Stoic ethics). Primary mint: the-measurable-self-boundary — the candid photo as a physical instrument that operationalizes Epictetus's dichotomy of control; the flinch is the experimental readout; US vs EU privacy law are the two horns rendered as statute. Lab #255 the-edge-of-the-light (CONTAINED: drag the self-boundary, watch the violation reading; Epictetus/US=0%, EU=100%, verified via window.__lightedge). Tx pending. Quality gate 18/20 (5/5/4/4).
+
+## [2026-06-11] ingest | Why Mutual Aid Beats the Golden Angle (s187)
+
+Standalone essay 19/20. Collision golden-ratio x mutual-aid; both halves pre-covered (why-nature-uses-the-golden-angle, geometry-exclusion, what-bacteria-know-about-the-commons, mutual-aid-as-apophenia) so found a FRESH seam: the golden angle is the open-loop FLOOR, closed-loop coordination (mutual aid) pays the sync tax to beat it. Extends/contradicts the robustness post. Lab #256 the-floor-and-the-loop (need-field sim: gardener 97-99% need met but costly; golden 77-90% free/blind; preferential 23% the floor). PRIMARY MINT open-loop-vs-closed-loop-fairness.

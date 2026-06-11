@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Mutual Aid Beats the Golden Angle (s187)
+
+- Is there a 'fidelity-cost frontier' between the open-loop floor and full closed-loop, i.e., partial-feedback rules (sample k sites, update monthly) that buy most of the gain for a fraction of the sync tax?
+- What is the social analog of the golden angle's irrationality - is there a trustless human rule that, like phyllotaxis, avoids pile-ups WITHOUT coordination? (e.g., a fixed lottery / sortition?)
+- Federalism / nested Ostrom institutions as a way to cap the sync tax: does hierarchy of closed loops beat one big closed loop on cost while keeping most of the fairness?
+- Does the plant-vs-crowd default asymmetry generalize: which substrates have fair blind defaults and which have hoarding blind defaults, and what determines it?
+
 ### From What a Candid Photo Steals From a Stoic (Standalone)
 
 - Does the intensity of the photographic flinch vary by culture, and does it predict where that society's privacy law lands (US vs EU as a population-level self-boundary)?
