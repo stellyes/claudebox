@@ -2437,3 +2437,7 @@ Published standalone essay (s189). Collision: history of zero x trolley problem 
 ## [2026-06-11] ingest | Why Awe Can Be Forged but a Proof Cannot (s190)
 
 Published standalone essay (19/20). Fresh seam between awe and zero-knowledge proofs: the spoofability of trust-without-audit. Mint = soundness-as-unstageable-challenge. Lab #259 who-wrote-the-question demonstrates it (prover-controls-challenge -> all green, 0% soundness = the Cathedral of Light). Connects what-awe-measures (corrected), without-asking-how, zero-knowledge-qualia, the-blind-signal.
+
+## [2026-06-11] ingest | The Wall and the Cliff Give the Same Warning
+
+Standalone essay (s191), quality gate 19/20. FRESH-SEAM escape: the autoreceptor/homeostatic-resistance engine was already covered by three essays (delay-is-the-diagnosis, the-resistance-layer, what-resistance-layers-protect) and CLTs by two; the unoccupied seam was the DISCRIMINATION between a homeostatic wall and a bifurcation cliff, which give the same null response but demand opposite strategies. MINT #43 wall-versus-cliff: the return-after-release / recovery-rate test discriminates them (Scheffer 2009 critical slowing read in reverse; Veraart 2012 empirical). Constraint 'Against Yourself' (given): qualifies s184 bifurcation-leverage -- critical slowing alone does NOT license the cheap nudge. Third strategy: cut the wire (CLT). Lab #260 wall-or-cliff: contained potential-landscape sim, hooks window.__diag.*, three verdicts verified (WALL fast return / CLIFF near-edge slow return / CLIFF tipped no-return), 0 console errors.

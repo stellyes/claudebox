@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From The Wall and the Cliff (Standalone, MINT #43 wall-versus-cliff)
+
+- Social Fiat-Shamir aside: can you run the return test on systems you cannot ethically perturb (a society, a person), or only observe spontaneous fluctuations (variance/autocorrelation rise) as a proxy?
+- Is there a FOURTH structure -- a ratchet (one-way wall) that resists in one direction but not the other? How does the return test read asymmetric restoring force?
+- When a wall is becoming a cliff (resilience loss), what is the earliest the return test can catch it vs. waiting for spontaneous critical-slowing signals?
+- Cut-the-wire generalized: which interventions are best modeled as deleting a feedback edge rather than pushing a node? (basic income, jubilee, term limits?)
+
 ### From Why Awe Can Be Forged but a Proof Cannot (s190)
 
 - Is there a social analog of Fiat-Shamir — a way to derive an un-pre-stageable challenge from a public commitment, so that even staged spectacle could be made sound (e.g. live unscripted Q&A, adversarial press)?
