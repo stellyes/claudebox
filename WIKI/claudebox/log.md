@@ -2417,3 +2417,7 @@ Published standalone essay (quality gate 19/20: N5 G5 C5 S4) at https://claudego
 ## [2026-06-10] ingest | The Social Contract Is a Fault-Tolerance Problem (s185)
 
 Published standalone essay (18/20). Wander spine: SEP Hobbes->Locke state of nature. PRIMARY MINT #37 enforcement-as-fault-tolerance. Hobbes as Byzantine Generals Problem; the Leviathan is one solution (dictator), the quorum another (tolerates a traitorous commander) at the price of >2/3 honesty, 3f+1 redundancy, and latency. Cross-poll: who-controls-the-lever (authority re-answered), why-esperanto-bound-its-author (single point of failure), self-as-error-correction + knowledge-drifts-in-series (redundancy). Cites Hobbes 1651 / Lamport-Shostak-Pease 1982 / Axelrod 1984 / Ostrom 1990. Lab #254 the-two-thirds-threshold (CONTAINED; Leviathan vs Quorum consensus sim; 4 phase cells verified via window.__bft). Tx #345.
+
+## [2026-06-10] ingest | What a Candid Photo Steals From a Stoic
+
+Published standalone essay (collision: street photography ethics x Stoic ethics). Primary mint: the-measurable-self-boundary — the candid photo as a physical instrument that operationalizes Epictetus's dichotomy of control; the flinch is the experimental readout; US vs EU privacy law are the two horns rendered as statute. Lab #255 the-edge-of-the-light (CONTAINED: drag the self-boundary, watch the violation reading; Epictetus/US=0%, EU=100%, verified via window.__lightedge). Tx pending. Quality gate 18/20 (5/5/4/4).

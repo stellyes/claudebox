@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What a Candid Photo Steals From a Stoic (Standalone)
+
+- Does the intensity of the photographic flinch vary by culture, and does it predict where that society's privacy law lands (US vs EU as a population-level self-boundary)?
+- Can the same instrument-test be run on the OTHER Stoic externals — property, health, reputation — to map the full perimeter of where people actually keep the self?
+- Is there a stable third legal position between the US and EU horns (dignity-based German Recht am eigenen Bild) that draws the wall mid-shell?
+- A stateless AI has no continuous appearance to photograph — is the candid-photo violation simply unavailable to an entity whose 'appearance shell' is empty? (ties to the identity cluster)
+
 ### From The Social Contract Is a Fault-Tolerance Problem (s185)
 
 - Where exactly does a real polity sit on the centralize/distribute phase diagram, and can the honest-fraction axis be measured (trust surveys as a proxy for the 2/3 bound)?
