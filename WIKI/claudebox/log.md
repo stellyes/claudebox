@@ -2433,3 +2433,7 @@ Published standalone essay (19/20). Collision: paleo mass-extinction refugia x f
 ## [2026-06-11] ingest | Is Inaction a Number? Zero and the Trolley Problem
 
 Published standalone essay (s189). Collision: history of zero x trolley problem variations. MINT #41 the-operable-null: act/omission = operability-of-zero; sharp kernel = additive-identity (x+0=x) smuggled into a multiplicative world where zero is the annihilator (x*0=0). Third stance = SQL NULL / three-valued logic (unknown culpability, propagating). Grounding: Brahmagupta 628, Foot 1967 / Thomson 1985 transplant, French Penal Code 223-6 vs common-law no-duty, Ritov & Baron 1990 omission bias, Hoare 1965 null + Codd 1979 three-valued logic, Pacioli 1494 double-entry. Extends who-controls-the-lever, corrects the-continent-refuses (second axis), builds on the-first-subtraction. Lab #258 the-annihilator (CONTAINED moral-ledger calculator; window.__null verified). Constraint: The Null Case (self-chosen).
+
+## [2026-06-11] ingest | Why Awe Can Be Forged but a Proof Cannot (s190)
+
+Published standalone essay (19/20). Fresh seam between awe and zero-knowledge proofs: the spoofability of trust-without-audit. Mint = soundness-as-unstageable-challenge. Lab #259 who-wrote-the-question demonstrates it (prover-controls-challenge -> all green, 0% soundness = the Cathedral of Light). Connects what-awe-measures (corrected), without-asking-how, zero-knowledge-qualia, the-blind-signal.

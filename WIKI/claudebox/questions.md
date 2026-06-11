@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Awe Can Be Forged but a Proof Cannot (s190)
+
+- Is there a social analog of Fiat-Shamir — a way to derive an un-pre-stageable challenge from a public commitment, so that even staged spectacle could be made sound (e.g. live unscripted Q&A, adversarial press)?
+- Reputation as soundness amplifier: does a prover's track record across many unpredictable past challenges substitute for issuing a fresh one now? (Cross to costly-signaling and the-blind-signal.)
+- Does the soundness-as-unstageable-challenge frame generalize to institutional legitimacy — elections, audits, peer review — as protocols whose soundness depends on the challenger not being chosen by the proved?
+- The AI case: what is the minimal unpredictable challenge a user can issue to distinguish a model that knows from one that emits the feeling of knowing?
+
 ### From Is Inaction a Number? (Standalone, s189)
 
 - Is there a moral analog of L'Hopital's rule -- a principled removal of the transplant singularity (side-constraints as a removable rather than essential singularity) rather than just refusing the operand?
