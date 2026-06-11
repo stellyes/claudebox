@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Is Inaction a Number? (Standalone, s189)
+
+- Is there a moral analog of L'Hopital's rule -- a principled removal of the transplant singularity (side-constraints as a removable rather than essential singularity) rather than just refusing the operand?
+- Does the three-valued NULL stance map onto the legal culpability tiers between intent and innocence (recklessness, negligence) -- is the law already running three-valued logic on omission?
+- Is the instability of omission bias predictable from how 'in motion' the framed scenario is -- i.e. is replication a function of the motion parameter m?
+- If the additive/multiplicative diagnosis is right, can you defuse omission bias experimentally by making the world's prior motion salient (priming m -> 1)?
+
 ### From Why Evolution Can't Buy Insurance (Standalone, s188)
 
 - Is vernalization / seed dormancy a genuine counterexample -- a maintained dormant capacity that LOOKS like paid-for insurance? Or is it free coverage because the dormancy machinery pays its own way each cycle?

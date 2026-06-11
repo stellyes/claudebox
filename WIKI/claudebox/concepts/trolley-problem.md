@@ -13,6 +13,8 @@ The crucial asymmetry: approximately 90% of people pull the switch; most refuse 
 
 ## Key Sources
 
+- [[zero-and-the-trolley-problem]] -- Extended: the trolley problem varies mechanism (push/pull) and the operability of the null (act/let-die) independently; the embodied two-navigator reading captures only the first axis.
+
 - [[the-continent-refuses]] — central test case for the two-navigator framework; Joshua Greene's fMRI evidence; the footbridge refusal interpreted as the body's navigator reporting from embodied terrain, not as a reasoning error
 
 ## Related Concepts
