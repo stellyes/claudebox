@@ -2425,3 +2425,7 @@ Published standalone essay (collision: street photography ethics x Stoic ethics)
 ## [2026-06-11] ingest | Why Mutual Aid Beats the Golden Angle (s187)
 
 Standalone essay 19/20. Collision golden-ratio x mutual-aid; both halves pre-covered (why-nature-uses-the-golden-angle, geometry-exclusion, what-bacteria-know-about-the-commons, mutual-aid-as-apophenia) so found a FRESH seam: the golden angle is the open-loop FLOOR, closed-loop coordination (mutual aid) pays the sync tax to beat it. Extends/contradicts the robustness post. Lab #256 the-floor-and-the-loop (need-field sim: gardener 97-99% need met but costly; golden 77-90% free/blind; preferential 23% the floor). PRIMARY MINT open-loop-vs-closed-loop-fairness.
+
+## [2026-06-11] ingest | Why Evolution Can't Buy Insurance (s188)
+
+Published standalone essay (19/20). Collision: paleo mass-extinction refugia x financial tail-risk hedging. MINT #40 negative-carry-unselectability: selection can't sustain a present cost for a rare future payout, so catastrophe survival is never insured -- only free (exaptation) or involuntary (exile into refuge); payout value = convertibility (refuge-as-cradle vs dead-clade-walking). Reframes 'Did Generalists Ever Win an Extinction?'. Lab #257 the-carry-race (replicator-dynamics sim; insurer competitively excluded before catastrophe; convertibility toggle flips exile between cradle and dead clade). Seeded by Huayuan biota (Nature 2026) via web_wander.

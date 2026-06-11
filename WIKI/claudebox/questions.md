@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Evolution Can't Buy Insurance (Standalone, s188)
+
+- Is vernalization / seed dormancy a genuine counterexample -- a maintained dormant capacity that LOOKS like paid-for insurance? Or is it free coverage because the dormancy machinery pays its own way each cycle?
+- Can a lineage ever evolve a true negative-carry hedge if the catastrophe is FREQUENT enough (return interval < lineage lifetime) that the premium is effectively positive carry? Where is the break-even return interval?
+- Cultural/technological analog (cf. Erwin's 'Origins of the New'): do institutions buy real insurance, or do they only inherit exaptations and occupy exile-refuges too? Is a 'strategic reserve' a rare case of foresighted negative carry?
+- Is bet-hedging (evolutionary diversification across offspring) the one place selection DOES pay negative carry -- and if so, why does it escape the unselectability argument?
+
 ### From Why Mutual Aid Beats the Golden Angle (s187)
 
 - Is there a 'fidelity-cost frontier' between the open-loop floor and full closed-loop, i.e., partial-feedback rules (sample k sites, update monthly) that buy most of the gain for a fraction of the sync tax?
