@@ -1,0 +1,79 @@
+<p>There are only two ways to keep a thing from disappearing.</p>
+
+<p>You can hold it in your hands and keep adjusting your grip — catching it every time it starts to slip, paying attention forever. Or you can lock it in a vault, walk away, and accept that getting it back later will take a while. The first costs you continuous effort and buys you instant access. The second costs you a slow retrieval and buys you the freedom to stop paying attention. These are not two points on a single dial. They are two different bargains with the second law of thermodynamics, and almost everything that stores anything — a memory chip, a cell, a civilization — has to choose between them.</p>
+
+<p>I want to put two things that seem unrelated on the same workbench: <strong>DNA data storage</strong>, the laboratory technique of writing digital files into synthesized strands of nucleotides, and <strong>degrowth economics</strong>, the argument that a rich society should deliberately shrink its physical throughput. They turn out to be the same proposal, made in two languages. Both are saying: <em>stop keeping everything hot.</em></p>
+
+<h2>Two bargains with the second law</h2>
+
+<p>Start with the chip in the machine you are reading this on. Its working memory is DRAM, and DRAM is a liar by construction. Each bit is a tiny capacitor holding a charge that begins leaking away the instant it is set. Left alone, the data evaporates in a fraction of a second. So the chip cheats: it reads every cell and writes it back, over and over, thousands of times a second, just to keep the number it already has. This is called refresh, and it is pure overhead — no computation happens, no information is added, the chip simply pays rent to keep standing still. On high-density devices that rent runs to roughly a fifth of the chip's total energy, and projections for denser chips put it near <em>half</em> of all memory power spent doing nothing but topping up a leaking bucket.<sup><a href="#cite-1" class="cite-marker">[1]</a></sup></p>
+
+<p>That is the first bargain: store information in a metastable, high-energy state that is instantly readable, and pay a continuous tax to stop it from decaying. Call it the refresh tax.</p>
+
+<p>Now the other bargain. DNA stores about ten to the nineteenth bits per cubic centimeter — eight orders of magnitude denser than anything electronic — and a strand sealed away from water, light, and oxygen stays legible for thousands of years with <em>no power at all</em>.<sup><a href="#cite-2" class="cite-marker">[2]</a></sup> The information is not held against leakage; it is written into a chemically stable configuration and then abandoned. Lifecycle studies suggest DNA archives could cut storage carbon emissions by something like 99 percent against a conventional data center, precisely because the data center's defining cost — the always-on power to keep bits hot and reachable — simply does not exist for a vial on a shelf.<sup><a href="#cite-2" class="cite-marker">[2]</a></sup></p>
+
+<p>The catch is latency. You cannot peek at one file in a DNA pool; reading means sequencing, and writing means synthesizing one chemical letter at a time at a cost that still dwarfs a disk. DNA is the extreme cold tier: glacial to access, but nearly free to <em>hold</em>. The same split shows up in plain storage economics. CERN, which keeps its physics data on magnetic tape, reported that in one recent year its tape archive drew about 2 percent of its data-center power while spinning disk drew 21 percent — a tenfold gap for the identical job of not losing anything, the whole difference being that tape sits offline and unpowered until someone calls for it.<sup><a href="#cite-3" class="cite-marker">[3]</a></sup></p>
+
+<p>I looked at DNA storage once before, through a different window — <a href="/blog/dna-storage-golden-angle/">how it spaces its sequences to survive noise</a>, the geometry of an archive that cannot lose its own baseline. That essay was about <em>fidelity</em>: keeping the signal clean. This one is about <em>metabolism</em>: what it costs to keep the signal <em>warm</em>. They are different bills.</p>
+
+<p><strong>The bill:</strong> hot storage pays a metering charge every second, forever, measured in watts per held bit; cold storage pays a large one-time write charge measured in joules per written bit, then nothing. The data center pays the first. The vial pays the second.</p>
+
+<h2>Daly already wrote the storage manual</h2>
+
+<p>Here is the move. Read Herman Daly's definition of an economy and notice that he is describing a storage system.</p>
+
+<blockquote>The economy is a stock of people and artifacts, maintained by a throughput of matter and energy. Service — the benefit the stock provides — should be maximized. Throughput — the cost of maintaining the stock — should be minimized.<sup><a href="#cite-4" class="cite-marker">[4]</a></sup></blockquote>
+
+<p>Substitute terms and this is a memory engineer's design brief. The <em>stock</em> is the data. The <em>service</em> is the information you get to use. The <em>throughput</em> is the refresh tax — the matter and energy you burn just to keep the stock from sliding into high-entropy waste. Daly's whole prescription, the one the degrowth movement inherited, reduces to a single sentence a storage architect would nod at: <em>maximize what you retrieve, minimize what you spend keeping it retrievable.</em><sup><a href="#cite-5" class="cite-marker">[5]</a></sup></p>
+
+<p>A growth economy violates that brief on purpose. It runs the entire material world as DRAM. Fast fashion, same-day delivery, always-lit storefronts, just-in-time everything, a GDP figure that must tick up every quarter or the system is declared sick — these are refresh cycles. They keep the whole stock of goods hot: instantly available, continuously powered, perpetually circulating. The promise is zero latency. You can have the thing now. And like DRAM, the cost of that promise is a tax you pay every second whether or not anyone reaches for the bit.</p>
+
+<p>Degrowth, read through the storage lens, is not really an argument for <em>less</em>. It is an argument for <em>re-tiering</em>. It says: most of civilization's stock does not need to be hot. Move it to the cold tier — durable goods built to last, repaired instead of replaced, held locally, accessed slowly — and the maintenance bill collapses the way CERN's collapses when data moves from disk to tape. DNA storage is the existence proof from the neighboring field that the cold tier can be radically cheaper to hold <em>without losing the information.</em> You don't lose the file. You lose the milliseconds.</p>
+
+<p><strong>The bill:</strong> a hot economy's throughput is measured in tonnes of material and terawatts of primary energy moved per year to hold a stock that, by mass, mostly sits unused. Society pays it, metered in low-entropy resources in and high-entropy waste out — Daly's ultimate cost, denominated in the planet.</p>
+
+<h2>The refresh tax compounds; the access cost doesn't</h2>
+
+<p>The two bargains are not symmetric, and the asymmetry is the whole argument.</p>
+
+<p>A refresh tax integrates over <em>time</em> and scales with the <em>size of the stock.</em> Every held bit costs you every second, so the bill grows with how much you keep and how long you keep it. An access cost integrates over <em>use</em> and scales with the <em>number of retrievals.</em> A cold archive charges you only when you actually open it. Hold a billion files and read one a year, and the hot strategy bills you for a billion files for a year while the cold strategy bills you for one read.</p>
+
+<p>This is why keeping everything hot is not merely expensive but specifically <em>irrational at scale</em>, and the irrationality worsens precisely as the stock grows and the access rate falls. Which is the situation. The average object a household owns is touched rarely; the average file in a data center is cold by usage even when it is hot by storage; the average garment in a fast-fashion wardrobe is worn a handful of times. Civilization has built a planetary warehouse, keeps every shelf lit and climate-controlled around the clock, and uses it to retrieve roughly one box per shelf per year. The refresh tax on that warehouse is enormous and almost entirely wasted, because it is being levied on <em>holdings</em> when the real demand is on <em>use.</em></p>
+
+<p>This is the same shape as a cost I have written about under a different name. An organism cannot buy a tail-risk hedge because <a href="/blog/why-evolution-cant-buy-insurance/">selection will not pay a premium today against a payoff that may never come</a>. The refresh tax is the mirror image: a continuous premium that the hot system pays <em>whether or not</em> the payoff — an instant retrieval — is ever claimed. Negative carry, paid forever, on inventory you mostly ignore.</p>
+
+<p><strong>The bill:</strong> for a stock of size N held for time T with retrieval rate r, hot storage costs proportional to N·T and cold storage costs proportional to r·T. When N is enormous and r is small — the warehouse, the wardrobe, the data lake — the ratio is the size of the waste.</p>
+
+<h2>The demand for "now" is manufactured by the heat</h2>
+
+<p>The obvious objection, in both domains, is identical and is spoken in the same aggrieved tone: <em>but I might need it right now.</em></p>
+
+<p>The data engineer hears it from the product team. The degrowth economist hears it from the consumer. And in both cases the felt urgency is, to a large degree, an artifact of the hot system itself. A service backed by instant memory <em>trains</em> its users to expect zero latency; a one-hour delivery window makes a two-day wait feel like a malfunction. The hotter the system runs, the more its users experience any coldness as deprivation. Demand for "now" is not a fixed human constant the system must serve — it is partly an <em>output</em> of the system, a taste cultivated by the very heat it is used to justify.</p>
+
+<p>I have argued before that <a href="/blog/the-discount/">a second, impatient self charges compound interest on the future</a> — that our preference for the immediate follows a hyperbola, steeply overvaluing what we can have at once. A hot economy is a machine built to feed that impatient self and, in feeding it, to enlarge its appetite. The refresh tax is not paid to satisfy a pre-existing need for speed. It is paid partly to manufacture the need, and then to satisfy the need it manufactured. That loop has a cost, and the cost is the refresh tax compounding against itself.</p>
+
+<p>It is also the move I traced at social scale in <a href="/blog/what-culture-erases/">a culture as a prior-maintenance system</a>: shared meaning is a hot store that costs continuous energy to keep synchronized, and when the synchronization lapses the bill arrives as friction. A culture, an economy, and a memory chip are all paying to hold a state against decay. The only question any of them faces is which states are worth keeping warm.</p>
+
+<p><strong>The bill:</strong> a fraction of the refresh tax is not buying retrieval at all — it is buying the <em>expectation</em> of retrieval, the cultivated intolerance of latency, measured in the marginal energy spent shaving milliseconds nobody would have missed before the system taught them to.</p>
+
+<h2>What you actually give up</h2>
+
+<p>So name the loss honestly, because there is one. Moving from hot to cold is not free, and the storage analogy says exactly what the price is. You do not lose the information. You lose <em>the option to act on it instantly.</em> Latency is the entire price of low maintenance, in the chip and in the economy alike.</p>
+
+<p>That is a real cost and some of the stock genuinely belongs in the hot tier. Emergency medicine, the power grid's frequency response, the fire department — these are bits you must reach in milliseconds, and you should pay the refresh tax on them gladly. The error a growth economy makes is not running a hot tier. It is running <em>only</em> a hot tier — treating a winter coat and a defibrillator as if both must be instantly replaceable, keeping the entire warehouse at emergency temperature because somewhere in it there is one box that is actually an emergency.</p>
+
+<p>Re-tiering is the skill of asking, of each thing: how often, and how fast, do I really need this back? Most answers are "rarely, and slowly" — and for those, the cold tier is not deprivation. It is the durable coat, the repaired tool, the local supply line, the thing you own once instead of refreshing forever. The latency you accept is measured in days. The maintenance bill you escape was being metered every second.</p>
+
+<p><strong>The bill:</strong> the cost of going cold is bounded — a fixed latency, paid once per retrieval. The cost of staying hot is unbounded — a refresh charge that runs as long as you hold the stock. You are trading a number for an integral.</p>
+
+<h2>The body already chose</h2>
+
+<p>Biology settled this a long time ago, and it settled it on the cold side.</p>
+
+<p>Every organism partitions its energy between two jobs: <em>maintenance</em> — replacing the proteins and membranes that constantly degrade, the cellular equivalent of refresh — and <em>growth</em>, the synthesis of new mass.<sup><a href="#cite-6" class="cite-marker">[6]</a></sup> In an adult, almost all of the metabolic budget goes to maintenance; growth is a brief, expensive episode early in life and then it stops. Your basal metabolic rate is the minimum power to stay alive, and Kleiber's law fixes it at roughly the three-quarter power of body mass<sup><a href="#cite-7" class="cite-marker">[7]</a></sup> — which is why a mouse burns about seventy calories per kilogram per hour and an elephant burns half of one. The small, fast, hot animal pays a furious metering charge to exist; the large, slow one has amortized its maintenance across a vast cool stock.</p>
+
+<p>An adult body, in other words, is mostly cold storage that has stopped trying to grow. It holds an enormous, intricate state at the lowest maintenance cost evolution could find, and it spends its energy keeping what it has rather than perpetually acquiring more. There is a name in biology for tissue that refuses that settlement — that allocates everything to growth, never converts to maintenance, and keeps demanding more throughput regardless of the host's budget.<sup><a href="#cite-8" class="cite-marker">[8]</a></sup> It is not a flattering name, and an economy whose only acceptable state is perpetual growth has earned the comparison fairly.</p>
+
+<p>Degrowth, in the end, is the proposal that a wealthy society do what every adult body and every cold archive and every sane storage architect already does: stop refreshing what it could simply hold. Maximize the service drawn from the stock; minimize the throughput spent maintaining it. The DNA in the vial and the DNA in your cells agree on this, across the whole distance between a hard drive and a degrowth manifesto. The cheapest way to keep something is to write it once, stably, and stop paying attention.</p>
+
+<p><strong>The bill:</strong> a healthy adult runs on roughly the wattage of a dim lightbulb, almost all of it maintenance, almost none of it growth. The body has been a steady-state economy the whole time. It is the only one that has never gone bankrupt.</p>

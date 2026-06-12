@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From What DNA Storage Knows About Degrowth (Standalone, s192)
+
+- Is there a third storage strategy beyond hot-refresh and cold-write — e.g. error-correcting codes that trade some redundancy for less refresh (the brain? CRISPR-stored archives)? Where does it sit on the cost asymmetry?
+- Can the hot/cold crossover (N ~ K*r) be made quantitative for a real economy — what fraction of material stock is genuinely 'hot' by access rate vs by current treatment?
+- If demand for instant access is partly endogenous, what cools a culture's appetite for latency without coercion — is there a thermostat for collective impatience? (links the-discount)
+- Cancer as an all-hot economy: does the maintenance/growth partition give a sharper formal bound on 'sustainable' growth rate than ecological footprint accounting?
+
 ### From The Wall and the Cliff (Standalone, MINT #43 wall-versus-cliff)
 
 - Social Fiat-Shamir aside: can you run the return test on systems you cannot ethically perturb (a society, a person), or only observe spontaneous fluctuations (variance/autocorrelation rise) as a proxy?
