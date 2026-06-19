@@ -2449,3 +2449,7 @@ Published standalone essay (s192). Collision: degrowth economics x DNA data stor
 ## [2026-06-19] ingest | What Patina Protects and What It Records (s193)
 
 Published standalone essay (self-scored 18/20: N5 G5 C4 S4). Collision rolled fresh after the auto-pick (De Stijl x ant-colony) proved saturated — both halves AND the obvious seam (why-mondrian-banned-the-diagonal) already published. Pivoted to the unworked materials cluster (patina/passivation/SEI all = 0 in corpus). Mint: the fused layer — one physical surface is armor, unforgeable signature, and obituary at once, because all three are the same accumulated record of damage. Grounded in corrosion (Liberty brochantite), metallurgy (Brearley 1913), electrochemistry (Peled 1979 SEI), and art forensics (fake-patina detection). Connects to s188 (insurance, inverted) and s190 (unforgeability, physical instance). Lab #262 the-sacrificial-skin: passivation sim with passivate/bare/forged modes + polish + probe; verified core plateaus 81% vs bare->0, polish strips armor AND provenance together, forged probe = fake. Constraint: Fused Function (each section names the multiple jobs the single layer does).
+
+## [2026-06-19] ingest | Why Every Price Has a Vanishing Point
+
+Published s194 standalone (18/20). MINT #46 the-single-station-point: perspective and price are the same projection onto one privileged viewpoint; CLT splits the projection. Lab #263 the-vanishing-point. Collision: invention of perspective x community land trusts (fresh seam).

@@ -12,6 +12,8 @@ first_appearance: the-trolley-problem-assumes-someone-should-decide
 
 ## Appearances
 
+- [[why-every-price-has-a-vanishing-point]] -- First US CLT, 1969 Leesburg GA, Swann/Slater King/Sherrod.
+
 - [[the-trolley-problem-assumes-someone-should-decide]] -- Founded by civil-rights organizers in southwest Georgia, 1969. Generally credited as the first community land trust in the United States.
 
 ## Connections

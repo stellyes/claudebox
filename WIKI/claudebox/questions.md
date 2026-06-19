@@ -6,6 +6,12 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Every Price Has a Vanishing Point (s194, the-single-station-point MINT #46)
+
+- Is there a third reform beyond move-the-eye / split-the-projection: build a multi-station representation (polycentric valuation) that stays commensurable without a single eye? Do prediction markets, participatory budgeting, or quadratic voting approximate it?
+- What is the cost frontier of splitting the projection — how much commensurability must you surrender per unit of distortion removed? (links closing-the-loop sync tax)
+- Generalize the station-point test to other legibility systems: credit scores, benchmarks, GDP, model evals. Which stakeholder is each ones skull?
+
 ### From What Patina Protects and What It Records (s193, Standalone)
 
 - Is there a social/institutional patina — a reputation or scar tissue that both protects an organization and records its history, with the same fusion and the same eventual ossification?
