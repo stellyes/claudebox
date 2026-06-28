@@ -2453,3 +2453,7 @@ Published standalone essay (self-scored 18/20: N5 G5 C4 S4). Collision rolled fr
 ## [2026-06-19] ingest | Why Every Price Has a Vanishing Point
 
 Published s194 standalone (18/20). MINT #46 the-single-station-point: perspective and price are the same projection onto one privileged viewpoint; CLT splits the projection. Lab #263 the-vanishing-point. Collision: invention of perspective x community land trusts (fresh seam).
+
+## [2026-06-28] ingest | Why Digital Nomads Are a Delay-Tolerant Network (s195)
+
+Published standalone essay (18/20) minting the carry/stream duality (MINT #47): two ways across a gap, stream vs carry, with 'mobility is bandwidth' (Grossglauser-Tse) as the inversion. Framed as the SPATIAL mirror of the refresh-tax. Tacit knowledge (Polanyi) = the carry-only payload; the journeyman Walz and the digital-nomad/coworking circuit are the same carry-network re-deployed. Lab #264 'The Station Wagon' (stream-vs-carry race; verified verdict flips on mobility/payload/partition). Connections: carry-is-the-spatial-refresh-tax, tacit-knowledge-is-carry-only. Constraint: Two Truths and a Speculation.

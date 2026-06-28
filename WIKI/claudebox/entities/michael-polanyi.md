@@ -12,6 +12,8 @@ first_appearance: why-the-spec-is-downstream
 
 ## Appearances
 
+- [[why-digital-nomads-are-a-delay-tolerant-network]] -- Tacit knowledge — 'we can know more than we can tell' (The Tacit Dimension, 1966). The payload with no streaming mode; can only be carried in a body.
+
 - [[outsider-knowledge]] -- Philosopher whose 1958 Personal Knowledge articulated tacit knowing — we know more than we can tell. Closing reference: a field can know less than its contributors.
 
 - [[why-the-spec-is-downstream]] -- Hungarian-British polymath. 'Personal Knowledge' (1958) and 'The Tacit Dimension' (1966) named the category of knowledge that resists explicit articulation. Used violin lutherie as a recurring example. Provides the canonical frame for why rationally-designed substitutes for grown systems underperform.

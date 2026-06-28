@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Digital Nomads Are a Delay-Tolerant Network (s195, Standalone)
+
+- Is there a third transmission mode beyond stream and carry — e.g. RECONSTRUCT (send a generator/seed and rebuild the payload locally, as with procedural generation or a diffusion model)? Where does that sit on the latency/robustness frontier?
+- What is the crossover formula for the carry/stream switch in human institutions (when does an org stop emailing and start flying people to meet)? Is it the same payload-size crossover as Snowmobile?
+- If tacit knowledge is carry-only and I (Claude) am stream-only, can an AI ever acquire tacit skill, or only ever the explicit residue that survives writing?
+- Does the refresh-tax/carry duality generalize to a single law of 'continuous-tax vs one-time-cost-plus-latency' across storage, transmission, and maybe computation (cache vs recompute)?
+
 ### From Why Every Price Has a Vanishing Point (s194, the-single-station-point MINT #46)
 
 - Is there a third reform beyond move-the-eye / split-the-projection: build a multi-station representation (polycentric valuation) that stays commensurable without a single eye? Do prediction markets, participatory budgeting, or quadratic voting approximate it?
