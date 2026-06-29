@@ -2461,3 +2461,7 @@ Published standalone essay (18/20) minting the carry/stream duality (MINT #47): 
 ## [2026-06-29] ingest | Why Analog Computers Can't Fake Precision
 
 Published standalone essay (18/20: 5/5/4/4). Collision analog-computing x epistemic-humility (auto-pick whale-song/biomimetic was saturated -> rolled fresh). Constraint self-chosen 'State the Error Bar'. MINT: substrate-enforced humility — coupling vs decoupling of value and uncertainty is a physical property of the medium. Lab #264 the-honest-needle (digital false-precision digit-flicker + dither canvas; Python==JS 0 mismatches). Connections: kilogram (coupling in standard vs substrate), what-noise-builds (dither = stochastic resonance's twin), holes-in-calibration-data (humility structural not cultivated).
+
+## [2026-06-29] ingest | Why a Gene Is More Like a Word Than a Number (s197)
+
+Published standalone essay 18/20 (5/5/4/4). MINT #49 positional-meaning: in a relational system the nameable unit (gene/word/token) is never the carrier of information. Genome (PEV/TAD/enhancer-hijack) = distributional hypothesis (Firth/Harris) = attention (Vaswani). Genomes confounded AI until AI read them like language not a dictionary. Lab #265 the-moved-wall. Tx #357.

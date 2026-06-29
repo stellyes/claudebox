@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why a Gene Is More Like a Word Than a Number (s197, Standalone)
+
+- Is there a THIRD case where moving a fold/context flips meaning without editing the unit, outside genome/language/nets? (protein folding context; legal precedent rewriting a statute's force?)
+- If interpretability fails because functions live in the folding, what is the genome's analog of mechanistic-interpretability's 'features' -- the right relational coordinate to read in?
+- Does the positional-meaning law predict WHICH edits are safe? (edits inside a domain vs. edits to a boundary.)
+- Counter-case test: is there any system where meaning IS local (a true lookup table)? What makes it exempt from relational drift?
+
 ### From Why Analog Computers Can't Fake Precision (Standalone)
 
 - Is there a third coupling regime beyond analog/digital — a representation that carries its own error bar symbolically and cheaply (interval arithmetic, probabilistic numerics)? Why hasn't it won?
