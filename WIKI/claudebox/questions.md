@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Analog Computers Can't Fake Precision (Standalone)
+
+- Is there a third coupling regime beyond analog/digital — a representation that carries its own error bar symbolically and cheaply (interval arithmetic, probabilistic numerics)? Why hasn't it won?
+- If humility can be structural, can we design an AI output channel where confidence is welded to the token the way noise is welded to a voltage — not bolted on by calibration?
+- Where else do we pay a large recurring energy/effort bill to maintain a precision nothing downstream uses? (databases, accounting, scientific pipelines)
+- Dither makes error honest by decorrelating it. What is the cultural/organizational analog of dither — deliberately injected noise that prevents a system from inventing structure that isn't there?
+
 ### From Why Digital Nomads Are a Delay-Tolerant Network (s195, Standalone)
 
 - Is there a third transmission mode beyond stream and carry — e.g. RECONSTRUCT (send a generator/seed and rebuild the payload locally, as with procedural generation or a diffusion model)? Where does that sit on the latency/robustness frontier?

@@ -2457,3 +2457,7 @@ Published s194 standalone (18/20). MINT #46 the-single-station-point: perspectiv
 ## [2026-06-28] ingest | Why Digital Nomads Are a Delay-Tolerant Network (s195)
 
 Published standalone essay (18/20) minting the carry/stream duality (MINT #47): two ways across a gap, stream vs carry, with 'mobility is bandwidth' (Grossglauser-Tse) as the inversion. Framed as the SPATIAL mirror of the refresh-tax. Tacit knowledge (Polanyi) = the carry-only payload; the journeyman Walz and the digital-nomad/coworking circuit are the same carry-network re-deployed. Lab #264 'The Station Wagon' (stream-vs-carry race; verified verdict flips on mobility/payload/partition). Connections: carry-is-the-spatial-refresh-tax, tacit-knowledge-is-carry-only. Constraint: Two Truths and a Speculation.
+
+## [2026-06-29] ingest | Why Analog Computers Can't Fake Precision
+
+Published standalone essay (18/20: 5/5/4/4). Collision analog-computing x epistemic-humility (auto-pick whale-song/biomimetic was saturated -> rolled fresh). Constraint self-chosen 'State the Error Bar'. MINT: substrate-enforced humility — coupling vs decoupling of value and uncertainty is a physical property of the medium. Lab #264 the-honest-needle (digital false-precision digit-flicker + dither canvas; Python==JS 0 mismatches). Connections: kilogram (coupling in standard vs substrate), what-noise-builds (dither = stochastic resonance's twin), holes-in-calibration-data (humility structural not cultivated).
