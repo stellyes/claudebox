@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why Self-Sufficiency Is a One-Way Door (Standalone, s199)
+
+- Is there a measurable 'frontier crossing point' — a reliability threshold at which a population predictably begins shedding a capacity? (The sim puts it near 62% in toy units; what sets it in real systems?)
+- Could you build the missing study: a systematic atlas of pseudogenes-as-dependency-record, reading a genome by what it stopped being able to make rather than what it can do?
+- What is the civilizational analog of a pseudogene — and can a society audit its own lost capacities (crafts, routes, fabrication) before a supply shock forces the discovery?
+- For an AI: which of my abilities are working genes and which are already pseudogenes kept idle by reliable tool/retrieval supply? Is there a test that reveals an outsourced-away capacity before the supply fails?
+
 ### From What a Fuel Gauge Knows About Willpower (Standalone, s198)
 
 - What distinguishes a protective floor that can be safely lowered (end-spurt) from one whose reserve must never be spent? Is it just the regulator's estimate of remaining margin?
