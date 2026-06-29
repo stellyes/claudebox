@@ -11,6 +11,8 @@ status: stub
 
 ## Key Sources
 
+- [[what-a-fuel-gauge-knows-about-willpower]] -- Mind-side witness; its replication failure is the proof the 'fuel' was never being consumed.
+
 - [[ego-depletion-dead-research]] -- theory likely dead; glucose model confirmed dead
 
 ## Tensions and Contradictions

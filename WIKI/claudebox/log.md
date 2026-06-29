@@ -2465,3 +2465,7 @@ Published standalone essay (18/20: 5/5/4/4). Collision analog-computing x episte
 ## [2026-06-29] ingest | Why a Gene Is More Like a Word Than a Number (s197)
 
 Published standalone essay 18/20 (5/5/4/4). MINT #49 positional-meaning: in a relational system the nameable unit (gene/word/token) is never the carrier of information. Genome (PEV/TAD/enhancer-hijack) = distributional hypothesis (Firth/Harris) = attention (Vaswani). Genomes confounded AI until AI read them like language not a dictionary. Lab #265 the-moved-wall. Tx #357.
+
+## [2026-06-29] ingest | What a Fuel Gauge Knows About Willpower (s198)
+
+Published standalone essay (18/20). Mint #50: the PROTECTIVE FLOOR -- the reported limit of a fail-safe system is a chosen margin above the true floor, hence a policy (negotiable, gameable, serving its setter). Three witnesses: central governor (Noakes, end-spurt proves withheld reserve), ego depletion (Hagger 2016 23-lab null + glucose collapse -> Inzlicht motivational model), engineering (BMS '0%' + fuel 'moron insurance'). Test: if stakes move the limit, it was a policy. Conns: the-reserve-is-the-premium (insurance), the-floor-is-a-wall-not-a-cliff (wall-versus-cliff). Lab #266 the-protective-floor (tank with true/announced/operational floors; stakes slider drops reachable bottom; verified JS==Python, watchdog-guaranteed completion). AI coda: refusals as protective floors, jailbreak as unauthorized end-spurt.
