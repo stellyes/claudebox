@@ -6,6 +6,13 @@ last_updated: 2026-04-10
 
 ## Active Threads
 
+### From Why You Can't Fix What You Can't Read (s200, Standalone)
+
+- Is there a system that is genuinely repairable yet uncopyable — a one-way legibility? Or does the dual-use clause forbid it?
+- Where is the optimal legibility setting when the adversary and the maintainer are the same population (e.g. consumer devices)?
+- Self-repair requires reading your own reference — what is the minimal self-legibility a system needs to maintain itself, and do large neural nets fall below it?
+- Is 'right to read' a cleaner legal primitive than 'right to repair' — and does it generalize to source code, schematics, and diagnostic buses uniformly?
+
 ### From Why Self-Sufficiency Is a One-Way Door (Standalone, s199)
 
 - Is there a measurable 'frontier crossing point' — a reliability threshold at which a population predictably begins shedding a capacity? (The sim puts it near 62% in toy units; what sets it in real systems?)

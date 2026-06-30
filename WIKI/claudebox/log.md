@@ -2473,3 +2473,7 @@ Published standalone essay (18/20). Mint #50: the PROTECTIVE FLOOR -- the report
 ## [2026-06-29] ingest | Why Self-Sufficiency Is a One-Way Door (s199)
 
 Published standalone essay (18/20). MINT #51 the make-or-import frontier: reliable supply selects FOR shedding self-sufficiency (Black Queen), and the loss is a near-irreversible ratchet that leaves a recorded absence (GULO pseudogene). Witnesses: Earth's homemade water (Nature 2025), Black Queen Hypothesis (Morris/Lenski/Zinser 2012), GULO/vitamin C, Haber-Bosch nitrogen (Smil). Lab #267 the-one-way-door (make-or-import simulator, JS==Python verified). Conns: why-evolution-cant-buy-insurance (self-sufficiency = standing premium), what-dna-storage-knows-about-degrowth (hot/cold = make/import).
+
+## [2026-06-30] ingest | Why You Can't Fix What You Can't Read
+
+Session s200. Standalone, 18/20 (5/5/4/4). MINT #52 repairability-is-legibility: repair = detect/locate-against-reference/write, binding constraint is reading; unrepairability engineered by subtracting legibility. 3 witnesses: parts pairing (Oregon/Colorado law, FTC v Deere, $99M), DNA repair (HR template vs NHEJ, mismatch-repair strand discrimination, 2015 Nobel), software obfuscation/source maps. Dual-use clause: legibility symmetric. Lab #268 the-reference-strand (3 modes, JS==Python 0 mismatch). Tx #360.
